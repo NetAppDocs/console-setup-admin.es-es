@@ -1,0 +1,114 @@
+---
+sidebar: sidebar 
+permalink: task-user-settings.html 
+keywords: user profile, mfa, change password, role, login, multi-factor, authentication, dark mode 
+summary: Dentro de la Consola, cada usuario tiene un perfil que contiene información sobre el usuario y su configuración. Puede ver y editar la configuración de su perfil. 
+---
+= Administrar la configuración de usuario de la consola de NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Puede modificar su perfil de consola, lo que incluye cambiar su contraseña, habilitar la autenticación multifactor (MFA) y ver quién es su administrador de consola.
+
+Dentro de la Consola, cada usuario tiene un perfil que contiene información sobre el usuario y su configuración. Puede ver y editar la configuración de su perfil.
+
+
+
+== Cambiar tu nombre para mostrar
+
+Puedes cambiar el nombre para mostrar de tu consola que se utiliza para identificarte y que es visible para otros usuarios. Su nombre para mostrar no es el mismo que su nombre de usuario o dirección de correo electrónico, los cuales no se pueden cambiar.
+
+.Pasos
+. Seleccione el ícono de perfil en la esquina superior derecha de la Consola para ver el panel de configuración de Usuario.
+. Seleccione el ícono *Editar* junto a su nombre.
+. Ingrese su nuevo nombre para mostrar en el campo *Nombre*.
+
+
+
+
+== Configurar la autenticación multifactor
+
+Configure la autenticación multifactor (MFA) para mejorar la seguridad al requerir un segundo método de verificación.
+
+Los usuarios que utilizan el inicio de sesión único con un proveedor de identidad externo o el sitio de soporte de NetApp no ​​pueden habilitar MFA.  Si alguna de estas situaciones es cierta para usted, no verá la opción para habilitar MFA en la configuración de su perfil.
+
+No habilite MFA si su cuenta de usuario se utiliza para acceder a la API.  La autenticación multifactor detiene el acceso a la API cuando está habilitada para una cuenta de usuario.  Utilice cuentas de servicio para todo el acceso a la API.
+
+.Antes de empezar
+* Debes haber descargado ya una aplicación de autenticación, como Google Authenticator o Microsoft Authenticator, en tu dispositivo.
+* Necesitará su contraseña para configurar MFA.
+
+
+
+NOTE: Si no tiene acceso a su aplicación de autenticación o pierde su código de recuperación, comuníquese con el administrador de su consola para obtener ayuda.
+
+.Pasos
+. Seleccione el ícono de perfil en la esquina superior derecha de la Consola para ver el panel de configuración de Usuario.
+. Seleccione *Configurar* junto al encabezado *Autenticación multifactor*.
+. Siga las instrucciones para configurar MFA para su cuenta.
+. Cuando termine, se le pedirá que guarde su código de recuperación.  Elija copiar el código o descargar un archivo de texto que contenga el código.  Guarde este código en un lugar seguro.  Necesitará el código de recuperación si pierde el acceso a su aplicación de autenticación.
++
+Después de configurar MFA, la consola le solicitará que ingrese un código de un solo uso de su aplicación de autenticación cada vez que inicie sesión.
+
+
+
+
+
+== Regenera tu código de recuperación de MFA
+
+Solo puedes usar los códigos de recuperación una vez.  Si usas o pierdes el tuyo, crea uno nuevo.
+
+.Pasos
+. Seleccione el ícono de perfil en la esquina superior derecha de la Consola para ver el panel de configuración de Usuario.
+. Seleccionarimage:icon-action.png["Un icono que consta de tres puntos uno al lado del otro."] junto al encabezado *Autenticación multifactor*.
+. Seleccione *Regenerar código de recuperación*.
+. Copie el código de recuperación generado y guárdelo en una ubicación segura.
+
+
+
+
+== Eliminar su configuración de MFA
+
+Para dejar de usar la autenticación multifactor (MFA) para su inicio de sesión, elimine su configuración de MFA.  Esto elimina la necesidad de ingresar un código de un solo uso desde su aplicación de autenticación cuando inicia sesión.
+
+
+NOTE: Si no puede acceder a su aplicación de autenticación o código de recuperación, deberá comunicarse con el administrador de su organización para restablecer su configuración de MFA.
+
+.Pasos
+. Seleccione el ícono de perfil en la esquina superior derecha de la Consola para ver el panel de configuración de Usuario.
+. Seleccionarimage:icon-action.png["Un icono que consta de tres puntos uno al lado del otro."] junto al encabezado *Autenticación multifactor*.
+. Seleccione *Eliminar*.
+
+
+
+
+== Comuníquese con el administrador de su organización
+
+Si necesita comunicarse con el administrador de su organización, puede enviarle un correo electrónico directamente desde la Consola.  El administrador gestiona las cuentas de usuario y los permisos dentro de su organización.
+
+
+NOTE: Debe tener una aplicación de correo electrónico predeterminada configurada en su navegador para poder utilizar la función *Contactar a los administradores*.
+
+.Pasos
+. Seleccione el ícono de perfil en la esquina superior derecha de la Consola para ver el panel de configuración de Usuario.
+. Seleccione *Contactar a los administradores* para enviar un correo electrónico al administrador de su organización.
+. Seleccione la aplicación de correo electrónico que desea utilizar.
+. Finaliza el correo electrónico y selecciona *Enviar*.
+
+
+
+
+== Configurar el modo oscuro (tema oscuro)
+
+Puedes configurar la consola para que se muestre en modo oscuro.
+
+.Pasos
+. Seleccione el ícono de perfil en la esquina superior derecha de la Consola para ver el panel de configuración de Usuario.
+. Mueva el control deslizante *Tema oscuro* para habilitarlo.
+

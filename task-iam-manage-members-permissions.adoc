@@ -1,0 +1,192 @@
+---
+sidebar: sidebar 
+permalink: task-iam-manage-members-permissions.html 
+keywords: user, service account, member, role, permissions, organization, project, folder, iam, identity and access management 
+summary: Administre los miembros de su organización para otorgar permisos en diferentes niveles de la jerarquía de recursos de su organización. 
+---
+= Agregar miembros y cuentas de servicio a la consola de NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Dentro de la consola, puede agregar usuarios y cuentas de servicio a su organización y asignarles uno o más roles en su jerarquía de recursos.  Un _rol_ contiene un conjunto de permisos que permiten a un miembro (usuario o cuenta de servicio) realizar acciones específicas en un nivel específico de la jerarquía de recursos.
+
+Necesita uno de los siguientes roles para administrar usuarios y permisos:
+
+* Administrador de la organización
++
+Los usuarios con este rol pueden administrar a todos los miembros
+
+* Administrador de carpetas o proyectos
++
+Los usuarios con este rol pueden administrar únicamente a los miembros de una carpeta o proyecto designado.
+
++
+El administrador de carpeta o proyecto puede ver a todos los miembros en la página *Miembros*, pero solo puede administrar permisos para las carpetas y los proyectos a los que tienen acceso. link:reference-iam-predefined-roles.html["Obtenga más información sobre las acciones que un administrador de carpeta o proyecto puede completar"] .
+
+
+
+
+
+== Agregue miembros a su organización
+
+Puede agregar dos tipos de miembros a su organización: una cuenta de usuario y una cuenta de servicio. Las aplicaciones utilizan cuentas de servicio para realizar tareas de API sin intervención humana.  Una persona normalmente utiliza una cuenta de usuario para iniciar sesión y administrar recursos.
+
+Los usuarios deben registrarse en la consola de NetApp antes de poder agregarlos a una organización o asignarles un rol.  Crea cuentas de servicio directamente desde la consola.
+
+Para administrar usuarios y sus permisos, debe tener el rol de *Administrador de la organización* o el rol de *Administrador de carpeta o proyecto*.  Recuerde que los usuarios con el rol de *Administrador de carpeta o proyecto* solo pueden administrar miembros de la carpeta o los proyectos de los cuales tienen permisos de administrador.
+
+
+
+=== Agregar una cuenta de usuario
+
+Aunque los usuarios se registran en la consola de NetApp por su cuenta, es necesario agregarlos explícitamente a una organización o a carpetas o proyectos específicos para acceder a los recursos en la consola.
+
+.Pasos
+. Dirigir al usuario a visitar https://console.netapp.com/["Consola de NetApp"^] Para registrarse.
++
+Una vez que los usuarios se registran, completan la página *Registrarse*, revisan su correo electrónico e inician sesión. Si la consola solicita a los usuarios que creen una organización, la cierran y le notifican la creación de su cuenta.  Luego puede agregar el usuario a su organización existente.
+
++
+link:task-sign-up-saas.html["Descubra cómo registrarse en la consola de NetApp"] .
+
+. Seleccione *Administración > Identidad y acceso*.
+. Seleccione *Miembros*.
+. Seleccione *Agregar un miembro*.
+. Para *Tipo de miembro*, mantenga *Usuario* seleccionado.
+. Para *Correo electrónico del usuario*, ingrese la dirección de correo electrónico del usuario asociada con el inicio de sesión que creó.
+. Utilice la sección *Seleccionar una organización, carpeta o proyecto* para elegir el nivel de su jerarquía de recursos para el cual el miembro debe tener permisos.
++
+Tenga en cuenta lo siguiente:
+
++
+** Sólo puedes seleccionar entre las carpetas y proyectos para los que tienes permisos.
+** Al seleccionar una organización o carpeta, se otorgan al miembro permisos sobre todo su contenido.
+** Solo puedes asignar el rol de *Administrador de la organización* a nivel de organización.
+
+
+. *Seleccione una categoría* y luego seleccione un *Rol* que proporcione al miembro permisos para los recursos asociados con la organización, carpeta o proyecto que seleccionó.
++
+link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso"] .
+
+. Opcional: seleccione un rol o proyecto adicional.  Si desea proporcionar acceso a carpetas o proyectos adicionales dentro de su organización u otorgar al usuario roles adicionales en el área seleccionada, seleccione *Agregar rol*, especifique otra carpeta o proyecto o una categoría de rol diferente y luego elija un rol.
+. Seleccione *Agregar*.
++
+La consola envía al usuario un correo electrónico con instrucciones.
+
+
+
+
+
+=== Agregar una cuenta de servicio
+
+Puede automatizar tareas e integrarlas con las API de la consola de forma segura con cuentas de servicio.  Al crear una cuenta de servicio, elija entre dos métodos de autenticación: usar un ID de cliente y un secreto, o usar la autenticación JWT (JSON Web Token).  El método de identificación de cliente y secreto es adecuado para configuraciones simples, mientras que la autenticación JWT ofrece mayor seguridad para entornos automatizados o nativos de la nube.  Elija la opción que mejor se adapte a sus necesidades de seguridad y cómo planea utilizar la Consola.
+
+Si desea utilizar la autenticación JWT, tenga su clave pública o certificado listo para usar.
+
+.Pasos
+. Seleccione *Administración > Identidad y acceso*.
+. Seleccione *Miembros*.
+. Seleccione *Agregar un miembro*.
+. Para *Tipo de miembro*, seleccione *Cuenta de servicio*.
+. Introduzca un nombre para la cuenta de servicio.
+. Si desea utilizar la autenticación JWT, seleccione *Usar autenticación JWT de clave privada* y cargue su clave RSA pública o certificado.  Omite este paso si deseas utilizar un ID de cliente y un secreto en su lugar.
++
+Su certificado X.509.  Debe estar en formato PEM, CRT o CER.
+
+. Utilice la sección *Seleccionar una organización, carpeta o proyecto* para elegir el nivel de su jerarquía de recursos para el cual el miembro debe tener permisos.
++
+Tenga en cuenta lo siguiente:
+
++
+** Sólo puedes seleccionar entre las carpetas y proyectos para los que tienes permisos.
+** Al seleccionar una organización o carpeta, se otorgan al miembro permisos sobre todo su contenido.
+** Solo puedes asignar el rol de *Administrador de la organización* a nivel de organización.
+
+
+. Seleccione una *Categoría* y luego seleccione un *Rol* que proporcione al miembro permisos para los recursos asociados con la organización, carpeta o proyecto que usted seleccionó.
++
+link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso"] .
+
+. Opcional: seleccione un rol o proyecto adicional.  Si desea proporcionar acceso a carpetas o proyectos adicionales dentro de su organización u otorgar al usuario roles adicionales en el área seleccionada, seleccione *Agregar rol*, especifique otra carpeta o proyecto o una categoría de rol diferente y luego elija un rol.
+. Si no eligió utilizar la autenticación JWT, descargue o copie el ID del cliente y el secreto del cliente.  + La consola muestra el secreto del cliente solo una vez.  Cópielo de forma segura; podrá volver a crearlo más tarde si es necesario.
+. Si eligió la autenticación JWT, descargue o copie el ID del cliente y la audiencia JWT.  Esta información se muestra solo una vez y no se puede recuperar más tarde.
+. Seleccione *Cerrar*.
+
+
+
+
+== Ver miembros de la organización
+
+Para comprender qué recursos y permisos están disponibles para un miembro, puede ver los roles asignados al miembro en diferentes niveles de la jerarquía de recursos de su organización.link:task-iam-manage-roles.html["Aprenda a usar roles para controlar el acceso a los recursos de la consola."^]
+
+Puede ver tanto las cuentas de usuario como las cuentas de servicio desde la página *Miembros*.
+
+
+NOTE: También puede ver todos los miembros asociados a una carpeta o proyecto específico. link:task-iam-manage-folders-projects.html#view-associated-resources-members["Más información"] .
+
+.Pasos
+. Seleccione *Administración > Identidad y acceso*.
+. Seleccione *Miembros*.
++
+La tabla *Miembros* enumera los miembros de su organización.
+
+. Desde la página *Miembros*, navegue hasta un miembro en la tabla, seleccioneimage:icon-action.png["Un icono que consta de tres puntos uno al lado del otro."] y luego seleccione *Ver detalles*.
+
+
+
+
+== Eliminar un miembro de su organización
+
+Es posible que necesites eliminar a un miembro de tu organización (por ejemplo, si abandona tu empresa).
+
+El sistema elimina los permisos del miembro pero conserva sus cuentas de consola y del sitio de soporte de NetApp .
+
+.Pasos
+. Desde la página *Miembros*, navegue hasta un miembro en la tabla, seleccioneimage:icon-action.png["Un icono que consta de tres puntos uno al lado del otro."] luego seleccione *Eliminar usuario*.
+. Confirme que desea eliminar al miembro de su organización.
+
+
+
+
+== Recrear las credenciales para una cuenta de servicio
+
+Cree nuevas credenciales si las pierde o necesita actualizarlas.
+
+Al volver a crear las credenciales, elimina las credenciales existentes para la cuenta de servicio y crea otras nuevas. No puedes utilizar las credenciales anteriores.
+
+.Pasos
+. Seleccione *Administración > Identidad y acceso*.
+. Seleccione *Miembros*.
+. En la tabla *Miembros*, navegue hasta una cuenta de servicio, seleccioneimage:icon-action.png["Un icono que consta de tres puntos uno al lado del otro."] y luego seleccione *Recrear secretos*.
+. Seleccione *Recrear*.
+. Descargue o copie el ID del cliente y el secreto del cliente.  + El secreto del cliente se muestra solo una vez. Cópielo o descárguelo y guárdelo de forma segura.
+
+
+
+
+== Administrar la autenticación multifactor (MFA) de un usuario
+
+Si un usuario pierde el acceso a su dispositivo MFA, puede eliminar o deshabilitar su configuración MFA.
+
+Los usuarios deben reconfigurar MFA al iniciar sesión después de la eliminación.  Si el usuario solo perdió el acceso a su dispositivo MFA temporalmente, puede usar el código de recuperación que guardó cuando configuró MFA para iniciar sesión.
+
+Si no tienen su código de recuperación, deshabilite temporalmente MFA para permitir el inicio de sesión. Cuando deshabilita MFA para un usuario, esta se deshabilita solo durante ocho horas y luego se vuelve a habilitar automáticamente. Al usuario se le permite un inicio de sesión durante ese tiempo sin MFA. Después de las ocho horas, el usuario deberá utilizar MFA para iniciar sesión.
+
+
+NOTE: Para administrar la autenticación multifactor de un usuario, debe tener una dirección de correo electrónico en el mismo dominio que el usuario afectado.
+
+.Pasos
+. Seleccione *Administración > Identidad y acceso*.
+. Seleccione *Miembros*.
++
+La tabla *Miembros* enumera los miembros de su organización.
+
+. Desde la página *Miembros*, navegue hasta un miembro en la tabla, seleccioneimage:icon-action.png["Un icono que consta de tres puntos uno al lado del otro."] y luego seleccione *Administrar autenticación multifactor*.
+. Elija si desea eliminar o deshabilitar la configuración MFA del usuario.
+

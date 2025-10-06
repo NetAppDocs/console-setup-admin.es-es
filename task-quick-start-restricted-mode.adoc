@@ -1,0 +1,39 @@
+---
+sidebar: sidebar 
+permalink: task-quick-start-restricted-mode.html 
+keywords: quick start, restricted mode quick start, govcloud, government, aws gov, azure gov 
+summary: Comience a utilizar la consola de NetApp en modo restringido preparando su entorno e implementando el agente de la consola. 
+---
+= Flujo de trabajo de introducción (modo restringido)
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Comience a utilizar la consola de NetApp en modo restringido preparando su entorno e implementando el agente de la consola.
+
+El modo restringido generalmente lo utilizan los gobiernos estatales y locales y las empresas reguladas, incluidas las implementaciones en las regiones de AWS GovCloud y Azure Government.  Antes de comenzar, asegúrese de comprenderlink:concept-connectors.html["Agentes de consola"] ylink:concept-modes.html["modos de implementación"] .
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1"] link:task-prepare-restricted-mode.html["Prepárese para el despliegue"]
+https://raw.githubusercontent.com/NetAppDocs/console-setup-admin-internal/blob/main/media/screenshot-canvas.png[]
+
+[role="quick-margin-list"]
+. Prepare un host Linux dedicado que cumpla con los requisitos de CPU, RAM, espacio en disco, herramienta de orquestación de contenedores y más.
+. Configurar redes que proporcionen acceso a las redes de destino, acceso a Internet saliente para instalaciones manuales e Internet saliente para acceso diario.
+. Configure permisos en su proveedor de nube para que pueda asociar esos permisos con la instancia del agente de consola después de implementarla.
+
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dos"] link:task-install-restricted-mode.html["Implementar el agente de consola"]
+[role="quick-margin-list"]
+. Instale el agente de consola desde el marketplace de su proveedor de nube o instalando manualmente el software en su propio host Linux.
+. Configure la consola de NetApp abriendo un navegador web e ingresando la dirección IP del host Linux.
+. Proporcione al agente de la consola los permisos que configuró previamente.
+
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Tres"] link:task-subscribe-restricted-mode.html["Suscríbete a los servicios inteligentes de NetApp (opcional)"]
+[role="quick-margin-para"]
+Opcional: Suscríbase a NetApp Intelligent Services desde el mercado de su proveedor de nube para pagar los servicios de datos a una tarifa por hora (PAYGO) o mediante un contrato anual.  Los servicios inteligentes de NetApp incluyen NetApp Backup and Recovery, Cloud Volumes ONTAP, NetApp Cloud Tiering, NetApp Ransomware Resilience y NetApp Disaster Recovery.  La clasificación de datos de NetApp está incluida en su suscripción sin costo adicional.

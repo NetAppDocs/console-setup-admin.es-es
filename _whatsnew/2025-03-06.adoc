@@ -1,0 +1,34 @@
+= Actualización del conector 3.9.49
+:allow-uri-read: 
+
+
+
+
+=== Actualización del conector 3.9.49
+
+
+
+==== Acceso al Administrador del sistema ONTAP cuando BlueXP utiliza un conector
+
+Un administrador de BlueXP (usuarios con el rol de administrador de la organización) puede configurar BlueXP para solicitar a los usuarios que ingresen sus credenciales de ONTAP para acceder al administrador del sistema ONTAP .  Cuando esta configuración está habilitada, los usuarios deben ingresar sus credenciales de ONTAP cada vez, ya que no se almacenan en BlueXP.
+
+Esta función está disponible en la versión 3.9.49 y superiores del Conector. link:https://docs.netapp.com/us-en/bluexp-setup-admin//task-ontap-access-connector.html["Aprenda a configurar los ajustes de credenciales."^] .
+
+
+
+=== Actualización del conector 3.9.48
+
+
+
+==== Capacidad para deshabilitar la configuración de actualización automática del Conector
+
+Puede desactivar la función de actualización automática del Conector.
+
+Cuando utiliza BlueXP en modo estándar o modo restringido, BlueXP actualiza automáticamente su Conector a la última versión, siempre que el Conector tenga acceso a Internet saliente para obtener la actualización del software.  Si necesita administrar manualmente cuándo se actualiza el conector, ahora puede deshabilitar las actualizaciones automáticas para el modo estándar o el modo restringido.
+
+
+NOTE: Este cambio no afecta al modo privado de BlueXP , donde siempre deberás actualizar el conector tú mismo.
+
+Esta función está disponible en la versión 3.9.48 y superiores del Conector.
+
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["Descubra cómo deshabilitar la actualización automática del Conector."^]

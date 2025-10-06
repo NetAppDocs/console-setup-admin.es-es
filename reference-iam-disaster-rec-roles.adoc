@@ -1,0 +1,262 @@
+---
+sidebar: sidebar 
+permalink: reference-iam-disaster-rec-roles.html 
+keywords: disaster recovery, role-based access control, failover admin, replication plans, job- monitoring, business continuity, compliance- management, operational governance, access delegation, rbac, IAM roles 
+summary: Puede asignar los siguientes roles a los usuarios para brindarles acceso a NetApp Disaster Recovery dentro de la consola.  Los roles de recuperación ante desastres le brindan la flexibilidad de asignar a los usuarios un rol específico para las tareas que necesitan realizar dentro de su organización. La forma de asignar roles depende de su propio negocio y de sus prácticas de gestión de almacenamiento. 
+---
+= Funciones de recuperación ante desastres de NetApp en la consola de NetApp
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Puede asignar los siguientes roles a los usuarios para brindarles acceso a NetApp Disaster Recovery dentro de la consola.  Los roles de recuperación ante desastres le brindan la flexibilidad de asignar a los usuarios un rol específico para las tareas que necesitan realizar dentro de su organización. La forma de asignar roles depende de su propio negocio y de sus prácticas de gestión de almacenamiento.
+
+La recuperación ante desastres utiliza los siguientes roles:
+
+* *Administrador de recuperación ante desastres*: Realizar cualquier acción.
+* *Administrador de conmutación por error de recuperación ante desastres*: realiza conmutaciones por error y migraciones.
+* *Administrador de aplicaciones de recuperación ante desastres*: crear planes de replicación.  Modificar los planes de replicación.  Iniciar pruebas de conmutación por error.
+* *Visor de recuperación ante desastres*: Ver solo información.
+
+
+La siguiente tabla indica las acciones que puede realizar cada rol.
+
+[cols="30,20a,20a,20a,20a"]
+|===
+| Característica y acción | Administración de recuperación ante desastres | Administrador de conmutación por error de recuperación ante desastres | Administrador de aplicaciones de recuperación ante desastres | Visor de recuperación ante desastres 
+
+
+| Ver el panel y todas las pestañas  a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+| Comience una prueba gratuita  a| 
+Sí
+ a| 
+No
+ a| 
+No
+ a| 
+No
+
+
+
+| Iniciar el descubrimiento de cargas de trabajo  a| 
+Sí
+ a| 
+No
+ a| 
+No
+ a| 
+No
+
+
+
+| Ver información de la licencia  a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+| Activar licencia  a| 
+Sí
+ a| 
+No
+ a| 
+Sí
+ a| 
+No
+
+
+
+5+| *En la pestaña Sitios*: 
+
+
+| Ver sitios  a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+| Agregar, modificar o eliminar sitios  a| 
+Sí
+ a| 
+No
+ a| 
+No
+ a| 
+No
+
+
+
+5+| *En la pestaña Planes de replicación*: 
+
+
+| Ver planes de replicación  a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+| Ver detalles del plan de replicación  a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+| Crear o modificar planes de replicación  a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+ a| 
+No
+
+
+
+| Crear informes  a| 
+Sí
+ a| 
+No
+ a| 
+No
+ a| 
+No
+
+
+
+| Ver instantáneas  a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+| Realizar pruebas de conmutación por error  a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+ a| 
+No
+
+
+
+| Realizar conmutaciones por error  a| 
+Sí
+ a| 
+Sí
+ a| 
+No
+ a| 
+No
+
+
+
+| Realizar conmutaciones por recuperación  a| 
+Sí
+ a| 
+Sí
+ a| 
+No
+ a| 
+No
+
+
+
+| Realizar migraciones  a| 
+Sí
+ a| 
+Sí
+ a| 
+No
+ a| 
+No
+
+
+
+5+| *En la pestaña Grupos de recursos*: 
+
+
+| Ver grupos de recursos  a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+| Crear, modificar o eliminar grupos de recursos  a| 
+Sí
+ a| 
+No
+ a| 
+Sí
+ a| 
+No
+
+
+
+5+| *En la pestaña Supervisión de trabajos*: 
+
+
+| Ver trabajos  a| 
+Sí
+ a| 
+No
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+| Cancelar trabajos  a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+ a| 
+No
+
+|===

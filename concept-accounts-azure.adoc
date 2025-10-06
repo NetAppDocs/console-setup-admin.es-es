@@ -1,0 +1,120 @@
+---
+sidebar: sidebar 
+permalink: concept-accounts-azure.html 
+keywords: cloud provider accounts, azure, azure accounts, service principal, multiple accounts, permissions, policy, policies, subscriptions, credentials, marketplace subscription, replace subscription, subscription, bluexp 
+summary: Descubra cómo la consola de NetApp usa las credenciales de Azure para realizar acciones en su nombre y cómo esas credenciales se asocian con las suscripciones del Marketplace.  Comprender estos detalles puede resultar útil al administrar las credenciales de una o más suscripciones de Azure.  Por ejemplo, es posible que desee saber cuándo agregar credenciales de Azure adicionales a la consola. 
+---
+= Obtenga información sobre las credenciales y los permisos de Azure en la consola de NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Descubra cómo la consola de NetApp usa las credenciales de Azure para realizar acciones en su nombre y cómo esas credenciales se asocian con las suscripciones del Marketplace.  Comprender estos detalles puede resultar útil al administrar las credenciales de una o más suscripciones de Azure.  Por ejemplo, es posible que desee saber cuándo agregar credenciales de Azure adicionales a la consola.
+
+
+
+== Credenciales iniciales de Azure
+
+Al implementar un agente de consola desde la consola, debe usar una cuenta de Azure o una entidad de servicio que tenga permisos para implementar la máquina virtual del agente de consola.  Los permisos necesarios se enumeran en ellink:task-install-connector-azure-bluexp.html#connector-custom-role["Política de implementación de agentes para Azure"] .
+
+Cuando la consola implementa la máquina virtual del agente de consola en Azure, habilita una https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["identidad administrada asignada por el sistema"^] en la máquina virtual, crea un rol personalizado y lo asigna a la máquina virtual.  El rol proporciona a la consola los permisos necesarios para administrar recursos y procesos dentro de esa suscripción de Azure. link:reference-permissions-azure.html["Revisar cómo la Consola utiliza los permisos"] .
+
+image:diagram_permissions_initial_azure.png["Una imagen conceptual que muestra la consola implementando un agente de consola en una cuenta y suscripción de Azure.  Se habilita una identidad administrada asignada por el sistema y se asigna un rol personalizado a la máquina virtual del agente de consola."]
+
+Si crea un nuevo sistema para Cloud Volumes ONTAP, la consola selecciona estas credenciales de Azure de forma predeterminada:
+
+image:screenshot_accounts_select_azure.gif["Una captura de pantalla que muestra la opción Cambiar cuenta en la página Detalles y credenciales."]
+
+Puede implementar todos sus sistemas Cloud Volumes ONTAP utilizando las credenciales iniciales de Azure o puede agregar credenciales adicionales.
+
+
+
+== Suscripciones adicionales de Azure para una identidad administrada
+
+La identidad administrada asignada por el sistema asignada a la máquina virtual del agente de consola está asociada con la suscripción en la que inició el agente de consola.  Si desea seleccionar una suscripción de Azure diferente, deberá:link:task-adding-azure-accounts.html#associate-additional-azure-subscriptions-with-a-managed-identity["asociar la identidad administrada con esas suscripciones"] .
+
+
+
+== Credenciales adicionales de Azure
+
+Si desea utilizar diferentes credenciales de Azure con la consola, debe otorgar los permisos necesarios mediantelink:task-adding-azure-accounts.html["Creación y configuración de una entidad de servicio en Microsoft Entra ID"] para cada cuenta de Azure.  La siguiente imagen muestra dos cuentas adicionales, cada una configurada con una entidad de servicio y un rol personalizado que proporciona permisos:
+
+image:diagram_permissions_multiple_azure.png["Una imagen conceptual que muestra la cuenta inicial de Azure, que recibe permisos a través de un rol personalizado y una identidad administrada, y dos cuentas adicionales que reciben permisos a través de un rol personalizado y una entidad de servicio."]
+
+Entonces lo haríaslink:task-adding-azure-accounts.html#add-credentials-azure["Agregue las credenciales de la cuenta a la consola"] proporcionando detalles sobre la entidad principal del servicio AD.
+
+Por ejemplo, puede cambiar entre credenciales al crear un nuevo sistema Cloud Volumes ONTAP :
+
+image:screenshot_accounts_switch_azure.gif["Una captura de pantalla que muestra la selección entre cuentas de proveedores de nube después de seleccionar Cambiar cuenta en la página Detalles y credenciales."]
+
+
+
+== Credenciales y suscripciones al mercado
+
+Las credenciales que agrega a un agente de consola deben estar asociadas a una suscripción de Azure Marketplace para que pueda pagar Cloud Volumes ONTAP a una tarifa por hora (PAYGO) o por los servicios de datos de NetApp o mediante un contrato anual.
+
+link:task-adding-azure-accounts.html#subscribe["Aprenda a asociar una suscripción de Azure"] .
+
+Tenga en cuenta lo siguiente sobre las credenciales de Azure y las suscripciones al Marketplace:
+
+* Solo puede asociar una suscripción de Azure Marketplace con un conjunto de credenciales de Azure
+* Puede reemplazar una suscripción de mercado existente con una nueva suscripción
+
+
+
+
+== Preguntas frecuentes
+
+La siguiente pregunta está relacionada con credenciales y suscripciones.
+
+
+
+=== ¿Puedo cambiar la suscripción de Azure Marketplace para los sistemas Cloud Volumes ONTAP ?
+
+Sí, puedes.  Cuando cambia la suscripción de Azure Marketplace asociada con un conjunto de credenciales de Azure, todos los sistemas Cloud Volumes ONTAP existentes y nuevos se cobrarán a la nueva suscripción.
+
+link:task-adding-azure-accounts.html#subscribe["Aprenda a asociar una suscripción de Azure"] .
+
+
+
+=== ¿Puedo agregar varias credenciales de Azure, cada una con diferentes suscripciones al Marketplace?
+
+Todas las credenciales de Azure que pertenecen a la misma suscripción de Azure se asociarán con la misma suscripción de Azure Marketplace.
+
+Si tiene varias credenciales de Azure que pertenecen a diferentes suscripciones de Azure, esas credenciales se pueden asociar con la misma suscripción de Azure Marketplace o con diferentes suscripciones de Marketplace.
+
+
+
+=== ¿Puedo mover sistemas Cloud Volumes ONTAP existentes a una suscripción de Azure diferente?
+
+No, no es posible mover los recursos de Azure asociados con su sistema Cloud Volumes ONTAP a una suscripción de Azure diferente.
+
+
+
+=== ¿Cómo funcionan las credenciales para las implementaciones del mercado y las implementaciones locales?
+
+Las secciones anteriores describen el método de implementación recomendado para el agente de la consola, que es desde la consola.  También puede implementar un agente de consola en Azure desde Azure Marketplace y puede instalar el software del agente de consola en su propio host Linux.
+
+Si usa Marketplace, puede proporcionar permisos asignando una función personalizada a la máquina virtual del agente de consola y a una identidad administrada asignada por el sistema, o puede usar una entidad de servicio de Microsoft Entra.
+
+Para las implementaciones locales, no es posible configurar una identidad administrada para el agente de la consola, pero sí se pueden proporcionar permisos mediante una entidad de servicio.
+
+Para saber cómo configurar permisos, consulte las siguientes páginas:
+
+* Modo estándar
++
+** link:task-install-connector-azure-marketplace.html#step-3-set-up-permissions["Configurar permisos para una implementación de Azure Marketplace"]
+** link:task-install-connector-on-prem.html#agent-permission-aws-azure["Configurar permisos para implementaciones locales"]
+
+
+* Modo restringido
++
+** link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Configurar permisos para el modo restringido"]
+
+
+

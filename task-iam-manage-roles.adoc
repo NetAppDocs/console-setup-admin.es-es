@@ -1,0 +1,91 @@
+---
+sidebar: sidebar 
+permalink: task-iam-manage-roles.html 
+keywords: projects, access, resources, user roles, iam, identity and access management, folder, organization, permissions, roles, members, access roles 
+summary: Dentro de la consola de NetApp , puede asignar roles a los usuarios según lo que necesiten hacer y dónde. 
+---
+= Utilice roles para administrar el acceso de los usuarios a los recursos de la consola de NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Dentro de la consola, puedes asignar roles a los usuarios según lo que necesiten hacer y dónde.
+
+Los usuarios con el rol de *Administrador de la organización* o *Administrador de carpeta o proyecto* tienen la responsabilidad de asignar roles a otros usuarios.  Puede asignar roles de acceso por proyecto o carpeta.  Por ejemplo, puede asignar a un usuario el rol de administrador de protección contra ransomware para un proyecto y el rol de administrador de SnapCenter para un proyecto diferente.  De manera alternativa, si un usuario necesita el rol de administrador de Clasificación para todos los proyectos dentro de una carpeta específica, puede otorgarle este rol a nivel de carpeta.
+
+Utilice roles de acceso para asignar acceso a los recursos de almacenamiento en función de las tareas específicas que los usuarios necesitan realizar.  Por ejemplo, si un usuario necesita interactuar con servicios de protección contra ransomware, se le debe otorgar un rol de acceso que incluya permisos de visualización o administrativos para el servicio de protección contra ransomware del proyecto para el cual se le otorga el rol de acceso.
+
+Asigne roles a los usuarios según su estrategia de IAM para mejorar la seguridad.  Los roles de IAM garantizan que los usuarios tengan solo el acceso que necesitan.
+
+
+NOTE: Recuerde que no puede otorgar acceso directo a los recursos.  Asignar recursos a los proyectos primero.  Considere configurar su jerarquía de recursos antes de asignar acceso a los usuarios.link:task-iam-manage-folders-projects.html["Aprenda a organizar sus recursos con carpetas y proyectos."]
+
+
+
+== Ver los roles asignados a un miembro
+
+Cuando agrega un miembro a su organización, se le solicita que le asigne un rol.  Puede que los miembros verifiquen qué roles tienen asignados actualmente.
+
+Si tiene el rol de _Administrador de carpeta o de proyecto_, la página muestra todos los miembros de la organización.  Sin embargo, solo puede ver y administrar los permisos de miembros para las carpetas y proyectos para los que tiene permisos. link:reference-iam-predefined-roles.html["Obtenga más información sobre las acciones que un administrador de carpeta o proyecto puede completar"] .
+
+. Desde la página *Miembros*, navegue hasta un miembro en la tabla, seleccioneimage:icon-action.png["Un icono que consta de tres puntos uno al lado del otro."] y luego seleccione *Ver detalles*.
+. En la tabla, expanda la fila correspondiente a la organización, carpeta o proyecto donde desea ver el rol asignado al miembro y seleccione *Ver* en la columna *Rol*.
+
+
+
+
+== Agregar un rol de acceso a un miembro
+
+Normalmente, se asigna un rol al agregar un miembro a su organización, pero puede actualizarlo en cualquier momento eliminando o agregando roles.
+
+Puede asignar a un usuario un rol de acceso para su organización, carpeta o proyecto.
+
+Los miembros pueden tener múltiples roles dentro del mismo proyecto y en diferentes proyectos.  Por ejemplo, las organizaciones más pequeñas pueden asignar todos los roles de acceso disponibles al mismo usuario, mientras que las organizaciones más grandes pueden hacer que los usuarios realicen tareas más especializadas.  Como alternativa, también puede asignar a un usuario el rol de administrador de protección contra ransomware para una organización.  En ese ejemplo, el usuario podría realizar tareas de protección contra ransomware en todos los proyectos dentro de su organización.
+
+Su estrategia de roles de acceso debe estar alineada con la forma en que ha organizado sus recursos de NetApp .
+
+
+TIP: A un miembro al que se le asigna el rol de administrador de la organización no se le pueden asignar roles adicionales.  Ya tienen permisos en toda la organización.  A un miembro con el rol de Carpeta o Proyecto no se le puede asignar ningún otro rol dentro de la carpeta o el proyecto donde ya tiene ese rol.  Ambos roles proporcionan acceso a todos los servicios dentro del alcance que están asignados.
+
+.Pasos
+. Seleccione *Administración > Identidad y acceso*.
+. Seleccione el menú de accionesimage:icon-action.png["un icono con tres puntos verticales"] junto al miembro al que desea asignar un rol y seleccione *Agregar un rol*.
+. Para agregar un rol, complete los pasos en el cuadro de diálogo:
++
+** *Seleccione una organización, carpeta o proyecto*: elija el nivel de su jerarquía de recursos para el cual el miembro debe tener permisos.
++
+Si selecciona la organización o una carpeta, el miembro tendrá permisos sobre todo lo que resida dentro de la organización o carpeta.
+
+** *Seleccionar una categoría*: Elija una categoría de rol. link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso"^] .
+** Seleccionar un *Rol*: elija un rol que proporcione al miembro permisos para los recursos asociados con la organización, carpeta o proyecto que seleccionó.
+** *Agregar rol*: si desea proporcionar acceso a carpetas o proyectos adicionales dentro de su organización, seleccione *Agregar rol*, especifique otra carpeta, proyecto o categoría de rol y luego seleccione una categoría de rol y un rol correspondiente.
+
+
+. Seleccione *Agregar nuevos roles*.
+
+
+
+
+== Cambiar el rol asignado a un miembro
+
+Puede cambiar los roles asignados a un miembro si necesita ajustar el acceso de un usuario.
+
+
+NOTE: Los usuarios deben tener al menos un rol asignado.  No se pueden eliminar todos los roles de un usuario.  Si necesita eliminar todos los roles, debe eliminar el usuario de su organización.
+
+.Pasos
+. Seleccione *Administración > Identidad y acceso*.
+. Desde la página *Miembros*, navegue hasta un miembro en la tabla, seleccioneimage:icon-action.png["Un icono que consta de tres puntos uno al lado del otro."] y luego seleccione *Ver detalles*.
+. En la tabla, expanda la fila correspondiente a la organización, carpeta o proyecto donde desea cambiar el rol asignado al miembro y seleccione *Ver* en la columna *Rol* para ver los roles asignados a este miembro.
+. Puede cambiar un rol existente de un miembro o eliminar un rol.
++
+.. Para cambiar el rol de un miembro, seleccione *Cambiar* junto al rol que desea cambiar.  Sólo puedes cambiar un rol a un rol dentro de la misma categoría de rol.  Por ejemplo, puede cambiar de un rol de servicio de datos a otro.  Confirmar el cambio.
+.. Para desasignar el rol de un miembro, seleccioneimage:icon-delete.png["Un icono que se parece a un bote de basura"] al lado del rol para desasignar al miembro el rol respectivo.  Se le pedirá que confirme la eliminación.
+
+
+

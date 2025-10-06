@@ -1,0 +1,16 @@
+= 
+:allow-uri-read: 
+
+
+. Revise sus selecciones para verificar que su configuración sea correcta.
++
+.. La casilla de verificación *Validar configuración del agente* está marcada de forma predeterminada para que la consola valide los requisitos de conectividad de red cuando se implementa.  Si la consola no logra implementar el agente, proporciona un informe para ayudarlo a solucionar el problema.  Si la implementación se realiza correctamente, no se proporciona ningún informe.
+
+
++
+[]
+====
+Si todavía estás usando ellink:reference-networking-saas-console-previous.html["puntos finales anteriores"] utilizado para actualizaciones de agente, la validación falla con un error.  Para evitar esto, desmarque la casilla de verificación para omitir la comprobación de validación.
+
+====
+

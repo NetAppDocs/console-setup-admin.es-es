@@ -1,0 +1,124 @@
+= 
+:allow-uri-read: 
+
+
+Puntos finales contactados durante la instalación manual:: Cuando instala manualmente el agente de consola en su propio host Linux, el instalador del agente de consola requiere acceso a las siguientes URL durante el proceso de instalación:
+
+
+[cols="2*"]
+|===
+| Puntos finales | Objetivo 
+
+
+| \ https://mysupport.netapp.com |  
+
+
+| \ https://signin.b2c.netapp.com | (este punto final es la URL CNAME para \ https://mysupport.netapp.com ) 
+
+
+| \ https://cloudmanager.cloud.netapp.com/tenancy |  
+
+
+| \ https://stream.cloudmanager.cloud.netapp.com |  
+
+
+| \ https://production-artifacts.cloudmanager.cloud.netapp.com |  
+
+
+ a| 
+* Opción 1 (recomendada):
++
+** \ https://bluexpinfraprod.eastus2.data.azurecr.io
+** \ https://bluexpinfraprod.azurecr.io
+
+
+* Opción 2:
++
+** \https://*.blob.core.windows.net
+** \ https://cloudmanagerinfraprod.azurecr.io
+
+
+
+ a| 
+Para obtener imágenes, el instalador necesita acceso a uno de estos dos conjuntos de puntos finales.  ^1^ Se recomiendan los puntos finales enumerados en la opción 1 porque son más seguros.  Le recomendamos que configure su firewall para permitir los puntos finales enumerados en la opción 1 y deshabilitar los puntos finales enumerados en la opción 2.  Tenga en cuenta lo siguiente acerca de estos puntos finales:
+
+* Los puntos finales enumerados en la opción 1 son compatibles a partir de la versión 3.9.47 del agente de consola.  No hay compatibilidad con versiones anteriores del agente de consola.
+* El agente de la consola se comunica primero con los puntos finales enumerados en la opción 2.  Si esos puntos finales no son accesibles, el agente de la consola se comunica automáticamente con los puntos finales enumerados en la opción 1.
+* Los puntos finales de la opción 1 no son compatibles si utiliza el agente de consola con NetApp Backup and Recovery o NetApp Ransomware Resilience.  En este caso, puede deshabilitar los puntos finales enumerados en la opción 1, mientras que permite los puntos finales enumerados en la opción 2.
+
+
+|===
+Puntos finales contactados durante la instalación manual:: Cuando instala manualmente el agente de consola en su propio host Linux, el instalador del agente de consola requiere acceso a varias URL durante el proceso de instalación.
+
+
+[cols="2*"]
+|===
+| Puntos finales | Objetivo 
+
+
+| \ https://mysupport.netapp.com |  
+
+
+| \ https://signin.b2c.netapp.com | Este punto final es la URL CNAME para https://mysupport.netapp.com 
+
+
+| \ https://cloudmanager.cloud.netapp.com/tenancy |  
+
+
+| \ https://stream.cloudmanager.cloud.netapp.com |  
+
+
+| \ https://production-artifacts.cloudmanager.cloud.netapp.com |  
+
+
+2+| *Región gubernamental de AWS* Si instala el agente de consola en una región gubernamental de AWS, el instalador también necesita acceso a estos puntos finales: 
+
+
+ a| 
+\https://*.blob.core.windows.net
+ a| 
+
+
+
+ a| 
+\ https://cloudmanagerinfraprod.azurecr.io
+ a| 
+
+
+
+2+| *Región de Azure Government* Si instala el agente de consola en una región de Azure Government, el instalador también necesita acceso a estos puntos de conexión: 
+
+
+ a| 
+\https://*.blob.core.windows.net
+ a| 
+
+
+
+ a| 
+\ https://occmclientinfragov.azurecr.us
+ a| 
+
+
+
+2+| *Regiones comerciales o soberanas* Si instala el agente de consola en una región comercial o soberana, puede elegir entre dos conjuntos de puntos finales: 
+
+
+ a| 
+**Opción 1 (recomendada):** * \ https://bluexpinfraprod.eastus2.data.azurecr.io * \ https://bluexpinfraprod.azurecr.io
+
+**Opción 2:** * \https://*.blob.core.windows.net * \ https://cloudmanagerinfraprod.azurecr.io
+ a| 
+Se recomiendan los puntos finales enumerados en la opción 1 porque son más seguros.  Le recomendamos que configure su firewall para permitir los puntos finales enumerados en la opción 1 y deshabilitar los puntos finales enumerados en la opción 2.  Tenga en cuenta lo siguiente acerca de estos puntos finales:
+
+* Los puntos finales enumerados en la opción 1 son compatibles a partir de la versión 3.9.47 del agente de consola.  No hay compatibilidad con versiones anteriores del agente de consola.
+* El agente de la consola se comunica primero con los puntos finales enumerados en la opción 2.  Si esos puntos finales no son accesibles, el agente de la consola se comunica automáticamente con los puntos finales enumerados en la opción 1.
+* Los puntos finales de la opción 1 no son compatibles si utiliza el agente de consola con NetApp Backup and Recovery o NetApp Ransomware Resilience.  En este caso, puede deshabilitar los puntos finales enumerados en la opción 1, mientras que permite los puntos finales enumerados en la opción 2.
+
+
+|===
++
+
+Se recomiendan los puntos finales enumerados en la opción 1 porque son más seguros.  Le recomendamos que configure su firewall para permitir los puntos finales enumerados en la opción 1 y deshabilitar los puntos finales enumerados en la opción 2.  Tenga en cuenta lo siguiente acerca de estos puntos finales: ** Los puntos finales enumerados en la opción 1 son compatibles a partir de la versión 3.9.47 del agente de consola.  No hay compatibilidad con versiones anteriores del agente de consola.  ** El agente de la consola se comunica primero con los puntos finales enumerados en la opción 2.  Si esos puntos finales no son accesibles, el agente de la consola se comunica automáticamente con los puntos finales enumerados en la opción 1.  ** Los puntos finales de la opción 1 no son compatibles si utiliza el agente de consola con NetApp Backup and Recovery o NetApp Ransomware Resilience.  En este caso, puede deshabilitar los puntos finales enumerados en la opción 1, mientras que permite los puntos finales enumerados en la opción 2.
+
+Es posible que el host intente actualizar los paquetes del sistema operativo durante la instalación.  El host puede ponerse en contacto con diferentes sitios de duplicación para estos paquetes de SO.

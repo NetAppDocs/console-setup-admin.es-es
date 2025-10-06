@@ -1,0 +1,285 @@
+---
+sidebar: sidebar 
+permalink: reference-iam-backup-rec-roles.html 
+keywords: backing up, restoring, back up, backup, restore, cloud volumes ontap, aws, azure, s3, blob, google cloud, storagegrid, back up volumes, cloud backup, restore volumes, cost, on-premises ontap, onprem, applications, virtual machines, backup and recovery, roles, permissions, access control, role-based access control, rbac, role-based access 
+summary: Puede asignar los siguientes roles a los usuarios para brindarles acceso a NetApp Backup and Recovery dentro de la consola.  Los roles de respaldo y recuperación le brindan la flexibilidad de asignar a los usuarios un rol específico para las tareas que necesitan realizar dentro de su organización. La forma de asignar roles depende de su propio negocio y de sus prácticas de gestión de almacenamiento. 
+---
+= Funciones de copia de seguridad y recuperación de NetApp en la consola de NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Puede asignar los siguientes roles a los usuarios para brindarles acceso a NetApp Backup and Recovery dentro de la consola.  Los roles de respaldo y recuperación le brindan la flexibilidad de asignar a los usuarios un rol específico para las tareas que necesitan realizar dentro de su organización. La forma de asignar roles depende de su propio negocio y de sus prácticas de gestión de almacenamiento.
+
+Backup and Recovery utiliza los siguientes roles:
+
+* *Superadministrador de copias de seguridad y recuperación*: Realizar cualquier acción.
+* *Administrador de copias de seguridad y recuperación*: realiza copias de seguridad en instantáneas locales, replica en almacenamiento secundario y realiza copias de seguridad en almacenamiento de objetos.
+* *Administrador de restauración de copias de seguridad y recuperación*: Restaurar cargas de trabajo.
+* *Administrador de clones de copia de seguridad y recuperación*: Clonar aplicaciones y datos.
+* *Visor de copias de seguridad y recuperación*: vea información de copias de seguridad y recuperación.
+
+
+La siguiente tabla indica las acciones que puede realizar cada rol.
+
+[cols="20,20,15,15a,15a,15a"]
+|===
+| Característica y acción | Superadministrador de copias de seguridad y recuperación | Administrador de respaldo | Restaurar administrador | Clonar administrador | Espectador 
+
+
+| Agregar, editar o eliminar hosts | Sí | No  a| 
+No
+ a| 
+No
+ a| 
+No
+
+
+
+| Instalar complementos | Sí | No  a| 
+No
+ a| 
+No
+ a| 
+No
+
+
+
+| Agregar credenciales (host, instancia, vCenter) | Sí | No  a| 
+No
+ a| 
+No
+ a| 
+No
+
+
+
+| Ver el panel y todas las pestañas | Sí | Sí  a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+| Comience una prueba gratuita | Sí | No  a| 
+No
+ a| 
+No
+ a| 
+No
+
+
+
+| Iniciar el descubrimiento de cargas de trabajo | No | Sí  a| 
+Sí
+ a| 
+Sí
+ a| 
+No
+
+
+
+| Ver información de la licencia | Sí | Sí  a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+| Activar licencia | Sí | No  a| 
+No
+ a| 
+No
+ a| 
+No
+
+
+
+| Ver anfitriones | Sí | Sí  a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+6+| *Horarios*: 
+
+
+| Activar horarios | Sí | Sí  a| 
+Sí
+ a| 
+Sí
+ a| 
+No
+
+
+
+| Suspender horarios | Sí | Sí  a| 
+Sí
+ a| 
+Sí
+ a| 
+No
+
+
+
+6+| *Políticas y protección*: 
+
+
+| Ver planes de protección | Sí | Sí  a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+| Crear, modificar o eliminar planes de protección | Sí | Sí  a| 
+No
+ a| 
+No
+ a| 
+No
+
+
+
+| Restaurar cargas de trabajo | Sí | No  a| 
+Sí
+ a| 
+No
+ a| 
+No
+
+
+
+| Crear, dividir o eliminar clones | Sí | No  a| 
+No
+ a| 
+Sí
+ a| 
+No
+
+
+
+| Crear, modificar o eliminar una política | Sí | Sí  a| 
+No
+ a| 
+No
+ a| 
+No
+
+
+
+6+| *Informes*: 
+
+
+| Ver informes | Sí | Sí  a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+| Crear informes | Sí | Sí  a| 
+Sí
+ a| 
+Sí
+ a| 
+No
+
+
+
+| Eliminar informes | Sí | No  a| 
+No
+ a| 
+No
+ a| 
+No
+
+
+
+6+| *Importar desde SnapCenter y administrar el host*: 
+
+
+| Ver datos importados de SnapCenter | Sí | Sí  a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+| Importar datos desde SnapCenter | Sí | Sí  a| 
+No
+ a| 
+No
+ a| 
+No
+
+
+
+| Administrar (migrar) host | Sí | Sí  a| 
+No
+ a| 
+No
+ a| 
+No
+
+
+
+6+| *Configurar ajustes*: 
+
+
+| Configurar el directorio de registro | Sí | Sí  a| 
+Sí
+ a| 
+No
+ a| 
+No
+
+
+
+| Asociar o eliminar credenciales de instancia | Sí | Sí  a| 
+Sí
+ a| 
+No
+ a| 
+No
+
+
+
+6+| *Cubos*: 
+
+
+| Ver depósitos de almacenamiento | Sí | Sí  a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+| Crear, editar o eliminar depósitos de almacenamiento | Sí | Sí  a| 
+No
+ a| 
+No
+ a| 
+No
+
+|===

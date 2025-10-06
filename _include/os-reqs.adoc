@@ -1,0 +1,190 @@
+= 
+:allow-uri-read: 
+
+
+Host dedicado:: El agente de consola no es compatible con un host compartido con otras aplicaciones. El host debe ser un host dedicado.  El host puede ser de cualquier arquitectura que cumpla con los siguientes requisitos de tamaño:
++
+--
+* CPU: 8 núcleos u 8 vCPU
+* RAM: 32 GB
+* Espacio en disco: se recomiendan 165 GB para el host, con los siguientes requisitos de partición:
++
+** `/opt`:Debe haber 120 GiB de espacio disponibles
++
+El agente utiliza `/opt` Para instalar el `/opt/application/netapp` directorio y su contenido.
+
+** `/var`:Debe haber 40 GiB de espacio disponibles
++
+El agente de consola requiere este espacio en `/var` porque Docker o Podman están diseñados para crear los contenedores dentro de este directorio.  En concreto, crearán contenedores en el `/var/lib/containers/storage` directorio.  Los montajes externos o enlaces simbólicos no funcionan para este espacio.
+
+
+
+
+
+--
+
+
+* CPU: 8 núcleos u 8 vCPU
+* RAM: 32 GB
+* Espacio en disco: 165 GB (aprovisionamiento grueso)
+* vSphere 7.0 o superior
+* Host ESXi 7.03 o superior
+
+
+
+NOTE: El agente de consola reserva el rango de UID y GID de 19000 a 19200.  Este rango es fijo y no se puede modificar.  Si algún software de terceros en su host utiliza UID o GID dentro de este rango, la instalación del agente fallará.  NetApp recomienda utilizar un host que esté libre de software de terceros para evitar conflictos.
+
+Hipervisor:: Se requiere un hipervisor alojado o de metal desnudo que esté certificado para ejecutar un sistema operativo compatible.
+
+
+[[podman-versions]]Requisitos del sistema operativo y del contenedor:: El agente de consola es compatible con los siguientes sistemas operativos cuando se utiliza la consola en modo estándar o modo restringido.  Se requiere una herramienta de orquestación de contenedores antes de instalar el agente.
++
+--
+[cols="2a,2a,2a,2a,2a"]
+|===
+| Sistema operativo | Versiones de sistema operativo compatibles | Versiones de agente compatibles | Herramienta de contenedor requerida | SELinux a 
+
+
+ a| 
+Red Hat Enterprise Linux
+ a| 
+9.1 a 9.4
+
+8.6 a 8.10
+
+* Sólo versiones en idioma inglés.
+* El host debe estar registrado en Red Hat Subscription Management.  Si no está registrado, el host no puede acceder a los repositorios para actualizar el software de terceros requerido durante la instalación del agente.
+
+ a| 
+3.9.50 o posterior con la consola en modo estándar o modo restringido
+ a| 
+Versión de Podman 4.6.1 o 4.9.4
+
+<<podman-configuration,Ver los requisitos de configuración de Podman>> .
+ a| 
+Compatible con modo de aplicación o modo permisivo
+
+* La administración de los sistemas Cloud Volumes ONTAP NO es compatible con agentes que tengan SELinux habilitado en el sistema operativo.
+
+
+
+
+ a| 
+Ubuntu
+ a| 
+24,04 LTS
+ a| 
+3.9.45 o posterior con la consola de NetApp en modo estándar o modo restringido
+ a| 
+Motor Docker 23.06 a 28.0.0.
+ a| 
+No compatible
+
+
+
+ a| 
+22,04 LTS
+ a| 
+3.9.50 o posterior
+ a| 
+Motor Docker 23.0.6 a 28.0.0.
+ a| 
+No compatible
+
+|===
+--
+
+
+[[podman-versions]]Requisitos del sistema operativo y del contenedor:: El agente de consola es compatible con los siguientes sistemas operativos cuando se utiliza la consola en modo privado.  Se requiere una herramienta de orquestación de contenedores antes de instalar el agente.
++
+--
+[cols="2a,2a,2a,2a,2a"]
+|===
+| Sistema operativo | Versiones de sistema operativo compatibles | Versiones de agente compatibles | Herramienta de contenedor requerida | SELinux 
+
+
+ a| 
+Red Hat Enterprise Linux
+ a| 
+9.1 a 9.4
+
+8.6 a 8.10
+ a| 
+3.9.42 o posterior con la consola en modo privado
+ a| 
+Versión de Podman 4.6.1 o 4.9.4
+
+<<podman-configuration,Ver los requisitos de configuración de Podman>> .
+ a| 
+Compatible con modo de aplicación o modo permisivo ^1^
+
+
+
+ a| 
+Ubuntu
+ a| 
+22,04 LTS
+ a| 
+3.9.29 o posterior
+ a| 
+Motor Docker 23.0.6 a 26.0.0
+
+26.0.0 es compatible con el _nuevo_ agente 3.9.44 o instalaciones posteriores
+ a| 
+No compatible
+
+|===
+Notas:
+
+. La administración de los sistemas Cloud Volumes ONTAP no es compatible con agentes que tengan SELinux habilitado en el sistema operativo.
+. El agente de consola es compatible con las versiones en inglés de estos sistemas operativos.
+. Para RHEL, el host debe estar registrado en Red Hat Subscription Management.  Si no está registrado, el host no puede acceder a los repositorios para actualizar el software de terceros requerido durante la instalación del agente.
+
+
+--
+
+
+UPC:: 8 núcleos u 8 vCPU
+RAM:: 32 GB
+
+
+Tipo de instancia de AWS EC2:: Un tipo de instancia que cumple con los requisitos de CPU y RAM anteriores.  Recomendamos t3.2xlarge.
+
+
+Par de claves:: Cuando cree el agente de consola, deberá seleccionar un par de claves EC2 para usar con la instancia.
+
+
+Límite de salto de respuesta PUT al usar IMDSv2:: Si IMDSv2 está habilitado en la instancia EC2 (esta es la configuración predeterminada para las nuevas instancias EC2), debe cambiar el límite de saltos de respuesta PUT en la instancia a 3.  Si no cambia el límite en la instancia EC2, recibirá un error de inicialización de la interfaz de usuario cuando intente configurar el agente.
++
+--
+* link:task-require-imdsv2.html["Requerir el uso de IMDSv2 en instancias de Amazon EC2"]
+* https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-IMDS-existing-instances.html#modify-PUT-response-hop-limit["Documentación de AWS: Cambiar el límite de saltos de respuesta PUT"^]
+
+
+--
+
+
+Tamaño de la máquina virtual de Azure:: Un tipo de instancia que cumple con los requisitos de CPU y RAM anteriores.  Recomendamos Standard_D8s_v3.
+
+
+Tipo de máquina de Google Cloud:: Un tipo de instancia que cumple con los requisitos de CPU y RAM anteriores.  Recomendamos n2-standard-8.
++
+--
+El agente de consola es compatible con Google Cloud en una instancia de máquina virtual con un sistema operativo compatible. https://cloud.google.com/compute/shielded-vm/docs/shielded-vm["Características de las máquinas virtuales protegidas"^]
+
+--
+
+
+Espacio en disco en /opt:: Deben estar disponibles 100 GiB de espacio
++
+--
+El agente utiliza `/opt` Para instalar el `/opt/application/netapp` directorio y su contenido.
+
+--
+Espacio en disco en /var:: Deben estar disponibles 20 GiB de espacio
++
+--
+El agente de consola requiere este espacio en `/var` porque Docker o Podman están diseñados para crear los contenedores dentro de este directorio.  En concreto, crearán contenedores en el `/var/lib/containers/storage` directorio.  Los montajes externos o enlaces simbólicos no funcionan para este espacio.
+
+--
+

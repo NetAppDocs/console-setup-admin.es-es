@@ -1,0 +1,64 @@
+---
+sidebar: sidebar 
+permalink: concept-accounts-gcp.html 
+keywords: cloud provider accounts, gcp, gcp accounts, google cloud platform, google accounts, google cloud platform accounts, permissions, project, google cloud project, credential, bluexp 
+summary: Descubra cómo la consola de NetApp utiliza las credenciales de Google Cloud para realizar acciones en su nombre y cómo esas credenciales se asocian con las suscripciones del mercado.  Comprender estos detalles puede resultar útil al administrar las credenciales de uno o más proyectos de Google Cloud.  Por ejemplo, es posible que desee obtener información sobre la cuenta de servicio asociada con la máquina virtual del agente de consola. 
+---
+= Obtenga más información sobre los proyectos y permisos de Google Cloud
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Descubra cómo la consola de NetApp utiliza las credenciales de Google Cloud para realizar acciones en su nombre y cómo esas credenciales se asocian con las suscripciones del mercado.  Comprender estos detalles puede resultar útil al administrar las credenciales de uno o más proyectos de Google Cloud.  Por ejemplo, es posible que desee obtener información sobre la cuenta de servicio asociada con la máquina virtual del agente de consola.
+
+
+
+== Proyecto y permisos para la consola de NetApp
+
+Antes de poder usar la consola para administrar recursos en su proyecto de Google Cloud, primero debe implementar un agente de consola.  El agente no puede estar ejecutándose en sus instalaciones ni en un proveedor de nube diferente.
+
+Se deben establecer dos conjuntos de permisos antes de implementar un agente de consola directamente desde la consola:
+
+. Debe implementar un agente de consola mediante una cuenta de Google que tenga permisos para iniciar la instancia de VM del agente de consola desde la consola.
+. Al implementar el agente de la consola, se le solicitará que seleccione un https://cloud.google.com/iam/docs/service-accounts["cuenta de servicio"^] para la instancia de VM.  La consola obtiene permisos de la cuenta de servicio para crear y administrar sistemas Cloud Volumes ONTAP , administrar copias de seguridad mediante el respaldo y la recuperación de NetApp , y más.  Los permisos se proporcionan adjuntando un rol personalizado a la cuenta de servicio.
+
+
+La siguiente imagen representa los requisitos de permiso descritos en los números 1 y 2 anteriores:
+
+image:diagram_permissions_gcp.png["Una imagen conceptual que representa los requisitos de permisos para que las cuentas de Google y de servicio implementen Cloud Volumes ONTAP."]
+
+Para saber cómo configurar permisos, consulte las siguientes páginas:
+
+* link:task-install-connector-google-bluexp-gcloud.html#agent-permissions-google["Configurar los permisos de Google Cloud para el modo estándar"]
+* link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Configurar permisos para el modo restringido"]
+
+
+
+
+== Credenciales y suscripciones al mercado
+
+Cuando implementa un agente de consola en Google Cloud, la consola crea un conjunto predeterminado de credenciales para la cuenta de servicio de Google Cloud en el proyecto en el que reside el agente de consola.  Estas credenciales deben estar asociadas a una suscripción a Google Cloud Marketplace para que pueda pagar los servicios de datos de Cloud Volumes ONTAP y NetApp .
+
+link:task-adding-gcp-accounts.html["Aprenda a asociar una suscripción a Google Cloud Marketplace"] .
+
+Tenga en cuenta lo siguiente sobre las credenciales de Google Cloud y las suscripciones al mercado:
+
+* Solo se puede asociar un conjunto de credenciales de Google Cloud con un agente de consola
+* Solo puedes asociar una suscripción a Google Cloud Marketplace con las credenciales
+* Puede reemplazar una suscripción de mercado existente con una nueva suscripción
+
+
+
+
+== Proyecto para Cloud Volumes ONTAP
+
+Cloud Volumes ONTAP puede residir en el mismo proyecto que el agente de consola o en un proyecto diferente.  Para implementar Cloud Volumes ONTAP en un proyecto diferente, primero debe agregar la cuenta de servicio y el rol del agente de consola a ese proyecto.
+
+* link:task-install-connector-google-bluexp-gcloud.html#agent-permissions-google["Aprenda a configurar la cuenta de servicio"]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp.html["Aprenda a implementar Cloud Volumes ONTAP en Google Cloud y seleccione un proyecto"^]
+

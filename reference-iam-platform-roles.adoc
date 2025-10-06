@@ -1,0 +1,173 @@
+---
+sidebar: sidebar 
+permalink: reference-iam-platform-roles.html 
+keywords: predefined roles, iam roles, organization admin, folder or project admin, classification viewer, snapcenter admin, role, iam role, admin, iam, identity and access management, bluexp 
+summary: Asigne roles de plataforma a los usuarios para otorgar permisos para administrar la consola de NetApp , asignar roles, agregar usuarios, crear agentes de consola y administrar federaciones. 
+---
+= Roles de acceso a la plataforma de la consola de NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Asigne roles de plataforma a los usuarios para otorgar permisos para administrar la consola de NetApp , asignar roles, agregar usuarios, crear agentes de consola y administrar federaciones.
+
+.Ejemplo de roles organizacionales para una gran organización multinacional
+XYZ Corporation organiza el acceso al almacenamiento de datos por región (América del Norte, Europa y Asia-Pacífico), proporcionando control regional con supervisión centralizada.
+
+El *administrador de la organización* en la consola de XYZ Corporation crea una organización inicial y carpetas separadas para cada región. El administrador de carpeta o proyecto de cada región organiza los proyectos (con los recursos asociados) dentro de la carpeta de la región.
+
+Los administradores regionales con el rol de *Administrador de carpeta o proyecto* administran activamente sus carpetas agregando recursos y usuarios. Estos administradores regionales también pueden agregar, eliminar o cambiar el nombre de las carpetas y los proyectos que administran. El *administrador de la organización* hereda los permisos para cualquier recurso nuevo, lo que mantiene la visibilidad del uso del almacenamiento en toda la organización.
+
+Dentro de la misma organización, a un usuario se le asigna el rol de *administrador de federación* para administrar la federación de la organización con su IdP corporativo. Este usuario puede agregar o eliminar organizaciones federadas, pero no puede administrar usuarios ni recursos dentro de la organización. El *Administrador de la organización* asigna a un usuario el rol de *Visor de la federación* para verificar el estado de la federación y ver las organizaciones federadas.
+
+Las siguientes tablas indican las acciones que cada rol de la plataforma de consola puede realizar.
+
+
+
+== Roles de administración de la organización
+
+[cols="2,1,1"]
+|===
+| Tarea | Administrador de la organización | Administrador de carpetas o proyectos 
+
+
+| Crear agentes | Sí | No 
+
+
+| Crear, modificar o eliminar sistemas desde la consola (agregar o descubrir sistemas) | Sí | Sí 
+
+
+| Crear carpetas y proyectos, incluida la eliminación | Sí | No 
+
+
+| Cambiar el nombre de carpetas y proyectos existentes | Sí | Sí 
+
+
+| Asignar roles y agregar usuarios | Sí | Sí 
+
+
+| Asociar recursos con carpetas y proyectos | Sí | Sí 
+
+
+| Asociar agentes con carpetas y proyectos | Sí | No 
+
+
+| Eliminar agentes de carpetas y proyectos | Sí | No 
+
+
+| Administrar agentes (editar certificados, configuraciones, etc.) | Sí | No 
+
+
+| Administrar credenciales desde Administración > Credenciales | Sí | Sí 
+
+
+| Crear, administrar y visualizar federaciones | Sí | No 
+
+
+| Regístrese para recibir soporte y enviar casos a través de la Consola | Sí | Sí 
+
+
+| Utilice servicios de datos que no estén asociados a un rol de acceso explícito | Sí | Sí 
+
+
+| Ver la página de Auditoría y notificaciones | Sí | Sí 
+|===
+
+
+== Roles de la federación
+
+[cols="2,1,1"]
+|===
+| Tarea | Administración de la federación | Visor de la Federación 
+
+
+| Crear una federación | Sí | No 
+
+
+| Verificar un dominio | Sí | No 
+
+
+| Agregar un dominio a una federación | Sí | No 
+
+
+| Deshabilitar y eliminar federaciones | Sí | No 
+
+
+| Federaciones de pruebas | Sí | No 
+
+
+| Ver federaciones y sus detalles | Sí | Sí 
+|===
+
+
+== Roles de asociación
+
+[cols="2,1,1"]
+|===
+| Tarea | Administración de asociaciones | Visor de asociaciones 
+
+
+| Puede crear una asociación | Sí | No 
+
+
+| Asignar roles a los miembros del socio | Sí | No 
+
+
+| Puede agregar miembros a una asociación | Sí | No 
+
+
+| Puede ver los detalles de la asociación de la organización | Sí | Sí 
+|===
+
+
+== Roles de superadministrador y espectador
+
+El rol de *Superadministrador* proporciona acceso completo para administrar las funciones de la consola, el almacenamiento y los servicios de datos.  Este rol es adecuado para aquellos que supervisan la administración y la gobernanza.  Por el contrario, el rol de *Supervisor* ofrece acceso de solo lectura, ideal para auditores o partes interesadas que necesitan visibilidad sin realizar cambios.
+
+Las organizaciones deben utilizar el acceso de *superadministrador* con moderación para minimizar los riesgos de seguridad y alinearse con el principio del mínimo privilegio.  La mayoría de las organizaciones deberían asignar roles específicos con solo los permisos necesarios para reducir el riesgo y mejorar la auditabilidad.
+
+.Ejemplo de roles super
+ABC Corporation tiene un pequeño equipo de cinco personas que aprovecha la consola NetApp para los servicios de datos y la gestión del almacenamiento.  En lugar de distribuir múltiples roles, asignan el rol de *Superadministrador* a dos miembros senior del equipo que manejan todas las tareas administrativas, incluida la gestión de usuarios y la configuración de recursos.  A los tres miembros restantes del equipo se les asigna el rol de *Supervisor*, lo que les permite supervisar el estado del almacenamiento y el servicio de datos sin la posibilidad de modificar las configuraciones.
+
+[cols="2,1"]
+|===
+| Role | Roles heredados 
+
+
+ a| 
+Superadministrador
+ a| 
+* Administrador de la organización
+* Administrador de carpetas o proyectos
+* Administración de la federación
+* Administración de asociaciones
+* Administrador de resiliencia frente al ransomware
+* Administración de recuperación ante desastres
+* Superadministrador de respaldo
+* Administrador de almacenamiento
+* Administrador de Keystone
+* Administrador de Google Cloud NetApp Volumes
+
+
+
+
+ a| 
+Súper espectador
+ a| 
+* Visor de la organización
+* Visor de la Federación
+* Visor de asociaciones
+* Visor de resiliencia contra ransomware
+* Visor de recuperación ante desastres
+* Visor de copias de seguridad
+* Visor de almacenamiento
+* Visor de Keystone
+* Visor de Google Cloud NetApp Volumes
+
+
+|===

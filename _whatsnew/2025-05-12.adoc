@@ -1,0 +1,76 @@
+= Conector 3.9.52
+:allow-uri-read: 
+
+
+
+
+=== Conector 3.9.52
+
+Esta versión del conector BlueXP incluye pequeñas mejoras de seguridad y correcciones de errores, así como algunas actualizaciones adicionales.
+
+En este momento, la versión 3.9.52 está disponible para el modo estándar y el modo restringido.
+
+
+
+==== Compatibilidad con Docker 27 y Docker 28
+
+Docker 27 y Docker 28 ahora son compatibles con el Conector.
+
+
+
+==== Cloud Volumes ONTAP
+
+Los nodos de Cloud Volumes ONTAP ya no se apagan cuando el conector no cumple con las normas o permanece inactivo durante más de 14 días.  Cloud Volumes ONTAP aún envía mensajes de administración de eventos cuando pierde acceso al conector.  Este cambio tiene como objetivo garantizar que Cloud Volumes ONTAP pueda seguir funcionando incluso si el conector está inactivo durante un período prolongado.  No cambia los requisitos de cumplimiento del Conector.
+
+
+
+=== Administración de Keystone disponible en BlueXP
+
+La versión beta de NetApp Keystone en BlueXP agregó acceso a la administración de Keystone .  Puede acceder a la página de registro para la versión beta de NetApp Keystone desde la barra de navegación izquierda de BlueXP.
+
+
+
+=== Gestión de identidad y acceso (IAM) de BlueXP
+
+
+
+==== Nuevas funciones de gestión de almacenamiento
+
+Los roles de administrador de almacenamiento, especialista en estado del sistema y visualizador de almacenamiento están disponibles y se pueden asignar a los usuarios.
+
+Estos roles le permiten administrar quién en su organización puede descubrir y administrar recursos de almacenamiento, así como ver información sobre el estado del almacenamiento y realizar actualizaciones de software.
+
+Estos roles son compatibles para controlar el acceso a los siguientes recursos de almacenamiento:
+
+* Sistemas de la serie E
+* Sistemas StorageGRID
+* Sistemas ONTAP locales
+
+
+También puede utilizar estos roles para controlar el acceso a los siguientes servicios de BlueXP :
+
+* Actualizaciones de software
+* Asesor digital
+* Resiliencia operativa
+* Eficiencia económica
+* Sostenibilidad
+
+
+Se han añadido los siguientes roles:
+
+* *Administrador de almacenamiento*
++
+Administrar la salud del almacenamiento, la gobernanza y el descubrimiento de los recursos de almacenamiento en la organización.  Esta función también puede realizar actualizaciones de software en recursos de almacenamiento.
+
+* *Especialista en salud del sistema*
++
+Administrar la salud y la gobernanza del almacenamiento de los recursos de almacenamiento en la organización.  Esta función también puede realizar actualizaciones de software en recursos de almacenamiento.  Este rol no puede modificar ni eliminar entornos de trabajo.
+
+* *Visor de almacenamiento*
++
+Ver información sobre el estado del almacenamiento y datos de gobernanza.
+
++
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso."^]
+
+

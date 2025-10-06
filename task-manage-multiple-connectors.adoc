@@ -1,0 +1,61 @@
+---
+sidebar: sidebar 
+permalink: task-manage-multiple-connectors.html 
+keywords: switch connectors, multiple connectors, disaster recovery, dr, two connectors 
+summary: Si utiliza varios agentes de consola, puede cambiar entre ellos directamente desde la consola.  También puede administrar un solo sistema con múltiples agentes de consola. 
+---
+= Trabajar con múltiples agentes de consola
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Si utiliza varios agentes de consola, puede cambiar entre ellos directamente desde la consola para ver los sistemas asociados.
+
+
+
+== Cambiar entre agentes de la consola
+
+Si tiene varios agentes de consola, puede alternar entre ellos para ver los sistemas que están asociados con un agente específico.
+
+Por ejemplo, en un entorno de múltiples nubes, es posible que tenga un agente en AWS y otro en Google Cloud.  Cambie entre estos agentes para administrar los sistemas Cloud Volumes ONTAP en los respectivos entornos de nube.
+
+
+NOTE: Esta opción no está disponible al visualizar la consola de NetApp desde la interfaz de usuario local del agente
+
+.Paso
+. Seleccione el icono de Agentes de la consola (image:icon-agent.png["icono de agente"] ) en la parte superior derecha para ver la lista de agentes disponibles.
++
+image:screenshot-connector-switch.png["Una captura de pantalla que muestra el ícono de Agentes en el encabezado y la acción Cambiar."]
+
+
+
+.Resultado
+La consola se actualiza y muestra los sistemas asociados con el agente seleccionado.
+
+
+
+== Configurar una configuración de recuperación ante desastres
+
+Puede administrar un sistema con varios agentes de consola al mismo tiempo para fines de recuperación ante desastres.  Si un agente de la consola deja de funcionar, puedes cambiar al otro agente para administrar el sistema de inmediato.
+
+.Pasos
+. Cambie al otro agente de consola que desea administrar con el agente de consola.
+. Descubra el sistema existente.
++
+** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-adding-systems.html["Agregue sistemas Cloud Volumes ONTAP existentes a la consola"^]
+** https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["Descubra los clústeres de ONTAP"^]
+
+
+. Si administra un sistema Cloud Volumes ONTAP , ajuste el Modo de administración de capacidad al *Modo manual*.
++
+Para evitar problemas de contención, solo el agente de consola principal debe configurarse en *Modo automático*.
+
++
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-settings.html["Obtenga más información sobre el modo de gestión de capacidad"^]
+
+

@@ -1,0 +1,389 @@
+---
+sidebar: sidebar 
+permalink: task-adding-azure-accounts.html 
+keywords: permissions, microsoft, azure, permissions, custom role, role, json, active directory, ad, service principal, key, tenant id, application key, application id, operator role, managed identity, iam, operator, role, virtual machine, create custom role, create azure custom role, azure custom role 
+summary: Agregue y administre las credenciales de Azure para que la consola de NetApp tenga los permisos que necesita para implementar y administrar recursos en la nube en sus suscripciones de Azure.  Si administra varias suscripciones de Azure Marketplace, puede asignar a cada una de ellas diferentes credenciales de Azure desde la página Credenciales. 
+---
+= Administrar credenciales de Azure y suscripciones de Marketplace para la consola de NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Agregue y administre las credenciales de Azure para que la consola de NetApp tenga los permisos que necesita para implementar y administrar recursos en la nube en sus suscripciones de Azure.  Si administra varias suscripciones de Azure Marketplace, puede asignar a cada una de ellas diferentes credenciales de Azure desde la página Credenciales.
+
+
+
+== Descripción general
+
+Hay dos formas de agregar suscripciones y credenciales de Azure adicionales en la consola.
+
+. Asocie suscripciones adicionales de Azure con la identidad administrada de Azure.
+. Para implementar Cloud Volumes ONTAP con diferentes credenciales de Azure, otorgue permisos de Azure mediante una entidad de servicio y agregue sus credenciales a la consola.
+
+
+
+
+== Asociar suscripciones adicionales de Azure con una identidad administrada
+
+La consola le permite elegir las credenciales de Azure y la suscripción de Azure en la que desea implementar Cloud Volumes ONTAP.  No puede seleccionar una suscripción de Azure diferente para el perfil de identidad administrada a menos que asocie la https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["identidad administrada"^] con esas suscripciones.
+
+.Acerca de esta tarea
+Una identidad administrada eslink:concept-accounts-azure.html["la cuenta inicial de Azure"] cuando implementa un agente de consola desde la consola.  Cuando se implementa el agente de consola, la consola asigna el rol de Operador de consola a la máquina virtual del agente de consola.
+
+.Pasos
+. Inicie sesión en el portal de Azure.
+. Abra el servicio *Suscripciones* y luego seleccione la suscripción en la que desea implementar Cloud Volumes ONTAP.
+. Seleccione *Control de acceso (IAM)*.
++
+.. Seleccione *Agregar* > *Agregar asignación de rol* y luego agregue los permisos:
++
+*** Seleccione el rol de *Operador de consola*.
++
+
+NOTE: Operador de consola es el nombre predeterminado proporcionado en una política de agente de consola.  Si eligió un nombre diferente para el rol, seleccione ese nombre en su lugar.
+
+*** Asignar acceso a una *Máquina Virtual*.
+*** Seleccione la suscripción en la que se creó una máquina virtual del agente de consola.
+*** Seleccione una máquina virtual del agente de consola.
+*** Seleccione *Guardar*.
+
+
+
+
+. Repita estos pasos para suscripciones adicionales.
+
+
+.Resultado
+Al crear un nuevo sistema, ahora puede seleccionar entre varias suscripciones de Azure para el perfil de identidad administrada.
+
+image:screenshot_accounts_switch_azure_subscription.gif["Una captura de pantalla que muestra la capacidad de seleccionar múltiples suscripciones de Azure al seleccionar una cuenta de proveedor de Microsoft Azure."]
+
+
+
+== Agregar credenciales de Azure adicionales a la consola de NetApp
+
+Cuando se implementa un agente de consola desde la consola, la consola habilita una identidad administrada asignada por el sistema en la máquina virtual que tiene los permisos necesarios.  La consola selecciona estas credenciales de Azure de forma predeterminada cuando crea un nuevo sistema para Cloud Volumes ONTAP.
+
+
+TIP: No se agrega un conjunto inicial de credenciales si instaló manualmente un software de agente de consola en un sistema existente. link:concept-accounts-azure.html["Obtenga información sobre las credenciales y los permisos de Azure"] .
+
+Si desea implementar Cloud Volumes ONTAP con credenciales de Azure _diferentes_, debe otorgar los permisos necesarios creando y configurando una entidad de servicio en Microsoft Entra ID para cada cuenta de Azure.  Luego puedes agregar las nuevas credenciales a la consola.
+
+
+
+=== Otorgar permisos de Azure mediante una entidad de servicio
+
+La consola necesita permisos para realizar acciones en Azure.  Puede otorgar los permisos necesarios a una cuenta de Azure creando y configurando una entidad de servicio en Microsoft Entra ID y obteniendo las credenciales de Azure que necesita la consola.
+
+.Acerca de esta tarea
+La siguiente imagen muestra cómo la consola obtiene permisos para realizar operaciones en Azure.  Un objeto principal de servicio, que está vinculado a una o más suscripciones de Azure, representa la consola en Microsoft Entra ID y se asigna a un rol personalizado que permite los permisos necesarios.
+
+image:diagram_azure_authentication.png["Imagen conceptual que muestra la consola obteniendo autenticación y autorización de Microsoft Entra ID antes de poder realizar una llamada API.  En Active Directory, la función Consola define los permisos.  Está vinculado a una o más suscripciones de Azure y a un objeto principal de servicio que representa la aplicación Cloud Manager."]
+
+.Pasos
+. <<Crear una aplicación Microsoft Entra>> .
+. <<Asignar la aplicación a un rol>> .
+. <<Agregar permisos de la API de administración de servicios de Windows Azure>> .
+. <<Obtener el ID de la aplicación y el ID del directorio>> .
+. <<Crear un secreto de cliente>> .
+
+
+
+
+==== Crear una aplicación Microsoft Entra
+
+Cree una aplicación Microsoft Entra y una entidad de servicio que la consola pueda usar para el control de acceso basado en roles.
+
+.Pasos
+. Asegúrese de tener permisos en Azure para crear una aplicación de Active Directory y asignar la aplicación a un rol.
++
+Para más detalles, consulte https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Documentación de Microsoft Azure: Permisos necesarios"^]
+
+. Desde el portal de Azure, abra el servicio *Microsoft Entra ID*.
++
+image:screenshot_azure_ad.png["Muestra el servicio Active Directory en Microsoft Azure."]
+
+. En el menú, seleccione *Registros de aplicaciones*.
+. Seleccione *Nuevo registro*.
+. Especifique detalles sobre la aplicación:
++
+** *Nombre*: Ingrese un nombre para la aplicación.
+** *Tipo de cuenta*: seleccione un tipo de cuenta (cualquiera funcionará con la consola de NetApp ).
+** *URI de redirección*: Puede dejar este campo en blanco.
+
+
+. Seleccione *Registrarse*.
++
+Ha creado la aplicación AD y la entidad principal de servicio.
+
+
+
+
+
+==== Asignar la aplicación a un rol
+
+Debe vincular la entidad de servicio a una o más suscripciones de Azure y asignarle el rol personalizado "Operador de consola" para que la consola tenga permisos en Azure.
+
+.Pasos
+. Crear un rol personalizado:
++
+Tenga en cuenta que puede crear un rol personalizado de Azure mediante el portal de Azure, Azure PowerShell, la CLI de Azure o la API REST.  Los siguientes pasos muestran cómo crear el rol mediante la CLI de Azure.  Si prefiere utilizar un método diferente, consulte https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Documentación de Azure"^]
+
++
+.. Copiar el contenido dellink:reference-permissions-azure.html["Permisos de roles personalizados para el agente de la consola"] y guardarlos en un archivo JSON.
+.. Modifique el archivo JSON agregando identificadores de suscripción de Azure al ámbito asignable.
++
+Debe agregar el ID de cada suscripción de Azure desde la cual los usuarios crearán sistemas Cloud Volumes ONTAP .
+
++
+*Ejemplo*
+
++
+[source, json]
+----
+"AssignableScopes": [
+"/subscriptions/d333af45-0d07-4154-943d-c25fbzzzzzzz",
+"/subscriptions/54b91999-b3e6-4599-908e-416e0zzzzzzz",
+"/subscriptions/398e471c-3b42-4ae7-9b59-ce5bbzzzzzzz"
+----
+.. Utilice el archivo JSON para crear un rol personalizado en Azure.
++
+Los siguientes pasos describen cómo crear el rol mediante Bash en Azure Cloud Shell.
+
++
+*** Comenzar https://docs.microsoft.com/en-us/azure/cloud-shell/overview["Azure Cloud Shell"^] y elija el entorno Bash.
+*** Sube el archivo JSON.
++
+image:screenshot_azure_shell_upload.png["Una captura de pantalla de Azure Cloud Shell donde puede elegir la opción de cargar un archivo."]
+
+*** Utilice la CLI de Azure para crear el rol personalizado:
++
+[source, azurecli]
+----
+az role definition create --role-definition Connector_Policy.json
+----
++
+Ahora debería tener un rol personalizado llamado Operador de consola que puede asignar a la máquina virtual del agente de consola.
+
+
+
+
+
+. Asignar la aplicación al rol:
++
+.. Desde el portal de Azure, abra el servicio *Suscripciones*.
+.. Seleccione la suscripción.
+.. Seleccione *Control de acceso (IAM) > Agregar > Agregar asignación de rol*.
+.. En la pestaña *Rol*, seleccione el rol *Operador de consola* y seleccione *Siguiente*.
+.. En la pestaña *Miembros*, complete los siguientes pasos:
++
+*** Mantenga seleccionado *Usuario, grupo o entidad de servicio*.
+*** Seleccionar *Seleccionar miembros*.
++
+image:screenshot-azure-service-principal-role.png["Una captura de pantalla del portal de Azure que muestra la página Miembros al agregar un rol a una aplicación."]
+
+*** Busque el nombre de la aplicación.
++
+He aquí un ejemplo:
+
++
+image:screenshot_azure_service_principal_role.png["Una captura de pantalla del portal de Azure que muestra el formulario Agregar asignación de rol en el portal de Azure."]
+
+*** Seleccione la aplicación y seleccione *Seleccionar*.
+*** Seleccione *Siguiente*.
+
+
+.. Seleccione *Revisar + asignar*.
++
+La entidad de servicio ahora tiene los permisos de Azure necesarios para implementar el agente de consola.
+
++
+Si desea implementar Cloud Volumes ONTAP desde varias suscripciones de Azure, debe vincular la entidad de servicio a cada una de esas suscripciones.  En la consola de NetApp , puede seleccionar la suscripción que desea utilizar al implementar Cloud Volumes ONTAP.
+
+
+
+
+
+
+
+==== Agregar permisos de la API de administración de servicios de Windows Azure
+
+Debe asignar permisos de "API de administración de servicios de Windows Azure" a la entidad de servicio.
+
+.Pasos
+. En el servicio *Microsoft Entra ID*, seleccione *Registros de aplicaciones* y seleccione la aplicación.
+. Seleccione *Permisos de API > Agregar un permiso*.
+. En *API de Microsoft*, seleccione *Administración de servicios de Azure*.
++
+image:screenshot_azure_service_mgmt_apis.gif["Una captura de pantalla del portal de Azure que muestra los permisos de la API de administración de servicios de Azure."]
+
+. Seleccione *Acceder a Azure Service Management como usuarios de la organización* y luego seleccione *Agregar permisos*.
++
+image:screenshot_azure_service_mgmt_apis_add.gif["Una captura de pantalla del portal de Azure que muestra cómo agregar las API de administración de servicios de Azure."]
+
+
+
+
+
+==== Obtener el ID de la aplicación y el ID del directorio
+
+Cuando agrega la cuenta de Azure a la consola, debe proporcionar el identificador de la aplicación (cliente) y el identificador del directorio (inquilino) para la aplicación.  La consola utiliza los ID para iniciar sesión mediante programación.
+
+.Pasos
+. En el servicio *Microsoft Entra ID*, seleccione *Registros de aplicaciones* y seleccione la aplicación.
+. Copie el *ID de la aplicación (cliente)* y el *ID del directorio (inquilino)*.
++
+image:screenshot_azure_app_ids.gif["Una captura de pantalla que muestra el ID de la aplicación (cliente) y el ID del directorio (inquilino) de una aplicación en Microsoft Entra IDy."]
+
++
+Cuando agrega la cuenta de Azure a la consola, debe proporcionar el identificador de la aplicación (cliente) y el identificador del directorio (inquilino) para la aplicación.  La consola utiliza los ID para iniciar sesión mediante programación.
+
+
+
+
+
+==== Crear un secreto de cliente
+
+Cree un secreto de cliente y proporcione su valor a la consola para la autenticación con Microsoft Entra ID.
+
+.Pasos
+. Abra el servicio *Microsoft Entra ID*.
+. Selecciona *Registros de aplicaciones* y selecciona tu aplicación.
+. Seleccione *Certificados y secretos > Nuevo secreto de cliente*.
+. Proporcione una descripción del secreto y una duración.
+. Seleccione *Agregar*.
+. Copia el valor del secreto del cliente.
++
+image:screenshot_azure_client_secret.gif["Una captura de pantalla del portal de Azure que muestra un secreto de cliente para la entidad de servicio de Microsoft Entra."]
+
+
+
+.Resultado
+Su entidad de servicio ya está configurada y debería haber copiado el ID de la aplicación (cliente), el ID del directorio (inquilino) y el valor del secreto del cliente.  Debe ingresar esta información en la consola cuando agregue una cuenta de Azure.
+
+
+
+=== Añade las credenciales a la consola
+
+Después de proporcionar una cuenta de Azure con los permisos necesarios, puede agregar las credenciales para esa cuenta a la consola.  Al completar este paso podrá iniciar Cloud Volumes ONTAP con diferentes credenciales de Azure.
+
+.Antes de empezar
+Si acaba de crear estas credenciales en su proveedor de nube, es posible que pasen algunos minutos hasta que estén disponibles para su uso.  Espere unos minutos antes de agregar las credenciales a la consola.
+
+.Antes de empezar
+Debe crear un agente de consola antes de poder cambiar la configuración de la consola. link:concept-connectors.html#connector-installation["Aprenda a crear un agente de consola"] .
+
+.Pasos
+. Seleccione *Administración > Credenciales*.
+. Seleccione *Agregar credenciales* y siga los pasos del asistente.
++
+.. *Ubicación de credenciales*: seleccione *Microsoft Azure > Agente*.
+.. *Definir credenciales*: ingrese información sobre la entidad de servicio de Microsoft Entra que otorga los permisos necesarios:
++
+*** ID de la aplicación (cliente)
+*** ID de directorio (inquilino)
+*** Secreto del cliente
+
+
+.. *Suscripción al Marketplace*: asocie una suscripción al Marketplace con estas credenciales suscribiéndose ahora o seleccionando una suscripción existente.
+.. *Revisar*: Confirme los detalles sobre las nuevas credenciales y seleccione *Agregar*.
+
+
+
+
+.Resultado
+Puede cambiar a un conjunto diferente de credenciales desde la página Detalles y Credenciales https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-azure.html["al agregar un sistema a la consola"^]
+
+image:screenshot_accounts_switch_azure.gif["Una captura de pantalla que muestra la selección entre credenciales después de seleccionar Editar credenciales en la página Detalles y credenciales."]
+
+
+
+== Administrar credenciales existentes
+
+Administre las credenciales de Azure que ya agregó a la consola asociando una suscripción de Marketplace, editando las credenciales y eliminándolas.
+
+
+
+=== Asociar una suscripción de Azure Marketplace a las credenciales
+
+Después de agregar sus credenciales de Azure a la consola, puede asociar una suscripción de Azure Marketplace a esas credenciales.  Puede utilizar la suscripción para crear un sistema Cloud Volumes ONTAP de pago por uso y acceder a los servicios de datos de NetApp .
+
+Hay dos escenarios en los que podría asociar una suscripción de Azure Marketplace después de haber agregado las credenciales a la consola:
+
+* No asociaste una suscripción cuando agregaste inicialmente las credenciales a la consola.
+* Desea cambiar la suscripción de Azure Marketplace que está asociada con las credenciales de Azure.
++
+Al reemplazar la suscripción actual del mercado, se actualiza para los sistemas Cloud Volumes ONTAP existentes y nuevos.
+
+
+
+.Pasos
+. Seleccione *Administración > *Credenciales*.
+. Seleccione *Credenciales de la organización*.
+. Seleccione el menú de acciones para un conjunto de credenciales asociadas con un agente de consola y luego seleccione *Configurar suscripción*.
++
+Debe seleccionar las credenciales que estén asociadas con un agente de consola.  No se puede asociar una suscripción de Marketplace con credenciales asociadas con la consola de NetApp .
+
+. Para asociar las credenciales con una suscripción existente, seleccione la suscripción de la lista desplegable y seleccione *Configurar*.
+. Para asociar las credenciales con una nueva suscripción, seleccione *Agregar suscripción > Continuar* y siga los pasos en Azure Marketplace:
++
+.. Si se le solicita, inicie sesión en su cuenta de Azure.
+.. Seleccione *Suscribirse*.
+.. Llene el formulario y seleccione *Suscribirse*.
+.. Una vez completado el proceso de suscripción, seleccione *Configurar cuenta ahora*.
++
+Serás redirigido a la consola de NetApp .
+
+.. Desde la página *Asignación de suscripción*:
++
+*** Seleccione las organizaciones o cuentas de la consola con las que desea asociar esta suscripción.
+*** En el campo *Reemplazar suscripción existente*, elija si desea reemplazar automáticamente la suscripción existente de una organización o cuenta con esta nueva suscripción.
++
+La consola reemplaza la suscripción existente para todas las credenciales de la organización o cuenta con esta nueva suscripción.  Si un conjunto de credenciales nunca estuvo asociado con una suscripción, entonces esta nueva suscripción no estará asociada con esas credenciales.
+
++
+Para todas las demás organizaciones o cuentas, deberá asociar manualmente la suscripción repitiendo estos pasos.
+
+*** Seleccione *Guardar*.
++
+El siguiente vídeo muestra los pasos para suscribirse desde Azure Marketplace:
+
++
+.Suscríbase a NetApp Intelligent Services desde Azure Marketplace
+video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto]
+
+
+
+
+
+
+
+
+=== Editar credenciales
+
+Edite sus credenciales de Azure en la consola.  Por ejemplo, puede actualizar el secreto del cliente si se creó un nuevo secreto para la aplicación principal del servicio.
+
+.Pasos
+. Seleccione *Administración > Credenciales*.
+. Seleccione *Credenciales de la organización*.
+. Seleccione el menú de acciones para un conjunto de credenciales y luego seleccione *Editar credenciales*.
+. Realice los cambios necesarios y luego seleccione *Aplicar*.
+
+
+
+
+=== Eliminar credenciales
+
+Si ya no necesita un conjunto de credenciales, puede eliminarlas.  Solo puedes eliminar credenciales que no estén asociadas a un sistema.
+
+.Pasos
+. Seleccione *Administración > Credenciales*.
+. Seleccione *Credenciales de la organización*.
+. En la página *Credenciales de la organización*, seleccione el menú de acciones para un conjunto de credenciales y luego seleccione *Eliminar credenciales*.
+. Seleccione *Eliminar* para confirmar.
+

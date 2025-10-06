@@ -1,0 +1,65 @@
+---
+sidebar: sidebar 
+permalink: task-iam-get-started.html 
+keywords: iam, quick start, get started, get started with iam, identity and access management 
+summary: Para comenzar con la administración de identidad y acceso en NetApp Console, personalice la jerarquía de la organización, agregue miembros adicionales, agregue o descubra recursos y asocie esos recursos con proyectos. 
+---
+= Comience a utilizar la identidad y el acceso en la consola de NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cuando te registras en la consola de NetApp , se te solicita que crees una nueva organización.  La organización incluye un miembro (un administrador de la organización) y un proyecto predeterminado.  Para configurar la gestión de identidad y acceso (IAM) para satisfacer las necesidades de su negocio, deberá personalizar la jerarquía de su organización, agregar miembros adicionales, agregar o descubrir recursos y asociar esos recursos en toda su jerarquía.
+
+Debe tener permisos de *Administrador de la organización* para administrar la identidad y el acceso de toda su organización.  Si tiene permisos de *Administrador de carpeta o proyecto*, solo podrá administrar las carpetas y los proyectos para los que tenga permisos.
+
+Siga estos pasos para configurar una nueva organización.  El orden puede variar según las necesidades de su organización.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1"]Edite el proyecto predeterminado o agréguelo a la jerarquía de su organización
+[role="quick-margin-para"]
+Utilice el proyecto predeterminado o cree proyectos y carpetas adicionales que coincidan con la jerarquía de su negocio.
+
+[role="quick-margin-para"]
+link:task-iam-manage-folders-projects.html["Aprenda a organizar sus recursos con carpetas y proyectos"] .
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dos"]Asociar miembros a su organización
+[role="quick-margin-para"]
+Vincula cuentas de usuario a tu organización y asigna permisos.  También tiene la opción de agregar cuentas de servicio a su organización.
+
+[role="quick-margin-para"]
+link:task-iam-manage-members-permissions.html["Aprenda a administrar miembros y sus permisos"] .
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Tres"]Agregar o descubrir recursos
+[role="quick-margin-para"]
+Agregar o descubrir recursos (sistemas) a la consola.  Los miembros de la organización gestionan los sistemas desde dentro de un proyecto.
+
+[role="quick-margin-para"]
+Aprenda a crear o descubrir recursos:
+
+[role="quick-margin-list"]
+* https://docs.netapp.com/us-en/bluexp-fsx-ontap/index.html["Amazon FSx for NetApp ONTAP"^]
+* https://docs.netapp.com/us-en/bluexp-azure-netapp-files/index.html["Azure NetApp Files"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/index.html["Cloud Volumes ONTAP"^]
+* https://docs.netapp.com/us-en/bluexp-e-series/index.html["Sistemas de la serie E"^]
+* https://docs.netapp.com/us-en/bluexp-ontap-onprem/index.html["Clústeres ONTAP locales"^]
+* https://docs.netapp.com/us-en/bluexp-storagegrid/index.html["StorageGRID"^]
+
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Cuatro"]Asociar recursos con proyectos adicionales
+[role="quick-margin-para"]
+Agregar o descubrir un sistema en la Consola asocia automáticamente el recurso con el proyecto seleccionado actualmente.  Para que ese recurso esté disponible para otro proyecto de su organización, asócielo con el proyecto respectivo.  Si se utiliza un agente de consola para administrar el recurso, asocie el agente de consola con el proyecto respectivo.
+
+[role="quick-margin-list"]
+* link:task-iam-manage-resources.html["Aprenda a administrar la jerarquía de recursos de su organización"] .
+* link:task-iam-associate-connectors.html["Aprenda a asociar un agente de consola con una carpeta o un proyecto"] .
+
+
+.Información relacionada
+* link:concept-identity-and-access-management.html["Obtenga información sobre la gestión de identidad y acceso en la consola de NetApp"]
+* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["Conozca la API para identidad y acceso"^]
+

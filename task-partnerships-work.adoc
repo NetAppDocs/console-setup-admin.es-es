@@ -1,0 +1,21 @@
+---
+sidebar: sidebar 
+permalink: task-partnerships-work.html 
+keywords: partner organizations, create partnership, MSPs, service provider access 
+summary: Una vez que se le haya asignado un rol en una organización asociada, puede cambiar a esa organización y realizar las acciones que tiene permiso para realizar. 
+---
+= Trabajar en una organización asociada
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Una vez que se le haya asignado un rol en una organización asociada, puede cambiar a esa organización y realizar las acciones que tiene permiso para realizar.
+
+Utilice el menú Organización para alternar entre sus organizaciones y cualquier organización asociada a la que tenga acceso.link:task-iam-switch-organizations-projects.html["Obtenga más información sobre cómo cambiar de organizaciones y proyectos."]
+
+Podrás ver los recursos que se han compartido contigo en la organización asociada y realizar acciones según el rol que se te haya asignado.  Trabaje con el administrador de su asociación para asegurarse de tener el rol adecuado para los recursos a los que necesita acceder.

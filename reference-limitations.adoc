@@ -1,0 +1,61 @@
+---
+sidebar: sidebar 
+permalink: reference-limitations.html 
+keywords: limitations, active directory, ad, iscsi, key managers, ip address, govcloud, BlueXP, Cloud Volumes ONTAP, days, running, Connectors should remain running, imdsv2, https tokens, agents should remain running, Console agent 
+summary: Las limitaciones conocidas identifican plataformas, dispositivos o funciones que no son compatibles con esta versión del producto o que no interoperan correctamente con él. Revise estas limitaciones cuidadosamente. 
+---
+= Limitaciones conocidas de NetApp Console
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Las limitaciones conocidas identifican plataformas, dispositivos o funciones que no son compatibles con esta versión del producto o que no interoperan correctamente con él. Revise estas limitaciones cuidadosamente.
+
+Estas limitaciones son específicas de la configuración de la consola y la administración de NEtApp: el agente, la plataforma de software como servicio (SaaS) y más.
+
+
+
+== Limitaciones del agente de consola
+
+
+
+=== Posible conflicto con direcciones IP en el rango 172
+
+La consola de NetApp implementa un agente con dos interfaces que tienen direcciones IP en los rangos 172.17.0.0/16 y 172.18.0.0/16.
+
+Si su red tiene una subred configurada con cualquiera de estos rangos, es posible que experimente fallas de conectividad desde la consola.  Por ejemplo, la detección de clústeres ONTAP locales en la consola podría fallar.
+
+Ver artículo de la base de conocimientoslink:https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Manager/Cloud_Manager_shows_inactive_as_Connector_IP_range_in_172.x.x.x_conflict_with_docker_network["Conflicto de IP del agente con la red existente"] para obtener instrucciones sobre cómo cambiar la dirección IP de las interfaces del agente.
+
+
+
+=== No se admite el descifrado SSL
+
+La consola no admite configuraciones de firewall que tengan habilitado el descifrado SSL.  Si el descifrado SSL está habilitado, aparecen mensajes de error en la consola y la instancia del agente se muestra como inactiva.
+
+Para mayor seguridad, tienes la opción delink:task-installing-https-cert.html["Instalar un certificado HTTPS firmado por una autoridad de certificación (CA)"] .
+
+
+
+=== Página en blanco al cargar la interfaz de usuario local
+
+Si carga la consola basada en web que se ejecuta en un agente, es posible que a veces la interfaz no se muestre y solo aparezca una página en blanco.
+
+Este problema está relacionado con un problema de almacenamiento en caché.  La solución alternativa es utilizar una sesión de navegador web privada o de incógnito.
+
+
+
+=== Los hosts Linux compartidos no son compatibles
+
+El agente no es compatible con una máquina virtual compartida con otras aplicaciones.  La VM debe estar dedicada al software del agente.
+
+
+
+=== Agentes y extensiones de terceros
+
+Los agentes de terceros o las extensiones de VM no son compatibles con la VM del agente.

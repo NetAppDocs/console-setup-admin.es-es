@@ -1,0 +1,83 @@
+---
+sidebar: sidebar 
+permalink: task-federation-adfs.html 
+keywords: federation, active directory federation services, adfs, ad fs, single sign-on, microsoft, federate, federated connection, SSO, identity federation, identity management, corporate identity 
+summary: 'Fedérese con sus Servicios de federación de Active Directory (AD FS) para habilitar el inicio de sesión único (SSO) para la consola de NetApp .  Esto permite a los usuarios iniciar sesión utilizando sus credenciales corporativas.' 
+---
+= Federar la consola de NetApp con los Servicios de federación de Active Directory (AD FS)
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Federe sus Servicios de federación de Active Directory (AD FS) con la consola de NetApp para habilitar el inicio de sesión único (SSO) para la consola de NetApp .  Esto permite a los usuarios iniciar sesión en la consola utilizando sus credenciales corporativas.
+
+.Roles requeridos
+El rol de administrador de la federación es necesario para crear y administrar federaciones.  El espectador de la Federación puede ver la página de la Federación.link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso."]
+
+
+NOTE: Puede federarse con su IdP corporativo o con el sitio de soporte de NetApp .  NetApp recomienda elegir uno u otro, pero no ambos.
+
+NetApp solo admite el inicio de sesión único (SSO) iniciado por el proveedor de servicios (SP).  Primero, configure el proveedor de identidad para que confíe en la consola de NetApp como proveedor de servicios.  Luego, crea una conexión en la consola utilizando la configuración de tu proveedor de identidad.
+
+Puede configurar la federación con su servidor AD FS para habilitar el inicio de sesión único (SSO) para NetApp Console.  El proceso implica configurar AD FS para que confíe en la consola como proveedor de servicios y luego crear la conexión en la consola de NetApp .
+
+.Antes de empezar
+* Se requiere una cuenta IdP con privilegios administrativos.  Coordínese con el administrador de su IdP para completar los pasos.
+* Identifique el dominio que desea utilizar para la federación.  Puedes utilizar tu dominio de correo electrónico o un dominio diferente que sea de tu propiedad.  Si desea utilizar un dominio distinto a su dominio de correo electrónico, primero debe verificar el dominio en la Consola.  Puedes hacer esto siguiendo los pasos de lalink:task-federation-verify-domain.html["Verifique su dominio en la consola de NetApp"] tema.
+
+
+.Pasos
+. Seleccione *Administración > Identidad y acceso*.
+. Seleccione *Federación* para ver la página *Federaciones*.
+. Seleccione *Configurar nueva federación*.
+. Introduzca los detalles de su dominio:
++
+.. Elija si desea utilizar un dominio verificado o su dominio de correo electrónico.  El dominio de correo electrónico es el dominio asociado con la cuenta con la que ha iniciado sesión.
+.. Introduzca el nombre de la federación que está configurando.
+.. Si elige un dominio verificado, seleccione el dominio de la lista.
+
+
+. Seleccione *Siguiente*.
+. Para su método de conexión, elija *Protocolo* y luego seleccione *Servicios de federación de Active Directory (AD FS)*.
+. Seleccione *Siguiente*.
+. Cree una relación de confianza de usuario autenticado en su servidor AD FS.  Puede usar PowerShell o configurarlo manualmente en su servidor AD FS.  Consulte la documentación de AD FS para obtener detalles sobre cómo crear una relación de confianza entre usuarios.
++
+.. Cree la confianza mediante PowerShell mediante el siguiente script:
++
+[source, powershell]
+----
+(new-object Net.WebClient -property @{Encoding = [Text.Encoding]::UTF8}).DownloadString("https://raw.github.com/auth0/AD FS-auth0/master/AD FS.ps1") | iex
+AddRelyingParty "urn:auth0:netapp-cloud-account" "https://netapp-cloud-account.auth0.com/login/callback"
+----
+.. Alternativamente, puede crear la confianza manualmente en la consola de administración de AD FS.  Utilice los siguientes valores de la consola de NetApp al crear la confianza:
++
+*** Al crear el identificador de confianza confiable, utilice el valor **YOUR_TENANT**: `netapp-cloud-account`
+*** Cuando seleccione *Habilitar soporte para WS-Federation*, utilice el valor **YOUR_AUTH0_DOMAIN**: `netapp-cloud-account.auth0.com`
+
+
+.. Después de crear la confianza, copie la URL de metadatos de su servidor AD FS o descargue el archivo de metadatos de federación.  Necesitará esta URL o archivo para completar la conexión en la consola.
+
+
++
+NetApp recomienda utilizar la URL de metadatos para permitir que la consola de NetApp recupere automáticamente la última configuración de AD FS.  Si descarga el archivo de metadatos de federación, deberá actualizarlo manualmente en la consola de NetApp cada vez que haya cambios en su configuración de AD FS.
+
+. Regrese a la consola y seleccione *Siguiente* para crear la conexión.
+. Cree la conexión con AD FS.
++
+.. Ingrese la *URL de AD FS* que copió de su servidor de AD FS en el paso anterior o cargue el archivo de metadatos de federación que descargó de su servidor de AD FS.
+
+
+. Seleccione *Crear conexión*.  La creación de la conexión puede tardar unos segundos.
+. Seleccione *Siguiente*.
+. Seleccione *Probar conexión* para probar su conexión.  Se le dirigirá a una página de inicio de sesión para su servidor IdP.  Inicie sesión con sus credenciales de IdP para completar la prueba y regresar a la consola para habilitar la conexión.
+. Seleccione *Siguiente*.
+. En la página *Habilitar federación*, revise los detalles de la federación y luego seleccione *Habilitar federación*.
+. Seleccione *Finalizar* para completar el proceso.
+
+
+Después de habilitar la federación, los usuarios pueden iniciar sesión en la consola de NetApp con sus credenciales corporativas.

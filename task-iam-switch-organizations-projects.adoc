@@ -1,0 +1,81 @@
+---
+sidebar: sidebar 
+permalink: task-iam-switch-organizations-projects.html 
+keywords: switch organizations, switch projects, projects, organizations, change, switch, change organizations, change projects, iam, identity and access management, switch connectors 
+summary: Es posible que pertenezca a varias organizaciones de consola o tenga permisos para acceder a varios proyectos o agentes dentro de una organización.  Cuando sea necesario, puede cambiar fácilmente entre organizaciones, proyectos y agentes de la consola para acceder a los recursos asociados con esa organización, proyecto o agente. 
+---
+= Cambiar entre organizaciones, proyectos y agentes de la consola
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Es posible que pertenezca a varias organizaciones de consola o tenga permisos para acceder a varios proyectos o agentes dentro de una organización.  Cuando sea necesario, puede cambiar fácilmente entre organizaciones, proyectos y agentes de la consola para acceder a los recursos asociados con esa organización, proyecto o agente.
+
+
+TIP: Puedes pertenecer a varias organizaciones si otra organización te invita a unirte o si creas una tú mismo.  Puede crear una organización adicional utilizando la API. https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/post-organizations.html["Aprenda a crear una nueva organización"^]
+
+
+
+== Cambiar entre organizaciones
+
+Si es miembro de varias organizaciones, puede cambiar entre ellas en cualquier momento.
+
+.Pasos
+. En el encabezado superior de la consola, seleccione *Organización*.
++
+image:screenshot-iam-switch-organizations.png["Una captura de pantalla del banner superior donde puede seleccionar el menú desplegable Organización y luego seleccionar otra organización."]
+
+. Si tiene alguna organización asociada, seleccione la pestaña *Asociación* para ver las organizaciones asociadas disponibles.
+
+
++ La pestaña *Asociación* no se muestra si no tienes ninguna organización asociada.
+
+. Seleccione otra organización y luego seleccione *Cambiar*.
+
+
++ Si tiene alguna organización asociada, seleccione la pestaña *Asociación* para ver las organizaciones asociadas disponibles.
+
+
+
+== Cambiar entre proyectos
+
+Si su organización incluye varios proyectos y tiene acceso a ellos, puede cambiar entre ellos en cualquier momento.
+
+
+NOTE: No puedes cambiar a otro proyecto mientras estés viendo cualquiera de las páginas de *Identidad y acceso*.
+
+.Pasos
+. En el encabezado superior de la consola, seleccione *Proyecto*.
+. Explore las carpetas y proyectos de su organización, seleccione el proyecto que desee y luego seleccione *Cambiar*.
++
+image:screenshot-iam-switch-projects-select.png["Una captura de pantalla del menú Alcance donde puede seleccionar un nuevo proyecto."]
+
+
+
+
+
+== Cambiar entre agentes de la consola
+
+Si tiene varios agentes de consola, puede alternar entre ellos para ver los sistemas que están asociados con un agente específico.
+
+.Pasos
+. En el encabezado superior de la Consola, seleccione el ícono del Agente.
+. Seleccione otro agente y luego seleccione *Cambiar*.
+
+
+.Información relacionada
+link:task-iam-associate-connectors.html["Asociar agentes con carpetas y proyectos"] .
+
+
+
+== Información relacionada
+
+* link:concept-identity-and-access-management.html["Obtenga información sobre la identidad y el acceso en la consola de NetApp"]
+* link:task-iam-get-started.html["Comience con la identidad y el acceso"]
+* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["Conozca la API para identidad y acceso"^]
+

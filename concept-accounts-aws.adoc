@@ -1,0 +1,153 @@
+---
+sidebar: sidebar 
+permalink: concept-accounts-aws.html 
+keywords: cloud provider accounts, aws, aws accounts, keys, multiple accounts, permission, aws permissions, policy, policies, credentials, marketplace, subscription, replace subscription, subscription, amazon, bluexp, agent 
+summary: Descubra cómo la consola de NetApp utiliza las credenciales de AWS para realizar acciones en su nombre y cómo esas credenciales se asocian con las suscripciones del mercado.  Comprender estos detalles puede resultar útil al administrar las credenciales de una o más cuentas de AWS en la consola.  Por ejemplo, es posible que desee obtener información sobre cuándo agregar credenciales de AWS adicionales a la consola. 
+---
+= Obtenga información sobre las credenciales y los permisos de AWS en la consola de NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Descubra cómo la consola de NetApp utiliza las credenciales de AWS para realizar acciones en su nombre y cómo esas credenciales se asocian con las suscripciones del mercado.  Comprender estos detalles puede resultar útil al administrar las credenciales de una o más cuentas de AWS en la consola de NetApp .  Por ejemplo, es posible que desee obtener información sobre cuándo agregar credenciales de AWS adicionales.
+
+
+
+== Credenciales iniciales de AWS
+
+Cuando implementa un agente de consola desde la consola, debe proporcionar el ARN de un rol de IAM o claves de acceso para un usuario de IAM.  El método de autenticación debe tener permisos para implementar la consola en AWS.  Los permisos necesarios se enumeran en el enlace: task-install-connector-aws-the Console.html#console-permissions-aws[Política de implementación del agente para AWS].
+
+Cuando la consola inicia la instancia del agente de consola en AWS, crea una función de IAM y un perfil de instancia para la instancia.  También adjunta una política que proporciona al agente de la consola permisos para administrar recursos y procesos dentro de esa cuenta de AWS. link:reference-permissions-aws.html["Revisar cómo la Consola utiliza los permisos"] .
+
+image:diagram_permissions_initial_aws.png["Una imagen conceptual que muestra la consola implementando el agente de consola en una cuenta de AWS.  Una política de IAM se asigna a un rol de IAM, que está asociado a la instancia de la consola."]
+
+Si agrega un nuevo sistema Cloud Volumes ONTAP , la consola selecciona estas credenciales de AWS de forma predeterminada:
+
+image:screenshot_accounts_select_aws.gif["Una captura de pantalla que muestra la opción Cambiar cuenta en la página Detalles y credenciales."]
+
+Implemente todos sus sistemas Cloud Volumes ONTAP utilizando las credenciales iniciales de AWS o puede agregar credenciales adicionales.
+
+
+
+== Credenciales adicionales de AWS
+
+Puede agregar credenciales de AWS adicionales a la consola en los siguientes casos:
+
+* Para utilizar su agente de consola existente con una cuenta de AWS adicional
+* Para crear un nuevo agente en una cuenta de AWS específica
+* Para crear y administrar sistemas de archivos FSx para ONTAP
+
+
+Revise las secciones a continuación para obtener más detalles.
+
+
+
+=== Agregue credenciales de AWS para usar un agente de consola con otra cuenta de AWS
+
+Si desea utilizar la consola con cuentas de AWS adicionales, puede proporcionar claves de AWS para un usuario de IAM o el ARN de un rol en una cuenta de confianza.  La siguiente imagen muestra dos cuentas adicionales, una que proporciona permisos a través de un rol de IAM en una cuenta confiable y otra a través de las claves de AWS de un usuario de IAM:
+
+image:diagram_permissions_multiple_aws.png["Una imagen conceptual que muestra dos cuentas adicionales.  Cada uno tiene una política de IAM, una está asociada a un usuario de IAM y la otra está asociada a un rol de IAM."]
+
+Luego, agregaría las credenciales de la cuenta a la consola especificando el nombre de recurso de Amazon (ARN) de la función de IAM o las claves de AWS para el usuario de IAM.
+
+Por ejemplo, puede cambiar entre credenciales al crear un nuevo sistema Cloud Volumes ONTAP :
+
+image:screenshot_accounts_switch_aws.png["Una captura de pantalla que muestra la selección entre cuentas de proveedores de nube después de seleccionar Cambiar cuenta en la página Detalles y credenciales."]
+
+link:task-adding-aws-accounts.html#add-credentials-agent-aws["Aprenda cómo agregar credenciales de AWS a un agente existente."]
+
+
+
+=== Agregue credenciales de AWS para crear un agente de consola
+
+Agregar nuevas credenciales de AWS a la consola proporciona los permisos necesarios para crear un agente de consola.
+
+link:task-adding-aws-accounts.html#add-credentials-agent-aws["Aprenda a agregar credenciales de AWS a la consola para crear un agente de consola"]
+
+
+
+=== Agregue credenciales de AWS para FSx para ONTAP
+
+Agregue credenciales de AWS a la consola para proporcionar los permisos necesarios para crear y administrar un sistema FSx para ONTAP .
+
+https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["Aprenda a agregar credenciales de AWS a la consola para Amazon FSx para ONTAP"^]
+
+
+
+== Credenciales y suscripciones al mercado
+
+Las credenciales que agrega a un agente de consola deben estar asociadas con una suscripción a AWS Marketplace para que pueda pagar Cloud Volumes ONTAP a una tarifa por hora (PAYGO) y otros servicios de datos de NetApp o mediante un contrato anual. link:task-adding-aws-accounts.html#subscribe["Aprenda a asociar una suscripción de AWS"] .
+
+Tenga en cuenta lo siguiente sobre las credenciales de AWS y las suscripciones al mercado:
+
+* Solo puede asociar una suscripción de AWS Marketplace con un conjunto de credenciales de AWS
+* Puede reemplazar una suscripción de mercado existente con una nueva suscripción
+
+
+
+
+== Preguntas frecuentes
+
+Las siguientes preguntas están relacionadas con credenciales y suscripciones.
+
+
+
+=== ¿Cómo puedo rotar de forma segura mis credenciales de AWS?
+
+Como se describe en las secciones anteriores, la consola le permite proporcionar credenciales de AWS de varias maneras: un rol de IAM asociado con la instancia del agente de la consola, asumiendo un rol de IAM en una cuenta confiable o proporcionando claves de acceso de AWS.
+
+Con las dos primeras opciones, la consola utiliza el servicio de token de seguridad de AWS para obtener credenciales temporales que rotan constantemente.  Este proceso es la mejor práctica: es automático y seguro.
+
+Si proporciona a la consola claves de acceso de AWS, debe rotar las claves actualizándolas en la consola a intervalos regulares.  Este es un proceso completamente manual.
+
+
+
+=== ¿Puedo cambiar la suscripción de AWS Marketplace para los sistemas Cloud Volumes ONTAP ?
+
+Sí, puedes.  Cuando cambia la suscripción de AWS Marketplace asociada a un conjunto de credenciales, todos los sistemas Cloud Volumes ONTAP existentes y nuevos se cargan a la nueva suscripción.
+
+link:task-adding-aws-accounts.html#subscribe["Aprenda a asociar una suscripción de AWS"] .
+
+
+
+=== ¿Puedo agregar varias credenciales de AWS, cada una con diferentes suscripciones al mercado?
+
+Todas las credenciales de AWS que pertenecen a la misma cuenta de AWS se asociarán con la misma suscripción de AWS Marketplace.
+
+Si tiene varias credenciales de AWS que pertenecen a diferentes cuentas de AWS, esas credenciales se pueden asociar con la misma suscripción de AWS Marketplace o con diferentes suscripciones.
+
+
+
+=== ¿Puedo mover sistemas Cloud Volumes ONTAP existentes a una cuenta de AWS diferente?
+
+No, no es posible mover los recursos de AWS asociados con su sistema Cloud Volumes ONTAP a una cuenta de AWS diferente.
+
+
+
+=== ¿Cómo funcionan las credenciales para las implementaciones del mercado y las implementaciones locales?
+
+Las secciones anteriores describen el método de implementación recomendado para el agente de la consola, que es desde la consola.  También puede implementar un agente en AWS desde AWS Marketplace y puede instalar manualmente el software del agente de consola en su propio host Linux.
+
+Si utiliza el Marketplace, los permisos se proporcionan de la misma manera.  Solo necesita crear y configurar manualmente el rol de IAM y luego proporcionar permisos para cualquier cuenta adicional.
+
+Para las implementaciones locales, no puede configurar una función de IAM para la consola, pero puede proporcionar permisos mediante claves de acceso de AWS.
+
+Para saber cómo configurar permisos, consulte las siguientes páginas:
+
+* Modo estándar
++
+** link:task-install-connector-aws-marketplace.html#step-2-set-up-aws-permissions["Configurar permisos para una implementación de AWS Marketplace"]
+** link:task-install-connector-on-prem.html#agent-permission-aws-azure["Configurar permisos para implementaciones locales"]
+
+
+* Modo restringido
++
+** link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Configurar permisos para el modo restringido"]
+
+
+

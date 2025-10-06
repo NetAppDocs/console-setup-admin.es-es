@@ -1,0 +1,54 @@
+---
+sidebar: sidebar 
+permalink: task-uninstall-connector.html 
+keywords: uninstall, remove connector, uninstall connector, uninstall agent, remove agent 
+summary: Desinstale un agente de consola para solucionar problemas o eliminarlo permanentemente del host.  Los pasos que debes seguir dependen del modo de implementación que estés utilizando.  Una vez que haya eliminado un agente de consola de su entorno, puede eliminarlo de la consola. 
+---
+= Desinstalar y eliminar un agente de consola
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Desinstale un agente de consola para solucionar problemas o eliminarlo permanentemente del host.  Los pasos que debes seguir dependen del modo de implementación que estés utilizando.  Una vez que haya eliminado un agente de consola de su entorno, puede eliminarlo de la consola.
+
+link:concept-modes.html["Obtenga más información sobre los modos de implementación de la consola de NetApp"] .
+
+
+
+== Desinstalar el agente cuando se utiliza el modo estándar o restringido
+
+Si está utilizando el modo estándar o el modo restringido (en otras palabras, el host del agente tiene conectividad saliente), debe seguir los pasos a continuación para desinstalar el agente.
+
+.Pasos
+. Conéctese a la máquina virtual Linux para el agente.
+. Desde el host Linux, ejecute el script de desinstalación:
++
+`/opt/application/netapp/service-manager-2/uninstall.sh [silent]`
+
++
+_silent_ ejecuta el script sin solicitar confirmación.
+
+
+
+
+
+== Eliminar agentes de la consola
+
+Si un agente de consola está inactivo, puedes eliminarlo de la lista de agentes.  Puede hacer esto si elimina la máquina virtual del agente o si desinstala el software del agente.
+
+Tenga en cuenta lo siguiente sobre la eliminación de un agente de consola:
+
+* Esta acción no elimina la máquina virtual.
+* Esta acción no se puede revertir: una vez que elimines un agente de consola, no podrás volver a agregarlo.
+
+
+.Pasos
+. Seleccione *Administración > Agentes*.
+. En la página *Descripción general*, seleccione el menú de acciones para un agente inactivo y seleccione *Eliminar agente*.
+. Ingrese el nombre del agente a confirmar y luego seleccione *Eliminar*.
+

@@ -1,0 +1,98 @@
+---
+sidebar: sidebar 
+permalink: task-partnerships-create.html 
+keywords: partner organizations, create partnership, MSPs, service provider access 
+summary: Cree asociaciones para establecer conexiones seguras y administradas entre su organización y socios de confianza para la gestión colaborativa de recursos de NetApp . 
+---
+= Administrar asociaciones en la consola de NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cree asociaciones para establecer conexiones seguras y administradas entre su organización y socios de confianza para la gestión colaborativa de recursos de NetApp .
+
+Las asociaciones le permiten administrar de forma segura los recursos de NetApp a través de los límites con relaciones basadas en roles en la consola.  La organización iniciadora concede acceso a sus recursos, mientras que la organización receptora proporciona los usuarios o las cuentas de servicio a los que se les concederá acceso.  Las asociaciones se establecen a través de un flujo de trabajo de autoservicio, que brinda a la organización iniciadora control total sobre qué recursos se comparten, qué roles se asignan y la capacidad de incorporar, administrar o revocar el acceso de los socios según sea necesario.
+
+.Roles requeridos
+El rol de *Administrador de asociación* es necesario para crear y gestionar asociaciones.  El *visor de asociaciones* puede ver la página de Asociaciones.link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso."]
+
+
+
+== Iniciar una asociación organizacional
+
+Puede solicitar una asociación con otra organización si conoce su ID de organización.  La organización receptora aprueba la solicitud antes de que la asociación pueda continuar.
+
+Antes de comenzar, asegúrese de tener el ID de la organización asociada y de que se le haya asignado el rol de *Administrador de asociación*.
+
+.Pasos
+. Seleccione *Administración > Identidad y acceso*.
+. Seleccione la pestaña *Asociaciones*.
+. Seleccione *Agregar asociación*.
+. En el cuadro de diálogo *Crear asociación*, ingrese el ID de la organización asociada solicitada y seleccione *Agregar*.
++
+La solicitud de asociación se envía a la organización asociada para su aprobación.  Puede ver el estado de la solicitud de asociación en la página *Asociaciones*.
+
+
+
+
+
+== Aprobar una asociación organizacional
+
+Una solicitud de asociación entre una organización y otra debe ser aceptada por la organización receptora antes de que la asociación pueda continuar.  Debe tener el rol de *Administrador de asociaciones* para aprobar y administrar asociaciones.
+
+.Pasos
+. Seleccione *Administración > Identidad y acceso*.
+. Seleccione *Asociaciones*.
+. Seleccione la pestaña *Asociación recibida*.
+. Navegue hasta la asociación recibida que desea aprobar y seleccioneimage:icon-action.png["Un icono que consta de tres puntos uno al lado del otro."] y luego seleccione *Aprobar*.
+. Revise los detalles de la asociación, incluido el nombre y el ID de la organización que solicitó la asociación y seleccione *Siguiente*.
+. Opcional, agregue miembros de la organización a la asociación y seleccione *Aplicar*.
++
+Puede agregar miembros adicionales a través de la página *Asociación* en cualquier momento.
+
++
+
+NOTE: Cualquier miembro que agregue se volverá visible en la organización del socio, donde el socio puede asignarlos a recursos.
+
+
+
+.Resultado
+La asociación que usted aprobó ahora muestra un estado de *Establecido*.  Los usuarios con roles de *Administrador de asociación* o *Visor de asociación* en cualquiera de las organizaciones pueden ver la asociación.
+
+
+
+== Ver el estado de la asociación
+
+Vea el estado de sus asociaciones.
+
+.Rol requerido
+Administrador de asociaciones, visor de asociaciones.link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso."]
+
+.Pasos
+. Seleccione *Administración > Identidad y acceso*.
+. Seleccione las *Asociaciones*.
+. Seleccione la pestaña *Asociaciones iniciadas* o *Asociaciones recibidas*.
+. Revise la tabla respectiva que muestra las asociaciones y sus estados.
+
+
+
+
+== Deshabilitar una asociación de organización
+
+Debe ser miembro de la organización iniciadora para deshabilitar una asociación.  Al deshabilitar una asociación, se revoca inmediatamente el acceso a cualquier recurso de su organización que se haya compartido con la organización asociada.
+
+.Rol requerido
+Administrador de asociación.link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso."]
+
+.Pasos
+. Seleccione *Administración > Identidad y acceso*.
+. Seleccione las *Asociaciones*.
+. Seleccione la pestaña *Asociaciones iniciadas*.
+. Revise la tabla respectiva que muestra las asociaciones y sus estados.
+. Navegue hasta la asociación iniciada que desea deshabilitar y seleccioneimage:icon-action.png["Un icono que consta de tres puntos uno al lado del otro."] y luego seleccione *Deshabilitar*.
+

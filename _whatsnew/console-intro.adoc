@@ -1,0 +1,122 @@
+= Menús y páginas de navegación
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+BlueXP ahora es NetApp Console.
+
+La consola NetApp , construida sobre la base BlueXP mejorada y reestructurada, proporciona una gestión centralizada del almacenamiento NetApp y de los servicios de datos NetApp en entornos locales y en la nube a nivel empresarial, brindando información en tiempo real, flujos de trabajo más rápidos y una administración simplificada, que es altamente segura y compatible.
+
+A continuación se enumeran los cambios de navegación y terminología en la consola de NetApp .  Para obtener una lista completa de las características de esta versión del 6 de octubre de 2025, consultelink:https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#10-06-2025["Novedades de la consola de NetApp"] .
+
+
+
+=== Menús y páginas de navegación
+
+NetApp movió la mayoría de las opciones del menú al panel de navegación izquierdo y reorganizó los menús para facilitar la navegación en la Consola de NetApp .
+
+
+
+==== Canvas se reemplaza por la página de Sistemas
+
+NetApp cambió el nombre del Canvas a la página *Sistemas*.  Vaya a la página *Sistema* desde el menú *Almacenamiento > Administración*.
+
+image:screenshot-storage-mgmt.png["Una captura de pantalla de la página de sistemas."]
+
+
+
+==== Menú de almacenamiento ampliado
+
+El menú *Almacenamiento* también incluye *Alertas* para ver las alertas del sistema ONTAP y *Planificación del ciclo de vida* (anteriormente *Eficiencia económica*) para identificar recursos no utilizados o subutilizados.
+
+NetApp también ha movido Keystone al menú *Almacenamiento*, donde puede administrar sus suscripciones de NetApp Keystone y ver su uso.
+
+image:screenshot-storage-menu.png["Una captura de pantalla del menú Almacenamiento."]
+
+
+
+==== Menú de administración
+
+Utilice el menú centralizado *Administración* para administrar la consola de NetApp , los casos de soporte, las licencias y las suscripciones (anteriormente llamadas billetera digital).
+
+image:screenshot-admin-menu.png["Una captura de pantalla del menú de Administración."]
+
+
+
+==== Menú de salud
+
+Un menú *Salud* rediseñado incluye *Actualizaciones de software* donde puede administrar las actualizaciones del software ONTAP , *Sustentabilidad* donde puede monitorear su impacto ambiental y * Digital Advisor* donde puede obtener recomendaciones proactivas para optimizar su entorno de almacenamiento.
+
+
+
+==== Menú de gobernanza
+
+El menú *Gobernanza* incluye *Clasificación de datos*, donde puede administrar la clasificación y el cumplimiento de los datos, y el *Centro de automatización*, donde puede crear y administrar flujos de trabajo de automatización.
+
+
+
+=== Nomenclatura más intuitiva de elementos, servicios de datos y funciones
+
+NetApp cambió el nombre de varios elementos, servicios de datos y características para aclarar su propósito.  Los cambios clave incluyen:
+
+[cols="10,24"]
+|===
+| *Nombre anterior* | * Nombre de la consola de NetApp * 
+
+
+| Conectores  a| 
+Agentes de consola.
+
+Vea, agregue y administre sus agentes desde el menú *Administración > Agentes*.
+
+
+
+| Página de la línea de tiempo  a| 
+Página de auditoría
+
+Vea la actividad de la consola de auditoría desde el menú *Administración > Auditoría*.
+
+
+
+| Entornos de trabajo  a| 
+Sistemas
+
+Vea, agregue y administre sus sistemas desde el menú *Almacenamiento > Administración*.
+
+
+
+| Protección contra ransomware BlueXP  a| 
+Resiliencia de NetApp frente al ransomware.
+
+Ransomware Resilience le ayuda a proteger sus datos y recuperarse rápidamente de un ataque de ransomware.
+
+
+
+| Eficiencia económica de BlueXP  a| 
+Planificación del ciclo de vida.
+
+La planificación del ciclo de vida le ayuda a optimizar sus costos de almacenamiento al identificar recursos no utilizados y subutilizados.
+
+Acceda a la Planificación del ciclo de vida desde el menú *Almacenamiento > Planificación del ciclo de vida*.
+
+
+
+| BlueXP digital wallet  a| 
+Licencias y suscripciones
+
+Acceda a sus licencias y suscripciones desde el menú *Administración > Licencias y suscripciones*.
+
+|===
+
+
+==== Seleccionar y administrar agentes de la consola
+
+Acceda y administre sus agentes de consola desde el menú *Administración > Agentes*.  NetApp ha cambiado la forma de seleccionar un agente de consola para la página *Sistemas* (anteriormente Canvas).  NetApp ha reemplazado el nombre del menú Conector por un íconoimage:icon-agent.png["icono de agente"] , lo que le permite seleccionar el agente de consola para el cual desea ver los sistemas.
+
+image:screenshot-agent-icon-menu.png["Una captura de pantalla que muestra el ícono para seleccionar un agente de consola."]
+
+También puedes administrar tus agentes desde el menú *Administración > Agentes*.

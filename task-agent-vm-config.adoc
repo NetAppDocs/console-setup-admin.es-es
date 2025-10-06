@@ -1,0 +1,170 @@
+---
+sidebar: sidebar 
+permalink: task-agent-vm-config.html 
+keywords: agent VM, vcenter, esxi, increase cpu, increase ram, vm maintenance, agent maintenance, agent operating system, agent host 
+summary: Puede realizar cambios en su host VCenter o ESXi existente después de implementar el agente de consola.  Por ejemplo, puede aumentar la CPU o la RAM de la instancia de VM que aloja el agente de consola. 
+---
+= Mantener un host VCenter o ESXi para el agente de consola
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Puede realizar cambios en su host VCenter o ESXi existente después de implementar el agente de consola.  Por ejemplo, puede aumentar la CPU o la RAM de la instancia de VM que aloja el agente de consola.
+
+Realice estas tareas de mantenimiento mediante la consola web de la máquina virtual:
+
+* Aumentar el tamaño del disco
+* Reiniciar el agente
+* Actualizar rutas estáticas
+* Actualizar dominios de búsqueda
+
+
+.Limitaciones
+Aún no se admite la actualización del agente a través de la consola.  Además, solo puedes ver información sobre la dirección IP, DNS y puertas de enlace.
+
+
+
+== Acceder a la consola de mantenimiento de la máquina virtual
+
+Puede acceder a la consola de mantenimiento desde el cliente VSphere.
+
+.Pasos
+. Abra el cliente VSphere e inicie sesión en su VCenter.
+. Seleccione la instancia de VM que aloja el agente de consola.
+. Seleccione *Iniciar consola web*.
+. Inicie sesión en la instancia de VM utilizando el nombre de usuario y la contraseña que especificó cuando creó la instancia de VM.  El nombre de usuario es `maint` y la contraseña es la que especificaste cuando creaste la instancia de VM.
+
+
+
+
+=== Cambiar la contraseña del usuario principal
+
+Puede cambiar la contraseña de la `maint` usuario.
+
+.Pasos
+. Abra el cliente VSphere e inicie sesión en su VCenter.
+. Seleccione la instancia de VM que aloja el agente de consola.
+. Seleccione *Iniciar consola web*.
+. Inicie sesión en la instancia de VM utilizando el nombre de usuario y la contraseña que especificó cuando creó la instancia de VM.  El nombre de usuario es `maint` y la contraseña es la que especificaste cuando creaste la instancia de VM.
+. Ingresar `1` Para ver el `System Configuration` menú.
+. Ingresar `1` para cambiar la contraseña del usuario de mantenimiento y seguir las instrucciones en pantalla.
+
+
+
+
+=== Aumente la CPU o RAM de la instancia de VM
+
+Puede aumentar la CPU o la RAM de la instancia de VM que aloja el agente de consola.
+
+Edite la configuración de la instancia de VM en su host VCenter o ESXi y luego use la consola de mantenimiento para aplicar los cambios.
+
+.Pasos en el cliente VSphere
+. Abra el cliente VSphere e inicie sesión en su VCenter.
+. Seleccione la instancia de VM que aloja el agente de consola.
+. Haga clic derecho en la instancia de VM y seleccione *Editar configuración*.
+. Aumente el espacio del disco duro utilizado para la partición /opt o /var.
++
+.. Seleccione *Disco duro 2* para aumentar el espacio del disco duro utilizado para /opt.
+.. Seleccione *Disco duro 3* para aumentar el espacio del disco duro utilizado para /var.
+
+
+. Guarde sus cambios.
+
+
+.Pasos en la consola de mantenimiento
+. Abra el cliente VSphere e inicie sesión en su VCenter.
+. Seleccione la instancia de VM que aloja el agente de consola.
+. Seleccione *Iniciar consola web*.
+. Inicie sesión en la instancia de VM utilizando el nombre de usuario y la contraseña que especificó cuando creó la instancia de VM.  El nombre de usuario es `maint` y la contraseña es la que especificaste cuando creaste la instancia de VM.
+. Ingresar `1 to view the `System Configuration` menú.
+. Ingresar `2` y siga las instrucciones en pantalla.  La consola busca nuevas configuraciones y aumenta el tamaño de las particiones.
+
+
+
+
+=== Ver la configuración de red para la máquina virtual del agente
+
+Vea la configuración de red de la máquina virtual del agente en el cliente VSphere para confirmar o solucionar problemas de red.  Solo puede ver (no actualizar) las siguientes configuraciones de red: dirección IP y detalles de DNS.
+
+.Pasos
+. Abra el cliente VSphere e inicie sesión en su VCenter.
+. Seleccione la instancia de VM que aloja el agente de consola.
+. Seleccione *Iniciar consola web*.
+. Inicie sesión en la instancia de VM utilizando el nombre de usuario y la contraseña que especificó cuando creó la instancia de VM.  El nombre de usuario es `maint` y la contraseña es la que especificaste cuando creaste la instancia de VM.
+. Ingresar `2` Para ver el `Network Configuration` menú.
+. Introduzca un número entre 1 y 6 para ver la configuración de red correspondiente.
+
+
+
+
+=== Actualizar las rutas estáticas para la máquina virtual del agente
+
+Agregue, actualice o elimine rutas estáticas para la máquina virtual del agente según sea necesario.
+
+.Pasos
+. Abra el cliente VSphere e inicie sesión en su VCenter.
+. Seleccione la instancia de VM que aloja el agente de consola.
+. Seleccione *Iniciar consola web*.
+. Inicie sesión en la instancia de VM utilizando el nombre de usuario y la contraseña que especificó cuando creó la instancia de VM.  El nombre de usuario es `maint` y la contraseña es la que especificaste cuando creaste la instancia de VM.
+. Ingresar `2` Para ver el `Network Configuration` menú.
+. Ingresar `7` para actualizar rutas estáticas y seguir las instrucciones en pantalla.
+. Presione Enter.
+. Opcionalmente, realice cambios adicionales.
+. Ingresar `9` para confirmar sus cambios.
+
+
+
+
+=== Actualizar la configuración de búsqueda de dominio para la máquina virtual del agente
+
+Puede actualizar la configuración del dominio de búsqueda para la máquina virtual del agente.
+
+.Pasos
+. Abra el cliente VSphere e inicie sesión en su VCenter.
+. Seleccione la instancia de VM que aloja el agente de consola.
+. Seleccione *Iniciar consola web*.
+. Inicie sesión en la instancia de VM utilizando el nombre de usuario y la contraseña que especificó cuando creó la instancia de VM.  El nombre de usuario es `maint` y la contraseña es la que especificaste cuando creaste la instancia de VM.
+. Ingresar `2`` Para ver el `Network Configuration` menú.
+. Ingresar `8` para actualizar la configuración de búsqueda del dominio y seguir las instrucciones en pantalla.
+. Presione Enter.
+. Opcionalmente, realice cambios adicionales.
+. Ingresar `9` para confirmar sus cambios.
+
+
+
+
+=== Acceda a las herramientas de diagnóstico del agente
+
+Acceda a herramientas de diagnóstico para solucionar problemas con el agente de la consola.  Es posible que el soporte de NetApp le solicite que haga esto al solucionar problemas.
+
+.Pasos
+. Abra el cliente VSphere e inicie sesión en su VCenter.
+. Seleccione la instancia de VM que aloja el agente de consola.
+. Seleccione *Iniciar consola web*.
+. Inicie sesión en la instancia de VM utilizando el nombre de usuario y la contraseña que especificó cuando creó la instancia de VM.  El nombre de usuario es `maint` y la contraseña es la que especificaste cuando creaste la instancia de VM.
+. Ingresar `3` para ver el menú de Soporte y Diagnóstico.
+. Ingresar `1` para acceder a las herramientas de diagnóstico y seguir las instrucciones en pantalla.  + Por ejemplo, puede verificar que todos los servicios del agente se estén ejecutando. link:task-troubleshoot-connector.html#check-agent-status["Comprobar el estado del agente de la consola"^] .
+
+
+
+
+=== Acceda a las herramientas de diagnóstico del agente de forma remota
+
+Puede acceder a herramientas de diagnóstico de forma remota con una herramienta como Putty.  Habilite el acceso SSH a la máquina virtual del agente asignando una contraseña de un solo uso.
+
+El acceso SSH permite funciones de terminal avanzadas como copiar y pegar.
+
+.Pasos
+. Abra el cliente VSphere e inicie sesión en su VCenter.
+. Seleccione la instancia de VM que aloja el agente de consola.
+. Seleccione *Iniciar consola web*.
+. Inicie sesión en la instancia de VM utilizando el nombre de usuario y la contraseña que especificó cuando creó la instancia de VM.  El nombre de usuario es `maint` y la contraseña es la que especificaste cuando creaste la instancia de VM.
+. Ingresar `3` Para ver el `Support and Diagnostics` menú.
+. Ingresar `2` para acceder a las herramientas de diagnóstico y seguir las instrucciones en pantalla para configurar una contraseña de un solo uso que vence en 24 horas.
+. Utilice una herramienta SSH como Putty para conectarse a la máquina virtual del agente usando el nombre de usuario `diag` y la contraseña de un solo uso que usted configuró.
+

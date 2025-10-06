@@ -1,0 +1,168 @@
+---
+sidebar: sidebar 
+permalink: reference-connector-operating-system-changes.html 
+keywords: connector, operating systems, connector operating systems, os support, supported operating systems, rhel 8, rhel 9, red hat, docker, podman, agent 
+summary: NetApp a veces agrega y elimina soporte para el agente de consola en sistemas operativos Linux específicos. Conozca cómo este soporte afecta a sus agentes de consola existentes. 
+---
+= Cambios en los sistemas operativos Linux compatibles
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp a veces agrega y elimina soporte para el agente de consola en sistemas operativos Linux específicos. Conozca cómo este soporte afecta a sus agentes de consola existentes.
+
+
+
+== Sistemas operativos compatibles
+
+NetApp admite el agente con los siguientes sistemas operativos Linux.
+
+[role="tabbed-block"]
+====
+.Modo estándar
+--
+Instalación manual::
++
+--
+* Ubuntu 24.04 LTS
+* Ubuntu 22.04 LTS
+* Red Hat Enterprise Linux
++
+** 8.6 a 8.10
+** 9.1 a 9.4
+
+
+
+
+--
+Implementación desde la consola de NetApp:: Ubuntu 22.04 LTS
+Implementación desde AWS Marketplace:: Ubuntu 22.04 LTS
+Implementación desde Azure Marketplace:: Ubuntu 22.04 LTS
+
+
+--
+.Modo restringido
+--
+Instalación manual::
++
+--
+* Ubuntu 24.04 LTS
+* Ubuntu 22.04 LTS
+* Red Hat Enterprise Linux
++
+** 8.6 a 8.10
+** 9.1 a 9.4
+
+
+
+
+--
+Implementación desde AWS Marketplace:: Ubuntu 22.04 LTS
+Implementación desde Azure Marketplace:: Ubuntu 22.04 LTS
+
+
+--
+.Modo privado
+--
+Instalación manual::
++
+--
+* Ubuntu 22.04 LTS
+* Red Hat Enterprise Linux
++
+** 8.6 a 8.10
+** 9.1 a 9.4
+
+
+
+
+--
+
+
+--
+====
+
+
+== Compatibilidad con RHEL 8 y 9
+
+Tenga en cuenta lo siguiente sobre la compatibilidad con RHEL 8 y 9:
+
+Limitaciones:: La clasificación de datos de NetApp es compatible si instala el agente en un host RHEL 8 o 9 que reside localmente.  No es compatible si el host RHEL 8 o 9 reside en AWS, Azure o Google Cloud.
+Herramienta de orquestación de contenedores:: Debe utilizar la herramienta Podman como herramienta de orquestación de contenedores al instalar el agente de consola en un host RHEL 8 o 9.  Docker Engine no es compatible con RHEL 8 y 9.
+Modo de implementación:: RHEL 8 y 9 son compatibles cuando se utiliza la consola en modo estándar y modo restringido.
+Versiones del agente de consola compatibles:: NetApp admite RHEL 8 y 9 a partir de las siguientes versiones del agente de consola:
++
+--
+* 3.9.40 al utilizar la consola en modo estándar o modo restringido
+
+
+--
+Solo nuevas instalaciones manuales:: RHEL 8 y 9 son compatibles con _nuevas_ instalaciones de agentes cuando se instalan manualmente agentes en hosts que se ejecutan en sus instalaciones o en la nube.
+Actualizaciones de RHEL:: Si tiene un agente existente ejecutándose en un host RHEL 7, NetApp no ​​admite la actualización del sistema operativo RHEL 7 a RHEL 8 o 9. <<rhel-7-agent,Obtenga más información sobre los agentes de consola existentes en RHEL 7 o CentOS 7>> .
+
+
+
+
+== Fin del soporte para RHEL 7 y CentOS 7
+
+El 30 de junio de 2024, RHEL 7 alcanzó el final del mantenimiento (EOM), mientras que CentOS 7 alcanzó el final de su vida útil (EOL).  NetApp suspendió el soporte para agentes en estas distribuciones de Linux el 30 de junio de 2024.
+
+https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux/rhel-7-end-of-maintenance["Red Hat: Qué debe saber sobre el fin del mantenimiento de Red Hat Enterprise Linux 7"^]
+
+
+
+=== Agentes de consola existentes en RHEL 7 o CentOS 7
+
+Si tiene un agente existente ejecutándose en RHEL 7 o CentOS 7, NetApp no ​​admite la actualización ni la conversión del sistema operativo a RHEL 8 o 9.  Debe crear un nuevo agente en un sistema operativo compatible.
+
+. Configurar un host RHEL 8 o 9.
+. Instalar Podman.
+. Instalar un _nuevo_ agente.
+. Configure el agente para descubrir los sistemas que administraba el agente anterior.
+
+
+
+
+== Información relacionada
+
+
+
+=== Cómo empezar a utilizar RHEL 8 y 9
+
+Consulte las siguientes páginas para obtener detalles sobre los requisitos del host, los requisitos de Podman y los pasos para instalar Podman y Cagent:
+
+[role="tabbed-block"]
+====
+.Modo estándar
+--
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["Instalar y configurar un agente de consola local"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-manual.html["Instalar manualmente el agente de consola en AWS"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-azure-manual.html["Instalar manualmente el agente de consola en Azure"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-google-manual.html["Instalar manualmente el agente de la consola en Google Cloud"]
+
+
+--
+.Modo restringido
+--
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-restricted-mode.html["Prepárese para la implementación en modo restringido"]
+
+--
+====
+
+
+=== Cómo redescubrir sus sistemas
+
+Consulte las siguientes páginas para redescubrir sus sistemas después de implementar un nuevo agente de consola.
+
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-adding-systems.html["Agregar sistemas Cloud Volumes ONTAP existentes"^]
+* https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Descubra los clústeres ONTAP locales"^]
+* https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-creating-fsx-working-environment.html["Crear o descubrir un sistema FSx para ONTAP"^]
+* https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-create-working-env.html["Crear un sistema de Azure NetApp Files"^]
+* https://docs.netapp.com/us-en/bluexp-e-series/task-discover-e-series.html["Descubra los sistemas de la Serie E"^]
+* https://docs.netapp.com/us-en/bluexp-storagegrid/task-discover-storagegrid.html["Descubra los sistemas StorageGRID"^]
+

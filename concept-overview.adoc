@@ -1,0 +1,164 @@
+---
+sidebar: sidebar 
+permalink: concept-overview.html 
+keywords: overview, concepts, features, use case, cloud manager, bluexp, how bluexp works, supported cloud providers, cloud providers, hyperscalers, aws, google, how NetApp Console works 
+summary: La consola de NetApp proporciona una gestión centralizada de los servicios de datos y almacenamiento de NetApp en entornos locales y en la nube a escala empresarial. 
+---
+= Obtenga más información sobre la consola de NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+La consola de NetApp proporciona una gestión centralizada del almacenamiento de NetApp y de los servicios de datos de NetApp en entornos locales y en la nube a nivel empresarial, brindando información en tiempo real, flujos de trabajo más rápidos y una administración simplificada, que es altamente segura y compatible.
+
+Está disponible como una plataforma de servicio (SaaS) que proporciona gestión de almacenamiento, movilidad de datos, protección de datos y análisis y control de datos.  Las capacidades de gestión se proporcionan a través de una consola basada en web y API.
+
+
+
+== Funciones
+
+La consola unifica la gestión y protección del almacenamiento en nubes híbridas múltiples con servicios de datos integrados para proteger y optimizar los datos.
+
+
+
+=== Gestión centralizada del almacenamiento
+
+Descubra, implemente y administre el almacenamiento local y en la nube con la consola.
+
+
+
+==== Almacenamiento en la nube y local compatible
+
+Puede administrar los siguientes tipos de almacenamiento desde la consola:
+
+Soluciones de almacenamiento en la nube::
++
+--
+* Amazon FSx for NetApp ONTAP
+* Azure NetApp Files
+* Cloud Volumes ONTAP
+* Google Cloud NetApp Volumes
+
+
+--
+Almacenamiento de objetos y flash local::
++
+--
+* Sistemas de la serie E
+* Clústeres ONTAP
+* Sistemas StorageGRID
+
+
+--
+Almacenamiento de objetos en la nube::
++
+--
+* Almacenamiento de Amazon S3
+* Almacenamiento de blobs de Azure
+* Almacenamiento en la nube de Google
+
+
+--
+
+
+
+
+==== Gestión de almacenamiento
+
+Dentro de la consola, los _sistemas_ representan el almacenamiento descubierto o implementado.  Puede seleccionar un _sistema_ para integrarlo con los servicios de datos de NetApp o administrar el almacenamiento, como agregar volúmenes.
+
+image:screenshot-canvas.png["Una captura de pantalla de la consola que muestra varios sistemas, uno de los cuales está seleccionado y muestra la capacidad de habilitar los servicios de datos de NetApp o seleccionar *Ingresar sistema* para administrar el almacenamiento."]
+
+
+
+=== Servicios de datos integrados y gestión de almacenamiento para proteger, asegurar y optimizar los datos
+
+La consola proporciona servicios de datos para proteger y mantener la disponibilidad del almacenamiento.
+
+Alertas de almacenamiento:: Vea problemas relacionados con la capacidad, disponibilidad, rendimiento, protección y seguridad en su entorno ONTAP .
+Centro de automatización:: Utilice soluciones con scripts para automatizar la implementación y la integración de productos y servicios de NetApp .
+Copia de seguridad y recuperación de NetApp:: Realice copias de seguridad y restaure datos locales y en la nube.
+Clasificación de datos de NetApp:: Prepare la privacidad de los datos de sus aplicaciones y entornos de nube.
+Copia y sincronización de NetApp:: Sincronice datos entre almacenes de datos locales y en la nube.
+Asesor digital de NetApp (Active IQ):: Utilice análisis predictivos y soporte proactivo para optimizar su infraestructura de datos.
+Licencias y suscripciones:: Administre y monitoree sus licencias y suscripciones.
+Recuperación ante desastres de NetApp:: Proteja las cargas de trabajo locales de VMware utilizando VMware Cloud en Amazon FSx para ONTAP como sitio de recuperación ante desastres.
+Planificación del ciclo de vida:: Identifique clústeres con baja capacidad actual o prevista e implemente niveles de datos o recomendaciones de capacidad adicional.
+Resiliencia de NetApp frente al ransomware:: Detecta anomalías que podrían resultar en ataques de ransomware.  Proteger y recuperar cargas de trabajo.
+Replicación de NetApp:: Replicar datos entre sistemas de almacenamiento para respaldar la copia de seguridad y la recuperación ante desastres.
+Actualizaciones de software:: Automatice la evaluación, planificación y ejecución de las actualizaciones de ONTAP .
+Panel de sostenibilidad:: Analice la sostenibilidad de sus sistemas de almacenamiento.
+Nivelación de la nube de NetApp:: Amplíe su almacenamiento ONTAP local a la nube.
+Almacenamiento en caché de volumen de NetApp:: Cree un volumen de caché escribible para acelerar el acceso a los datos o descargar el tráfico de volúmenes con mucho acceso.
+Cargas de trabajo de NetApp:: Diseñe, configure y opere cargas de trabajo clave utilizando Amazon FSx for NetApp ONTAP.
+
+
+https://www.netapp.com/bluexp/["Obtenga más información sobre la consola de NetApp y los servicios de datos disponibles"^]
+
+
+
+== Proveedores de nube compatibles
+
+La consola le permite administrar el almacenamiento en la nube y utilizar servicios en la nube en Amazon Web Services, Microsoft Azure y Google Cloud.
+
+
+
+== Costo
+
+La consola NetApp es gratuita.  Incurrirá en costos si implementa agentes de consola en la nube o utiliza el modo restringido implementado en la nube.  Existen costos asociados con algunos servicios de datos de NetApp .https://bluexp.netapp.com/pricing["Obtenga más información sobre los precios de los servicios de datos de NetApp"^]
+
+
+
+== Cómo funciona la consola de NetApp
+
+La consola de NetApp es una consola basada en web que se proporciona a través de la capa SaaS, un sistema de gestión de recursos y acceso, agentes de consola que administran sistemas de almacenamiento y habilitan servicios de datos de NetApp , y diferentes modos de implementación para satisfacer los requisitos de su negocio.
+
+
+
+=== Software como servicio
+
+Accedes a la consola a través de un https://console.netapp.com["interfaz basada en web"^] y API.  Esta experiencia SaaS le permite acceder automáticamente a las últimas funciones a medida que se lanzan.
+
+
+
+=== Gestión de identidad y acceso (IAM)
+
+La consola proporciona gestión de identidad y acceso (IAM) para la gestión de recursos y acceso.  Este modelo IAM proporciona una gestión granular de recursos y permisos:
+
+* Una _organización_ de nivel superior le permite administrar el acceso a sus diversos _proyectos_
+* Las _carpetas_ le permiten agrupar proyectos relacionados
+* La gestión de recursos le permite asociar un recurso con una o más carpetas o proyectos
+* La gestión de acceso le permite asignar un rol a los miembros en diferentes niveles de la jerarquía de la organización.
+* link:concept-identity-and-access-management.html["Obtenga más información sobre IAM en la consola de NetApp"]
+
+
+
+
+=== Agentes de consola
+
+Se necesita un agente de consola para algunas funciones y servicios de datos adicionales.  Le permite administrar recursos y procesos en sus entornos locales y en la nube.  Lo necesita para administrar algunos sistemas (por ejemplo, Cloud Volumes ONTAP) y para utilizar algunos servicios de datos de NetApp .
+
+link:concept-connectors.html["Obtenga más información sobre los agentes de consola"] .
+
+
+
+=== Modos de implementación
+
+NetApp ofrece dos modos de implementación para la consola de NetApp : el _modo estándar_ utiliza una capa de software como servicio (SaaS) para una funcionalidad completa, mientras que el _modo restringido_ limita la conectividad saliente.
+
+NetApp continúa ofreciendo BlueXP para sitios que no necesitan conectividad saliente.  BlueXP solo está disponible en modo privado.link:task-quick-start-private-mode.html["Obtenga información sobre BlueXP (modo privado) para sitios sin conectividad a Internet."]
+
+link:concept-modes.html["Obtenga más información sobre los modos de implementación"] .
+
+
+
+== Certificación SOC 2 Tipo 2
+
+Una firma de contadores públicos certificados independientes y un auditor de servicios examinaron la Consola y afirmaron que logró informes SOC 2 Tipo 2 basados en los criterios de Servicios de Confianza aplicables.
+
+https://www.netapp.com/company/trust-center/compliance/soc-2/["Ver los informes SOC 2 de NetApp"^]

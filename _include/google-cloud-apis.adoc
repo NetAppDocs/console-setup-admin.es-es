@@ -1,0 +1,14 @@
+= 
+:allow-uri-read: 
+
+
+* API de Cloud Deployment Manager V2
+* API de registro en la nube
+* API del administrador de recursos en la nube
+* API de Compute Engine
+* API de gestión de identidad y acceso (IAM)
+* API del servicio de administración de claves en la nube (KMS)
++
+(Obligatorio solo si planea utilizar NetApp Backup and Recovery con claves de cifrado administradas por el cliente (CMEK))
+
+

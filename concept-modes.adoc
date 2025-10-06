@@ -1,0 +1,326 @@
+---
+sidebar: sidebar 
+permalink: concept-modes.html 
+keywords: dark site, internet, on prem, no internet, supported deployments, govcloud, government access, environments, supported environments, deployment modes, modes, private mode, restricted mode, il6, sc2s, c2s, dark site, sovereign region, saas, government region, secret region, top secret, aws secret, aws top secret, private 
+summary: 'La consola de NetApp ofrece múltiples _modos de implementación_ que le permiten satisfacer sus requisitos comerciales y de seguridad. El _modo estándar_ aprovecha una capa de software como servicio (SaaS) para proporcionar funcionalidad completa, mientras que el _modo restringido_ y el _modo privado_ están disponibles para organizaciones que tienen restricciones de conectividad.' 
+---
+= Obtenga más información sobre los modos de implementación de la consola de NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+La consola de NetApp ofrece múltiples _modos de implementación_ que le permiten satisfacer sus requisitos comerciales y de seguridad.
+
+* El _modo estándar_ aprovecha una capa de software como servicio (SaaS) para proporcionar una funcionalidad completa.  Los usuarios acceden a la consola a través de una interfaz alojada en la web
+* El _modo restringido_ está disponible para organizaciones que tienen restricciones de conectividad y desean instalar la consola de NetApp en su propia nube pública.  Los usuarios acceden a la consola a través de una interfaz basada en web alojada en un agente de consola en su entorno de nube.
++
+NetApp Console restringe el tráfico, la comunicación y los datos en modo restringido, y usted debe asegurarse de que su entorno (local y en la nube) cumpla con las regulaciones requeridas.
+
+
+
+
+
+== Descripción general
+
+Cada modo de implementación difiere en conectividad de salida, ubicación, instalación, autenticación, servicios de datos y métodos de cobro.
+
+Modo estándar:: Utiliza un servicio SaaS desde la consola basada en web.  Según los servicios de datos y las funciones que planee utilizar, un administrador de la organización de la consola crea uno o más agentes de la consola para administrar los datos dentro de su entorno de nube híbrida.
++
+--
+Este modo utiliza transmisión de datos cifrados a través de Internet público.
+
+--
+Modo restringido:: Instala un agente de consola en la nube (en una región gubernamental, soberana o comercial) y tiene conectividad de salida limitada a la capa SaaS de consola de NetApp .
++
+--
+Este modo lo suelen utilizar los gobiernos estatales y locales y las empresas reguladas.
+
+<<Modo restringido,Obtenga más información sobre la conectividad saliente a la capa SaaS>> .
+
+--
+Modo privado de BlueXP (solo interfaz heredada de BlueXP ):: El modo privado de BlueXP (interfaz BlueXP heredada) generalmente se usa con entornos locales que no tienen conexión a Internet y con regiones de nube seguras, que incluyen AWS Secret Cloud, AWS Top Secret Cloud y Azure IL6.  NetApp continúa brindando soporte a estos entornos con la interfaz BlueXP heredada.link:media/BlueXP-Private-Mode-legacy-interface.pdf["Documentación en PDF para el modo privado de BlueXP"^]
+
+
+La siguiente tabla proporciona una comparación de la consola de NetApp .
+
+[cols="16h,28,28"]
+|===
+|  | Modo estándar | Modo restringido 
+
+
+| ¿Se requiere conexión a la capa SaaS de la consola NetApp ? | Sí | Solo salida 
+
+
+| ¿Es necesario conectarse a su proveedor de nube? | Sí | Sí, dentro de la región 
+
+
+| Instalación del agente de consola | Desde la consola, el mercado en la nube o la instalación manual | Mercado en la nube o instalación manual 
+
+
+| Actualizaciones del agente de consola | Actualizaciones automáticas | Actualizaciones automáticas 
+
+
+| Acceso UI | Desde la capa SaaS de la consola | Localmente desde una máquina virtual de agente 
+
+
+| Punto final de API | La capa SaaS de la consola | Un agente de consola 
+
+
+| Autenticación | A través de SaaS utilizando auth0, inicio de sesión NSS o federación de identidad | A través de SaaS utilizando auth0 o federación de identidad 
+
+
+| Autenticación multifactor | Disponible para usuarios locales | No disponible 
+
+
+| Servicios de almacenamiento y datos | Todos son compatibles | Muchos son apoyados 
+
+
+| Opciones de licencia de servicios de datos | Suscripciones al Marketplace y BYOL | Suscripciones al Marketplace y BYOL 
+|===
+Lea las siguientes secciones para obtener más información sobre estos modos, incluidas las funciones y servicios de NetApp Console compatibles.
+
+
+
+== Modo estándar
+
+La siguiente imagen es un ejemplo de una implementación en modo estándar.
+
+image:diagram-standard-mode.png["Una imagen conceptual que muestra la Internet pública donde están disponibles la consola basada en web, la capa SaaS y la autenticación auth0, una red virtual en la nube donde un agente de consola se ejecuta y administra Cloud Volumes ONTAP y un clúster AFF en un centro de datos local."]
+
+La consola funciona de la siguiente manera en modo estándar:
+
+Comunicación saliente:: Se requiere conectividad desde un agente de consola a la capa SaaS de consola, a los recursos disponibles públicamente de su proveedor de nube y a otros componentes esenciales para las operaciones diarias.
++
+--
+* link:task-install-connector-aws-bluexp.html#networking-aws-agent["Puntos finales con los que un agente se pone en contacto en AWS"]
+* link:task-install-connector-azure-bluexp.html#networking-azure-agent["Puntos de conexión con los que contacta un agente en Azure"]
+* link:task-install-connector-google-bluexp-gcloud.html#networking-gcp-agent["Puntos finales con los que un agente se comunica en Google Cloud"]
+
+
+--
+Ubicación compatible con un agente:: En el modo estándar, un agente cuenta con soporte en la nube o en sus instalaciones.
+Instalación del agente de consola:: Puede instalar un agente utilizando uno de los siguientes métodos:
++
+--
+* Desde la consola
+* Desde AWS o Azure Marketplace
+* Desde el SDK de Google Cloud
+* Usar manualmente un instalador en un host Linux en su centro de datos o nube
+* Utilice el OVA proporcionado en su entorno VCenter.
+
+
+--
+Actualizaciones del agente de consola:: NetApp actualiza automáticamente su agente mensualmente.
+Acceso a la interfaz de usuario:: Se puede acceder a la interfaz de usuario desde la consola basada en web que se proporciona a través de la capa SaaS.
+Punto final de API:: Las llamadas API se realizan al siguiente punto final: https://api.bluexp.netapp.com
+Autenticación:: Autenticación con inicios de sesión con auth0 o del sitio de soporte de NetApp (NSS).  La federación de identidad está disponible.
+Servicios de datos compatibles:: Se admiten todos los servicios de datos de NetApp . link:https://docs.netapp.com/us-en/data-services-family/index.html["Obtenga más información sobre los servicios de datos de NetApp"^] .
+Opciones de licencia admitidas:: Las suscripciones de Marketplace y BYOL son compatibles con el modo estándar; sin embargo, las opciones de licencia admitidas dependen del servicio de datos de NetApp que esté utilizando.  Revise la documentación de cada servicio para obtener más información sobre las opciones de licencia disponibles.
+Cómo empezar a utilizar el modo estándar:: Ir a la https://console.netapp.com["Consola de NetApp"^] y regístrate.
++
+--
+link:task-quick-start-standard-mode.html["Aprenda cómo comenzar a utilizar el modo estándar"] .
+
+--
+
+
+
+
+== Modo restringido
+
+La siguiente imagen es un ejemplo de una implementación en modo restringido.
+
+image:diagram-restricted-mode.png["Una imagen conceptual que muestra la Internet pública donde están disponibles la capa SaaS y la autenticación auth0, una red virtual en la nube donde se ejecuta un agente de consola que proporciona acceso a la consola basada en web, y administra Cloud Volumes ONTAP y un clúster AFF en un centro de datos local."]
+
+La consola funciona de la siguiente manera en modo restringido:
+
+Comunicación saliente:: Un agente requiere conectividad saliente a la capa SaaS de la consola para servicios de datos, actualizaciones de software, autenticación y transmisión de metadatos.
++
+--
+La capa SaaS de la consola no inicia la comunicación con un agente.  Los agentes inician toda la comunicación con la capa SaaS de la consola, extrayendo o enviando datos según sea necesario.
+
+También se requiere una conexión a los recursos del proveedor de la nube desde dentro de la región.
+
+--
+Ubicación compatible con un agente:: En el modo restringido, se admite un agente en la nube: en una región gubernamental, una región soberana o una región comercial.
+Instalación del agente de consola:: Puede instalarlo desde AWS o Azure Marketplace o realizar una instalación manual en su propio host Linux o utilizar un OVA descargable en su entorno VCenter.
+Actualizaciones del agente de consola:: NetApp actualiza automáticamente el software de su agente con actualizaciones mensuales.
+Acceso a la interfaz de usuario:: Se puede acceder a la interfaz de usuario desde una máquina virtual de agente implementada en su región de nube.
+Punto final de API:: Las llamadas API se realizan a la máquina virtual del agente.
+Autenticación:: La autenticación se proporciona a través de auth0.  La federación de identidad también está disponible.
+Servicios de datos y gestión de almacenamiento compatibles:: Los siguientes servicios de almacenamiento y datos con modo restringido:
++
+--
+[cols="2*"]
+|===
+| Servicios soportados | Notas 
+
+
+| Azure NetApp Files | Soporte completo 
+
+
+| Copia de seguridad y recuperación | Compatible con regiones gubernamentales y regiones comerciales con modo restringido. No compatible con regiones soberanas con modo restringido. En el modo restringido, NetApp Backup and Recovery solo admite la copia de seguridad y la restauración de datos de volumen ONTAP . https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["Ver la lista de destinos de respaldo admitidos para datos de ONTAP"^] No se admite la realización de copias de seguridad ni la restauración de datos de aplicaciones ni de máquinas virtuales. 
+
+
+| Clasificación de datos de NetApp  a| 
+Compatible con regiones gubernamentales con modo restringido.  No compatible con regiones comerciales ni con regiones soberanas con modo restringido.
+
+
+
+| Cloud Volumes ONTAP | Soporte completo 
+
+
+| Licencias y suscripciones | Puede acceder a la información de licencia y suscripción con las opciones de licencia compatibles que se enumeran a continuación para el modo restringido. 
+
+
+| Clústeres ONTAP locales | Se admiten tanto el descubrimiento con un agente de consola como el descubrimiento sin un agente de consola (descubrimiento directo).  Cuando descubre un clúster local sin un agente de consola, la vista avanzada (Administrador del sistema) no es compatible. 
+
+
+| Replicación | Compatible con regiones gubernamentales con modo restringido.  No compatible con regiones comerciales ni con regiones soberanas con modo restringido. 
+|===
+--
+Opciones de licencia admitidas:: Las siguientes opciones de licencia son compatibles con el modo restringido:
++
+--
+* Suscripciones al Marketplace (contratos por hora y anuales)
++
+Tenga en cuenta lo siguiente:
+
++
+** Para Cloud Volumes ONTAP, solo se admiten licencias basadas en capacidad.
+** En Azure, no se admiten contratos anuales con regiones gubernamentales.
+
+
+* Trae tu propia bebida
++
+Para Cloud Volumes ONTAP, BYOL admite tanto las licencias basadas en capacidad como las licencias basadas en nodos.
+
+
+
+--
+Cómo empezar a utilizar el modo restringido:: Debe habilitar el modo restringido al crear su organización de consola de NetApp .
+
+
+Si aún no tiene una organización, se le solicitará que cree su organización y habilite el modo restringido cuando inicie sesión en la Consola por primera vez desde un agente de Consola que instaló manualmente o que creó desde el mercado de su proveedor de nube.
+
+
+NOTE: No se puede cambiar la configuración del modo restringido después de crear la organización.
+
+link:task-quick-start-restricted-mode.html["Aprenda cómo comenzar a utilizar el modo restringido"] .
+
+
+
+== Comparación de servicios y características
+
+La siguiente tabla puede ayudarle a identificar rápidamente qué servicios y funciones son compatibles con el modo restringido.
+
+Tenga en cuenta que algunos servicios podrían ser compatibles con limitaciones.  Para obtener más detalles sobre cómo se admiten estos servicios con el modo restringido, consulte las secciones anteriores.
+
+[cols="19,27,27"]
+|===
+| Área de productos | Servicio o característica de datos de NetApp | Modo restringido 
+
+
+.10+| *Almacenamiento* Esta parte de la tabla enumera el soporte para la administración de sistemas de almacenamiento desde la consola.  No indica los destinos de respaldo admitidos para NetApp Backup and Recovery. | Amazon FSx para ONTAP | No 
+
+
+| Amazon S3 | No 
+
+
+| Blob de Azure | No 
+
+
+| Azure NetApp Files | Sí 
+
+
+| Cloud Volumes ONTAP | Sí 
+
+
+| Google Cloud NetApp Volumes | No 
+
+
+| Almacenamiento en la nube de Google | No 
+
+
+| Clústeres ONTAP locales | Sí 
+
+
+| Serie E | No 
+
+
+| StorageGRID | No 
+
+
+.9+| *Servicios de datos* | Copia de seguridad y recuperación de NetApp | Síhttps://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["Ver la lista de destinos de respaldo admitidos para los datos de volumen de ONTAP"^] 
+
+
+| Clasificación de datos de NetApp | Sí 
+
+
+| Copia y sincronización de NetApp | No 
+
+
+| Recuperación ante desastres de NetApp | No 
+
+
+| Resiliencia de NetApp frente al ransomware | No 
+
+
+| Replicación de NetApp | Sí 
+
+
+| Nivelación de la nube de NetApp | No 
+
+
+| Almacenamiento en caché de volumen de NetApp | No 
+
+
+| Fábrica de cargas de trabajo de NetApp | No 
+
+
+.14+| *Características* | Alertas | No 
+
+
+| Digital Advisor | No 
+
+
+| Gestión de licencias y suscripciones | Sí 
+
+
+| Gestión de identidad y acceso | Sí 
+
+
+| Cartas credenciales | Sí 
+
+
+| Federación | Sí 
+
+
+| Planificación del ciclo de vida | No 
+
+
+| Autenticación multifactor | Sí 
+
+
+| Cuentas NSS | Sí 
+
+
+| Notificaciones | Sí 
+
+
+| Buscar | Sí 
+
+
+| Actualizaciones de software | No 
+
+
+| Sostenibilidad | No 
+
+
+| Auditoría | Sí 
+|===

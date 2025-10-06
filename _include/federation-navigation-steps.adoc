@@ -1,0 +1,9 @@
+= 
+:allow-uri-read: 
+
+
+.Pasos
+. Seleccione *Administración > Identidad y acceso*.
+. Seleccione *Federación* para ver la página *Federaciones*.
+. Seleccione *Configurar nueva federación*.
+

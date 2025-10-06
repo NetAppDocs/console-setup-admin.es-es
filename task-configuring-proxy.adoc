@@ -1,0 +1,144 @@
+---
+sidebar: sidebar 
+permalink: task-configuring-proxy.html 
+keywords: proxy, proxy server, proxy, internet, HTTP, http, https, bluexp 
+summary: Si sus políticas corporativas requieren que utilice un servidor proxy para todas las comunicaciones a Internet, entonces deberá configurar sus agentes para utilizar ese servidor proxy.  Si no configuró un agente de consola para usar un servidor proxy durante la instalación, puede configurar el agente de consola para usar ese servidor proxy en cualquier momento. 
+---
+= Configurar un agente de consola para utilizar un servidor proxy
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Si sus políticas corporativas requieren que utilice un servidor proxy para todas las comunicaciones a Internet, entonces deberá configurar sus agentes para utilizar ese servidor proxy.  Si no configuró un agente de consola para usar un servidor proxy durante la instalación, puede configurar el agente de consola para usar ese servidor proxy en cualquier momento.
+
+El servidor proxy del agente permite el acceso saliente a Internet sin una IP pública o una puerta de enlace NAT.  El servidor proxy proporciona conectividad saliente solo para el agente de la consola, no para los sistemas Cloud Volumes ONTAP .
+
+Si los sistemas Cloud Volumes ONTAP carecen de acceso a Internet saliente, la consola los configura para utilizar el servidor proxy del agente de la consola.  Debe asegurarse de que el grupo de seguridad del agente de la consola permita conexiones entrantes a través del puerto 3128.  Abra este puerto después de implementar el agente de consola.
+
+Si el agente de la consola no tiene una conexión a Internet saliente, los sistemas Cloud Volumes ONTAP no pueden usar el servidor proxy configurado.
+
+
+
+== Configuraciones compatibles
+
+* Los servidores proxy transparentes son compatibles con los agentes que prestan servicio a los sistemas Cloud Volumes ONTAP .  Si utiliza servicios de datos de NetApp con Cloud Volumes ONTAP, cree un agente dedicado para Cloud Volumes ONTAP donde pueda usar un servidor proxy transparente.
+* Los servidores proxy explícitos son compatibles con todos los agentes, incluidos aquellos que administran sistemas Cloud Volumes ONTAP y aquellos que administran servicios de datos de NetApp .
+* HTTP y HTTPS.
+* El servidor proxy puede residir en la nube o en su red.
+
+
+
+IMPORTANT: Una vez que haya configurado un proxy, no podrá cambiar el tipo de proxy.  Si necesita cambiar el tipo de proxy, elimine el agente de consola y agregue un nuevo agente con el nuevo tipo de proxy.
+
+
+
+== Habilitar un proxy explícito en un agente de consola
+
+Cuando configura un agente de consola para usar un servidor proxy, ese agente y los sistemas Cloud Volumes ONTAP que administra (incluido cualquier mediador de HA) usan el servidor proxy.
+
+Esta operación reinicia el agente de consola.  Verifique que el agente de la consola esté inactivo antes de continuar.
+
+.Pasos
+. Seleccione *Administración > Agentes*.
+. En la página *Descripción general*, seleccione el menú de acciones para un agente de consola y seleccione *Editar agente*.
++
+El agente de la consola debe estar activo para editarlo.
+
+. Seleccione *Configuración de proxy HTTP*.
+. Seleccione *Proxy explícito* en el campo Tipo de configuración.
+. Seleccione *Habilitar proxy*.
+. Especifique el servidor utilizando la sintaxis http://_address:port_[] o https://_address:port_[]
+. Especifique un nombre de usuario y una contraseña si se requiere autenticación básica para el servidor.
++
+Tenga en cuenta lo siguiente:
+
++
+** El usuario puede ser un usuario local o un usuario de dominio.
+** Para un usuario de dominio, debe ingresar el código ASCII para \ de la siguiente manera: nombre-de-dominio%92nombre-de-usuario
++
+Por ejemplo: netapp%92proxy
+
+** La consola no admite contraseñas que incluyan el carácter @.
+
+
+. Seleccione *Guardar*.
+
+
+
+
+== Habilitar un proxy transparente para un agente de consola
+
+Solo Cloud Volumes ONTAP admite el uso de un proxy transparente en el agente de la consola.  Si utiliza servicios de datos de NetApp además de Cloud Volumes ONTAP, debe crear un agente independiente para utilizarlo con los servicios de datos o con Cloud Volumes ONTAP.
+
+Antes de habilitar un proxy transparente, asegúrese de que se cumplan los siguientes requisitos:
+
+* El agente está instalado en la misma red que el servidor proxy transparente.
+* La inspección TLS está habilitada en el servidor proxy.
+* Tienes un certificado en formato PEM que coincide con el utilizado en el servidor proxy transparente.
+* No utilice el agente de consola para ningún servicio de datos de NetApp que no sea Cloud Volumes ONTAP.
+
+
+Para configurar un agente existente para que utilice un servidor proxy transparente, utilice la herramienta de mantenimiento del agente de consola que está disponible a través de la línea de comandos en el host del agente de consola.
+
+Cuando se configura un servidor proxy, el agente de la consola se reinicia.  Verifique que el agente de la consola esté inactivo antes de continuar.
+
+.Pasos
+Asegúrese de tener un archivo de certificado en formato PEM para el servidor proxy.  Si no tiene un certificado, comuníquese con su administrador de red para obtener uno.
+
+. Abra una interfaz de línea de comandos en el host del agente de la consola.
+. Navegue hasta el directorio de la herramienta de mantenimiento del agente de la consola: `/opt/application/netapp/service-manager-2/agent-maint-console`
+. Ejecute el siguiente comando para habilitar el proxy transparente, donde `/home/ubuntu/<certificate-file>.pem` es el directorio y el nombre del archivo de certificado que tiene para el servidor proxy:
++
+[source, CLI]
+----
+./agent-maint-console proxy add -c /home/ubuntu/<certificate-file>.pem
+----
++
+Asegúrese de que el archivo del certificado esté en formato PEM y resida en el mismo directorio que el comando o especifique la ruta completa al archivo del certificado.
+
++
+[source, CLI]
+----
+./agent-maint-console proxy add -c /home/ubuntu/<certificate-file>.pem
+----
+
+
+
+
+=== Modificar el proxy transparente para el agente de la consola
+
+Puede actualizar el servidor proxy transparente existente de un agente de consola mediante el `proxy update` comando o elimine el servidor proxy transparente mediante el uso del `proxy remove` dominio.  Para obtener más información, revise la documentación delink:reference-connector-maint-console.html["Consola de mantenimiento del agente"] .
+
+
+IMPORTANT: Una vez que haya configurado un proxy, no podrá cambiar el tipo de proxy.  Si necesita cambiar el tipo de proxy, elimine el agente de consola y agregue un nuevo agente con el nuevo tipo de proxy.
+
+
+
+== Actualice el proxy del agente de la consola si pierde el acceso a Internet
+
+Si la configuración del proxy de su red cambia, su agente podría perder el acceso a Internet.  Por ejemplo, si alguien cambia la contraseña del servidor proxy o actualiza el certificado.  En este caso, necesitarás acceder a la interfaz de usuario directamente desde el host del agente de la consola y actualizar la configuración.  Asegúrese de tener acceso a la red del host del agente de la consola y de que pueda iniciar sesión en la consola.
+
+
+
+== Habilitar el tráfico directo de API
+
+Si configuró un agente de consola para usar un servidor proxy, puede habilitar el tráfico de API directo en el agente de consola para enviar llamadas de API directamente a los servicios del proveedor de nube sin pasar por el proxy. Los agentes que se ejecutan en AWS, Azure o Google Cloud admiten esta opción.
+
+Si deshabilita Azure Private Links con Cloud Volumes ONTAP y usa puntos de conexión de servicio, habilite el tráfico de API directo.  De lo contrario, el tráfico no se enrutará correctamente.
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-link.html["Obtenga más información sobre el uso de Azure Private Link o puntos de conexión de servicio con Cloud Volumes ONTAP"^]
+
+.Pasos
+. Seleccione *Administración > Agentes*.
+. En la página *Descripción general*, seleccione el menú de acciones para un agente de consola y seleccione *Editar agente*.
++
+El agente de la consola debe estar activo para editarlo.
+
+. Seleccione *Admitir tráfico API directo*.
+. Seleccione la casilla de verificación para habilitar la opción y luego seleccione *Guardar*.
+

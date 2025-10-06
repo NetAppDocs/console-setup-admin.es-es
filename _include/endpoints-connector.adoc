@@ -1,0 +1,82 @@
+= 
+:allow-uri-read: 
+
+
+Puntos finales contactados desde el agente de la consola:: El agente de la consola requiere acceso a Internet saliente para comunicarse con los siguientes puntos finales para administrar recursos y procesos dentro de su entorno de nube pública para las operaciones diarias.
++
+--
+Los puntos finales enumerados a continuación son todas entradas CNAME.
+
+--
+
+
+| Servicios de AWS (amazonaws.com):
+
+* Formación de nubes
+* Nube de cómputo elástica (EC2)
+* Gestión de identidad y acceso (IAM)
+* Servicio de gestión de claves (KMS)
+* Servicio de token de seguridad (STS)
+* Servicio de almacenamiento simple (S3)
+
+
+| Para administrar los recursos de AWS.  El punto final depende de su región de AWS. https://docs.aws.amazon.com/general/latest/gr/rande.html["Consulte la documentación de AWS para obtener más detalles."^]
+
+| \ https://management.azure.com \ https://login.microsoftonline.com \ https://blob.core.windows.net \ https://core.windows.net
+
+| Para administrar recursos en regiones públicas de Azure.
+
+| \ https://management.azure.microsoft.scloud \ https://login.microsoftonline.microsoft.scloud \ https://blob.core.microsoft.scloud \ https://core.microsoft.scloud
+
+| Para administrar recursos en la región IL6 de Azure.
+
+| \ https://management.usgovcloudapi.net \ https://login.microsoftonline.us \ https://blob.core.usgovcloudapi.net \ https://core.usgovcloudapi.net
+
+| Para administrar recursos en regiones de Azure Government.
+
+| \ https://management.chinacloudapi.cn \ https://login.chinacloudapi.cn \ https://blob.core.chinacloudapi.cn \ https://core.chinacloudapi.cn
+
+| Para administrar recursos en las regiones de Azure China.
+
+| \ https://www.googleapis.com/compute/v1/ \ https://compute.googleapis.com/compute/v1 \ https://cloudresourcemanager.googleapis.com/v1/projects \ https://www.googleapis.com/compute/beta \ https://storage.googleapis.com/storage/v1 \ https://www.googleapis.com/storage/v1 \ https://iam.googleapis.com/v1 \ https://cloudkms.googleapis.com/v1 \ https://www.googleapis.com/deploymentmanager/v2/projects
+
+| Para administrar recursos en Google Cloud.
+
+| \ https://mysupport.netapp.com | Para obtener información de licencias y enviar mensajes de AutoSupport al soporte de NetApp .  | \ https://signin.b2c.netapp.com | Para actualizar las credenciales del sitio de soporte de NetApp (NSS) o para agregar nuevas credenciales de NSS a la consola de NetApp .
+
+| \ https://api.bluexp.netapp.com \ https://netapp-cloud-account.auth0.com \ https://netapp-cloud-account.us.auth0.com \ https://console.netapp.com \ https://components.console.bluexp.netapp.com \ https://cdn.auth0.com | Para proporcionar funciones y servicios dentro de la consola de NetApp .
+
+a| \ https://bluexpinfraprod.eastus2.data.azurecr.io \ https://bluexpinfraprod.azurecr.io a| Para obtener imágenes para las actualizaciones del agente de consola.
+
+* Cuando se implementa un nuevo agente, la verificación de validación prueba la conectividad con los puntos finales actuales.  Si utilizaslink:link:reference-networking-saas-console-previous.html["puntos finales anteriores"] , la comprobación de validación falla.  Para evitar este error, omita la comprobación de validación.
++
+Aunque los puntos finales anteriores aún son compatibles, NetApp recomienda actualizar las reglas de firewall a los puntos finales actuales lo antes posible. link:reference-networking-saas-console-previous.html#update-endpoint-list["Aprenda a actualizar su lista de puntos finales"] .
+
+* Cuando actualice los puntos finales actuales en su firewall, sus agentes existentes continuarán funcionando.
+
+
+^1^ NetApp recomienda permitir los puntos finales de la Opción 1 en su firewall, ya que son más seguros, y no permitir los puntos finales de la Opción 2.  Tenga en cuenta lo siguiente acerca de estos puntos finales:
+
++ * A partir de la versión 3.9.47 del agente de consola, el sistema admite los puntos finales enumerados en la opción 1.  Las versiones anteriores del agente de consola no admiten compatibilidad con versiones anteriores.  * El agente de la consola primero contacta los puntos finales en la opción 2.  Si esos puntos finales no son accesibles, se contacta automáticamente con los puntos finales de la opción 1.  * Si utiliza el agente de consola con NetApp Backup and Recovery o Ransomware Resilience, el sistema no admite puntos finales de la Opción 1.  Permitir puntos finales de la Opción 2 y no permitir la Opción 1.
+
+| Si el agente de la consola está en una región gubernamental de AWS: \https://*.blob.core.windows.net \ https://cloudmanagerinfraprod.azurecr.io
+
+| Para obtener imágenes para las actualizaciones del agente de consola cuando el agente de consola está instalado en una región de AWS Government.
+
+| Si el agente de la consola está en una región de Azure Government: \https://*.blob.core.windows.net \ https://occmclientinfragov.azurecr.us
+
+| Para obtener imágenes para las actualizaciones del agente de consola cuando el agente de consola está instalado en una región de Azure Government.
+
+a| Si el agente de la consola está en una región comercial o soberana, puede elegir entre dos conjuntos de puntos finales:
+
+* Opción 1 (recomendada) ^1^
++
+\ https://bluexpinfraprod.eastus2.data.azurecr.io \ https://bluexpinfraprod.azurecr.io
+
+* Opción 2
++
+\https://*.blob.core.windows.net\ https://cloudmanagerinfraprod.azurecr.io
+
+
+
+| Para obtener imágenes para las actualizaciones del agente de consola cuando el agente de consola está instalado en una región comercial o soberana.

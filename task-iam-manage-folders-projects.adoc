@@ -1,0 +1,165 @@
+---
+sidebar: sidebar 
+permalink: task-iam-manage-folders-projects.html 
+keywords: folders, projects, resource hierarchy, create folders, create projects, iam, identity and access management, project id 
+summary: Dentro de la consola de NetApp , el uso de la gestión de identidad y acceso le permite representar una jerarquía de recursos completa mediante carpetas y proyectos. 
+---
+= Organice los recursos de su consola NetApp con carpetas y proyectos
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Dentro de la consola de NetApp , organiza tus recursos de NetApp usando proyectos y carpetas.  Un _proyecto_ representa un espacio de trabajo en la consola al que los miembros de la organización acceden para administrar _recursos_ (por ejemplo, un sistema Cloud Volumes ONTAP ).  Una _carpeta_ agrupa proyectos relacionados.  Después de organizar sus recursos en carpetas y proyectos, puede otorgar acceso granular a los recursos proporcionando a los miembros de la organización permisos para carpetas y proyectos específicos.
+
+
+
+== Agregar una carpeta o proyecto
+
+Cuando creas tu organización, ésta incluye un único proyecto.  Agregue proyectos para administrar recursos y carpetas para agrupar proyectos relacionados.
+
+La jerarquía de recursos de su organización puede tener hasta siete niveles, con carpetas anidadas en seis niveles de profundidad y proyectos en el séptimo.
+
+.Pasos
+. Seleccione *Administración > Identidad y acceso*.
+. Seleccione *Organización*.
+. Desde la página *Organización*, seleccione *Agregar carpeta o proyecto*.
+. Seleccione *Carpeta* o *Proyecto*.
+. Proporcione detalles sobre la carpeta o el proyecto:
++
+** *Nombre y ubicación*: Ingrese un nombre y elija una ubicación en la jerarquía para la carpeta o el proyecto.  Una carpeta o proyecto puede estar directamente debajo de la organización o dentro de una carpeta.
+** *Recursos*: Seleccione los recursos que desea asociar con esta carpeta o proyecto.
++
+Puede seleccionar recursos asociados con la carpeta o proyecto principal.
+
++
+link:concept-identity-and-access-management.html#associate-resource-folder["Aprenda cuándo asociar un recurso con una carpeta"] .
+
+** *Acceso*: Vea los miembros que tendrán acceso a la carpeta o al proyecto según los permisos existentes ya definidos en su jerarquía de recursos.
++
+Seleccione *Agregar un miembro* para asignar acceso y un rol a miembros adicionales. Un rol define los permisos que tienen los miembros para la carpeta o el proyecto.
+
++
+link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso"] .
+
+
+
+. Seleccione *Agregar*.
+
+
+
+
+== Cambiar el nombre de una carpeta o proyecto
+
+Si es necesario, puede cambiar el nombre de sus carpetas y proyectos.
+
+.Pasos
+. Desde la página *Organización*, navegue hasta un proyecto o carpeta en la tabla, seleccioneimage:icon-action.png["Un icono con tres puntos"] y luego seleccione *Editar carpeta* o *Editar proyecto*.
+. En la página *Editar*, ingrese un nuevo nombre y seleccione *Aplicar*.
+
+
+
+
+== Eliminar una carpeta o proyecto
+
+Elimina carpetas y proyectos que ya no necesites.
+
+.Antes de empezar
+* Asegúrese de que la carpeta o el proyecto no tengan recursos asociados. <<modify-resources,Aprenda a disociar recursos>> .
+* Asegúrese de que la carpeta o el proyecto no tengan recursos asociados.
+
+
+.Pasos
+. Desde la página *Organización*, navegue hasta un proyecto o carpeta en la tabla, seleccioneimage:icon-action.png["Un icono con tres puntos"] y luego seleccione *Eliminar*.
+. Confirme que desea eliminar la carpeta o el proyecto.
+
+
+
+
+== Ver los recursos asociados a una carpeta o proyecto
+
+Ver qué recursos y miembros están asociados con una carpeta o proyecto.
+
+.Pasos
+. Desde la página *Organización*, navegue hasta un proyecto o carpeta en la tabla, seleccioneimage:icon-action.png["Un icono que consta de tres puntos uno al lado del otro."] y luego seleccione *Editar carpeta* o *Editar proyecto*.
++
+image:screenshot-iam-edit-project.png["Una captura de pantalla de la página Organización que muestra la opción Editar proyecto al seleccionar el menú de acciones para un proyecto en la tabla."]
+
+. En la página *Editar*, puede ver detalles sobre la carpeta o el proyecto seleccionado expandiendo las secciones *Recursos* o *Acceso*.
++
+** Seleccione *Recursos* para ver los recursos asociados.  En la tabla, la columna *Estado* identifica los recursos que están asociados con la carpeta o el proyecto.
++
+image:screenshot-iam-allocated-resources.png["Una captura de pantalla de la página Editar proyecto que muestra los recursos disponibles que puede asociar o disociar con el proyecto."]
+
+
+
+
+
+
+
+== Modificar los recursos asociados a una carpeta o proyecto
+
+Los miembros con permisos para una carpeta o proyecto pueden acceder a sus recursos asociados.
+
+.Antes de empezar
+link:concept-identity-and-access-management.html#associate-resource-folder["Aprenda cuándo asociar un recurso con una carpeta"] .
+
+.Pasos
+. Desde la página *Organización*, navegue hasta un proyecto o carpeta en la tabla, seleccioneimage:icon-action.png["Un icono que consta de tres puntos uno al lado del otro."] y luego seleccione *Editar carpeta* o *Editar proyecto*.
+. En la página *Editar*, seleccione *Recursos*.
++
+En la tabla, la columna *Estado* identifica los recursos que están asociados con la carpeta o el proyecto.
+
+. Seleccione los recursos que desea asociar o disociar.
+. Dependiendo de los recursos que haya seleccionado, seleccione *Asociar con el proyecto* o *Desasociar del proyecto*.
++
+image:screenshot-iam-associate-resources.png["Una captura de pantalla de la página Editar proyecto que muestra la opción Asociar recursos que está disponible después de seleccionar recursos que actualmente no están asociados."]
+
+. Seleccione *Aplicar*
+
+
+
+
+== Ver miembros asociados a una carpeta o proyecto
+
+* Seleccione *Acceso* para ver los miembros que tienen acceso a la carpeta o al proyecto.
++
+image:screenshot-iam-member-access.png["Una captura de pantalla de la página Editar proyecto que muestra los miembros que tienen acceso al proyecto."]
+
+
+
+
+
+== Modificar el acceso de los miembros a una carpeta o proyecto
+
+Modificar el acceso de los miembros para garantizar que los miembros correctos puedan acceder a los recursos asociados.
+
+El acceso de miembros proporcionado en un nivel de jerarquía superior no se puede cambiar en niveles inferiores.  Actualice los permisos de los miembros en el nivel de jerarquía superior para cambiar el acceso.  Alternativamente, puedeslink:task-iam-manage-roles.html#manage-permissions["Administrar permisos desde la página Miembros"] .
+
+link:concept-identity-and-access-management.html#role-inheritance["Obtenga más información sobre la herencia de roles"] .
+
+.Pasos
+. Desde la página *Organización*, navegue hasta un proyecto o carpeta en la tabla, seleccioneimage:icon-action.png["Un icono que consta de tres puntos uno al lado del otro."] y luego seleccione *Editar carpeta* o *Editar proyecto*.
+. En la página *Editar*, seleccione *Acceso* para ver la lista de miembros que tienen acceso a la carpeta o proyecto seleccionado.
+. Modificar el acceso de los miembros:
++
+** *Agregar un miembro*: seleccione el miembro que desea agregar a la carpeta o proyecto y asígnele un rol.
+** *Cambiar el rol de un miembro*: para cualquier miembro con un rol distinto de Administrador de la organización, seleccione su rol existente y luego elija un nuevo rol.
+** *Eliminar acceso de miembros*: para los miembros que tienen un rol definido en la carpeta o el proyecto que estás viendo, puedes eliminar su acceso.
+
+
+. Seleccione *Aplicar*.
+
+
+
+
+== Información relacionada
+
+* link:concept-identity-and-access-management.html["Obtenga información sobre la identidad y el acceso en la consola de NetApp"]
+* link:task-iam-get-started.html["Comience con la identidad y el acceso"]
+* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["Conozca la API de identidad y acceso"]
+

@@ -1,0 +1,43 @@
+= 
+:allow-uri-read: 
+
+
+El siguiente vídeo muestra los pasos para suscribirse a NetApp Intelligent Services desde AWS Marketplace:
+
+.Suscríbase a NetApp Intelligent Services desde AWS Marketplace
+video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
+.Pasos
+. Seleccione *Administración > *Credenciales*.
+. Seleccione *Credenciales de la organización*.
+. Seleccione el menú de acciones para un conjunto de credenciales asociadas con un agente de consola y luego seleccione *Configurar suscripción*.
++
+Debe seleccionar las credenciales que estén asociadas con un agente de consola.  No se puede asociar una suscripción de Marketplace con credenciales asociadas con la consola de NetApp .
+
++
+image:screenshot_aws_configure_subscription.png["Una captura de pantalla del menú de acciones para un conjunto de credenciales existentes."]
+
+. Para asociar las credenciales con una suscripción existente, seleccione la suscripción de la lista desplegable y seleccione *Configurar*.
+. Para asociar las credenciales con una nueva suscripción, seleccione *Agregar suscripción > Continuar* y siga los pasos en AWS Marketplace:
++
+.. Seleccione *Ver opciones de compra*.
+.. Seleccione *Suscribirse*.
+.. Seleccione *Configurar su cuenta*.
++
+Serás redirigido a la consola de NetApp .
+
+.. Desde la página *Asignación de suscripción*:
++
+*** Seleccione las organizaciones o cuentas de la consola con las que desea asociar esta suscripción.
+*** En el campo *Reemplazar suscripción existente*, elija si desea reemplazar automáticamente la suscripción existente de una organización o cuenta con esta nueva suscripción.
++
+La consola reemplaza la suscripción existente para todas las credenciales de la organización o cuenta con esta nueva suscripción.  Si un conjunto de credenciales nunca estuvo asociado con una suscripción, entonces esta nueva suscripción no estará asociada con esas credenciales.
+
++
+Para todas las demás organizaciones o cuentas, deberá asociar manualmente la suscripción repitiendo estos pasos.
+
+*** Seleccione *Guardar*.
+
+
+
+
+

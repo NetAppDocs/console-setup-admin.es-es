@@ -1,0 +1,37 @@
+= Conector 3.9.55
+:allow-uri-read: 
+
+
+
+
+=== Conector 3.9.55
+
+Esta versión del conector BlueXP incluye mejoras de seguridad y correcciones de errores.
+
+La versión 3.9.55 está disponible para el modo estándar y el modo restringido.
+
+
+
+=== Compatibilidad con el idioma japonés
+
+La interfaz de usuario de BlueXP ahora está disponible en idioma japonés. Si el idioma de su navegador es japonés, BlueXP se muestra en japonés. Para acceder a la documentación en japonés, utilice el menú de idioma en el sitio web de la documentación.
+
+
+
+=== Característica de resiliencia operativa
+
+La función de resiliencia operativa se ha eliminado de BlueXP. Comuníquese con el soporte de NetApp si tiene problemas.
+
+
+
+=== Gestión de identidad y acceso (IAM) de BlueXP
+
+La gestión de identidad y acceso en BlueXP ahora ofrece la siguiente característica.
+
+
+
+=== Nuevo rol de acceso para soporte operativo
+
+BlueXP ahora admite un rol de analista de soporte operativo. Esta función otorga a un usuario permisos para supervisar alertas de almacenamiento, ver la línea de tiempo de auditoría de BlueXP e ingresar y rastrear casos de soporte de NetApp .
+
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Obtenga más información sobre el uso de roles de acceso."]

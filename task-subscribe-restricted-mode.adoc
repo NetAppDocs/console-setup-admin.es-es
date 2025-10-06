@@ -1,0 +1,193 @@
+---
+sidebar: sidebar 
+permalink: task-subscribe-restricted-mode.html 
+keywords: subscribe, subscription, marketplace subscription, paygo, contract, annual contract 
+summary: Suscríbase a NetApp Intelligent Services desde el mercado de su proveedor de nube para pagar los servicios de datos de NetApp a una tarifa por hora o mediante un contrato anual.  Si compró una licencia de NetApp, también deberá suscribirse a la oferta del mercado.  Su licencia siempre se cobra primero, pero se le cobrará la tarifa por hora si excede su capacidad autorizada o si el plazo de la licencia vence. 
+---
+= Suscribirse a NetApp Intelligent Services (modo restringido)
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Suscríbete a NetApp Intelligent Services desde el marketplace de tu proveedor de nube para pagar los servicios de datos a una tarifa por hora (PAYGO) o mediante un contrato anual.  Si compró una licencia de NetApp (BYOL), también deberá suscribirse a la oferta del mercado.  Su licencia siempre se cobra primero, pero se le cobrará la tarifa por hora si excede su capacidad autorizada o si el plazo de la licencia vence.
+
+Una suscripción al mercado permite cobrar por los siguientes servicios de datos con modo restringido:
+
+* Copia de seguridad y recuperación de NetApp
+* Cloud Volumes ONTAP
+* Nivelación de la nube de NetApp
+* Resiliencia de NetApp frente al ransomware
+* Recuperación ante desastres de NetApp
+
+
+La clasificación de datos de NetApp se habilita a través de su suscripción, pero no hay ningún cargo por utilizar la clasificación.
+
+.Antes de empezar
+Debe haber implementado previamente un agente de consola para poder suscribirse a los servicios de datos.  Debe asociar una suscripción de mercado a las credenciales de la nube conectadas a un agente de consola.
+
+[role="tabbed-block"]
+====
+.AWS
+--
+El siguiente vídeo muestra los pasos para suscribirse a NetApp Intelligent Services desde AWS Marketplace:
+
+.Suscríbase a NetApp Intelligent Services desde AWS Marketplace
+video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
+.Pasos
+. Seleccione *Administración > *Credenciales*.
+. Seleccione *Credenciales de la organización*.
+. Seleccione el menú de acciones para un conjunto de credenciales asociadas con un agente de consola y luego seleccione *Configurar suscripción*.
++
+Debe seleccionar las credenciales que estén asociadas con un agente de consola.  No se puede asociar una suscripción de Marketplace con credenciales asociadas con la consola de NetApp .
+
++
+image:screenshot_aws_configure_subscription.png["Una captura de pantalla del menú de acciones para un conjunto de credenciales existentes."]
+
+. Para asociar las credenciales con una suscripción existente, seleccione la suscripción de la lista desplegable y seleccione *Configurar*.
+. Para asociar las credenciales con una nueva suscripción, seleccione *Agregar suscripción > Continuar* y siga los pasos en AWS Marketplace:
++
+.. Seleccione *Ver opciones de compra*.
+.. Seleccione *Suscribirse*.
+.. Seleccione *Configurar su cuenta*.
++
+Serás redirigido a la consola de NetApp .
+
+.. Desde la página *Asignación de suscripción*:
++
+*** Seleccione las organizaciones o cuentas de la consola con las que desea asociar esta suscripción.
+*** En el campo *Reemplazar suscripción existente*, elija si desea reemplazar automáticamente la suscripción existente de una organización o cuenta con esta nueva suscripción.
++
+La consola reemplaza la suscripción existente para todas las credenciales de la organización o cuenta con esta nueva suscripción.  Si un conjunto de credenciales nunca estuvo asociado con una suscripción, entonces esta nueva suscripción no estará asociada con esas credenciales.
+
++
+Para todas las demás organizaciones o cuentas, deberá asociar manualmente la suscripción repitiendo estos pasos.
+
+*** Seleccione *Guardar*.
+
+
+
+
+
+
+--
+.Azur
+--
+.Pasos
+. Seleccione *Administración > *Credenciales*.
+. Seleccione *Credenciales de la organización*.
+. Seleccione el menú de acciones para un conjunto de credenciales asociadas con un agente de consola y luego seleccione *Configurar suscripción*.
++
+Debe seleccionar las credenciales que estén asociadas con un agente de consola.  No se puede asociar una suscripción de Marketplace con credenciales asociadas con la consola de NetApp .
+
+. Para asociar las credenciales con una suscripción existente, seleccione la suscripción de la lista desplegable y seleccione *Configurar*.
+. Para asociar las credenciales con una nueva suscripción, seleccione *Agregar suscripción > Continuar* y siga los pasos en Azure Marketplace:
++
+.. Si se le solicita, inicie sesión en su cuenta de Azure.
+.. Seleccione *Suscribirse*.
+.. Llene el formulario y seleccione *Suscribirse*.
+.. Una vez completado el proceso de suscripción, seleccione *Configurar cuenta ahora*.
++
+Serás redirigido a la consola de NetApp .
+
+.. Desde la página *Asignación de suscripción*:
++
+*** Seleccione las organizaciones o cuentas de la consola con las que desea asociar esta suscripción.
+*** En el campo *Reemplazar suscripción existente*, elija si desea reemplazar automáticamente la suscripción existente de una organización o cuenta con esta nueva suscripción.
++
+La consola reemplaza la suscripción existente para todas las credenciales de la organización o cuenta con esta nueva suscripción.  Si un conjunto de credenciales nunca estuvo asociado con una suscripción, entonces esta nueva suscripción no estará asociada con esas credenciales.
+
++
+Para todas las demás organizaciones o cuentas, deberá asociar manualmente la suscripción repitiendo estos pasos.
+
+*** Seleccione *Guardar*.
++
+El siguiente vídeo muestra los pasos para suscribirse desde Azure Marketplace:
+
++
+.Suscríbase a NetApp Intelligent Services desde Azure Marketplace
+video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto]
+
+
+
+
+
+
+--
+.Google Cloud
+--
+.Pasos
+. Seleccione *Administración > *Credenciales*.
+. Seleccione *Credenciales de la organización*.
+. Seleccione el menú de acciones para un conjunto de credenciales asociadas con un agente de consola y luego seleccione *Configurar suscripción*.  +Se necesita una nueva captura de pantalla (TS)image:screenshot_gcp_add_subscription.png["Una captura de pantalla del menú de acciones para un conjunto de credenciales existentes."]
+. Para configurar una suscripción existente con las credenciales seleccionadas, seleccione un proyecto y una suscripción de Google Cloud de la lista desplegable y luego seleccione *Configurar*.
++
+image:screenshot_gcp_associate.gif["Una captura de pantalla de un proyecto de Google Cloud y una suscripción seleccionada para las credenciales de Google Cloud."]
+
+. Si aún no tiene una suscripción, seleccione *Agregar suscripción > Continuar* y siga los pasos en Google Cloud Marketplace.
++
+
+NOTE: Antes de completar los siguientes pasos, asegúrese de tener privilegios de administrador de facturación en su cuenta de Google Cloud, así como un inicio de sesión en la consola de NetApp .
+
++
+.. Después de ser redirigido a la https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Página de Servicios Inteligentes de NetApp en Google Cloud Marketplace"^] , asegúrese de que el proyecto correcto esté seleccionado en el menú de navegación superior.
++
+image:screenshot_gcp_cvo_marketplace.png["Una captura de pantalla de la página del mercado de Cloud Volumes ONTAP en Google Cloud."]
+
+.. Seleccione *Suscribirse*.
+.. Seleccione la cuenta de facturación adecuada y acepte los términos y condiciones.
+.. Seleccione *Suscribirse*.
++
+Este paso envía su solicitud de transferencia a NetApp.
+
+.. En el cuadro de diálogo emergente, seleccione *Registrarse con NetApp, Inc.*
++
+Este paso debe completarse para vincular la suscripción de Google Cloud con su organización o cuenta de Console.  El proceso de vinculación de una suscripción no estará completo hasta que seas redirigido desde esta página y luego inicies sesión en la Consola.
+
++
+image:screenshot_gcp_marketplace_register.png["Una captura de pantalla de una ventana emergente de registro."]
+
+.. Complete los pasos en la página *Asignación de suscripción*:
++
+
+NOTE: Si alguien de su organización ya tiene una suscripción al mercado desde su cuenta de facturación, será redirigido a https://bluexp.netapp.com/ontap-cloud?x-gcp-marketplace-token=["la página Cloud Volumes ONTAP dentro de la consola de NetApp"^] en cambio.  Si esto no es esperado, comuníquese con su equipo de ventas de NetApp .  Google solo permite una suscripción por cuenta de facturación de Google.
+
++
+*** Seleccione las organizaciones o cuentas de la consola con las que desea asociar esta suscripción.
+*** En el campo *Reemplazar suscripción existente*, elija si desea reemplazar automáticamente la suscripción existente de una organización o cuenta con esta nueva suscripción.
++
+La consola reemplaza la suscripción existente para todas las credenciales de la organización o cuenta con esta nueva suscripción.  Si un conjunto de credenciales nunca estuvo asociado con una suscripción, entonces esta nueva suscripción no estará asociada con esas credenciales.
+
++
+Para todas las demás organizaciones o cuentas, deberá asociar manualmente la suscripción repitiendo estos pasos.
+
+*** Seleccione *Guardar*.
++
+El siguiente vídeo muestra los pasos para suscribirse desde Google Cloud Marketplace:
+
++
+.Suscríbete desde Google Cloud Marketplace
+video::373b96de-3691-4d84-b3f3-b05101161638[panopto]
+
+
+.. Una vez completado este proceso, regrese a la página Credenciales en la Consola y seleccione esta nueva suscripción.
++
+image:screenshot_gcp_associate.gif["Una captura de pantalla de la página de asignación de suscripción."]
+
+
+
+
+
+--
+====
+.Información relacionada
+* https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html["Administrar licencias BYOL basadas en capacidad para Cloud Volumes ONTAP"^]
+* https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html["Administrar licencias BYOL para servicios de datos"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["Administrar credenciales y suscripciones de AWS"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-azure-accounts.html["Administrar credenciales y suscripciones de Azure"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html["Administrar credenciales y suscripciones de Google Cloud"]
+

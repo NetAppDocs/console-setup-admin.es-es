@@ -1,0 +1,67 @@
+= Conector 3.9.54
+:allow-uri-read: 
+
+
+
+
+=== Conector 3.9.54
+
+Esta versión del conector BlueXP incluye mejoras de seguridad, correcciones de errores y las siguientes características nuevas:
+
+* Compatibilidad con servidores proxy transparentes para conectores dedicados a respaldar los servicios de Cloud Volumes ONTAP .link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-configuring-proxy.html["Obtenga más información sobre cómo configurar un proxy transparente."]
+* Capacidad de usar etiquetas de red para ayudar a enrutar el tráfico del conector cuando este se implementa en un entorno de Google Cloud.
+* Notificaciones adicionales dentro del producto para la monitorización del estado del conector, incluido el uso de CPU y RAM.
+
+
+En este momento, la versión 3.9.54 está disponible para el modo estándar y el modo restringido.
+
+
+
+=== Gestión de identidad y acceso (IAM) de BlueXP
+
+La gestión de identidad y acceso en BlueXP ahora ofrece las siguientes funciones:
+
+* Soporte para IAM en modo privado, lo que le permite administrar el acceso de los usuarios y los permisos para los servicios y aplicaciones de BlueXP .
+* Gestión optimizada de federaciones de identidad, que incluye una navegación más sencilla, opciones más claras para configurar conexiones federadas y una mejor visibilidad de las federaciones existentes.
+* Roles de acceso para BlueXP backup and recovery, BlueXP disaster recovery y administración de federación.
+
+
+
+
+==== Compatibilidad con IAM en modo privado
+
+BlueXP ahora admite IAM en modo privado, lo que le permite administrar el acceso de los usuarios y los permisos para los servicios y aplicaciones de BlueXP .  Esta mejora permite a los clientes del modo privado aprovechar el control de acceso basado en roles (RBAC) para lograr una mejor seguridad y cumplimiento.
+
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#iam["Obtenga más información sobre IAM en BlueXP."]
+
+
+
+==== Gestión optimizada de federaciones de identidad
+
+BlueXP ahora ofrece una interfaz más intuitiva para administrar la federación de identidad. Esto incluye una navegación más sencilla, opciones más claras para configurar conexiones federadas y una mejor visibilidad de las federaciones existentes.
+
+Habilitar el inicio de sesión único (SSO) a través de la federación de identidad permite a los usuarios iniciar sesión en BlueXP con sus credenciales corporativas.  Esto mejora la seguridad, reduce el uso de contraseñas y simplifica la incorporación.
+
+Se le pedirá que importe cualquier conexión federada existente a la nueva interfaz para obtener acceso a las nuevas funciones de administración.  Esto le permite aprovechar las últimas mejoras sin tener que recrear sus conexiones federadas.link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-federation-import.html["Obtenga más información sobre cómo importar su conexión federada existente a BlueXP."]
+
+Una gestión mejorada de la federación le permite:
+
+* Agregue más de un dominio verificado a una conexión federada, lo que le permitirá utilizar múltiples dominios con el mismo proveedor de identidad (IdP).
+* Deshabilite o elimine las conexiones federadas cuando sea necesario, lo que le otorgará control sobre el acceso y la seguridad de los usuarios.
+* Controle el acceso a la gestión de la federación con roles de IAM.
+
+
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-federation.html["Obtenga más información sobre la federación de identidad en BlueXP."]
+
+
+
+==== Nuevos roles de acceso para la BlueXP backup and recovery, la BlueXP disaster recovery y la administración de la federación
+
+BlueXP ahora admite el uso de roles IAM para las siguientes funciones y servicios de datos:
+
+* BlueXP backup and recovery
+* BlueXP disaster recovery
+* Federación
+
+
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Obtenga más información sobre el uso de roles de acceso."]

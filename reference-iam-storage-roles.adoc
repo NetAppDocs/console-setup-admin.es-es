@@ -1,0 +1,282 @@
+---
+sidebar: sidebar 
+permalink: reference-iam-storage-roles.html 
+keywords: predefined roles, iam roles, organization admin, folder or project admin, identity and access management, access roles, admin 
+summary: Puede asignar los siguientes roles a los usuarios para brindarles acceso a las funciones de administración de almacenamiento en la consola de NetApp .  Puede asignar a los usuarios un rol administrativo para administrar el almacenamiento o un rol de espectador para monitorear. 
+---
+= Roles de acceso al almacenamiento para la consola de NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Puede asignar los siguientes roles a los usuarios para brindarles acceso a las funciones de administración de almacenamiento en la consola de NetApp .  Puede asignar a los usuarios un rol administrativo para administrar el almacenamiento o un rol de espectador para monitorear.
+
+
+NOTE: Estos roles no están disponibles desde la API de asociación de la consola de NetApp .
+
+Los administradores pueden asignar roles de almacenamiento a los usuarios para los siguientes recursos y funciones de almacenamiento:
+
+Recursos de almacenamiento:
+
+* Clústeres ONTAP locales
+* StorageGRID
+* Serie E
+
+
+Servicios y características de la consola:
+
+* Asesor digital
+* Actualizaciones de software
+* Planificación del ciclo de vida
+* Sostenibilidad
+
+
+.Ejemplo de roles de almacenamiento en la consola de NetApp
+XYZ Corporation, una empresa multinacional, tiene un gran equipo de ingenieros de almacenamiento y administradores de almacenamiento.  Permiten que este equipo administre los activos de almacenamiento de sus regiones y al mismo tiempo limite el acceso a las tareas principales de la consola, como la administración de usuarios, la creación de agentes y la administración de licencias.
+
+Dentro de un equipo de 12 personas, a dos usuarios se les asigna el rol de *Visor de almacenamiento*, que les permite supervisar los recursos de almacenamiento asociados con los proyectos de consola a los que están asignados.  A los nueve restantes se les asigna el rol de *administrador de almacenamiento*, que incluye la capacidad de administrar actualizaciones de software, acceder a ONTAP System Manager a través de la consola y también descubrir recursos de almacenamiento (agregar sistemas).  A una persona del equipo se le asigna el rol de *Especialista en salud del sistema* para que pueda administrar la salud de los recursos de almacenamiento en su región, pero no modificar ni eliminar ningún sistema.  Esta persona también puede realizar actualizaciones de software en los recursos de almacenamiento para los proyectos que se le asignan.
+
+La organización tiene dos usuarios adicionales con el rol de *Administrador de la organización* que pueden administrar todos los aspectos de la Consola, incluida la administración de usuarios, la creación de agentes y la administración de licencias, así como varios usuarios con el rol de *Administrador de carpeta o proyecto* que pueden realizar tareas de administración de la Consola para las carpetas y los proyectos a los que están asignados.
+
+La siguiente tabla muestra las acciones que realiza cada rol de almacenamiento.
+
+[cols="40,20a,20a,20a"]
+|===
+| Característica y acción | Administrador de almacenamiento | Especialista en salud del sistema | Visor de almacenamiento 
+
+
+4+| *Gestión de almacenamiento*: 
+
+
+| Descubrir nuevos recursos (crear sistemas)  a| 
+Sí
+ a| 
+Sí
+ a| 
+No
+
+
+
+| Ver sistemas descubiertos  a| 
+Sí
+ a| 
+Sí
+ a| 
+No
+
+
+
+| Eliminar sistemas de la consola  a| 
+Sí
+ a| 
+No
+ a| 
+No
+
+
+
+| Modificar sistemas  a| 
+Sí
+ a| 
+No
+ a| 
+No
+
+
+
+| *Crear agentes*  a| 
+No
+ a| 
+No
+ a| 
+No
+
+
+
+4+| *Asesor digital* 
+
+
+| Ver todas las páginas y funciones  a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+4+| *Licencias y suscripciones* 
+
+
+| Ver todas las páginas y funciones  a| 
+No
+ a| 
+No
+ a| 
+No
+
+
+
+4+| *Actualizaciones de software* 
+
+
+| Ver página de destino y recomendaciones  a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+| Revise las posibles recomendaciones de versiones y los beneficios clave  a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+| Ver detalles de actualización para un clúster  a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+| Ejecute comprobaciones previas a la actualización y descargue el plan de actualización  a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+| Instalar actualizaciones de software  a| 
+Sí
+ a| 
+Sí
+ a| 
+No
+
+
+
+4+| *Planificación del ciclo de vida* 
+
+
+| Revisar el estado de la planificación de la capacidad  a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+| Elija la siguiente acción (mejor práctica, nivel)  a| 
+Sí
+ a| 
+No
+ a| 
+No
+
+
+
+| Almacene datos fríos en la nube y libere espacio  a| 
+Sí
+ a| 
+Sí
+ a| 
+No
+
+
+
+| Configurar recordatorios  a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+4+| *Sostenibilidad* 
+
+
+| Ver el panel de control y las recomendaciones  a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+| Descargar datos del informe  a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+| Editar el porcentaje de mitigación de carbono  a| 
+Sí
+ a| 
+Sí
+ a| 
+No
+
+
+
+| Recomendaciones de corrección  a| 
+Sí
+ a| 
+Sí
+ a| 
+No
+
+
+
+| Aplazar recomendaciones  a| 
+Sí
+ a| 
+Sí
+ a| 
+No
+
+
+
+4+| *Acceso de administrador del sistema* 
+
+
+| Puede ingresar credenciales  a| 
+Sí
+ a| 
+Sí
+ a| 
+No
+
+
+
+4+| *Cartas credenciales* 
+
+
+| Credenciales de usuario  a| 
+Sí
+ a| 
+Sí
+ a| 
+No
+
+|===

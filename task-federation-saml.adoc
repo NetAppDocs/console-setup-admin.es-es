@@ -1,0 +1,92 @@
+---
+sidebar: sidebar 
+permalink: task-federation-saml.html 
+keywords: federation, SAML protocol, SAML, federation services,  federate, federated connection, SSO, identity federation, identity management, corporate identity 
+summary: 'Fedérese con su proveedor de IdP SAML 2.0 para habilitar el inicio de sesión único (SSO) para la consola de NetApp .  Esto permite a los usuarios iniciar sesión utilizando sus credenciales corporativas.' 
+---
+= Federarse con un proveedor de identidad SAML
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Fedérese con su proveedor de IdP SAML 2.0 para habilitar el inicio de sesión único (SSO) para la consola NEtApp.  Esto permite a los usuarios iniciar sesión utilizando sus credenciales corporativas.
+
+.Rol requerido
+El rol de administrador de la federación es necesario para crear y administrar federaciones.  El espectador de la Federación puede ver la página de la Federación.link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso."]
+
+
+NOTE: Puede federarse con su IdP corporativo o con el sitio de soporte de NetApp .  No es posible federarse con ambos.
+
+NetApp solo admite el inicio de sesión único (SSO) iniciado por el proveedor de servicios (SP).  Primero debe configurar el proveedor de identidad para confiar en NetApp como proveedor de servicios.  Luego, puede crear una conexión en la consola que utilice la configuración del proveedor de identidad.
+
+Puede configurar una conexión federada con su proveedor de SAML 2.0 para habilitar el inicio de sesión único (SSO) para la consola.  El proceso implica configurar su proveedor para que confíe en NetApp como proveedor de servicios y luego crear la conexión en la consola.
+
+.Antes de empezar
+* Se requiere una cuenta IdP con privilegios administrativos.  Coordínese con el administrador de su IdP para completar los pasos.
+* Identifique el dominio que desea utilizar para la federación.  Puedes utilizar tu dominio de correo electrónico o un dominio diferente que sea de tu propiedad.  Si desea utilizar un dominio distinto a su dominio de correo electrónico, primero debe verificar el dominio en la Consola.  Puedes hacer esto siguiendo los pasos de lalink:task-federation-verify-domain.html["Verifique su dominio en la consola de NetApp"] tema.
+
+
+.Pasos
+. Seleccione *Administración > Identidad y acceso*.
+. Seleccione *Federación* para ver la página *Federaciones*.
+. Seleccione *Configurar nueva federación*.
+. Introduzca los detalles de su dominio:
++
+.. Elija si desea utilizar un dominio verificado o su dominio de correo electrónico.  El dominio de correo electrónico es el dominio asociado con la cuenta con la que ha iniciado sesión.
+.. Introduzca el nombre de la federación que está configurando.
+.. Si elige un dominio verificado, seleccione el dominio de la lista.
+
+
+. Seleccione *Siguiente*.
+. Para su método de conexión, elija *Protocolo* y luego seleccione *Proveedor de identidad SAML*.
+. Seleccione *Siguiente*.
+. Configure su proveedor de identidad SAML para confiar en NetApp como proveedor de servicios.  Debe realizar este paso en su servidor proveedor SAML.
++
+.. Asegúrese de que su IdP tenga el atributo `email` establecer en la dirección de correo electrónico del usuario.  Esto es necesario para que la consola identifique correctamente a los usuarios:
++
+[source, xml]
+----
+<saml:AttributeStatement xmlns:x500="urn:oasis:names:tc:SAML:2.0:profiles:attribute:X500" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <saml:Attribute Name="email" NameFormat="urn:oasis:names:tc:SAML:1.1:nameid-format:X509SubjectName">
+        <saml:AttributeValue xsi:type="xs:string">email@domain.com</saml:AttributeValue>
+    </saml:Attribute>
+</saml:AttributeStatement>
+----
+.. Utilice los siguientes valores al registrar su aplicación SAML con la consola:
++
+*** Para la *URL de respuesta* o la *URL del servicio de consumidor de afirmaciones (ACS)*, utilice `https://netapp-cloud-account.auth0.com/login/callback`
+*** Para la *URL de cierre de sesión*, utilice `https://netapp-cloud-account.auth0.com/logout`
+*** Para *ID de audiencia/entidad*, utilice `urn:auth0:netapp-cloud-account:<fed-domain-name-saml>` donde <fed-domain-name-saml> es el nombre de dominio que desea utilizar para la federación.  Por ejemplo, si su dominio es `example.com` , el ID de audiencia/entidad sería `urn:auth0:netapp-cloud-account:fed-example-com-samlp` .
+
+
+.. Después de crear la confianza, copie los siguientes valores de su servidor de proveedor SAML:
++
+*** URL de inicio de sesión
+*** URL de cierre de sesión (opcional)
+
+
+.. Descargue el certificado X.509 de su servidor proveedor SAML.  Debe estar en formato PEM, CER o CRT.
+
+
+. Regrese a la consola y seleccione *Siguiente* para crear la conexión.
+. Crear la conexión con SAML.
++
+.. Introduzca la *URL de inicio de sesión* de su servidor SAML.
+.. Cargue el certificado X.509 que descargó de su servidor de proveedor SAML.
+.. Opcionalmente, ingrese la *URL de cierre de sesión* de su servidor SAML.
+
+
+. Seleccione *Crear conexión*.  El sistema crea la conexión en unos segundos.
+. Seleccione *Siguiente*.
+. Seleccione *Probar conexión* para probar su conexión.  Se le dirigirá a una página de inicio de sesión para su servidor IdP.  Inicie sesión con sus credenciales de IdP para completar la prueba y regresar a la consola para habilitar la conexión.
+. Seleccione *Siguiente*.
+. En la página *Habilitar federación*, revise los detalles de la federación y luego seleccione *Habilitar federación*.
+. Seleccione *Finalizar* para completar el proceso.
+
+
+Después de habilitar la federación, los usuarios pueden iniciar sesión en la consola de NetApp con sus credenciales corporativas.

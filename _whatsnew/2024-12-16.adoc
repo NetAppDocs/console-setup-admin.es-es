@@ -1,0 +1,40 @@
+= Nuevos puntos finales seguros para obtener imágenes del conector
+:allow-uri-read: 
+
+
+
+
+=== Nuevos puntos finales seguros para obtener imágenes del conector
+
+Cuando instala el Conector, o cuando se produce una actualización automática, el Conector se comunica con los repositorios para descargar imágenes para la instalación o actualización.  De forma predeterminada, el conector siempre se ha puesto en contacto con los siguientes puntos finales:
+
+* \https://*.blob.core.windows.net
+* \ https://cloudmanagerinfraprod.azurecr.io
+
+
+El primer punto final incluye un comodín porque no podemos proporcionar una ubicación definitiva.  El equilibrio de carga del repositorio lo gestiona el proveedor de servicios, lo que significa que las descargas pueden realizarse desde diferentes puntos finales.
+
+Para mayor seguridad, el Conector ahora puede descargar imágenes de instalación y actualizaciones desde puntos finales dedicados:
+
+* \ https://bluexpinfraprod.eastus2.data.azurecr.io
+* \ https://bluexpinfraprod.azurecr.io
+
+
+Le recomendamos que comience a utilizar estos nuevos puntos finales eliminando los puntos finales existentes de sus reglas de firewall y permitiendo los nuevos puntos finales.
+
+Estos nuevos puntos finales son compatibles a partir de la versión 3.9.47 del Conector.  No hay compatibilidad con versiones anteriores del Conector.
+
+Tenga en cuenta lo siguiente:
+
+* Los puntos finales existentes aún reciben soporte.  Si no desea utilizar los nuevos puntos finales, no es necesario realizar ningún cambio.
+* El conector contacta primero los puntos finales existentes.  Si esos puntos finales no son accesibles, el Conector contacta automáticamente los nuevos puntos finales.
+* Los nuevos puntos finales no son compatibles con los siguientes escenarios:
++
+** Si el conector está instalado en una región gubernamental.
+** Si utiliza el Conector con la BlueXP backup and recovery o la BlueXP ransomware protection.
+
+
++
+Para ambos escenarios, puede seguir utilizando los puntos finales existentes.
+
+

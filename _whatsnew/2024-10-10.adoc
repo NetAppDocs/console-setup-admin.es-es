@@ -1,0 +1,9 @@
+= Parche del conector 3.9.45
+:allow-uri-read: 
+
+
+
+
+=== Parche del conector 3.9.45
+
+Este parche incluye correcciones de errores.

@@ -1,0 +1,42 @@
+= 
+:allow-uri-read: 
+
+
+.Pasos
+. Ir a la https://aws.amazon.com/marketplace/pp/prodview-jbay5iyfmu6ui["Listado de agentes de la consola de NetApp en AWS Marketplace"^]
+. En la página de Marketplace, seleccione *Continuar con la suscripción*.
+. Para suscribirse al software, seleccione *Aceptar términos*.
++
+El proceso de suscripción puede tardar unos minutos.
+
+. Una vez completado el proceso de suscripción, seleccione *Continuar a la configuración*.
+. En la página *Configurar este software*, asegúrese de haber seleccionado la región correcta y luego seleccione *Continuar con el inicio*.
+. En la página *Iniciar este software*, en *Elegir acción*, seleccione *Iniciar a través de EC2* y luego seleccione *Iniciar*.
++
+Utilice la consola EC2 para iniciar la instancia y adjuntar una función de IAM.  Esto no es posible con la acción *Iniciar desde sitio web*.
+
+. Siga las instrucciones para configurar e implementar la instancia:
++
+** *Nombre y etiquetas*: Ingrese un nombre y etiquetas para la instancia.
+** *Imágenes de aplicaciones y sistema operativo*: omitir esta sección.  La AMI del agente de consola ya está seleccionada.
+** *Tipo de instancia*: según la disponibilidad de la región, elija un tipo de instancia que cumpla con los requisitos de RAM y CPU (t3.2xlarge está preseleccionado y se recomienda).
+** *Par de claves (inicio de sesión)*: seleccione el par de claves que desea utilizar para conectarse de forma segura a la instancia.
+** *Configuración de red*: edite la configuración de red según sea necesario:
++
+*** Elija la VPC y la subred deseadas.
+*** Especifique si la instancia debe tener una dirección IP pública.
+*** Especifique la configuración del grupo de seguridad que habilite los métodos de conexión necesarios para la instancia del agente de consola: SSH, HTTP y HTTPS.
++
+link:reference-ports-aws.html["Ver las reglas del grupo de seguridad para AWS"] .
+
+
+
+** *Configurar almacenamiento*: mantenga el tamaño y el tipo de disco predeterminados para el volumen raíz.
++
+Si desea habilitar el cifrado de Amazon EBS en el volumen raíz, seleccione *Avanzado*, expanda *Volumen 1*, seleccione *Cifrado* y luego elija una clave KMS.
+
+** *Detalles avanzados*: en *Perfil de instancia de IAM*, elija el rol de IAM que incluye los permisos necesarios para el agente de consola.
+** *Resumen*: Revise el resumen y seleccione *Iniciar instancia*.
+
+
+

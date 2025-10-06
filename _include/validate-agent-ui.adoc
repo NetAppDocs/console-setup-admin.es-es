@@ -1,0 +1,18 @@
+= 
+:allow-uri-read: 
+
+
+Si seleccionó la casilla de verificación *Validar configuración del agente* en la página *Revisar*, la Consola verifica la configuración del agente de la Consola después de su creación.  Si la consola no logra implementar el agente, proporciona un informe descargable para ayudarlo a solucionar el problema.
+
+
+NOTE: Si la consola implementa correctamente el agente, no genera un informe y aparece un cuadro de diálogo de confirmación que verifica una implementación exitosa.
+
+.Pasos
+. En el cuadro de diálogo *Error en la implementación del agente*, seleccione *Descargar informe* para descargar un archivo PDF que contiene el informe de validación.
+. Alternativamente, puede seleccionar *Comenzar de nuevo* para regresar al asistente de *Implementar agente* e intentarlo nuevamente.
++
+Debes comenzar todo el proceso nuevamente si deseas intentar implementar el agente nuevamente.
+
+
+
+Acceda al informe y a los registros desde el host del agente de la consola

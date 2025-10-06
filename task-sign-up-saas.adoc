@@ -1,0 +1,67 @@
+---
+sidebar: sidebar 
+permalink: task-sign-up-saas.html 
+keywords: sign up, signing up, sign in, signing in, login with netapp, log in with netapp, create account, account, log in with nss, nss, nss login 
+summary: Se puede acceder a la consola de NetApp desde una consola basada en web.  Para comenzar a utilizar la consola, el primer paso es registrarse o iniciar sesión utilizando sus credenciales del sitio de soporte de NetApp o creando un inicio de sesión en la consola de NetApp . 
+---
+= Regístrese o inicie sesión en la consola de NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Se puede acceder a la consola de NetApp desde una consola basada en web.  Para comenzar a utilizar la consola, el primer paso es registrarse o iniciar sesión utilizando sus credenciales del sitio de soporte de NetApp o creando un inicio de sesión en la consola de NetApp .
+
+.Acerca de esta tarea
+Cuando accedas a la Consola por primera vez, podrás registrarte o iniciar sesión utilizando una de las siguientes opciones:
+
+Inicio de sesión en la consola de NetApp:: Puedes registrarte creando un login.  Este método de autenticación requiere que usted especifique su dirección de correo electrónico y una contraseña.  Después de verificar su dirección de correo electrónico, puede iniciar sesión y luego crear una organización, si aún no pertenece a una.
+Credenciales del sitio de soporte de NetApp (NSS):: Si tiene credenciales del sitio de soporte de NetApp existentes, no necesita registrarse en la consola.  Inicia sesión con tus credenciales de NSS y luego la consola te solicita que crees una organización, si aún no perteneces a una.
++
+--
+Se le enviará un código de acceso de un solo uso (OTP) a la dirección de correo electrónico registrada.  Se genera un nuevo OTP con cada intento de inicio de sesión.
+
+--
+Conexión federada:: Si su empresa ya tiene una instancia de consola de NetApp , es posible que el administrador de su consola haya configurado el inicio de sesión único para iniciar sesión usando las credenciales de su directorio corporativo (identidad federada).
++
+--
+link:concept-federation.html["Aprenda a utilizar la federación de identidades con la consola de NetApp"] .
+
+--
+
+
+.Pasos
+. Abra un navegador web y vaya a https://console.netapp.com["Consola de NetApp"^]
+. Si tiene una cuenta del sitio de soporte de NetApp o si ya configuró la federación de identidad, ingrese la dirección de correo electrónico asociada a su cuenta directamente en la página *Iniciar sesión*.
++
+En ambos casos, usted se registra en la Consola como parte de este inicio de sesión inicial.
+
+. Si desea registrarse creando un inicio de sesión de consola, seleccione *Registrarse*.
++
+.. En la página *Registrarse*, ingrese la información requerida y seleccione *Siguiente*.
++
+Tenga en cuenta que solo se permiten caracteres ingleses en el formulario de registro.
+
+.. Revise su bandeja de entrada en busca de un correo electrónico de NetApp que incluye instrucciones para verificar su dirección de correo electrónico.
++
+Este paso es necesario antes de poder iniciar sesión en la consola.
+
+
+
+. Después de iniciar sesión, revise el Acuerdo de licencia de usuario final y acepte los términos.
++
+Si su cuenta de usuario aún no pertenece a una organización de la consola, se le pedirá que cree una.
+
+. En la página *Bienvenido*, ingrese un nombre para su organización de consola.
++
+La consola define que una organización es el elemento de nivel superior en la gestión de identidad y acceso (IAM) de la consola. link:concept-identity-and-access-management.html["Obtenga más información sobre IAM"] .
+
++
+Si su empresa ya tiene una organización y desea unirse a ella, cierre la Consola y solicite al administrador de la organización que lo asocie con ella.  Una vez agregado, podrás iniciar sesión y tendrás acceso a la organización de la Consola. link:task-iam-manage-members-permissions#add-members["Aprenda cómo agregar miembros a una organización existente"] .
+
+. Seleccione *Comencemos*.
+

@@ -1,0 +1,51 @@
+---
+sidebar: sidebar 
+permalink: task-iam-associate-connectors.html 
+keywords: agent, associate agent, folder, project, associate folder with connector, associate project with connector, associate connector with project, associate connector with resource, connector, associate connector, 
+summary: Si los miembros de su organización necesitan usar un agente de consola en otro proyecto, debe asociar ese agente de consola con el proyecto respectivo. 
+---
+= Asociar un agente de consola con otras carpetas y proyectos
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cuando un _administrador de la organización_ crea un agente de consola, este se asocia automáticamente con el proyecto seleccionado actualmente dentro de la organización.  Aunque alguien con el rol de _Administrador de la organización_ puede acceder a ese agente de consola desde cualquier lugar de la organización.  Otros miembros de su organización solo pueden acceder a ese agente de consola desde el proyecto en el que se creó, a menos que asocie ese agente de consola con otros proyectos.
+
+.Antes de empezar
+Revise cómo funciona la asociación del agente de consola. link:concept-identity-and-access-management.html#associate-agents["Obtenga información sobre cómo usar el agente de consola con identidad y acceso"] .
+
+.Acerca de esta tarea
+Un administrador de carpeta o proyecto puede ver todos los agentes de la consola en la página *Agente*, pero solo puede asociar agentes de la consola con carpetas y proyectos para los que tenga permisos. link:reference-iam-predefined-roles.html["Obtenga más información sobre las acciones que un administrador de carpeta o proyecto puede completar"] .
+
+.Pasos
+. Seleccione *Administración > Identidad y acceso* > *Agentes*.
+. Desde la tabla, busque el agente de consola que desea asociar.
++
+Utilice la búsqueda sobre la tabla para encontrar un agente de consola específico o filtrar la tabla por jerarquía de recursos.
+
+. Para ver las carpetas y los proyectos vinculados al agente de la consola, seleccioneimage:icon-action.png["Icono de tres puntos"] y luego seleccione *Ver detalles*.
++
+La página muestra detalles sobre las carpetas y los proyectos asociados con el agente de la consola.
+
+. Seleccione *Asociar a carpeta o proyecto*.
+. Seleccione una carpeta o proyecto y luego seleccione *Aceptar*.
+. Para asociar el agente de consola con una carpeta o proyecto adicional, seleccione *Agregar una carpeta o proyecto* y luego seleccione la carpeta o el proyecto.
+. Seleccione *Agente asociado*.
+
+
+.Después de terminar
+Asocie los recursos del agente de consola con las mismas carpetas y proyectos desde la página *Recursos*.
+
+link:task-iam-manage-resources.html#associate-resource["Aprenda a asociar un recurso con carpetas y proyectos"] .
+
+.Información relacionada
+* link:concept-connectors.html["Obtenga más información sobre los agentes de la consola de NetApp"]
+* link:concept-identity-and-access-management.html["Obtenga más información sobre la gestión de identidad y acceso de la consola de NetApp"]
+* link:task-iam-get-started.html["Comience con la identidad y el acceso"]
+* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["Conozca la API para la gestión de identidad y acceso"^]
+

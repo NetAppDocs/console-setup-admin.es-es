@@ -1,0 +1,180 @@
+---
+sidebar: sidebar 
+permalink: task-monitor-cm-operations.html 
+keywords: administer, monitor, timeline, notifications, alerts, events, notification center, email, audit page, audit action 
+summary: Puede supervisar el estado de las operaciones que está realizando la consola para ver si hay algún problema que deba solucionar.  Puede ver el estado desde la página de Auditoría, el Centro de notificaciones o recibir notificaciones en su correo electrónico. 
+---
+= Supervisar las operaciones de la consola de NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Puede supervisar el estado de las operaciones que está realizando la consola para ver si hay algún problema que deba solucionar.  Puede ver el estado desde la página de Auditoría, el Centro de notificaciones o recibir notificaciones en su correo electrónico.
+
+La tabla destaca las características de la página Auditoría y del Centro de notificaciones comparándolas.
+
+[cols="47,47"]
+|===
+| Centro de notificaciones | Página de auditoría 
+
+
+| Muestra el estado de alto nivel de eventos y acciones. | Proporciona detalles de cada evento o acción para una mayor investigación. 
+
+
+| Muestra el estado de la sesión de inicio de sesión actual (la información no aparece en el Centro de notificaciones después de cerrar la sesión) | Mantiene el estado del último mes 
+
+
+| Muestra solo acciones iniciadas en la interfaz de usuario | Muestra todas las acciones de la interfaz de usuario o las API 
+
+
+| Muestra acciones iniciadas por el usuario | Muestra todas las acciones, ya sean iniciadas por el usuario o por el sistema. 
+
+
+| Filtrar resultados por importancia | Filtrar por servicio, acción, usuario, estado y más 
+
+
+| Proporciona la posibilidad de enviar notificaciones por correo electrónico a los usuarios y a otras personas. | Sin capacidad de correo electrónico 
+|===
+
+
+== Auditar la actividad del usuario desde la página Auditoría
+
+La página Auditoría muestra las acciones que los usuarios completaron para administrar su organización o cuenta.  Esto incluye acciones de gestión como asociar usuarios, crear sistemas, crear agentes y más.
+
+Utilice la página Auditoría para identificar quién realizó una acción o su estado.
+
+.Pasos
+. Seleccione *Administración > Auditoría*.
+. Utilice los filtros sobre la tabla para cambiar qué acciones se muestran en la tabla.
++
+Por ejemplo, puede utilizar el filtro *Servicio* para mostrar acciones relacionadas con un servicio específico, o puede utilizar el filtro *Usuario* para mostrar acciones relacionadas con una cuenta de usuario específica.
+
+
+
+
+
+=== Descargar registros de auditoría desde la página Auditoría
+
+Puede descargar los registros de auditoría desde la página Auditoría a un archivo CSV.  Esto le permite mantener un registro de las acciones que los usuarios realizan en su organización.  El archivo CSV incluye todas las columnas del archivo CSV descargado, independientemente de los filtros o las columnas mostradas en la página Auditoría.
+
+.Pasos
+. En la página *Auditoría*, seleccione el ícono de descarga en la esquina superior derecha de la tabla.
+
+
+
+
+== Supervisar actividades mediante el Centro de notificaciones
+
+Las notificaciones rastrean las operaciones de la consola para confirmar el éxito.  Le permiten ver el estado de muchas acciones de la consola que inició durante su sesión de inicio de sesión actual.  No todos los servicios de consola reportan información al Centro de notificaciones.
+
+Puede mostrar las notificaciones seleccionando la campana de notificaciones (image:icon_bell.png["campana de notificación"] ) en la barra de menú.  El color de la pequeña burbuja en la campana indica el nivel de gravedad más alto de notificación que está activa.  Entonces, si ves una burbuja roja, significa que hay una notificación importante que debes revisar.
+
+También puede configurar la Consola para enviar ciertos tipos de notificaciones por correo electrónico para que pueda estar informado de la actividad importante del sistema incluso cuando no haya iniciado sesión en el sistema.  Se pueden enviar correos electrónicos a cualquier usuario que forme parte de su organización o a cualquier otro destinatario que necesite estar al tanto de ciertos tipos de actividad del sistema.  Vea cómo<<Establecer la configuración de notificaciones por correo electrónico,Establecer la configuración de notificaciones por correo electrónico>> .
+
+
+
+=== Comparación del Centro de notificaciones con las alertas
+
+El Centro de notificaciones le permite ver el estado de las operaciones que ha iniciado y configurar notificaciones de alerta para ciertos tipos de actividades del sistema.  Mientras tanto, las alertas le permiten ver problemas o riesgos potenciales en su entorno de almacenamiento ONTAP relacionados con la capacidad, la disponibilidad, el rendimiento, la protección y la seguridad.
+
+https://docs.netapp.com/us-en/bluexp-alerts/index.html["Obtenga más información sobre las alertas de la consola de NetApp"^]
+
+
+
+=== Tipos de notificación
+
+La consola clasifica las notificaciones en las siguientes categorías:
+
+[cols="20,60"]
+|===
+| Tipo de notificación | Descripción 
+
+
+| Crítico | Se produjo un problema que podría provocar la interrupción del servicio si no se toman medidas correctivas de inmediato. 
+
+
+| Error | Una acción o proceso terminó con un fracaso, o podría conducir a un fracaso si no se toman medidas correctivas. 
+
+
+| Advertencia | Un problema que debes tener en cuenta para asegurarte de que no alcance una gravedad crítica.  Las notificaciones de esta gravedad no provocan interrupciones del servicio y es posible que no se requieran medidas correctivas inmediatas. 
+
+
+| Recomendación | Una recomendación del sistema para que usted tome una acción para mejorar el sistema o un determinado servicio; por ejemplo: ahorro de costes, sugerencia de nuevos servicios, configuración de seguridad recomendada, etc. 
+
+
+| Información | Un mensaje que proporciona información adicional sobre una acción o proceso. 
+
+
+| Éxito | Una acción o proceso completado con éxito. 
+|===
+
+
+=== Filtrar notificaciones
+
+De forma predeterminada, verá todas las notificaciones activas en el Centro de notificaciones.  Puedes filtrar las notificaciones que ves para mostrar solo aquellas que son importantes para ti.  Puede filtrar por “Servicio” y por “Tipo” de notificación.
+
+image:screenshot_notification_filters.png["Una captura de pantalla que muestra los dos tipos de filtros disponibles en el Centro de notificaciones."]
+
+Por ejemplo, si desea ver solo notificaciones de "Error" y "Advertencia" para las operaciones de la consola, seleccione esas entradas y verá solo esos tipos de notificaciones.
+
+
+
+=== Descartar notificaciones
+
+Puedes eliminar las notificaciones de la página si ya no necesitas verlas.  Puede descartar notificaciones individualmente o todas a la vez.
+
+Para descartar todas las notificaciones, en el Centro de notificaciones, seleccioneimage:button_3_vert_dots.png["un icono con tres puntos verticales"] y seleccione *Descartar todo*.
+
+Para descartar notificaciones individuales, pase el cursor sobre la notificación y seleccione *Descartar*.
+
+
+
+=== Establecer la configuración de notificaciones por correo electrónico
+
+Puede enviar tipos específicos de notificaciones por correo electrónico para estar informado sobre la actividad importante del sistema incluso cuando no haya iniciado sesión. Se pueden enviar correos electrónicos a cualquier usuario que forme parte de su organización o cuenta, o a cualquier otro destinatario que necesite estar al tanto de ciertos tipos de actividad del sistema.
+
+[NOTE]
+====
+* La consola envía notificaciones por correo electrónico para el agente, licencias y suscripciones, NetApp Copy and Sync y NetApp Backup and Recovery.
+* No se admite el envío de notificaciones por correo electrónico cuando el agente de la consola está instalado en un sitio sin acceso a Internet.
+
+
+====
+Los filtros que configure en el Centro de notificaciones no determinan los tipos de notificaciones que recibirá por correo electrónico.  De forma predeterminada, cualquier administrador de la organización recibirá correos electrónicos para todas las notificaciones "Críticas" y "Recomendaciones".  Estas notificaciones se aplican a todos los servicios: no puede elegir recibir notificaciones solo para ciertos servicios, por ejemplo, agentes o NetApp Backup and Recovery.
+
+Todos los demás usuarios y destinatarios están configurados para no recibir ningún correo electrónico de notificación, por lo que deberá configurar los ajustes de notificación para cualquier usuario adicional.
+
+Debe tener el rol de administrador de la organización para personalizar la configuración de notificaciones.
+
+.Pasos
+. Seleccione *Administración > Configuración de notificaciones*.
+. Seleccione *Usuarios de la organización* o *Destinatarios adicionales*.
++
+La página *Destinatarios adicionales* le permite configurar la Consola para notificar a las personas que son miembros de su organización de la Consola.
+
+. Seleccione un usuario o varios usuarios desde la página _Usuarios de la organización_ o la página _Destinatarios adicionales_ y elija el tipo de notificaciones que se enviarán:
++
+** Para realizar cambios para un solo usuario, seleccione el menú en la columna Notificaciones para ese usuario, marque los tipos de notificaciones que se enviarán y seleccione *Aplicar*.
+** Para realizar cambios para varios usuarios, marque la casilla de cada usuario, seleccione *Administrar notificaciones por correo electrónico*, marque los tipos de notificaciones que se enviarán y seleccione *Aplicar*.
+
+
+
+
+
+
+=== Agregar destinatarios de correo electrónico adicionales
+
+Los usuarios que aparecen en la página _Usuarios de la organización_ se completan automáticamente a partir de los usuarios de su organización o cuenta.  Puede agregar direcciones de correo electrónico en la página _Destinatarios adicionales_ para otras personas o grupos que no tengan acceso a la Consola, pero que necesiten recibir notificaciones sobre ciertos tipos de alertas y notificaciones.
+
+.Pasos
+. Desde la página *Configuración de notificaciones*, seleccione *Agregar nuevos destinatarios*.
++
+image:screenshot-add-email-recipient.png["Una captura de pantalla que muestra cómo agregar nuevos destinatarios de correo electrónico para alertas y notificaciones."]
+
+. Ingrese el nombre, la dirección de correo electrónico y seleccione los tipos de notificaciones que recibirá el destinatario y seleccione *Agregar nuevo destinatario*.
+

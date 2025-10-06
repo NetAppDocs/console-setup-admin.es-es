@@ -1,0 +1,63 @@
+---
+sidebar: sidebar 
+permalink: concept-org-partnerships.html 
+keywords: identity federation, single sign-on, SSO, identity provider, IdP, SAML, Microsoft Entra ID, AD FS, PingFederate, ACS URL, Entity ID, user access, security, productivity, compliance, authentication, business continuity, account management, user experience, access control, workflow automation, credential management, login process, organization admin, bluexp, BlueXP 
+summary: La creación de asociaciones entre organizaciones en la consola de NetApp permite a los socios de la organización administrar de forma segura los recursos de NetApp a través de los límites organizacionales, lo que agiliza la colaboración y mejora la seguridad. 
+---
+= Asociaciones en la consola de NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Al crear asociaciones entre organizaciones, la consola de NetApp permite a los socios administrar de forma segura los recursos de NetApp a través de los límites organizacionales, agilizando la colaboración y mejorando la seguridad.
+
+.Roles requeridos
+Administración de asociacioneslink:reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso."]
+
+Las asociaciones permiten la gestión segura de los recursos de NetApp en todas las organizaciones mediante relaciones basadas en roles en la consola.  La organización iniciadora concede acceso a sus recursos, mientras que la organización receptora proporciona los usuarios o las cuentas de servicio a los que se les concederá acceso.  Las asociaciones se establecen a través de un flujo de trabajo de autoservicio, que brinda a la organización iniciadora control total sobre qué recursos se comparten, qué roles se asignan y la capacidad de incorporar, administrar o revocar el acceso de los socios según sea necesario.
+
+Los clientes pueden autorizar a los MSP o revendedores a administrar entornos NetApp sin necesidad de configuraciones complicadas.  Los clientes pueden controlar a qué clústeres pueden acceder los socios y qué roles tienen, y pueden revocar el acceso en cualquier momento para mantener la seguridad y el cumplimiento.
+
+Como socio, obtiene visibilidad y control centralizados en todos los entornos de los clientes.  Puede cambiar fácilmente a la organización de un cliente para administrar recursos, ejecutar servicios de datos y monitorear la salud dentro de límites definidos, lo que reduce las herramientas personalizadas y garantiza la alineación con las políticas de cada cliente.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1"]Asignar a uno o más usuarios el rol de administrador de asociación
+Asigne a uno o más usuarios, tanto en la organización iniciadora como en la receptora, el rol de administrador de asociaciones para crear y administrar asociaciones. Puede asignar el rol de visualizador de asociaciones a usuarios que solo necesitan ver asociaciones, y no administrarlas.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dos"]Comparta el ID de su organización con la organización iniciadora
+[role="quick-margin-para"]
+Para iniciar una asociación, el iniciador debe conocer el ID de la organización de destino.  Sólo la organización respectiva puede acceder a esta ID de organización.  Compártalo directamente con la organización iniciadora fuera de la consola de NetApp mediante correo electrónico u otro método.
+
+La organización iniciadora es la organización que concede acceso a sus recursos.
+
+image:diagram-partnership-org-id.png["diagrama que muestra las organizaciones iniciales"]
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Tres"]Inicie la asociación dentro de la consola de NetApp
+[role="quick-margin-para"]
+La organización que inicia la asociación lo hace desde la consola de NetApp enviando una solicitud de asociación.
+
+image:diagram-partnership-accept.png["Diagrama que muestra la aceptación de la asociación"]
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Cuatro"]Aprobar la asociación
+[role="quick-margin-para"]
+La organización receptora debe aceptar la solicitud.
+
+La organización receptora es la organización a la que se le concede acceso a los recursos.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["Cinco"]Asignar usuarios a la asociación
+[role="quick-margin-para"]
+La organización receptora asigna usuarios específicos o cuentas de servicio de su organización a la asociación.  La organización iniciadora asigna roles a estos usuarios.
+
+image:diagram-partnership-add-user.png["diagrama que muestra las asignaciones de usuarios"]
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["Seis"]Otorgar a los usuarios asignados acceso a los recursos
+[role="quick-margin-para"]
+Si usted es la organización iniciadora, puede otorgar acceso a recursos específicos a los usuarios que fueron asignados a la asociación.  Puede revocar el acceso en cualquier momento.
+
+Puede hacerlo asignando roles para proyectos o carpetas específicos dentro de su organización.
+
+image:diagram-partnership-resources.png["Diagrama que muestra el uso compartido de recursos"]

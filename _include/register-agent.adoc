@@ -1,0 +1,24 @@
+= 
+:allow-uri-read: 
+
+
+Inicie sesión en la consola y asocie el agente de la consola con su organización.  La forma de iniciar sesión depende del modo en que esté utilizando la Consola.  Si está utilizando la consola en modo estándar, inicie sesión a través del sitio web de SaaS.  Si está utilizando la consola en modo restringido o privado, inicie sesión localmente desde el host del agente de la consola.
+
+.Pasos
+. Abra un navegador web e ingrese la URL del host del agente de la consola:
++
+La URL del host de la consola puede ser un host local, una dirección IP privada o una dirección IP pública, según la configuración del host.  Por ejemplo, si el agente de la consola está en la nube pública sin una dirección IP pública, debe ingresar una dirección IP privada de un host que tenga una conexión al host del agente de la consola.
+
+. Regístrate o inicia sesión.
+. Después de iniciar sesión, configure la consola:
++
+.. Especifique la organización de la consola que se asociará con el agente de la consola.
+.. Introduzca un nombre para el sistema.
+.. En *¿Está ejecutando en un entorno seguro?* mantenga el modo restringido deshabilitado.
++
+El modo restringido no es compatible cuando el agente de consola está instalado localmente.
+
+.. Seleccione *Comencemos*.
+
+
+

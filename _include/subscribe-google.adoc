@@ -1,0 +1,65 @@
+= 
+:allow-uri-read: 
+
+
+.Pasos
+. Seleccione *Administración > *Credenciales*.
+. Seleccione *Credenciales de la organización*.
+. Seleccione el menú de acciones para un conjunto de credenciales asociadas con un agente de consola y luego seleccione *Configurar suscripción*.  +Se necesita una nueva captura de pantalla (TS)image:screenshot_gcp_add_subscription.png["Una captura de pantalla del menú de acciones para un conjunto de credenciales existentes."]
+. Para configurar una suscripción existente con las credenciales seleccionadas, seleccione un proyecto y una suscripción de Google Cloud de la lista desplegable y luego seleccione *Configurar*.
++
+image:screenshot_gcp_associate.gif["Una captura de pantalla de un proyecto de Google Cloud y una suscripción seleccionada para las credenciales de Google Cloud."]
+
+. Si aún no tiene una suscripción, seleccione *Agregar suscripción > Continuar* y siga los pasos en Google Cloud Marketplace.
++
+
+NOTE: Antes de completar los siguientes pasos, asegúrese de tener privilegios de administrador de facturación en su cuenta de Google Cloud, así como un inicio de sesión en la consola de NetApp .
+
++
+.. Después de ser redirigido a la https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Página de Servicios Inteligentes de NetApp en Google Cloud Marketplace"^] , asegúrese de que el proyecto correcto esté seleccionado en el menú de navegación superior.
++
+image:screenshot_gcp_cvo_marketplace.png["Una captura de pantalla de la página del mercado de Cloud Volumes ONTAP en Google Cloud."]
+
+.. Seleccione *Suscribirse*.
+.. Seleccione la cuenta de facturación adecuada y acepte los términos y condiciones.
+.. Seleccione *Suscribirse*.
++
+Este paso envía su solicitud de transferencia a NetApp.
+
+.. En el cuadro de diálogo emergente, seleccione *Registrarse con NetApp, Inc.*
++
+Este paso debe completarse para vincular la suscripción de Google Cloud con su organización o cuenta de Console.  El proceso de vinculación de una suscripción no estará completo hasta que seas redirigido desde esta página y luego inicies sesión en la Consola.
+
++
+image:screenshot_gcp_marketplace_register.png["Una captura de pantalla de una ventana emergente de registro."]
+
+.. Complete los pasos en la página *Asignación de suscripción*:
++
+
+NOTE: Si alguien de su organización ya tiene una suscripción al mercado desde su cuenta de facturación, será redirigido a https://bluexp.netapp.com/ontap-cloud?x-gcp-marketplace-token=["la página Cloud Volumes ONTAP dentro de la consola de NetApp"^] en cambio.  Si esto no es esperado, comuníquese con su equipo de ventas de NetApp .  Google solo permite una suscripción por cuenta de facturación de Google.
+
++
+*** Seleccione las organizaciones o cuentas de la consola con las que desea asociar esta suscripción.
+*** En el campo *Reemplazar suscripción existente*, elija si desea reemplazar automáticamente la suscripción existente de una organización o cuenta con esta nueva suscripción.
++
+La consola reemplaza la suscripción existente para todas las credenciales de la organización o cuenta con esta nueva suscripción.  Si un conjunto de credenciales nunca estuvo asociado con una suscripción, entonces esta nueva suscripción no estará asociada con esas credenciales.
+
++
+Para todas las demás organizaciones o cuentas, deberá asociar manualmente la suscripción repitiendo estos pasos.
+
+*** Seleccione *Guardar*.
++
+El siguiente vídeo muestra los pasos para suscribirse desde Google Cloud Marketplace:
+
++
+.Suscríbete desde Google Cloud Marketplace
+video::373b96de-3691-4d84-b3f3-b05101161638[panopto]
+
+
+.. Una vez completado este proceso, regrese a la página Credenciales en la Consola y seleccione esta nueva suscripción.
++
+image:screenshot_gcp_associate.gif["Una captura de pantalla de la página de asignación de suscripción."]
+
+
+
+

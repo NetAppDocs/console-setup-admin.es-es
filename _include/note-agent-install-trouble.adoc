@@ -1,0 +1,144 @@
+= 
+:allow-uri-read: 
+
+
+.Antes de empezar
+Debes tener lo siguiente:
+
+* Privilegios de root para instalar el agente de consola.
+* Detalles sobre un servidor proxy, si se requiere un proxy para el acceso a Internet desde el agente de la consola.
++
+Tiene la opción de configurar un servidor proxy después de la instalación, pero para hacerlo es necesario reiniciar el agente de la consola.
+
+* Un certificado firmado por una CA, si el servidor proxy usa HTTPS o si el proxy es un proxy interceptor.
+
+
+
+NOTE: No es posible configurar un certificado para un servidor proxy transparente al instalar manualmente el agente de consola.  Si necesita configurar un certificado para un servidor proxy transparente, debe utilizar la Consola de mantenimiento después de la instalación. Obtenga más información sobre ellink:reference-connector-maint-console.html["Consola de mantenimiento del agente"] .
+
+.Acerca de esta tarea
+El instalador que está disponible en el sitio de soporte de NetApp podría ser una versión anterior.  Después de la instalación, el agente de consola se actualiza automáticamente si hay una nueva versión disponible.
+
+.Pasos
+. Si las variables del sistema _http_proxy_ o _https_proxy_ están configuradas en el host, elimínelas:
++
+[source, cli]
+----
+unset http_proxy
+unset https_proxy
+----
++
+Si no elimina estas variables del sistema, la instalación fallará.
+
+. Descargue el software del agente de consola desde https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["Sitio de soporte de NetApp"^] y luego copiarlo al host Linux.
++
+Debe descargar el instalador del agente "en línea" diseñado para su uso en su red o en la nube.
+
+. Asignar permisos para ejecutar el script.
++
+[source, cli]
+----
+chmod +x NetApp-Console-Agent-<version>
+----
++
+Donde <versión> es la versión del agente de consola que descargó.
+
+. Ejecute el script de instalación.
++
+[source, cli]
+----
+ ./NetApp-Console-Agent-<version> --proxy <HTTP or HTTPS proxy server> --cacert <path and file name of a CA-signed certificate>
+----
++
+Necesitará agregar información de proxy si su red requiere un proxy para acceder a Internet.  Puede agregar un proxy transparente o explícito.  Los parámetros --proxy y --cacert son opcionales y no se le pedirá que los agregue.  Si tiene un servidor proxy, deberá ingresar los parámetros como se muestra.
+
++
+A continuación se muestra un ejemplo de configuración de un servidor proxy explícito con un certificado firmado por una CA:
+
++
+[source, cli]
+----
+ ./NetApp-Console-Agent-v4.0.0--proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
+----
++
+--proxy configura el agente de la consola para utilizar un servidor proxy HTTP o HTTPS utilizando uno de los siguientes formatos:
+
++
+** \http://dirección:puerto
+** \http://nombre-de-usuario:contraseña@dirección:puerto
+** \http://nombre-de-dominio%92nombre-de-usuario:contraseña@dirección:puerto
+** \https://dirección:puerto
+** \https://nombre-de-usuario:contraseña@dirección:puerto
+** \https://nombre-de-dominio%92nombre-de-usuario:contraseña@dirección:puerto
++
+Tenga en cuenta lo siguiente:
+
++
+*** El usuario puede ser un usuario local o un usuario de dominio.
+*** Para un usuario de dominio, debe utilizar el código ASCII para un \ como se muestra arriba.
+*** El agente de consola no admite nombres de usuario ni contraseñas que incluyan el carácter @.
+*** Si la contraseña incluye alguno de los siguientes caracteres especiales, debe escapar ese carácter especial anteponiéndolo con una barra invertida: & o !
++
+Por ejemplo:
+
++
+\http://bxpproxyuser:netapp1\!@dirección:3128
+
++
+--cacert especifica un certificado firmado por CA para usar para el acceso HTTPS entre el agente de consola y el servidor proxy.  Este parámetro es necesario para servidores proxy HTTPS, servidores proxy interceptores y servidores proxy transparentes.
+
+
+
++
+A continuación se muestra un ejemplo de configuración de un servidor proxy transparente.  Cuando configura un proxy transparente, no necesita definir el servidor proxy.  Solo debe agregar un certificado firmado por una CA a su host del agente de consola:
+
+
+
++
+[source, cli]
+----
+ ./NetApp-Console-Agent-v4.0.0 --cacert /tmp/cacert/certificate.cer
+----
+. Si utilizó Podman, necesitará ajustar el puerto aardvark-dns.
++
+.. SSH a la máquina virtual del agente de consola.
+.. Abra el archivo podman _/usr/share/containers/containers.conf_ y modifique el puerto elegido para el servicio DNS de Aardvark.  Por ejemplo, cámbielo a 54.
++
+[source, cli]
+----
+vi /usr/share/containers/containers.conf
+...
+# Port to use for dns forwarding daemon with netavark in rootful bridge
+# mode and dns enabled.
+# Using an alternate port might be useful if other DNS services should
+# run on the machine.
+#
+dns_bind_port = 54
+...
+Esc:wq
+----
+.. Reinicie la máquina virtual del agente de consola.
+
+
+
+
+. Espere a que se complete la instalación.
++
+Al final de la instalación, el servicio del agente de consola (occm) se reinicia dos veces si especificó un servidor proxy.
+
+. Abra un navegador web desde un host que tenga una conexión a la máquina virtual del agente de consola e ingrese la siguiente URL:
++
+https://_ipaddress_[]
+
+. Después de iniciar sesión, configure el agente de la consola:
++
+.. Especifique la organización que se asociará con el agente de la consola.
+.. Introduzca un nombre para el sistema.
+.. En *¿Está ejecutando en un entorno seguro?* mantenga el modo restringido deshabilitado.
++
+Debes mantener el modo restringido deshabilitado porque estos pasos describen cómo usar la consola en modo estándar.  Debe habilitar el modo restringido solo si tiene un entorno seguro y desea desconectar esta cuenta de los servicios de backend.  Si ese es el caso,link:task-quick-start-restricted-mode.html["Siga los pasos para comenzar a utilizar la consola de NetApp en modo restringido"] .
+
+.. Seleccione *Comencemos*.
+
+
+

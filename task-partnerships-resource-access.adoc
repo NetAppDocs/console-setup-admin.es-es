@@ -1,0 +1,103 @@
+---
+sidebar: sidebar 
+permalink: task-partnerships-resource-access.html 
+keywords: role-based access, partnership access, partner resources, resource access, grant acces, provide partner access, partnership organization 
+summary: Puede otorgar acceso a los usuarios asociados asignándoles roles específicos para carpetas y proyectos dentro de su organización. 
+---
+= Proporcionar acceso a recursos a los usuarios asociados
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Puede otorgar acceso a los usuarios asociados asignándoles roles específicos para carpetas y proyectos dentro de su organización.
+
+.Roles requeridos
+Administrador de asociación.link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso."]
+
+Una organización asociada primero debe agregar miembros a la asociación antes de poder asignarles roles para los recursos de su organización.link:task-partnerships-assign-users.html["Aprenda cómo agregar miembros a una asociación."]
+
+
+
+== Comprender los roles de los usuarios asociados
+
+Puede administrar los roles de los miembros de las organizaciones asociadas de la misma manera que lo hace con los suyos propios.  Sin embargo, no todos los roles están disponibles para los usuarios asociados.  En particular, no puede otorgar a los usuarios socios un rol que permita actualizaciones de software.  La actualización del software ONTAP generalmente requiere acceso directo a la red.
+
+Puede asignar los siguientes roles a los usuarios socios:
+
+* link:reference-iam-platform-roles.html#organization-admin-roles["Administrador de la organización"]
+* link:reference-iam-platform-roles.html#organization-admin-roles["Administrador de carpetas o proyectos"]
+* link:reference-iam-platform-roles.html#federation-roles["Administración de la federación"]
+* link:reference-iam-platform-roles.html#federation-roles["Visor de la Federación"]
+* link:reference-iam-backup-rec-roles.html["Administrador de copias de seguridad y recuperación"]
+* link:reference-iam-backup-rec-roles.html["Visor de copias de seguridad"]
+* link:reference-iam-backup-rec-roles.html["Restaurar administrador"]
+* link:reference-iam-backup-rec-roles.html["Clonar administrador"]
+* link:reference-iam-disaster-rec-roles.html["Administración de recuperación ante desastres"]
+* link:reference-iam-disaster-rec-roles.html["Administrador de conmutación por error de recuperación ante desastres"]
+* link:reference-iam-disaster-rec-roles.html["Administrador de aplicaciones de recuperación ante desastres"]
+* link:reference-iam-disaster-rec-roles.html["Visor de recuperación ante desastres"]
+* link:reference-iam-storage-roles.html["Analista de soporte de operaciones"]
+* link:reference-iam-predefined-roles.html["Visor de clasificación"]
+
+
+link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles predefinidos"]
+
+
+
+== Agregar un rol a un usuario socio
+
+Proporciona acceso a los recursos de su organización agregando un rol a un miembro.  Cuando se asigna un rol, se especifica un recurso y un rol.  Puede asignar más de un rol a un usuario.
+
+Por ejemplo, si tuviera dos proyectos y quisiera que el mismo usuario tuviera el rol de administrador de respaldo y recuperación para ambos, necesitaría proporcionarle el rol al usuario para cada proyecto.  De manera similar, si quisiera proporcionar a un usuario dos roles diferentes para el mismo proyecto, necesitaría asignar cada rol por separado.
+
+.Pasos
+. Seleccione *Administración > Identidad y acceso*.
+. Seleccione *Asociaciones*.
+. Seleccione la pestaña *Asociación iniciada*.
+. Seleccione el menú de accionesimage:icon-action.png["un icono con tres puntos verticales"] junto a la asociación establecida que desea ver, seleccione *Ver detalles*.
++
+La lista *Miembro* muestra los miembros que la organización asociada ha agregado a la asociación.
+
+. Seleccione el menú de accionesimage:icon-action.png["un icono con tres puntos verticales"] junto al miembro al que desea asignar un rol y seleccione *Agregar un rol*.
+. Para agregar un rol, complete los pasos en el cuadro de diálogo:
++
+** *Seleccione una organización, carpeta o proyecto*: elija el nivel de su jerarquía de recursos para el cual el miembro debe tener permisos.
++
+Si selecciona la organización o una carpeta, el miembro tendrá permisos sobre todo lo que resida dentro de la organización o carpeta.
+
+** *Seleccionar una categoría*: Elija una categoría de rol. link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso"^] .
+** Seleccionar un *Rol*: elija un rol que proporcione al miembro permisos para los recursos asociados con la organización, carpeta o proyecto que seleccionó.
+** *Agregar rol*: si desea proporcionar acceso a carpetas o proyectos adicionales dentro de su organización, seleccione *Agregar rol*, especifique otra carpeta, proyecto o categoría de rol y luego seleccione una categoría de rol y un rol correspondiente.
+
+
+. Seleccione *Agregar nuevos roles*.
+
+
+
+
+== Cambiar o eliminar un rol de un usuario socio
+
+Puede cambiar o eliminar un rol que haya asignado a un miembro de una organización asociada.
+
+.Pasos
+. Seleccione *Administración > Identidad y acceso*.
+. Seleccione *Asociaciones*.
+. Seleccione la pestaña *Asociación iniciada*.
+. Seleccione el menú de accionesimage:icon-action.png["un icono con tres puntos verticales"] junto a la asociación establecida que desea ver, seleccione *Ver detalles*.
++
+La lista *Miembro* muestra los miembros que la organización asociada ha agregado a la asociación.
+
+. Desde la página *Miembros*, navegue hasta un miembro en la tabla, seleccioneimage:icon-action.png["Un icono que consta de tres puntos uno al lado del otro."] y luego seleccione *Ver detalles*.
+. En la tabla, expanda la fila correspondiente a la organización, carpeta o proyecto donde desea cambiar el rol asignado al miembro y seleccione *Ver* en la columna *Rol* para ver los roles asignados a este miembro.
+. Puede cambiar un rol existente de un miembro o eliminar un rol.
++
+.. Para cambiar el rol de un miembro, seleccione *Cambiar* junto al rol que desea cambiar.  Sólo puedes cambiar un rol a un rol dentro de la misma categoría de rol.  Por ejemplo, puede cambiar de un rol de servicio de datos a otro.  Confirmar el cambio.
+.. Para desasignar el rol de un miembro, seleccioneimage:icon-delete.png["Un icono que se parece a un bote de basura"] al lado del rol para desasignar al miembro el rol respectivo.  Se le pedirá que confirme la eliminación.
+
+
+

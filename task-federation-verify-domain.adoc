@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: task-federation-verify-domain.html 
+keywords: federation, active directory federation services, adfs, ad fs, single sign-on, microsoft, federate, federated connection, SSO, identity federation, identity management, corporate identity 
+summary: Solo puedes usar dominios verificados para la federación. Si deseas federar con un dominio diferente a tu dominio de correo electrónico, primero debes verificar que eres el propietario del dominio.  Sólo se pueden utilizar dominios verificados para la federación. 
+---
+= Verifique el dominio de correo electrónico para su conexión federada
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Si desea federarse con un dominio diferente a su dominio de correo electrónico, primero debe verificar que es el propietario del dominio.  Sólo se pueden utilizar dominios verificados para la federación.
+
+.Roles requeridos
+El rol de administrador de la federación es necesario para crear y administrar federaciones.  El espectador de la Federación puede ver la página de la Federación.link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso."]
+
+Para verificar su dominio es necesario agregar un registro TXT a la configuración de DNS de su dominio.  Este registro se utiliza para demostrar que usted es el propietario del dominio y permite que la consola de NetApp confíe en el dominio para la federación.  Es posible que necesite coordinar con su administrador de TI o de red para completar este paso.
+
+.Pasos
+. Seleccione *Administración > Identidad y acceso*.
+. Seleccione *Federación* para ver la página *Federaciones*.
+. Seleccione *Configurar nueva federación*.
+. Seleccione *Verificar propiedad del dominio*.
+. Ingrese el dominio que desea verificar y seleccione *Continuar*.
+. Copie el registro TXT que se proporciona.
+. Vaya a la configuración de DNS de su dominio y configure el valor TXT que se proporcionó como registro TXT para su dominio.  Trabaje con su administrador de TI o de red si es necesario.
+. Después de agregar el registro TXT, regrese a la Consola y seleccione *Verificar*.
+

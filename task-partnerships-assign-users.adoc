@@ -1,0 +1,70 @@
+---
+sidebar: sidebar 
+permalink: task-partnerships-assign-users.html 
+keywords: switch organizations, switch projects, projects, organizations, change, switch, change organizations, change projects, iam, identity and access management, switch connectors 
+summary: Puedes agregar usuarios a una asociación agregándolos a la organización asociada.  Después de agregar usuarios, la organización asociada es responsable de asignarles roles para recursos específicos en su organización. 
+---
+= Administrar miembros para una organización asociada
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Puedes agregar usuarios a una asociación agregándolos a la organización asociada.  Después de agregar usuarios, la organización asociada es responsable de asignarles roles para recursos específicos en su organización.
+
+.Roles requeridos
+El rol de *Administrador de asociación* es necesario para crear y gestionar asociaciones.  El *visor de asociaciones* puede ver la página de Asociaciones.link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso."]
+
+Puedes eliminar usuarios de una asociación en cualquier momento.  Eliminar a un usuario de una asociación revoca inmediatamente su acceso a cualquier recurso en la organización asociada.
+
+
+
+== Agregar miembros a una asociación
+
+Cuando agrega miembros a una asociación, el *administrador de la asociación* de la organización asociada debe asignarles roles para recursos específicos en su organización antes de que puedan acceder a esos recursos.
+
+Después de agregar miembros a una asociación, los miembros se muestran como miembros en la organización asociada, donde el socio puede asignarlos a los recursos.
+
+.Pasos
+. Seleccione *Administración > Identidad y acceso*.
+. Seleccione *Asociaciones*.
+. Seleccione la pestaña *Asociación recibida*.
+. Seleccione el menú de accionesimage:icon-action.png["un icono con tres puntos verticales"] junto a la asociación establecida a la que desea agregar miembros, seleccione *Agregar miembros*.
+. Elija uno o más miembros para agregarlos a la asociación y seleccione *Agregar*.
+
+
+
+
+== Eliminar miembros de una asociación
+
+Puedes eliminar miembros de una asociación en cualquier momento.  Eliminar a un usuario de una asociación revoca inmediatamente su acceso a cualquier recurso en la organización asociada.
+
+Si desea ajustar el rol que tiene un miembro o los recursos a los que puede acceder, el administrador de la asociación de la organización asociada debe realizar esos cambios.
+
+.Pasos
+. Seleccione *Administración > Identidad y acceso*.
+. Seleccione *Asociaciones*.
+. Seleccione la pestaña *Asociación recibida*.
+. Seleccione el menú de accionesimage:icon-action.png["un icono con tres puntos verticales"] junto al miembro que desea eliminar y seleccione *Eliminar asociación*.
+. Confirme la acción seleccionando *Eliminar* en el cuadro de diálogo.
+
+
+
+
+== Ver información de roles de un usuario
+
+Puede ver el rol que se le ha asignado a un usuario y los recursos asociados.
+
+No se puede cambiar el rol asociado a un usuario.  Si tiene preguntas sobre los recursos o el rol proporcionado, comuníquese con el administrador de la organización asociada.
+
+.Pasos
+. Seleccione *Administración > Identidad y acceso*.
+. Seleccione *Asociaciones*.
+. Seleccione la pestaña *Asociación recibida*.
+. Desde la página *Miembros*, navegue hasta un miembro en la tabla, seleccioneimage:icon-action.png["Un icono que consta de tres puntos uno al lado del otro."] y luego seleccione *Ver detalles*.
+. En la tabla, expanda la fila correspondiente a la organización, carpeta o proyecto donde desea ver el rol asignado al miembro y seleccione el número en la columna *Rol*.
+

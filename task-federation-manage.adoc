@@ -1,0 +1,118 @@
+---
+sidebar: sidebar 
+permalink: task-federation-manage.html 
+keywords: federation, BlueXP, identity provider, IdP, single sign-on, SSO, verified domain, credentials, certificate, client secret, update, manage federations, security, compliance, user access, productivity, account management, authentication, access control, business continuity 
+summary: Después de agregar una conexión federada, puede administrarla en la consola de NetApp .  Puede ver el estado de la conexión, habilitarla o deshabilitarla según sea necesario. 
+---
+= Administrar federaciones en la consola de NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Puede administrar su federación en la consola de NetApp .  Puede desactivarlo, actualizar credenciales vencidas, así como desactivarlo si ya no lo necesita.
+
+
+NOTE: Si configuró la federación mediante NetApp Cloud Central, impórtela a través de la página *Federación* para administrarla en la consola.link:task-federation-import.html["Aprenda a importar su federación"]
+
+También puede agregar un dominio verificado a una federación existente, lo que le permite utilizar múltiples dominios para su conexión federada.
+
+
+NOTE: Los eventos de gestión de la federación, como la habilitación, deshabilitación y actualización de las federaciones, se muestran en la línea de tiempo.link:task-monitor-cm-operations.html["Obtenga más información sobre la supervisión de operaciones en la consola de NetApp ."]
+
+.Roles requeridos
+El rol de administrador de la federación es necesario para crear y administrar federaciones.  El espectador de la Federación puede ver la página de la Federación.link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso."]
+
+
+
+== Habilitar una federación
+
+Si ha creado una federación pero no está habilitada, puede habilitarla a través de la página *Federación*.  Habilitar una federación permite que los usuarios asociados con la federación inicien sesión en la Consola usando sus credenciales corporativas.  Cree y pruebe la federación con éxito antes de habilitarla.
+
+.Pasos
+. Seleccione *Administración > Identidad y acceso*.
+. Seleccione la pestaña *Federación*.
+. Seleccione el menú de accionesimage:icon-action.png["un icono con tres puntos verticales"] junto a la federación que desea habilitar y seleccione *Habilitar*.
+
+
+
+
+== Agregar un dominio verificado a una federación existente
+
+Puede agregar un dominio verificado a una federación existente en la Consola para usar múltiples dominios con el mismo proveedor de identidad (IdP).
+
+Debes haber verificado ya el dominio en la consola antes de poder agregarlo a una federación.  Si aún no ha verificado el dominio, puede hacerlo siguiendo los pasos enlink:task-federation-verify-domain.html["Verifica tu dominio en la consola"] .
+
+.Pasos
+. Seleccione *Administración > Identidad y acceso*.
+. Seleccione la pestaña *Federación*.
+. Seleccione el menú de accionesimage:button_3_vert_dots.png["un icono con tres puntos verticales"] junto a la federación a la que desea agregar un dominio verificado y seleccione *Actualizar dominios*.  El cuadro de diálogo *Actualizar dominios* muestra el dominio ya asociado con esta federación.
+. Seleccione un dominio verificado de la lista de dominios disponibles.
+. Seleccione *Actualizar*. Los nuevos usuarios del dominio pueden obtener acceso a la consola federada en 30 segundos.
+
+
+
+
+== Actualización de una conexión federada que está a punto de expirar
+
+Puede actualizar los detalles de una federación en la Consola.  Por ejemplo, necesitará actualizar la federación si las credenciales, como un certificado o un secreto de cliente, expiran.  Cuando sea necesario, actualice la fecha de notificación para recordarle que debe actualizar la conexión antes de que expire.
+
+
+IMPORTANT: Actualice la consola primero antes de actualizar su IdP para evitar problemas de inicio de sesión.  Manténgase conectado a la consola durante el proceso.
+
+.Pasos
+. Seleccione *Administración > Identidad y acceso*.
+. Seleccione la pestaña *Federación*.
+. Seleccione el menú de acciones (tres puntos verticales) junto a la federación que desea actualizar y seleccione *Actualizar federación*.
+. Actualice los detalles de la federación según sea necesario.
+. Seleccione *Actualizar*.
+
+
+
+
+== Probar una federación existente
+
+Pruebe la conexión de una federación existente para verificar que funciona.  Esto puede ayudarle a identificar cualquier problema con la federación y solucionarlo.
+
+.Pasos
+. Seleccione *Administración > Identidad y acceso*.
+. Seleccione la pestaña *Federación*.
+. Seleccione el menú de accionesimage:button_3_vert_dots.png["un icono con tres puntos verticales"] junto a la federación a la que desea agregar un dominio verificado y seleccione *Probar conexión*.
+. Seleccione *Prueba*.  El sistema le solicita que inicie sesión con sus credenciales corporativas.  Si la conexión es exitosa, será redirigido a la consola de NetApp .  Si falla la conexión, verá un mensaje de error que indica el problema con la federación.
+. Seleccione *Listo* para regresar a la pestaña *Federación*.
+
+
+
+
+== Deshabilitar una federación
+
+Si ya no necesita una federación, puede desactivarla.  Esto evita que los usuarios asociados a la federación inicien sesión en la consola utilizando sus credenciales corporativas.  Puede volver a habilitar la federación más tarde si es necesario.
+
+Deshabilite una federación antes de eliminarla, como por ejemplo al desmantelar el IdP o discontinuar la federación.  Esto le permitirá volver a habilitarlo más tarde si es necesario.
+
+.Pasos
+. Seleccione *Administración > Identidad y acceso*.
+. Seleccione la pestaña *Federación*.
+. Seleccione el menú de accionesimage:button_3_vert_dots.png["un icono con tres puntos verticales"] junto a la federación a la que desea agregar un dominio verificado y seleccione *Deshabilitar*.
+
+
+
+
+== Eliminar una federación
+
+Si ya no necesita una federación, puede eliminarla.  Esto elimina la federación y evita que cualquier usuario asociado con la federación inicie sesión en la consola usando sus credenciales corporativas.  Por ejemplo, si se está desmantelando el IdP o si la federación ya no es necesaria.
+
+No es posible recuperar una federación después de eliminarla.  Debes crear una nueva federación.
+
+
+IMPORTANT: Debes deshabilitar una federación antes de poder eliminarla.  No es posible recuperar una federación después de eliminarla.
+
+.Pasos
+. Seleccione *Administración > Identidad y acceso* .
+. Seleccione *Federaciones* para ver la página *Federaciones*.
+. Seleccione el menú de accionesimage:button_3_vert_dots.png["un icono con tres puntos verticales"] junto a la federación a la que desea agregar un dominio verificado y seleccione *Eliminar*.
+

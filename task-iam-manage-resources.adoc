@@ -1,0 +1,114 @@
+---
+sidebar: sidebar 
+permalink: task-iam-manage-resources.html 
+keywords: resource, hierarchy, association, access, resource permissions, resource hierarchy, iam, identity and access management 
+summary: Administre la jerarquía de recursos de su organización asociando recursos con proyectos y carpetas específicos. 
+---
+= Administre la jerarquía de recursos en su organización de la consola de NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cuando asocia un miembro a su organización, proporciona permisos a nivel de organización, carpeta o proyecto.  Para garantizar que esos miembros tengan permisos para acceder a los recursos correctos, deberá administrar la jerarquía de recursos de su organización asociando recursos con proyectos y carpetas específicos.  Un _recurso_ es un sistema de almacenamiento o un agente de consola que la consola ya administra o del que tiene conocimiento.
+
+
+
+== Ver los recursos de su organización
+
+Puede ver los recursos descubiertos y no descubiertos asociados con su organización. Los recursos no descubiertos son recursos de almacenamiento identificados pero que aún no se agregaron a la consola.
+
+
+NOTE: NOTA: La página Recursos excluye los recursos de Amazon FSx for NetApp ONTAP porque los usuarios no pueden asociarlos con un rol.  Visualícelos en la página Sistemas o desde Cargas de trabajo.
+
+.Pasos
+. Seleccione *Administración > Identidad y acceso*.
+. Seleccione *Recursos*.
+. Seleccione *Búsqueda avanzada y filtrado*.
+. Utilice cualquiera de las opciones disponibles para encontrar el recurso que está buscando:
++
+** *Buscar por nombre de recurso*: Ingrese una cadena de texto y seleccione *Agregar*.
+** *Plataforma*: seleccione una o más plataformas, como Amazon Web Services.
+** *Recursos*: seleccione uno o más recursos, como Cloud Volumes ONTAP.
+** *Organización, carpeta o proyecto*: seleccione toda la organización, una carpeta específica o un proyecto específico.
+
+
+. Seleccione *Buscar*.
+
+
+
+
+== Asociar un recurso con carpetas y proyectos
+
+Asociar un recurso a una carpeta o proyecto para que esté disponible.
+
+.Antes de empezar
+Debes comprender cómo funciona la asociación de recursos. link:concept-identity-and-access-management.html#resources["Obtenga información sobre los recursos, incluido cuándo asociar un recurso con una carpeta"] .
+
+.Pasos
+. Desde la página *Recursos*, navegue hasta un recurso en la tabla, seleccioneimage:icon-action.png["Un icono que consta de tres puntos uno al lado del otro."] y luego seleccione *Asociar a carpetas o proyectos*.
+. Seleccione una carpeta o proyecto y luego seleccione *Aceptar*.
+. Para asociar una carpeta o proyecto adicional, seleccione *Agregar carpeta o proyecto* y luego seleccione la carpeta o el proyecto.
++
+Tenga en cuenta que solo puede seleccionar entre las carpetas y los proyectos para los que tiene permisos de administrador.
+
+. Seleccione *Recursos asociados*.
++
+** Si asoció el recurso con proyectos, los miembros que tienen permisos para esos proyectos ahora tienen la posibilidad de acceder al recurso desde la Consola.
+** Si asoció el recurso con una carpeta, un administrador de carpeta o proyecto ahora puede acceder al recurso y asociarlo con un proyecto dentro de la carpeta. link:concept-identity-and-access-management.html#resources["Obtenga información sobre cómo asociar un recurso con una carpeta"] .
+
+
+
+
+.Después de terminar
+Si descubre un recurso mediante un agente de consola, asocie el agente de consola con el proyecto para otorgar acceso.  De lo contrario, los miembros sin el rol de _Administrador de la organización_ no podrán acceder al agente de la consola ni a su recurso asociado.
+
+link:task-iam-associate-connectors.html["Aprenda a asociar un agente de consola con una carpeta o un proyecto"] .
+
+
+
+== Ver las carpetas y proyectos asociados a un recurso
+
+Puede ver las carpetas y proyectos asociados con un recurso en particular.
+
+
+NOTE: Si necesita saber qué miembros de la organización tienen acceso al recurso, puedelink:task-iam-manage-folders-projects.html#view-associated-resources-members["Ver los miembros que tienen acceso a las carpetas y proyectos asociados con el recurso"] .
+
+.Pasos
+. Desde la página *Recursos*, navegue hasta un recurso en la tabla, seleccioneimage:icon-action.png["Un icono que consta de tres puntos uno al lado del otro."] y luego seleccione *Ver detalles*.
+
+
+El siguiente ejemplo muestra un recurso asociado a un proyecto.
+
+image:screenshot-iam-resource-details.png["Una captura de pantalla de la página de detalles del recurso que muestra un recurso asociado con un proyecto que está directamente debajo de la organización."]
+
+
+NOTE: Si necesita determinar qué miembros de la organización tienen acceso al recurso, puedelink:task-iam-manage-folders-projects.html#view-associated-resources-members["Ver los miembros que tienen acceso a las carpetas y proyectos asociados con el recurso"] .
+
+
+
+== Eliminar un recurso de una carpeta o proyecto
+
+Para eliminar un recurso de una carpeta o proyecto, debe eliminar la asociación entre la carpeta o proyecto y el recurso. Al eliminar la asociación, se impide que los miembros administren el recurso en la carpeta o el proyecto.
+
+
+NOTE: Para eliminar un recurso descubierto de toda la organización, elimine el sistema de la página *Sistemas*.
+
+.Pasos
+. Desde la página *Recursos*, navegue hasta un recurso en la tabla, seleccioneimage:icon-action.png["Un icono que consta de tres puntos uno al lado del otro."] y luego seleccione *Ver detalles*.
+. Para la carpeta o el proyecto para el que desea eliminar el recurso, seleccioneimage:icon-delete.png["Un icono de un cubo de basura"]
+. Confirme que desea eliminar la asociación seleccionando *Eliminar*.
+
+
+
+
+== Información relacionada
+
+* link:concept-identity-and-access-management.html["Obtenga información sobre la identidad y el acceso en la consola de NetApp"]
+* link:task-iam-get-started.html["Comience a utilizar la identidad y el acceso en la consola de NetApp"]
+* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["Conozca la API para identidad y acceso"^]
+

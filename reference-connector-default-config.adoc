@@ -1,0 +1,144 @@
+---
+sidebar: sidebar 
+permalink: reference-connector-default-config.html 
+keywords: linux, user name, operating system, installation files, installation folder, folder, log, logs, service, mysql, packages, linux, connector configuration, connector installation folder, connector folder, connector log, ubuntu, agent, agent installation folder, agent configuration 
+summary: Obtenga más información sobre el agente de consola antes de implementarlo. 
+---
+= Configuración predeterminada para el agente de consola
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Obtenga más información sobre la configuración del agente de consola antes de implementarlo.
+
+
+
+== Configuración predeterminada con acceso a Internet
+
+Los siguientes detalles de configuración se aplican si implementó un agente de consola desde la consola de NetApp , desde el mercado de su proveedor de nube o si instaló manualmente un agente de consola en un host Linux local que tiene acceso a Internet.
+
+
+
+=== Detalles AWS
+
+Si implementó un agente de consola desde la consola o desde el mercado del proveedor de la nube, tenga en cuenta lo siguiente:
+
+* El tipo de instancia EC2 es t3.2xlarge.
+* El sistema operativo de la imagen es Ubuntu 22.04 LTS.
++
+El sistema operativo no incluye una GUI.  Debe utilizar una terminal para acceder al sistema.
+
+* La instalación incluye Docker Engine, que es la herramienta de orquestación de contenedores necesaria.
+* El nombre de usuario para la instancia EC2 Linux es ubuntu (para los agentes creados antes de mayo de 2023, el nombre de usuario era ec2-user).
+* El disco del sistema predeterminado es un disco gp2 de 100 GiB.
+
+
+
+
+=== Detalles de Azure
+
+Si implementó un agente de consola desde la consola o desde el mercado del proveedor de la nube, tenga en cuenta lo siguiente:
+
+* El tipo de VM es Standard_D8s_v3.
+* El sistema operativo de la imagen es Ubuntu 22.04 LTS.
++
+El sistema operativo no incluye una GUI.  Debe utilizar una terminal para acceder al sistema.
+
+* La instalación incluye Docker Engine, que es la herramienta de orquestación de contenedores necesaria.
+* El disco del sistema predeterminado es un disco SSD premium de 100 GiB.
+
+
+
+
+=== Detalles de Google Cloud
+
+Si implementó un agente de consola desde la consola, tenga en cuenta lo siguiente:
+
+* La instancia de VM es n2-standard-8.
+* El sistema operativo de la imagen es Ubuntu 22.04 LTS.
++
+El sistema operativo no incluye una GUI.  Debe utilizar una terminal para acceder al sistema.
+
+* La instalación incluye Docker Engine, que es la herramienta de orquestación de contenedores necesaria.
+* El disco del sistema predeterminado es un disco persistente SSD de 100 GiB.
+
+
+
+
+=== Carpeta de instalación
+
+La carpeta de instalación del agente se encuentra en la siguiente ubicación:
+
+/opt/application/netapp/cloudmanager
+
+
+
+=== Archivos de registro
+
+Los archivos de registro se encuentran en las siguientes carpetas:
+
+* /opt/application/netapp/cloudmanager/log o
+* /opt/application/netapp/service-manager-2/logs (a partir de las nuevas instalaciones de 3.9.23)
++
+Los registros de estas carpetas proporcionan detalles sobre el agente de la consola.
+
+* /opt/application/netapp/cloudmanager/docker_occm/data/log
++
+Los registros de esta carpeta proporcionan detalles sobre los servicios en la nube y el servicio de consola que se ejecuta en el agente de consola.
+
+
+
+
+
+=== Servicio de agente de consola
+
+* El servicio del agente de consola se llama occm.
+* El servicio occm depende del servicio MySQL.
++
+Si el servicio MySQL está inactivo, entonces el servicio occm también estará inactivo.
+
+
+
+
+
+=== Puertos
+
+El agente utiliza los siguientes puertos en el host Linux:
+
+* 80 para acceso HTTP
+* 443 para acceso HTTPS
+
+
+
+
+== Configuración predeterminada sin acceso a Internet
+
+La siguiente configuración se aplica si instaló manualmente el agente de consola en un host Linux local que no tiene acceso a Internet. link:task-quick-start-private-mode.html["Obtenga más información sobre esta opción de instalación"] .
+
+* La carpeta de instalación del agente se encuentra en la siguiente ubicación:
++
+/opt/application/netapp/ds
+
+* Los archivos de registro se encuentran en las siguientes carpetas:
++
+/var/lib/docker/volumes/ds_occmdata/_data/log
+
++
+Los registros de esta carpeta proporcionan detalles sobre el agente de la consola y las imágenes de Docker.
+
+* Todos los servicios se ejecutan dentro de contenedores Docker
++
+Los servicios dependen del servicio de tiempo de ejecución de Docker que se esté ejecutando
+
+* El agente utiliza los siguientes puertos en el host Linux:
++
+** 80 para acceso HTTP
+** 443 para acceso HTTPS
+
+
+

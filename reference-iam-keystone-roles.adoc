@@ -1,0 +1,143 @@
+---
+sidebar: sidebar 
+permalink: reference-iam-keystone-roles.html 
+keywords: predefined roles, iam roles, organization admin, folder or project admin, identity and access management, access roles, admin 
+summary: La gestión de acceso e identidad de la consola de NetApp proporciona dos roles Keystone que puede asignar a los miembros de su organización. 
+---
+= Roles de acceso de Keystone en la consola de NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Los roles de Keystone brindan acceso a los paneles de Keystone y permiten a los usuarios ver y administrar su suscripción de Keystone .  Hay dos roles de Keystone : administrador de Keystone y visor de Keystone .  La principal diferencia entre los dos roles son las acciones que pueden realizar en Keystone.  El rol de administrador de Keystone es el único rol que puede crear solicitudes de servicio o modificar suscripciones.
+
+.Ejemplo de roles de Keystone en la consola de NetApp
+XYZ Corporation tiene cuatro ingenieros de almacenamiento de diferentes departamentos que visualizan la información de suscripción de Keystone .  Aunque todos estos usuarios necesitan supervisar la suscripción de Keystone , solo el líder del equipo puede realizar solicitudes de servicio.  A tres de los miembros del equipo se les asigna el rol de *visualizador de Keystone *, mientras que al líder del equipo se le asigna el rol de *administrador de Keystone * para que haya un punto de control sobre las solicitudes de servicio de la empresa.
+
+La siguiente tabla indica las acciones que puede realizar cada rol de Keystone .
+
+[cols="40,20a,20a"]
+|===
+| Característica y acción | Administrador de Keystone | Visor de Keystone 
+
+
+| Ver las siguientes pestañas: Suscripción, Activos, Monitor y Administración  a| 
+Sí
+ a| 
+Sí
+
+
+
+3+| *Página de suscripción de Keystone *: 
+
+
+| Ver suscripciones  a| 
+Sí
+ a| 
+Sí
+
+
+
+| Modificar o renovar suscripciones  a| 
+Sí
+ a| 
+No
+
+
+
+3+| *Página de activos de Keystone *: 
+
+
+| Ver activos  a| 
+Sí
+ a| 
+Sí
+
+
+
+| Administrar activos  a| 
+Sí
+ a| 
+No
+
+
+
+3+| *Página de alertas de Keystone *: 
+
+
+| Ver alertas  a| 
+Sí
+ a| 
+No
+
+
+
+| Administrar alertas  a| 
+Sí
+ a| 
+No
+
+
+
+| Crear alertas para mí mismo  a| 
+Sí
+ a| 
+Sí
+
+
+
+3+| *Licencias y suscripciones*: 
+
+
+| Puede ver licencias y suscripciones  a| 
+Sí
+ a| 
+Sí
+
+
+
+3+| *Página de informes de Keystone *: 
+
+
+| Descargar informes  a| 
+Sí
+ a| 
+Sí
+
+
+
+| Administrar informes  a| 
+Sí
+ a| 
+Sí
+
+
+
+| Crear informes para uno mismo  a| 
+Sí
+ a| 
+Sí
+
+
+
+3+| *Solicitudes de servicio*: 
+
+
+| Crear solicitudes de servicio  a| 
+Sí
+ a| 
+No
+
+
+
+| Ver solicitudes de servicio creadas por cualquier usuario dentro de la Organización  a| 
+Sí
+ a| 
+Sí
+
+|===
