@@ -48,7 +48,7 @@ El menú *Almacenamiento* también incluye *Alertas* para ver las alertas del si
 
 NetApp también ha movido Keystone al menú *Almacenamiento*, donde puede administrar sus suscripciones de NetApp Keystone y ver su uso.
 
-image:https://docs.netapp.com/us-en/console-setup-admin/screenshot-storage-menu.png["Una captura de pantalla del menú Almacenamiento."]
+image:https://docs.netapp.com/us-en/console-setup-admin/media/screenshot-storage-menu.png["Una captura de pantalla del menú Almacenamiento."]
 
 
 
