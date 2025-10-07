@@ -968,7 +968,6 @@
   <block id="db971a19c27a52f19f1811c52c55dc2d" category="section-title">Nuevo rol de acceso para soporte operativo</block>
   <block id="9a69bf13bbd4a86f23945e6b153f3913" category="paragraph">BlueXP ahora admite un rol de analista de soporte operativo. Esta función otorga a un usuario permisos para supervisar alertas de almacenamiento, ver la línea de tiempo de auditoría de BlueXP e ingresar y rastrear casos de soporte de NetApp .</block>
   <block id="bc2fe31b1e2682a9a79513d792e9c721" category="doc">BlueXP ahora es NetApp Console</block>
-  <block id="995c8f79a8e07fbd8d519e45d03d6004" category="paragraph">La consola NetApp , construida sobre la base BlueXP mejorada y reestructurada, proporciona una gestión centralizada del almacenamiento NetApp y de los servicios de datos NetApp en entornos locales y en la nube a nivel empresarial, brindando información en tiempo real, flujos de trabajo más rápidos y una administración simplificada, que es altamente segura y compatible.</block>
   <block id="0b0a6d9ce7462fc9a218e93ccbee32e7" category="section-title">Menús y páginas de navegación</block>
   <block id="7ceea4a6639fef28fae4477857f229e5" category="paragraph">NetApp movió la mayoría de las opciones del menú al panel de navegación izquierdo y reorganizó los menús para facilitar la navegación en la Consola de NetApp .</block>
   <block id="4fa56c3d158c844dc75b2826ee4c98d0" category="section-title">Canvas se reemplaza por la página de Sistemas</block>
@@ -976,8 +975,6 @@
   <block id="ddd56b1479dbec10cfb6fc0a3a8afe57" category="inline-image-macro">Una captura de pantalla de la página de sistemas.</block>
   <block id="028a5defa734a1e5527100ece8ea2e66" category="paragraph"><block ref="028a5defa734a1e5527100ece8ea2e66" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e6ee78fd171283b1b449978ae0c73e06" category="section-title">Menú de almacenamiento ampliado</block>
-  <block id="52f2049d6a6b3b78ceb9820e5ce16a9d" category="paragraph">El menú *Almacenamiento* también incluye *Alertas* para ver las alertas del sistema ONTAP y *Planificación del ciclo de vida* (anteriormente *Eficiencia económica*) para identificar recursos no utilizados o subutilizados.</block>
-  <block id="b75b41949ffca5829d6a1887ecf0ebd4" category="paragraph">NetApp también ha movido Keystone al menú *Almacenamiento*, donde puede administrar sus suscripciones de NetApp Keystone y ver su uso.</block>
   <block id="0bc00d5c9372c38aa1f6078843c22005" category="inline-image-macro">Una captura de pantalla del menú Almacenamiento.</block>
   <block id="0e279d1eb32921bbbc940faea63f4db6" category="section-title">Menú de administración</block>
   <block id="08386d27df9de73a030b8e5da1f8112b" category="paragraph">Utilice el menú centralizado *Administración* para administrar la consola de NetApp , los casos de soporte, las licencias y las suscripciones (anteriormente llamadas billetera digital).</block>
@@ -5534,4 +5531,7 @@
   <block id="e4c0002e4f9f19273bc004922899fb85" category="sidebar">Acceso a la red de la consola (heredado)</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">Conocimiento y apoyo</block>
   <block id="f445c6d565697b0932cf841aca945e2a" category="paragraph"><block ref="f445c6d565697b0932cf841aca945e2a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="56ed5396ea479b4ed31e75f97a4377c7" category="paragraph">La consola de NetApp , construida sobre la base BlueXP mejorada y reestructurada, proporciona una gestión centralizada del almacenamiento de NetApp y de los servicios de datos de NetApp en entornos locales y en la nube a nivel empresarial, brindando información en tiempo real, flujos de trabajo más rápidos y una administración simplificada que es altamente segura y compatible.</block>
+  <block id="e4374974e911590511a1add55932606e" category="paragraph">El menú *Almacenamiento* incluye *Alertas* para ver las alertas del sistema ONTAP y *Planificación del ciclo de vida* (anteriormente *Eficiencia económica*) para identificar recursos no utilizados o subutilizados.</block>
+  <block id="b3289075ae80ce2a2ae0b68cf8c95606" category="paragraph">NetApp ha movido Keystone al menú *Almacenamiento*, donde puede administrar sus suscripciones de NetApp Keystone y ver su uso.</block>
 </blocks>
