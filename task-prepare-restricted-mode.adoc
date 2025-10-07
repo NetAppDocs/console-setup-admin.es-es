@@ -417,6 +417,13 @@ Para obtener información de licencias y enviar mensajes de AutoSupport al sopor
 
 
  a| 
+\ https://support.netapp.com
+ a| 
+Para obtener información de licencias y enviar mensajes de AutoSupport al soporte de NetApp .
+
+
+
+ a| 
 \ https://signin.b2c.netapp.com
  a| 
 Para actualizar las credenciales del sitio de soporte de NetApp (NSS) o para agregar nuevas credenciales de NSS a la consola de NetApp .
