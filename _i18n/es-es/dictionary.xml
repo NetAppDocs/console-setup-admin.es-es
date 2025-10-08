@@ -344,7 +344,6 @@
   <block id="e9b5bbe1e4c19139761534abb688155a" category="list-text">Asignar permisos para ejecutar el script.</block>
   <block id="096edbdd03f35ea016cfaab3b88a91ae" category="paragraph">Donde &lt;versión&gt; es la versión del agente de consola que descargó.</block>
   <block id="68ff18cb109d61d9e97d66c63cadf9e7" category="inline-link-macro">Aprenda cómo deshabilitar las comprobaciones de configuración para instalaciones manuales.</block>
-  <block id="8acaf9db7ba8cc88abac10f45ce89d6f" category="list-text">Si realiza la instalación en un entorno de nube gubernamental, desactive las comprobaciones de configuración.<block ref="e24e26b3a5e2be9d4abc30199a402dae" category="inline-link-macro-rx"></block></block>
   <block id="325740f998865be7879e32048d406868" category="list-text">Ejecute el script de instalación.</block>
   <block id="95df10d2ac630ff125b089e1f8e0e67f" category="paragraph">Necesitará agregar información de proxy si su red requiere un proxy para acceder a Internet.  Puede agregar un proxy transparente o explícito.  Los parámetros --proxy y --cacert son opcionales y no se le pedirá que los agregue.  Si tiene un servidor proxy, deberá ingresar los parámetros como se muestra.</block>
   <block id="5f4022bf0d27f22f4c44ac2e617ae12d" category="paragraph">A continuación se muestra un ejemplo de configuración de un servidor proxy explícito con un certificado firmado por una CA:</block>
@@ -371,7 +370,6 @@
   <block id="f5f31bd671c0968ba09c8eb577f95629" category="list-text">Espere a que se complete la instalación.</block>
   <block id="c326395610c1efc77fc99f199c08d4a2" category="paragraph">Al final de la instalación, el servicio del agente de consola (occm) se reinicia dos veces si especificó un servidor proxy.</block>
   <block id="01a0d9e02c5f2599095642d2dd9a1f1b" category="inline-link-macro">Aprenda a solucionar problemas de instalación.</block>
-  <block id="73e1f84e521a44157c904244430b1346" category="admonition">Si la instalación falla, puede ver el informe de instalación y los registros para ayudarlo a solucionar los problemas.<block ref="fc52137037dfd53208fe22fff987f36a" category="inline-link-macro-rx"></block></block>
   <block id="749d806ac6f7868946ca8f9cc91af192" category="list-text">Abra un navegador web desde un host que tenga una conexión a la máquina virtual del agente de consola e ingrese la siguiente URL:</block>
   <block id="0594b17c3f6f94eb28b63eec7d7d3841" category="paragraph"><block ref="0594b17c3f6f94eb28b63eec7d7d3841" category="inline-link-rx"></block></block>
   <block id="3e6472e78749cf6f2531c943c33f71ea" category="list-text">Después de iniciar sesión, configure el agente de la consola:</block>
@@ -439,7 +437,6 @@
   <block id="dd911b1740a43ff59aad324bd3d90ae3" category="paragraph"><block ref="dd911b1740a43ff59aad324bd3d90ae3" category="inline-link-rx"></block></block>
   <block id="9c0e62a86b9fe558cad9c4d280ea439d" category="list-text">Habilitar NTP</block>
   <block id="62286fee1b0c285ac291bc232fe7f74f" category="inline-link">Obtenga más información sobre la clasificación de datos de NetApp</block>
-  <block id="f1ae8ff0a2356d9423833210592133cb" category="list-text">Si planea utilizar NetApp Data Classification para escanear sus fuentes de datos corporativos, debe habilitar un servicio de Protocolo de tiempo de red (NTP) tanto en el agente de consola como en el sistema de clasificación de datos de NetApp para que la hora se sincronice entre los sistemas.<block ref="e224e5052fedfe25b39387d61b9face5" category="inline-link-rx"></block></block>
   <block id="64de7c6251637d266e8df72d8ab7c1d3" category="paragraph">--proxy configura el agente de la consola para utilizar un servidor proxy HTTP o HTTPS utilizando uno de los siguientes formatos:</block>
   <block id="9d9d85de516d17d89215c336041bd69c" category="paragraph">--cacert especifica un certificado firmado por CA para usar para el acceso HTTPS entre el agente de consola y el servidor proxy.  Este parámetro es necesario para servidores proxy HTTPS, servidores proxy interceptores y servidores proxy transparentes.</block>
   <block id="fa5c0c80d3dab7b433f9ebd1f6d0e8db" category="paragraph">A continuación se muestra un ejemplo de configuración de un servidor proxy transparente.  Cuando configura un proxy transparente, no necesita definir el servidor proxy.  Solo debe agregar un certificado firmado por una CA a su host del agente de consola:</block>
@@ -1032,7 +1029,6 @@
   <block id="1f07edf6ae5cccdb5dacb637fe693758" category="paragraph">Al implementar un agente de consola desde la consola de NetApp , ahora tiene la opción de validar la configuración del agente.  Si la consola no logra implementar el agente, proporciona un informe descargable para ayudarlo a solucionar el problema.</block>
   <block id="4303212e6f242fe0a301876fa89b9f0b" category="section-title">Solución de problemas mejorada para los agentes de la consola</block>
   <block id="b9b61d414c60733fb8a9d314eec6960a" category="inline-link-macro">Aprenda a solucionar problemas de los agentes de la consola.</block>
-  <block id="79ab7cf55c7d04c02a94981a9a1b7b29" category="paragraph">El agente de consola ha mejorado los mensajes de error que le ayudan a comprender mejor los problemas.<block ref="32afeb8eb0f9a2e606975b6efca2856e" category="inline-link-macro-rx"></block></block>
   <block id="8fa7eaeb8daf07d8832ec17187b7b40c" category="paragraph">La administración de la consola de NetApp incluye las siguientes características nuevas:</block>
   <block id="bbd516543defb57b86168970a68bacbc" category="section-title">Panel de control de la página de inicio</block>
   <block id="7b8cf2fedf3cca7ede322904788b0cae" category="inline-link-macro">Obtenga más información sobre la página de inicio.</block>
@@ -1902,7 +1898,6 @@
   <block id="504f5f6c5adc93609131b644e3f8c2a9" category="inline-link">Crear o descubrir un sistema FSx para ONTAP</block>
   <block id="c2a442cc7e270f03492b03623a59bddb" category="list-text"><block ref="c2a442cc7e270f03492b03623a59bddb" category="inline-link-rx"></block></block>
   <block id="8111d5a0f80f0b3c708f77dc1b05dc00" category="inline-link">Crear un sistema de Azure NetApp Files</block>
-  <block id="30ba58ed811e056e8ec725c80444b736" category="list-text"><block ref="30ba58ed811e056e8ec725c80444b736" category="inline-link-rx"></block></block>
   <block id="e4a9dd1c7d750241fad0d52a3bc7903b" category="inline-link">Descubra los sistemas de la Serie E</block>
   <block id="90a582acc370affa7fa401384859e582" category="list-text"><block ref="90a582acc370affa7fa401384859e582" category="inline-link-rx"></block></block>
   <block id="d85b01f001ee16ebd8eb1917c739d824" category="inline-link">Descubra los sistemas StorageGRID</block>
@@ -3340,7 +3335,6 @@
   <block id="0ad1fc23b853416c03454d7493973064" category="paragraph">Acceda a herramientas de diagnóstico para solucionar problemas con el agente de la consola.  Es posible que el soporte de NetApp le solicite que haga esto al solucionar problemas.</block>
   <block id="c11707912206d93c089b6bec8129f6a2" category="list-text">Ingresar<block ref="eccbc87e4b5ce2fe28308fd9f2a7baf3" prefix=" " category="inline-code"></block> para ver el menú de Soporte y Diagnóstico.</block>
   <block id="ea55290239a2ac8340463b02aec81aca" category="inline-link-macro">Comprobar el estado del agente de la consola</block>
-  <block id="2cb97cca54bddb4910dbbcde33e9f63d" category="list-text">Ingresar<block ref="c4ca4238a0b923820dcc509a6f75849b" prefix=" " category="inline-code"></block> para acceder a las herramientas de diagnóstico y seguir las instrucciones en pantalla.  + Por ejemplo, puede verificar que todos los servicios del agente se estén ejecutando. <block ref="8aac32cf7b9059cbe4a7c91815a8e5dc" category="inline-link-macro-rx"></block> .</block>
   <block id="e627757f3c8ea2c508610ccbcdd4117e" category="section-title">Acceda a las herramientas de diagnóstico del agente de forma remota</block>
   <block id="3b886268b0c6e5d6922ef5ea806e5987" category="paragraph">Puede acceder a herramientas de diagnóstico de forma remota con una herramienta como Putty.  Habilite el acceso SSH a la máquina virtual del agente asignando una contraseña de un solo uso.</block>
   <block id="e4b79049874503e851b45867e8c43928" category="paragraph">El acceso SSH permite funciones de terminal avanzadas como copiar y pegar.</block>
@@ -3398,24 +3392,11 @@
   <block id="6143580a5ae490efe32d3c566650ad6c" category="paragraph"><block ref="6143580a5ae490efe32d3c566650ad6c" category="inline-link-rx"></block></block>
   <block id="f5d22e387d3dd91dbc45f16de7949a06" category="list-text">Seleccione *Admitir tráfico API directo*.</block>
   <block id="c569dd49f93a05d537d61130ed43e6e9" category="list-text">Seleccione la casilla de verificación para habilitar la opción y luego seleccione *Guardar*.</block>
-  <block id="3a8eeebc89d9a465a5174d42af5cbc7d" category="summary">Si es la primera vez que utiliza la consola de NetApp , el Asistente de consola lo guiará a través del proceso de configuración inicial.  El Asistente le ayuda a agregar una cuenta de sitio de soporte de NetApp (NSS), agregar un agente de consola, agregar un clúster y agregar una licencia o suscripción, lo que facilita el inicio de la administración de sus datos.</block>
-  <block id="c01372c9f1b22e5c48b2dd2618b1db7c" category="doc">Comience a utilizar el Asistente de consola de NetApp</block>
-  <block id="727605c2ca57a1773b7b1e5760e8faf8" category="paragraph">Si es la primera vez que utiliza la consola de NetApp con el rol de administrador de la organización, puede usar el Asistente de consola para que lo guíe a través del proceso de configuración inicial.  El Asistente le ayuda a agregar una cuenta de sitio de soporte de NetApp (NSS), agregar un agente de consola, agregar un clúster y agregar una licencia o suscripción, lo que facilita el inicio de la administración de sus datos.</block>
-  <block id="2afde8ca8cdacfbe776c425bf18be8f7" category="section-title">Roles necesarios para acceder al Asistente de consola</block>
-  <block id="604fe5148b856c1f70c93b02dd3b4b78" category="paragraph">El Asistente de consola solo está disponible para usuarios con el rol de administrador de la organización.</block>
-  <block id="d1b5aa618777a6025bbb8af6da92da6b" category="section-title">¿Cuándo aparece el Asistente de consola?</block>
-  <block id="86900a8a60b76457f1e6fd5485663052" category="paragraph">El Asistente de consola está disponible en la página de inicio de la consola de NetApp hasta que se completen las tareas de configuración obligatorias.</block>
-  <block id="4e0fdeb55bc3c4c71a155246b3205b66" category="paragraph">Utilice el Asistente para completar estas tareas, algunas de las cuales son obligatorias:</block>
   <block id="63cc3bd9a1d39c996544d35459a3e83f" category="list-text">Agregue una cuenta del sitio de soporte de NetApp (NSS).</block>
   <block id="9a1d2c3a232f3692f2db1f53e2ff513f" category="list-text">Conéctese a su patrimonio de almacenamiento implementando un agente de consola (paso obligatorio).</block>
   <block id="2999351f71503eb3b6d48edab88260fd" category="list-text">Administre su sistema agregando o descubriendo un clúster (paso obligatorio).</block>
   <block id="eda3fd992dc421b5ecf21b005442d1e7" category="list-text">Agregue una suscripción de mercado o una licencia PAYGO.</block>
   <block id="54b1f34b39c971ce20ffd13604bb074c" category="list-text">Enlaces de servicios de datos abiertos.</block>
-  <block id="53a1c56d6735a06d49554eac3c4a0364" category="section-title">Habilitar el Asistente de consola</block>
-  <block id="9d8eb7c3f2b1bc993fba688dd7d0efc3" category="paragraph">De forma predeterminada, la consola de NetApp muestra el Asistente de consola en la página de inicio para los usuarios nuevos que tienen el rol de administrador de la organización.</block>
-  <block id="8199bfed29a77faf6ca37cbfb1b7282c" category="admonition">Puede despedir al Asistente solo después de que usted u otra persona complete los elementos obligatorios.  Después de completar los elementos obligatorios, el Asistente se descarta para todos los usuarios de su organización y no vuelve a aparecer.</block>
-  <block id="ae765b59bd40a71edf1620ddf4f66c9a" category="section-title">Utilice el Asistente de consola para comenzar</block>
-  <block id="7147a3ddf08647a0d6fe4c8949af44f3" category="paragraph">El Asistente de consola lo guía a través de la configuración de su entorno de consola de NetApp con estas tareas:</block>
   <block id="0f2d8c8746eb76dda55a87c37bf8f14a" category="list-text">Conéctese a su patrimonio de almacenamiento implementando un agente de consola, ya sea local o en la nube.  Puedes implementarlo manualmente o descargando un OVA.  Este paso es obligatorio.</block>
   <block id="c257e840ff1ccd2003959f24bf40a4d2" category="list-text">Administre su sistema agregando o descubriendo un clúster.  Este paso es obligatorio.</block>
   <block id="97f1d4158178271a52111e6b3daa25f3" category="list-text">Obtenga más información sobre los servicios de datos de NetApp .</block>
@@ -3431,7 +3412,6 @@
   <block id="d5306448683653381de91511b8c55e1b" category="list-text">*Panel de alertas de ONTAP *: Administrador de carpeta o proyecto, Analista de soporte de operaciones, Administrador de la organización, Visor de la organización, Superadministrador, Supervisor</block>
   <block id="e151fa38e66e51bb09fbb6eb63083197" category="list-text">*Panel de capacidad de rendimiento de almacenamiento*: Capacidad para ver la página de sistemas de la consola de NetApp</block>
   <block id="3392f0d20666a779d503d1ecdd475ffc" category="list-text">*Panel de licencias y suscripciones*: Administrador de carpeta o proyecto, Administrador de organización, Visor de organización, Superadministrador, Supervisor</block>
-  <block id="3d1b0e48553c19ac53cc05011e627824" category="list-text">*Panel de resiliencia contra ransomware*: Administrador de carpeta o proyecto, Administrador de organización, Administrador de protección contra ransomware, Visor de protección contra ransomware, Superadministrador, Supervisor</block>
   <block id="36ca9cd27ee162c45eb4f0d11a5bedf1" category="list-text">*Panel de copia de seguridad y recuperación*: Administrador de copias de seguridad de copia de seguridad y recuperación, Superadministrador de copia de seguridad y recuperación, Visor de copias de seguridad de copia de seguridad y recuperación, Administrador de clones de copia de seguridad y recuperación, Administrador de carpetas o proyectos, Administrador de la organización, Administrador de restauración de copia de seguridad y recuperación, Superadministrador, Supervisor</block>
   <block id="5bf7104590078e66848b59d3abfaf393" category="paragraph">Si no tiene permisos para acceder a un panel, éste mostrará un mensaje indicando que no tiene permisos para usarlo.</block>
   <block id="dbbc09735940a2a21109b74dc600b92b" category="inline-link">Obtenga información sobre los roles de acceso a la consola de NetApp .</block>
@@ -3509,7 +3489,6 @@
   <block id="897c3b1ae39b50295a52dcaca00fa99d" category="paragraph">Descubra si las cargas de trabajo están en riesgo de ataques de ransomware o están protegidas con el servicio de datos Ransomware Resilience de NetApp .  Puede revisar la cantidad total de datos que están protegidos, ver la cantidad de acciones recomendadas y ver la cantidad de alertas relacionadas con la protección contra ransomware.</block>
   <block id="17565ce7eceda01f941c44247b052236" category="paragraph">Los datos se actualizan cada 5 minutos y coinciden con los datos que se muestran en el Panel de resiliencia ante ransomware de NetApp .</block>
   <block id="e1303fde203d17c93a36144831175152" category="inline-link">Obtenga más información sobre la resiliencia frente al ransomware de NetApp</block>
-  <block id="25b9cfcade6c472ec4144237e67a7d62" category="paragraph"><block ref="8bcf9ea3fc2e64b26a0c91875a6419eb" category="inline-link-rx"></block> .</block>
   <block id="c3ecd5a019581be952b7e478466f0cfc" category="list-text">Desde el menú de la consola de NetApp , revise el panel Resiliencia ante ransomware.</block>
   <block id="8c3c718749afd86a59b68786f22641b6" category="list-text">Realice una de las siguientes acciones en el panel Resiliencia ante ransomware:</block>
   <block id="7f176789d86d465c8df04184cd91e82b" category="inline-link">Supervise el estado de la carga de trabajo mediante el panel de resiliencia contra ransomware de NetApp</block>
@@ -4161,7 +4140,6 @@
   <block id="310f705969896b4d59368edab71d1d87" category="list-text">Revise los detalles en la ventana *Listo para completar*, seleccione *Finalizar*.</block>
   <block id="533cb358048cec10b9364d5d776a39b1" category="paragraph">La barra de tareas de vSphere muestra el progreso a medida que se implementa el agente de consola.</block>
   <block id="54453e0b33b1c136b904d49d40e5584f" category="list-text">Encienda la máquina virtual.</block>
-  <block id="bc6df5330a40a6601c383a672e7417ea" category="admonition">Si la implementación falla, puede acceder al informe de validación y a los registros desde el host del agente.<block ref="fc52137037dfd53208fe22fff987f36a" category="inline-link-macro-rx"></block></block>
   <block id="9ef04a4b8a28bfcf784c72eeace644a2" category="section-title">Registrar el agente de consola con NetApp Console</block>
   <block id="24ec0b6e7c909c10633ec52c6523f771" category="section-title">Agregar credenciales del proveedor de la nube a la consola</block>
   <block id="3812e8779179a58315ca409176c5ff21" category="summary">Puede crear un agente de consola en AWS directamente desde la consola de NetApp .  Antes de crear un agente de consola en AWS desde la consola, debe configurar su red y preparar los permisos de AWS.</block>
@@ -4224,7 +4202,6 @@
   <block id="7d94cf454f2eac26ff84a8d1c8a89d1e" category="list-text">En la página *Grupo de seguridad*, elija si desea crear un nuevo grupo de seguridad o si desea seleccionar un grupo de seguridad existente que permita las reglas de entrada y salida requeridas.</block>
   <block id="a60b1115783600a21eb41ae13935fdc8" category="paragraph">La consola prepara la instancia en aproximadamente 10 minutos.  Permanezca en la página hasta que se complete el proceso.</block>
   <block id="39dbd35a18bfa38cac810c0be826b561" category="paragraph">Una vez completado el proceso, el agente de la consola estará disponible para su uso desde la consola.</block>
-  <block id="bb0f9ce335979002cd2400c1e9df1874" category="admonition">Si la implementación falla, puedes descargar un informe y registros desde la Consola para ayudarte a solucionar los problemas.<block ref="fc52137037dfd53208fe22fff987f36a" category="inline-link-macro-rx"></block></block>
   <block id="510a2d4afe6727bcdbafc74a103f9f16" category="inline-link">Aprenda a administrar los buckets S3 desde la consola de NetApp</block>
   <block id="af2cca04ee665c389d737de3e58b6615" category="paragraph">Si tiene depósitos de Amazon S3 en la misma cuenta de AWS donde creó el agente de consola, verá aparecer automáticamente un entorno de trabajo de Amazon S3 en la página *Sistemas*.<block ref="b005331392e349a72b0688cce0d673cf" category="inline-link-rx"></block></block>
   <block id="3b46ada3c2c8fc9685f33a61ccf996e6" category="summary">Puede instalar manualmente un agente de consola en un host Linux que se ejecute en AWS.  Para instalar manualmente el agente de consola en su propio host Linux, debe revisar los requisitos del host, configurar su red, preparar los permisos de AWS, instalar el agente de consola y luego proporcionar los permisos que preparó.</block>
@@ -4270,7 +4247,6 @@
   <block id="dfcbfa4ce7dbf520f2b737359dfbc591" category="list-text">Permisos para suscribirse y cancelar la suscripción a AWS Marketplace para su usuario de IAM.</block>
   <block id="64f210f4d96dcba2f41cec7b537055f7" category="list-text">Una comprensión de los requisitos de CPU y RAM para la instancia.</block>
   <block id="e61d51539df3e3e85f74cb25bd105084" category="paragraph">AWS inicia el agente de consola con la configuración especificada y el agente de consola se ejecuta en aproximadamente diez minutos.</block>
-  <block id="ff6f43944fe68f6f9466637ceff3f37e" category="admonition">Si la instalación falla, puede ver registros y un informe para ayudarlo a solucionar problemas.<block ref="fc52137037dfd53208fe22fff987f36a" category="inline-link-macro-rx"></block></block>
   <block id="e8cd161bebb938efc7055b8fa73c88c0" category="list-text">Abra un navegador web desde un host que tenga una conexión a la máquina virtual del agente de consola y la URL del agente de consola.</block>
   <block id="4f5fd09b0fecd121d7890d5fcdd126ea" category="inline-link-macro">Siga los pasos para comenzar a utilizar la consola de NetApp en modo restringido</block>
   <block id="797bbe628ec1fb17e30cf7efe960c970" category="paragraph">Mantenga el modo restringido deshabilitado para usar la consola en modo estándar.  Debe habilitar el modo restringido solo si tiene un entorno seguro y desea desconectar esta cuenta de los servicios de backend de la consola.  Si ese es el caso,<block ref="a92127338ae53d774985c3d6a7c5b7c1" category="inline-link-macro-rx"></block> .</block>
@@ -4503,7 +4479,6 @@
   <block id="92fa0fc1299e55c066d0a19cd22b4e7b" category="list-text">*Identidad*: En *Administración*, seleccione *Habilitar identidad administrada asignada por el sistema*.</block>
   <block id="b99469b29b000bd070b5f230caa3b887" category="paragraph">Azure implementa la máquina virtual con la configuración especificada.  La máquina virtual y el software del agente de consola deberían ejecutarse en aproximadamente cinco minutos.</block>
   <block id="8f40f6b9cda905fc9a83217435e6b940" category="open-title">Instalación manual</block>
-  <block id="8d99df925d96aff04328145571f87339" category="list-text">Debe deshabilitar la comprobación de configuración que verifica la conectividad saliente durante la instalación.  La instalación manual falla si esta comprobación no está deshabilitada.<block ref="78a0b28d10c9034d7e8ac8b7c62d236d" category="inline-link-macro-rx"></block></block>
   <block id="2866ea542642e0051f06f0462f4f5e80" category="list-text">Dependiendo de su sistema operativo, se requiere Podman o Docker Engine antes de instalar el agente de consola.</block>
   <block id="4a5aa670ff7341f391971ddd6994ac6d" category="paragraph">El agente de consola ahora está instalado.  Al final de la instalación, el servicio del agente de consola (occm) se reinicia dos veces si especificó un servidor proxy.</block>
   <block id="dff3d2b179cc5b62a2e772cc8404f515" category="section-title">Paso 2: Configurar la consola de NetApp</block>
@@ -4937,7 +4912,6 @@
   <block id="463607e512069b418940a921afdec8b0" category="paragraph">El modo restringido generalmente lo utilizan los gobiernos estatales y locales y las empresas reguladas, incluidas las implementaciones en las regiones de AWS GovCloud y Azure Government.  Antes de comenzar, asegúrese de comprender<block ref="f3ace5a930cbd0beeeadc55a7b354ad6" category="inline-link-macro-rx"></block> y<block ref="dd9572e43b86cdf1b1d508e121fd732e" category="inline-link-macro-rx"></block> .</block>
   <block id="27677c533249219197c5933410713055" category="inline-link-macro">Prepárese para el despliegue</block>
   <block id="1308ae14263d9629eb12e11bd10db155" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> <block ref="f826f61970c0735d0b0624264426b512" category="inline-link-macro-rx"></block></block>
-  <block id="97b64edf91ee5b23d7be166b37661a91" category="paragraph"><block ref="97b64edf91ee5b23d7be166b37661a91" category="inline-link-rx"></block></block>
   <block id="eb762959fcc0cce31949abce6f8eb1c1" category="list-text">Prepare un host Linux dedicado que cumpla con los requisitos de CPU, RAM, espacio en disco, herramienta de orquestación de contenedores y más.</block>
   <block id="b6ff2c8bfe1c4f67a13521ec6fe0231d" category="list-text">Configurar redes que proporcionen acceso a las redes de destino, acceso a Internet saliente para instalaciones manuales e Internet saliente para acceso diario.</block>
   <block id="a890d698a19e93638bdfa0906dc8d80a" category="list-text">Configure permisos en su proveedor de nube para que pueda asociar esos permisos con la instancia del agente de consola después de implementarla.</block>
@@ -5457,7 +5431,6 @@
   <block id="482723983a4f2af954e36ff41e567451" category="sidebar">Limitaciones conocidas</block>
   <block id="e4c53684ddd66ee4898db459d57514e8" category="sidebar">Aprenda los conceptos básicos</block>
   <block id="bcb004c01b250a259c11d3d9406d9f6f" category="sidebar">Comience a utilizar el asistente de NetApp</block>
-  <block id="89600e20a8904656a9df99bbfa311f3a" category="sidebar">Utilice el asistente de NetApp</block>
   <block id="65ce4dce26160be29539699c6623e379" category="sidebar">Flujo de trabajo de introducción</block>
   <block id="1434a6bb482886cf18491c3161371a87" category="sidebar">Regístrese en la consola de NetApp</block>
   <block id="f3aee30a3a487c746572616e3f53dc9d" category="sidebar">Crear un agente de consola</block>
@@ -5522,7 +5495,6 @@
   <block id="56ed5396ea479b4ed31e75f97a4377c7" category="paragraph">La consola de NetApp , construida sobre la base BlueXP mejorada y reestructurada, proporciona una gestión centralizada del almacenamiento de NetApp y de los servicios de datos de NetApp en entornos locales y en la nube a nivel empresarial, brindando información en tiempo real, flujos de trabajo más rápidos y una administración simplificada que es altamente segura y compatible.</block>
   <block id="e4374974e911590511a1add55932606e" category="paragraph">El menú *Almacenamiento* incluye *Alertas* para ver las alertas del sistema ONTAP y *Planificación del ciclo de vida* (anteriormente *Eficiencia económica*) para identificar recursos no utilizados o subutilizados.</block>
   <block id="b3289075ae80ce2a2ae0b68cf8c95606" category="paragraph">NetApp ha movido Keystone al menú *Almacenamiento*, donde puede administrar sus suscripciones de NetApp Keystone y ver su uso.</block>
-  <block id="e54f451349319459dd1f9900aebfc23e" category="paragraph">| \ https://mysupport.netapp.com | Para obtener información de licencias y enviar mensajes de AutoSupport al soporte de NetApp . | \ https://support.netapp.com | Para obtener información de licencias y enviar mensajes de AutoSupport al soporte de NetApp . | \ https://signin.b2c.netapp.com | Para actualizar las credenciales del sitio de soporte de NetApp (NSS) o para agregar nuevas credenciales de NSS a la consola de NetApp .</block>
   <block id="8963387394e2ee3e2a5a9ba160566a58" category="cell">\ https://support.netapp.com</block>
   <block id="451228b79a76a54f6c3a4a5d5af0ec52" category="paragraph">El servicio utiliza los siguientes roles que son específicos de NetApp Backup and Recovery.</block>
   <block id="8522e2f14782589c21835c86cf65bebb" category="list-text">*Superadministrador de Backup and Recovery*: realiza cualquier acción en NetApp Backup and Recovery.</block>
@@ -5568,4 +5540,33 @@
   <block id="1dcb606a3a707c345cb54b5c3113d621" category="cell">Eliminar plantillas de gancho de ejecución</block>
   <block id="386bacb41d61c7b8e46cd3e9198743cd" category="cell">Ver el resumen de la carga de trabajo y los paneles de análisis</block>
   <block id="8bbffbb59e50612d870c42d2db4880dc" category="cell">Ver depósitos y destinos de almacenamiento de StorageGRID</block>
+  <block id="c969e31f72edfcf168ffdd268986844a" category="paragraph">| \ https://mysupport.netapp.com | Para obtener información de licencias y enviar mensajes de AutoSupport al soporte de NetApp . | \ https://support.netapp.com | Para obtener información de licencias y enviar mensajes de AutoSupport al soporte de NetApp . | \ https://signin.b2c.netapp.com | Para actualizar las credenciales del sitio de soporte de NetApp (NSS) o para agregar nuevas credenciales de NSS a la consola de NetApp . | \https:\\support.netapp.com | Para obtener información de licencias y enviar mensajes de AutoSupport al soporte de NetApp , así como para recibir actualizaciones de software para Cloud Volumes ONTAP.</block>
+  <block id="067f3ef114756cdabe76467602ca9b2e" category="list-text">Si realiza la instalación en un entorno de nube gubernamental, desactive las comprobaciones de configuración.<block ref="9b8bf974e42c4282e3da7fa6c59f1dce" category="inline-link-macro-rx"></block></block>
+  <block id="42c16a43066627b293306439eb1732f6" category="admonition">Si la instalación falla, puede ver el informe de instalación y los registros para ayudarlo a solucionar los problemas.<block ref="61c0b8f4aae5855ed1c7905138f2dd94" category="inline-link-macro-rx"></block></block>
+  <block id="c2fc633e22b03955b13beee2049ac471" category="list-text">Si planea utilizar NetApp Data Classification para escanear sus fuentes de datos corporativos, debe habilitar un servicio de Protocolo de tiempo de red (NTP) tanto en el agente de consola como en el sistema de clasificación de datos de NetApp para que la hora se sincronice entre los sistemas.<block ref="95ad16386ae4ac759ff3f180dcafce84" category="inline-link-rx"></block></block>
+  <block id="12ad8fdc380a2754e74763c6ec3dd093" category="paragraph">El agente de consola ha mejorado los mensajes de error que le ayudan a comprender mejor los problemas.<block ref="af6db24ea837f8b9ee9738ec7c58a997" category="inline-link-macro-rx"></block></block>
+  <block id="ee2dcfcc83687ed3d92f8b7d687f1f05" category="list-text"><block ref="ee2dcfcc83687ed3d92f8b7d687f1f05" category="inline-link-rx"></block></block>
+  <block id="c9c92f70006bb92009b6cd8f9b6b80f7" category="cell">\https:\\support.netapp.com</block>
+  <block id="f092dc53062418401abf8d7b17161fcb" category="cell">Para obtener información de licencias y enviar mensajes de AutoSupport al soporte de NetApp , así como para recibir actualizaciones de software para Cloud Volumes ONTAP.</block>
+  <block id="02220399c28525a1c857a5784cf96eca" category="list-text">Ingresar<block ref="c4ca4238a0b923820dcc509a6f75849b" prefix=" " category="inline-code"></block> para acceder a las herramientas de diagnóstico y seguir las instrucciones en pantalla. + Por ejemplo, puede verificar que todos los servicios del agente se estén ejecutando. <block ref="50f10aae18a0502372770b812f684d46" category="inline-link-macro-rx"></block> .</block>
+  <block id="d03af09bc0729475142a25d2101f89cb" category="summary">Si es la primera vez que utiliza la consola de NetApp , el asistente de la consola lo guiará a través del proceso de configuración inicial.  El asistente le ayuda a agregar una cuenta de NetApp Support Site (NSS), agregar un agente de consola, agregar un clúster y agregar una licencia o suscripción, lo que facilita el inicio de la administración de sus datos.</block>
+  <block id="d87d84551cb844b0885926102e010a21" category="doc">Comience a utilizar el asistente de la consola de NetApp</block>
+  <block id="353de4ac300e65b2fec1e023d43775e8" category="paragraph">Si es la primera vez que utiliza la consola de NetApp con el rol de administrador de la organización, puede usar el asistente de la consola para que lo guíe a través del proceso de configuración inicial.  El asistente le ayuda a agregar una cuenta de NetApp Support Site (NSS), agregar un agente de consola, agregar un clúster y agregar una licencia o suscripción, lo que facilita el inicio de la administración de sus datos.</block>
+  <block id="8cef8f584fd9250404884341b9d1faf9" category="section-title">Roles necesarios para acceder al asistente de la consola</block>
+  <block id="62e7589e6fbf937c65e401243a7b18fc" category="paragraph">El asistente de consola solo está disponible para usuarios con el rol de administrador de la organización.</block>
+  <block id="3f8d156ec79d1ba58a6edcc11b513c8f" category="section-title">¿Cuándo aparece el asistente de consola?</block>
+  <block id="b849ed2934d21e42ae7ade5deab5eb71" category="paragraph">El asistente de la consola está disponible en la página de inicio de la consola de NetApp hasta que se completen las tareas de configuración obligatorias.</block>
+  <block id="66e107092fbbaa7674c253527698105d" category="paragraph">Utilice el asistente para completar estas tareas, algunas de las cuales son obligatorias:</block>
+  <block id="e2109b57fa6348f346526f55a48f78ba" category="section-title">Habilitar el asistente de consola</block>
+  <block id="1d4f06583c930c65d01139af412243e9" category="paragraph">De forma predeterminada, la consola de NetApp muestra el asistente de la consola en la página de inicio para los usuarios nuevos que tienen el rol de administrador de la organización.</block>
+  <block id="0261c21f37275db55da37598552a89dc" category="admonition">Puedes despedir al asistente solo después de que tú u otra persona complete los elementos obligatorios.  Después de completar los elementos obligatorios, el asistente se descarta para todos los usuarios de su organización y no vuelve a aparecer.</block>
+  <block id="beb8b9e8503d0cddbe7c900d24ead8cd" category="section-title">Utilice el asistente de consola para comenzar</block>
+  <block id="67cd761b7682bdb0c49c488e0f4f66f5" category="paragraph">El asistente de consola lo guía a través de la configuración de su entorno de consola de NetApp con estas tareas:</block>
+  <block id="7a6b8361cf669546010faac41df80823" category="list-text">*Panel de resiliencia ante ransomware*: Administrador de carpeta o proyecto, Administrador de organización, Administrador de resiliencia ante ransomware, Visor de resiliencia ante ransomware, Superadministrador, Supervisor</block>
+  <block id="b0222afe7e5fe02f5ecf6f18206c0756" category="paragraph"><block ref="a8fcff039851ffc5bb3edfa9a8cce2e8" category="inline-link-rx"></block> .</block>
+  <block id="54a3b32628f9142d15de42359d5a4ab9" category="admonition">Si la implementación falla, puede acceder al informe de validación y a los registros desde el host del agente.<block ref="61c0b8f4aae5855ed1c7905138f2dd94" category="inline-link-macro-rx"></block></block>
+  <block id="1cc84d19a969a49be773baf953e6565c" category="admonition">Si la implementación falla, puedes descargar un informe y registros desde la Consola para ayudarte a solucionar los problemas.<block ref="61c0b8f4aae5855ed1c7905138f2dd94" category="inline-link-macro-rx"></block></block>
+  <block id="61ee3fc74079e98a59bc55949818a0a9" category="admonition">Si la instalación falla, puede ver registros y un informe para ayudarlo a solucionar problemas.<block ref="61c0b8f4aae5855ed1c7905138f2dd94" category="inline-link-macro-rx"></block></block>
+  <block id="d06ce875f1b2887cbc5d87b38e0d0d44" category="list-text">Debe deshabilitar la comprobación de configuración que verifica la conectividad saliente durante la instalación. La instalación manual falla si esta comprobación no está deshabilitada.<block ref="90428b1442632a8a73b6f9660fa083c4" category="inline-link-macro-rx"></block></block>
+  <block id="3bc0e23bd46bad08da1876b2cc4430a7" category="sidebar">Utilice el asistente de la consola de NetApp</block>
 </blocks>

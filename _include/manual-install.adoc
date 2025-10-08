@@ -43,7 +43,7 @@ chmod +x NetApp_Console_Agent_Cloud_<version>
 +
 Donde <versión> es la versión del agente de consola que descargó.
 
-. Si realiza la instalación en un entorno de nube gubernamental, desactive las comprobaciones de configuración.link:task-troubleshoot-connector.html#disable-config-check["Aprenda cómo deshabilitar las comprobaciones de configuración para instalaciones manuales."]
+. Si realiza la instalación en un entorno de nube gubernamental, desactive las comprobaciones de configuración.link:task-troubleshoot-agent.html#disable-config-check["Aprenda cómo deshabilitar las comprobaciones de configuración para instalaciones manuales."]
 . Ejecute el script de instalación.
 +
 [source, cli]
@@ -131,7 +131,7 @@ Al final de la instalación, el servicio del agente de consola (occm) se reinici
 
 
 
-NOTE: Si la instalación falla, puede ver el informe de instalación y los registros para ayudarlo a solucionar los problemas.link:task-troubleshoot-connector.html#troubleshoot-installation["Aprenda a solucionar problemas de instalación."]
+NOTE: Si la instalación falla, puede ver el informe de instalación y los registros para ayudarlo a solucionar los problemas.link:task-troubleshoot-agent.html#troubleshoot-installation["Aprenda a solucionar problemas de instalación."]
 
 . Abra un navegador web desde un host que tenga una conexión a la máquina virtual del agente de consola e ingrese la siguiente URL:
 +

@@ -42,7 +42,7 @@ Los puntos finales enumerados a continuación son todas entradas CNAME.
 
 | Para administrar recursos en Google Cloud.
 
-| \ https://mysupport.netapp.com | Para obtener información de licencias y enviar mensajes de AutoSupport al soporte de NetApp . | \ https://support.netapp.com | Para obtener información de licencias y enviar mensajes de AutoSupport al soporte de NetApp . | \ https://signin.b2c.netapp.com | Para actualizar las credenciales del sitio de soporte de NetApp (NSS) o para agregar nuevas credenciales de NSS a la consola de NetApp .
+| \ https://mysupport.netapp.com | Para obtener información de licencias y enviar mensajes de AutoSupport al soporte de NetApp . | \ https://support.netapp.com | Para obtener información de licencias y enviar mensajes de AutoSupport al soporte de NetApp . | \ https://signin.b2c.netapp.com | Para actualizar las credenciales del sitio de soporte de NetApp (NSS) o para agregar nuevas credenciales de NSS a la consola de NetApp . | \https:\\support.netapp.com | Para obtener información de licencias y enviar mensajes de AutoSupport al soporte de NetApp , así como para recibir actualizaciones de software para Cloud Volumes ONTAP.
 
 | \ https://api.bluexp.netapp.com \ https://netapp-cloud-account.auth0.com \ https://netapp-cloud-account.us.auth0.com \ https://console.netapp.com \ https://components.console.bluexp.netapp.com \ https://cdn.auth0.com | Para proporcionar funciones y servicios dentro de la consola de NetApp .
 

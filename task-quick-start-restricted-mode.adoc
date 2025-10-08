@@ -19,8 +19,6 @@ Comience a utilizar la consola de NetApp en modo restringido preparando su entor
 El modo restringido generalmente lo utilizan los gobiernos estatales y locales y las empresas reguladas, incluidas las implementaciones en las regiones de AWS GovCloud y Azure Government.  Antes de comenzar, asegúrese de comprenderlink:concept-connectors.html["Agentes de consola"] ylink:concept-modes.html["modos de implementación"] .
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1"] link:task-prepare-restricted-mode.html["Prepárese para el despliegue"]
-https://raw.githubusercontent.com/NetAppDocs/console-setup-admin-internal/blob/main/media/screenshot-canvas.png[]
-
 [role="quick-margin-list"]
 . Prepare un host Linux dedicado que cumpla con los requisitos de CPU, RAM, espacio en disco, herramienta de orquestación de contenedores y más.
 . Configurar redes que proporcionen acceso a las redes de destino, acceso a Internet saliente para instalaciones manuales e Internet saliente para acceso diario.

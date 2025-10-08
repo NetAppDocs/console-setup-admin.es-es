@@ -33,7 +33,7 @@ Cada panel de la página de inicio requiere diferentes roles de usuario:
 * *Panel de alertas de ONTAP *: Administrador de carpeta o proyecto, Analista de soporte de operaciones, Administrador de la organización, Visor de la organización, Superadministrador, Supervisor
 * *Panel de capacidad de rendimiento de almacenamiento*: Capacidad para ver la página de sistemas de la consola de NetApp
 * *Panel de licencias y suscripciones*: Administrador de carpeta o proyecto, Administrador de organización, Visor de organización, Superadministrador, Supervisor
-* *Panel de resiliencia contra ransomware*: Administrador de carpeta o proyecto, Administrador de organización, Administrador de protección contra ransomware, Visor de protección contra ransomware, Superadministrador, Supervisor
+* *Panel de resiliencia ante ransomware*: Administrador de carpeta o proyecto, Administrador de organización, Administrador de resiliencia ante ransomware, Visor de resiliencia ante ransomware, Superadministrador, Supervisor
 * *Panel de copia de seguridad y recuperación*: Administrador de copias de seguridad de copia de seguridad y recuperación, Superadministrador de copia de seguridad y recuperación, Visor de copias de seguridad de copia de seguridad y recuperación, Administrador de clones de copia de seguridad y recuperación, Administrador de carpetas o proyectos, Administrador de la organización, Administrador de restauración de copia de seguridad y recuperación, Superadministrador, Supervisor
 
 
@@ -194,7 +194,7 @@ Descubra si las cargas de trabajo están en riesgo de ataques de ransomware o es
 
 Los datos se actualizan cada 5 minutos y coinciden con los datos que se muestran en el Panel de resiliencia ante ransomware de NetApp .
 
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["Obtenga más información sobre la resiliencia frente al ransomware de NetApp"^] .
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html["Obtenga más información sobre la resiliencia frente al ransomware de NetApp"^] .
 
 .Pasos
 . Desde el menú de la consola de NetApp , revise el panel Resiliencia ante ransomware.

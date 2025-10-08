@@ -148,7 +148,7 @@ Acceda a herramientas de diagnóstico para solucionar problemas con el agente de
 . Seleccione *Iniciar consola web*.
 . Inicie sesión en la instancia de VM utilizando el nombre de usuario y la contraseña que especificó cuando creó la instancia de VM.  El nombre de usuario es `maint` y la contraseña es la que especificaste cuando creaste la instancia de VM.
 . Ingresar `3` para ver el menú de Soporte y Diagnóstico.
-. Ingresar `1` para acceder a las herramientas de diagnóstico y seguir las instrucciones en pantalla.  + Por ejemplo, puede verificar que todos los servicios del agente se estén ejecutando. link:task-troubleshoot-connector.html#check-agent-status["Comprobar el estado del agente de la consola"^] .
+. Ingresar `1` para acceder a las herramientas de diagnóstico y seguir las instrucciones en pantalla. + Por ejemplo, puede verificar que todos los servicios del agente se estén ejecutando. link:task-troubleshoot-agent.html#check-agent-status["Comprobar el estado del agente de la consola"^] .
 
 
 

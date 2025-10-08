@@ -353,6 +353,13 @@ Para actualizar las credenciales del sitio de soporte de NetApp (NSS) o para agr
 
 
  a| 
+\https:\\support.netapp.com
+ a| 
+Para obtener información de licencias y enviar mensajes de AutoSupport al soporte de NetApp , así como para recibir actualizaciones de software para Cloud Volumes ONTAP.
+
+
+
+ a| 
 \ https://api.bluexp.netapp.com \ https://netapp-cloud-account.auth0.com \ https://netapp-cloud-account.us.auth0.com \ https://console.netapp.com \ https://components.console.bluexp.netapp.com \ https://cdn.auth0.com
  a| 
 Proporcionar funciones y servicios dentro de la consola de NetApp .
@@ -400,7 +407,7 @@ Si los sistemas Cloud Volumes ONTAP no tienen una conexión a Internet saliente 
 --
 
 
-Habilitar NTP:: Si planea utilizar NetApp Data Classification para escanear sus fuentes de datos corporativos, debe habilitar un servicio de Protocolo de tiempo de red (NTP) tanto en el agente de consola como en el sistema de clasificación de datos de NetApp para que la hora se sincronice entre los sistemas. https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Obtenga más información sobre la clasificación de datos de NetApp"^]
+Habilitar NTP:: Si planea utilizar NetApp Data Classification para escanear sus fuentes de datos corporativos, debe habilitar un servicio de Protocolo de tiempo de red (NTP) tanto en el agente de consola como en el sistema de clasificación de datos de NetApp para que la hora se sincronice entre los sistemas. https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html["Obtenga más información sobre la clasificación de datos de NetApp"^]
 
 
 
@@ -583,7 +590,7 @@ chmod +x NetApp_Console_Agent_Cloud_<version>
 +
 Donde <versión> es la versión del agente de consola que descargó.
 
-. Si realiza la instalación en un entorno de nube gubernamental, desactive las comprobaciones de configuración.link:task-troubleshoot-connector.html#disable-config-check["Aprenda cómo deshabilitar las comprobaciones de configuración para instalaciones manuales."]
+. Si realiza la instalación en un entorno de nube gubernamental, desactive las comprobaciones de configuración.link:task-troubleshoot-agent.html#disable-config-check["Aprenda cómo deshabilitar las comprobaciones de configuración para instalaciones manuales."]
 . Ejecute el script de instalación.
 +
 [source, cli]
@@ -669,7 +676,7 @@ Al final de la instalación, el servicio del agente de consola (occm) se reinici
 
 
 
-NOTE: Si la instalación falla, puede ver el informe de instalación y los registros para ayudarlo a solucionar los problemas.link:task-troubleshoot-connector.html#troubleshoot-installation["Aprenda a solucionar problemas de instalación."]
+NOTE: Si la instalación falla, puede ver el informe de instalación y los registros para ayudarlo a solucionar los problemas.link:task-troubleshoot-agent.html#troubleshoot-installation["Aprenda a solucionar problemas de instalación."]
 
 . Abra un navegador web desde un host que tenga una conexión a la máquina virtual del agente de consola e ingrese la siguiente URL:
 +
@@ -688,7 +695,7 @@ Debes mantener el modo restringido deshabilitado porque estos pasos describen c�
 
 +
 
-NOTE: Si la instalación falla, puede ver registros y un informe para ayudarlo a solucionar problemas.link:task-troubleshoot-connector.html#troubleshoot-installation["Aprenda a solucionar problemas de instalación."]
+NOTE: Si la instalación falla, puede ver registros y un informe para ayudarlo a solucionar problemas.link:task-troubleshoot-agent.html#troubleshoot-installation["Aprenda a solucionar problemas de instalación."]
 
 
 

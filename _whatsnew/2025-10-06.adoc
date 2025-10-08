@@ -156,7 +156,7 @@ Al implementar un agente de consola desde la consola de NetApp , ahora tiene la 
 
 === Solución de problemas mejorada para los agentes de la consola
 
-El agente de consola ha mejorado los mensajes de error que le ayudan a comprender mejor los problemas.link:https://docs.netapp.com/us-en/console-setup-admin/task-troubleshoot-connector.html["Aprenda a solucionar problemas de los agentes de la consola."]
+El agente de consola ha mejorado los mensajes de error que le ayudan a comprender mejor los problemas.link:https://docs.netapp.com/us-en/console-setup-admin/task-troubleshoot-agent.html["Aprenda a solucionar problemas de los agentes de la consola."]
 
 
 
