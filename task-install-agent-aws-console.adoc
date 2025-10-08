@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: task-install-connector-aws-bluexp.html 
+permalink: task-install-agent-aws-console.html 
 keywords: install connector, aws connector installation, aws connector, install connector in aws, bluexp, create connector 
 summary: Puede crear un agente de consola en AWS directamente desde la consola de NetApp .  Antes de crear un agente de consola en AWS desde la consola, debe configurar su red y preparar los permisos de AWS. 
 ---
@@ -17,7 +17,7 @@ summary: Puede crear un agente de consola en AWS directamente desde la consola d
 Puede crear un agente de consola en AWS directamente desde la consola de NetApp .  Antes de crear un agente de consola en AWS desde la consola, debe configurar su red y preparar los permisos de AWS.
 
 .Antes de empezar
-* Deberías tener unalink:concept-connectors.html["comprensión de los agentes de consola"] .
+* Deberías tener unalink:concept-agents.html["comprensión de los agentes de consola"] .
 * Deberías revisarlink:reference-limitations.html["Limitaciones del agente de consola"] .
 
 
@@ -289,7 +289,7 @@ Ahora debería tener un rol de IAM que tenga los permisos necesarios o un usuari
 Cree el agente de consola directamente desde la consola web.
 
 .Acerca de esta tarea
-* Al crear el agente de la consola desde la consola, se implementa una instancia EC2 en AWS utilizando una configuración predeterminada.  No cambie a una instancia EC2 más pequeña con menos CPU o menos RAM después de crear el agente de consola. link:reference-connector-default-config.html["Obtenga información sobre la configuración predeterminada para el agente de la consola"] .
+* Al crear el agente de la consola desde la consola, se implementa una instancia EC2 en AWS utilizando una configuración predeterminada. No cambie a una instancia EC2 más pequeña con menos CPU o menos RAM después de crear el agente de consola. link:reference-agent-default-config.html["Obtenga información sobre la configuración predeterminada para el agente de la consola"] .
 * Cuando la consola crea el agente de consola, crea una función de IAM y un perfil de instancia para la instancia.  Esta función incluye permisos que permiten al agente de la consola administrar los recursos de AWS.  Asegúrese de que la función se actualice a medida que se agreguen nuevos permisos en futuras versiones. link:reference-permissions-aws.html["Obtenga más información sobre la política de IAM para el agente de consola"] .
 
 

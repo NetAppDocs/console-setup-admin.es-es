@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
-permalink: task-install-connector-aws-manual.html 
-keywords: install connector, aws connector installation, aws connector, install connector in aws, bluexp, aws marketplace, manual install, create connector 
-summary: Puede instalar manualmente un agente de consola en un host Linux que se ejecute en AWS.  Para instalar manualmente el agente de consola en su propio host Linux, debe revisar los requisitos del host, configurar su red, preparar los permisos de AWS, instalar el agente de consola y luego proporcionar los permisos que preparó. 
+permalink: task-install-agent-google-manual.html 
+keywords: install connector, google cloud connector installation, google cloud connector, install connector in google cloud, bluexp, gcloud, manual install, create connector, gcp installation, gcp connector 
+summary: Para instalar manualmente el agente de la consola en su propio host Linux, debe revisar los requisitos del host, configurar su red, preparar los permisos de Google Cloud, habilitar las API de Google Cloud, instalar la consola y luego proporcionar los permisos que preparó. 
 ---
-= Instalar manualmente el agente de consola en AWS
+= Instalar manualmente el agente de la consola en Google Cloud
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,10 +14,10 @@ summary: Puede instalar manualmente un agente de consola en un host Linux que se
 
 
 [role="lead"]
-Puede instalar manualmente un agente de consola en un host Linux que se ejecute en AWS.  Para instalar manualmente el agente de consola en su propio host Linux, debe revisar los requisitos del host, configurar su red, preparar los permisos de AWS, instalar el agente de consola y luego proporcionar los permisos que preparó.
+Para instalar manualmente el agente de la consola en su propio host Linux, debe revisar los requisitos del host, configurar su red, preparar los permisos de Google Cloud, habilitar las API de Google Cloud, instalar la consola y luego proporcionar los permisos que preparó.
 
 .Antes de empezar
-* Deberías tener unalink:concept-connectors.html["comprensión de los agentes de consola"] .
+* Deberías tener unalink:concept-agents.html["comprensión de los agentes de consola"] .
 * Deberías revisarlink:reference-limitations.html["Limitaciones del agente de consola"] .
 
 
@@ -107,14 +107,10 @@ No compatible
 
 |===
 --
-Tipo de instancia de AWS EC2:: Un tipo de instancia que cumple con los requisitos de CPU y RAM anteriores.  Recomendamos t3.2xlarge.
-Par de claves:: Cuando cree el agente de consola, deberá seleccionar un par de claves EC2 para usar con la instancia.
-Límite de salto de respuesta PUT al usar IMDSv2:: Si IMDSv2 está habilitado en la instancia EC2 (esta es la configuración predeterminada para las nuevas instancias EC2), debe cambiar el límite de saltos de respuesta PUT en la instancia a 3.  Si no cambia el límite en la instancia EC2, recibirá un error de inicialización de la interfaz de usuario cuando intente configurar el agente.
+Tipo de máquina de Google Cloud:: Un tipo de instancia que cumple con los requisitos de CPU y RAM anteriores.  Recomendamos n2-standard-8.
 +
 --
-* link:task-require-imdsv2.html["Requerir el uso de IMDSv2 en instancias de Amazon EC2"]
-* https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-IMDS-existing-instances.html#modify-PUT-response-hop-limit["Documentación de AWS: Cambiar el límite de saltos de respuesta PUT"^]
-
+El agente de consola es compatible con Google Cloud en una instancia de máquina virtual con un sistema operativo compatible. https://cloud.google.com/compute/shielded-vm/docs/shielded-vm["Características de las máquinas virtuales protegidas"^]
 
 --
 Espacio en disco en /opt:: Deben estar disponibles 100 GiB de espacio
@@ -300,7 +296,7 @@ sudo systemctl enable docker && sudo systemctl start docker
 
 == Paso 3: Configurar la red
 
-Asegúrese de que la ubicación de red donde planea instalar el agente de consola admita los siguientes requisitos.  Cumplir estos requisitos permite que el agente de la consola administre recursos y procesos dentro de su entorno de nube híbrida.
+Configure su red para que el agente de la consola pueda administrar recursos y procesos dentro de su entorno de nube híbrida.  Por ejemplo, debe asegurarse de que haya conexiones disponibles para las redes de destino y que el acceso a Internet saliente esté disponible.
 
 Conexiones a redes de destino:: El agente de consola requiere una conexión de red a la ubicación donde planea crear y administrar sistemas.  Por ejemplo, la red donde planea crear sistemas Cloud Volumes ONTAP o un sistema de almacenamiento en su entorno local.
 
@@ -329,17 +325,9 @@ Los puntos finales enumerados a continuación son todas entradas CNAME.
 
 
  a| 
-Servicios de AWS (amazonaws.com):
-
-* Formación de nubes
-* Nube de cómputo elástica (EC2)
-* Gestión de identidad y acceso (IAM)
-* Servicio de gestión de claves (KMS)
-* Servicio de token de seguridad (STS)
-* Servicio de almacenamiento simple (S3)
-
+\ https://www.googleapis.com/compute/v1/ \ https://compute.googleapis.com/compute/v1 \ https://cloudresourcemanager.googleapis.com/v1/projects \ https://www.googleapis.com/compute/beta \ https://storage.googleapis.com/storage/v1 \ https://www.googleapis.com/storage/v1 \ https://iam.googleapis.com/v1 \ https://cloudkms.googleapis.com/v1 \ https://www.googleapis.com/deploymentmanager/v2/projects
  a| 
-Para administrar los recursos de AWS.  El punto final depende de su región de AWS. https://docs.aws.amazon.com/general/latest/gr/rande.html["Consulte la documentación de AWS para obtener más detalles."^]
+Para administrar recursos en Google Cloud.
 
 
 
@@ -424,80 +412,140 @@ Habilitar NTP:: Si planea utilizar NetApp Data Classification para escanear sus 
 
 
 
-== Paso 4: Configurar los permisos de AWS para la consola
+== Paso 4: Configurar permisos para el agente de la consola
 
-Debe proporcionar permisos de AWS a la consola de NetApp mediante una de las siguientes opciones:
+Se requiere una cuenta de servicio de Google Cloud para proporcionar al agente de la consola los permisos que necesita para administrar recursos en Google Cloud.  Cuando cree el agente de consola, deberá asociar esta cuenta de servicio con la máquina virtual del agente de consola.
 
-* Opción 1: Cree políticas de IAM y adjúntelas a un rol de IAM que pueda asociar con la instancia EC2.
-* Opción 2: proporcionar a la consola la clave de acceso de AWS para un usuario de IAM que tenga los permisos necesarios.
+Es su responsabilidad actualizar la función personalizada a medida que se agreguen nuevos permisos en versiones posteriores.  Si se requieren nuevos permisos, se enumerarán en las notas de la versión.
 
-
-Siga los pasos para preparar los permisos para la consola.
-
-[role="tabbed-block"]
-====
-.Rol de IAM
---
 .Pasos
-. Inicie sesión en la consola de AWS y navegue hasta el servicio IAM.
-. Crear una política:
+. Crear un rol personalizado en Google Cloud:
 +
-.. Seleccione *Políticas > Crear política*.
-.. Seleccione *JSON* y copie y pegue el contenido dellink:reference-permissions-aws.html["Política de IAM para el agente de consola"] .
-.. Complete los pasos restantes para crear la política.
+.. Cree un archivo YAML que incluya el contenido delink:reference-permissions-gcp.html["Permisos de cuenta de servicio para el agente de consola"] .
+.. Desde Google Cloud, activa Cloud Shell.
+.. Sube el archivo YAML que incluye los permisos necesarios.
+.. Cree un rol personalizado mediante el uso de `gcloud iam roles create` dominio.
 +
-Según los servicios de datos de NetApp que planee utilizar, es posible que deba crear una segunda política.  Para las regiones estándar, los permisos se distribuyen en dos políticas.  Se requieren dos políticas debido a un límite máximo de tamaño de caracteres para las políticas administradas en AWS. link:reference-permissions-aws.html["Obtenga más información sobre las políticas de IAM para el agente de consola"] .
+El siguiente ejemplo crea un rol denominado "conector" a nivel de proyecto:
+
++
+`gcloud iam roles create connector --project=myproject --file=connector.yaml`
+
++
+https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Documentación de Google Cloud: Creación y administración de roles personalizados"^]
 
 
 
-. Crear un rol de IAM:
+. Cree una cuenta de servicio en Google Cloud y asígnele el rol:
 +
-.. Seleccione *Roles > Crear rol*.
-.. Seleccione *Servicio AWS > EC2*.
-.. Agregue permisos adjuntando la política que acaba de crear.
+.. Desde el servicio IAM y administración, seleccione *Cuentas de servicio > Crear cuenta de servicio*.
+.. Ingrese los detalles de la cuenta de servicio y seleccione *Crear y continuar*.
+.. Seleccione el rol que acaba de crear.
 .. Complete los pasos restantes para crear el rol.
-
-
-
-
-.Resultado
-Ahora tiene una función de IAM que puede asociar con la instancia EC2 después de instalar el agente de consola.
-
---
-.Clave de acceso de AWS
---
-.Pasos
-. Inicie sesión en la consola de AWS y navegue hasta el servicio IAM.
-. Crear una política:
 +
-.. Seleccione *Políticas > Crear política*.
-.. Seleccione *JSON* y copie y pegue el contenido dellink:reference-permissions-aws.html["Política de IAM para el agente de consola"] .
-.. Complete los pasos restantes para crear la política.
+https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_service_account["Documentación de Google Cloud: Creación de una cuenta de servicio"^]
+
+
+
+. Si planea implementar sistemas Cloud Volumes ONTAP en proyectos diferentes al proyecto donde reside el agente de la consola, deberá proporcionar a la cuenta de servicio del agente de la consola acceso a esos proyectos.
 +
-Según los servicios de datos de NetApp que planee utilizar, es posible que necesite crear una segunda política.
+Por ejemplo, supongamos que el agente de consola está en el proyecto 1 y desea crear sistemas Cloud Volumes ONTAP en el proyecto 2.  Necesitará otorgar acceso a la cuenta de servicio en el proyecto 2.
 
 +
-Para las regiones estándar, los permisos se distribuyen en dos políticas.  Se requieren dos políticas debido a un límite máximo de tamaño de caracteres para las políticas administradas en AWS. link:reference-permissions-aws.html["Obtenga más información sobre las políticas de IAM para el agente de consola"] .
-
-
-
-. Adjuntar las políticas a un usuario de IAM.
+.. Desde el servicio IAM y administración, seleccione el proyecto de Google Cloud donde desea crear sistemas Cloud Volumes ONTAP .
+.. En la página *IAM*, seleccione *Otorgar acceso* y proporcione los detalles requeridos.
 +
-** https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html["Documentación de AWS: Creación de roles de IAM"^]
-** https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html["Documentación de AWS: Cómo agregar y eliminar políticas de IAM"^]
+*** Ingrese el correo electrónico de la cuenta de servicio del agente de la consola.
+*** Seleccione el rol personalizado del agente de consola.
+*** Seleccione *Guardar*.
 
 
-. Asegúrese de que el usuario tenga una clave de acceso que pueda agregar a la consola de NetApp después de instalar el agente de la consola.
 
 
-.Resultado
-Ahora tiene un usuario IAM que tiene los permisos necesarios y una clave de acceso que puede proporcionar a la consola.
++
+Para más detalles, consulte https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single-role["Documentación de Google Cloud"^]
 
---
+
+
+
+
+== Paso 5: Configurar permisos de VPC compartidos
+
+Si está utilizando una VPC compartida para implementar recursos en un proyecto de servicio, deberá preparar sus permisos.
+
+Esta tabla es de referencia y su entorno debe reflejar la tabla de permisos cuando se complete la configuración de IAM.
+
+.Ver permisos de VPC compartidos
+[%collapsible]
+====
+[cols="10,10,10,18,18,34"]
+|===
+| Identidad | Creador | Alojado en | Permisos del proyecto de servicio | Permisos del proyecto anfitrión | Objetivo 
+
+
+| Cuenta de Google para implementar el agente | Costumbre | Proyecto de servicio  a| 
+link:task-install-agent-google-console-gcloud.html#agent-permissions-google["Política de implementación del agente"]
+ a| 
+computar.usuariodered
+| Implementación del agente en el proyecto de servicio 
+
+
+| cuenta de servicio del agente | Costumbre | Proyecto de servicio  a| 
+link:reference-permissions-gcp.html["Política de cuenta de servicio del agente"]
+| Compute.NetworkUser administrador de implementación.editor | Implementación y mantenimiento de Cloud Volumes ONTAP y los servicios en el proyecto de servicio 
+
+
+| Cuenta de servicio de Cloud Volumes ONTAP | Costumbre | Proyecto de servicio | Miembro de storage.admin: cuenta de servicio de la consola de NetApp como serviceAccount.user | N/A | (Opcional) Para NetApp Cloud Tiering y NetApp Backup and Recovery 
+
+
+| Agente de servicio de las API de Google | Google Cloud | Proyecto de servicio  a| 
+(Predeterminado) Editor
+ a| 
+computar.usuariodered
+| Interactúa con las API de Google Cloud en nombre de la implementación.  Permite que la consola utilice la red compartida. 
+
+
+| Cuenta de servicio predeterminada de Google Compute Engine | Google Cloud | Proyecto de servicio  a| 
+(Predeterminado) Editor
+ a| 
+computar.usuariodered
+| Implementa instancias de Google Cloud y la infraestructura computacional en nombre de la implementación.  Permite que la consola utilice la red compartida. 
+|===
+Notas:
+
+. deploymentmanager.editor solo es necesario en el proyecto host si no pasa reglas de firewall a la implementación y elige dejar que la consola las cree por usted.  La consola de NetApp crea una implementación en el proyecto de host que contiene la regla de firewall VPC0 si no se especifica ninguna regla.
+. firewall.create y firewall.delete solo son necesarios si no pasa reglas de firewall a la implementación y elige dejar que la Consola las cree por usted.  Estos permisos residen en el archivo .yaml de la cuenta de la consola.  Si está implementando un par HA mediante una VPC compartida, estos permisos se utilizarán para crear las reglas de firewall para VPC1, 2 y 3.  Para todas las demás implementaciones, estos permisos también se utilizarán para crear reglas para VPC0.
+. Para la organización en niveles de nube, la cuenta de servicio de organización en niveles debe tener el rol serviceAccount.user en la cuenta de servicio, no solo en el nivel de proyecto.  Actualmente, si asigna serviceAccount.user en el nivel del proyecto, los permisos no se muestran cuando consulta la cuenta de servicio con getIAMPolicy.
+
+
 ====
 
 
-== Paso 5: Instalar el agente de consola
+== Paso 6: Habilitar las API de Google Cloud
+
+Se deben habilitar varias API de Google Cloud antes de poder implementar sistemas Cloud Volumes ONTAP en Google Cloud.
+
+.Paso
+. Habilite las siguientes API de Google Cloud en su proyecto:
++
+** API de Cloud Deployment Manager V2
+** API de registro en la nube
+** API del administrador de recursos en la nube
+** API de Compute Engine
+** API de gestión de identidad y acceso (IAM)
+** API del servicio de administración de claves en la nube (KMS)
++
+(Obligatorio solo si planea utilizar NetApp Backup and Recovery con claves de cifrado administradas por el cliente (CMEK))
+
+
+
+
+
+https://cloud.google.com/apis/docs/getting-started#enabling_apis["Documentación de Google Cloud: Habilitación de API"^]
+
+
+
+== Paso 7: Instalar el agente de consola
 
 Una vez completados los requisitos previos, puede instalar manualmente el software en su propio host Linux.
 
@@ -513,7 +561,7 @@ Tiene la opción de configurar un servidor proxy después de la instalación, pe
 
 
 
-NOTE: No es posible configurar un certificado para un servidor proxy transparente al instalar manualmente el agente de consola.  Si necesita configurar un certificado para un servidor proxy transparente, debe utilizar la Consola de mantenimiento después de la instalación. Obtenga más información sobre ellink:reference-connector-maint-console.html["Consola de mantenimiento del agente"] .
+NOTE: No es posible configurar un certificado para un servidor proxy transparente al instalar manualmente el agente de consola. Si necesita configurar un certificado para un servidor proxy transparente, debe utilizar la Consola de mantenimiento después de la instalación. Obtenga más información sobre ellink:reference-agent-maint-console.html["Consola de mantenimiento del agente"] .
 
 .Acerca de esta tarea
 El instalador que está disponible en el sitio de soporte de NetApp podría ser una versión anterior.  Después de la instalación, el agente de consola se actualiza automáticamente si hay una nueva versión disponible.
@@ -645,52 +693,24 @@ Debes mantener el modo restringido deshabilitado porque estos pasos describen c�
 .. Seleccione *Comencemos*.
 
 
-
-
-Si tiene depósitos de Amazon S3 en la misma cuenta de AWS donde creó el agente de consola, verá aparecer automáticamente un sistema de almacenamiento de Amazon S3 en la página *Sistemas*. https://docs.netapp.com/us-en/bluexp-s3-storage/index.html["Aprenda a administrar los buckets S3 desde NetApp ConsoleP"^]
-
-
-
-== Paso 6: Proporcionar permisos a la consola de NetApp
-
-Ahora que ha instalado el agente de la consola, debe proporcionar a la consola los permisos de AWS que configuró previamente.  Al proporcionar los permisos, se permite que el agente de la consola administre sus datos y la infraestructura de almacenamiento en AWS.
-
-[role="tabbed-block"]
-====
-.Rol de IAM
---
-Adjunte la función de IAM que creó previamente a la instancia EC2 del agente de consola.
-
-.Pasos
-. Vaya a la consola de Amazon EC2.
-. Seleccionar *Instancias*.
-. Seleccione la instancia del agente de consola.
-. Seleccione *Acciones > Seguridad > Modificar rol de IAM*.
-. Seleccione el rol de IAM y seleccione *Actualizar rol de IAM*.
-
-
-Ir a la https://console.netapp.com["Consola de NetApp"^] para comenzar a utilizar el agente de consola.
-
---
-.Clave de acceso de AWS
---
-Proporcione a la consola la clave de acceso de AWS para un usuario de IAM que tenga los permisos necesarios.
-
-.Pasos
-. Asegúrese de que el agente de consola correcto esté seleccionado actualmente en la consola.
-. Seleccione *Administración > Credenciales*.
-. Seleccione *Credenciales de la organización*.
-. Seleccione *Agregar credenciales* y siga los pasos del asistente.
 +
-.. *Ubicación de credenciales*: seleccione *Amazon Web Services > Agente.
-.. *Definir credenciales*: ingrese una clave de acceso de AWS y una clave secreta.
-.. *Suscripción al Marketplace*: asocie una suscripción al Marketplace con estas credenciales suscribiéndose ahora o seleccionando una suscripción existente.
-.. *Revisar*: Confirme los detalles sobre las nuevas credenciales y seleccione *Agregar*.
+
+NOTE: Si la instalación falla, puede ver registros y un informe para ayudarlo a solucionar problemas.link:task-troubleshoot-agent.html#troubleshoot-installation["Aprenda a solucionar problemas de instalación."]
 
 
 
+Si tiene depósitos de Google Cloud Storage en la misma cuenta de Google Cloud donde creó el agente de consola, verá aparecer automáticamente un sistema de Google Cloud Storage en la página *Sistemas*. https://docs.netapp.com/us-en/bluexp-google-cloud-storage/index.html["Aprenda a administrar Google Cloud Storage desde la consola de NetApp"^]
 
-Ir a la https://console.netapp.com["Consola de NetApp"^] para comenzar a utilizar el agente de consola.
 
---
-====
+
+== Paso 8: Proporcionar permisos al agente de la consola
+
+Debes proporcionar al agente de la consola los permisos de Google Cloud que configuraste previamente.  Al proporcionar los permisos, se permite que el agente de la consola administre sus datos y la infraestructura de almacenamiento en Google Cloud.
+
+.Pasos
+. Vaya al portal de Google Cloud y asigne la cuenta de servicio a la instancia de VM del agente de consola.
++
+https://cloud.google.com/compute/docs/access/create-enable-service-accounts-for-instances#changeserviceaccountandscopes["Documentación de Google Cloud: Cómo cambiar la cuenta de servicio y los ámbitos de acceso de una instancia"^]
+
+. Si desea administrar recursos en otros proyectos de Google Cloud, otorgue acceso agregando la cuenta de servicio con el rol de agente de consola a ese proyecto. Necesitarás repetir este paso para cada proyecto.
+

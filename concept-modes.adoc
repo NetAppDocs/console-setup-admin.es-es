@@ -97,9 +97,9 @@ La consola funciona de la siguiente manera en modo estándar:
 Comunicación saliente:: Se requiere conectividad desde un agente de consola a la capa SaaS de consola, a los recursos disponibles públicamente de su proveedor de nube y a otros componentes esenciales para las operaciones diarias.
 +
 --
-* link:task-install-connector-aws-bluexp.html#networking-aws-agent["Puntos finales con los que un agente se pone en contacto en AWS"]
-* link:task-install-connector-azure-bluexp.html#networking-azure-agent["Puntos de conexión con los que contacta un agente en Azure"]
-* link:task-install-connector-google-bluexp-gcloud.html#networking-gcp-agent["Puntos finales con los que un agente se comunica en Google Cloud"]
+* link:task-install-agent-aws-console.html#networking-aws-agent["Puntos finales con los que un agente se pone en contacto en AWS"]
+* link:task-install-agent-azure-console.html#networking-azure-agent["Puntos de conexión con los que contacta un agente en Azure"]
+* link:task-install-agent-google-console-gcloud.html#networking-gcp-agent["Puntos finales con los que un agente se comunica en Google Cloud"]
 
 
 --

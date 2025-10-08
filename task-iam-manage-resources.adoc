@@ -67,7 +67,7 @@ Tenga en cuenta que solo puede seleccionar entre las carpetas y los proyectos pa
 .Después de terminar
 Si descubre un recurso mediante un agente de consola, asocie el agente de consola con el proyecto para otorgar acceso.  De lo contrario, los miembros sin el rol de _Administrador de la organización_ no podrán acceder al agente de la consola ni a su recurso asociado.
 
-link:task-iam-associate-connectors.html["Aprenda a asociar un agente de consola con una carpeta o un proyecto"] .
+link:task-iam-associate-agents.html["Aprenda a asociar un agente de consola con una carpeta o un proyecto"] .
 
 
 

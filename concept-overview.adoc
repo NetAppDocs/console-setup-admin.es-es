@@ -143,7 +143,7 @@ La consola proporciona gestión de identidad y acceso (IAM) para la gestión de 
 
 Se necesita un agente de consola para algunas funciones y servicios de datos adicionales.  Le permite administrar recursos y procesos en sus entornos locales y en la nube.  Lo necesita para administrar algunos sistemas (por ejemplo, Cloud Volumes ONTAP) y para utilizar algunos servicios de datos de NetApp .
 
-link:concept-connectors.html["Obtenga más información sobre los agentes de consola"] .
+link:concept-agents.html["Obtenga más información sobre los agentes de consola"] .
 
 
 

@@ -3,7 +3,7 @@
 
 
 .Pasos
-. Seleccione *Administración > *Credenciales*.
+. Seleccione *Administración > Credenciales*.
 . Seleccione *Credenciales de la organización*.
 . Seleccione el menú de acciones para un conjunto de credenciales asociadas con un agente de consola y luego seleccione *Configurar suscripción*.
 +

@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: task-maintain-connectors.html 
+permalink: task-maintain-agents.html 
 keywords: agent operating system, agent maintenance, vm maintenance, os updates, operating system updates, stop agent, restart agent, notifications, agent health, agent disk space, agent cpu usage, agent ram usage, agent vm, agent ip address, agent uri, connector, connector health 
 summary: El mantenimiento del sistema operativo en el host del agente es su responsabilidad.  Por ejemplo, debe aplicar actualizaciones de seguridad al sistema operativo en el host del agente de la consola siguiendo los procedimientos estándar de su empresa para la distribución del sistema operativo. 
 ---
@@ -17,7 +17,7 @@ summary: El mantenimiento del sistema operativo en el host del agente es su resp
 El mantenimiento del sistema operativo en el host del agente de la consola es responsabilidad suya (del cliente).  Por ejemplo, usted (el cliente) debe aplicar actualizaciones de seguridad al sistema operativo en el host del agente siguiendo los procedimientos estándar de su empresa para la distribución del sistema operativo.
 
 
-TIP: Si tiene un agente existente, debe tener en cuenta lo siguiente:link:reference-connector-operating-system-changes.html["cambios en los sistemas operativos Linux compatibles"] .
+TIP: Si tiene un agente existente, debe tener en cuenta lo siguiente:link:reference-agent-operating-system-changes.html["cambios en los sistemas operativos Linux compatibles"] .
 
 
 
@@ -37,7 +37,7 @@ UPC:: 8 núcleos u 8 vCPU
 RAM:: 32 GB
 
 
-link:reference-connector-default-config.html["Obtenga información sobre la configuración predeterminada del agente"] .
+link:reference-agent-default-config.html["Obtenga información sobre la configuración predeterminada del agente"] .
 
 
 
@@ -71,7 +71,7 @@ link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations
 
 Si es necesario, detenga e inicie la máquina virtual del agente mediante la consola de su proveedor de nube o los procedimientos locales estándar.
 
-link:concept-connectors.html#connectors-must-be-operational-at-all-times["Tenga en cuenta que el agente de la consola debe estar operativo en todo momento"] .
+link:concept-agents.html#agents-must-be-operational-at-all-times["Tenga en cuenta que el agente de la consola debe estar operativo en todo momento"] .
 
 
 

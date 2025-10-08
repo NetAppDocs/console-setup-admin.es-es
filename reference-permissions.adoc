@@ -31,7 +31,7 @@ La consola de NetApp requiere permisos de AWS para un agente de consola y para s
 | Meta | Descripción | Enlace 
 
 
-| Implementar un agente de consola desde la consola | El usuario que crea un agente de consola desde la consola necesita permisos específicos para implementar la instancia en AWS. | link:task-install-connector-aws-bluexp.html#aws-permissions-agent["Configurar permisos de AWS"] 
+| Implementar un agente de consola desde la consola | El usuario que crea un agente de consola desde la consola necesita permisos específicos para implementar la instancia en AWS. | link:task-install-agent-aws-console.html#aws-permissions-agent["Configurar permisos de AWS"] 
 
 
 | Proporcionar permisos para un agente de consola | Cuando la consola implementa un agente de consola, adjunta una política a la instancia que proporciona los permisos necesarios para administrar recursos y procesos en su cuenta de AWS.  Debe configurar la política usted mismo si implementa un agente de consola desde AWS Marketplace, si instala manualmente un agente de consola o silink:task-adding-aws-accounts.html#add-credentials-agent-aws["Agregar más credenciales de AWS a un agente de consola"] .  También debe asegurarse de que la política esté actualizada a medida que se agreguen nuevos permisos en versiones posteriores. | link:reference-permissions-aws.html["Permisos de AWS para un agente de consola"] 
@@ -112,7 +112,7 @@ La consola requiere permisos de Azure para un agente de consola y para servicios
 | Meta | Descripción | Enlace 
 
 
-| Implementar un agente de consola desde la consola | Cuando implementa un agente de consola desde la consola, debe usar una cuenta de Azure o una entidad de servicio que tenga permisos para implementar una máquina virtual del agente de consola en Azure. | link:task-install-connector-azure-bluexp.html#connector-custom-role["Configurar permisos de Azure"] 
+| Implementar un agente de consola desde la consola | Cuando implementa un agente de consola desde la consola, debe usar una cuenta de Azure o una entidad de servicio que tenga permisos para implementar una máquina virtual del agente de consola en Azure. | link:task-install-agent-azure-console.html#agent-custom-role["Configurar permisos de Azure"] 
 
 
 | Proporcionar permisos para un agente de consola  a| 
@@ -174,10 +174,10 @@ La consola requiere permisos de Google Cloud para un agente de consola y para se
 | Meta | Descripción | Enlace 
 
 
-| Implementar un agente de consola desde la consola | El usuario de Google Cloud que implementa un agente de consola desde la consola necesita permisos específicos para implementar un agente de consola en Google Cloud. | link:task-install-connector-google-bluexp-gcloud.html#console-permissions-google["Configurar permisos para crear un agente de consola"] 
+| Implementar un agente de consola desde la consola | El usuario de Google Cloud que implementa un agente de consola desde la consola necesita permisos específicos para implementar un agente de consola en Google Cloud. | link:task-install-agent-google-console-gcloud.html#console-permissions-google["Configurar permisos para crear un agente de consola"] 
 
 
-| Proporcionar permisos para un agente de consola | La cuenta de servicio de una instancia de VM del agente de consola debe tener permisos específicos para las operaciones diarias.  Debe asociar la cuenta de servicio con un agente de consola durante la implementación.  También debe asegurarse de que la política esté actualizada a medida que se agreguen nuevos permisos en versiones posteriores. | link:task-install-connector-google-bluexp-gcloud.html#console-permissions-google["Configurar permisos para un agente de consola"] 
+| Proporcionar permisos para un agente de consola | La cuenta de servicio de una instancia de VM del agente de consola debe tener permisos específicos para las operaciones diarias.  Debe asociar la cuenta de servicio con un agente de consola durante la implementación.  También debe asegurarse de que la política esté actualizada a medida que se agreguen nuevos permisos en versiones posteriores. | link:task-install-agent-google-console-gcloud.html#console-permissions-google["Configurar permisos para un agente de consola"] 
 |===
 
 

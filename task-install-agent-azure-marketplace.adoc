@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: task-install-connector-azure-marketplace.html 
+permalink: task-install-agent-azure-marketplace.html 
 keywords: install connector, azure connector installation, azure connector, install connector in azure, bluexp, create connector, marketplace, azure marketplace 
 summary: Para crear un agente de consola desde Azure Marketplace, debe configurar su red, preparar los permisos de Azure, revisar los requisitos de la instancia y luego crear el agente de consola. 
 ---
@@ -17,7 +17,7 @@ summary: Para crear un agente de consola desde Azure Marketplace, debe configura
 Puede crear un agente de consola en Azure directamente desde Azure Marketplace.  Para crear un agente de consola desde Azure Marketplace, debe configurar su red, preparar los permisos de Azure, revisar los requisitos de la instancia y luego crear el agente de consola.
 
 .Antes de empezar
-* Deberías tener unalink:concept-connectors.html["comprensión de los agentes de consola"] .
+* Deberías tener unalink:concept-agents.html["comprensión de los agentes de consola"] .
 * Revisarlink:reference-limitations.html["Limitaciones del agente de consola"] .
 
 
@@ -376,7 +376,7 @@ image:screenshot_azure_client_secret.gif["Una captura de pantalla del portal de 
 Inicie el agente de consola directamente desde Azure Marketplace.
 
 .Acerca de esta tarea
-Al crear el agente de consola desde Azure Marketplace, se configura una máquina virtual con una configuración predeterminada. link:reference-connector-default-config.html["Obtenga información sobre la configuración predeterminada para el agente de la consola"] .
+Al crear el agente de consola desde Azure Marketplace, se configura una máquina virtual con una configuración predeterminada. link:reference-agent-default-config.html["Obtenga información sobre la configuración predeterminada para el agente de la consola"] .
 
 .Antes de empezar
 Debes tener lo siguiente:

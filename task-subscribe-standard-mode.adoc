@@ -39,7 +39,7 @@ El siguiente vídeo muestra los pasos para suscribirse a NetApp Intelligent Serv
 .Suscríbase a NetApp Intelligent Services desde AWS Marketplace
 video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 .Pasos
-. Seleccione *Administración > *Credenciales*.
+. Seleccione *Administración > Credenciales*.
 . Seleccione *Credenciales de la organización*.
 . Seleccione el menú de acciones para un conjunto de credenciales asociadas con un agente de consola y luego seleccione *Configurar suscripción*.
 +
@@ -78,7 +78,7 @@ Para todas las demás organizaciones o cuentas, deberá asociar manualmente la s
 .Azur
 --
 .Pasos
-. Seleccione *Administración > *Credenciales*.
+. Seleccione *Administración > Credenciales*.
 . Seleccione *Credenciales de la organización*.
 . Seleccione el menú de acciones para un conjunto de credenciales asociadas con un agente de consola y luego seleccione *Configurar suscripción*.
 +

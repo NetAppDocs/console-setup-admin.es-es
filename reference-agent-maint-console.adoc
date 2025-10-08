@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: reference-connector-maint-console.html 
+permalink: reference-agent-maint-console.html 
 keywords: transparent proxy, connector certificate, agent maintenance console, proxy configuration, connector proxy. agent proxy 
 summary: Puede utilizar la consola de mantenimiento del agente de consola para configurar un agente de consola para que utilice un servidor proxy transparente. 
 ---

@@ -15,7 +15,7 @@ Esta tabla es de referencia y su entorno debe reflejar la tabla de permisos cuan
 
 
 | Cuenta de Google para implementar el agente | Costumbre | Proyecto de servicio  a| 
-link:task-install-connector-google-bluexp-gcloud.html#agent-permissions-google["Política de implementación del agente"]
+link:task-install-agent-google-console-gcloud.html#agent-permissions-google["Política de implementación del agente"]
  a| 
 computar.usuariodered
 | Implementación del agente en el proyecto de servicio 

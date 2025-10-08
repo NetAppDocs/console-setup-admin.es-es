@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: task-install-connector-azure-bluexp.html 
+permalink: task-install-agent-azure-console.html 
 keywords: install connector, azure connector installation, azure connector, install connector in azure, bluexp, create connector 
 summary: Para crear un agente de consola en Azure desde la consola de NetApp , debe configurar su red, preparar los permisos de Azure y luego crear el agente de consola. 
 ---
@@ -17,7 +17,7 @@ summary: Para crear un agente de consola en Azure desde la consola de NetApp , d
 Para crear un agente de consola en Azure desde la consola de NetApp , debe configurar su red, preparar los permisos de Azure y luego crear el agente de consola.
 
 .Antes de empezar
-* Deberías tener unalink:concept-connectors.html["comprensión de los agentes de consola"] .
+* Deberías tener unalink:concept-agents.html["comprensión de los agentes de consola"] .
 * Deberías revisarlink:reference-limitations.html["Limitaciones del agente de consola"] .
 
 
@@ -429,7 +429,7 @@ Su entidad de servicio ya está configurada y debería haber copiado el ID de la
 Cree el agente de consola directamente desde la consola de NetApp .
 
 .Acerca de esta tarea
-* Al crear el agente de consola desde la consola, se implementa una máquina virtual en Azure utilizando una configuración predeterminada.  No cambie a una instancia de VM más pequeña con menos CPU o menos RAM después de crear el agente de consola. link:reference-connector-default-config.html["Obtenga información sobre la configuración predeterminada para el agente de la consola"] .
+* Al crear el agente de consola desde la consola, se implementa una máquina virtual en Azure utilizando una configuración predeterminada. No cambie a una instancia de VM más pequeña con menos CPU o menos RAM después de crear el agente de consola. link:reference-agent-default-config.html["Obtenga información sobre la configuración predeterminada para el agente de la consola"] .
 * Cuando la consola implementa el agente de la consola, crea un rol personalizado y lo asigna a la máquina virtual del agente de la consola.  Esta función incluye permisos que permiten al agente de consola administrar recursos de Azure.  Debe asegurarse de que la función se mantenga actualizada a medida que se agreguen nuevos permisos en versiones posteriores. link:reference-permissions-azure.html["Obtenga más información sobre el rol personalizado para el agente de consola"] .
 
 

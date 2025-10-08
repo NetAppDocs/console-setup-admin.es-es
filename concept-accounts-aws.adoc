@@ -20,7 +20,7 @@ Descubra cómo la consola de NetApp utiliza las credenciales de AWS para realiza
 
 == Credenciales iniciales de AWS
 
-Cuando implementa un agente de consola desde la consola, debe proporcionar el ARN de un rol de IAM o claves de acceso para un usuario de IAM.  El método de autenticación debe tener permisos para implementar la consola en AWS.  Los permisos necesarios se enumeran en el enlace: task-install-connector-aws-the Console.html#console-permissions-aws[Política de implementación del agente para AWS].
+Cuando implementa un agente de consola desde la consola, debe proporcionar el ARN de un rol de IAM o claves de acceso para un usuario de IAM. El método de autenticación debe tener permisos para implementar la consola en AWS. Los permisos necesarios se enumeran en el enlace: task-install-agent-aws-the Console.html#console-permissions-aws[Política de implementación del agente para AWS].
 
 Cuando la consola inicia la instancia del agente de consola en AWS, crea una función de IAM y un perfil de instancia para la instancia.  También adjunta una política que proporciona al agente de la consola permisos para administrar recursos y procesos dentro de esa cuenta de AWS. link:reference-permissions-aws.html["Revisar cómo la Consola utiliza los permisos"] .
 
@@ -141,8 +141,8 @@ Para saber cómo configurar permisos, consulte las siguientes páginas:
 
 * Modo estándar
 +
-** link:task-install-connector-aws-marketplace.html#step-2-set-up-aws-permissions["Configurar permisos para una implementación de AWS Marketplace"]
-** link:task-install-connector-on-prem.html#agent-permission-aws-azure["Configurar permisos para implementaciones locales"]
+** link:task-install-agent-aws-marketplace.html#step-2-set-up-aws-permissions["Configurar permisos para una implementación de AWS Marketplace"]
+** link:task-install-agent-on-prem.html#agent-permission-aws-azure["Configurar permisos para implementaciones locales"]
 
 
 * Modo restringido

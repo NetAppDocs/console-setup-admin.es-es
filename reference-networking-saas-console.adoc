@@ -81,10 +81,10 @@ Los agentes de consola deben tener acceso a los mismos puntos finales que la con
 
 Configure el acceso al punto final de la red antes de instalar el agente de la consola.
 
-* link:task-install-connector-aws-bluexp.html#networking-aws-agent["Configurar el acceso a la red de AWS para un agente de consola"]
-* link:task-install-connector-azure-bluexp.html#networking-azure-agent["Configurar el acceso a la red de Azure para un agente de consola"]
-* link:task-install-connector-google-bluexp-gcloud.html#networking-gcp-agent["Configurar el acceso a la red de Google Cloud para un agente de la consola"]
-* link:task-install-connector-on-prem.html#network-access-agent["Configurar el acceso a la red local para un agente de consola"]
+* link:task-install-agent-aws-console.html#networking-aws-agent["Configurar el acceso a la red de AWS para un agente de consola"]
+* link:task-install-agent-azure-console.html#networking-azure-agent["Configurar el acceso a la red de Azure para un agente de consola"]
+* link:task-install-agent-google-console-gcloud.html#networking-gcp-agent["Configurar el acceso a la red de Google Cloud para un agente de la consola"]
+* link:task-install-agent-on-prem.html#network-access-agent["Configurar el acceso a la red local para un agente de consola"]
 
 
 

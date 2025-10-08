@@ -195,7 +195,7 @@ Referirse a link:https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policie
 ** Cree una política que incluya los permisos necesarios para crear un agente de consola.
 +
 *** https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["Ver los permisos necesarios para FSx para ONTAP"^]
-*** link:task-install-connector-aws-bluexp.html#aws-permissions-agent["Ver la política de implementación del agente"]
+*** link:task-install-agent-aws-console.html#aws-permissions-agent["Ver la política de implementación del agente"]
 
 
 
@@ -251,14 +251,14 @@ Reemplazar la suscripción actual del mercado por una nueva suscripción cambia 
 
 
 .Antes de empezar
-Debe crear un agente de consola antes de poder configurar una suscripción. link:concept-connectors.html#connector-installation["Aprenda a crear un agente de consola"] .
+Debe crear un agente de consola antes de poder configurar una suscripción. link:concept-agents.html#agent-installation["Aprenda a crear un agente de consola"] .
 
 El siguiente vídeo muestra los pasos para suscribirse a NetApp Intelligent Services desde AWS Marketplace:
 
 .Suscríbase a NetApp Intelligent Services desde AWS Marketplace
 video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 .Pasos
-. Seleccione *Administración > *Credenciales*.
+. Seleccione *Administración > Credenciales*.
 . Seleccione *Credenciales de la organización*.
 . Seleccione el menú de acciones para un conjunto de credenciales asociadas con un agente de consola y luego seleccione *Configurar suscripción*.
 +

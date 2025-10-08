@@ -56,7 +56,7 @@ Agregar o descubrir un sistema en la Consola asocia automáticamente el recurso 
 
 [role="quick-margin-list"]
 * link:task-iam-manage-resources.html["Aprenda a administrar la jerarquía de recursos de su organización"] .
-* link:task-iam-associate-connectors.html["Aprenda a asociar un agente de consola con una carpeta o un proyecto"] .
+* link:task-iam-associate-agents.html["Aprenda a asociar un agente de consola con una carpeta o un proyecto"] .
 
 
 .Información relacionada

@@ -83,7 +83,7 @@ Utilice uno de los siguientes comandos para verificar su agente de consola.  Tod
 ====
 Para obtener información más detallada sobre cómo acceder a los diagnósticos del agente de la consola, consulte los siguientes temas:
 
-* link:task-maintain-connectors.html#connect-linux-host["Comprobar el estado del agente de la consola (para implementaciones de host Linux)"]
+* link:task-maintain-agents.html#connect-linux-host["Comprobar el estado del agente de la consola (para implementaciones de host Linux)"]
 * link:task-agent-vm-config.html#connect-vcenter-host["Comprobar el estado del agente de la consola (para implementaciones de VCenter)"]
 
 

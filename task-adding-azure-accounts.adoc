@@ -276,7 +276,7 @@ Después de proporcionar una cuenta de Azure con los permisos necesarios, puede 
 Si acaba de crear estas credenciales en su proveedor de nube, es posible que pasen algunos minutos hasta que estén disponibles para su uso.  Espere unos minutos antes de agregar las credenciales a la consola.
 
 .Antes de empezar
-Debe crear un agente de consola antes de poder cambiar la configuración de la consola. link:concept-connectors.html#connector-installation["Aprenda a crear un agente de consola"] .
+Debe crear un agente de consola antes de poder cambiar la configuración de la consola. link:concept-agents.html#agent-installation["Aprenda a crear un agente de consola"] .
 
 .Pasos
 . Seleccione *Administración > Credenciales*.
@@ -323,7 +323,7 @@ Al reemplazar la suscripción actual del mercado, se actualiza para los sistemas
 
 
 .Pasos
-. Seleccione *Administración > *Credenciales*.
+. Seleccione *Administración > Credenciales*.
 . Seleccione *Credenciales de la organización*.
 . Seleccione el menú de acciones para un conjunto de credenciales asociadas con un agente de consola y luego seleccione *Configurar suscripción*.
 +

@@ -18,15 +18,15 @@ Hay algunas formas diferentes de crear un agente de consola en Google Cloud.  La
 
 Están disponibles las siguientes opciones de instalación:
 
-* link:task-install-connector-google-bluexp-gcloud.html["Cree el agente de la consola directamente desde la consola"](esta es la opción estándar)
+* link:task-install-agent-google-console-gcloud.html["Cree el agente de la consola directamente desde la consola"](esta es la opción estándar)
 +
 Esta acción inicia una instancia de VM que ejecuta Linux y el software del agente de consola en una VPC de su elección.
 
-* link:task-install-connector-google-bluexp-gcloud.html["Crear el agente de consola mediante Google Platform"]
+* link:task-install-agent-google-console-gcloud.html["Crear el agente de consola mediante Google Platform"]
 +
 Esta acción también inicia una instancia de VM que ejecuta Linux y el software del agente de la consola, pero la implementación se inicia directamente desde Google Cloud, en lugar de desde la consola.
 
-* link:task-install-connector-google-manual.html["Descargue e instale manualmente el software en su propio host Linux"]
+* link:task-install-agent-google-manual.html["Descargue e instale manualmente el software en su propio host Linux"]
 
 
 La opción de instalación que elija afectará su forma de prepararse para la instalación.  Esto incluye cómo proporcionar a la consola los permisos necesarios para autenticar y administrar recursos en Google Cloud.

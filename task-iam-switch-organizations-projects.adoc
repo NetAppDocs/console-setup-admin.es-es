@@ -69,7 +69,7 @@ Si tiene varios agentes de consola, puede alternar entre ellos para ver los sist
 
 
 .Información relacionada
-link:task-iam-associate-connectors.html["Asociar agentes con carpetas y proyectos"] .
+link:task-iam-associate-agents.html["Asociar agentes con carpetas y proyectos"] .
 
 
 

@@ -20,7 +20,7 @@ Descubra cómo la consola de NetApp usa las credenciales de Azure para realizar 
 
 == Credenciales iniciales de Azure
 
-Al implementar un agente de consola desde la consola, debe usar una cuenta de Azure o una entidad de servicio que tenga permisos para implementar la máquina virtual del agente de consola.  Los permisos necesarios se enumeran en ellink:task-install-connector-azure-bluexp.html#connector-custom-role["Política de implementación de agentes para Azure"] .
+Al implementar un agente de consola desde la consola, debe usar una cuenta de Azure o una entidad de servicio que tenga permisos para implementar la máquina virtual del agente de consola. Los permisos necesarios se enumeran en ellink:task-install-agent-azure-console.html#agent-custom-role["Política de implementación de agentes para Azure"] .
 
 Cuando la consola implementa la máquina virtual del agente de consola en Azure, habilita una https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["identidad administrada asignada por el sistema"^] en la máquina virtual, crea un rol personalizado y lo asigna a la máquina virtual.  El rol proporciona a la consola los permisos necesarios para administrar recursos y procesos dentro de esa suscripción de Azure. link:reference-permissions-azure.html["Revisar cómo la Consola utiliza los permisos"] .
 
@@ -108,8 +108,8 @@ Para saber cómo configurar permisos, consulte las siguientes páginas:
 
 * Modo estándar
 +
-** link:task-install-connector-azure-marketplace.html#step-3-set-up-permissions["Configurar permisos para una implementación de Azure Marketplace"]
-** link:task-install-connector-on-prem.html#agent-permission-aws-azure["Configurar permisos para implementaciones locales"]
+** link:task-install-agent-azure-marketplace.html#step-3-set-up-permissions["Configurar permisos para una implementación de Azure Marketplace"]
+** link:task-install-agent-on-prem.html#agent-permission-aws-azure["Configurar permisos para implementaciones locales"]
 
 
 * Modo restringido

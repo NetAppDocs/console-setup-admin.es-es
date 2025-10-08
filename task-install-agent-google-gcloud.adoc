@@ -17,7 +17,7 @@ summary: Para crear un agente de consola en Google Cloud mediante Google Cloud, 
 Para crear un agente de consola en Google Cloud mediante Google Cloud, debe configurar su red, preparar los permisos de Google Cloud, habilitar las API de Google Cloud y, luego, crear el agente de consola.
 
 .Antes de empezar
-* Deberías tener unalink:concept-connectors.html["comprensión de los agentes de consola"] .
+* Deberías tener unalink:concept-agents.html["comprensión de los agentes de consola"] .
 * Deberías revisarlink:reference-limitations.html["Limitaciones del agente de consola"] .
 
 
@@ -313,7 +313,7 @@ Esta tabla es de referencia y su entorno debe reflejar la tabla de permisos cuan
 
 
 | Cuenta de Google para implementar el agente | Costumbre | Proyecto de servicio  a| 
-link:task-install-connector-google-bluexp-gcloud.html#agent-permissions-google["Política de implementación del agente"]
+link:task-install-agent-google-console-gcloud.html#agent-permissions-google["Política de implementación del agente"]
  a| 
 computar.usuariodered
 | Implementación del agente en el proyecto de servicio 
@@ -378,7 +378,7 @@ https://cloud.google.com/apis/docs/getting-started#enabling_apis["Documentación
 
 Cree un agente de consola mediante Google Cloud.
 
-Al crear el agente de consola, se implementa una instancia de VM en Google Cloud con la configuración predeterminada.  No cambie a una instancia de VM más pequeña con menos CPU o menos RAM después de crear el agente de consola. link:reference-connector-default-config.html["Obtenga información sobre la configuración predeterminada para el agente de la consola"] .
+Al crear el agente de consola, se implementa una instancia de VM en Google Cloud con la configuración predeterminada. No cambie a una instancia de VM más pequeña con menos CPU o menos RAM después de crear el agente de consola. link:reference-agent-default-config.html["Obtenga información sobre la configuración predeterminada para el agente de la consola"] .
 
 .Antes de empezar
 Debes tener lo siguiente:
