@@ -83,7 +83,7 @@ Para actualizar las credenciales del sitio de soporte de NetApp (NSS) o para agr
 
 
  a| 
-\https:\\support.netapp.com
+\ https://support.netapp.com
  a| 
 Para obtener información de licencias y enviar mensajes de AutoSupport al soporte de NetApp , así como para recibir actualizaciones de software para Cloud Volumes ONTAP.
 
