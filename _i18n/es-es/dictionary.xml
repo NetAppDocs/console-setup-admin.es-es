@@ -414,7 +414,6 @@
   <block id="573514d5de621ecfe56c91e7c665d73d" category="inline-link">Par de regiones de Azure</block>
   <block id="4f674d86145ba6d0663c64dbe936c131" category="list-text">Si usa Cloud Volumes ONTAP, el agente de la consola debe implementarse en la misma región de Azure que los sistemas Cloud Volumes ONTAP que administra, o en la<block ref="71e0e9a7366955554f0600c5ea8cfc7f" category="inline-link-rx"></block> para los sistemas Cloud Volumes ONTAP .  Este requisito garantiza que se utilice una conexión de Azure Private Link entre Cloud Volumes ONTAP y sus cuentas de almacenamiento asociadas.</block>
   <block id="6882deeb4b60915fc6b7a36d03f329e3" category="inline-link">Descubra cómo Cloud Volumes ONTAP utiliza un enlace privado de Azure</block>
-  <block id="f09d4eba567a9e2b031517b472055a69" category="paragraph"><block ref="f09d4eba567a9e2b031517b472055a69" category="inline-link-rx"></block></block>
   <block id="407c4e9fac86b98147da49acd4fa0d01" category="list-text">Puertos</block>
   <block id="b4f722225ecf2639c63ce584e23ca7ca" category="list-text">No hay tráfico entrante al agente de la consola, a menos que usted lo inicie o si se utiliza como proxy para enviar mensajes de AutoSupport desde Cloud Volumes ONTAP al soporte de NetApp .</block>
   <block id="b68600c18c6dd9598d4518bc4a3f2c90" category="list-text">HTTP (80) y HTTPS (443) brindan acceso a la interfaz de usuario local, que utilizará en circunstancias excepcionales.</block>
@@ -672,11 +671,8 @@
   <block id="c531086859410bbf7d79b1d007644e8c" category="inline-link">Novedades en la versión de agosto de 2024 del Conector</block>
   <block id="3447cde4c00b98b6428bff77da46fd8c" category="list-text"><block ref="3447cde4c00b98b6428bff77da46fd8c" category="inline-link-rx"></block></block>
   <block id="116a2755907d33cc76c6cdc442c467b0" category="inline-link">Novedades en la BlueXP backup and recovery</block>
-  <block id="4e02af58c02d9f0704b79eb4e000eb20" category="list-text"><block ref="4e02af58c02d9f0704b79eb4e000eb20" category="inline-link-rx"></block></block>
   <block id="cdcec1bb4c8f6524979a702b1691d4f7" category="inline-link">Novedades de la BlueXP classification</block>
-  <block id="9212eddb7e41302606e7873d754ab3aa" category="list-text"><block ref="9212eddb7e41302606e7873d754ab3aa" category="inline-link-rx"></block></block>
   <block id="00dc7f0b165829f9f81bfaf12a8db2e4" category="inline-link">Novedades en la gestión de Cloud Volumes ONTAP en BlueXP</block>
-  <block id="941cdb6d27c83c929d4abe28f2321665" category="list-text"><block ref="941cdb6d27c83c929d4abe28f2321665" category="inline-link-rx"></block></block>
   <block id="6aa6935f7c0067aba2624a4ad2862e39" category="paragraph">Para obtener más detalles sobre el modo privado, incluido cómo actualizarlo, consulta lo siguiente:</block>
   <block id="a52b83d1b32a42f8a6aff3771048ba3c" category="inline-link">Conozca el modo privado</block>
   <block id="cdeb608610a882c24cefcb7daa878a1d" category="list-text"><block ref="cdeb608610a882c24cefcb7daa878a1d" category="inline-link-rx"></block></block>
@@ -708,7 +704,6 @@
   <block id="dfc4954338c7ff2d3998dbe991b1e115" category="list-text">Si tenía varias cuentas BlueXP , ahora tiene varias organizaciones BlueXP .</block>
   <block id="733cd47965367380792385cdc0bf4492" category="paragraph-title">API para BlueXP IAM</block>
   <block id="2047b2bd03a68b861064ed837a1828ad" category="inline-link">Obtenga más información sobre la API para BlueXP IAM</block>
-  <block id="ed819704d51143ca1736581a234a1365" category="paragraph">Este cambio introduce una nueva API para BlueXP IAM, pero es compatible con versiones anteriores de la API de arrendamiento.<block ref="100827e03f9a10b65527b59fa5323ff6" category="inline-link-rx"></block></block>
   <block id="8e3876adf8f21b1509ebcb0486d5bc9c" category="paragraph-title">Modos de implementación admitidos</block>
   <block id="a737f6ac26156f3770a49e30a21f7d73" category="paragraph">BlueXP IAM es compatible cuando se utiliza BlueXP en modo estándar.  Si utiliza BlueXP en modo restringido o modo privado, continuará usando una _cuenta_ de BlueXP para administrar espacios de trabajo, usuarios y recursos.</block>
   <block id="3163b3d4dc92f42d04ad4c79906dcdc3" category="list-title">¿A dónde ir después?</block>
@@ -750,16 +745,12 @@
   <block id="2e6f33758bf126679d5a0225c22673d3" category="cell">Pequeñas mejoras de seguridad y corrección de errores</block>
   <block id="008c6d012aabba0e44e2b94f8259635c" category="cell">22 de noviembre de 2024</block>
   <block id="57d300ca1fdd6058fd2a0882b05ba831" category="inline-link">Novedades en la página de BlueXP backup and recovery</block>
-  <block id="cc73bd495467f0768e5ab6fbca8c9fc3" category="cell">Ir a la<block ref="d08346bd70ea49c38d1ac500c69dd11c" category="inline-link-rx"></block> y consulte los cambios incluidos en la versión de noviembre de 2024</block>
   <block id="d9865720c88f775c3c7aa2407f42807e" category="cell">4 de noviembre de 2024 (versión 1.37)</block>
   <block id="79d6fb7fcd1197d45638c77f96548314" category="inline-link">Novedades en la página de BlueXP classification</block>
-  <block id="3634786b3e46e41488029a1f5adcfb51" category="cell">Ir a la<block ref="bb3538c6013ff73961739d7c28fee95d" category="inline-link-rx"></block> y consulte los cambios incluidos en las versiones 1.32 a 1.37</block>
   <block id="ecbeaffbfe15c72e3bf702b0d0bf9694" category="cell">11 de noviembre de 2024</block>
   <block id="5cee96e11788b0260fca227a2882f413" category="inline-link">Novedades en la página de administración de Cloud Volumes ONTAP</block>
-  <block id="2b06273c345679e8396f450bec75502c" category="cell">Ir a la<block ref="90e3b44730452fe495e75ab6e2b7eb58" category="inline-link-rx"></block> y consulte los cambios incluidos en las versiones de octubre de 2024 y noviembre de 2024</block>
   <block id="d415b73567ff8e090cdf21c20afeaa64" category="cell">26 de noviembre de 2024</block>
   <block id="4f2f9aa2e4b010fbcd8cded5bf523370" category="inline-link">Novedades en la página de administración de clústeres de ONTAP locales</block>
-  <block id="bad4efa38c7fe2023ac7a25606d5f186" category="cell">Ir a la<block ref="bb047968fd3a98ed3e45ad4e39500b8b" category="inline-link-rx"></block> y consulte los cambios incluidos en la versión de noviembre de 2024</block>
   <block id="93c9916354f3f5fa45f4019fd081f12a" category="paragraph">Si bien la BlueXP digital wallet y la BlueXP replication también están incluidas con el modo privado, no hay cambios con respecto a la versión anterior del modo privado.</block>
   <block id="7e0cee63c771cb3be42ccae3ca1f4360" category="doc">Conector 3.9.47</block>
   <block id="ea3677612bfa26ac44a6df6f71a061c7" category="paragraph">Esta versión del conector BlueXP incluye correcciones de errores y un cambio en los puntos finales contactados durante la instalación del conector.</block>
@@ -809,9 +800,7 @@
   <block id="03f247630aa241e4b15df35baf8f5fd1" category="inline-link">Novedades en la página del conector BlueXP</block>
   <block id="6a8544d6477cbe97e8f2b597011b60cc" category="cell">Ir a la<block ref="682cda11c1c81d1c1e6c42597faddff3" category="inline-link-rx"></block> y consulte los cambios incluidos para las versiones 3.9.48.</block>
   <block id="09d7c2dac047caa965175fead07159aa" category="cell">21 de febrero de 2025</block>
-  <block id="ea4e82ea5af0ff62421ac55574c06dca" category="cell">Ir a la<block ref="d08346bd70ea49c38d1ac500c69dd11c" category="inline-link-rx"></block> y consulte los cambios incluidos en la versión de febrero de 2025.</block>
   <block id="84d4352e42fd4f7ef347eca44f4f0a88" category="cell">22 de enero de 2025 (versión 1.39)</block>
-  <block id="b865a42d40947323c5392132a0cf5ae7" category="cell">Ir a la<block ref="bb3538c6013ff73961739d7c28fee95d" category="inline-link-rx"></block> y consulte los cambios incluidos en la versión 1.39.</block>
   <block id="66a5f69d070814deb69bf917dd07a6af" category="doc">Actualización del conector 3.9.49</block>
   <block id="00d64ff7da906ec5530c4e990fb334cb" category="section-title">Acceso al Administrador del sistema ONTAP cuando BlueXP utiliza un conector</block>
   <block id="b539e86fbaa7eae465366a0142624ec2" category="paragraph">Un administrador de BlueXP (usuarios con el rol de administrador de la organización) puede configurar BlueXP para solicitar a los usuarios que ingresen sus credenciales de ONTAP para acceder al administrador del sistema ONTAP .  Cuando esta configuración está habilitada, los usuarios deben ingresar sus credenciales de ONTAP cada vez, ya que no se almacenan en BlueXP.</block>
@@ -835,9 +824,7 @@
   <block id="5820ebbb1da4e36bc0eb0db564450b99" category="cell">3.9.50, 3.9.49</block>
   <block id="f16867c24816cbe638e99bd00c5d371b" category="cell">Ir a la<block ref="291fbb881b3918f162f476bad9d0c478" category="inline-link-rx"></block> y consulte los cambios incluidos para las versiones 3.9.50 y 3.9.49.</block>
   <block id="499d067ffbbd553e23809aa38aa67bfa" category="cell">17 de marzo de 2025</block>
-  <block id="0e231d3391a335865e696150143618bc" category="cell">Ir a la<block ref="d08346bd70ea49c38d1ac500c69dd11c" category="inline-link-rx"></block> y consulte los cambios incluidos en la versión de marzo de 2024.</block>
   <block id="10c518409c3dfbdd5e9839d2076ed5da" category="cell">10 de marzo de 2025 (versión 1.41)</block>
-  <block id="49e0c1b5be27dbeb84e3a7ca1d634276" category="cell">Ir a la<block ref="bb3538c6013ff73961739d7c28fee95d" category="inline-link-rx"></block> y consulte los cambios incluidos en las versiones 1.38 a 1.371.41.</block>
   <block id="1fa6d342759ba5c5a8f23c210cac048c" category="doc">Conector 3.9.51</block>
   <block id="44cd288eedf76c78c5b3b26935538537" category="paragraph">En este momento, la versión 3.9.51 está disponible para el modo estándar y el modo restringido.</block>
   <block id="7dd4f26252edc5554ac1671370b55f2e" category="section-title">Los puntos finales seguros para descargas de conectores ahora son compatibles con copias de seguridad, recuperación y protección contra ransomware.</block>
@@ -883,7 +870,6 @@
   <block id="918d08b069e4e8b9bd825945d099eff0" category="cell">3.9.52, 3.9.51</block>
   <block id="d29240cb60727e796e55d4bf8ac33966" category="cell">Ir a la<block ref="291fbb881b3918f162f476bad9d0c478" category="inline-link-rx"></block> y consulte los cambios incluidos para las versiones 3.9.52 y 3.9.50.</block>
   <block id="e48502083eb8949c8f65b2ccddd5adec" category="cell">12 de mayo de 2025</block>
-  <block id="fb6bee0c273267d6fdde07008552b62f" category="cell">Ir a la<block ref="d08346bd70ea49c38d1ac500c69dd11c" category="inline-link-rx"></block> y consulte los cambios incluidos en la versión de mayo de 2025.</block>
   <block id="3e18ba454ff1bfb5aee5e5d425b20ea3" category="cell">12 de mayo de 2025 (versión 1.43)</block>
   <block id="e9bf07011be1831466ac0bf1bbfe1140" category="doc">Conector 3.9.53</block>
   <block id="734a861d3d201b7a4e47067ddb5a7339" category="paragraph">Esta versión del conector BlueXP incluye mejoras de seguridad y correcciones de errores.</block>
@@ -948,9 +934,7 @@
   <block id="4e7c2b7c3f7b00a4db742817336d985b" category="inline-link">Novedades en la página de BlueXP</block>
   <block id="fb973b0a3719c8d26b960aed72e4fe3f" category="cell">Ir a la<block ref="f2bb5a2291ad18ff55b18a4b4553234a" category="inline-link-rx"></block> y consulte los cambios incluidos para las versiones 3.9.54 y 3.9.53.</block>
   <block id="67c66b3b8df7b2dee0354dd9f9fcec17" category="cell">28 de julio de 2025</block>
-  <block id="72d49cd6d8e65ef0285be68616ea0f51" category="cell">Ir a la<block ref="d08346bd70ea49c38d1ac500c69dd11c" category="inline-link-rx"></block> y consulte los cambios incluidos en la versión de julio de 2025.</block>
   <block id="9285fd96738351d44da30f801dea109b" category="cell">14 de julio de 2025 (versión 1.45)</block>
-  <block id="b3b08e322117d7e66cdd302866bc6d85" category="cell">Ir a la<block ref="bb3538c6013ff73961739d7c28fee95d" category="inline-link-rx"></block> .</block>
   <block id="b21ef378da4454971a6488eacb2b5c87" category="doc">Conector 3.9.55</block>
   <block id="7c5236578de836eb6dde25bc3e995d02" category="paragraph">Esta versión del conector BlueXP incluye mejoras de seguridad y correcciones de errores.</block>
   <block id="95d98fc23d5487afb84beeeea8decb64" category="paragraph">La versión 3.9.55 está disponible para el modo estándar y el modo restringido.</block>
@@ -1154,7 +1138,6 @@
   <block id="ed552ed06cb5ce7bb73441c3ee146d12" category="section-title">Agregue credenciales de AWS para FSx para ONTAP</block>
   <block id="74506e0d491b0b53f73a29d781f9b64f" category="paragraph">Agregue credenciales de AWS a la consola para proporcionar los permisos necesarios para crear y administrar un sistema FSx para ONTAP .</block>
   <block id="d3945d39633f2fd0a86e070328ffa632" category="inline-link">Aprenda a agregar credenciales de AWS a la consola para Amazon FSx para ONTAP</block>
-  <block id="b949ac31d4295634756154aece2b2b66" category="paragraph"><block ref="b949ac31d4295634756154aece2b2b66" category="inline-link-rx"></block></block>
   <block id="3bf21bdc87a8f6ebde5b75e8cb0d5138" category="section-title">Credenciales y suscripciones al mercado</block>
   <block id="f1b38e057f0b3e3f883f386f412fd0a9" category="inline-link-macro">Aprenda a asociar una suscripción de AWS</block>
   <block id="1a20071f82239d99732f8888027d653e" category="paragraph">Las credenciales que agrega a un agente de consola deben estar asociadas con una suscripción a AWS Marketplace para que pueda pagar Cloud Volumes ONTAP a una tarifa por hora (PAYGO) y otros servicios de datos de NetApp o mediante un contrato anual. <block ref="ec04a55c38de32bb88fa7b4155061e7c" category="inline-link-macro-rx"></block> .</block>
@@ -1247,7 +1230,6 @@
   <block id="baf581d10362cd2b4a862b9e83d0cfbb" category="paragraph">Cloud Volumes ONTAP puede residir en el mismo proyecto que el agente de consola o en un proyecto diferente.  Para implementar Cloud Volumes ONTAP en un proyecto diferente, primero debe agregar la cuenta de servicio y el rol del agente de consola a ese proyecto.</block>
   <block id="8bee474fd085c11334ab13b9c1a78d9e" category="inline-link-macro">Aprenda a configurar la cuenta de servicio</block>
   <block id="4ec920ccbe2fc417ccd7dcd957eb9653" category="inline-link">Aprenda a implementar Cloud Volumes ONTAP en Google Cloud y seleccione un proyecto</block>
-  <block id="486db18d2aa67b603506d28b5425dc88" category="list-text"><block ref="486db18d2aa67b603506d28b5425dc88" category="inline-link-rx"></block></block>
   <block id="1ffac481825810aa6d8bc2bbd6e9f0d5" category="summary">Un _agente de consola_ es un software de NetApp que se ejecuta en su red en la nube o en su red local.  Utilice un agente de consola para conectar los servicios de consola de NetApp a sus entornos de almacenamiento.</block>
   <block id="53101ed6c57b4f1b9f3eb58eb938c2b1" category="doc">Obtenga más información sobre los agentes de la consola de NetApp</block>
   <block id="a2bc646d8356827e60828ee5d135d25a" category="paragraph">Un _agente de consola_ se ejecuta en su red en la nube o en su red local.  Utilice un agente de consola para conectar los servicios de consola de NetApp a sus entornos de almacenamiento.</block>
@@ -1255,7 +1237,6 @@
   <block id="5c3c98f86750c7b0364106f4c4c18721" category="paragraph">Algunas funciones y servicios de la consola están disponibles si no implementa un agente de consola:</block>
   <block id="4d82a1ec1af02725042c8c785564ee7a" category="list-text">Amazon FSx for NetApp ONTAP</block>
   <block id="2e25b2633a61a7b4243d119b40c693e8" category="inline-link">Conozca qué acciones requieren un agente o enlace de consola</block>
-  <block id="3d1d96518767b51e8d2401459f94c232" category="paragraph">Algunas acciones requieren un agente de consola o un vínculo de cargas de trabajo de NetApp .<block ref="e97977aba4c80f6a9e86b7bcf8cdc1c1" category="inline-link-rx"></block></block>
   <block id="8d3abfc56116d32646bce9531012ccf6" category="list-text">Centro de automatización</block>
   <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="list-text">Azure NetApp Files</block>
   <block id="f991c5969c5c46c6f408fd726f910304" category="paragraph">No necesita un agente de consola para administrar Azure NetApp Files, pero se requiere uno para usar NetApp Data Classification para escanear Azure NetApp Files.</block>
@@ -1266,7 +1247,6 @@
   <block id="184e70c253a2ad370c338775e7482497" category="list-text">Descubrimiento directo de clústeres ONTAP locales</block>
   <block id="f9b71618b1d05cfcd0726a79c3f829f8" category="paragraph">No necesita un agente de consola para agregar un clúster ONTAP local a la consola, pero se requiere uno para funciones y servicios de datos adicionales de la consola.</block>
   <block id="9b049adb8a41cc7a0f049e9ffbda62b5" category="inline-link">Obtenga más información sobre las opciones de descubrimiento y administración para clústeres ONTAP locales</block>
-  <block id="6a9bba218e71d2777929e42afb6991ea" category="paragraph"><block ref="6a9bba218e71d2777929e42afb6991ea" category="inline-link-rx"></block></block>
   <block id="01ea8320c69e46ffe573d0801d9eefe1" category="list-text">Cargas de trabajo de NetApp</block>
   <block id="17adde6aed0933a9e39d1cd0883785c4" category="section-title">Cuando se requiere un agente de consola</block>
   <block id="ea7e44bae4d44c1c658ffe4ef1d40fab" category="paragraph">En el modo estándar, la consola requiere un agente de consola para:</block>
@@ -1292,7 +1272,6 @@
   <block id="2259d207d9b4ddbc18f89752f01f5e84" category="paragraph">Puede instalar agentes en las siguientes ubicaciones:</block>
   <block id="6beccc67ff905f7da0b29dece26b0485" category="list-text">Servicios web de Amazon</block>
   <block id="1668ca1bd914c1d847f23b491319ac91" category="list-text">Microsoft Azure</block>
-  <block id="a9a0542e13f44b5525e432eea3f1fc3b" category="paragraph">Implemente un agente de consola en Azure en la misma región que los sistemas Cloud Volumes ONTAP que administra.  Alternativamente, impleméntelo en el<block ref="71e0e9a7366955554f0600c5ea8cfc7f" category="inline-link-rx"></block> .  Esto garantiza que se utilice una conexión de Azure Private Link entre Cloud Volumes ONTAP y sus cuentas de almacenamiento asociadas.<block ref="ebdf8919a4d90c512f0e43f5b0739281" category="inline-link-rx"></block></block>
   <block id="d13cabcf02c7a4038fae930fb7b7ff0f" category="paragraph">Para utilizar la consola y los servicios de datos con Google Cloud, implemente su agente en Google Cloud.</block>
   <block id="695e0a47c56539eb9bcf6290d1c797d8" category="list-text">En sus instalaciones</block>
   <block id="6c42d9d3f2de2ec585181e975309fcf0" category="section-title">Comunicación con proveedores de la nube</block>
@@ -1462,7 +1441,6 @@
   <block id="f50849d7a51a2af22661c16f98df65ff" category="inline-link-macro">Roles de acceso a la consola de NetApp</block>
   <block id="a97fa38afe9727184ada1ed0c4bf8cbf" category="list-text"><block ref="a97fa38afe9727184ada1ed0c4bf8cbf" category="inline-link-macro-rx"></block></block>
   <block id="d0be151a63fab72d6333774c4ad643bb" category="inline-link">Obtenga más información sobre la API para NetApp Console IAM</block>
-  <block id="3d564d396e0f601d3aaa0af3f265e2ca" category="list-text"><block ref="3d564d396e0f601d3aaa0af3f265e2ca" category="inline-link-rx"></block></block>
   <block id="00755108fad233add4100be86dce2451" category="summary">Hay algunas formas diferentes de crear un agente de consola en AWS.  La forma más común es hacerlo directamente desde la consola de NetApp .</block>
   <block id="7ff9f8e2467774df163161a38d2d5040" category="doc">Opciones de instalación del agente de consola en AWS</block>
   <block id="b5afc81c4f24b143224e304b939a3f6c" category="paragraph">Están disponibles las siguientes opciones de instalación:</block>
@@ -1581,7 +1559,6 @@
   <block id="f4c6f851b00d5518bf888815de279aba" category="cell">Notas</block>
   <block id="34678ee868eeabce720fc4a0fd60c17a" category="cell">Soporte completo</block>
   <block id="34c6561859a3a97caa0248fbb4372124" category="inline-link">Ver la lista de destinos de respaldo admitidos para datos de ONTAP</block>
-  <block id="d35f01b814a685bf33223632c8c02dc9" category="cell">Compatible con regiones gubernamentales y regiones comerciales con modo restringido. No compatible con regiones soberanas con modo restringido. En el modo restringido, NetApp Backup and Recovery solo admite la copia de seguridad y la restauración de datos de volumen ONTAP .<block ref="9a868aa7b1ac276f990ea6d049f53427" category="inline-link-rx"></block> No se admite la realización de copias de seguridad ni la restauración de datos de aplicaciones ni de máquinas virtuales.</block>
   <block id="91d5470ff0de1d64ddb0c8c3bef0b246" category="cell">Clasificación de datos de NetApp</block>
   <block id="0a44fe605745a017fde35750e5fae36a" category="paragraph">Compatible con regiones gubernamentales con modo restringido.  No compatible con regiones comerciales ni con regiones soberanas con modo restringido.</block>
   <block id="63d604af1c7a5bfef29d50c6c2c2591f" category="cell">Puede acceder a la información de licencia y suscripción con las opciones de licencia compatibles que se enumeran a continuación para el modo restringido.</block>
@@ -1615,7 +1592,6 @@
   <block id="3cb695a43961514082b7be25eac12c0b" category="cell">*Servicios de datos*</block>
   <block id="ede10582776ac743c114b051021cf0ca" category="cell">Copia de seguridad y recuperación de NetApp</block>
   <block id="b17e900e063883a32cc6ff0df77599bf" category="inline-link">Ver la lista de destinos de respaldo admitidos para los datos de volumen de ONTAP</block>
-  <block id="c1c35b571a8270f43bf6faa6757452f6" category="cell">Sí<block ref="7017fcd1de8071674201a0278a852eae" category="inline-link-rx"></block></block>
   <block id="9a0927d2ec4654dfab564a09f0cadbf9" category="cell">Resiliencia de NetApp frente al ransomware</block>
   <block id="a5db9212acd617412153fca9cdf5d9d7" category="cell">Replicación de NetApp</block>
   <block id="928b1dc588c907971c8b25ff6a14aee2" category="cell">Almacenamiento en caché de volumen de NetApp</block>
@@ -1866,16 +1842,11 @@
   <block id="fcd7347bb021d8231184894bed7bd347" category="section-title">Cómo redescubrir sus sistemas</block>
   <block id="cdb83aacf48e960662fcf2d6745e5b60" category="paragraph">Consulte las siguientes páginas para redescubrir sus sistemas después de implementar un nuevo agente de consola.</block>
   <block id="6c0fb6078ec778ca2319e375a19e994b" category="inline-link">Agregar sistemas Cloud Volumes ONTAP existentes</block>
-  <block id="8fdf2adbca771b61e226157cc48ae918" category="list-text"><block ref="8fdf2adbca771b61e226157cc48ae918" category="inline-link-rx"></block></block>
   <block id="c5fbee6586294d81141f8dd158707985" category="inline-link">Descubra los clústeres ONTAP locales</block>
-  <block id="c6a562375e4b0fa48049f61f2822d10a" category="list-text"><block ref="c6a562375e4b0fa48049f61f2822d10a" category="inline-link-rx"></block></block>
   <block id="504f5f6c5adc93609131b644e3f8c2a9" category="inline-link">Crear o descubrir un sistema FSx para ONTAP</block>
-  <block id="c2a442cc7e270f03492b03623a59bddb" category="list-text"><block ref="c2a442cc7e270f03492b03623a59bddb" category="inline-link-rx"></block></block>
   <block id="8111d5a0f80f0b3c708f77dc1b05dc00" category="inline-link">Crear un sistema de Azure NetApp Files</block>
   <block id="e4a9dd1c7d750241fad0d52a3bc7903b" category="inline-link">Descubra los sistemas de la Serie E</block>
-  <block id="90a582acc370affa7fa401384859e582" category="list-text"><block ref="90a582acc370affa7fa401384859e582" category="inline-link-rx"></block></block>
   <block id="d85b01f001ee16ebd8eb1917c739d824" category="inline-link">Descubra los sistemas StorageGRID</block>
-  <block id="49193f8c0c9f916e42ecd0ff6595ef39" category="list-text"><block ref="49193f8c0c9f916e42ecd0ff6595ef39" category="inline-link-rx"></block></block>
   <block id="9957f1fffd0798d003f7701530308820" category="summary">La gestión de acceso e identidad de la consola de NetApp proporciona un rol de analista de soporte para ayudar con la supervisión y el soporte de casos.</block>
   <block id="bd35c1f622cddab38a157ba7ccffd7a0" category="doc">Rol de acceso de analista de soporte operativo para la consola de NetApp</block>
   <block id="7e901891254682b3e1fddc06e4e1938a" category="paragraph">Puede asignar el siguiente rol a los usuarios para brindarles acceso a alertas y monitoreo. Los usuarios con este rol también pueden abrir casos de soporte.</block>
@@ -2314,7 +2285,6 @@
   <block id="e5774ebea9f84178743febe066010c0e" category="inline-link-macro">Puntos de conexión para Cloud Volumes ONTAP en Azure</block>
   <block id="d64c0a8c2325cb4b58acab3ef2d51a05" category="list-text"><block ref="d64c0a8c2325cb4b58acab3ef2d51a05" category="inline-link-macro-rx"></block></block>
   <block id="90da399078404708cface539488b8fb2" category="inline-link-macro">Puntos finales para Cloud Volumes ONTAP en Google Cloud</block>
-  <block id="abdbc014cd83c041c48c93a9f6d716d3" category="list-text"><block ref="abdbc014cd83c041c48c93a9f6d716d3" category="inline-link-macro-rx"></block></block>
   <block id="8dfda8cf3bfed1ba46319b9487959873" category="inline-link">Consulte la documentación de los servicios de datos de NetApp correspondientes.</block>
   <block id="9e66adbc40ae0df7bfa345fcbb26e31b" category="paragraph"><block ref="9e66adbc40ae0df7bfa345fcbb26e31b" category="inline-link-rx"></block></block>
   <block id="a329e01ca77506585e48c6c0e5afa977" category="summary">Cuando la consola de NetApp inicia la instancia del agente en AWS, adjunta una política a la instancia que proporciona al agente permisos para administrar recursos y procesos dentro de esa cuenta de AWS.  El agente utiliza los permisos para realizar llamadas API a varios servicios de AWS, incluidos EC2, S3, CloudFormation, IAM, el Servicio de administración de claves y más.</block>
@@ -2796,28 +2766,22 @@
   <block id="c926e674205f7757d37d0a06a12a2b10" category="cell">Realice copias de seguridad de clústeres ONTAP locales en Amazon S3 con NetApp Backup and Recovery</block>
   <block id="194ec4e4b51309967d460875197de1ae" category="cell">Al activar las copias de seguridad en sus volúmenes ONTAP , NetApp Backup and Recovery le solicita que ingrese una clave de acceso y un secreto para un usuario de IAM que tenga permisos específicos.</block>
   <block id="ba37f89d4d4c6ea1b335169793666fbe" category="inline-link">Configurar permisos S3 para copias de seguridad</block>
-  <block id="12e11cedace336bc23a4b1c9ab448974" category="cell"><block ref="12e11cedace336bc23a4b1c9ab448974" category="inline-link-rx"></block></block>
   <block id="2bd154f3e1528430624d1980f1fe12c2" category="cell">Proporcionar permisos para los nodos de Cloud Volumes ONTAP</block>
   <block id="e62c731c4d23f9657ab99c9e7f8b49f5" category="cell">Se debe asociar una función de IAM a cada nodo de Cloud Volumes ONTAP en AWS.  Lo mismo ocurre con el mediador HA.  La opción predeterminada es dejar que la consola cree los roles de IAM para usted, pero puede usar los suyos propios al crear el sistema en la consola.</block>
   <block id="421a1f316880c0380ff3114c3bf34f83" category="inline-link">Aprenda a configurar usted mismo los roles de IAM</block>
-  <block id="1dde058782233339aff261555be71a1e" category="cell"><block ref="1dde058782233339aff261555be71a1e" category="inline-link-rx"></block></block>
   <block id="07914074e8936595a39fa14377c5047c" category="cell">Implementar el agente de datos en AWS</block>
   <block id="18a3707b00c2a06ba4d52fc010e2ac0e" category="cell">La cuenta de usuario de AWS que utiliza para implementar el agente de datos debe tener permisos específicos.</block>
   <block id="572539efea3b8fc37d4d9f01097ce1b1" category="inline-link">Permisos necesarios para implementar el agente de datos en AWS</block>
-  <block id="81a564d7b4e8b4dee115ac457361e17e" category="cell"><block ref="81a564d7b4e8b4dee115ac457361e17e" category="inline-link-rx"></block></block>
   <block id="5a4538181503849bbcd06a951c8a8e2d" category="cell">Proporcionar permisos para el agente de datos</block>
   <block id="11fe2f849cbd1fdcefbacb5d7b98f4fd" category="cell">Cuando NetApp Copy and Sync implementa el agente de datos, crea una función de IAM para la instancia del agente de datos.  Puede implementar el agente de datos utilizando su propio rol de IAM, si lo prefiere.</block>
   <block id="9b99759f27fdd4623c9ea015c92207fd" category="inline-link">Requisitos para utilizar su propio rol de IAM con el agente de datos de AWS</block>
-  <block id="10f1c56c57fc53ad92122681abc21632" category="cell"><block ref="10f1c56c57fc53ad92122681abc21632" category="inline-link-rx"></block></block>
   <block id="ee62d3f2099b104d52eb4e2fe59eb860" category="cell">Habilitar el acceso a AWS para un agente de datos instalado manualmente</block>
   <block id="18f5ca31365bcff8913658163e306178" category="cell">Si utiliza el agente de datos con una relación de sincronización que incluye un bucket S3, deberá preparar el host Linux para el acceso a AWS.  Cuando instale el agente de datos, deberá proporcionar claves de AWS para un usuario de IAM que tenga acceso programático y permisos específicos.</block>
   <block id="c9e33dfa8b5904f2c5eeefbab35a3d9b" category="inline-link">Habilitación del acceso a AWS</block>
-  <block id="fcf846fa24de23410cb4903a97ac9f0d" category="cell"><block ref="fcf846fa24de23410cb4903a97ac9f0d" category="inline-link-rx"></block></block>
   <block id="36df1b975561708b246ef1801ea416e5" category="section-title">FSx para ONTAP</block>
   <block id="71a673e1aed38a0f77d59612fb124b6b" category="cell">Crear y administrar FSx para ONTAP</block>
   <block id="bf974d7366700efa3e6de70160241c88" category="cell">Para crear o administrar un sistema Amazon FSx for NetApp ONTAP , debe agregar credenciales de AWS a la consola proporcionando el ARN de una función de IAM que le otorga a la consola los permisos necesarios.</block>
   <block id="8d5c6b0c966cc9b5f51ab3ebb991e7ec" category="inline-link">Aprenda a configurar las credenciales de AWS para FSx</block>
-  <block id="c52aa019132bc05b5d90dee260d8fb6a" category="cell"><block ref="c52aa019132bc05b5d90dee260d8fb6a" category="inline-link-rx"></block></block>
   <block id="6bc8bd282f003afcaaf88391550efbaf" category="cell">Integración de clústeres ONTAP locales en Amazon S3</block>
   <block id="10c690a39fb5b28e51f8b6d7c7fd3552" category="cell">Cuando habilita NetApp Cloud Tiering en AWS, el asistente le solicita que ingrese una clave de acceso y una clave secreta.  Estas credenciales se pasan al clúster de ONTAP para que ONTAP pueda organizar los datos en niveles en el depósito S3.</block>
   <block id="827bb82562627531a1105788bd9826e6" category="inline-link">Configurar permisos S3 para niveles</block>
@@ -2838,16 +2802,13 @@
   <block id="963c1d6b60ef9ab217e4a2f0f2f4a47f" category="list-text">Desea utilizar la función "Buscar y restaurar"</block>
   <block id="0ce14c433ae57608c1aced4d631bc039" category="list-text">Desea utilizar claves de cifrado administradas por el cliente (CMEK)</block>
   <block id="8625ed737cea7841c422023f4e27bc1d" category="inline-link">Realice una copia de seguridad de los datos de Cloud Volumes ONTAP en Azure Blob Storage con Backup and Recovery</block>
-  <block id="518ffd78f998d0a25c5446da8989b6a6" category="list-text"><block ref="518ffd78f998d0a25c5446da8989b6a6" category="inline-link-rx"></block></block>
   <block id="f66493a5c1b72a6a6a675e1d79371789" category="cell">Realizar copias de seguridad de clústeres de ONTAP locales en el almacenamiento de blobs de Azure</block>
   <block id="df8a92294eabcce5e6356671d915d447" category="cell">Al usar NetApp Backup and Recovery para realizar copias de seguridad de clústeres ONTAP locales, debe agregar permisos a un agente de consola para poder usar la funcionalidad "Buscar y restaurar".</block>
   <block id="957901780fae6c72beed34248e8e252d" category="inline-link">Realice una copia de seguridad de los datos de ONTAP locales en el almacenamiento de blobs de Azure con Backup and Recovery</block>
-  <block id="6d94d8c7b4ec021fb7a5a5704629681e" category="cell"><block ref="6d94d8c7b4ec021fb7a5a5704629681e" category="inline-link-rx"></block></block>
   <block id="2647d0cabcc3f6f95c50e907a499a04c" category="section-title">Copia y sincronización de NetApp</block>
   <block id="c3cccd9ce135f450a9619b57dba5e5f1" category="cell">Implementar el agente de datos en Azure</block>
   <block id="05f8fb1bf008e214609328fb34b7e532" category="cell">La cuenta de usuario de Azure que utilice para implementar el agente de datos debe tener los permisos necesarios.</block>
   <block id="c658fd4f091c10877f154fbf84fbee89" category="inline-link">Permisos necesarios para implementar el agente de datos en Azure</block>
-  <block id="fe6b9c6ed5d8a08b2dbc8fc0c9f1b1e1" category="cell"><block ref="fe6b9c6ed5d8a08b2dbc8fc0c9f1b1e1" category="inline-link-rx"></block></block>
   <block id="d3846482b7a5f3467b05518965422219" category="section-title">Permisos de Google Cloud</block>
   <block id="29979c57d65e0d9e92c7917a495cdb0b" category="paragraph">La consola requiere permisos de Google Cloud para un agente de consola y para servicios individuales.</block>
   <block id="e31e5964808968a788e49e50220d6ef1" category="cell">El usuario de Google Cloud que implementa un agente de consola desde la consola necesita permisos específicos para implementar un agente de consola en Google Cloud.</block>
@@ -2856,30 +2817,23 @@
   <block id="1b29b6160eb822ba4beffa87a9ffbc2f" category="inline-link-macro">Configurar permisos para un agente de consola</block>
   <block id="b5b529e8dc821910caacb50b880d2487" category="cell">Realizar copias de seguridad de Cloud Volumes ONTAP en Google Cloud</block>
   <block id="cd84e76d2557bd459057089ba5e1385c" category="inline-link">Realice una copia de seguridad de los datos de Cloud Volumes ONTAP en Google Cloud Storage con Backup and Recovery</block>
-  <block id="3b5162ff96cd00bbd1b1ad424d59bd8f" category="list-text"><block ref="3b5162ff96cd00bbd1b1ad424d59bd8f" category="inline-link-rx"></block></block>
   <block id="dc5b71cece1f13a67fc01472a59d8781" category="inline-link">Permisos para CMEK</block>
-  <block id="564104d82a92323d6161aa7da0e8071a" category="list-text"><block ref="564104d82a92323d6161aa7da0e8071a" category="inline-link-rx"></block></block>
   <block id="6e9436752850e460930666efdaf1e025" category="cell">Realice copias de seguridad de clústeres ONTAP locales en Google Cloud</block>
   <block id="6d4f1161a06d11fa7424e224b2a86d25" category="inline-link">Realice una copia de seguridad de los datos locales de ONTAP en Google Cloud Storage con Backup and Recovery</block>
-  <block id="b9142ed8495860430205961c82c827a0" category="cell"><block ref="b9142ed8495860430205961c82c827a0" category="inline-link-rx"></block></block>
   <block id="326383c715f7d58418eab62449d7e6b5" category="cell">Implementar el agente de datos en Google Cloud</block>
   <block id="6f0cd56d775c80607dc578326e3840bd" category="cell">Asegúrese de que el usuario de Google Cloud que implementa el agente de datos tenga los permisos necesarios.</block>
   <block id="23c5a36a4e18015e399e97b3a48f2255" category="inline-link">Permisos necesarios para implementar el agente de datos en Google Cloud</block>
-  <block id="958a0d8cd16ff833279695f251ff3807" category="cell"><block ref="958a0d8cd16ff833279695f251ff3807" category="inline-link-rx"></block></block>
   <block id="835763cb29b6af444564b2a25239e51b" category="cell">Habilitar el acceso a Google Cloud para un agente de datos instalado manualmente</block>
   <block id="9bb2d547aba26d64f54ee705473214d6" category="cell">Si planea utilizar el agente de datos con una relación de sincronización que incluye un depósito de Google Cloud Storage, entonces debe preparar el host Linux para el acceso a Google Cloud.  Cuando instale el agente de datos, deberá proporcionar una clave para una cuenta de servicio que tenga permisos específicos.</block>
   <block id="71921838fce69c9d045aeb2ad30c1eb5" category="inline-link">Habilitar el acceso a Google Cloud</block>
-  <block id="9b9b58eacf6390de371391672ac7e8ec" category="cell"><block ref="9b9b58eacf6390de371391672ac7e8ec" category="inline-link-rx"></block></block>
   <block id="23c27147b4e0e766d76ac0f6e872424e" category="section-title">Permisos de StorageGRID</block>
   <block id="f8652e062d0b34a9d24569c70cc3984b" category="paragraph">La consola requiere permisos de StorageGRID para dos servicios.</block>
   <block id="9f60318dba873b8aa280da655451eafb" category="cell">Realice copias de seguridad de clústeres ONTAP locales en StorageGRID</block>
   <block id="9445c71cb630b8ebb44bf8793effe2a2" category="cell">Cuando prepara StorageGRID como destino de respaldo para clústeres de ONTAP , NetApp Backup and Recovery le solicita que ingrese una clave de acceso y un secreto para un usuario de IAM que tenga permisos específicos.</block>
   <block id="08cdeb7ce64fda06111111c8fea66510" category="inline-link">Prepare StorageGRID como su destino de respaldo</block>
-  <block id="86b4fb0c56ea4924e5069e8f25d3a778" category="cell"><block ref="86b4fb0c56ea4924e5069e8f25d3a778" category="inline-link-rx"></block></block>
   <block id="15160ee45cf43a64b4673fc1b3aa1643" category="cell">Integración de clústeres ONTAP locales en StorageGRID</block>
   <block id="11e2d6813eb0483f8b31076b7e6c7afa" category="cell">Cuando configura NetApp Cloud Tiering en StorageGRID, debe proporcionar a Cloud Tiering una clave de acceso S3 y una clave secreta.  La organización en niveles de la nube utiliza las claves para acceder a sus buckets.</block>
   <block id="7642cdcc7094ebeb3d2e2a2bb2bfa636" category="inline-link">Preparar la organización en niveles para StorageGRID</block>
-  <block id="3ef741c544ca847d3024be8a651b7fe2" category="cell"><block ref="3ef741c544ca847d3024be8a651b7fe2" category="inline-link-rx"></block></block>
   <block id="e1edd376b42eb32b04ef863ae044ce62" category="summary">El grupo de seguridad de AWS para el agente de consola requiere reglas entrantes y salientes.  La consola de NetApp crea automáticamente este grupo de seguridad cuando usted crea un agente de consola desde la consola.  Debe configurar este grupo de seguridad para todas las demás opciones de instalación.</block>
   <block id="5a931853aad1f1d690678ccb9b8a0bc7" category="doc">Reglas del grupo de seguridad del agente de consola en AWS</block>
   <block id="aa6e1b8ebab31b906753ceae2a08d78c" category="paragraph">El grupo de seguridad de AWS para el agente requiere reglas entrantes y salientes.  La consola de NetApp crea automáticamente este grupo de seguridad cuando usted crea un agente de consola desde la consola.  Debe configurar este grupo de seguridad para todas las demás opciones de instalación.</block>
@@ -2928,7 +2882,6 @@
   <block id="079f3f3a9e5f3446518d4bebe9e1d5f1" category="doc">Reglas del grupo de seguridad del agente de consola en Azure</block>
   <block id="9fcefa244d66c49cdb3c2e28234c2f42" category="cell">Proporciona acceso HTTPS desde los navegadores web del cliente a la interfaz de usuario local y conexiones desde la instancia de clasificación de datos de NetApp</block>
   <block id="81134f47f2ab0d8ef284a48a6aeee3db" category="inline-link">Descubra cómo se utiliza el agente como proxy para los mensajes de AutoSupport</block>
-  <block id="ee471c2d4a3ccf607b27ef9575a6015f" category="cell">Proporciona a Cloud Volumes ONTAP acceso a Internet para enviar mensajes de AutoSupport al soporte de NetApp .  Debe abrir este puerto manualmente después de la implementación.<block ref="7dcbbd9895502c86c4c9b4df53210c58" category="inline-link-rx"></block></block>
   <block id="b328da3e839d02fc907b65467b5e31ea" category="paragraph">Si necesita reglas rígidas para el tráfico saliente, puede utilizar la siguiente información para abrir solo aquellos puertos que el agente requiere para la comunicación saliente.</block>
   <block id="97cd847069f6f4b5f1e2bd1c8341ab6c" category="cell">Llamadas API a Azure, a ONTAP, a NetApp Data Classification y envío de mensajes de AutoSupport a NetApp</block>
   <block id="74794c3be947278b7172132c8ec473f8" category="summary">Las reglas de firewall de Google Cloud para el agente requieren reglas tanto entrantes como salientes.  La consola de NetApp crea automáticamente este grupo de seguridad cuando crea un agente de consola desde la consola. Para otras opciones de instalación, debe configurar este grupo de seguridad manualmente.</block>
@@ -2945,19 +2898,12 @@
   <block id="d279ef9d3fa427882e45e653bc7b1949" category="doc">Qué puedes hacer a continuación (modo restringido)</block>
   <block id="9ed3d93e6149b9255047c4f345ace3ed" category="paragraph">Para obtener ayuda, consulte la documentación de estos servicios:</block>
   <block id="d75d347ae1d51e933d39fea688b0abf1" category="inline-link">Documentación de Azure NetApp Files</block>
-  <block id="d65407cebf6d2e36f3f922a3e220c70d" category="list-text"><block ref="d65407cebf6d2e36f3f922a3e220c70d" category="inline-link-rx"></block></block>
   <block id="6187e32203fd05e22e575166349f5b99" category="inline-link">Documentos de copia de seguridad y recuperación</block>
-  <block id="bca13516ef3cfec79ff01148d8045101" category="list-text"><block ref="bca13516ef3cfec79ff01148d8045101" category="inline-link-rx"></block></block>
   <block id="e97ae785ddbd746339946844f92175e6" category="inline-link">Documentos de clasificación</block>
-  <block id="7c28b52095b10154ef9a5a9b2d86d181" category="list-text"><block ref="7c28b52095b10154ef9a5a9b2d86d181" category="inline-link-rx"></block></block>
   <block id="2971acb1ab572cfb61b7c86d49e2b300" category="inline-link">Documentación de Cloud Volumes ONTAP</block>
-  <block id="e45aa572e4fc463c8b2aa0b4bb010689" category="list-text"><block ref="e45aa572e4fc463c8b2aa0b4bb010689" category="inline-link-rx"></block></block>
   <block id="32bf39c0f4f8e0ff3b8343a1c55eccc0" category="inline-link">Documentación de la billetera digital</block>
-  <block id="950b8d2ee51e322cd0332cda491f261e" category="list-text"><block ref="950b8d2ee51e322cd0332cda491f261e" category="inline-link-rx"></block></block>
   <block id="3014dc2d87cf02248e7abe6b8ac89106" category="inline-link">Documentación del clúster ONTAP local</block>
-  <block id="3c2636f752222ce604af87906e481f03" category="list-text"><block ref="3c2636f752222ce604af87906e481f03" category="inline-link-rx"></block></block>
   <block id="7596270426e8c5f92be308ff330e0e64" category="inline-link">Documentos de replicación</block>
-  <block id="17ba1853097c1b83e5a82753f8133c2e" category="list-text"><block ref="17ba1853097c1b83e5a82753f8133c2e" category="inline-link-rx"></block></block>
   <block id="2a9ab4f690bade887dade42f4a0f412b" category="inline-link-macro">Modos de implementación de la consola de NetApp</block>
   <block id="d207a80d28ecc0fdd948737abee4ead7" category="paragraph"><block ref="d207a80d28ecc0fdd948737abee4ead7" category="inline-link-macro-rx"></block></block>
   <block id="b0fff5137090a82065e80b458cc6b247" category="summary">Ahora que ha iniciado sesión y configurado la consola de NetApp en modo estándar, los usuarios pueden crear y descubrir sistemas de almacenamiento y utilizar servicios de datos de NetApp .</block>
@@ -2965,7 +2911,6 @@
   <block id="1631307de579ca654518e4c823f3a805" category="paragraph">Ahora que ha iniciado sesión y configurado la consola de NetApp en modo estándar, los usuarios pueden crear y descubrir sistemas de almacenamiento y utilizar servicios de datos de NetApp .</block>
   <block id="d5ac47786c5ecc4bccfda87432027f10" category="admonition">Si instaló un agente de consola en AWS, Microsoft Azure o Google Cloud, la consola descubre automáticamente información sobre los buckets de Amazon S3, Azure Blob Storage o Google Cloud Storage en la ubicación donde está instalado el agente.  Estos sistemas se agregan automáticamente a la página *Sistemas*.</block>
   <block id="c1c3022dcc260fbaf1dede24f4963496" category="inline-link">Página de inicio de la documentación de la consola de NetApp</block>
-  <block id="c0879d4e3e96b78a75b570d2d369f118" category="paragraph">Para obtener ayuda, vaya a<block ref="8483a0398a853c776d6ec0ca8b8f72e9" category="inline-link-rx"></block> para ver la documentación de la consola de NetApp .</block>
   <block id="02d943e056fd84c122f270e9db3de326" category="summary">Agregue y administre las credenciales de AWS para que la consola de NetApp tenga los permisos que necesita para implementar y administrar recursos de la nube en sus cuentas de AWS.  Si administra varias suscripciones de AWS, puede asignar a cada una de ellas diferentes credenciales de AWS desde la página Credenciales.</block>
   <block id="51c9eb8f2bdf1ba7a4e0dbc5ca8299bd" category="doc">Administrar las credenciales de AWS y las suscripciones al Marketplace para la consola de NetApp</block>
   <block id="d627e8413e37270774742dd64f2f5b41" category="paragraph">Agregue y administre las credenciales de AWS para poder implementar y administrar recursos de la nube en sus cuentas de AWS desde la consola de NetApp .  Si administra varias suscripciones de AWS Marketplace, puede asignar a cada una de ellas diferentes credenciales de AWS desde la página Credenciales.</block>
@@ -2978,7 +2923,6 @@
   <block id="b7a848ec238dd094b177100e78ff06a3" category="paragraph">Agregar nuevas credenciales de AWS a la consola proporciona los permisos necesarios para crear un agente de consola. <block ref="d0e6204fefda37da5b5c61d3ad4082f6" category="inline-xref-macro-rx"></block> .</block>
   <block id="3da47a3f3c0119e018d02075127a00ff" category="list-text">Agregue credenciales de AWS a la consola para FSx para ONTAP</block>
   <block id="f63d604edef29843d35ad367e0d82814" category="inline-link">Aprenda a configurar permisos para FSx para ONTAP</block>
-  <block id="2a4a88fb166990c65e380a867dc0af52" category="paragraph">Agregue nuevas credenciales de AWS a la consola para crear y administrar FSx para ONTAP.<block ref="07664dcf2b17e9e9636df6c1a5a6f557" category="inline-link-rx"></block></block>
   <block id="d40f2c83e95f6746ea810ba2593deb2d" category="section-title">Cómo rotar credenciales</block>
   <block id="e7273d95e9d37fd9da1a8a44576c6922" category="inline-link-macro">Obtenga más información sobre las credenciales y permisos de AWS</block>
   <block id="c2a5f59127daff8b6605662687767286" category="paragraph">La consola de NetApp le permite proporcionar credenciales de AWS de varias maneras: un rol de IAM asociado con la instancia del agente, asumiendo un rol de IAM en una cuenta confiable o proporcionando claves de acceso de AWS. <block ref="327ad200be450c94b449dea92a32b142" category="inline-link-macro-rx"></block> .</block>
@@ -3036,7 +2980,6 @@
   <block id="e8cffeeec612132e8c2cb2355463f31f" category="paragraph">Referirse a <block ref="ac3530460cd18c242c3653db3709495c" category="inline-link-macro-rx"></block> para obtener más información sobre el acceso a recursos entre cuentas en IAM.</block>
   <block id="7770b43cc8b94c3a2a19f58dd17562a4" category="list-text">Cree una política que incluya los permisos necesarios para crear un agente de consola.</block>
   <block id="3d35bba2e5ea6e739fb94736dc402017" category="inline-link">Ver los permisos necesarios para FSx para ONTAP</block>
-  <block id="f36b248a3e4e722bcc9292d2e5151abc" category="list-text"><block ref="f36b248a3e4e722bcc9292d2e5151abc" category="inline-link-rx"></block></block>
   <block id="c19d1741d0fa79c8b012a7f8b068bc6c" category="inline-link-macro">Ver la política de implementación del agente</block>
   <block id="884fd0826fb740e296bb4324a3742247" category="list-text">Copia el ARN del rol de IAM para que puedas pegarlo en la consola en el siguiente paso.</block>
   <block id="d04fbc50c09432c35c0eb302581b70e6" category="inline-xref">Ahora puedes agregarlo a la consola</block>
@@ -3050,7 +2993,6 @@
   <block id="8cf335d7d3b1dd5cdac30699d20489c0" category="list-text">*Definir credenciales*: proporcione el ARN (nombre de recurso de Amazon) de la función de IAM.</block>
   <block id="b07bcd019d5673f40409ccc629aee309" category="section-title">Agregar credenciales a la consola para Amazon FSx para ONTAP</block>
   <block id="0967d5014be6ea1485ad3e2ef66038b4" category="inline-link">La documentación de la consola para Amazon FSx para ONTAP</block>
-  <block id="61ff856137c8bc1fe2f4fc536706ee0f" category="paragraph">Para obtener más detalles, consulte la<block ref="7a47913e8a2d8cc2b4688508236ccf64" category="inline-link-rx"></block></block>
   <block id="ff462988ef2bf728297fe5ed85ddc08d" category="section-title">Configurar una suscripción a AWS</block>
   <block id="06efaa955480ed147875fb9eaea13502" category="paragraph">Después de agregar sus credenciales de AWS, puede configurar una suscripción a AWS Marketplace con esas credenciales.  La suscripción le permite pagar Cloud Volumes ONTAP a una tarifa por hora (PAYGO) o mediante un contrato anual, y pagar otros servicios de datos.</block>
   <block id="baaf3fcde87b40756b9492e5ed1f488b" category="paragraph">Hay dos escenarios en los que podrías configurar una suscripción a AWS Marketplace después de haber agregado las credenciales:</block>
@@ -3214,13 +3156,9 @@
   <block id="58eaebf972358f1cf03d386a4ade1a0f" category="paragraph-title">¿Que sigue?</block>
   <block id="71e32bbdd672e63bea65d67ecaa9f394" category="paragraph">Los usuarios ahora pueden seleccionar la cuenta al crear nuevos sistemas Cloud Volumes ONTAP y al registrar sistemas Cloud Volumes ONTAP existentes.</block>
   <block id="6602afb860a6cca23c3b75bf601365eb" category="inline-link">Lanzamiento de Cloud Volumes ONTAP en AWS</block>
-  <block id="6cfeb8c907e4b67e454993b95d8b4c8b" category="list-text"><block ref="6cfeb8c907e4b67e454993b95d8b4c8b" category="inline-link-rx"></block></block>
   <block id="7ca1af679f0ba86814f2ad58a578cb7c" category="inline-link">Lanzamiento de Cloud Volumes ONTAP en Azure</block>
-  <block id="27a3e4e8b80492209761738784b770d5" category="list-text"><block ref="27a3e4e8b80492209761738784b770d5" category="inline-link-rx"></block></block>
   <block id="254d5c87d5ab437395f866390ea49cd0" category="inline-link">Lanzamiento de Cloud Volumes ONTAP en Google Cloud</block>
-  <block id="f8c7ce78aaf937671ef25c9c931e368e" category="list-text"><block ref="f8c7ce78aaf937671ef25c9c931e368e" category="inline-link-rx"></block></block>
   <block id="a37ea04c3e1568f7c0e8e6abc9104d40" category="inline-link">Registro de sistemas de pago por uso</block>
-  <block id="b973035f0b680495b14f344d6beef53c" category="list-text"><block ref="b973035f0b680495b14f344d6beef53c" category="inline-link-rx"></block></block>
   <block id="8cb2ff10d15cea1a460cee3b506d5a6c" category="section-title">Actualizar las credenciales de NSS</block>
   <block id="256ed78b4e0484125eb0f0e66fdb7156" category="inline-link-macro">Obtenga más información sobre el Centro de notificaciones</block>
   <block id="7ae67a8f0cad963ada3c4c6ef2408149" category="paragraph">Por razones de seguridad, debe actualizar sus credenciales NSS cada 90 días.  Se le notificará en el centro de notificaciones de la consola si su credencial NSS ha expirado. <block ref="7547de016d191efcd551f32d625b2bc1" category="inline-link-macro-rx"></block> .</block>
@@ -3351,7 +3289,6 @@
   <block id="2a398a7caf83846d0b6a5ffb7e46e036" category="paragraph">Si configuró un agente de consola para usar un servidor proxy, puede habilitar el tráfico de API directo en el agente de consola para enviar llamadas de API directamente a los servicios del proveedor de nube sin pasar por el proxy. Los agentes que se ejecutan en AWS, Azure o Google Cloud admiten esta opción.</block>
   <block id="c37870a98a047f7cae1ee48e164d5230" category="paragraph">Si deshabilita Azure Private Links con Cloud Volumes ONTAP y usa puntos de conexión de servicio, habilite el tráfico de API directo.  De lo contrario, el tráfico no se enrutará correctamente.</block>
   <block id="ac10c9401f16ed5ff0a029bce2712adc" category="inline-link">Obtenga más información sobre el uso de Azure Private Link o puntos de conexión de servicio con Cloud Volumes ONTAP</block>
-  <block id="6143580a5ae490efe32d3c566650ad6c" category="paragraph"><block ref="6143580a5ae490efe32d3c566650ad6c" category="inline-link-rx"></block></block>
   <block id="f5d22e387d3dd91dbc45f16de7949a06" category="list-text">Seleccione *Admitir tráfico API directo*.</block>
   <block id="c569dd49f93a05d537d61130ed43e6e9" category="list-text">Seleccione la casilla de verificación para habilitar la opción y luego seleccione *Guardar*.</block>
   <block id="63cc3bd9a1d39c996544d35459a3e83f" category="list-text">Agregue una cuenta del sitio de soporte de NetApp (NSS).</block>
@@ -3426,9 +3363,7 @@
   <block id="7133c14b211d52731ad6f21655c0ec9b" category="paragraph">*Fuentes de datos compatibles*</block>
   <block id="e386436f15048683d3f17d234b4e411c" category="paragraph">Ver alertas sobre ciertos eventos que ocurren en ONTAP. Son una combinación de EMS y alertas basadas en métricas.</block>
   <block id="2cf989894baae7ae8de6dbe4cf6f407f" category="inline-link">Acerca de las alertas de ONTAP</block>
-  <block id="6132c2608446a171740c9a7b74d30055" category="paragraph">Para obtener detalles sobre las alertas de ONTAP , consulte<block ref="c1273157df1968b52f265690f65525a0" category="inline-link-rx"></block> .</block>
   <block id="17b76c30a93a18ec82fdbf45ed64d83a" category="inline-link">Ver los riesgos potenciales en el almacenamiento de ONTAP</block>
-  <block id="77940bcbdb92a607c1ad6e3487015d0f" category="paragraph">Para obtener una lista de alertas que podría ver, consulte<block ref="cbcbe8f907f72d472118cc8b75fd1584" category="inline-link-rx"></block> .</block>
   <block id="2e1349d5a47ec79356f49a534ef42916" category="list-text">Desde el menú de la consola de NetApp , revise el panel de alertas de ONTAP .</block>
   <block id="d8e39c19a634eb2aa6152d2cd109eac7" category="list-text">Opcionalmente, filtre las alertas seleccionando el nivel de gravedad o cambie el filtro para mostrar alertas según el área de impacto.</block>
   <block id="96a25385ec9b871387fac4daafaa9c5b" category="list-text">En el panel de alertas de ONTAP , seleccione *Ver* para ir a la página Alertas de la consola.</block>
@@ -3454,16 +3389,12 @@
   <block id="c3ecd5a019581be952b7e478466f0cfc" category="list-text">Desde el menú de la consola de NetApp , revise el panel Resiliencia ante ransomware.</block>
   <block id="8c3c718749afd86a59b68786f22641b6" category="list-text">Realice una de las siguientes acciones en el panel Resiliencia ante ransomware:</block>
   <block id="7f176789d86d465c8df04184cd91e82b" category="inline-link">Supervise el estado de la carga de trabajo mediante el panel de resiliencia contra ransomware de NetApp</block>
-  <block id="3da74bd796ba53b3317f5c65b2148573" category="list-text">Seleccione *Ver* para ir al Panel de resiliencia ante ransomware de NetApp . Para más detalles, consulte<block ref="80742ca6f2ca5f5f51cc3c72457456a5" category="inline-link-rx"></block> .</block>
   <block id="7a61996cbb18f958380b50621ee46926" category="inline-link">Revise las recomendaciones de protección en el Panel de resiliencia contra ransomware de NetApp</block>
-  <block id="945516a70bbb0c75fab6b7fcc6fc7bb5" category="list-text">Revise las “Acciones recomendadas” en el Panel de resiliencia ante ransomware de NetApp . Para más detalles, consulte<block ref="5f776c69c6938c83acfe6975ee9631b6" category="inline-link-rx"></block> .</block>
   <block id="1238309e873f300d76b90a5b0f3a20bc" category="inline-link">Gestione las alertas de ransomware detectadas con NetApp Ransomware Resilience</block>
-  <block id="895f952b6b7fb8a4d01c8cd15c49e783" category="list-text">Seleccione el enlace de alertas para revisar las alertas en la página de alertas de resiliencia ante ransomware de NetApp .  Para más detalles, consulte<block ref="300fa0ea0e62adad4505e15c5632b2cb" category="inline-link-rx"></block> .</block>
   <block id="cda031fa0adafc5a616e6edff4b9b099" category="section-title">Ver el estado de la copia de seguridad y recuperación</block>
   <block id="7815eb7c41b45edadaa885a3723934fb" category="paragraph">Revise el estado general de sus copias de seguridad y restauraciones desde NetApp Backup and Recovery.  Puede ver la cantidad de recursos protegidos y no protegidos.  También puede ver el porcentaje de operaciones de copias de seguridad y restauración para la protección de sus cargas de trabajo.  Un porcentaje más alto indica una mejor protección de datos.</block>
   <block id="a269cbc677bdaf22ecccde39ad962c9b" category="list-text">Desde el menú de la consola de NetApp , revise el panel Copia de seguridad y recuperación.</block>
   <block id="bef219d35a4468480b0ce759221cdceb" category="inline-link">Documentación de NetApp Backup and Recovery</block>
-  <block id="3d600fe86481d91b92c11fdf5ca2ca73" category="list-text">Seleccione *Ver* para ir al Panel de control de copia de seguridad y recuperación de NetApp . Para más detalles, consulte<block ref="4e03d05dad0487791bcff2588144bf73" category="inline-link-rx"></block> .</block>
   <block id="ef115e8ed0d2118ec4e8fc147ad0a789" category="summary">Fedérese con sus Servicios de federación de Active Directory (AD FS) para habilitar el inicio de sesión único (SSO) para la consola de NetApp .  Esto permite a los usuarios iniciar sesión utilizando sus credenciales corporativas.</block>
   <block id="03ce0a75253f028c7b59d2e045c61730" category="doc">Federar la consola de NetApp con los Servicios de federación de Active Directory (AD FS)</block>
   <block id="df279c297fab55d5f1c2bb16edd8b9c8" category="paragraph">Federe sus Servicios de federación de Active Directory (AD FS) con la consola de NetApp para habilitar el inicio de sesión único (SSO) para la consola de NetApp .  Esto permite a los usuarios iniciar sesión en la consola utilizando sus credenciales corporativas.</block>
@@ -3682,7 +3613,6 @@
   <block id="1a5a9a56e04bbba24a4b989d5017d535" category="inline-link-macro">Comience con la identidad y el acceso</block>
   <block id="411ec776ef98d4c711a192a4fe599e3b" category="list-text"><block ref="411ec776ef98d4c711a192a4fe599e3b" category="inline-link-macro-rx"></block></block>
   <block id="3721423bab8a75aede6f2f51e549eaeb" category="inline-link">Conozca la API para la gestión de identidad y acceso</block>
-  <block id="7f547ac0f31a0192ce9403359a906c05" category="list-text"><block ref="7f547ac0f31a0192ce9403359a906c05" category="inline-link-rx"></block></block>
   <block id="b8740c7a3b27cb5802fc3d722766e89d" category="summary">Supervise o audite las acciones de administración de acceso e identidad de NetApp Console desde la página Auditoría.</block>
   <block id="607d8cf2123281784d1ecb675017df5d" category="paragraph">Si necesita supervisar o auditar una acción que se completó relacionada con la identidad y el acceso, puede ver los detalles en la página Auditoría.  Por ejemplo, es posible que desee verificar quién agregó un miembro a una organización o que un proyecto se eliminó correctamente.</block>
   <block id="aa46e79c9c39c9b3aa215604efa5eb2c" category="list-text">Seleccione *Administración &gt; Auditoría*.</block>
@@ -3705,12 +3635,6 @@
   <block id="369419be6c2d63174cdf720283757d9b" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block>Agregar o descubrir recursos</block>
   <block id="19bbad65b41440b72846c83f76bc1afc" category="paragraph">Agregar o descubrir recursos (sistemas) a la consola.  Los miembros de la organización gestionan los sistemas desde dentro de un proyecto.</block>
   <block id="8f2877163fc10767d891d30a2383ddd3" category="paragraph">Aprenda a crear o descubrir recursos:</block>
-  <block id="8ed358b5f97ac929cbf55d77be2ae1c3" category="list-text"><block ref="8ed358b5f97ac929cbf55d77be2ae1c3" category="inline-link-rx"></block></block>
-  <block id="02a8d4819b5139097a91d9e8b93e0042" category="list-text"><block ref="02a8d4819b5139097a91d9e8b93e0042" category="inline-link-rx"></block></block>
-  <block id="99cd6bbb6bd6b4f32aaf030548bc8abb" category="list-text"><block ref="99cd6bbb6bd6b4f32aaf030548bc8abb" category="inline-link-rx"></block></block>
-  <block id="88b75fafcd5fe284804d4e4a240a0a52" category="list-text"><block ref="88b75fafcd5fe284804d4e4a240a0a52" category="inline-link-rx"></block></block>
-  <block id="8a92c7a06d8d0a82ae22fd0df9c480fc" category="list-text"><block ref="8a92c7a06d8d0a82ae22fd0df9c480fc" category="inline-link-rx"></block></block>
-  <block id="6d14225a666e4ce0c6e84d99c57c45f7" category="list-text"><block ref="6d14225a666e4ce0c6e84d99c57c45f7" category="inline-link-rx"></block></block>
   <block id="2a3af81903d30050b417342ded50e5a3" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block>Asociar recursos con proyectos adicionales</block>
   <block id="0906aaf468f098353aa4f8a2719daf6c" category="paragraph">Agregar o descubrir un sistema en la Consola asocia automáticamente el recurso con el proyecto seleccionado actualmente.  Para que ese recurso esté disponible para otro proyecto de su organización, asócielo con el proyecto respectivo.  Si se utiliza un agente de consola para administrar el recurso, asocie el agente de consola con el proyecto respectivo.</block>
   <block id="4430cefb38674d70ef9b7fe67aee23c8" category="inline-link-macro">Aprenda a administrar la jerarquía de recursos de su organización</block>
@@ -3719,7 +3643,6 @@
   <block id="0219628965579f3125a85333ababe4a8" category="inline-link-macro">Obtenga información sobre la gestión de identidad y acceso en la consola de NetApp</block>
   <block id="e2a0d9cb668e6b8456f193f9e7481e9e" category="list-text"><block ref="e2a0d9cb668e6b8456f193f9e7481e9e" category="inline-link-macro-rx"></block></block>
   <block id="d74a08d7ee858b57e9e95937c86453c6" category="inline-link">Conozca la API para identidad y acceso</block>
-  <block id="7db3a4b09ee10eaf7e2d6fb1a728d9d5" category="list-text"><block ref="7db3a4b09ee10eaf7e2d6fb1a728d9d5" category="inline-link-rx"></block></block>
   <block id="6b2ba5a58459a38337e4a785867d2123" category="summary">Dentro de la consola de NetApp , el uso de la gestión de identidad y acceso le permite representar una jerarquía de recursos completa mediante carpetas y proyectos.</block>
   <block id="c91d4274dbc95093979f44d9158f63c4" category="doc">Organice los recursos de su consola NetApp con carpetas y proyectos</block>
   <block id="6dca94e5f8ef4f7534b19b4528884acb" category="paragraph">Dentro de la consola de NetApp , organiza tus recursos de NetApp usando proyectos y carpetas.  Un _proyecto_ representa un espacio de trabajo en la consola al que los miembros de la organización acceden para administrar _recursos_ (por ejemplo, un sistema Cloud Volumes ONTAP ).  Una _carpeta_ agrupa proyectos relacionados.  Después de organizar sus recursos en carpetas y proyectos, puede otorgar acceso granular a los recursos proporcionando a los miembros de la organización permisos para carpetas y proyectos específicos.</block>
@@ -3786,7 +3709,6 @@
   <block id="c3e4c9c85856b5efe1954f26503c635d" category="inline-link-macro">Obtenga información sobre la identidad y el acceso en la consola de NetApp</block>
   <block id="0180bd7ee40eeb082fc40adcb1842ee2" category="list-text"><block ref="0180bd7ee40eeb082fc40adcb1842ee2" category="inline-link-macro-rx"></block></block>
   <block id="0d1eeacefa3d24f7c6debacd39a43d19" category="inline-link">Conozca la API de identidad y acceso</block>
-  <block id="2c859482c77a4cec7378110226c23d87" category="list-text"><block ref="2c859482c77a4cec7378110226c23d87" category="inline-link-rx"></block></block>
   <block id="0574e6792e501b2d7f486dd56c08812e" category="summary">Administre los miembros de su organización para otorgar permisos en diferentes niveles de la jerarquía de recursos de su organización.</block>
   <block id="b3977944ab3f32dc0aa6da440a2a0fd6" category="doc">Agregar miembros y cuentas de servicio a la consola de NetApp</block>
   <block id="d2729cf62f219b942e9e38ba9c0da3f4" category="paragraph">Dentro de la consola, puede agregar usuarios y cuentas de servicio a su organización y asignarles uno o más roles en su jerarquía de recursos.  Un _rol_ contiene un conjunto de permisos que permiten a un miembro (usuario o cuenta de servicio) realizar acciones específicas en un nivel específico de la jerarquía de recursos.</block>
@@ -3938,7 +3860,6 @@
   <block id="f5c5f2c4e09a3be34c769b9a476a5774" category="summary">Es posible que pertenezca a varias organizaciones de consola o tenga permisos para acceder a varios proyectos o agentes dentro de una organización.  Cuando sea necesario, puede cambiar fácilmente entre organizaciones, proyectos y agentes de la consola para acceder a los recursos asociados con esa organización, proyecto o agente.</block>
   <block id="563e9d605dde4e125a815a2688ed1349" category="doc">Cambiar entre organizaciones, proyectos y agentes de la consola</block>
   <block id="99b40e7c0a7b505819ce6f7bdb86dc3a" category="inline-link">Aprenda a crear una nueva organización</block>
-  <block id="8e759a3574fb4c28c37288edf66ba07d" category="admonition">Puedes pertenecer a varias organizaciones si otra organización te invita a unirte o si creas una tú mismo.  Puede crear una organización adicional utilizando la API.<block ref="a875b8dda0804745acf04cfe74e1bbff" category="inline-link-rx"></block></block>
   <block id="f2fd478a05acdd29af1bbc7530937c70" category="section-title">Cambiar entre organizaciones</block>
   <block id="9f3d2a13f08b19e773a3807a2007b683" category="paragraph">Si es miembro de varias organizaciones, puede cambiar entre ellas en cualquier momento.</block>
   <block id="ce9cf37aa526c2356de3fbaef3365462" category="list-text">En el encabezado superior de la consola, seleccione *Organización*.</block>
@@ -4158,7 +4079,6 @@
   <block id="a60b1115783600a21eb41ae13935fdc8" category="paragraph">La consola prepara la instancia en aproximadamente 10 minutos.  Permanezca en la página hasta que se complete el proceso.</block>
   <block id="39dbd35a18bfa38cac810c0be826b561" category="paragraph">Una vez completado el proceso, el agente de la consola estará disponible para su uso desde la consola.</block>
   <block id="510a2d4afe6727bcdbafc74a103f9f16" category="inline-link">Aprenda a administrar los buckets S3 desde la consola de NetApp</block>
-  <block id="af2cca04ee665c389d737de3e58b6615" category="paragraph">Si tiene depósitos de Amazon S3 en la misma cuenta de AWS donde creó el agente de consola, verá aparecer automáticamente un entorno de trabajo de Amazon S3 en la página *Sistemas*.<block ref="b005331392e349a72b0688cce0d673cf" category="inline-link-rx"></block></block>
   <block id="3b46ada3c2c8fc9685f33a61ccf996e6" category="summary">Puede instalar manualmente un agente de consola en un host Linux que se ejecute en AWS.  Para instalar manualmente el agente de consola en su propio host Linux, debe revisar los requisitos del host, configurar su red, preparar los permisos de AWS, instalar el agente de consola y luego proporcionar los permisos que preparó.</block>
   <block id="5b6c8baef296a0ee0c5ff5b25d3b43fd" category="section-title">Paso 1: Revisar los requisitos del host</block>
   <block id="6c0ef26774def19ede6fc16398abb877" category="paragraph">El software del agente de consola debe ejecutarse en un host que cumpla con los requisitos específicos del sistema operativo, requisitos de RAM, requisitos de puerto, etc.</block>
@@ -4178,7 +4098,6 @@
   <block id="6f4fb049e4655a1231a4fb0687d8b259" category="section-title">Paso 5: Instalar el agente de consola</block>
   <block id="f20df450b1161c347a5e7eba9538eeb3" category="paragraph">Una vez completados los requisitos previos, puede instalar manualmente el software en su propio host Linux.</block>
   <block id="b3175a7a8c2ba73aad02f57026632d9b" category="inline-link">Aprenda a administrar los buckets S3 desde NetApp ConsoleP</block>
-  <block id="22650c36d83f936c83a89d83bbdd28a6" category="paragraph">Si tiene depósitos de Amazon S3 en la misma cuenta de AWS donde creó el agente de consola, verá aparecer automáticamente un sistema de almacenamiento de Amazon S3 en la página *Sistemas*.<block ref="e6ac614336c858ef10d2ad7ce7ecac70" category="inline-link-rx"></block></block>
   <block id="c38f7847f04d50ab6fcbc66333ed1e25" category="section-title">Paso 6: Proporcionar permisos a la consola de NetApp</block>
   <block id="abdfcd483825370c001a0b749d453dc4" category="paragraph">Ahora que ha instalado el agente de la consola, debe proporcionar a la consola los permisos de AWS que configuró previamente.  Al proporcionar los permisos, se permite que el agente de la consola administre sus datos y la infraestructura de almacenamiento en AWS.</block>
   <block id="5a52914d8d01c8e84d9a721dbf01a42b" category="paragraph">Adjunte la función de IAM que creó previamente a la instancia EC2 del agente de consola.</block>
@@ -4205,7 +4124,6 @@
   <block id="4f5fd09b0fecd121d7890d5fcdd126ea" category="inline-link-macro">Siga los pasos para comenzar a utilizar la consola de NetApp en modo restringido</block>
   <block id="797bbe628ec1fb17e30cf7efe960c970" category="paragraph">Mantenga el modo restringido deshabilitado para usar la consola en modo estándar.  Debe habilitar el modo restringido solo si tiene un entorno seguro y desea desconectar esta cuenta de los servicios de backend de la consola.  Si ese es el caso,<block ref="a92127338ae53d774985c3d6a7c5b7c1" category="inline-link-macro-rx"></block> .</block>
   <block id="f6e97ff0fb0f4979084a2738aea0b268" category="paragraph">Abra un navegador web y vaya a<block ref="9fa63571706fcef6edc9d423212e6d10" category="inline-link-rx"></block> para comenzar a utilizar el agente de la consola con la consola.</block>
-  <block id="e9330a8471e0a384983713146e81a0b2" category="paragraph">Si tiene depósitos de Amazon S3 en la misma cuenta de AWS donde creó el agente de consola, verá aparecer automáticamente un entorno de trabajo de Amazon S3 en la página *Sistemas*.<block ref="b005331392e349a72b0688cce0d673cf" category="inline-link-rx"></block></block>
   <block id="59b644c031d039c3f70028419f505a76" category="summary">Para crear un agente de consola en Azure desde la consola de NetApp , debe configurar su red, preparar los permisos de Azure y luego crear el agente de consola.</block>
   <block id="76909bffdda2d34fdab18521c25be5db" category="doc">Crear un agente de consola en Azure desde la consola de NetApp</block>
   <block id="445d78fbb089087ac4454ded9bdb17f9" category="paragraph">Asegúrese de que la ubicación de red donde planea instalar el agente de consola admita los siguientes requisitos.  Estos requisitos permiten que el agente de la consola administre recursos de nube híbrida.</block>
@@ -4349,7 +4267,6 @@
   <block id="0b6aa4ea63b3a77b1b57e9fabb90a9fa" category="paragraph">La instancia estará lista en aproximadamente 10 minutos; permanezca en la página hasta que se complete el proceso.</block>
   <block id="e8b69837aadc0d9aafe18d0701d1dc76" category="paragraph">Una vez completado el proceso, el agente de consola estará disponible para su uso.</block>
   <block id="9bfb17e64abc7809724f85bcd87b6901" category="inline-link">Aprenda a administrar Google Cloud Storage desde la consola</block>
-  <block id="97e179c94ec7a0b7bb6a303340f9220d" category="paragraph">Si tiene depósitos de Google Cloud Storage en la misma cuenta de Google Cloud donde creó el agente de consola, verá aparecer automáticamente un sistema de Google Cloud Storage en la página *Sistemas*.<block ref="cffcfd21c67513bbf062d20fe008a798" category="inline-link-rx"></block></block>
   <block id="9b733a9bb65187f7133fa984a287399c" category="summary">Para instalar manualmente el agente de la consola en su propio host Linux, debe revisar los requisitos del host, configurar su red, preparar los permisos de Google Cloud, habilitar las API de Google Cloud, instalar la consola y luego proporcionar los permisos que preparó.</block>
   <block id="a85a6ee65fd9978ceeffbb5fdf9afd81" category="paragraph">Configure su red para que el agente de la consola pueda administrar recursos y procesos dentro de su entorno de nube híbrida.  Por ejemplo, debe asegurarse de que haya conexiones disponibles para las redes de destino y que el acceso a Internet saliente esté disponible.</block>
   <block id="d7134f839db72245fe3e0d8d0bfce146" category="section-title">Paso 4: Configurar permisos para el agente de la consola</block>
@@ -4358,7 +4275,6 @@
   <block id="69f380f2398b7565bd53d007caa73472" category="paragraph">Se deben habilitar varias API de Google Cloud antes de poder implementar sistemas Cloud Volumes ONTAP en Google Cloud.</block>
   <block id="e8e253336558188ed5f5c2ffa5852d13" category="section-title">Paso 7: Instalar el agente de consola</block>
   <block id="99564e0e630cf4a642f3e276f6caacab" category="inline-link">Aprenda a administrar Google Cloud Storage desde la consola de NetApp</block>
-  <block id="0551424efb838bbf399f625eea3bce10" category="paragraph">Si tiene depósitos de Google Cloud Storage en la misma cuenta de Google Cloud donde creó el agente de consola, verá aparecer automáticamente un sistema de Google Cloud Storage en la página *Sistemas*.<block ref="3a3819f771022709389351e989a1819b" category="inline-link-rx"></block></block>
   <block id="4c4edb2137b0216befa4b8e99dca1cde" category="section-title">Paso 8: Proporcionar permisos al agente de la consola</block>
   <block id="7d8205c63a7b91b92998e4cecc811f54" category="paragraph">Debes proporcionar al agente de la consola los permisos de Google Cloud que configuraste previamente.  Al proporcionar los permisos, se permite que el agente de la consola administre sus datos y la infraestructura de almacenamiento en Google Cloud.</block>
   <block id="b851520b404a9e4e66e67b6d193bd247" category="list-text">Si desea administrar recursos en otros proyectos de Google Cloud, otorgue acceso agregando la cuenta de servicio con el rol de agente de consola a ese proyecto. Necesitarás repetir este paso para cada proyecto.</block>
@@ -4587,7 +4503,6 @@
   <block id="6bf1988b3312f00ea9a8a52aa7a47355" category="list-text">Si administra un sistema Cloud Volumes ONTAP , ajuste el Modo de administración de capacidad al *Modo manual*.</block>
   <block id="0bf2e021b970775f65586d6866bfeb5f" category="paragraph">Para evitar problemas de contención, solo el agente de consola principal debe configurarse en *Modo automático*.</block>
   <block id="f05a0e154340f7c017b3a9bfa5a8bf05" category="inline-link">Obtenga más información sobre el modo de gestión de capacidad</block>
-  <block id="ad8014f9c9c3f8ac3d5abbafea6de2bc" category="paragraph"><block ref="ad8014f9c9c3f8ac3d5abbafea6de2bc" category="inline-link-rx"></block></block>
   <block id="1e12fbabb20fb5fd9d147dfb17d80816" category="summary">Según las acciones que haya realizado en la consola, es posible que haya asociado las credenciales de ONTAP y las credenciales del sitio de soporte de NetApp (NSS) con su inicio de sesión de usuario.  Puede ver y administrar esas credenciales después de haberlas asociado.  Por ejemplo, si cambia la contraseña de estas credenciales, deberá actualizar la contraseña en la Consola.</block>
   <block id="d86c06c14b06c848fca4417d1ccfa279" category="doc">Administrar las credenciales asociadas con el inicio de sesión de su consola de NetApp</block>
   <block id="823a6e1d7fe661be55dd3af05f972b11" category="section-title">Credenciales de ONTAP</block>
@@ -4651,7 +4566,6 @@
   <block id="04596584483670e92bdc26de25673496" category="section-title">Comparación del Centro de notificaciones con las alertas</block>
   <block id="c3cab9822e855d79f3020e9791defee0" category="paragraph">El Centro de notificaciones le permite ver el estado de las operaciones que ha iniciado y configurar notificaciones de alerta para ciertos tipos de actividades del sistema.  Mientras tanto, las alertas le permiten ver problemas o riesgos potenciales en su entorno de almacenamiento ONTAP relacionados con la capacidad, la disponibilidad, el rendimiento, la protección y la seguridad.</block>
   <block id="72fab98081395adf122a35be872b657b" category="inline-link">Obtenga más información sobre las alertas de la consola de NetApp</block>
-  <block id="b8a0a67eb8b2fab97529ca5597273b49" category="paragraph"><block ref="b8a0a67eb8b2fab97529ca5597273b49" category="inline-link-rx"></block></block>
   <block id="2a4be390687f80c7cdf976afca0fe778" category="section-title">Tipos de notificación</block>
   <block id="1107ae2a62a0bbfd6588385ac485d797" category="paragraph">La consola clasifica las notificaciones en las siguientes categorías:</block>
   <block id="9e89e978c220a2a733d027866cb12907" category="cell">Tipo de notificación</block>
@@ -4846,7 +4760,6 @@
   <block id="7e4b1c5ec6c6adb1fa50f4ca17076845" category="cell">Servicio o función de BlueXP</block>
   <block id="d0622c7af7b2cc2435986b2d005d8fc3" category="cell">*Entornos de trabajo* Esta parte de la tabla enumera el soporte para la gestión del entorno de trabajo desde el lienzo de BlueXP .  No indica los destinos de copia de seguridad admitidos para la BlueXP backup and recovery.</block>
   <block id="1376d64de9953f470f0708fc6e330334" category="cell">*Servicios*</block>
-  <block id="a6c599d9b9bbe744be463c056f9e194a" category="cell">Sí<block ref="8cbf8dca81955ce6c3d97cec5394e7fd" category="inline-link-rx"></block></block>
   <block id="e216b7a924341f796bca310d1d812baf" category="cell">Copiar y sincronizar</block>
   <block id="645a84975202e30700b572b49a5ee29d" category="cell">Recuperación ante desastres</block>
   <block id="7478f8f98c41fc2f5747e6f31892fe6f" category="cell">Protección contra ransomware</block>
@@ -4906,7 +4819,6 @@
   <block id="3c27ef222c1ee58d80a2a938ecc7eab9" category="paragraph">IMDSv2 proporciona protección mejorada contra vulnerabilidades.<block ref="cb4336eb4a08d88f663206e070c9e1af" category="inline-link-rx"></block></block>
   <block id="89f5243637c4f72512944130a95ee3e5" category="paragraph">El Servicio de metadatos de instancia (IMDS) se habilita de la siguiente manera en las instancias EC2:</block>
   <block id="baebea4bbd59d6c8efcae96586b2e199" category="inline-link">Scripts de Terraform</block>
-  <block id="7c284497cdbf639452993fd5334f733a" category="list-text">Para nuevas implementaciones de agentes de consola desde la consola o mediante<block ref="d5789cbcfe02eb67db017173bcddbe49" category="inline-link-rx"></block> IMDSv2 está habilitado de forma predeterminada en la instancia EC2.</block>
   <block id="af82b952ad82136894dad49cc241df74" category="list-text">Si lanza una nueva instancia EC2 en AWS y luego instala manualmente el software del agente de consola, IMDSv2 también estará habilitado de forma predeterminada.</block>
   <block id="d99e26630de166b939e706dae9b87bde" category="list-text">Si inicia el agente de consola desde AWS Marketplace, IMDSv1 estará habilitado de forma predeterminada.  Puede configurar manualmente IMDSv2 en la instancia EC2.</block>
   <block id="100daab2bd4211c0dd742e6acc477e50" category="list-text">Para los agentes de consola existentes, IMDSv1 aún es compatible, pero puede configurar manualmente IMDSv2 en la instancia EC2 si lo prefiere.</block>
@@ -4930,7 +4842,6 @@
   <block id="2c239daef1a43ddd2011dfa4a307c157" category="list-text">Para *IMDSv2*, seleccione *Obligatorio*.</block>
   <block id="5cf803d4e6ce3c1fc67e7320dcd440b1" category="list-text">Repita estos pasos para otras instancias de Cloud Volumes ONTAP , incluido el mediador de HA.</block>
   <block id="0694adc8bc882f236f606e1c56eebe94" category="inline-link">Detener e iniciar las instancias de Cloud Volumes ONTAP</block>
-  <block id="96afcc62a59c68b277c1a37c2254e239" category="list-text"><block ref="96afcc62a59c68b277c1a37c2254e239" category="inline-link-rx"></block></block>
   <block id="60d6844eb545641bb1448829af996932" category="paragraph">La instancia del agente de consola y las instancias de Cloud Volumes ONTAP ahora están configuradas para usar IMDSv2.</block>
   <block id="90d396015a6c35f04f7379d52f402f98" category="summary">Se puede acceder a la consola de NetApp desde una consola basada en web.  Para comenzar a utilizar la consola, el primer paso es registrarse o iniciar sesión utilizando sus credenciales del sitio de soporte de NetApp o creando un inicio de sesión en la consola de NetApp .</block>
   <block id="5dbaefa65dffe1f0a37c10d0c33764b1" category="doc">Regístrese o inicie sesión en la consola de NetApp</block>
@@ -4966,9 +4877,7 @@
   <block id="53408e4899de894c1e6bc5c8f7add2d4" category="paragraph">La clasificación de datos de NetApp se habilita a través de su suscripción, pero no hay ningún cargo por utilizar la clasificación.</block>
   <block id="6128cb243ff25acf013f1f4b0f183a3e" category="paragraph">Debe haber implementado previamente un agente de consola para poder suscribirse a los servicios de datos.  Debe asociar una suscripción de mercado a las credenciales de la nube conectadas a un agente de consola.</block>
   <block id="53043f0a6d597ccfe179296cc8ded9c0" category="inline-link">Administrar licencias BYOL basadas en capacidad para Cloud Volumes ONTAP</block>
-  <block id="fe58f6b68f2391f47e7f19d45735226a" category="list-text"><block ref="fe58f6b68f2391f47e7f19d45735226a" category="inline-link-rx"></block></block>
   <block id="1687f999e1e3454ce506267f03218c10" category="inline-link">Administrar licencias BYOL para servicios de datos</block>
-  <block id="cd2760f9273d3676c31d8194326e0fce" category="list-text"><block ref="cd2760f9273d3676c31d8194326e0fce" category="inline-link-rx"></block></block>
   <block id="020152b964db48439eb2014e738701a7" category="inline-link">Administrar credenciales y suscripciones de AWS</block>
   <block id="a862ae66b8b0d7b579012fb26bab83a9" category="list-text"><block ref="a862ae66b8b0d7b579012fb26bab83a9" category="inline-link-rx"></block></block>
   <block id="a2716cc89dc4a40328cabec5063837f8" category="inline-link">Administrar credenciales y suscripciones de Azure</block>
@@ -4980,39 +4889,17 @@
   <block id="42dacd60cd3485508aefb9e0fa6699f9" category="paragraph">Una suscripción de mercado permite cobrar por los siguientes servicios de datos de NetApp :</block>
   <block id="6269943bbab503c57445a47b04897eaa" category="summary">Antes de poder abrir un caso de soporte con el soporte técnico de NetApp , debe agregar una cuenta del sitio de soporte de NetApp a la consola de NetApp y luego registrarse para recibir soporte.</block>
   <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">Regístrese para recibir asistencia</block>
-  <block id="ece19bab46695021f109a5e50f08bebe" category="paragraph">Es necesario registrarse para recibir soporte técnico específico para BlueXP y sus soluciones y servicios de almacenamiento. También es necesario registrarse para obtener soporte técnico para habilitar flujos de trabajo clave para los sistemas Cloud Volumes ONTAP .</block>
-  <block id="8a3d807608e632d188a288fc5f4aa7eb" category="paragraph">Registrarse para recibir soporte no habilita el soporte de NetApp para un servicio de archivos de un proveedor de nube. Para obtener asistencia técnica relacionada con un servicio de archivos de un proveedor de nube, su infraestructura o cualquier solución que utilice el servicio, consulte "Obtener ayuda" en la documentación de BlueXP para ese producto.</block>
-  <block id="9d06990508d25d367d9158c6558eb9c8" category="list-text"><block ref="9d06990508d25d367d9158c6558eb9c8" category="inline-link-macro-rx"></block></block>
-  <block id="2e0c742f4616eb27b5b7646aa790edfe" category="list-text"><block ref="2e0c742f4616eb27b5b7646aa790edfe" category="inline-link-macro-rx"></block></block>
-  <block id="cb4bf32603c89d08cad17e7e7dd302f2" category="list-text"><block ref="cb4bf32603c89d08cad17e7e7dd302f2" category="inline-link-macro-rx"></block></block>
   <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">Descripción general del registro de soporte</block>
   <block id="192054ad7601240a3e8be54cc5cc548e" category="paragraph">Existen dos formas de registro para activar el derecho a recibir ayuda:</block>
-  <block id="29360bfcdbc91d3f1514c372b4585965" category="list-text">Registrar el número de serie de su cuenta BlueXP (su número de serie 960xxxxxxxxx de 20 dígitos ubicado en la página de Recursos de soporte en BlueXP).</block>
-  <block id="23fdcbefa6d9cd877be7ceb7a18bb936" category="paragraph">Esto sirve como su ID de suscripción de soporte único para cualquier servicio dentro de BlueXP. Cada suscripción de soporte a nivel de cuenta de BlueXP debe estar registrada.</block>
   <block id="55ff64467cd508971910145ab5d6b3b8" category="list-text">Registrar los números de serie de Cloud Volumes ONTAP asociados con una suscripción en el mercado de su proveedor de nube (son números de serie 909201xxxxxxxx de 20 dígitos).</block>
-  <block id="67dbdeb11e22ea7def810bade59ce818" category="paragraph">Estos números de serie se conocen comúnmente como _números de serie PAYGO_ y son generados por BlueXP en el momento de la implementación de Cloud Volumes ONTAP .</block>
-  <block id="28164bf9e881ddc9e7ff74744bfce180" category="paragraph">El registro de ambos tipos de números de serie permite funciones como la apertura de tickets de soporte y la generación automática de casos. El registro se completa agregando cuentas del sitio de soporte de NetApp (NSS) a BlueXP como se describe a continuación.</block>
-  <block id="444b74bc81e823cc1c4c704219ad8ed3" category="section-title">Registre BlueXP para obtener soporte de NetApp</block>
-  <block id="b3bf31f8a918c712f26cdf493a908825" category="paragraph">Para registrarse para recibir soporte y activar el derecho a soporte, un usuario de su organización (o cuenta) de BlueXP debe asociar una cuenta del sitio de soporte de NetApp con su inicio de sesión de BlueXP . La forma de registrarse para el soporte de NetApp depende de si ya tiene una cuenta del sitio de soporte de NetApp (NSS).</block>
   <block id="bf4c731c0ee7f60c8018ad8f96828dda" category="section-title">Cliente existente con una cuenta NSS</block>
-  <block id="7e177185e7eddff33dd8f3aeb7551132" category="paragraph">Si es cliente de NetApp con una cuenta NSS, simplemente necesita registrarse para recibir soporte a través de BlueXP.</block>
-  <block id="0307a12e5749f8dd930472ee78f69d2c" category="list-text">En la parte superior derecha de la consola BlueXP , seleccione el ícono Configuración y seleccione *Credenciales*.</block>
-  <block id="0c788a722f31f8f0cf36539ee04615cf" category="list-text">Seleccione *Agregar credenciales NSS* y siga las instrucciones de autenticación del sitio de soporte de NetApp (NSS).</block>
   <block id="cfc5506589d5a4d055e721267d5f0732" category="list-text">Para confirmar que el proceso de registro fue exitoso, seleccione el ícono de Ayuda y seleccione *Soporte*.</block>
-  <block id="2ba7f9eae7a02f9c3ac0fc07517d1c48" category="paragraph">La página *Recursos* debería mostrar que su organización BlueXP está registrada para recibir soporte.</block>
-  <block id="759d32287efdf88cd8ac71dccc0ecf8d" category="inline-image-macro">Una captura de pantalla que muestra un número de serie de cuenta, una casilla de verificación verde y el texto Registrado para recibir soporte.</block>
-  <block id="4c441b388bebcddf8c08fb782095b864" category="paragraph"><block ref="4c441b388bebcddf8c08fb782095b864" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c05e530d1466e986d570cfe3f92656c3" category="paragraph">Tenga en cuenta que otros usuarios de BlueXP no verán este mismo estado de registro de soporte si no han asociado una cuenta del sitio de soporte de NetApp con su inicio de sesión de BlueXP . Sin embargo, eso no significa que su organización BlueXP no esté registrada para recibir soporte. Siempre que un usuario de la organización haya seguido estos pasos, su organización quedará registrada.</block>
   <block id="1ff5aefce774ec72a211f2b3bb10b950" category="section-title">Soy cliente actual pero no tengo cuenta NSS</block>
-  <block id="bdd862f49d428a850400bcf2f53cdaf2" category="paragraph">Si es un cliente existente de NetApp con licencias y números de serie existentes pero _no_ una cuenta NSS, debe crear una cuenta NSS y asociarla con su inicio de sesión de BlueXP .</block>
   <block id="5b2b7f628f804bcb786a097c7e45aa41" category="inline-link">Formulario de registro de usuario del sitio de soporte de NetApp</block>
   <block id="0c4a8b62da9473fbd5401273c4f85ee0" category="list-text">Cree una cuenta en el sitio de soporte de NetApp completando el<block ref="041bcb6d9bdf91f7d6ac92ae3a196e12" category="inline-link-rx"></block></block>
   <block id="d61c9f72493817776f392db42ac446a2" category="list-text">Asegúrese de seleccionar el nivel de usuario apropiado, que normalmente es *Cliente de NetApp /Usuario final*.</block>
-  <block id="5226d4ec1f4f81b740cbbd27635b441f" category="list-text">Asegúrese de copiar el número de serie de la cuenta BlueXP (960xxxx) utilizado anteriormente para el campo de número de serie. Esto acelerará el procesamiento de la cuenta.</block>
-  <block id="0499bba105f8a891a2c671f1ba99dd34" category="list-text">Asocie su nueva cuenta NSS con su inicio de sesión de BlueXP completando los pasos a continuación<block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block> .</block>
   <block id="e9b1f53d6cabb3394833a4e102eb6a69" category="section-title">Completamente nuevo en NetApp</block>
   <block id="c20c107d0d4eef6351660f3590324232" category="paragraph">Si es nuevo en NetApp y no tiene una cuenta NSS, siga cada paso a continuación.</block>
-  <block id="d889e6e7cc4c5509ab5b37f8fc894e46" category="list-text">En la parte superior derecha de la consola BlueXP , seleccione el ícono Ayuda y seleccione *Soporte*.</block>
   <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">Una captura de pantalla del menú Ayuda donde Soporte es la primera opción que aparece</block>
   <block id="e8d4092baef6680c6a35d5228ae31de2" category="paragraph"><block ref="e8d4092baef6680c6a35d5228ae31de2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2974170a8b1b5b4a2ac69aacd4c1c9c3" category="list-text">Localice el número de serie de su ID de cuenta en la página de Registro de soporte.</block>
@@ -5027,18 +4914,12 @@
   <block id="201080500e946070a2e4873042507c77" category="paragraph">Al confirmar, se envía su solicitud a NetApp y se recomienda que cree una cuenta en el sitio de soporte de NetApp .</block>
   <block id="a2454703f88e5bf5b433ae850a87151b" category="list-text">Asegúrese de copiar el número de serie de la cuenta (960xxxx) utilizado anteriormente para el campo de número de serie. Esto acelerará el procesamiento.</block>
   <block id="684375e279a289295b72a006d93e2c4c" category="paragraph">NetApp debería comunicarse con usted durante este proceso. Este es un ejercicio de incorporación único para nuevos usuarios.</block>
-  <block id="5cdee814e2d9ba3490a8f16d00c65759" category="paragraph">Una vez que tenga su cuenta del sitio de soporte de NetApp , asocie la cuenta con su inicio de sesión de BlueXP completando los pasos a continuación.<block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block> .</block>
   <block id="3e616bae81890a6c8fae17c9b45af152" category="section-title">Asociar credenciales NSS para la compatibilidad con Cloud Volumes ONTAP</block>
-  <block id="0ca08a23718c0a91743dd6c0146ca353" category="paragraph">Es necesario asociar las credenciales del sitio de soporte de NetApp con su organización BlueXP para habilitar los siguientes flujos de trabajo clave para Cloud Volumes ONTAP:</block>
   <block id="a0518a10626dc11fd00e2d20265ad240" category="list-text">Registro de sistemas Cloud Volumes ONTAP de pago por uso para obtener soporte</block>
-  <block id="2ebfeabed40c2270d9fa8325080a4b3e" category="paragraph">Es necesario proporcionar su cuenta NSS para que BlueXP pueda cargar su clave de licencia y habilitar la suscripción por el período que compró. Esto incluye actualizaciones automáticas para renovaciones de plazos.</block>
-  <block id="c81c8e01f5d906ae1ab0c5c606f06b05" category="paragraph">La asociación de credenciales NSS con su organización BlueXP es diferente a la asociación de una cuenta NSS con un inicio de sesión de usuario de BlueXP .</block>
-  <block id="8166996cb4a59c147200d89a061bb49c" category="paragraph">Estas credenciales NSS están asociadas con su ID de organización BlueXP específica. Los usuarios que pertenecen a la organización BlueXP pueden acceder a estas credenciales desde *Soporte &gt; Administración de NSS*.</block>
   <block id="328a2c1e7778e9edaf79d90c51409ac4" category="list-text">Si tiene una cuenta de nivel de cliente, puede agregar una o más cuentas NSS.</block>
   <block id="e3cd99e4aa330ae6bdfb3754d83ae962" category="list-text">Si tiene una cuenta de socio o revendedor, puede agregar una o más cuentas NSS, pero no se pueden agregar junto con cuentas de nivel de cliente.</block>
   <block id="c0e0b7ff0de9558404e9b77ece42948a" category="list-text">Seleccione *Administración de NSS &gt; Agregar cuenta NSS*.</block>
   <block id="465ec6d5eafa3524c948c99d8bfcd306" category="list-text">En la página de inicio de sesión, proporcione su dirección de correo electrónico y contraseña registradas en el sitio de soporte de NetApp para realizar el proceso de autenticación.</block>
-  <block id="cbc6cc3bb022583403171b447b2a962c" category="paragraph">Estas acciones permiten que BlueXP utilice su cuenta NSS para cosas como descargas de licencias, verificación de actualizaciones de software y futuros registros de soporte.</block>
   <block id="ec084bb25ed5b934c09b361069c246b2" category="list-text">La cuenta NSS debe ser una cuenta de nivel de cliente (no una cuenta de invitado o temporal). Puede tener varias cuentas NSS a nivel de cliente.</block>
   <block id="27387009488fe78dcc7cb7e3e432792f" category="list-text">Solo puede haber una cuenta NSS si esa cuenta es una cuenta de nivel de socio. Si intenta agregar cuentas NSS de nivel de cliente y existe una cuenta de nivel de socio, recibirá el siguiente mensaje de error:</block>
   <block id="d926847e4634e19a1aa7358becc0fa27" category="paragraph">"El tipo de cliente NSS no está permitido para esta cuenta porque ya hay usuarios NSS de otro tipo".</block>
@@ -5126,7 +5007,6 @@
   <block id="cd8e208bdf0e89ff2e888104b2d9c769" category="paragraph">El valor de _maxDownloadSessions_ puede ser 1 o cualquier número entero mayor que 1.  Si el valor es 1, la imagen descargada no se dividirá.</block>
   <block id="b7df6ea3746a45b9df9185d6b186ad5c" category="paragraph">Tenga en cuenta que 32 es un valor de ejemplo.  El valor depende de su configuración NAT y del número de sesiones simultáneas.</block>
   <block id="4ae719205766e20198cc595136cbf10c" category="inline-link">Obtenga más información sobre la llamada API /occm/config</block>
-  <block id="a003b98e4140542975c2369f893345c7" category="paragraph"><block ref="a003b98e4140542975c2369f893345c7" category="inline-link-rx"></block></block>
   <block id="784d74ec26e151955a4c9657042f8469" category="section-title">Obtenga ayuda de la base de conocimientos de NetApp</block>
   <block id="d22ff119563c0ee5fe8dab4228074cee" category="inline-link">Ver la información de solución de problemas creada por el equipo de soporte de NetApp</block>
   <block id="50442864bbf7126b7b62b75cde676ded" category="paragraph"><block ref="bb2a765d0923866ecd647a5c8b0cc5e9" category="inline-link-rx"></block> .</block>
@@ -5293,11 +5173,8 @@
   <block id="8009eebf05fd33b87750f8b4048986f7" category="cell">10 de junio de 2024</block>
   <block id="64cc8195fcb01e582343c910736d1abd" category="paragraph">Para obtener más información sobre lo que se incluye en las versiones de estos servicios de BlueXP , consulte las notas de la versión de cada servicio de BlueXP .</block>
   <block id="451cc12943297b25b1cf250cc5d0e60a" category="inline-link">Descubra las novedades sobre la BlueXP backup and recovery</block>
-  <block id="d846859679a4eca86e97e1887623b347" category="list-text"><block ref="d846859679a4eca86e97e1887623b347" category="inline-link-rx"></block></block>
   <block id="dd890c1f1f06a084e8274154f3f07ebe" category="inline-link">Descubra las novedades de la BlueXP classification</block>
-  <block id="0dcda936d538d36f9e02f54b88ffefca" category="list-text"><block ref="0dcda936d538d36f9e02f54b88ffefca" category="inline-link-rx"></block></block>
   <block id="d06e6f96135d8cd2fa9fea9a4d9de16b" category="inline-link">Descubra las novedades sobre la administración de Cloud Volumes ONTAP en BlueXP</block>
-  <block id="29e66847d781138b54aa8aa55b70fb20" category="list-text"><block ref="29e66847d781138b54aa8aa55b70fb20" category="inline-link-rx"></block></block>
   <block id="5bde46ec5f2d435355447c38b00c1d9c" category="section-title">15 de julio de 2024</block>
   <block id="415b27bc5d78b639dc8c74a6e8f93e19" category="section-title">Compatibilidad con RHEL 8.10</block>
   <block id="562442342bba071ba7f2e5fa834d4464" category="paragraph">BlueXP ahora admite la instalación del Conector en un host Red Hat Enterprise Linux 8.10 cuando se utiliza el modo estándar o el modo restringido.</block>
@@ -5333,7 +5210,6 @@
   <block id="7595af352964f2b06057ab6310fdff44" category="inline-link">Ver los permisos de AWS para el conector</block>
   <block id="bad85d32b5f3e46e956809c13b502817" category="list-text"><block ref="7e42187d6259f740c2e1915df5429efc" category="inline-link-rx"></block> .</block>
   <block id="364a4ff52cd92f16374019cdedf6b91c" category="inline-link">Obtenga más información sobre el soporte para las zonas locales de AWS</block>
-  <block id="3b1699510f585646e0c8a73fa1b820ae" category="list-text"><block ref="3b1699510f585646e0c8a73fa1b820ae" category="inline-link-rx"></block></block>
   <block id="5483a2359dc6447c026002b1f7426d4e" category="sidebar">Comience a utilizar NetApp Console para poder empezar a crear, proteger y gobernar datos en sus entornos locales y en la nube.  Una vez completada la configuración, puede controlar el acceso a sus recursos mediante la gestión de identidad y acceso (IAM), administrar agentes de consola, cuentas de proveedores de nube y más.</block>
   <block id="55744ccea4ab827ad5f363c0ec39e8bf" category="sidebar">Documentación de configuración y administración de la consola de NetApp</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">Empezar</block>
@@ -5569,4 +5445,124 @@
   <block id="bac5c4edb29e43518e1f2b0b721fb1d5" category="list-text"><block ref="bac5c4edb29e43518e1f2b0b721fb1d5" category="inline-link-macro-rx"></block></block>
   <block id="fb418088b41b8e87851b52debc27d47c" category="list-text"><block ref="fb418088b41b8e87851b52debc27d47c" category="inline-link-macro-rx"></block></block>
   <block id="c33d6b870a4603154aa9aca1e2bdc138" category="sidebar">Administrar actualizaciones de agentes</block>
+  <block id="85a4e9103d633bec1eb4e7fb066e1c00" category="paragraph"><block ref="85a4e9103d633bec1eb4e7fb066e1c00" category="inline-link-rx"></block></block>
+  <block id="bb07c77b5a428bca17ba1c7fbc8126da" category="list-text"><block ref="bb07c77b5a428bca17ba1c7fbc8126da" category="inline-link-rx"></block></block>
+  <block id="105ec69af5b53ed597a81339b788271a" category="list-text"><block ref="105ec69af5b53ed597a81339b788271a" category="inline-link-rx"></block></block>
+  <block id="4361d1419b9f5b36a2241c6d8dc56d46" category="list-text"><block ref="4361d1419b9f5b36a2241c6d8dc56d46" category="inline-link-rx"></block></block>
+  <block id="8e375174b71cf96f463193e1fbf48059" category="paragraph">Este cambio introduce una nueva API para BlueXP IAM, pero es compatible con versiones anteriores de la API de arrendamiento.<block ref="d0091dc3e9aa695be78368d5c93869cc" category="inline-link-rx"></block></block>
+  <block id="3f4a732fd0d11ce94704e89cc7b5c074" category="cell">Ir a la<block ref="6357afa5f4df051bc1bb94ee8e3de4c5" category="inline-link-rx"></block> y consulte los cambios incluidos en la versión de noviembre de 2024</block>
+  <block id="6646e97cadd0be8f8809e55b4842a2c4" category="cell">Ir a la<block ref="1f6c2a2bb628adfdf4a77389c4b1bb41" category="inline-link-rx"></block> y consulte los cambios incluidos en las versiones 1.32 a 1.37</block>
+  <block id="280d53af7ad83ab59f2fd0c70417f64a" category="cell">Ir a la<block ref="6748a72900739c208f232144be1735a8" category="inline-link-rx"></block> y consulte los cambios incluidos en las versiones de octubre de 2024 y noviembre de 2024</block>
+  <block id="1575a237325a5505ef5de6626c7f2e8b" category="cell">Ir a la<block ref="d0e9cd12c247f05fa0cd9967a53086bf" category="inline-link-rx"></block> y consulte los cambios incluidos en la versión de noviembre de 2024</block>
+  <block id="373f19a82e5bb72668f90048d786ccd2" category="cell">Ir a la<block ref="6357afa5f4df051bc1bb94ee8e3de4c5" category="inline-link-rx"></block> y consulte los cambios incluidos en la versión de febrero de 2025.</block>
+  <block id="54f7b7a152ca64f843b7648c47a75dec" category="cell">Ir a la<block ref="1f6c2a2bb628adfdf4a77389c4b1bb41" category="inline-link-rx"></block> y consulte los cambios incluidos en la versión 1.39.</block>
+  <block id="fdd6e42ca79434600b44c732aa9dc2c6" category="cell">Ir a la<block ref="6357afa5f4df051bc1bb94ee8e3de4c5" category="inline-link-rx"></block> y consulte los cambios incluidos en la versión de marzo de 2024.</block>
+  <block id="9e018f3504f93a2cfeb1d22432de96d0" category="cell">Ir a la<block ref="1f6c2a2bb628adfdf4a77389c4b1bb41" category="inline-link-rx"></block> y consulte los cambios incluidos en las versiones 1.38 a 1.371.41.</block>
+  <block id="2f55344a84e63287ea3f67ee0cff06b2" category="cell">Ir a la<block ref="6357afa5f4df051bc1bb94ee8e3de4c5" category="inline-link-rx"></block> y consulte los cambios incluidos en la versión de mayo de 2025.</block>
+  <block id="bdf328dcc25654b345bbfab998204210" category="cell">Ir a la<block ref="6357afa5f4df051bc1bb94ee8e3de4c5" category="inline-link-rx"></block> y consulte los cambios incluidos en la versión de julio de 2025.</block>
+  <block id="3f21878baefde2ddae755caf4163a20e" category="cell">Ir a la<block ref="1f6c2a2bb628adfdf4a77389c4b1bb41" category="inline-link-rx"></block> .</block>
+  <block id="a535b5a334dd47af1818cf6df5088728" category="paragraph"><block ref="a535b5a334dd47af1818cf6df5088728" category="inline-link-rx"></block></block>
+  <block id="eae530fcdecfaf8ee890d4814cafd997" category="list-text"><block ref="eae530fcdecfaf8ee890d4814cafd997" category="inline-link-rx"></block></block>
+  <block id="f2a98b63d5b6deacc3ab5c090502f1f2" category="paragraph">Algunas acciones requieren un agente de consola o un vínculo de cargas de trabajo de NetApp .<block ref="df41765196184a753d31e48b088e08b6" category="inline-link-rx"></block></block>
+  <block id="557086d692ef9d1cc86a94361985a0fe" category="paragraph"><block ref="557086d692ef9d1cc86a94361985a0fe" category="inline-link-rx"></block></block>
+  <block id="368237704bc4eedc09cc71283d355545" category="paragraph">Implemente un agente de consola en Azure en la misma región que los sistemas Cloud Volumes ONTAP que administra. Alternativamente, impleméntelo en el<block ref="71e0e9a7366955554f0600c5ea8cfc7f" category="inline-link-rx"></block> . Esto garantiza que se utilice una conexión de Azure Private Link entre Cloud Volumes ONTAP y sus cuentas de almacenamiento asociadas.<block ref="5c21278428c52425407c3d731c18f2c0" category="inline-link-rx"></block></block>
+  <block id="d7726716920c51dac9e8d3b944fb1d9c" category="list-text"><block ref="d7726716920c51dac9e8d3b944fb1d9c" category="inline-link-rx"></block></block>
+  <block id="d49ef528aa6be744e9ccc075b5f5ea3f" category="cell">Compatible con regiones gubernamentales y regiones comerciales con modo restringido. No compatible con regiones soberanas con modo restringido. En el modo restringido, NetApp Backup and Recovery solo admite la copia de seguridad y la restauración de datos de volumen ONTAP .<block ref="b4c1403d372f1f9b47ce9baa913046c0" category="inline-link-rx"></block> No se admite la realización de copias de seguridad ni la restauración de datos de aplicaciones ni de máquinas virtuales.</block>
+  <block id="91471b82e1f8cf03fbbf6a08da688679" category="cell">Sí<block ref="d965d840576f8451a10b0c221310a681" category="inline-link-rx"></block></block>
+  <block id="2015c83409a6e7dfc23533375c5ae10e" category="list-text"><block ref="2015c83409a6e7dfc23533375c5ae10e" category="inline-link-rx"></block></block>
+  <block id="f610a540e2ecafae9447279876425a0e" category="list-text"><block ref="f610a540e2ecafae9447279876425a0e" category="inline-link-rx"></block></block>
+  <block id="f93f1cb0f92d9e89cd92ec94db26274f" category="list-text"><block ref="f93f1cb0f92d9e89cd92ec94db26274f" category="inline-link-rx"></block></block>
+  <block id="8f4f872a5a91b4fda0f95e21e0b83fb1" category="list-text"><block ref="8f4f872a5a91b4fda0f95e21e0b83fb1" category="inline-link-rx"></block></block>
+  <block id="6dd67f54d38094b3a7d65e4eeed06755" category="list-text"><block ref="6dd67f54d38094b3a7d65e4eeed06755" category="inline-link-rx"></block></block>
+  <block id="46a1f2a1262e75b4e5ea88e748ead245" category="list-text"><block ref="46a1f2a1262e75b4e5ea88e748ead245" category="inline-link-macro-rx"></block></block>
+  <block id="97ddb4a8fac1eb0dd686cfabb20ffbbc" category="cell"><block ref="97ddb4a8fac1eb0dd686cfabb20ffbbc" category="inline-link-rx"></block></block>
+  <block id="45c54074547a6e7b96c3122cd38fa458" category="cell"><block ref="45c54074547a6e7b96c3122cd38fa458" category="inline-link-rx"></block></block>
+  <block id="cfddb3eace2cd819afed174de216343e" category="cell"><block ref="cfddb3eace2cd819afed174de216343e" category="inline-link-rx"></block></block>
+  <block id="6bb1058c704be5b41eb4a6ad4f993f39" category="cell"><block ref="6bb1058c704be5b41eb4a6ad4f993f39" category="inline-link-rx"></block></block>
+  <block id="8d069e81976df58a2b36b2f169712b26" category="cell"><block ref="8d069e81976df58a2b36b2f169712b26" category="inline-link-rx"></block></block>
+  <block id="fd5c2279fb88ee0ad3118f3be652a1a6" category="cell"><block ref="fd5c2279fb88ee0ad3118f3be652a1a6" category="inline-link-rx"></block></block>
+  <block id="19aa170b6eb2d116be230ed7b485bbe6" category="list-text"><block ref="19aa170b6eb2d116be230ed7b485bbe6" category="inline-link-rx"></block></block>
+  <block id="651492a6900c9cc9941c3dd88935a740" category="cell"><block ref="651492a6900c9cc9941c3dd88935a740" category="inline-link-rx"></block></block>
+  <block id="cce1379c6af53466f5498d9d4c22382d" category="cell"><block ref="cce1379c6af53466f5498d9d4c22382d" category="inline-link-rx"></block></block>
+  <block id="a675d877e0468a41f1c4afa64e1e3d65" category="list-text"><block ref="a675d877e0468a41f1c4afa64e1e3d65" category="inline-link-rx"></block></block>
+  <block id="ecffe4f9dfa4a8d28e7f6d3d12770b04" category="list-text"><block ref="ecffe4f9dfa4a8d28e7f6d3d12770b04" category="inline-link-rx"></block></block>
+  <block id="f2f2bf79b0bb08ca52641662fab7b2ab" category="cell"><block ref="f2f2bf79b0bb08ca52641662fab7b2ab" category="inline-link-rx"></block></block>
+  <block id="c424eba059c4ff969afd3b060111bd01" category="cell"><block ref="c424eba059c4ff969afd3b060111bd01" category="inline-link-rx"></block></block>
+  <block id="f278fc65074663b9f346e3a2b7b01a1a" category="cell"><block ref="f278fc65074663b9f346e3a2b7b01a1a" category="inline-link-rx"></block></block>
+  <block id="39070bb0533c8b66e81f76909273b884" category="cell"><block ref="39070bb0533c8b66e81f76909273b884" category="inline-link-rx"></block></block>
+  <block id="9c47c1d1e7b053deb400ae7a916dfd70" category="cell"><block ref="9c47c1d1e7b053deb400ae7a916dfd70" category="inline-link-rx"></block></block>
+  <block id="bb34416ca2e8ac39300be2131f49574c" category="cell">Proporciona a Cloud Volumes ONTAP acceso a Internet para enviar mensajes de AutoSupport al soporte de NetApp . Debe abrir este puerto manualmente después de la implementación.<block ref="f127b103d9e31ba65f5f2862c031e344" category="inline-link-rx"></block></block>
+  <block id="babc7ae953e58c8202e366520ae9baf4" category="list-text"><block ref="babc7ae953e58c8202e366520ae9baf4" category="inline-link-rx"></block></block>
+  <block id="9964d0b6e519677dfa6bcd4597b081a2" category="list-text"><block ref="9964d0b6e519677dfa6bcd4597b081a2" category="inline-link-rx"></block></block>
+  <block id="6847efe16c9bfc0feacaef65fc05b7b9" category="list-text"><block ref="6847efe16c9bfc0feacaef65fc05b7b9" category="inline-link-rx"></block></block>
+  <block id="8c1b893f08cfaa147e0cf92bf09039b9" category="list-text"><block ref="8c1b893f08cfaa147e0cf92bf09039b9" category="inline-link-rx"></block></block>
+  <block id="07cad670347ede0ff6ee0e3fb79a5e7b" category="list-text"><block ref="07cad670347ede0ff6ee0e3fb79a5e7b" category="inline-link-rx"></block></block>
+  <block id="e05b0721a950cb94ec4d815fb2fcb330" category="list-text"><block ref="e05b0721a950cb94ec4d815fb2fcb330" category="inline-link-rx"></block></block>
+  <block id="ebe11108519ddfbef101cd084815105d" category="list-text"><block ref="ebe11108519ddfbef101cd084815105d" category="inline-link-rx"></block></block>
+  <block id="03f3b9db548e9f42c7f235f25063891e" category="paragraph">Para obtener ayuda, vaya a<block ref="735a4464f9ba83268a005dadc317bb68" category="inline-link-rx"></block> para ver la documentación de la consola de NetApp .</block>
+  <block id="76db590827bcc7b9e832c09d62d82728" category="paragraph">Agregue nuevas credenciales de AWS a la consola para crear y administrar FSx para ONTAP.<block ref="cb54e5f2e6b43484e136e85d736ef0b5" category="inline-link-rx"></block></block>
+  <block id="68841948fc1b61d494dc523ccae2402a" category="list-text"><block ref="68841948fc1b61d494dc523ccae2402a" category="inline-link-rx"></block></block>
+  <block id="acfc32e9de528d5b7c99c6756a63e918" category="paragraph">Para obtener más detalles, consulte la<block ref="eca356f6dfda2c57cf1ad75280c32e28" category="inline-link-rx"></block></block>
+  <block id="1d593c3f7480ada9580d93cd753c3f93" category="paragraph">Esta es una identificación generada por el sistema que se asigna a su correo electrónico. En la página *Administración de NSS*, puede mostrar su correo electrónico desde el<block ref="5444f6f0c3983523c8933a1864b2b390" category="inline-image-macro-rx" type="image"></block> menú.</block>
+  <block id="872eaae7deb6035c20f9bfe6deefd03d" category="list-text">Si alguna vez necesita actualizar sus tokens de credenciales de inicio de sesión, también hay una opción *Actualizar credenciales* en el<block ref="5444f6f0c3983523c8933a1864b2b390" category="inline-image-macro-rx" type="image"></block> menú.</block>
+  <block id="1e0f1983482329aaf670dac68ccfd14f" category="list-text"><block ref="1e0f1983482329aaf670dac68ccfd14f" category="inline-link-rx"></block></block>
+  <block id="fc09b9cb5ee20aeac09d8ff9ad68b475" category="list-text"><block ref="fc09b9cb5ee20aeac09d8ff9ad68b475" category="inline-link-rx"></block></block>
+  <block id="70e099984307d3cf98ed169b8bf816f6" category="list-text"><block ref="70e099984307d3cf98ed169b8bf816f6" category="inline-link-rx"></block></block>
+  <block id="1529bd63e64b40d1ef228cbd84f9cd21" category="list-text"><block ref="1529bd63e64b40d1ef228cbd84f9cd21" category="inline-link-rx"></block></block>
+  <block id="7036572e3eccb7a8e3ea89ae1a860266" category="paragraph"><block ref="7036572e3eccb7a8e3ea89ae1a860266" category="inline-link-rx"></block></block>
+  <block id="822150f48f2d51bfe0452ad1ea4e2911" category="paragraph">Para obtener detalles sobre las alertas de ONTAP , consulte<block ref="28050ded22ad21dbaedc45fb08ebba1d" category="inline-link-rx"></block> .</block>
+  <block id="743a4db81a7b6f2c4f92da9e23939a38" category="paragraph">Para obtener una lista de alertas que podría ver, consulte<block ref="5fb9e32d1c7ded7c1696f28ab0c19899" category="inline-link-rx"></block> .</block>
+  <block id="a57284f39a940d0122e72daaeca6ad8d" category="list-text">Seleccione *Ver* para ir al Panel de resiliencia ante ransomware de NetApp . Para más detalles, consulte<block ref="3c5bed37c02dde180dd827f85c3f737b" category="inline-link-rx"></block> .</block>
+  <block id="b961249dcbfab5e6ed490b2b67b9f707" category="list-text">Revise las “Acciones recomendadas” en el Panel de resiliencia ante ransomware de NetApp . Para más detalles, consulte<block ref="ded1247d4865879244e81adb9bed76bb" category="inline-link-rx"></block> .</block>
+  <block id="d3f776e1af04c6d014e62074b89f3eec" category="list-text">Seleccione el enlace de alertas para revisar las alertas en la página de alertas de resiliencia ante ransomware de NetApp . Para más detalles, consulte<block ref="7ccc0a34cc3d906719091babe4b8dcb5" category="inline-link-rx"></block> .</block>
+  <block id="bfb708a7900e1a2a8e29ed4f45dba55a" category="list-text">Seleccione *Ver* para ir al Panel de control de copia de seguridad y recuperación de NetApp . Para más detalles, consulte<block ref="301caaf79db1fedee96dc10f2b708970" category="inline-link-rx"></block> .</block>
+  <block id="3175e3cb4bfda0cca49f10a0807d0711" category="list-text"><block ref="3175e3cb4bfda0cca49f10a0807d0711" category="inline-link-rx"></block></block>
+  <block id="b211195edc33bc74e4474bf0324b1832" category="list-text"><block ref="b211195edc33bc74e4474bf0324b1832" category="inline-link-rx"></block></block>
+  <block id="4241e9ae774203ff269f84b2a1f48dd5" category="list-text"><block ref="4241e9ae774203ff269f84b2a1f48dd5" category="inline-link-rx"></block></block>
+  <block id="e64786dd7cb8f0f615d7953baadfe93d" category="list-text"><block ref="e64786dd7cb8f0f615d7953baadfe93d" category="inline-link-rx"></block></block>
+  <block id="3e9c10d39711a932e38569e3977fc19c" category="list-text"><block ref="3e9c10d39711a932e38569e3977fc19c" category="inline-link-rx"></block></block>
+  <block id="741ac6d95370106a6101f45a55a9d0e9" category="list-text"><block ref="741ac6d95370106a6101f45a55a9d0e9" category="inline-link-rx"></block></block>
+  <block id="dca3a3bf02db53d7851689709d41e3b3" category="list-text"><block ref="dca3a3bf02db53d7851689709d41e3b3" category="inline-link-rx"></block></block>
+  <block id="51ddea41addd6afba49a3f8917e6dd1c" category="list-text"><block ref="51ddea41addd6afba49a3f8917e6dd1c" category="inline-link-rx"></block></block>
+  <block id="a580f203efb1da76755f79253a21d96f" category="list-text"><block ref="a580f203efb1da76755f79253a21d96f" category="inline-link-rx"></block></block>
+  <block id="4e24f9490df0b4af6b4e7bceaa6097a1" category="admonition">Puedes pertenecer a varias organizaciones si otra organización te invita a unirte o si creas una tú mismo. Puede crear una organización adicional utilizando la API.<block ref="54dc9fecd403ebe4164f0404ec85af49" category="inline-link-rx"></block></block>
+  <block id="68105c97320cc4f91ac35396075a2ebb" category="paragraph">Si tiene depósitos de Amazon S3 en la misma cuenta de AWS donde creó el agente de consola, verá aparecer automáticamente un entorno de trabajo de Amazon S3 en la página *Sistemas*.<block ref="74eed29a16619fe7bd97e3bf2235caa0" category="inline-link-rx"></block></block>
+  <block id="cb0908023b296d7d49436ab6f97e1722" category="paragraph">Si tiene depósitos de Amazon S3 en la misma cuenta de AWS donde creó el agente de consola, verá aparecer automáticamente un sistema de almacenamiento de Amazon S3 en la página *Sistemas*.<block ref="e807fcbb34e8f3cdd2199d0fc61d445e" category="inline-link-rx"></block></block>
+  <block id="7b3336affba5ca14937818152aba2704" category="paragraph">Si tiene depósitos de Amazon S3 en la misma cuenta de AWS donde creó el agente de consola, verá aparecer automáticamente un entorno de trabajo de Amazon S3 en la página *Sistemas*.<block ref="74eed29a16619fe7bd97e3bf2235caa0" category="inline-link-rx"></block></block>
+  <block id="b1599f1dab16f4dcd35886dbdbbbb28e" category="paragraph">Si tiene depósitos de Google Cloud Storage en la misma cuenta de Google Cloud donde creó el agente de consola, verá aparecer automáticamente un sistema de Google Cloud Storage en la página *Sistemas*.<block ref="f1cd5bada461ae8da2b324edaa3edd7e" category="inline-link-rx"></block></block>
+  <block id="22a243e5f9859fe3d0fcb5d054ec0f43" category="paragraph">Si tiene depósitos de Google Cloud Storage en la misma cuenta de Google Cloud donde creó el agente de consola, verá aparecer automáticamente un sistema de Google Cloud Storage en la página *Sistemas*.<block ref="f4a6f159093eba0ffefdac7ab4ea2c30" category="inline-link-rx"></block></block>
+  <block id="17fc88f224620f6881e6e779aa01025c" category="paragraph"><block ref="17fc88f224620f6881e6e779aa01025c" category="inline-link-rx"></block></block>
+  <block id="d9976cbb503a12b8c9007ebc729a402f" category="paragraph"><block ref="d9976cbb503a12b8c9007ebc729a402f" category="inline-link-rx"></block></block>
+  <block id="99cee3b8f810202d675de978cef4f9da" category="cell">Sí<block ref="514d17d2eb0e043089e13542661abd63" category="inline-link-rx"></block></block>
+  <block id="e6703b56fff183a0ca3800c97f3b18c7" category="list-text">Para nuevas implementaciones de agentes de consola desde la consola o mediante<block ref="cd1b2cc9eeb5a179e7fae6518411110f" category="inline-link-rx"></block> IMDSv2 está habilitado de forma predeterminada en la instancia EC2.</block>
+  <block id="b7feb1419e39be60dd56e13eb4251594" category="list-text"><block ref="b7feb1419e39be60dd56e13eb4251594" category="inline-link-rx"></block></block>
+  <block id="c258aa60bfe069555f691666bc14d520" category="list-text"><block ref="c258aa60bfe069555f691666bc14d520" category="inline-link-rx"></block></block>
+  <block id="6235f0da86a54bde0f518b0a78d9ae82" category="list-text"><block ref="6235f0da86a54bde0f518b0a78d9ae82" category="inline-link-rx"></block></block>
+  <block id="776abbf4d80cbef17bd3c86ff37b2257" category="paragraph">Es necesario registrarse para recibir soporte técnico específico para la consola de NetApp y sus soluciones de almacenamiento y servicios de datos. También es necesario registrarse para obtener soporte técnico para habilitar flujos de trabajo clave para los sistemas Cloud Volumes ONTAP .</block>
+  <block id="ba4e23e03f4354a0f1ef2781272c8477" category="paragraph">Registrarse para recibir soporte no habilita el soporte de NetApp para un servicio de archivos de un proveedor de nube. Para obtener asistencia técnica relacionada con un servicio de archivos de un proveedor de nube, su infraestructura o cualquier solución que utilice el servicio, consulte "Obtener ayuda" en la documentación de ese producto.</block>
+  <block id="869a868c87f6fb61410cfd773b4f1bab" category="list-text">Registrar el número de serie de su cuenta de la consola de NetApp (su número de serie 960xxxxxxxxx de 20 dígitos ubicado en la página Recursos de soporte en la consola).</block>
+  <block id="be0b51de4268d87101344aa0368b4403" category="paragraph">Esto sirve como su ID de suscripción de soporte único para cualquier servicio dentro de la Consola. Cada cuenta de consola debe estar registrada.</block>
+  <block id="3cf9fb70d6921dd90583621f028a395f" category="paragraph">Estos números de serie se conocen comúnmente como _números de serie PAYGO_ y son generados por la consola de NetApp en el momento de la implementación de Cloud Volumes ONTAP .</block>
+  <block id="bf516b6498e37e816d29ae43ae132f74" category="paragraph">El registro de ambos tipos de números de serie permite funciones como la apertura de tickets de soporte y la generación automática de casos. El registro se completa agregando cuentas del sitio de soporte de NetApp (NSS) a la consola como se describe a continuación.</block>
+  <block id="ba5983207e417797fefd5b9374ab4a97" category="section-title">Registrar la consola de NetApp para obtener soporte de NetApp</block>
+  <block id="dcb7105ba6e3d9411b05e726848feb80" category="paragraph">Para registrarse para recibir soporte y activar el derecho a soporte, un usuario de su cuenta de consola de NetApp debe asociar una cuenta del sitio de soporte de NetApp con su inicio de sesión de consola. La forma de registrarse para el soporte de NetApp depende de si ya tiene una cuenta del sitio de soporte de NetApp (NSS).</block>
+  <block id="ed5bddb699a442b85bc1bb8e1516fe57" category="paragraph">Si es cliente de NetApp con una cuenta NSS, simplemente necesita registrarse para recibir soporte a través de la consola.</block>
+  <block id="76bc427c3d9c4b81dc353078b942f991" category="list-text">Seleccione *Administración* &gt; *Credenciales*.</block>
+  <block id="e9451600769b4bf4b20ca941ba9e6d19" category="list-text">Seleccione *Agregar credenciales NSS* y siga las instrucciones de autenticación del Sitio de soporte de NetApp (NSS).</block>
+  <block id="1d4ea9fd10f6cfcd6f6fe1f861d354a4" category="paragraph">La página *Recursos* debería mostrar que su cuenta de consola está registrada para recibir soporte.</block>
+  <block id="afe8240ca62f4b72006980ff64d371b8" category="paragraph">Tenga en cuenta que otros usuarios de la consola no verán este mismo estado de registro de soporte si no han asociado una cuenta del sitio de soporte de NetApp con su inicio de sesión. Sin embargo, eso no significa que su cuenta no esté registrada para recibir soporte. Siempre que un usuario de la organización haya seguido estos pasos, su cuenta quedará registrada.</block>
+  <block id="42eaca1e1c2d9e1f04e932eeaa6d129d" category="paragraph">Si es un cliente existente de NetApp con licencias y números de serie existentes pero _no_ una cuenta NSS, debe crear una cuenta NSS y asociarla con su inicio de sesión de la consola.</block>
+  <block id="bd33c4539c7d6985f6edafd4a4f2ba1d" category="list-text">Asegúrese de copiar el número de serie de la cuenta de la consola (960xxxx) utilizado anteriormente para el campo de número de serie. Esto acelerará el procesamiento de la cuenta.</block>
+  <block id="9b1f48f88cd439b7a50fe3e76eb8a853" category="list-text">Asocie su nueva cuenta NSS con su inicio de sesión de la consola completando los pasos a continuación<block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block> .</block>
+  <block id="e7e9f49f4584c68b9d97c578e73b7583" category="list-text">En la parte superior derecha de la Consola, seleccione el ícono Ayuda y seleccione *Soporte*.</block>
+  <block id="629757336278be576456cf315303b178" category="paragraph">Una vez que tenga su cuenta del sitio de soporte de NetApp , asocie la cuenta con su inicio de sesión de consola completando los pasos a continuación.<block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block> .</block>
+  <block id="f22d1a855e255746a6b925a3b22f7838" category="paragraph">Es necesario asociar las credenciales del sitio de soporte de NetApp con su cuenta de consola para habilitar los siguientes flujos de trabajo clave para Cloud Volumes ONTAP:</block>
+  <block id="daf104544b5203a46e1580e1b8583f1f" category="paragraph">La asociación de credenciales NSS con su cuenta de consola de NetApp es diferente a la asociación de una cuenta NSS con un inicio de sesión de usuario de consola.</block>
+  <block id="5bc1315a63455544e7a917a7cc968939" category="paragraph">Estas credenciales de NSS están asociadas con su ID de cuenta de consola específica. Los usuarios que pertenecen a la organización de la Consola pueden acceder a estas credenciales desde *Soporte &gt; Administración de NSS*.</block>
+  <block id="7687b0a57d5cb728d9fb892dfc814715" category="paragraph">Estas acciones permiten que la consola utilice su cuenta NSS para cosas como descargas de licencias, verificación de actualizaciones de software y futuros registros de soporte.</block>
+  <block id="8adebf5472fd1c0238d508bdfa04111b" category="paragraph"><block ref="8adebf5472fd1c0238d508bdfa04111b" category="inline-link-rx"></block></block>
+  <block id="0ea662a78985d73b16fd60cf50ad65a2" category="list-text"><block ref="0ea662a78985d73b16fd60cf50ad65a2" category="inline-link-rx"></block></block>
+  <block id="26323547bd680fab40f920c84c862857" category="list-text"><block ref="26323547bd680fab40f920c84c862857" category="inline-link-rx"></block></block>
+  <block id="7c9136bab44834c94b08c608870f1fd1" category="list-text"><block ref="7c9136bab44834c94b08c608870f1fd1" category="inline-link-rx"></block></block>
+  <block id="d3cdb39411bce89027162422ffb460a4" category="list-text"><block ref="d3cdb39411bce89027162422ffb460a4" category="inline-link-rx"></block></block>
 </blocks>

@@ -99,7 +99,7 @@ Algunos servicios de datos de NetApp , así como Cloud Volumes ONTAP, requieren 
 
 * link:https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/reference-networking-aws.html#outbound-internet-access-for-cloud-volumes-ontap-nodes["Puntos finales para Cloud Volumes ONTAP en AWS"]
 * link:https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/reference-networking-azure.html["Puntos de conexión para Cloud Volumes ONTAP en Azure"]
-* link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html#outbound-internet-access["Puntos finales para Cloud Volumes ONTAP en Google Cloud"]
+* link:https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/reference-networking-gcp.html#outbound-internet-access["Puntos finales para Cloud Volumes ONTAP en Google Cloud"]
 
 
 https://docs.netapp.com/us-en/data-services-family/["Consulte la documentación de los servicios de datos de NetApp correspondientes."^]

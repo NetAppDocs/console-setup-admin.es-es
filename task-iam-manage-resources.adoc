@@ -110,5 +110,5 @@ NOTE: Para eliminar un recurso descubierto de toda la organización, elimine el 
 
 * link:concept-identity-and-access-management.html["Obtenga información sobre la identidad y el acceso en la consola de NetApp"]
 * link:task-iam-get-started.html["Comience a utilizar la identidad y el acceso en la consola de NetApp"]
-* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["Conozca la API para identidad y acceso"^]
+* https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html["Conozca la API para identidad y acceso"^]
 

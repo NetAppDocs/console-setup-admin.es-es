@@ -437,4 +437,4 @@ Una vez completado el proceso, el agente de consola estará disponible para su u
 
 NOTE: Si la implementación falla, puedes descargar un informe y registros desde la Consola para ayudarte a solucionar los problemas.link:task-troubleshoot-agent.html#troubleshoot-installation["Aprenda a solucionar problemas de instalación."]
 
-Si tiene depósitos de Google Cloud Storage en la misma cuenta de Google Cloud donde creó el agente de consola, verá aparecer automáticamente un sistema de Google Cloud Storage en la página *Sistemas*. https://docs.netapp.com/us-en/bluexp-google-cloud-storage/index.html["Aprenda a administrar Google Cloud Storage desde la consola"]
+Si tiene depósitos de Google Cloud Storage en la misma cuenta de Google Cloud donde creó el agente de consola, verá aparecer automáticamente un sistema de Google Cloud Storage en la página *Sistemas*. https://docs.netapp.com/us-en/storage-management-google-cloud-storage/index.html["Aprenda a administrar Google Cloud Storage desde la consola"]

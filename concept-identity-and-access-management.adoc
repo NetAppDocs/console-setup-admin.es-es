@@ -239,5 +239,5 @@ Los siguientes ejemplos describen cómo puede utilizar IAM para administrar su o
 * link:task-iam-rename-organization.html["Cambie el nombre de su organización de la consola de NetApp"]
 * link:task-iam-audit-actions-timeline.html["Supervisar o auditar la actividad de IAM"]
 * link:reference-iam-predefined-roles.html["Roles de acceso a la consola de NetApp"]
-* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["Obtenga más información sobre la API para NetApp Console IAM"^]
+* https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html["Obtenga más información sobre la API para NetApp Console IAM"^]
 

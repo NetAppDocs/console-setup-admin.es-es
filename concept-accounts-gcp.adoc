@@ -60,5 +60,5 @@ Tenga en cuenta lo siguiente sobre las credenciales de Google Cloud y las suscri
 Cloud Volumes ONTAP puede residir en el mismo proyecto que el agente de consola o en un proyecto diferente.  Para implementar Cloud Volumes ONTAP en un proyecto diferente, primero debe agregar la cuenta de servicio y el rol del agente de consola a ese proyecto.
 
 * link:task-install-agent-google-console-gcloud.html#agent-permissions-google["Aprenda a configurar la cuenta de servicio"]
-* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp.html["Aprenda a implementar Cloud Volumes ONTAP en Google Cloud y seleccione un proyecto"^]
+* https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/task-deploying-gcp.html["Aprenda a implementar Cloud Volumes ONTAP en Google Cloud y seleccione un proyecto"^]
 

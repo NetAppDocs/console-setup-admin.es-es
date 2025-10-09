@@ -24,7 +24,7 @@ Algunas funciones y servicios de la consola están disponibles si no implementa 
 
 * Amazon FSx for NetApp ONTAP
 +
-Algunas acciones requieren un agente de consola o un vínculo de cargas de trabajo de NetApp . https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/concept-fsx-aws.html["Conozca qué acciones requieren un agente o enlace de consola"^]
+Algunas acciones requieren un agente de consola o un vínculo de cargas de trabajo de NetApp . https://docs.netapp.com/us-en/storage-management-fsx-ontap/start/concept-fsx-aws.html["Conozca qué acciones requieren un agente o enlace de consola"^]
 
 * Centro de automatización
 * Azure NetApp Files
@@ -46,7 +46,7 @@ Se requiere un agente para agregar licencias basadas en nodos de Cloud Volumes O
 No necesita un agente de consola para agregar un clúster ONTAP local a la consola, pero se requiere uno para funciones y servicios de datos adicionales de la consola.
 
 +
-https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Obtenga más información sobre las opciones de descubrimiento y administración para clústeres ONTAP locales"^]
+https://docs.netapp.com/us-en/storage-management-ontap-onprem/task-discovering-ontap.html["Obtenga más información sobre las opciones de descubrimiento y administración para clústeres ONTAP locales"^]
 
 * Actualizaciones de software
 * Sostenibilidad
@@ -98,7 +98,7 @@ Puede instalar agentes en las siguientes ubicaciones:
 * Servicios web de Amazon
 * Microsoft Azure
 +
-Implemente un agente de consola en Azure en la misma región que los sistemas Cloud Volumes ONTAP que administra.  Alternativamente, impleméntelo en el https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Par de regiones de Azure"^] .  Esto garantiza que se utilice una conexión de Azure Private Link entre Cloud Volumes ONTAP y sus cuentas de almacenamiento asociadas. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-link.html["Descubra cómo Cloud Volumes ONTAP utiliza un enlace privado de Azure"^]
+Implemente un agente de consola en Azure en la misma región que los sistemas Cloud Volumes ONTAP que administra. Alternativamente, impleméntelo en el https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Par de regiones de Azure"^] . Esto garantiza que se utilice una conexión de Azure Private Link entre Cloud Volumes ONTAP y sus cuentas de almacenamiento asociadas. https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/task-enabling-private-link.html["Descubra cómo Cloud Volumes ONTAP utiliza un enlace privado de Azure"^]
 
 * Google Cloud
 +

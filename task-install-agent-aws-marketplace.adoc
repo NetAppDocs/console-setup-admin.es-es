@@ -269,4 +269,4 @@ El agente de consola ahora está instalado y configurado con su organización de
 
 Abra un navegador web y vaya a https://console.netapp.com["Consola de NetApp"^] para comenzar a utilizar el agente de la consola con la consola.
 
-Si tiene depósitos de Amazon S3 en la misma cuenta de AWS donde creó el agente de consola, verá aparecer automáticamente un entorno de trabajo de Amazon S3 en la página *Sistemas*. https://docs.netapp.com/us-en/bluexp-s3-storage/index.html["Aprenda a administrar los buckets S3 desde la consola de NetApp"^]
+Si tiene depósitos de Amazon S3 en la misma cuenta de AWS donde creó el agente de consola, verá aparecer automáticamente un entorno de trabajo de Amazon S3 en la página *Sistemas*. https://docs.netapp.com/us-en/storage-management-s3-storage/index.html["Aprenda a administrar los buckets S3 desde la consola de NetApp"^]

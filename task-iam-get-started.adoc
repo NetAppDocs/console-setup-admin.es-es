@@ -42,12 +42,12 @@ Agregar o descubrir recursos (sistemas) a la consola.  Los miembros de la organi
 Aprenda a crear o descubrir recursos:
 
 [role="quick-margin-list"]
-* https://docs.netapp.com/us-en/bluexp-fsx-ontap/index.html["Amazon FSx for NetApp ONTAP"^]
-* https://docs.netapp.com/us-en/bluexp-azure-netapp-files/index.html["Azure NetApp Files"^]
-* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/index.html["Cloud Volumes ONTAP"^]
-* https://docs.netapp.com/us-en/bluexp-e-series/index.html["Sistemas de la serie E"^]
-* https://docs.netapp.com/us-en/bluexp-ontap-onprem/index.html["Clústeres ONTAP locales"^]
-* https://docs.netapp.com/us-en/bluexp-storagegrid/index.html["StorageGRID"^]
+* https://docs.netapp.com/us-en/storage-management-fsx-ontap/index.html["Amazon FSx for NetApp ONTAP"^]
+* https://docs.netapp.com/us-en/storage-management-azure-netapp-files/index.html["Azure NetApp Files"^]
+* https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/index.html["Cloud Volumes ONTAP"^]
+* https://docs.netapp.com/us-en/storage-management-e-series/index.html["Sistemas de la serie E"^]
+* https://docs.netapp.com/us-en/storage-management-ontap-onprem/index.html["Clústeres ONTAP locales"^]
+* https://docs.netapp.com/us-en/storage-management-storagegrid/index.html["StorageGRID"^]
 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Cuatro"]Asociar recursos con proyectos adicionales
@@ -61,5 +61,5 @@ Agregar o descubrir un sistema en la Consola asocia automáticamente el recurso 
 
 .Información relacionada
 * link:concept-identity-and-access-management.html["Obtenga información sobre la gestión de identidad y acceso en la consola de NetApp"]
-* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["Conozca la API para identidad y acceso"^]
+* https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html["Conozca la API para identidad y acceso"^]
 

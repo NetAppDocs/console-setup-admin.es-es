@@ -65,5 +65,5 @@ image:screenshot-iam-project-id.png["Una captura de pantalla de la tabla de carp
 .Información relacionada
 * link:concept-identity-and-access-management.html["Aprenda sobre la gestión de identidad y acceso"]
 * link:task-iam-get-started.html["Comience con la identidad y el acceso"]
-* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["Conozca la API para identidad y acceso"^]
+* https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html["Conozca la API para identidad y acceso"^]
 
