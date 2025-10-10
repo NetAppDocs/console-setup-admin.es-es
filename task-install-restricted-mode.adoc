@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-install-restricted-mode.html 
 keywords: government region, gov, govcloud, connector, sovereign cloud 
-summary: Implemente el agente de consola en modo restringido para poder usar la consola de NetApp con conectividad saliente limitada.  Para comenzar, instale el agente de la consola, configúrelo accediendo a la interfaz de usuario que se ejecuta en el agente de la consola y luego proporcione los permisos de nube que configuró previamente. 
+summary: Implemente el agente de consola en modo restringido para poder usar la NetApp Console con conectividad saliente limitada.  Para comenzar, instale el agente de la consola, configúrelo accediendo a la interfaz de usuario que se ejecuta en el agente de la consola y luego proporcione los permisos de nube que configuró previamente. 
 ---
 = Implementar el agente de consola en modo restringido
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Implemente el agente de consola en modo restringido para poder usar la 
 
 
 [role="lead"]
-Implemente el agente de consola en modo restringido para poder usar la consola de NetApp con conectividad saliente limitada.  Para comenzar, instale el agente de la consola, configúrelo accediendo a la interfaz de usuario que se ejecuta en el agente de la consola y luego proporcione los permisos de nube que configuró previamente.
+Implemente el agente de consola en modo restringido para poder usar la NetApp Console con conectividad saliente limitada.  Para comenzar, instale el agente de la consola, configúrelo accediendo a la interfaz de usuario que se ejecuta en el agente de la consola y luego proporcione los permisos de nube que configuró previamente.
 
 
 
@@ -46,7 +46,7 @@ link:task-prepare-restricted-mode.html#step-3-review-host-requirements["Revisar 
 
 
 .Pasos
-. Ir a la https://aws.amazon.com/marketplace/pp/prodview-jbay5iyfmu6ui["Listado de agentes de la consola de NetApp en AWS Marketplace"^]
+. Ir a la https://aws.amazon.com/marketplace/pp/prodview-jbay5iyfmu6ui["Listado de agentes de la NetApp Console en AWS Marketplace"^]
 . En la página de Marketplace, seleccione *Continuar con la suscripción*.
 . Para suscribirse al software, seleccione *Aceptar términos*.
 +
@@ -88,7 +88,7 @@ Si desea habilitar el cifrado de Amazon EBS en el volumen raíz, seleccione *Ava
 AWS inicia el software con la configuración especificada.  La instancia del agente de consola y el software se ejecutan en aproximadamente cinco minutos.
 
 .¿Que sigue?
-Configurar la consola de NetApp .
+Configurar la NetApp Console.
 
 --
 .Mercado gubernamental de AWS
@@ -109,13 +109,13 @@ link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Aprenda
 
 
 .Pasos
-. Vaya a la oferta del agente de consola de NetApp en AWS Marketplace.
+. Vaya a la oferta del agente de NetApp Console en AWS Marketplace.
 +
 .. Abra el servicio EC2 y seleccione *Iniciar instancia*.
 .. Seleccione *AWS Marketplace*.
 .. Busque NetApp Console y seleccione la oferta.
 +
-image:screenshot-gov-cloud-mktp.png["Una captura de pantalla que muestra la oferta de la consola de NetApp después de buscarla en AWS Marketplace"]
+image:screenshot-gov-cloud-mktp.png["Una captura de pantalla que muestra la oferta de la NetApp Console después de buscarla en AWS Marketplace"]
 
 .. Seleccione *Continuar*.
 
@@ -161,7 +161,7 @@ link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Aprenda
 
 
 .Pasos
-. Vaya a la página de la máquina virtual del agente de la consola de NetApp en Azure Marketplace.
+. Vaya a la página de la máquina virtual del agente de la NetApp Console en Azure Marketplace.
 +
 ** https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-oncommand-cloud-manager["Página de Azure Marketplace para regiones comerciales"^]
 ** https://portal.azure.us/#create/netapp.netapp-oncommand-cloud-manageroccm-byol["Página de Azure Marketplace para las regiones de Azure Government"^]
@@ -202,7 +202,7 @@ Esta configuración es importante porque una identidad administrada permite que 
 Azure implementa la máquina virtual con la configuración especificada.  La máquina virtual y el software del agente de consola deberían ejecutarse en aproximadamente cinco minutos.
 
 .¿Que sigue?
-Configurar la consola de NetApp .
+Configurar la NetApp Console.
 
 --
 .Instalación manual
@@ -219,9 +219,9 @@ Tiene la opción de configurar un servidor proxy después de la instalación, pe
 
 
 
-NOTE: No es posible configurar un certificado para un servidor proxy transparente al instalar manualmente el agente de consola. Si necesita configurar un certificado para un servidor proxy transparente, debe utilizar la Consola de mantenimiento después de la instalación. Obtenga más información sobre ellink:reference-agent-maint-console.html["Consola de mantenimiento del agente"] .
+NOTE: No es posible configurar un certificado para un servidor proxy transparente al instalar manualmente el agente de consola.  Si necesita configurar un certificado para un servidor proxy transparente, debe utilizar la Consola de mantenimiento después de la instalación. Obtenga más información sobre ellink:reference-agent-maint-console.html["Consola de mantenimiento del agente"] .
 
-* Debe deshabilitar la comprobación de configuración que verifica la conectividad saliente durante la instalación. La instalación manual falla si esta comprobación no está deshabilitada.link:task-troubleshoot-agent.html["Aprenda cómo deshabilitar las comprobaciones de configuración para instalaciones manuales."]
+* Debe deshabilitar la comprobación de configuración que verifica la conectividad saliente durante la instalación.  La instalación manual falla si esta comprobación no está deshabilitada.link:task-troubleshoot-agent.html["Aprenda cómo deshabilitar las comprobaciones de configuración para instalaciones manuales."]
 * Dependiendo de su sistema operativo, se requiere Podman o Docker Engine antes de instalar el agente de consola.
 
 
@@ -337,13 +337,13 @@ Esc:wq
 El agente de consola ahora está instalado.  Al final de la instalación, el servicio del agente de consola (occm) se reinicia dos veces si especificó un servidor proxy.
 
 .¿Que sigue?
-Configurar la consola de NetApp .
+Configurar la NetApp Console.
 
 --
 ====
 
 
-== Paso 2: Configurar la consola de NetApp
+== Paso 2: Configurar la NetApp Console
 
 Cuando accede a la consola por primera vez, se le solicita que elija una organización para el agente de la consola y debe habilitar el modo restringido.
 
@@ -354,7 +354,7 @@ Si su inicio de sesión está asociado con otra organización, deberá registrar
 
 .Pasos
 . Abra un navegador web desde un host que tenga una conexión a la instancia del agente de consola e ingrese la siguiente URL del agente de consola que instaló.
-. Regístrese o inicie sesión en la consola de NetApp .
+. Regístrese o inicie sesión en la NetApp Console.
 . Después de iniciar sesión, configure la consola:
 +
 .. Introduzca un nombre para el agente de consola.
@@ -380,7 +380,7 @@ Proporcione a la consola los permisos que configuró previamente.
 
 
 
-== Paso 3: Proporcionar permisos a la consola de NetApp
+== Paso 3: Proporcionar permisos a la NetApp Console
 
 Si implementó el agente de consola desde Azure Marketplace o si instaló manualmente el software del agente de consola, deberá proporcionar los permisos que configuró previamente.
 
@@ -407,7 +407,7 @@ Estos pasos se aplican solo si instaló manualmente el agente de consola en AWS.
 --
 .Clave de acceso de AWS
 --
-Proporcione a la consola de NetApp la clave de acceso de AWS para un usuario de IAM que tenga los permisos necesarios.
+Proporcione a la NetApp Console la clave de acceso de AWS para un usuario de IAM que tenga los permisos necesarios.
 
 .Pasos
 . Seleccione *Administración > Credenciales*.
@@ -430,7 +430,7 @@ Vaya al portal de Azure y asigne el rol personalizado de Azure a la máquina vir
 .Pasos
 . Desde el Portal de Azure, abra el servicio *Suscripciones* y seleccione su suscripción.
 +
-Es importante asignar el rol desde el servicio *Suscripciones* porque esto especifica el alcance de la asignación del rol a nivel de suscripción.  El _scope_ define el conjunto de recursos al que se aplica el acceso.  Si especifica un alcance en un nivel diferente (por ejemplo, en el nivel de máquina virtual), su capacidad para completar acciones desde la consola de NetApp se verá afectada.
+Es importante asignar el rol desde el servicio *Suscripciones* porque esto especifica el alcance de la asignación del rol a nivel de suscripción.  El _scope_ define el conjunto de recursos al que se aplica el acceso.  Si especifica un alcance en un nivel diferente (por ejemplo, en el nivel de máquina virtual), su capacidad para completar acciones desde la NetApp Console se verá afectada.
 
 +
 https://learn.microsoft.com/en-us/azure/role-based-access-control/scope-overview["Documentación de Microsoft Azure: Comprender el alcance de Azure RBAC"^]
@@ -456,7 +456,7 @@ NOTE: Operador de consola es el nombre predeterminado proporcionado en la polít
 --
 .entidad de servicio de Azure
 --
-Proporcione a la consola de NetApp las credenciales para la entidad de servicio de Azure que configuró previamente.
+Proporcione a la NetApp Console las credenciales para la entidad de servicio de Azure que configuró previamente.
 
 .Pasos
 . Seleccione *Administración > Credenciales*.
@@ -477,7 +477,7 @@ Proporcione a la consola de NetApp las credenciales para la entidad de servicio 
 
 
 .Resultado
-La consola de NetApp ahora tiene los permisos que necesita para realizar acciones en Azure en su nombre.
+La NetApp Console ahora tiene los permisos que necesita para realizar acciones en Azure en su nombre.
 
 --
 .Cuenta de servicio de Google Cloud

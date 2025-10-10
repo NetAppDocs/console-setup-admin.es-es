@@ -28,5 +28,5 @@
 ** https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html["Documentación de AWS: Cómo agregar y eliminar políticas de IAM"^]
 
 
-. Asegúrese de que el usuario tenga una clave de acceso que pueda agregar a la consola de NetApp después de instalar el agente de la consola.
+. Asegúrese de que el usuario tenga una clave de acceso que pueda agregar a la NetApp Console después de instalar el agente de la consola.
 

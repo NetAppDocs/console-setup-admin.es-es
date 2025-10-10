@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concept-accounts-azure.html 
 keywords: cloud provider accounts, azure, azure accounts, service principal, multiple accounts, permissions, policy, policies, subscriptions, credentials, marketplace subscription, replace subscription, subscription, bluexp 
-summary: Descubra cómo la consola de NetApp usa las credenciales de Azure para realizar acciones en su nombre y cómo esas credenciales se asocian con las suscripciones del Marketplace.  Comprender estos detalles puede resultar útil al administrar las credenciales de una o más suscripciones de Azure.  Por ejemplo, es posible que desee saber cuándo agregar credenciales de Azure adicionales a la consola. 
+summary: Descubra cómo la NetApp Console usa las credenciales de Azure para realizar acciones en su nombre y cómo esas credenciales se asocian con las suscripciones del Marketplace.  Comprender estos detalles puede resultar útil al administrar las credenciales de una o más suscripciones de Azure.  Por ejemplo, es posible que desee saber cuándo agregar credenciales de Azure adicionales a la consola. 
 ---
-= Obtenga información sobre las credenciales y los permisos de Azure en la consola de NetApp
+= Obtenga información sobre las credenciales y los permisos de Azure en la NetApp Console
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,13 +14,13 @@ summary: Descubra cómo la consola de NetApp usa las credenciales de Azure para 
 
 
 [role="lead"]
-Descubra cómo la consola de NetApp usa las credenciales de Azure para realizar acciones en su nombre y cómo esas credenciales se asocian con las suscripciones del Marketplace.  Comprender estos detalles puede resultar útil al administrar las credenciales de una o más suscripciones de Azure.  Por ejemplo, es posible que desee saber cuándo agregar credenciales de Azure adicionales a la consola.
+Descubra cómo la NetApp Console usa las credenciales de Azure para realizar acciones en su nombre y cómo esas credenciales se asocian con las suscripciones del Marketplace.  Comprender estos detalles puede resultar útil al administrar las credenciales de una o más suscripciones de Azure.  Por ejemplo, es posible que desee saber cuándo agregar credenciales de Azure adicionales a la consola.
 
 
 
 == Credenciales iniciales de Azure
 
-Al implementar un agente de consola desde la consola, debe usar una cuenta de Azure o una entidad de servicio que tenga permisos para implementar la máquina virtual del agente de consola. Los permisos necesarios se enumeran en ellink:task-install-agent-azure-console.html#agent-custom-role["Política de implementación de agentes para Azure"] .
+Al implementar un agente de consola desde la consola, debe usar una cuenta de Azure o una entidad de servicio que tenga permisos para implementar la máquina virtual del agente de consola.  Los permisos necesarios se enumeran en ellink:task-install-agent-azure-console.html#agent-custom-role["Política de implementación de agentes para Azure"] .
 
 Cuando la consola implementa la máquina virtual del agente de consola en Azure, habilita una https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["identidad administrada asignada por el sistema"^] en la máquina virtual, crea un rol personalizado y lo asigna a la máquina virtual.  El rol proporciona a la consola los permisos necesarios para administrar recursos y procesos dentro de esa suscripción de Azure. link:reference-permissions-azure.html["Revisar cómo la Consola utiliza los permisos"] .
 

@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concept-federation.html 
 keywords: identity federation, single sign-on, SSO, identity provider, IdP, SAML, Microsoft Entra ID, AD FS, PingFederate, ACS URL, Entity ID, user access, security, productivity, compliance, authentication, business continuity, account management, user experience, access control, workflow automation, credential management, login process, organization admin, bluexp, BlueXP 
-summary: La federación de identidad permite el inicio de sesión único con la consola de NetApp para que los usuarios puedan iniciar sesión utilizando las credenciales de su identidad corporativa.  Para comenzar, revise el proceso de configuración. 
+summary: La federación de identidades permite el inicio de sesión único con la NetApp Console para que los usuarios puedan iniciar sesión utilizando las credenciales de su identidad corporativa.  Para comenzar, revise el proceso de configuración. 
 ---
-= Habilite el inicio de sesión único mediante la federación de identidades con la consola de NetApp
+= Habilite el inicio de sesión único mediante la federación de identidades con la NetApp Console
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: La federación de identidad permite el inicio de sesión único con la 
 
 
 [role="lead"]
-El inicio de sesión único (federación) simplifica el proceso de inicio de sesión y mejora la seguridad al permitir que los usuarios inicien sesión en la consola de NetApp con sus credenciales corporativas.  Puede habilitar el inicio de sesión único (SSO) con su proveedor de identidad (IdP) o con el sitio de soporte de NetApp .
+El inicio de sesión único (federación) simplifica el proceso de inicio de sesión y mejora la seguridad al permitir que los usuarios inicien sesión en la NetApp Console con sus credenciales corporativas.  Puede habilitar el inicio de sesión único (SSO) con su proveedor de identidad (IdP) o con el sitio de soporte de NetApp .
 
 .Rol requerido
 Administrador de la organización, administrador de la federación, visor de la federación.link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso."]
@@ -63,7 +63,7 @@ NetApp admite los siguientes protocolos y proveedores de identidad para la feder
 
 
 
-=== Flujo de trabajo de la Federación con la consola de NetApp
+=== Flujo de trabajo de la Federación con la NetApp Console
 
 NetApp solo admite el inicio de sesión único (SSO) iniciado por el proveedor de servicios (SP).  Primero debe configurar el proveedor de identidad para confiar en NetApp como proveedor de servicios.  Luego, puede crear una conexión en la consola que utilice la configuración del proveedor de identidad.
 

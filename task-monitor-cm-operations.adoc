@@ -4,7 +4,7 @@ permalink: task-monitor-cm-operations.html
 keywords: administer, monitor, timeline, notifications, alerts, events, notification center, email, audit page, audit action 
 summary: Puede supervisar el estado de las operaciones que está realizando la consola para ver si hay algún problema que deba solucionar.  Puede ver el estado desde la página de Auditoría, el Centro de notificaciones o recibir notificaciones en su correo electrónico. 
 ---
-= Supervisar las operaciones de la consola de NetApp
+= Supervisar las operaciones de la NetApp Console
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -82,7 +82,7 @@ También puede configurar la Consola para enviar ciertos tipos de notificaciones
 
 El Centro de notificaciones le permite ver el estado de las operaciones que ha iniciado y configurar notificaciones de alerta para ciertos tipos de actividades del sistema.  Mientras tanto, las alertas le permiten ver problemas o riesgos potenciales en su entorno de almacenamiento ONTAP relacionados con la capacidad, la disponibilidad, el rendimiento, la protección y la seguridad.
 
-https://docs.netapp.com/us-en/console-alerts/index.html["Obtenga más información sobre las alertas de la consola de NetApp"^]
+https://docs.netapp.com/us-en/console-alerts/index.html["Obtenga más información sobre las alertas de la NetApp Console"^]
 
 
 

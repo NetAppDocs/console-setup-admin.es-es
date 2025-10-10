@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-whats-next.html 
 keywords: standard mode, what you can do 
-summary: Ahora que ha iniciado sesión y configurado la consola de NetApp en modo estándar, los usuarios pueden crear y descubrir sistemas de almacenamiento y utilizar servicios de datos de NetApp . 
+summary: Ahora que ha iniciado sesión y configurado la NetApp Console en modo estándar, los usuarios pueden crear y descubrir sistemas de almacenamiento y utilizar servicios de datos de NetApp . 
 ---
 = Qué puedes hacer a continuación (modo estándar)
 :hardbreaks:
@@ -14,12 +14,12 @@ summary: Ahora que ha iniciado sesión y configurado la consola de NetApp en mod
 
 
 [role="lead"]
-Ahora que ha iniciado sesión y configurado la consola de NetApp en modo estándar, los usuarios pueden crear y descubrir sistemas de almacenamiento y utilizar servicios de datos de NetApp .
+Ahora que ha iniciado sesión y configurado la NetApp Console en modo estándar, los usuarios pueden crear y descubrir sistemas de almacenamiento y utilizar servicios de datos de NetApp .
 
 
 TIP: Si instaló un agente de consola en AWS, Microsoft Azure o Google Cloud, la consola descubre automáticamente información sobre los buckets de Amazon S3, Azure Blob Storage o Google Cloud Storage en la ubicación donde está instalado el agente.  Estos sistemas se agregan automáticamente a la página *Sistemas*.
 
-Para obtener ayuda, vaya a https://docs.netapp.com/us-en/console-family/["Página de inicio de la documentación de la consola de NetApp"^] para ver la documentación de la consola de NetApp .
+Para obtener ayuda, vaya a https://docs.netapp.com/us-en/console-family/["Página de inicio de la documentación de la NetApp Console"^] para ver la documentación de la NetApp Console .
 
 .Información relacionada
-link:concept-modes.html["Modos de implementación de la consola de NetApp"]
+link:concept-modes.html["Modos de implementación de la NetApp Console"]

@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-dashboard.html 
 keywords: bluexp, dashboard, console, home page 
-summary: Dentro de la consola de NetApp , puede ver las métricas en la página de inicio. 
+summary: Dentro de la NetApp Console, puede ver las métricas en la página de inicio. 
 ---
-= Ver métricas en la página de inicio de la consola de NetApp
+= Ver métricas en la página de inicio de la NetApp Console
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Dentro de la consola de NetApp , puede ver las métricas en la página 
 
 
 [role="lead"]
-Monitorear el estado de su parque de almacenamiento le permite estar al tanto de los problemas con la protección del almacenamiento y tomar medidas para resolverlos.  Al utilizar la página de inicio de la consola de NetApp , vea el estado de sus copias de seguridad y restauraciones de NetApp Backup and Recovery y la cantidad de cargas de trabajo que están en riesgo de sufrir un ataque de ransomware o que están protegidas según lo indicado por NetApp Ransomware Resilience.  Puede revisar la capacidad de almacenamiento de clústeres individuales y Cloud Volumes ONTAP, las alertas de ONTAP , la capacidad de rendimiento de almacenamiento por clúster o sistema Cloud Volumes ONTAP , los diferentes tipos de licencias que tiene y más.
+Monitorear el estado de su parque de almacenamiento le permite estar al tanto de los problemas con la protección del almacenamiento y tomar medidas para resolverlos.  Al utilizar la página de inicio de la NetApp Console , vea el estado de sus copias de seguridad y restauraciones de NetApp Backup and Recovery y la cantidad de cargas de trabajo que están en riesgo de sufrir un ataque de ransomware o que están protegidas según lo indicado por NetApp Ransomware Resilience.  Puede revisar la capacidad de almacenamiento de clústeres individuales y Cloud Volumes ONTAP, las alertas de ONTAP , la capacidad de rendimiento de almacenamiento por clúster o sistema Cloud Volumes ONTAP , los diferentes tipos de licencias que tiene y más.
 
 Todos los paneles de la página de inicio muestran datos a nivel de organización.  Los paneles Capacidad de almacenamiento y Rendimiento de almacenamiento muestran los sistemas asociados con proyectos a los que el usuario puede acceder según los permisos de IAM.
 
@@ -25,35 +25,35 @@ NOTE: Para obtener métricas precisas en la página de inicio se requieren agent
 
 
 
-== Roles requeridos de la consola de NetApp
+== Roles requeridos de la NetApp Console
 
 Cada panel de la página de inicio requiere diferentes roles de usuario:
 
-* *Panel de capacidad de almacenamiento*: Capacidad para ver la página de sistemas de la consola de NetApp
+* *Panel de capacidad de almacenamiento*: Capacidad para ver la página de sistemas de la NetApp Console
 * *Panel de alertas de ONTAP *: Administrador de carpeta o proyecto, Analista de soporte de operaciones, Administrador de la organización, Visor de la organización, Superadministrador, Supervisor
-* *Panel de capacidad de rendimiento de almacenamiento*: Capacidad para ver la página de sistemas de la consola de NetApp
-* *Panel de licencias y suscripciones*: Administrador de carpeta o proyecto, Administrador de organización, Visor de organización, Superadministrador, Supervisor
+* *Panel de capacidad de rendimiento de almacenamiento*: Capacidad para ver la página de sistemas de la NetApp Console
+* * Panel de Licenses and subscriptions *: Administrador de carpeta o proyecto, Administrador de organización, Visor de organización, Superadministrador, Supervisor
 * *Panel de resiliencia ante ransomware*: Administrador de carpeta o proyecto, Administrador de organización, Administrador de resiliencia ante ransomware, Visor de resiliencia ante ransomware, Superadministrador, Supervisor
 * *Panel de copia de seguridad y recuperación*: Administrador de copias de seguridad de copia de seguridad y recuperación, Superadministrador de copia de seguridad y recuperación, Visor de copias de seguridad de copia de seguridad y recuperación, Administrador de clones de copia de seguridad y recuperación, Administrador de carpetas o proyectos, Administrador de la organización, Administrador de restauración de copia de seguridad y recuperación, Superadministrador, Supervisor
 
 
 Si no tiene permisos para acceder a un panel, éste mostrará un mensaje indicando que no tiene permisos para usarlo.
 
-https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso a la consola de NetApp ."] .
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso a la NetApp Console ."] .
 
 .Pasos
-. Desde el menú de la consola de NetApp , seleccione *Inicio*.
+. Desde el menú de la NetApp Console , seleccione *Inicio*.
 +
 Si tiene el rol de administrador de la organización y no hay ningún agente ni sistema de almacenamiento configurados, la página de inicio muestra información de inicio.
 
 +
-image:screenshot-home-greenfield.png["Página de inicio de la consola de NetApp que da la bienvenida a los nuevos usuarios"]
+image:screenshot-home-greenfield.png["Página de inicio de la NetApp Console que da la bienvenida a los nuevos usuarios"]
 
 +
-Si ya configuró la consola de NetApp , al menos un agente de consola está habilitado y se agregó al menos un clúster o sistema Cloud Volumes ONTAP a ese agente, la página de inicio muestra métricas sobre su entorno de almacenamiento.
+Si ya configuró la NetApp Console, al menos un agente de consola está habilitado y se agregó al menos un clúster o sistema Cloud Volumes ONTAP a ese agente, la página de inicio muestra métricas sobre su entorno de almacenamiento.
 
 +
-image:screenshot-home-metrics.png["Página de inicio de la consola de NetApp que muestra métricas"]
+image:screenshot-home-metrics.png["Página de inicio de la NetApp Console que muestra métricas"]
 
 
 
@@ -63,7 +63,7 @@ image:screenshot-home-metrics.png["Página de inicio de la consola de NetApp que
 
 Podrás ver las métricas en la página de inicio cuando se cumplan las siguientes condiciones:
 
-* Ha iniciado sesión en una instancia SaaS de la consola de NetApp .
+* Ha iniciado sesión en una instancia SaaS de la NetApp Console.
 * Pertenece a una organización con recursos de almacenamiento existentes (agente y clúster o sistema Cloud Volumes ONTAP ).
 * Al menos un agente de consola está habilitado.
 * Se ha agregado al menos un clúster o sistema Cloud Volumes ONTAP a ese agente.
@@ -94,7 +94,7 @@ Los indicadores de advertencia muestran grupos con una capacidad del 80% y los d
 TIP: Si tiene varios proyectos, es posible que vea datos diferentes en el panel Capacidad de almacenamiento en comparación con la página Sistemas.  Esto se debe a que la página Sistemas muestra información según el nivel de proyecto, mientras que el panel Capacidad de almacenamiento muestra información a nivel de organización.  Además, los datos de este panel pueden diferir de los valores reales durante un máximo de 15 minutos porque los datos se almacenan en caché durante ese período para optimizar el rendimiento.
 
 .Pasos
-. Desde el menú de la consola de NetApp , revise el panel Capacidad de almacenamiento.
+. Desde el menú de la NetApp Console , revise el panel Capacidad de almacenamiento.
 . En el panel Capacidad de almacenamiento, seleccione *Ver* para ir a la página Sistemas de consola.
 . En la página Sistemas, seleccione el proyecto que contiene el clúster que desea ver.
 . En la página Sistemas, seleccione un clúster para ver más detalles sobre ese clúster.
@@ -104,7 +104,7 @@ TIP: Si tiene varios proyectos, es posible que vea datos diferentes en el panel 
 
 == Ver alertas de ONTAP
 
-Vea problemas o riesgos potenciales en sus entornos ONTAP locales de NetApp . Puedes ver algunas alertas que no son de EMS y algunas alertas de EMS.
+Vea problemas o riesgos potenciales en sus entornos ONTAP locales de NetApp .  Puedes ver algunas alertas que no son de EMS y algunas alertas de EMS.
 
 Los datos se actualizan cada 5 minutos.
 
@@ -135,14 +135,14 @@ TIP: El almacenamiento en caché optimiza el rendimiento, pero puede provocar qu
 
 *Fuentes de datos compatibles*
 
-Ver alertas sobre ciertos eventos que ocurren en ONTAP. Son una combinación de EMS y alertas basadas en métricas.
+Ver alertas sobre ciertos eventos que ocurren en ONTAP.  Son una combinación de EMS y alertas basadas en métricas.
 
 Para obtener detalles sobre las alertas de ONTAP , consulte https://docs.netapp.com/us-en/console-alerts/index.html["Acerca de las alertas de ONTAP"^] .
 
 Para obtener una lista de alertas que podría ver, consulte https://docs.netapp.com/us-en/console-alerts/alerts-use-dashboard.html["Ver los riesgos potenciales en el almacenamiento de ONTAP"^] .
 
 .Pasos
-. Desde el menú de la consola de NetApp , revise el panel de alertas de ONTAP .
+. Desde el menú de la NetApp Console , revise el panel de alertas de ONTAP .
 . Opcionalmente, filtre las alertas seleccionando el nivel de gravedad o cambie el filtro para mostrar alertas según el área de impacto.
 . En el panel de alertas de ONTAP , seleccione *Ver* para ir a la página Alertas de la consola.
 
@@ -159,7 +159,7 @@ El sistema organiza los clústeres y sistemas según su capacidad de rendimiento
 TIP: El almacenamiento en caché optimiza el rendimiento, pero puede provocar que los datos de este panel difieran de los valores reales durante hasta 15 minutos.
 
 .Pasos
-. Desde el menú de la consola de NetApp , revise el panel Rendimiento de almacenamiento.
+. Desde el menú de la NetApp Console , revise el panel Rendimiento de almacenamiento.
 . En el panel Rendimiento de almacenamiento, seleccione *Ver* para ir a una página Rendimiento que enumera todos los clústeres y los datos de los sistemas Cloud Volumes ONTAP sobre capacidad de rendimiento, IOPS y latencia.
 . Seleccione un clúster para ver sus detalles en el Administrador del sistema.
 
@@ -168,7 +168,7 @@ TIP: El almacenamiento en caché optimiza el rendimiento, pero puede provocar qu
 
 == Ver las licencias y suscripciones que tienes
 
-Revise la siguiente información en el panel Licencias y suscripciones:
+Revise la siguiente información en el panel Licenses and subscriptions :
 
 * El número total de licencias y suscripciones que tiene.
 * El número de cada tipo de licencia y suscripción que tienes (licencia directa, contrato anual o PAYGO).
@@ -182,27 +182,27 @@ Los datos se actualizan cada 5 minutos.
 TIP: El almacenamiento en caché optimiza el rendimiento, pero puede provocar que los datos de este panel difieran de los valores reales durante hasta 15 minutos.
 
 .Pasos
-. Desde el menú de la consola de NetApp , revise el panel Licencias y suscripciones.
-. En el panel Licencias y suscripciones, seleccione *Ver* para ir a la página Licencias y suscripciones de la consola.
+. Desde el menú de la NetApp Console , revise el panel Licenses and subscriptions .
+. En el panel Licenses and subscriptions , seleccione *Ver* para ir a la página Licenses and subscriptions de la consola.
 
 
 
 
 == Ver el estado de resiliencia frente al ransomware
 
-Descubra si las cargas de trabajo están en riesgo de ataques de ransomware o están protegidas con el servicio de datos Ransomware Resilience de NetApp .  Puede revisar la cantidad total de datos que están protegidos, ver la cantidad de acciones recomendadas y ver la cantidad de alertas relacionadas con la protección contra ransomware.
+Descubra si las cargas de trabajo están en riesgo de ataques de ransomware o están protegidas con el servicio de datos NetApp Ransomware Resilience .  Puede revisar la cantidad total de datos que están protegidos, ver la cantidad de acciones recomendadas y ver la cantidad de alertas relacionadas con la protección contra ransomware.
 
-Los datos se actualizan cada 5 minutos y coinciden con los datos que se muestran en el Panel de resiliencia ante ransomware de NetApp .
+Los datos se actualizan cada 5 minutos y coinciden con los datos que se muestran en el Panel de NetApp Ransomware Resilience .
 
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html["Obtenga más información sobre la resiliencia frente al ransomware de NetApp"^] .
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html["Obtenga más información sobre la NetApp Ransomware Resilience"^] .
 
 .Pasos
-. Desde el menú de la consola de NetApp , revise el panel Resiliencia ante ransomware.
+. Desde el menú de la NetApp Console , revise el panel Resiliencia ante ransomware.
 . Realice una de las siguientes acciones en el panel Resiliencia ante ransomware:
 +
-** Seleccione *Ver* para ir al Panel de resiliencia ante ransomware de NetApp . Para más detalles, consulte https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-dashboard.html["Supervise el estado de la carga de trabajo mediante el panel de resiliencia contra ransomware de NetApp"^] .
-** Revise las “Acciones recomendadas” en el Panel de resiliencia ante ransomware de NetApp . Para más detalles, consulte https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-dashboard.html["Revise las recomendaciones de protección en el Panel de resiliencia contra ransomware de NetApp"^] .
-** Seleccione el enlace de alertas para revisar las alertas en la página de alertas de resiliencia ante ransomware de NetApp . Para más detalles, consulte https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html["Gestione las alertas de ransomware detectadas con NetApp Ransomware Resilience"^] .
+** Seleccione *Ver* para ir al Panel de NetApp Ransomware Resilience . Para más detalles, consulte https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-dashboard.html["Supervise el estado de la carga de trabajo mediante el panel de NetApp Ransomware Resilience"^] .
+** Revise las “Acciones recomendadas” en el Panel de NetApp Ransomware Resilience . Para más detalles, consulte https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-dashboard.html["Revise las recomendaciones de protección en el Panel de NetApp Ransomware Resilience"^] .
+** Seleccione el enlace de alertas para revisar las alertas en la página de alertas de NetApp Ransomware Resilience .  Para más detalles, consulte https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html["Gestione las alertas de ransomware detectadas con NetApp Ransomware Resilience"^] .
 
 
 
@@ -219,6 +219,6 @@ Los datos se actualizan cada 5 minutos.
 TIP: El almacenamiento en caché optimiza el rendimiento, pero puede provocar que los datos de este panel difieran de los valores reales durante hasta 15 minutos.
 
 .Pasos
-. Desde el menú de la consola de NetApp , revise el panel Copia de seguridad y recuperación.
-. Seleccione *Ver* para ir al Panel de control de copia de seguridad y recuperación de NetApp . Para más detalles, consulte https://docs.netapp.com/us-en/data-services-backup-recovery/index.html["Documentación de NetApp Backup and Recovery"^] .
+. Desde el menú de la NetApp Console , revise el panel Copia de seguridad y recuperación.
+. Seleccione *Ver* para ir al Panel de control de NetApp Backup and Recovery . Para más detalles, consulte https://docs.netapp.com/us-en/data-services-backup-recovery/index.html["Documentación de NetApp Backup and Recovery"^] .
 

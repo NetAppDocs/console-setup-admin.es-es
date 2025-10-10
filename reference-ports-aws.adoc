@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-ports-aws.html 
 keywords: ports, security group, http, https, inbound, outbound 
-summary: El grupo de seguridad de AWS para el agente de consola requiere reglas entrantes y salientes.  La consola de NetApp crea automáticamente este grupo de seguridad cuando usted crea un agente de consola desde la consola.  Debe configurar este grupo de seguridad para todas las demás opciones de instalación. 
+summary: El grupo de seguridad de AWS para el agente de consola requiere reglas entrantes y salientes.  La NetApp Console crea automáticamente este grupo de seguridad cuando usted crea un agente de consola desde la consola.  Debe configurar este grupo de seguridad para todas las demás opciones de instalación. 
 ---
 = Reglas del grupo de seguridad del agente de consola en AWS
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: El grupo de seguridad de AWS para el agente de consola requiere reglas 
 
 
 [role="lead"]
-El grupo de seguridad de AWS para el agente requiere reglas entrantes y salientes.  La consola de NetApp crea automáticamente este grupo de seguridad cuando usted crea un agente de consola desde la consola.  Debe configurar este grupo de seguridad para todas las demás opciones de instalación.
+El grupo de seguridad de AWS para el agente requiere reglas entrantes y salientes.  La NetApp Console crea automáticamente este grupo de seguridad cuando usted crea un agente de consola desde la consola.  Debe configurar este grupo de seguridad para todas las demás opciones de instalación.
 
 
 
@@ -35,7 +35,7 @@ El grupo de seguridad de AWS para el agente requiere reglas entrantes y saliente
 
 
 
-| HTTPS | 443 | Proporciona acceso HTTPS a la interfaz de usuario local y conexiones desde la instancia de clasificación de datos de NetApp 
+| HTTPS | 443 | Proporciona acceso HTTPS a la interfaz de usuario local y conexiones desde la instancia de NetApp Data Classification 
 
 
 | TCP | 3128 | Proporciona a Cloud Volumes ONTAP acceso a Internet.  Debe abrir este puerto manualmente después de la implementación. 

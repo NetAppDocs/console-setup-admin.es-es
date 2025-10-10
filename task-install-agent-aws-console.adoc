@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-install-agent-aws-console.html 
 keywords: install connector, aws connector installation, aws connector, install connector in aws, bluexp, create connector 
-summary: Puede crear un agente de consola en AWS directamente desde la consola de NetApp .  Antes de crear un agente de consola en AWS desde la consola, debe configurar su red y preparar los permisos de AWS. 
+summary: Puede crear un agente de consola en AWS directamente desde la NetApp Console.  Antes de crear un agente de consola en AWS desde la consola, debe configurar su red y preparar los permisos de AWS. 
 ---
-= Cree un agente de consola en AWS desde la consola de NetApp
+= Cree un agente de consola en AWS desde la NetApp Console
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,11 +14,11 @@ summary: Puede crear un agente de consola en AWS directamente desde la consola d
 
 
 [role="lead"]
-Puede crear un agente de consola en AWS directamente desde la consola de NetApp .  Antes de crear un agente de consola en AWS desde la consola, debe configurar su red y preparar los permisos de AWS.
+Puede crear un agente de consola en AWS directamente desde la NetApp Console.  Antes de crear un agente de consola en AWS desde la consola, debe configurar su red y preparar los permisos de AWS.
 
 .Antes de empezar
 * Deberías tener unalink:concept-agents.html["comprensión de los agentes de consola"] .
-* Deberías revisarlink:reference-limitations.html["Limitaciones del agente de consola"] .
+* Deberías revisarlolink:reference-limitations.html["Limitaciones del agente de consola"] .
 
 
 
@@ -78,7 +78,7 @@ Para obtener información de licencias y enviar mensajes de AutoSupport al sopor
  a| 
 \ https://signin.b2c.netapp.com
  a| 
-Para actualizar las credenciales del sitio de soporte de NetApp (NSS) o para agregar nuevas credenciales de NSS a la consola de NetApp .
+Para actualizar las credenciales del sitio de soporte de NetApp (NSS) o para agregar nuevas credenciales de NSS a la NetApp Console.
 
 
 
@@ -92,7 +92,7 @@ Para obtener información de licencias y enviar mensajes de AutoSupport al sopor
  a| 
 \ https://api.bluexp.netapp.com \ https://netapp-cloud-account.auth0.com \ https://netapp-cloud-account.us.auth0.com \ https://console.netapp.com \ https://components.console.bluexp.netapp.com \ https://cdn.auth0.com
  a| 
-Proporcionar funciones y servicios dentro de la consola de NetApp .
+Proporcionar funciones y servicios dentro de la NetApp Console.
 
 
 
@@ -112,7 +112,7 @@ Aunque los puntos finales anteriores aún son compatibles, NetApp recomienda act
 --
 
 
-Puntos finales contactados desde la consola de NetApp:: A medida que utiliza la consola NetApp basada en web que se proporciona a través de la capa SaaS, esta se comunica con varios puntos finales para completar tareas de administración de datos.  Esto incluye los puntos finales que se contactan para implementar el agente de la consola desde la consola.
+Puntos finales contactados desde la consola de NetApp:: A medida que utiliza la NetApp Console basada en web que se proporciona a través de la capa SaaS, esta se comunica con varios puntos finales para completar tareas de administración de datos.  Esto incluye los puntos finales que se contactan para implementar el agente de la consola desde la consola.
 +
 --
 link:reference-networking-saas-console.html["Ver la lista de puntos finales contactados desde la consola de NetApp"] .
@@ -145,7 +145,7 @@ Si los sistemas Cloud Volumes ONTAP no tienen una conexión a Internet saliente 
 --
 
 
-Habilitar NTP:: Si planea utilizar NetApp Data Classification para escanear sus fuentes de datos corporativos, debe habilitar un servicio de Protocolo de tiempo de red (NTP) tanto en el agente de consola como en el sistema de clasificación de datos de NetApp para que la hora se sincronice entre los sistemas. https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html["Obtenga más información sobre la clasificación de datos de NetApp"^]
+Habilitar NTP:: Si planea utilizar NetApp Data Classification para escanear sus fuentes de datos corporativos, debe habilitar un servicio de Protocolo de tiempo de red (NTP) tanto en el agente de consola como en el sistema de NetApp Data Classification para que la hora se sincronice entre los sistemas. https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html["Obtenga más información sobre la clasificación de datos de NetApp"^]
 +
 --
 Necesitará implementar este requisito de red después de crear el agente de consola.
@@ -289,7 +289,7 @@ Ahora debería tener un rol de IAM que tenga los permisos necesarios o un usuari
 Cree el agente de consola directamente desde la consola web.
 
 .Acerca de esta tarea
-* Al crear el agente de la consola desde la consola, se implementa una instancia EC2 en AWS utilizando una configuración predeterminada. No cambie a una instancia EC2 más pequeña con menos CPU o menos RAM después de crear el agente de consola. link:reference-agent-default-config.html["Obtenga información sobre la configuración predeterminada para el agente de la consola"] .
+* Al crear el agente de la consola desde la consola, se implementa una instancia EC2 en AWS utilizando una configuración predeterminada.  No cambie a una instancia EC2 más pequeña con menos CPU o menos RAM después de crear el agente de consola. link:reference-agent-default-config.html["Obtenga información sobre la configuración predeterminada para el agente de la consola"] .
 * Cuando la consola crea el agente de consola, crea una función de IAM y un perfil de instancia para la instancia.  Esta función incluye permisos que permiten al agente de la consola administrar los recursos de AWS.  Asegúrese de que la función se actualice a medida que se agreguen nuevos permisos en futuras versiones. link:reference-permissions-aws.html["Obtenga más información sobre la política de IAM para el agente de consola"] .
 
 
@@ -353,4 +353,4 @@ Una vez completado el proceso, el agente de la consola estará disponible para s
 
 NOTE: Si la implementación falla, puedes descargar un informe y registros desde la Consola para ayudarte a solucionar los problemas.link:task-troubleshoot-agent.html#troubleshoot-installation["Aprenda a solucionar problemas de instalación."]
 
-Si tiene depósitos de Amazon S3 en la misma cuenta de AWS donde creó el agente de consola, verá aparecer automáticamente un entorno de trabajo de Amazon S3 en la página *Sistemas*. https://docs.netapp.com/us-en/storage-management-s3-storage/index.html["Aprenda a administrar los buckets S3 desde la consola de NetApp"^]
+Si tiene depósitos de Amazon S3 en la misma cuenta de AWS donde creó el agente de consola, verá aparecer automáticamente un entorno de trabajo de Amazon S3 en la página *Sistemas*. https://docs.netapp.com/us-en/storage-management-s3-storage/index.html["Aprenda a administrar los buckets S3 desde la NetApp Console"^]

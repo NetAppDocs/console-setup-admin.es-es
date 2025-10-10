@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-permissions-azure.html 
 keywords: permissions, azure, azure permissions, bluexp 
-summary: Cuando la consola de NetApp inicia un agente de consola en Azure, adjunta un rol personalizado a la máquina virtual que proporciona al agente permisos para administrar recursos y procesos dentro de esa suscripción de Azure.  El agente usa los permisos para realizar llamadas API a varios servicios de Azure. 
+summary: Cuando la NetApp Console inicia un agente de consola en Azure, adjunta un rol personalizado a la máquina virtual que proporciona al agente permisos para administrar recursos y procesos dentro de esa suscripción de Azure.  El agente usa los permisos para realizar llamadas API a varios servicios de Azure. 
 ---
 = Permisos de Azure para el agente de consola
 :hardbreaks:
@@ -14,11 +14,11 @@ summary: Cuando la consola de NetApp inicia un agente de consola en Azure, adjun
 
 
 [role="lead"]
-Cuando la consola de NetApp inicia un agente de consola en Azure, adjunta un rol personalizado a la máquina virtual que proporciona al agente permisos para administrar recursos y procesos dentro de esa suscripción de Azure.  El agente usa los permisos para realizar llamadas API a varios servicios de Azure.
+Cuando la NetApp Console inicia un agente de consola en Azure, adjunta un rol personalizado a la máquina virtual que proporciona al agente permisos para administrar recursos y procesos dentro de esa suscripción de Azure.  El agente usa los permisos para realizar llamadas API a varios servicios de Azure.
 
 Si necesita o no crear este rol personalizado para el agente depende de cómo lo haya implementado.
 
-.Implementación desde la consola de NetApp
+.Implementación desde la NetApp Console
 Cuando se usa la consola para implementar la máquina virtual del agente en Azure, se habilita una https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["identidad administrada asignada por el sistema"^] en la máquina virtual, crea un rol personalizado y lo asigna a la máquina virtual.  El rol proporciona a la consola los permisos necesarios para administrar recursos y procesos dentro de esa suscripción de Azure.  Los permisos del rol se mantienen actualizados cuando se actualiza el agente.  No es necesario crear este rol para el agente ni administrar actualizaciones.
 
 .Implementación manual o desde Azure Marketplace
@@ -194,7 +194,7 @@ El agente realiza las siguientes solicitudes de API cuando se usa NetApp Data Cl
 
 
 
-=== Copia de seguridad y recuperación de NetApp
+=== NetApp Backup and Recovery
 
 El agente de consola realiza las siguientes solicitudes de API para NetApp Backup and Recovery:
 
@@ -242,7 +242,7 @@ El agente realiza las siguientes solicitudes de API cuando utiliza la funcionali
 
 
 
-=== Clasificación de datos de NetApp
+=== NetApp Data Classification
 
 El agente realiza las siguientes solicitudes de API cuando utiliza la clasificación de datos.
 

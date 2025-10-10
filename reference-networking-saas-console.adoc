@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: reference-networking-saas-console.html 
 keywords: networking, urls, endpoints, web browser, console, network, set up networking, bluexp 
-summary: La consola de NetApp , el agente de la consola de NetApp y los servicios de datos de NetApp requieren acceso a Internet saliente y la capacidad de comunicarse con los puntos finales necesarios. 
+summary: La NetApp Console, el agente de la NetApp Console y los servicios de datos de NetApp requieren acceso a Internet saliente y la capacidad de comunicarse con los puntos finales necesarios. 
 ---
-= Preparar el acceso a la red para la consola de NetApp
+= Preparar el acceso a la red para la NetApp Console
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,11 +14,11 @@ summary: La consola de NetApp , el agente de la consola de NetApp y los servicio
 
 
 [role="lead"]
-La consola de NetApp , el agente de la consola de NetApp y los servicios de datos de NetApp requieren acceso a Internet saliente y la capacidad de comunicarse con los puntos finales necesarios.
+La NetApp Console, el agente de la NetApp Console y los servicios de datos de NetApp requieren acceso a Internet saliente y la capacidad de comunicarse con los puntos finales necesarios.
 
 Necesitará configurar el acceso a la red para lo siguiente:
 
-* Computadoras que acceden a la consola de NetApp como software como servicio (SaaS)
+* Computadoras que acceden a la NetApp Console como software como servicio (SaaS)
 * Ubicaciones de red donde implementa agentes de consola que instala localmente o en la nube.
 * Puntos finales adicionales para ciertos servicios de datos de NetApp , incluido Cloud Volumes ONTAP.
 
@@ -28,13 +28,13 @@ NOTE: NetApp ha reducido los puntos finales de red necesarios para la consola y 
 
 
 
-== Puntos finales contactados por la consola de NetApp
+== Puntos finales contactados por la NetApp Console
 
-Cada computadora que acceda a la consola de NetApp debe tener conexiones a los puntos finales que se enumeran a continuación.
+Cada computadora que acceda a la NetApp Console debe tener conexiones a los puntos finales que se enumeran a continuación.
 
 El sistema contacta estos puntos finales en dos escenarios:
 
-* Desde una computadora accediendo al https://console.netapp.com["Consola de NetApp"^] como software como servicio (SaaS).
+* Desde una computadora accediendo al https://console.netapp.com["NetApp Console"^] como software como servicio (SaaS).
 * Desde una computadora que accede directamente a un host del agente de la consola, ya sea para iniciar sesión y configurarlo o para acceder a la consola desde el host del agente.
 
 
@@ -49,13 +49,13 @@ El sistema contacta estos puntos finales en dos escenarios:
 | \ https://support.netapp.com | Para obtener información de licencias y enviar mensajes de AutoSupport al soporte de NetApp . 
 
 
-| \ https://signin.b2c.netapp.com | Para actualizar las credenciales del sitio de soporte de NetApp (NSS) o para agregar nuevas credenciales de NSS a la consola de NetApp . 
+| \ https://signin.b2c.netapp.com | Para actualizar las credenciales del sitio de soporte de NetApp (NSS) o para agregar nuevas credenciales de NSS a la NetApp Console. 
 
 
 | \ https://support.netapp.com | Para obtener información de licencias y enviar mensajes de AutoSupport al soporte de NetApp , así como para recibir actualizaciones de software para Cloud Volumes ONTAP. 
 
 
-| \ https://api.bluexp.netapp.com \ https://netapp-cloud-account.auth0.com \ https://netapp-cloud-account.us.auth0.com \ https://console.netapp.com \ https://components.console.bluexp.netapp.com \ https://cdn.auth0.com | Proporcionar funciones y servicios dentro de la consola de NetApp . 
+| \ https://api.bluexp.netapp.com \ https://netapp-cloud-account.auth0.com \ https://netapp-cloud-account.us.auth0.com \ https://console.netapp.com \ https://components.console.bluexp.netapp.com \ https://cdn.auth0.com | Proporcionar funciones y servicios dentro de la NetApp Console. 
 
 
  a| 
@@ -77,7 +77,7 @@ Aunque los puntos finales anteriores aún son compatibles, NetApp recomienda act
 
 Instala el agente de la consola localmente o en la nube, y este se comunica con los puntos finales para completar las acciones iniciadas por la consola.
 
-Los agentes de consola deben tener acceso a los mismos puntos finales que la consola de NetApp , además de puntos finales adicionales según dónde instale el agente.
+Los agentes de consola deben tener acceso a los mismos puntos finales que la NetApp Console, además de puntos finales adicionales según dónde instale el agente.
 
 Configure el acceso al punto final de la red antes de instalar el agente de la consola.
 

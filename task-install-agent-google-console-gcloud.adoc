@@ -4,7 +4,7 @@ permalink: task-install-agent-google-console-gcloud.html
 keywords: install connector, google cloud connector installation, google cloud connector, install connector in google cloud, bluexp, gcloud, create connector, gcp installation, gcp connector 
 summary: Para crear un agente de consola en Google Cloud desde NetApp Consoel o mediante Google Cloud, debe configurar su red, preparar los permisos de Google Cloud, habilitar las API de Google Cloud y, luego, crear el agente de consola. 
 ---
-= Crear un agente de consola en Google Cloud desde la consola de NetApp
+= Crear un agente de consola en Google Cloud desde la NetApp Console
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -18,7 +18,7 @@ Puedes crear un agente de consola en Google Cloud desde la consola.  Debe config
 
 .Antes de empezar
 * Deberías tener unalink:concept-agents.html["comprensión de los agentes de consola"] .
-* Deberías revisarlink:reference-limitations.html["Limitaciones del agente de consola"] .
+* Deberías revisarlolink:reference-limitations.html["Limitaciones del agente de consola"] .
 
 
 
@@ -70,7 +70,7 @@ Para obtener información de licencias y enviar mensajes de AutoSupport al sopor
  a| 
 \ https://signin.b2c.netapp.com
  a| 
-Para actualizar las credenciales del sitio de soporte de NetApp (NSS) o para agregar nuevas credenciales de NSS a la consola de NetApp .
+Para actualizar las credenciales del sitio de soporte de NetApp (NSS) o para agregar nuevas credenciales de NSS a la NetApp Console.
 
 
 
@@ -84,7 +84,7 @@ Para obtener información de licencias y enviar mensajes de AutoSupport al sopor
  a| 
 \ https://api.bluexp.netapp.com \ https://netapp-cloud-account.auth0.com \ https://netapp-cloud-account.us.auth0.com \ https://console.netapp.com \ https://components.console.bluexp.netapp.com \ https://cdn.auth0.com
  a| 
-Proporcionar funciones y servicios dentro de la consola de NetApp .
+Proporcionar funciones y servicios dentro de la NetApp Console.
 
 
 
@@ -104,7 +104,7 @@ Aunque los puntos finales anteriores aún son compatibles, NetApp recomienda act
 --
 
 
-Puntos finales contactados desde la consola de NetApp:: A medida que utiliza la consola NetApp basada en web que se proporciona a través de la capa SaaS, esta se comunica con varios puntos finales para completar tareas de administración de datos.  Esto incluye los puntos finales que se contactan para implementar el agente de la consola desde la consola.
+Puntos finales contactados desde la consola de NetApp:: A medida que utiliza la NetApp Console basada en web que se proporciona a través de la capa SaaS, esta se comunica con varios puntos finales para completar tareas de administración de datos.  Esto incluye los puntos finales que se contactan para implementar el agente de la consola desde la consola.
 +
 --
 link:reference-networking-saas-console.html["Ver la lista de puntos finales contactados desde la consola de NetApp"] .
@@ -137,7 +137,7 @@ Si los sistemas Cloud Volumes ONTAP no tienen una conexión a Internet saliente 
 --
 
 
-Habilitar NTP:: Si planea utilizar NetApp Data Classification para escanear sus fuentes de datos corporativos, debe habilitar un servicio de Protocolo de tiempo de red (NTP) tanto en el agente de consola como en el sistema de clasificación de datos de NetApp para que la hora se sincronice entre los sistemas. https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html["Obtenga más información sobre la clasificación de datos de NetApp"^]
+Habilitar NTP:: Si planea utilizar NetApp Data Classification para escanear sus fuentes de datos corporativos, debe habilitar un servicio de Protocolo de tiempo de red (NTP) tanto en el agente de consola como en el sistema de NetApp Data Classification para que la hora se sincronice entre los sistemas. https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html["Obtenga más información sobre la clasificación de datos de NetApp"^]
 +
 --
 Implemente este requisito de red después de crear el agente de consola.
@@ -324,7 +324,7 @@ link:reference-permissions-gcp.html["Política de cuenta de servicio del agente"
 | Compute.NetworkUser administrador de implementación.editor | Implementación y mantenimiento de Cloud Volumes ONTAP y los servicios en el proyecto de servicio 
 
 
-| Cuenta de servicio de Cloud Volumes ONTAP | Costumbre | Proyecto de servicio | Miembro de storage.admin: cuenta de servicio de la consola de NetApp como serviceAccount.user | N/A | (Opcional) Para NetApp Cloud Tiering y NetApp Backup and Recovery 
+| Cuenta de servicio de Cloud Volumes ONTAP | Costumbre | Proyecto de servicio | Miembro de storage.admin: cuenta de servicio de la NetApp Console como serviceAccount.user | N/A | (Opcional) Para NetApp Cloud Tiering y NetApp Backup and Recovery 
 
 
 | Agente de servicio de las API de Google | Google Cloud | Proyecto de servicio  a| 
@@ -342,7 +342,7 @@ computar.usuariodered
 |===
 Notas:
 
-. deploymentmanager.editor solo es necesario en el proyecto host si no pasa reglas de firewall a la implementación y elige dejar que la consola las cree por usted.  La consola de NetApp crea una implementación en el proyecto de host que contiene la regla de firewall VPC0 si no se especifica ninguna regla.
+. deploymentmanager.editor solo es necesario en el proyecto host si no pasa reglas de firewall a la implementación y elige dejar que la consola las cree por usted.  La NetApp Console crea una implementación en el proyecto de host que contiene la regla de firewall VPC0 si no se especifica ninguna regla.
 . firewall.create y firewall.delete solo son necesarios si no pasa reglas de firewall a la implementación y elige dejar que la Consola las cree por usted.  Estos permisos residen en el archivo .yaml de la cuenta de la consola.  Si está implementando un par HA mediante una VPC compartida, estos permisos se utilizarán para crear las reglas de firewall para VPC1, 2 y 3.  Para todas las demás implementaciones, estos permisos también se utilizarán para crear reglas para VPC0.
 . Para la organización en niveles de nube, la cuenta de servicio de organización en niveles debe tener el rol serviceAccount.user en la cuenta de servicio, no solo en el nivel de proyecto.  Actualmente, si asigna serviceAccount.user en el nivel del proyecto, los permisos no se muestran cuando consulta la cuenta de servicio con getIAMPolicy.
 
@@ -379,7 +379,7 @@ https://cloud.google.com/apis/docs/getting-started#enabling_apis["Documentación
 Cree un agente de consola directamente desde la consola.
 
 .Acerca de esta tarea
-Al crear el agente de consola, se implementa una instancia de máquina virtual en Google Cloud utilizando una configuración predeterminada. No cambie a una instancia de VM más pequeña con menos CPU o menos RAM después de crear el agente de consola. link:reference-agent-default-config.html["Obtenga información sobre la configuración predeterminada para el agente de la consola"] .
+Al crear el agente de consola, se implementa una instancia de máquina virtual en Google Cloud utilizando una configuración predeterminada.  No cambie a una instancia de VM más pequeña con menos CPU o menos RAM después de crear el agente de consola. link:reference-agent-default-config.html["Obtenga información sobre la configuración predeterminada para el agente de la consola"] .
 
 .Antes de empezar
 Debes tener lo siguiente:

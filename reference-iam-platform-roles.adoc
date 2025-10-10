@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: reference-iam-platform-roles.html 
 keywords: predefined roles, iam roles, organization admin, folder or project admin, classification viewer, snapcenter admin, role, iam role, admin, iam, identity and access management, bluexp 
-summary: Asigne roles de plataforma a los usuarios para otorgar permisos para administrar la consola de NetApp , asignar roles, agregar usuarios, crear agentes de consola y administrar federaciones. 
+summary: Asigne roles de plataforma a los usuarios para otorgar permisos para administrar la NetApp Console, asignar roles, agregar usuarios, crear agentes de consola y administrar federaciones. 
 ---
-= Roles de acceso a la plataforma de la consola de NetApp
+= Roles de acceso a la plataforma de la NetApp Console
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Asigne roles de plataforma a los usuarios para otorgar permisos para ad
 
 
 [role="lead"]
-Asigne roles de plataforma a los usuarios para otorgar permisos para administrar la consola de NetApp , asignar roles, agregar usuarios, crear agentes de consola y administrar federaciones.
+Asigne roles de plataforma a los usuarios para otorgar permisos para administrar la NetApp Console, asignar roles, agregar usuarios, crear agentes de consola y administrar federaciones.
 
 .Ejemplo de roles organizacionales para una gran organización multinacional
 XYZ Corporation organiza el acceso al almacenamiento de datos por región (América del Norte, Europa y Asia-Pacífico), proporcionando control regional con supervisión centralizada.
@@ -132,7 +132,7 @@ El rol de *Superadministrador* proporciona acceso completo para administrar las 
 Las organizaciones deben utilizar el acceso de *superadministrador* con moderación para minimizar los riesgos de seguridad y alinearse con el principio del mínimo privilegio.  La mayoría de las organizaciones deberían asignar roles específicos con solo los permisos necesarios para reducir el riesgo y mejorar la auditabilidad.
 
 .Ejemplo de roles super
-ABC Corporation tiene un pequeño equipo de cinco personas que aprovecha la consola NetApp para los servicios de datos y la gestión del almacenamiento.  En lugar de distribuir múltiples roles, asignan el rol de *Superadministrador* a dos miembros senior del equipo que manejan todas las tareas administrativas, incluida la gestión de usuarios y la configuración de recursos.  A los tres miembros restantes del equipo se les asigna el rol de *Supervisor*, lo que les permite supervisar el estado del almacenamiento y el servicio de datos sin la posibilidad de modificar las configuraciones.
+ABC Corporation tiene un pequeño equipo de cinco personas que aprovecha la NetApp Console para los servicios de datos y la gestión del almacenamiento.  En lugar de distribuir múltiples roles, asignan el rol de *Superadministrador* a dos miembros senior del equipo que manejan todas las tareas administrativas, incluida la gestión de usuarios y la configuración de recursos.  A los tres miembros restantes del equipo se les asigna el rol de *Supervisor*, lo que les permite supervisar el estado del almacenamiento y el servicio de datos sin la posibilidad de modificar las configuraciones.
 
 [cols="2,1"]
 |===

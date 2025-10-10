@@ -4,7 +4,7 @@ permalink: task-iam-manage-members-permissions.html
 keywords: user, service account, member, role, permissions, organization, project, folder, iam, identity and access management 
 summary: Administre los miembros de su organización para otorgar permisos en diferentes niveles de la jerarquía de recursos de su organización. 
 ---
-= Agregar miembros y cuentas de servicio a la consola de NetApp
+= Agregar miembros y cuentas de servicio a la NetApp Console
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -37,7 +37,7 @@ El administrador de carpeta o proyecto puede ver a todos los miembros en la pág
 
 Puede agregar dos tipos de miembros a su organización: una cuenta de usuario y una cuenta de servicio. Las aplicaciones utilizan cuentas de servicio para realizar tareas de API sin intervención humana.  Una persona normalmente utiliza una cuenta de usuario para iniciar sesión y administrar recursos.
 
-Los usuarios deben registrarse en la consola de NetApp antes de poder agregarlos a una organización o asignarles un rol.  Crea cuentas de servicio directamente desde la consola.
+Los usuarios deben registrarse en la NetApp Console antes de poder agregarlos a una organización o asignarles un rol.  Crea cuentas de servicio directamente desde la consola.
 
 Para administrar usuarios y sus permisos, debe tener el rol de *Administrador de la organización* o el rol de *Administrador de carpeta o proyecto*.  Recuerde que los usuarios con el rol de *Administrador de carpeta o proyecto* solo pueden administrar miembros de la carpeta o los proyectos de los cuales tienen permisos de administrador.
 
@@ -45,15 +45,15 @@ Para administrar usuarios y sus permisos, debe tener el rol de *Administrador de
 
 === Agregar una cuenta de usuario
 
-Aunque los usuarios se registran en la consola de NetApp por su cuenta, es necesario agregarlos explícitamente a una organización o a carpetas o proyectos específicos para acceder a los recursos en la consola.
+Aunque los usuarios se registran en la NetApp Console por su cuenta, es necesario agregarlos explícitamente a una organización o a carpetas o proyectos específicos para acceder a los recursos en la consola.
 
 .Pasos
-. Dirigir al usuario a visitar https://console.netapp.com/["Consola de NetApp"^] Para registrarse.
+. Dirigir al usuario a visitar https://console.netapp.com/["NetApp Console"^] Para registrarse.
 +
 Una vez que los usuarios se registran, completan la página *Registrarse*, revisan su correo electrónico e inician sesión. Si la consola solicita a los usuarios que creen una organización, la cierran y le notifican la creación de su cuenta.  Luego puede agregar el usuario a su organización existente.
 
 +
-link:task-sign-up-saas.html["Descubra cómo registrarse en la consola de NetApp"] .
+link:task-sign-up-saas.html["Descubra cómo registrarse en la NetApp Console"] .
 
 . Seleccione *Administración > Identidad y acceso*.
 . Seleccione *Miembros*.

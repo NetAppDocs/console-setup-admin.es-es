@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-federation-saml.html 
 keywords: federation, SAML protocol, SAML, federation services,  federate, federated connection, SSO, identity federation, identity management, corporate identity 
-summary: 'Fedérese con su proveedor de IdP SAML 2.0 para habilitar el inicio de sesión único (SSO) para la consola de NetApp .  Esto permite a los usuarios iniciar sesión utilizando sus credenciales corporativas.' 
+summary: 'Fedérese con su proveedor de IdP SAML 2.0 para habilitar el inicio de sesión único (SSO) para la NetApp Console.  Esto permite a los usuarios iniciar sesión utilizando sus credenciales corporativas.' 
 ---
 = Federarse con un proveedor de identidad SAML
 :hardbreaks:
@@ -28,7 +28,7 @@ Puede configurar una conexión federada con su proveedor de SAML 2.0 para habili
 
 .Antes de empezar
 * Se requiere una cuenta IdP con privilegios administrativos.  Coordínese con el administrador de su IdP para completar los pasos.
-* Identifique el dominio que desea utilizar para la federación.  Puedes utilizar tu dominio de correo electrónico o un dominio diferente que sea de tu propiedad.  Si desea utilizar un dominio distinto a su dominio de correo electrónico, primero debe verificar el dominio en la Consola.  Puedes hacer esto siguiendo los pasos de lalink:task-federation-verify-domain.html["Verifique su dominio en la consola de NetApp"] tema.
+* Identifique el dominio que desea utilizar para la federación.  Puedes utilizar tu dominio de correo electrónico o un dominio diferente que sea de tu propiedad.  Si desea utilizar un dominio distinto a su dominio de correo electrónico, primero debe verificar el dominio en la Consola.  Puedes hacer esto siguiendo los pasos de lalink:task-federation-verify-domain.html["Verifique su dominio en la NetApp Console"] tema.
 
 
 .Pasos
@@ -89,4 +89,4 @@ Puede configurar una conexión federada con su proveedor de SAML 2.0 para habili
 . Seleccione *Finalizar* para completar el proceso.
 
 
-Después de habilitar la federación, los usuarios pueden iniciar sesión en la consola de NetApp con sus credenciales corporativas.
+Después de habilitar la federación, los usuarios pueden iniciar sesión en la NetApp Console con sus credenciales corporativas.

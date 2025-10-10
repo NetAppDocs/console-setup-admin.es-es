@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-federation-manage.html 
 keywords: federation, BlueXP, identity provider, IdP, single sign-on, SSO, verified domain, credentials, certificate, client secret, update, manage federations, security, compliance, user access, productivity, account management, authentication, access control, business continuity 
-summary: Después de agregar una conexión federada, puede administrarla en la consola de NetApp .  Puede ver el estado de la conexión, habilitarla o deshabilitarla según sea necesario. 
+summary: Después de agregar una conexión federada, puede administrarla en la NetApp Console.  Puede ver el estado de la conexión, habilitarla o deshabilitarla según sea necesario. 
 ---
-= Administrar federaciones en la consola de NetApp
+= Administrar federaciones en la NetApp Console
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Después de agregar una conexión federada, puede administrarla en la c
 
 
 [role="lead"]
-Puede administrar su federación en la consola de NetApp .  Puede desactivarlo, actualizar credenciales vencidas, así como desactivarlo si ya no lo necesita.
+Puede administrar su federación en la NetApp Console.  Puede desactivarlo, actualizar credenciales vencidas, así como desactivarlo si ya no lo necesita.
 
 
 NOTE: Si configuró la federación mediante NetApp Cloud Central, impórtela a través de la página *Federación* para administrarla en la consola.link:task-federation-import.html["Aprenda a importar su federación"]
@@ -22,7 +22,7 @@ NOTE: Si configuró la federación mediante NetApp Cloud Central, impórtela a t
 También puede agregar un dominio verificado a una federación existente, lo que le permite utilizar múltiples dominios para su conexión federada.
 
 
-NOTE: Los eventos de gestión de la federación, como la habilitación, deshabilitación y actualización de las federaciones, se muestran en la línea de tiempo.link:task-monitor-cm-operations.html["Obtenga más información sobre la supervisión de operaciones en la consola de NetApp ."]
+NOTE: Los eventos de gestión de la federación, como la habilitación, deshabilitación y actualización de las federaciones, se muestran en la línea de tiempo.link:task-monitor-cm-operations.html["Obtenga más información sobre la supervisión de operaciones en la NetApp Console."]
 
 .Roles requeridos
 El rol de administrador de la federación es necesario para crear y administrar federaciones.  El espectador de la Federación puede ver la página de la Federación.link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso."]
@@ -82,7 +82,7 @@ Pruebe la conexión de una federación existente para verificar que funciona.  E
 . Seleccione *Administración > Identidad y acceso*.
 . Seleccione la pestaña *Federación*.
 . Seleccione el menú de accionesimage:button_3_vert_dots.png["un icono con tres puntos verticales"] junto a la federación a la que desea agregar un dominio verificado y seleccione *Probar conexión*.
-. Seleccione *Prueba*.  El sistema le solicita que inicie sesión con sus credenciales corporativas.  Si la conexión es exitosa, será redirigido a la consola de NetApp .  Si falla la conexión, verá un mensaje de error que indica el problema con la federación.
+. Seleccione *Prueba*.  El sistema le solicita que inicie sesión con sus credenciales corporativas.  Si la conexión es exitosa, será redirigido a la NetApp Console.  Si falla la conexión, verá un mensaje de error que indica el problema con la federación.
 . Seleccione *Listo* para regresar a la pestaña *Federación*.
 
 

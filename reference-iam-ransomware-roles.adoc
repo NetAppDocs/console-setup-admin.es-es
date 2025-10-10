@@ -4,7 +4,7 @@ permalink: reference-iam-ransomware-roles.html
 keywords: predefined roles, iam roles, organization admin, folder or project admin, identity and access management, access roles, admin, 
 summary: Dentro de NetApp Console, puede otorgar roles para proporcionar a los usuarios acceso a NetApp Ransomware Resilience. 
 ---
-= Roles de acceso de resiliencia contra ransomware para la consola de NetApp
+= Roles de acceso de resiliencia contra ransomware para la NetApp Console
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -103,7 +103,7 @@ No
 
 
 
-| Identificar la exposición a datos confidenciales  a| 
+| Identificar la exposición a datos sensibles  a| 
 Sí
  a| 
 No

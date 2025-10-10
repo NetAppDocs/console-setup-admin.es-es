@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-installing-https-cert.html 
 keywords: https certificate, certificate, adding, installing, ca, certificate authority, format, encoding, restricted mode, access 
-summary: Instale un certificado firmado por CA para el acceso de los usuarios a la consola basada en web cuando utilice la consola de NetApp en modo restringido. 
+summary: Instale un certificado firmado por CA para el acceso de los usuarios a la consola basada en web cuando utilice la NetApp Console en modo restringido. 
 ---
 = Instalar un certificado firmado por una CA para acceder a la consola basada en web
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Instale un certificado firmado por CA para el acceso de los usuarios a 
 
 
 [role="lead"]
-Cuando utiliza la consola de NetApp en modo restringido, se puede acceder a la interfaz de usuario desde la máquina virtual del agente de la consola que está implementada en su región de nube o en sus instalaciones.  De forma predeterminada, la consola utiliza un certificado SSL autofirmado para proporcionar acceso HTTPS seguro a la consola basada en web que se ejecuta en el agente de la consola.
+Cuando utiliza la NetApp Console en modo restringido, se puede acceder a la interfaz de usuario desde la máquina virtual del agente de la consola que está implementada en su región de nube o en sus instalaciones.  De forma predeterminada, la consola utiliza un certificado SSL autofirmado para proporcionar acceso HTTPS seguro a la consola basada en web que se ejecuta en el agente de la consola.
 
 Si su negocio lo requiere, puede instalar un certificado firmado por una autoridad de certificación (CA), que proporciona una mejor protección de seguridad que un certificado autofirmado.  Después de instalar el certificado, la consola utiliza el certificado firmado por la CA cuando los usuarios acceden a la consola basada en web.
 

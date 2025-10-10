@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: reference-iam-storage-roles.html 
 keywords: predefined roles, iam roles, organization admin, folder or project admin, identity and access management, access roles, admin 
-summary: Puede asignar los siguientes roles a los usuarios para brindarles acceso a las funciones de administración de almacenamiento en la consola de NetApp .  Puede asignar a los usuarios un rol administrativo para administrar el almacenamiento o un rol de espectador para monitorear. 
+summary: Puede asignar los siguientes roles a los usuarios para brindarles acceso a las funciones de administración de almacenamiento en la NetApp Console.  Puede asignar a los usuarios un rol administrativo para administrar el almacenamiento o un rol de espectador para monitorear. 
 ---
-= Roles de acceso al almacenamiento para la consola de NetApp
+= Roles de acceso al almacenamiento para la NetApp Console
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,10 +14,10 @@ summary: Puede asignar los siguientes roles a los usuarios para brindarles acces
 
 
 [role="lead"]
-Puede asignar los siguientes roles a los usuarios para brindarles acceso a las funciones de administración de almacenamiento en la consola de NetApp .  Puede asignar a los usuarios un rol administrativo para administrar el almacenamiento o un rol de espectador para monitorear.
+Puede asignar los siguientes roles a los usuarios para brindarles acceso a las funciones de administración de almacenamiento en la NetApp Console.  Puede asignar a los usuarios un rol administrativo para administrar el almacenamiento o un rol de espectador para monitorear.
 
 
-NOTE: Estos roles no están disponibles desde la API de asociación de la consola de NetApp .
+NOTE: Estos roles no están disponibles desde la API de asociación de la NetApp Console .
 
 Los administradores pueden asignar roles de almacenamiento a los usuarios para los siguientes recursos y funciones de almacenamiento:
 
@@ -36,7 +36,7 @@ Servicios y características de la consola:
 * Sostenibilidad
 
 
-.Ejemplo de roles de almacenamiento en la consola de NetApp
+.Ejemplo de roles de almacenamiento en la NetApp Console
 XYZ Corporation, una empresa multinacional, tiene un gran equipo de ingenieros de almacenamiento y administradores de almacenamiento.  Permiten que este equipo administre los activos de almacenamiento de sus regiones y al mismo tiempo limite el acceso a las tareas principales de la consola, como la administración de usuarios, la creación de agentes y la administración de licencias.
 
 Dentro de un equipo de 12 personas, a dos usuarios se les asigna el rol de *Visor de almacenamiento*, que les permite supervisar los recursos de almacenamiento asociados con los proyectos de consola a los que están asignados.  A los nueve restantes se les asigna el rol de *administrador de almacenamiento*, que incluye la capacidad de administrar actualizaciones de software, acceder a ONTAP System Manager a través de la consola y también descubrir recursos de almacenamiento (agregar sistemas).  A una persona del equipo se le asigna el rol de *Especialista en salud del sistema* para que pueda administrar la salud de los recursos de almacenamiento en su región, pero no modificar ni eliminar ningún sistema.  Esta persona también puede realizar actualizaciones de software en los recursos de almacenamiento para los proyectos que se le asignan.
@@ -110,7 +110,7 @@ Sí
 
 
 
-4+| *Licencias y suscripciones* 
+4+| * Licenses and subscriptions* 
 
 
 | Ver todas las páginas y funciones  a| 
@@ -143,7 +143,7 @@ Sí
 
 
 
-| Ver detalles de actualización para un clúster  a| 
+| Ver detalles de actualización de un clúster  a| 
 Sí
  a| 
 Sí

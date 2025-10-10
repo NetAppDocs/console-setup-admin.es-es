@@ -7,7 +7,7 @@
 . Seleccione *Credenciales de la organización*.
 . Seleccione el menú de acciones para un conjunto de credenciales asociadas con un agente de consola y luego seleccione *Configurar suscripción*.
 +
-Debe seleccionar las credenciales que estén asociadas con un agente de consola.  No se puede asociar una suscripción de Marketplace con credenciales asociadas con la consola de NetApp .
+Debe seleccionar las credenciales que estén asociadas con un agente de consola.  No se puede asociar una suscripción de Marketplace con credenciales asociadas con la NetApp Console.
 
 . Para asociar las credenciales con una suscripción existente, seleccione la suscripción de la lista desplegable y seleccione *Configurar*.
 . Para asociar las credenciales con una nueva suscripción, seleccione *Agregar suscripción > Continuar* y siga los pasos en Azure Marketplace:
@@ -17,7 +17,7 @@ Debe seleccionar las credenciales que estén asociadas con un agente de consola.
 .. Llene el formulario y seleccione *Suscribirse*.
 .. Una vez completado el proceso de suscripción, seleccione *Configurar cuenta ahora*.
 +
-Serás redirigido a la consola de NetApp .
+Serás redirigido a la NetApp Console.
 
 .. Desde la página *Asignación de suscripción*:
 +

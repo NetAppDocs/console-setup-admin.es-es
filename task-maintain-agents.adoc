@@ -71,7 +71,7 @@ link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations
 
 Si es necesario, detenga e inicie la máquina virtual del agente mediante la consola de su proveedor de nube o los procedimientos locales estándar.
 
-link:concept-agents.html#agents-must-be-operational-at-all-times["Tenga en cuenta que el agente de la consola debe estar operativo en todo momento"] .
+link:concept-agents.html#agents-must-be-operational-at-all-times["Tenga en cuenta que el agente de la consola debe estar operativo en todo momento."] .
 
 
 

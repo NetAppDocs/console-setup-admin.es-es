@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-adding-nss-accounts.html 
 keywords: adding, creating, netapp support site account, nss, update account, update nss account, update nss credentials, delete nss account, remove nss account, change working environment, working environment nss, digital wallet, license, change system, system nss, licenses and subscriptions 
-summary: Asocie una cuenta del sitio de soporte de NetApp con su organización de consola de NetApp para habilitar flujos de trabajo clave para Cloud Volumes ONTAP.  Estas credenciales NSS están asociadas con toda la organización. 
+summary: Asocie una cuenta del sitio de soporte de NetApp con su organización de NetApp Console para habilitar flujos de trabajo clave para Cloud Volumes ONTAP.  Estas credenciales NSS están asociadas con toda la organización. 
 ---
-= Administrar las credenciales NSS asociadas con la consola de NetApp
+= Administrar las credenciales NSS asociadas con la NetApp Console
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -26,7 +26,7 @@ Es necesario asociar las credenciales del sitio de soporte de NetApp con el núm
 
 * Implementación de Cloud Volumes ONTAP cuando trae su propia licencia (BYOL)
 +
-Es necesario proporcionar su cuenta NSS para que la consola pueda cargar su clave de licencia y habilitar la suscripción por el período que compró. Esto incluye actualizaciones automáticas para renovaciones de plazos.
+Es necesario proporcionar su cuenta NSS para que la consola pueda cargar su clave de licencia y habilitar la suscripción por el período que compró.  Esto incluye actualizaciones automáticas para renovaciones de plazos.
 
 * Registro de sistemas Cloud Volumes ONTAP de pago por uso
 +
@@ -60,12 +60,12 @@ NOTE: NetApp utiliza Microsoft Entra ID como proveedor de identidad para servici
 Tras iniciar sesión correctamente, NetApp almacenará el nombre de usuario NSS.
 
 +
-Esta es una identificación generada por el sistema que se asigna a su correo electrónico. En la página *Administración de NSS*, puede mostrar su correo electrónico desde elimage:https://raw.githubusercontent.com/NetAppDocs/console-family/main/media/icon-nss-menu.png["Un icono de tres puntos horizontales"] menú.
+Esta es una identificación generada por el sistema que se asigna a su correo electrónico.  En la página *Administración de NSS*, puede mostrar su correo electrónico desde elimage:https://raw.githubusercontent.com/NetAppDocs/console-family/main/media/icon-nss-menu.png["Un icono de tres puntos horizontales"] menú.
 
 +
 ** Si alguna vez necesita actualizar sus tokens de credenciales de inicio de sesión, también hay una opción *Actualizar credenciales* en elimage:https://raw.githubusercontent.com/NetAppDocs/console-family/main/media/icon-nss-menu.png["Un icono de tres puntos horizontales"] menú.
 +
-Al utilizar esta opción se le solicitará que inicie sesión nuevamente. Tenga en cuenta que el token de estas cuentas caduca después de 90 días. Se publicará una notificación para avisarle de esto.
+Al utilizar esta opción se le solicitará que inicie sesión nuevamente.  Tenga en cuenta que el token de estas cuentas caduca después de 90 días.  Se publicará una notificación para avisarle de esto.
 
 
 

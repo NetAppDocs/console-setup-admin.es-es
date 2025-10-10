@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-accounts-gcp.html 
 keywords: cloud provider accounts, gcp, gcp accounts, google cloud platform, google accounts, google cloud platform accounts, permissions, project, google cloud project, credential, bluexp 
-summary: Descubra cómo la consola de NetApp utiliza las credenciales de Google Cloud para realizar acciones en su nombre y cómo esas credenciales se asocian con las suscripciones del mercado.  Comprender estos detalles puede resultar útil al administrar las credenciales de uno o más proyectos de Google Cloud.  Por ejemplo, es posible que desee obtener información sobre la cuenta de servicio asociada con la máquina virtual del agente de consola. 
+summary: Descubra cómo la NetApp Console utiliza las credenciales de Google Cloud para realizar acciones en su nombre y cómo esas credenciales se asocian con las suscripciones del mercado.  Comprender estos detalles puede resultar útil al administrar las credenciales de uno o más proyectos de Google Cloud.  Por ejemplo, es posible que desee obtener información sobre la cuenta de servicio asociada con la máquina virtual del agente de consola. 
 ---
 = Obtenga más información sobre los proyectos y permisos de Google Cloud
 :hardbreaks:
@@ -14,11 +14,11 @@ summary: Descubra cómo la consola de NetApp utiliza las credenciales de Google 
 
 
 [role="lead"]
-Descubra cómo la consola de NetApp utiliza las credenciales de Google Cloud para realizar acciones en su nombre y cómo esas credenciales se asocian con las suscripciones del mercado.  Comprender estos detalles puede resultar útil al administrar las credenciales de uno o más proyectos de Google Cloud.  Por ejemplo, es posible que desee obtener información sobre la cuenta de servicio asociada con la máquina virtual del agente de consola.
+Descubra cómo la NetApp Console utiliza las credenciales de Google Cloud para realizar acciones en su nombre y cómo esas credenciales se asocian con las suscripciones del mercado.  Comprender estos detalles puede resultar útil al administrar las credenciales de uno o más proyectos de Google Cloud.  Por ejemplo, es posible que desee obtener información sobre la cuenta de servicio asociada con la máquina virtual del agente de consola.
 
 
 
-== Proyecto y permisos para la consola de NetApp
+== Proyecto y permisos para la NetApp Console
 
 Antes de poder usar la consola para administrar recursos en su proyecto de Google Cloud, primero debe implementar un agente de consola.  El agente no puede estar ejecutándose en sus instalaciones ni en un proveedor de nube diferente.
 

@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concept-accounts-aws.html 
 keywords: cloud provider accounts, aws, aws accounts, keys, multiple accounts, permission, aws permissions, policy, policies, credentials, marketplace, subscription, replace subscription, subscription, amazon, bluexp, agent 
-summary: Descubra cómo la consola de NetApp utiliza las credenciales de AWS para realizar acciones en su nombre y cómo esas credenciales se asocian con las suscripciones del mercado.  Comprender estos detalles puede resultar útil al administrar las credenciales de una o más cuentas de AWS en la consola.  Por ejemplo, es posible que desee obtener información sobre cuándo agregar credenciales de AWS adicionales a la consola. 
+summary: Descubra cómo la NetApp Console utiliza las credenciales de AWS para realizar acciones en su nombre y cómo esas credenciales se asocian con las suscripciones del mercado.  Comprender estos detalles puede resultar útil al administrar las credenciales de una o más cuentas de AWS en la consola.  Por ejemplo, es posible que desee obtener información sobre cuándo agregar credenciales de AWS adicionales a la consola. 
 ---
-= Obtenga información sobre las credenciales y los permisos de AWS en la consola de NetApp
+= Obtenga información sobre las credenciales y los permisos de AWS en la NetApp Console
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,13 +14,13 @@ summary: Descubra cómo la consola de NetApp utiliza las credenciales de AWS par
 
 
 [role="lead"]
-Descubra cómo la consola de NetApp utiliza las credenciales de AWS para realizar acciones en su nombre y cómo esas credenciales se asocian con las suscripciones del mercado.  Comprender estos detalles puede resultar útil al administrar las credenciales de una o más cuentas de AWS en la consola de NetApp .  Por ejemplo, es posible que desee obtener información sobre cuándo agregar credenciales de AWS adicionales.
+Descubra cómo la NetApp Console utiliza las credenciales de AWS para realizar acciones en su nombre y cómo esas credenciales se asocian con las suscripciones del mercado.  Comprender estos detalles puede resultar útil al administrar las credenciales de una o más cuentas de AWS en la NetApp Console.  Por ejemplo, es posible que desee obtener información sobre cuándo agregar credenciales de AWS adicionales.
 
 
 
 == Credenciales iniciales de AWS
 
-Cuando implementa un agente de consola desde la consola, debe proporcionar el ARN de un rol de IAM o claves de acceso para un usuario de IAM. El método de autenticación debe tener permisos para implementar la consola en AWS. Los permisos necesarios se enumeran en el enlace: task-install-agent-aws-the Console.html#console-permissions-aws[Política de implementación del agente para AWS].
+Cuando implementa un agente de consola desde la consola, debe proporcionar el ARN de un rol de IAM o claves de acceso para un usuario de IAM.  El método de autenticación debe tener permisos para implementar la consola en AWS.  Los permisos necesarios se enumeran en el enlace: task-install-agent-aws-the Console.html#console-permissions-aws[Política de implementación del agente para AWS].
 
 Cuando la consola inicia la instancia del agente de consola en AWS, crea una función de IAM y un perfil de instancia para la instancia.  También adjunta una política que proporciona al agente de la consola permisos para administrar recursos y procesos dentro de esa cuenta de AWS. link:reference-permissions-aws.html["Revisar cómo la Consola utiliza los permisos"] .
 

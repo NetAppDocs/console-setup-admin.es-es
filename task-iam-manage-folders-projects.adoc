@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-iam-manage-folders-projects.html 
 keywords: folders, projects, resource hierarchy, create folders, create projects, iam, identity and access management, project id 
-summary: Dentro de la consola de NetApp , el uso de la gestión de identidad y acceso le permite representar una jerarquía de recursos completa mediante carpetas y proyectos. 
+summary: Dentro de la NetApp Console, el uso de la gestión de identidad y acceso le permite representar una jerarquía de recursos completa mediante carpetas y proyectos. 
 ---
-= Organice los recursos de su consola NetApp con carpetas y proyectos
+= Organice los recursos de su NetApp Console con carpetas y proyectos
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Dentro de la consola de NetApp , el uso de la gestión de identidad y a
 
 
 [role="lead"]
-Dentro de la consola de NetApp , organiza tus recursos de NetApp usando proyectos y carpetas.  Un _proyecto_ representa un espacio de trabajo en la consola al que los miembros de la organización acceden para administrar _recursos_ (por ejemplo, un sistema Cloud Volumes ONTAP ).  Una _carpeta_ agrupa proyectos relacionados.  Después de organizar sus recursos en carpetas y proyectos, puede otorgar acceso granular a los recursos proporcionando a los miembros de la organización permisos para carpetas y proyectos específicos.
+Dentro de la NetApp Console, organiza tus recursos de NetApp usando proyectos y carpetas.  Un _proyecto_ representa un espacio de trabajo en la consola al que los miembros de la organización acceden para administrar _recursos_ (por ejemplo, un sistema Cloud Volumes ONTAP ).  Una _carpeta_ agrupa proyectos relacionados.  Después de organizar sus recursos en carpetas y proyectos, puede otorgar acceso granular a los recursos proporcionando a los miembros de la organización permisos para carpetas y proyectos específicos.
 
 
 
@@ -159,7 +159,7 @@ link:concept-identity-and-access-management.html#role-inheritance["Obtenga más 
 
 == Información relacionada
 
-* link:concept-identity-and-access-management.html["Obtenga información sobre la identidad y el acceso en la consola de NetApp"]
+* link:concept-identity-and-access-management.html["Obtenga información sobre la identidad y el acceso en la NetApp Console"]
 * link:task-iam-get-started.html["Comience con la identidad y el acceso"]
 * https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html["Conozca la API de identidad y acceso"]
 

@@ -16,7 +16,7 @@ summary: El agente de consola utiliza puertos _entrantes_ cuando se instala manu
 [role="lead"]
 El agente de consola utiliza puertos _entrantes_ cuando se instala manualmente en un host Linux local.  Consulte estos puertos para fines de planificación.
 
-Estas reglas de entrada se aplican a todos los modos de implementación de la consola de NetApp .
+Estas reglas de entrada se aplican a todos los modos de implementación de la NetApp Console .
 
 [cols="10,10,80"]
 |===

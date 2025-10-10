@@ -19,7 +19,7 @@ Si desea federarse con un dominio diferente a su dominio de correo electrónico,
 .Roles requeridos
 El rol de administrador de la federación es necesario para crear y administrar federaciones.  El espectador de la Federación puede ver la página de la Federación.link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso."]
 
-Para verificar su dominio es necesario agregar un registro TXT a la configuración de DNS de su dominio.  Este registro se utiliza para demostrar que usted es el propietario del dominio y permite que la consola de NetApp confíe en el dominio para la federación.  Es posible que necesite coordinar con su administrador de TI o de red para completar este paso.
+Para verificar su dominio es necesario agregar un registro TXT a la configuración de DNS de su dominio.  Este registro se utiliza para demostrar que usted es el propietario del dominio y permite que la NetApp Console confíe en el dominio para la federación.  Es posible que necesite coordinar con su administrador de TI o de red para completar este paso.
 
 .Pasos
 . Seleccione *Administración > Identidad y acceso*.

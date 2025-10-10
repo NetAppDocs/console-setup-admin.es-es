@@ -11,7 +11,7 @@ video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 . Seleccione *Credenciales de la organización*.
 . Seleccione el menú de acciones para un conjunto de credenciales asociadas con un agente de consola y luego seleccione *Configurar suscripción*.
 +
-Debe seleccionar las credenciales que estén asociadas con un agente de consola.  No se puede asociar una suscripción de Marketplace con credenciales asociadas con la consola de NetApp .
+Debe seleccionar las credenciales que estén asociadas con un agente de consola.  No se puede asociar una suscripción de Marketplace con credenciales asociadas con la NetApp Console.
 
 +
 image:screenshot_aws_configure_subscription.png["Una captura de pantalla del menú de acciones para un conjunto de credenciales existentes."]
@@ -23,7 +23,7 @@ image:screenshot_aws_configure_subscription.png["Una captura de pantalla del men
 .. Seleccione *Suscribirse*.
 .. Seleccione *Configurar su cuenta*.
 +
-Serás redirigido a la consola de NetApp .
+Serás redirigido a la NetApp Console.
 
 .. Desde la página *Asignación de suscripción*:
 +

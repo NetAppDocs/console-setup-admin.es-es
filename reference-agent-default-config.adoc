@@ -20,7 +20,7 @@ Obtenga más información sobre la configuración del agente de consola antes de
 
 == Configuración predeterminada con acceso a Internet
 
-Los siguientes detalles de configuración se aplican si implementó un agente de consola desde la consola de NetApp , desde el mercado de su proveedor de nube o si instaló manualmente un agente de consola en un host Linux local que tiene acceso a Internet.
+Los siguientes detalles de configuración se aplican si implementó un agente de consola desde la NetApp Console, desde el mercado de su proveedor de nube o si instaló manualmente un agente de consola en un host Linux local que tiene acceso a Internet.
 
 
 

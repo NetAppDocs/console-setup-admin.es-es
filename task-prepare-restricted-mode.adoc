@@ -20,9 +20,9 @@ Prepare su entorno antes de implementar NetApp Console en modo restringido.  Deb
 
 == Paso 1: Comprenda cómo funciona el modo restringido
 
-Comprenda cómo funciona la consola de NetApp en modo restringido antes de comenzar.
+Comprenda cómo funciona la NetApp Console en modo restringido antes de comenzar.
 
-Utilice la interfaz basada en navegador disponible localmente desde el agente de consola de NetApp instalado.  No se puede acceder a la consola de NetApp desde la consola basada en web que se proporciona a través de la capa SaaS.
+Utilice la interfaz basada en navegador disponible localmente desde el agente de NetApp Console instalado.  No se puede acceder a la NetApp Console desde la consola basada en web que se proporciona a través de la capa SaaS.
 
 Además, no todas las funciones de la consola y los servicios de datos de NetApp están disponibles.
 
@@ -105,7 +105,7 @@ Ubuntu
  a| 
 24,04 LTS
  a| 
-3.9.45 o posterior con la consola de NetApp en modo estándar o modo restringido
+3.9.45 o posterior con la NetApp Console en modo estándar o modo restringido
  a| 
 Motor Docker 23.06 a 28.0.0.
  a| 
@@ -320,7 +320,7 @@ sudo systemctl enable docker && sudo systemctl start docker
 Configure el acceso a la red para que el agente de la consola pueda administrar recursos en su nube pública.  Además de tener una red virtual y una subred para el agente de consola, debe asegurarse de que se cumplan los siguientes requisitos.
 
 Conexiones a redes de destino:: Asegúrese de que el agente de la consola tenga una conexión de red a las ubicaciones de almacenamiento.  Por ejemplo, la VPC o VNet donde planea implementar Cloud Volumes ONTAP, o el centro de datos donde residen sus clústeres ONTAP locales.
-Preparar la red para el acceso de los usuarios a la consola de NetApp:: En el modo restringido, los usuarios acceden a la consola desde la máquina virtual del agente de consola.  El agente de la consola se comunica con algunos puntos finales para completar tareas de administración de datos.  Estos puntos finales se contactan desde la computadora de un usuario cuando se completan acciones específicas desde la Consola.
+Preparar la red para el acceso de los usuarios a la NetApp Console:: En el modo restringido, los usuarios acceden a la consola desde la máquina virtual del agente de consola.  El agente de la consola se comunica con algunos puntos finales para completar tareas de administración de datos.  Estos puntos finales se contactan desde la computadora de un usuario cuando se completan acciones específicas desde la Consola.
 
 
 
@@ -333,12 +333,12 @@ NOTE: Los agentes de consola anteriores a la versión 4.0.0 necesitan puntos fin
 | Puntos finales | Objetivo 
 
 
-| \ https://api.bluexp.netapp.com \ https://netapp-cloud-account.auth0.com \ https://netapp-cloud-account.us.auth0.com \ https://console.netapp.com \ https://components.console.bluexp.netapp.com \ https://cdn.auth0.com | Proporcionar funciones y servicios dentro de la consola de NetApp . 
+| \ https://api.bluexp.netapp.com \ https://netapp-cloud-account.auth0.com \ https://netapp-cloud-account.us.auth0.com \ https://console.netapp.com \ https://components.console.bluexp.netapp.com \ https://cdn.auth0.com | Proporcionar funciones y servicios dentro de la NetApp Console. 
 
 
-| \ https://cdn.auth0.com \ https://services.cloud.netapp.com | Su navegador web se conecta a estos puntos finales para la autenticación centralizada de usuarios a través de la consola de NetApp . 
+| \ https://cdn.auth0.com \ https://services.cloud.netapp.com | Su navegador web se conecta a estos puntos finales para la autenticación centralizada de usuarios a través de la NetApp Console. 
 |===
-Acceso a Internet saliente para operaciones diarias:: La ubicación de red del agente de la consola debe tener acceso a Internet saliente.  Debe poder acceder a los servicios SaaS de la consola de NetApp , así como a los puntos finales dentro de su respectivo entorno de nube pública.
+Acceso a Internet saliente para operaciones diarias:: La ubicación de red del agente de la consola debe tener acceso a Internet saliente.  Debe poder acceder a los servicios SaaS de la NetApp Console , así como a los puntos finales dentro de su respectivo entorno de nube pública.
 +
 --
 [cols="2a,1a"]
@@ -405,7 +405,7 @@ Para administrar recursos en Google Cloud.
 
 
  a| 
-*Puntos finales de la consola NetApp *
+*Puntos finales de la NetApp Console *
 
 
 
@@ -426,7 +426,7 @@ Para obtener información de licencias y enviar mensajes de AutoSupport al sopor
  a| 
 \ https://signin.b2c.netapp.com
  a| 
-Para actualizar las credenciales del sitio de soporte de NetApp (NSS) o para agregar nuevas credenciales de NSS a la consola de NetApp .
+Para actualizar las credenciales del sitio de soporte de NetApp (NSS) o para agregar nuevas credenciales de NSS a la NetApp Console.
 
 
 
@@ -440,7 +440,7 @@ Para obtener información de licencias y enviar mensajes de AutoSupport al sopor
  a| 
 \ https://api.bluexp.netapp.com \ https://netapp-cloud-account.auth0.com \ https://netapp-cloud-account.us.auth0.com \ https://console.netapp.com \ https://components.console.bluexp.netapp.com \ https://cdn.auth0.com
  a| 
-Proporcionar funciones y servicios dentro de la consola de NetApp .
+Proporcionar funciones y servicios dentro de la NetApp Console.
 
 
 
@@ -497,7 +497,7 @@ Si los sistemas Cloud Volumes ONTAP no tienen una conexión a Internet saliente 
 --
 
 
-Habilitar NTP:: Si planea utilizar NetApp Data Classification para escanear sus fuentes de datos corporativos, debe habilitar un servicio de Protocolo de tiempo de red (NTP) tanto en el agente de consola como en el sistema de clasificación de datos de NetApp para que la hora se sincronice entre los sistemas. https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html["Obtenga más información sobre la clasificación de datos de NetApp"^]
+Habilitar NTP:: Si planea utilizar NetApp Data Classification para escanear sus fuentes de datos corporativos, debe habilitar un servicio de Protocolo de tiempo de red (NTP) tanto en el agente de consola como en el sistema de NetApp Data Classification para que la hora se sincronice entre los sistemas. https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html["Obtenga más información sobre la clasificación de datos de NetApp"^]
 +
 --
 Si planea crear un agente de consola desde el mercado de su proveedor de nube, implemente este requisito de red después de crear el agente de consola.
@@ -571,7 +571,7 @@ Para las regiones estándar, los permisos se distribuyen en dos políticas.  Se 
 ** https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html["Documentación de AWS: Cómo agregar y eliminar políticas de IAM"^]
 
 
-. Asegúrese de que el usuario tenga una clave de acceso que pueda agregar a la consola de NetApp después de instalar el agente de la consola.
+. Asegúrese de que el usuario tenga una clave de acceso que pueda agregar a la NetApp Console después de instalar el agente de la consola.
 
 
 --
@@ -589,7 +589,7 @@ https://learn.microsoft.com/en-us/azure/active-directory/managed-identities-azur
 . Copiar el contenido dellink:reference-permissions-azure.html["Permisos de roles personalizados para el Conector"] y guardarlos en un archivo JSON.
 . Modifique el archivo JSON agregando identificadores de suscripción de Azure al ámbito asignable.
 +
-Debe agregar el ID de cada suscripción de Azure que desee utilizar con la consola de NetApp .
+Debe agregar el ID de cada suscripción de Azure que desee utilizar con la NetApp Console.
 
 +
 *Ejemplo*
@@ -641,7 +641,7 @@ image:screenshot_azure_ad.png["Muestra el servicio Active Directory en Microsoft
 . Especifique detalles sobre la aplicación:
 +
 ** *Nombre*: Ingrese un nombre para la aplicación.
-** *Tipo de cuenta*: seleccione un tipo de cuenta (cualquiera funcionará con la consola de NetApp ).
+** *Tipo de cuenta*: seleccione un tipo de cuenta (cualquiera funcionará con la NetApp Console).
 ** *URI de redirección*: Puede dejar este campo en blanco.
 
 
@@ -725,7 +725,7 @@ image:screenshot_azure_service_principal_role.png["Una captura de pantalla del p
 La entidad de servicio ahora tiene los permisos de Azure necesarios para implementar el agente de consola.
 
 +
-Si desea implementar Cloud Volumes ONTAP desde varias suscripciones de Azure, debe vincular la entidad de servicio a cada una de esas suscripciones.  En la consola de NetApp , puede seleccionar la suscripción que desea utilizar al implementar Cloud Volumes ONTAP.
+Si desea implementar Cloud Volumes ONTAP desde varias suscripciones de Azure, debe vincular la entidad de servicio a cada una de esas suscripciones.  En la NetApp Console, puede seleccionar la suscripción que desea utilizar al implementar Cloud Volumes ONTAP.
 
 
 

@@ -18,7 +18,7 @@ Para instalar manualmente el agente de la consola en su propio host Linux, debe 
 
 .Antes de empezar
 * Deberías tener unalink:concept-agents.html["comprensión de los agentes de consola"] .
-* Deberías revisarlink:reference-limitations.html["Limitaciones del agente de consola"] .
+* Deberías revisarlolink:reference-limitations.html["Limitaciones del agente de consola"] .
 
 
 
@@ -88,7 +88,7 @@ Ubuntu
  a| 
 24,04 LTS
  a| 
-3.9.45 o posterior con la consola de NetApp en modo estándar o modo restringido
+3.9.45 o posterior con la NetApp Console en modo estándar o modo restringido
  a| 
 Motor Docker 23.06 a 28.0.0.
  a| 
@@ -304,7 +304,7 @@ Conexiones a redes de destino:: El agente de consola requiere una conexión de r
 Acceso a Internet de salida:: La ubicación de red donde implementa el agente de consola debe tener una conexión a Internet saliente para comunicarse con puntos finales específicos.
 
 
-Puntos finales contactados desde computadoras al usar la consola NetApp basada en web::
+Puntos finales contactados desde computadoras al usar la NetApp Console basada en web::
 +
 --
 Las computadoras que acceden a la consola desde un navegador web deben tener la capacidad de comunicarse con varios puntos finales.  Necesitará usar la consola para configurar el agente de la consola y para el uso diario de la consola.
@@ -348,7 +348,7 @@ Para obtener información de licencias y enviar mensajes de AutoSupport al sopor
  a| 
 \ https://signin.b2c.netapp.com
  a| 
-Para actualizar las credenciales del sitio de soporte de NetApp (NSS) o para agregar nuevas credenciales de NSS a la consola de NetApp .
+Para actualizar las credenciales del sitio de soporte de NetApp (NSS) o para agregar nuevas credenciales de NSS a la NetApp Console.
 
 
 
@@ -362,7 +362,7 @@ Para obtener información de licencias y enviar mensajes de AutoSupport al sopor
  a| 
 \ https://api.bluexp.netapp.com \ https://netapp-cloud-account.auth0.com \ https://netapp-cloud-account.us.auth0.com \ https://console.netapp.com \ https://components.console.bluexp.netapp.com \ https://cdn.auth0.com
  a| 
-Proporcionar funciones y servicios dentro de la consola de NetApp .
+Proporcionar funciones y servicios dentro de la NetApp Console.
 
 
 
@@ -407,7 +407,7 @@ Si los sistemas Cloud Volumes ONTAP no tienen una conexión a Internet saliente 
 --
 
 
-Habilitar NTP:: Si planea utilizar NetApp Data Classification para escanear sus fuentes de datos corporativos, debe habilitar un servicio de Protocolo de tiempo de red (NTP) tanto en el agente de consola como en el sistema de clasificación de datos de NetApp para que la hora se sincronice entre los sistemas. https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html["Obtenga más información sobre la clasificación de datos de NetApp"^]
+Habilitar NTP:: Si planea utilizar NetApp Data Classification para escanear sus fuentes de datos corporativos, debe habilitar un servicio de Protocolo de tiempo de red (NTP) tanto en el agente de consola como en el sistema de NetApp Data Classification para que la hora se sincronice entre los sistemas. https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html["Obtenga más información sobre la clasificación de datos de NetApp"^]
 
 
 
@@ -495,7 +495,7 @@ link:reference-permissions-gcp.html["Política de cuenta de servicio del agente"
 | Compute.NetworkUser administrador de implementación.editor | Implementación y mantenimiento de Cloud Volumes ONTAP y los servicios en el proyecto de servicio 
 
 
-| Cuenta de servicio de Cloud Volumes ONTAP | Costumbre | Proyecto de servicio | Miembro de storage.admin: cuenta de servicio de la consola de NetApp como serviceAccount.user | N/A | (Opcional) Para NetApp Cloud Tiering y NetApp Backup and Recovery 
+| Cuenta de servicio de Cloud Volumes ONTAP | Costumbre | Proyecto de servicio | Miembro de storage.admin: cuenta de servicio de la NetApp Console como serviceAccount.user | N/A | (Opcional) Para NetApp Cloud Tiering y NetApp Backup and Recovery 
 
 
 | Agente de servicio de las API de Google | Google Cloud | Proyecto de servicio  a| 
@@ -513,7 +513,7 @@ computar.usuariodered
 |===
 Notas:
 
-. deploymentmanager.editor solo es necesario en el proyecto host si no pasa reglas de firewall a la implementación y elige dejar que la consola las cree por usted.  La consola de NetApp crea una implementación en el proyecto de host que contiene la regla de firewall VPC0 si no se especifica ninguna regla.
+. deploymentmanager.editor solo es necesario en el proyecto host si no pasa reglas de firewall a la implementación y elige dejar que la consola las cree por usted.  La NetApp Console crea una implementación en el proyecto de host que contiene la regla de firewall VPC0 si no se especifica ninguna regla.
 . firewall.create y firewall.delete solo son necesarios si no pasa reglas de firewall a la implementación y elige dejar que la Consola las cree por usted.  Estos permisos residen en el archivo .yaml de la cuenta de la consola.  Si está implementando un par HA mediante una VPC compartida, estos permisos se utilizarán para crear las reglas de firewall para VPC1, 2 y 3.  Para todas las demás implementaciones, estos permisos también se utilizarán para crear reglas para VPC0.
 . Para la organización en niveles de nube, la cuenta de servicio de organización en niveles debe tener el rol serviceAccount.user en la cuenta de servicio, no solo en el nivel de proyecto.  Actualmente, si asigna serviceAccount.user en el nivel del proyecto, los permisos no se muestran cuando consulta la cuenta de servicio con getIAMPolicy.
 
@@ -561,7 +561,7 @@ Tiene la opción de configurar un servidor proxy después de la instalación, pe
 
 
 
-NOTE: No es posible configurar un certificado para un servidor proxy transparente al instalar manualmente el agente de consola. Si necesita configurar un certificado para un servidor proxy transparente, debe utilizar la Consola de mantenimiento después de la instalación. Obtenga más información sobre ellink:reference-agent-maint-console.html["Consola de mantenimiento del agente"] .
+NOTE: No es posible configurar un certificado para un servidor proxy transparente al instalar manualmente el agente de consola.  Si necesita configurar un certificado para un servidor proxy transparente, debe utilizar la Consola de mantenimiento después de la instalación. Obtenga más información sobre ellink:reference-agent-maint-console.html["Consola de mantenimiento del agente"] .
 
 .Acerca de esta tarea
 El instalador que está disponible en el sitio de soporte de NetApp podría ser una versión anterior.  Después de la instalación, el agente de consola se actualiza automáticamente si hay una nueva versión disponible.
@@ -688,7 +688,7 @@ https://_ipaddress_[]
 .. Introduzca un nombre para el sistema.
 .. En *¿Está ejecutando en un entorno seguro?* mantenga el modo restringido deshabilitado.
 +
-Debes mantener el modo restringido deshabilitado porque estos pasos describen cómo usar la consola en modo estándar.  Debe habilitar el modo restringido solo si tiene un entorno seguro y desea desconectar esta cuenta de los servicios de backend.  Si ese es el caso,link:task-quick-start-restricted-mode.html["Siga los pasos para comenzar a utilizar la consola de NetApp en modo restringido"] .
+Debes mantener el modo restringido deshabilitado porque estos pasos describen cómo usar la consola en modo estándar.  Debe habilitar el modo restringido solo si tiene un entorno seguro y desea desconectar esta cuenta de los servicios de backend.  Si ese es el caso,link:task-quick-start-restricted-mode.html["Siga los pasos para comenzar a utilizar la NetApp Console en modo restringido"] .
 
 .. Seleccione *Comencemos*.
 
@@ -699,7 +699,7 @@ NOTE: Si la instalación falla, puede ver registros y un informe para ayudarlo a
 
 
 
-Si tiene depósitos de Google Cloud Storage en la misma cuenta de Google Cloud donde creó el agente de consola, verá aparecer automáticamente un sistema de Google Cloud Storage en la página *Sistemas*. https://docs.netapp.com/us-en/storage-management-google-cloud-storage/index.html["Aprenda a administrar Google Cloud Storage desde la consola de NetApp"^]
+Si tiene depósitos de Google Cloud Storage en la misma cuenta de Google Cloud donde creó el agente de consola, verá aparecer automáticamente un sistema de Google Cloud Storage en la página *Sistemas*. https://docs.netapp.com/us-en/storage-management-google-cloud-storage/index.html["Aprenda a administrar Google Cloud Storage desde la NetApp Console"^]
 
 
 
@@ -712,5 +712,5 @@ Debes proporcionar al agente de la consola los permisos de Google Cloud que conf
 +
 https://cloud.google.com/compute/docs/access/create-enable-service-accounts-for-instances#changeserviceaccountandscopes["Documentación de Google Cloud: Cómo cambiar la cuenta de servicio y los ámbitos de acceso de una instancia"^]
 
-. Si desea administrar recursos en otros proyectos de Google Cloud, otorgue acceso agregando la cuenta de servicio con el rol de agente de consola a ese proyecto. Necesitarás repetir este paso para cada proyecto.
+. Si desea administrar recursos en otros proyectos de Google Cloud, otorgue acceso agregando la cuenta de servicio con el rol de agente de consola a ese proyecto.  Necesitarás repetir este paso para cada proyecto.
 

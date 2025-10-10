@@ -28,4 +28,4 @@ Para obtener ayuda, consulte la documentación de estos servicios:
 
 
 .Información relacionada
-link:concept-modes.html["Modos de implementación de la consola de NetApp"]
+link:concept-modes.html["Modos de implementación de la NetApp Console"]

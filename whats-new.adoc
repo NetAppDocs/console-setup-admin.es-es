@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: whats-new.html 
 keywords: 'what"s new, features, new, release notes, enhancements, fixes, connectors, bluexp, iam, notice, releases' 
-summary: 'Conozca las novedades en las funciones de administración de la consola de NetApp : IAM, agentes de consola, credenciales de proveedores de nube y más.' 
+summary: 'Conozca las novedades en las funciones de administración de la NetApp Console : IAM, agentes de consola, credenciales de proveedores de nube y más.' 
 ---
 = Qué hay de nuevo
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 'Conozca las novedades en las funciones de administración de la consol
 
 
 [role="lead"]
-Conozca las novedades en las funciones de administración de la consola de NetApp : administración de identidad y acceso (IAM), agentes de consola, credenciales de proveedores de nube y más.
+Conozca las novedades en las funciones de administración de la NetApp Console : administración de identidad y acceso (IAM), agentes de consola, credenciales de proveedores de nube y más.
 
 
 
@@ -24,13 +24,13 @@ Conozca las novedades en las funciones de administración de la consola de NetAp
 
 == BlueXP ahora es NetApp Console
 
-La consola de NetApp , construida sobre la base BlueXP mejorada y reestructurada, proporciona una gestión centralizada del almacenamiento de NetApp y de los servicios de datos de NetApp en entornos locales y en la nube a nivel empresarial, brindando información en tiempo real, flujos de trabajo más rápidos y una administración simplificada que es altamente segura y compatible.
+La NetApp Console, construida sobre la base BlueXP mejorada y reestructurada, proporciona una gestión centralizada del almacenamiento de NetApp y de los NetApp Data Services en entornos locales y en la nube a nivel empresarial, brindando información en tiempo real, flujos de trabajo más rápidos y una administración simplificada que es altamente segura y compatible.
 
 
 
 === Menús y páginas de navegación
 
-NetApp movió la mayoría de las opciones del menú al panel de navegación izquierdo y reorganizó los menús para facilitar la navegación en la Consola de NetApp .
+NetApp movió la mayoría de las opciones del menú al panel de navegación izquierdo y reorganizó los menús para facilitar la navegación en la NetApp Console.
 
 
 
@@ -54,7 +54,7 @@ image:https://docs.netapp.com/us-en/console-setup-admin/media/screenshot-storage
 
 ==== Menú de administración
 
-Utilice el menú centralizado *Administración* para administrar la consola de NetApp , los casos de soporte, las licencias y las suscripciones (anteriormente llamadas billetera digital).
+Utilice el menú centralizado *Administración* para administrar la NetApp Console, los casos de soporte, las licencias y las suscripciones (anteriormente llamadas billetera digital).
 
 image:https://docs.netapp.com/us-en/console-setup-admin/media/screenshot-admin-menu.png["Una captura de pantalla del menú de Administración."]
 
@@ -82,7 +82,7 @@ NetApp cambió el nombre de varios elementos, servicios de datos y característi
 
 [cols="10,24"]
 |===
-| *Nombre anterior* | * Nombre de la consola de NetApp * 
+| *Nombre anterior* | * Nombre de la NetApp Console * 
 
 
 | Conectores  a| 
@@ -107,7 +107,7 @@ Vea, agregue y administre sus sistemas desde el menú *Almacenamiento > Administ
 
 
 | Protección contra ransomware BlueXP  a| 
-Resiliencia de NetApp frente al ransomware.
+NetApp Ransomware Resilience.
 
 Ransomware Resilience le ayuda a proteger sus datos y recuperarse rápidamente de un ataque de ransomware.
 
@@ -123,9 +123,9 @@ Acceda a la Planificación del ciclo de vida desde el menú *Almacenamiento > Pl
 
 
 | BlueXP digital wallet  a| 
-Licencias y suscripciones
+Licenses and subscriptions
 
-Acceda a sus licencias y suscripciones desde el menú *Administración > Licencias y suscripciones*.
+Acceda a sus licencias y suscripciones desde el menú *Administración > Licenses and subscriptions*.
 
 |===
 
@@ -160,7 +160,7 @@ NetApp ha reducido los puntos finales de red necesarios para la consola y los ag
 
 === Compatibilidad con la implementación de agentes de consola en VCenter
 
-Puede implementar agentes de consola en entornos VMware mediante un archivo OVA.  El archivo OVA incluye una imagen de VM preconfigurada con el software del agente de consola y configuraciones para conectarse a la consola de NetApp .  La descarga de un archivo o la implementación de una URL está disponible directamente desde la consola de NetApp .link:https://docs.netapp.com/us-en/console-setup-admin/task-install-agent-on-prem-ova.html["Aprenda a implementar un agente de consola en entornos VMware."]
+Puede implementar agentes de consola en entornos VMware mediante un archivo OVA.  El archivo OVA incluye una imagen de VM preconfigurada con el software del agente de consola y configuraciones para conectarse a la NetApp Console.  La descarga de un archivo o la implementación de una URL está disponible directamente desde la NetApp Console.link:https://docs.netapp.com/us-en/console-setup-admin/task-install-agent-on-prem-ova.html["Aprenda a implementar un agente de consola en entornos VMware."]
 
 El agente de consola OVA para VMware ofrece una imagen de VM preconfigurada para una implementación rápida.
 
@@ -168,7 +168,7 @@ El agente de consola OVA para VMware ofrece una imagen de VM preconfigurada para
 
 === Informes de validación para implementaciones de agentes fallidas
 
-Al implementar un agente de consola desde la consola de NetApp , ahora tiene la opción de validar la configuración del agente.  Si la consola no logra implementar el agente, proporciona un informe descargable para ayudarlo a solucionar el problema.
+Al implementar un agente de consola desde la NetApp Console, ahora tiene la opción de validar la configuración del agente.  Si la consola no logra implementar el agente, proporciona un informe descargable para ayudarlo a solucionar el problema.
 
 
 
@@ -178,9 +178,9 @@ El agente de consola ha mejorado los mensajes de error que le ayudan a comprende
 
 
 
-== Consola de NetApp
+== NetApp Console
 
-La administración de la consola de NetApp incluye las siguientes características nuevas:
+La administración de la NetApp Console incluye las siguientes características nuevas:
 
 
 
@@ -198,7 +198,7 @@ Los nuevos usuarios con el rol de administrador de la organización pueden usar 
 
 === Autenticación de cuenta de servicio
 
-La consola de NetApp admite la autenticación de cuentas de servicio mediante un ID de cliente generado por el sistema y un secreto o JWT administrados por el cliente, lo que permite a las organizaciones seleccionar el enfoque que mejor se adapte a sus requisitos de seguridad y flujos de trabajo de integración.  La autenticación de cliente JWT de clave privada utiliza criptografía asimétrica, lo que proporciona una seguridad más fuerte que los métodos secretos e identificadores de cliente tradicionales.  La autenticación de cliente JWT de clave privada utiliza criptografía asimétrica, lo que mantiene la clave privada segura en el entorno del cliente, reduce los riesgos de robo de credenciales y mejora la seguridad de su pila de automatización y aplicaciones cliente.link:https://docs.netapp.com/us-en/console-setup-admin/task-iam-manage-members-permissions.html#service-account["Aprenda cómo agregar una cuenta de servicio."]
+La NetApp Console admite la autenticación de cuentas de servicio mediante un ID de cliente generado por el sistema y un secreto o JWT administrados por el cliente, lo que permite a las organizaciones seleccionar el enfoque que mejor se adapte a sus requisitos de seguridad y flujos de trabajo de integración.  La autenticación de cliente JWT de clave privada utiliza criptografía asimétrica, lo que proporciona una seguridad más fuerte que los métodos secretos e identificadores de cliente tradicionales.  La autenticación de cliente JWT de clave privada utiliza criptografía asimétrica, lo que mantiene la clave privada segura en el entorno del cliente, reduce los riesgos de robo de credenciales y mejora la seguridad de su pila de automatización y aplicaciones cliente.link:https://docs.netapp.com/us-en/console-setup-admin/task-iam-manage-members-permissions.html#service-account["Aprenda cómo agregar una cuenta de servicio."]
 
 
 
@@ -210,7 +210,7 @@ El sistema cierra la sesión de los usuarios después de 24 horas o cuando cierr
 
 === Apoyo a las alianzas entre organizaciones
 
-Puede crear asociaciones en la consola de NetApp que permitan a los socios administrar de forma segura los recursos de NetApp a través de los límites organizacionales, lo que facilita la colaboración y fortalece la seguridad. link:https://docs.netapp.com/us-en/console-setup-admin/task-partnerships-create.html["Aprenda a gestionar las asociaciones"] .
+Puede crear asociaciones en la NetApp Console que permitan a los socios administrar de forma segura los recursos de NetApp a través de los límites organizacionales, lo que facilita la colaboración y fortalece la seguridad. link:https://docs.netapp.com/us-en/console-setup-admin/task-partnerships-create.html["Aprenda a gestionar las asociaciones"] .
 
 
 
@@ -228,7 +228,7 @@ Se agregó el rol *Administrador de comportamiento del usuario de Ransomware Res
 
 === Se eliminó el chat de soporte
 
-NetApp ha eliminado la función de chat de soporte de la consola de NetApp .  Utilice la página *Administración > Soporte* para crear y administrar casos de soporte.
+NetApp ha eliminado la función de chat de soporte de la NetApp Console.  Utilice la página *Administración > Soporte* para crear y administrar casos de soporte.
 
 
 
@@ -650,7 +650,7 @@ NetApp Keystone pronto estará disponible en BlueXP y ahora está en versión be
 
 ==== Acceso al Administrador del sistema ONTAP cuando BlueXP utiliza un conector
 
-Un administrador de BlueXP (usuarios con el rol de administrador de la organización) puede configurar BlueXP para solicitar a los usuarios que ingresen sus credenciales de ONTAP para acceder al administrador del sistema ONTAP .  Cuando esta configuración está habilitada, los usuarios deben ingresar sus credenciales de ONTAP cada vez, ya que no se almacenan en BlueXP.
+Un administrador de BlueXP (usuarios con el rol de administrador de la organización) puede configurar BlueXP para solicitar a los usuarios que ingresen sus credenciales de ONTAP para acceder al administrador del sistema de ONTAP .  Cuando esta configuración está habilitada, los usuarios deben ingresar sus credenciales de ONTAP cada vez, ya que no se almacenan en BlueXP.
 
 Esta función está disponible en la versión 3.9.49 y superiores del Conector. link:https://docs.netapp.com/us-en/bluexp-setup-admin//task-ontap-access-connector.html["Aprenda a configurar los ajustes de credenciales."^] .
 

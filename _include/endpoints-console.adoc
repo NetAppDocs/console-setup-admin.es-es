@@ -2,7 +2,7 @@
 :allow-uri-read: 
 
 
-Puntos finales contactados desde computadoras al usar la consola NetApp basada en web::
+Puntos finales contactados desde computadoras al usar la NetApp Console basada en web::
 +
 --
 Las computadoras que acceden a la consola desde un navegador web deben tener la capacidad de comunicarse con varios puntos finales.  Necesitará usar la consola para configurar el agente de la consola y para el uso diario de la consola.

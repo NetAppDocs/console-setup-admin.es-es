@@ -4,7 +4,7 @@ permalink: task-iam-get-started.html
 keywords: iam, quick start, get started, get started with iam, identity and access management 
 summary: Para comenzar con la administración de identidad y acceso en NetApp Console, personalice la jerarquía de la organización, agregue miembros adicionales, agregue o descubra recursos y asocie esos recursos con proyectos. 
 ---
-= Comience a utilizar la identidad y el acceso en la consola de NetApp
+= Comience a utilizar la identidad y el acceso en la NetApp Console
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Para comenzar con la administración de identidad y acceso en NetApp Co
 
 
 [role="lead"]
-Cuando te registras en la consola de NetApp , se te solicita que crees una nueva organización.  La organización incluye un miembro (un administrador de la organización) y un proyecto predeterminado.  Para configurar la gestión de identidad y acceso (IAM) para satisfacer las necesidades de su negocio, deberá personalizar la jerarquía de su organización, agregar miembros adicionales, agregar o descubrir recursos y asociar esos recursos en toda su jerarquía.
+Cuando te registras en la NetApp Console, se te solicita que crees una nueva organización.  La organización incluye un miembro (un administrador de la organización) y un proyecto predeterminado.  Para configurar la gestión de identidad y acceso (IAM) para satisfacer las necesidades de su negocio, deberá personalizar la jerarquía de su organización, agregar miembros adicionales, agregar o descubrir recursos y asociar esos recursos en toda su jerarquía.
 
 Debe tener permisos de *Administrador de la organización* para administrar la identidad y el acceso de toda su organización.  Si tiene permisos de *Administrador de carpeta o proyecto*, solo podrá administrar las carpetas y los proyectos para los que tenga permisos.
 
@@ -60,6 +60,6 @@ Agregar o descubrir un sistema en la Consola asocia automáticamente el recurso 
 
 
 .Información relacionada
-* link:concept-identity-and-access-management.html["Obtenga información sobre la gestión de identidad y acceso en la consola de NetApp"]
+* link:concept-identity-and-access-management.html["Obtenga información sobre la gestión de identidad y acceso en la NetApp Console"]
 * https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html["Conozca la API para identidad y acceso"^]
 

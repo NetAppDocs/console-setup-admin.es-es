@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-install-options-azure.html 
 keywords: install connector azure, azure install connector, connector azure, azure connector, installation options, azure marketplace, manual install 
-summary: Hay algunas formas diferentes de crear un agente de consola en Azure.  La forma más común es hacerlo directamente desde la consola de NetApp . 
+summary: Hay algunas formas diferentes de crear un agente de consola en Azure.  La forma más común es hacerlo directamente desde la NetApp Console . 
 ---
 = Opciones de instalación del agente de consola en Azure
 :hardbreaks:
@@ -14,11 +14,11 @@ summary: Hay algunas formas diferentes de crear un agente de consola en Azure.  
 
 
 [role="lead"]
-Hay algunas formas diferentes de crear un agente de consola en Azure.  La forma más común es hacerlo directamente desde la consola de NetApp .
+Hay algunas formas diferentes de crear un agente de consola en Azure.  La forma más común es hacerlo directamente desde la NetApp Console .
 
 Están disponibles las siguientes opciones de instalación:
 
-* link:task-install-agent-azure-console.html["Cree un agente de consola directamente desde la consola de NetApp"](esta es la opción estándar)
+* link:task-install-agent-azure-console.html["Cree un agente de consola directamente desde la NetApp Console"](esta es la opción estándar)
 +
 Esta acción inicia una máquina virtual que ejecuta Linux y el software del agente de consola en una red virtual de su elección.
 

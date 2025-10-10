@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-upgrade-agent.html 
 keywords: upgrade, manual upgrade, agent upgrade, manual agent upgrade, upgrade agent manually, private mode upgrade, offline upgrade, upgrade private mode, connector upgrade, agent upgrade 
-summary: Cuando utiliza el modo estándar o el modo restringido, la consola de NetApp actualiza automáticamente su agente de consola a la última versión, siempre que el agente de consola tenga acceso a Internet saliente para obtener la actualización de software. 
+summary: Cuando utiliza el modo estándar o el modo restringido, la NetApp Console actualiza automáticamente su agente de consola a la última versión, siempre que el agente de consola tenga acceso a Internet saliente para obtener la actualización de software. 
 ---
 = Administrar actualizaciones del agente de la consola
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Cuando utiliza el modo estándar o el modo restringido, la consola de N
 
 
 [role="lead"]
-Cuando utiliza el modo estándar o el modo restringido, la consola de NetApp actualiza automáticamente su agente de consola a la última versión, siempre que el agente de consola tenga acceso a Internet saliente para obtener la actualización de software.
+Cuando utiliza el modo estándar o el modo restringido, la NetApp Console actualiza automáticamente su agente de consola a la última versión, siempre que el agente de consola tenga acceso a Internet saliente para obtener la actualización de software.
 
 Si necesita administrar manualmente cuándo se actualiza el agente de la consola, puede deshabilitar las actualizaciones automáticas para el modo estándar o el modo restringido.
 
@@ -90,7 +90,7 @@ _
 
 == Actualizar el agente de la consola
 
-El agente de la consola debe reiniciarse durante el proceso de actualización, por lo que la consola de NetApp no ​​estará disponible durante la actualización.
+El agente de la consola debe reiniciarse durante el proceso de actualización, por lo que la NetApp Console no ​​estará disponible durante la actualización.
 
 .Pasos
 . Descargue el software del agente de consola desde https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["Sitio de soporte de NetApp"^] .

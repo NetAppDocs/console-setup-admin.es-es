@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concept-modes.html 
 keywords: dark site, internet, on prem, no internet, supported deployments, govcloud, government access, environments, supported environments, deployment modes, modes, private mode, restricted mode, il6, sc2s, c2s, dark site, sovereign region, saas, government region, secret region, top secret, aws secret, aws top secret, private 
-summary: 'La consola de NetApp ofrece múltiples _modos de implementación_ que le permiten satisfacer sus requisitos comerciales y de seguridad. El _modo estándar_ aprovecha una capa de software como servicio (SaaS) para proporcionar funcionalidad completa, mientras que el _modo restringido_ y el _modo privado_ están disponibles para organizaciones que tienen restricciones de conectividad.' 
+summary: 'La NetApp Console ofrece múltiples _modos de implementación_ que le permiten satisfacer sus requisitos comerciales y de seguridad. El _modo estándar_ aprovecha una capa de software como servicio (SaaS) para proporcionar funcionalidad completa, mientras que el _modo restringido_ y el _modo privado_ están disponibles para organizaciones que tienen restricciones de conectividad.' 
 ---
-= Obtenga más información sobre los modos de implementación de la consola de NetApp
+= Obtenga más información sobre los modos de implementación de la NetApp Console
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,10 +14,10 @@ summary: 'La consola de NetApp ofrece múltiples _modos de implementación_ que 
 
 
 [role="lead"]
-La consola de NetApp ofrece múltiples _modos de implementación_ que le permiten satisfacer sus requisitos comerciales y de seguridad.
+La NetApp Console ofrece múltiples _modos de implementación_ que le permiten satisfacer sus requisitos comerciales y de seguridad.
 
 * El _modo estándar_ aprovecha una capa de software como servicio (SaaS) para proporcionar una funcionalidad completa.  Los usuarios acceden a la consola a través de una interfaz alojada en la web
-* El _modo restringido_ está disponible para organizaciones que tienen restricciones de conectividad y desean instalar la consola de NetApp en su propia nube pública.  Los usuarios acceden a la consola a través de una interfaz basada en web alojada en un agente de consola en su entorno de nube.
+* El _modo restringido_ está disponible para organizaciones que tienen restricciones de conectividad y desean instalar la NetApp Console en su propia nube pública.  Los usuarios acceden a la consola a través de una interfaz basada en web alojada en un agente de consola en su entorno de nube.
 +
 NetApp Console restringe el tráfico, la comunicación y los datos en modo restringido, y usted debe asegurarse de que su entorno (local y en la nube) cumpla con las regulaciones requeridas.
 
@@ -35,7 +35,7 @@ Modo estándar:: Utiliza un servicio SaaS desde la consola basada en web.  Segú
 Este modo utiliza transmisión de datos cifrados a través de Internet público.
 
 --
-Modo restringido:: Instala un agente de consola en la nube (en una región gubernamental, soberana o comercial) y tiene conectividad de salida limitada a la capa SaaS de consola de NetApp .
+Modo restringido:: Instala un agente de consola en la nube (en una región gubernamental, soberana o comercial) y tiene conectividad de salida limitada a la capa SaaS de NetApp Console .
 +
 --
 Este modo lo suelen utilizar los gobiernos estatales y locales y las empresas reguladas.
@@ -53,7 +53,7 @@ La siguiente tabla proporciona una comparación de la consola de NetApp .
 |  | Modo estándar | Modo restringido 
 
 
-| ¿Se requiere conexión a la capa SaaS de la consola NetApp ? | Sí | Solo salida 
+| ¿Se requiere conexión a la capa SaaS de la NetApp Console ? | Sí | Solo salida 
 
 
 | ¿Es necesario conectarse a su proveedor de nube? | Sí | Sí, dentro de la región 
@@ -65,7 +65,7 @@ La siguiente tabla proporciona una comparación de la consola de NetApp .
 | Actualizaciones del agente de consola | Actualizaciones automáticas | Actualizaciones automáticas 
 
 
-| Acceso UI | Desde la capa SaaS de la consola | Localmente desde una máquina virtual de agente 
+| Acceso UI | Desde la capa SaaS de la consola | Localmente desde una máquina virtual del agente 
 
 
 | Punto final de API | La capa SaaS de la consola | Un agente de consola 
@@ -121,7 +121,7 @@ Punto final de API:: Las llamadas API se realizan al siguiente punto final: http
 Autenticación:: Autenticación con inicios de sesión con auth0 o del sitio de soporte de NetApp (NSS).  La federación de identidad está disponible.
 Servicios de datos compatibles:: Se admiten todos los servicios de datos de NetApp . link:https://docs.netapp.com/us-en/data-services-family/index.html["Obtenga más información sobre los servicios de datos de NetApp"^] .
 Opciones de licencia admitidas:: Las suscripciones de Marketplace y BYOL son compatibles con el modo estándar; sin embargo, las opciones de licencia admitidas dependen del servicio de datos de NetApp que esté utilizando.  Revise la documentación de cada servicio para obtener más información sobre las opciones de licencia disponibles.
-Cómo empezar a utilizar el modo estándar:: Ir a la https://console.netapp.com["Consola de NetApp"^] y regístrate.
+Cómo empezar a utilizar el modo estándar:: Ir a la https://console.netapp.com["NetApp Console"^] y regístrate.
 +
 --
 link:task-quick-start-standard-mode.html["Aprenda cómo comenzar a utilizar el modo estándar"] .
@@ -167,7 +167,7 @@ Servicios de datos y gestión de almacenamiento compatibles:: Los siguientes ser
 | Copia de seguridad y recuperación | Compatible con regiones gubernamentales y regiones comerciales con modo restringido. No compatible con regiones soberanas con modo restringido. En el modo restringido, NetApp Backup and Recovery solo admite la copia de seguridad y la restauración de datos de volumen ONTAP . https://docs.netapp.com/us-en/data-services-disaster-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["Ver la lista de destinos de respaldo admitidos para datos de ONTAP"^] No se admite la realización de copias de seguridad ni la restauración de datos de aplicaciones ni de máquinas virtuales. 
 
 
-| Clasificación de datos de NetApp  a| 
+| NetApp Data Classification  a| 
 Compatible con regiones gubernamentales con modo restringido.  No compatible con regiones comerciales ni con regiones soberanas con modo restringido.
 
 
@@ -175,7 +175,7 @@ Compatible con regiones gubernamentales con modo restringido.  No compatible con
 | Cloud Volumes ONTAP | Soporte completo 
 
 
-| Licencias y suscripciones | Puede acceder a la información de licencia y suscripción con las opciones de licencia compatibles que se enumeran a continuación para el modo restringido. 
+| Licenses and subscriptions | Puede acceder a la información de licencia y suscripción con las opciones de licencia compatibles que se enumeran a continuación para el modo restringido. 
 
 
 | Clústeres ONTAP locales | Se admiten tanto el descubrimiento con un agente de consola como el descubrimiento sin un agente de consola (descubrimiento directo).  Cuando descubre un clúster local sin un agente de consola, la vista avanzada (Administrador del sistema) no es compatible. 
@@ -203,7 +203,7 @@ Para Cloud Volumes ONTAP, BYOL admite tanto las licencias basadas en capacidad c
 
 
 --
-Cómo empezar a utilizar el modo restringido:: Debe habilitar el modo restringido al crear su organización de consola de NetApp .
+Cómo empezar a utilizar el modo restringido:: Debe habilitar el modo restringido al crear su organización de NetApp Console .
 
 
 Si aún no tiene una organización, se le solicitará que cree su organización y habilite el modo restringido cuando inicie sesión en la Consola por primera vez desde un agente de Consola que instaló manualmente o que creó desde el mercado de su proveedor de nube.
@@ -259,22 +259,22 @@ Tenga en cuenta que algunos servicios podrían ser compatibles con limitaciones.
 .9+| *Servicios de datos* | Copia de seguridad y recuperación de NetApp | Síhttps://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["Ver la lista de destinos de respaldo admitidos para los datos de volumen de ONTAP"^] 
 
 
-| Clasificación de datos de NetApp | Sí 
+| NetApp Data Classification | Sí 
 
 
-| Copia y sincronización de NetApp | No 
+| NetApp Copy and Sync | No 
 
 
-| Recuperación ante desastres de NetApp | No 
+| NetApp Disaster Recovery | No 
 
 
-| Resiliencia de NetApp frente al ransomware | No 
+| NetApp Ransomware Resilience | No 
 
 
-| Replicación de NetApp | Sí 
+| NetApp Replication | Sí 
 
 
-| Nivelación de la nube de NetApp | No 
+| NetApp Cloud Tiering | No 
 
 
 | Almacenamiento en caché de volumen de NetApp | No 

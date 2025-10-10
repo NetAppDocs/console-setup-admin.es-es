@@ -44,8 +44,8 @@ Asocie los recursos del agente de consola con las mismas carpetas y proyectos de
 link:task-iam-manage-resources.html#associate-resource["Aprenda a asociar un recurso con carpetas y proyectos"] .
 
 .Información relacionada
-* link:concept-agents.html["Obtenga más información sobre los agentes de la consola de NetApp"]
-* link:concept-identity-and-access-management.html["Obtenga más información sobre la gestión de identidad y acceso de la consola de NetApp"]
+* link:concept-agents.html["Obtenga más información sobre los agentes de la NetApp Console"]
+* link:concept-identity-and-access-management.html["Obtenga más información sobre la gestión de identidad y acceso de la NetApp Console"]
 * link:task-iam-get-started.html["Comience con la identidad y el acceso"]
 * https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html["Conozca la API para la gestión de identidad y acceso"^]
 

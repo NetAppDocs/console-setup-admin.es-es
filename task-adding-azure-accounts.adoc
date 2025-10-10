@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-adding-azure-accounts.html 
 keywords: permissions, microsoft, azure, permissions, custom role, role, json, active directory, ad, service principal, key, tenant id, application key, application id, operator role, managed identity, iam, operator, role, virtual machine, create custom role, create azure custom role, azure custom role 
-summary: Agregue y administre las credenciales de Azure para que la consola de NetApp tenga los permisos que necesita para implementar y administrar recursos en la nube en sus suscripciones de Azure.  Si administra varias suscripciones de Azure Marketplace, puede asignar a cada una de ellas diferentes credenciales de Azure desde la página Credenciales. 
+summary: Agregue y administre las credenciales de Azure para que la NetApp Console tenga los permisos que necesita para implementar y administrar recursos en la nube en sus suscripciones de Azure.  Si administra varias suscripciones de Azure Marketplace, puede asignar a cada una de ellas diferentes credenciales de Azure desde la página Credenciales. 
 ---
-= Administrar credenciales de Azure y suscripciones de Marketplace para la consola de NetApp
+= Administrar credenciales de Azure y suscripciones de Marketplace para la NetApp Console
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Agregue y administre las credenciales de Azure para que la consola de N
 
 
 [role="lead"]
-Agregue y administre las credenciales de Azure para que la consola de NetApp tenga los permisos que necesita para implementar y administrar recursos en la nube en sus suscripciones de Azure.  Si administra varias suscripciones de Azure Marketplace, puede asignar a cada una de ellas diferentes credenciales de Azure desde la página Credenciales.
+Agregue y administre las credenciales de Azure para que la NetApp Console tenga los permisos que necesita para implementar y administrar recursos en la nube en sus suscripciones de Azure.  Si administra varias suscripciones de Azure Marketplace, puede asignar a cada una de ellas diferentes credenciales de Azure desde la página Credenciales.
 
 
 
@@ -65,7 +65,7 @@ image:screenshot_accounts_switch_azure_subscription.gif["Una captura de pantalla
 
 
 
-== Agregar credenciales de Azure adicionales a la consola de NetApp
+== Agregar credenciales de Azure adicionales a la NetApp Console
 
 Cuando se implementa un agente de consola desde la consola, la consola habilita una identidad administrada asignada por el sistema en la máquina virtual que tiene los permisos necesarios.  La consola selecciona estas credenciales de Azure de forma predeterminada cuando crea un nuevo sistema para Cloud Volumes ONTAP.
 
@@ -113,7 +113,7 @@ image:screenshot_azure_ad.png["Muestra el servicio Active Directory en Microsoft
 . Especifique detalles sobre la aplicación:
 +
 ** *Nombre*: Ingrese un nombre para la aplicación.
-** *Tipo de cuenta*: seleccione un tipo de cuenta (cualquiera funcionará con la consola de NetApp ).
+** *Tipo de cuenta*: seleccione un tipo de cuenta (cualquiera funcionará con la NetApp Console).
 ** *URI de redirección*: Puede dejar este campo en blanco.
 
 
@@ -203,7 +203,7 @@ image:screenshot_azure_service_principal_role.png["Una captura de pantalla del p
 La entidad de servicio ahora tiene los permisos de Azure necesarios para implementar el agente de consola.
 
 +
-Si desea implementar Cloud Volumes ONTAP desde varias suscripciones de Azure, debe vincular la entidad de servicio a cada una de esas suscripciones.  En la consola de NetApp , puede seleccionar la suscripción que desea utilizar al implementar Cloud Volumes ONTAP.
+Si desea implementar Cloud Volumes ONTAP desde varias suscripciones de Azure, debe vincular la entidad de servicio a cada una de esas suscripciones.  En la NetApp Console, puede seleccionar la suscripción que desea utilizar al implementar Cloud Volumes ONTAP.
 
 
 
@@ -327,7 +327,7 @@ Al reemplazar la suscripción actual del mercado, se actualiza para los sistemas
 . Seleccione *Credenciales de la organización*.
 . Seleccione el menú de acciones para un conjunto de credenciales asociadas con un agente de consola y luego seleccione *Configurar suscripción*.
 +
-Debe seleccionar las credenciales que estén asociadas con un agente de consola.  No se puede asociar una suscripción de Marketplace con credenciales asociadas con la consola de NetApp .
+Debe seleccionar las credenciales que estén asociadas con un agente de consola.  No se puede asociar una suscripción de Marketplace con credenciales asociadas con la NetApp Console.
 
 . Para asociar las credenciales con una suscripción existente, seleccione la suscripción de la lista desplegable y seleccione *Configurar*.
 . Para asociar las credenciales con una nueva suscripción, seleccione *Agregar suscripción > Continuar* y siga los pasos en Azure Marketplace:
@@ -337,7 +337,7 @@ Debe seleccionar las credenciales que estén asociadas con un agente de consola.
 .. Llene el formulario y seleccione *Suscribirse*.
 .. Una vez completado el proceso de suscripción, seleccione *Configurar cuenta ahora*.
 +
-Serás redirigido a la consola de NetApp .
+Serás redirigido a la NetApp Console.
 
 .. Desde la página *Asignación de suscripción*:
 +

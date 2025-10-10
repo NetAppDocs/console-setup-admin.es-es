@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-require-imdsv2.html 
 keywords: managing connectors, uninstall connector, switch connectors, switch between connectors, local interface, local connector, local cloud manager, local ui, go to local ui 
-summary: La consola de NetApp admite IMDSv2 con el agente de consola y con Cloud Volumes ONTAP.  En la mayoría de los casos, IMDSv2 se configura automáticamente en las nuevas instancias EC2.  IMDSv1 se habilitó antes de marzo de 2024.  Si sus políticas de seguridad lo requieren, es posible que deba configurar manualmente IMDSv2 en sus instancias EC2. 
+summary: La NetApp Console admite IMDSv2 con el agente de consola y con Cloud Volumes ONTAP.  En la mayoría de los casos, IMDSv2 se configura automáticamente en las nuevas instancias EC2.  IMDSv1 se habilitó antes de marzo de 2024.  Si sus políticas de seguridad lo requieren, es posible que deba configurar manualmente IMDSv2 en sus instancias EC2. 
 ---
 = Requerir el uso de IMDSv2 en instancias de Amazon EC2
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: La consola de NetApp admite IMDSv2 con el agente de consola y con Cloud
 
 
 [role="lead"]
-La consola de NetApp es compatible con el servicio de metadatos de instancia de Amazon EC2 versión 2 (IMDSv2) con el agente de consola y con Cloud Volumes ONTAP (incluido el mediador para implementaciones de alta disponibilidad).  En la mayoría de los casos, IMDSv2 se configura automáticamente en las nuevas instancias EC2.  IMDSv1 se habilitó antes de marzo de 2024.  Si sus políticas de seguridad lo requieren, es posible que deba configurar manualmente IMDSv2 en sus instancias EC2.
+La NetApp Console admite el servicio de metadatos de instancia de Amazon EC2 versión 2 (IMDSv2) con el agente de consola y con Cloud Volumes ONTAP (incluido el mediador para implementaciones de alta disponibilidad).  En la mayoría de los casos, IMDSv2 se configura automáticamente en las nuevas instancias EC2.  IMDSv1 se habilitó antes de marzo de 2024.  Si sus políticas de seguridad lo requieren, es posible que deba configurar manualmente IMDSv2 en sus instancias EC2.
 
 .Antes de empezar
 * La versión del agente de consola debe ser 3.9.38 o posterior.

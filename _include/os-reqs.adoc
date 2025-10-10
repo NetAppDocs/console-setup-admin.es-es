@@ -74,7 +74,7 @@ Ubuntu
  a| 
 24,04 LTS
  a| 
-3.9.45 o posterior con la consola de NetApp en modo estándar o modo restringido
+3.9.45 o posterior con la NetApp Console en modo estándar o modo restringido
  a| 
 Motor Docker 23.06 a 28.0.0.
  a| 

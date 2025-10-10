@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concept-identity-and-access-management.html 
 keywords: iam overview, overview, how iam works, iam example, organization, folders, projects, resources, members, roles, permissions, resource hierarchy, identity and access management, access roles, iam, bluexp IAM 
-summary: 'La gestión de identidad y acceso (IAM) en la consola de NetApp le permite controlar el acceso a los recursos de su organización.' 
+summary: 'La gestión de identidad y acceso (IAM) en la NetApp Console le permite controlar el acceso a los recursos de su organización.' 
 ---
-= Obtenga más información sobre la gestión de identidad y acceso de la consola de NetApp
+= Obtenga más información sobre la gestión de identidad y acceso de la NetApp Console
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 'La gestión de identidad y acceso (IAM) en la consola de NetApp le per
 
 
 [role="lead"]
-La gestión de identidad y acceso (IAM) dentro de la consola de NetApp le permite organizar y controlar el acceso a sus recursos de NetApp .  Puede organizar sus recursos según la jerarquía de su organización.  Por ejemplo, puede organizar los recursos por ubicación geográfica, sitio o unidad de negocio.  Luego, puede asignar roles de IAM a miembros en partes específicas de la jerarquía, lo que impide el acceso a recursos en otras partes de la jerarquía.
+La gestión de identidad y acceso (IAM) dentro de la NetApp Console le permite organizar y controlar el acceso a sus recursos de NetApp .  Puede organizar sus recursos según la jerarquía de su organización.  Por ejemplo, puede organizar los recursos por ubicación geográfica, sitio o unidad de negocio.  Luego, puede asignar roles de IAM a miembros en partes específicas de la jerarquía, lo que impide el acceso a recursos en otras partes de la jerarquía.
 
 * link:concept-modes.html["Obtenga más información sobre los modos de implementación de la consola"]
 
@@ -60,7 +60,7 @@ Una _organización_ es el nivel superior del sistema IAM de la consola y normalm
 
 Una _carpeta_ le permite agrupar proyectos relacionados y separarlos de otros proyectos en su organización.  Por ejemplo, una carpeta podría representar una ubicación geográfica (UE o Este de EE. UU.), un sitio (Londres o Toronto) o una unidad de negocio (ingeniería o marketing).
 
-Puede organizar carpetas para que contengan proyectos, otras carpetas o ambos.  Son opcionales.
+Puede organizar carpetas para que contengan proyectos, otras carpetas o ambas.  Son opcionales.
 
 
 
@@ -230,14 +230,14 @@ Los siguientes ejemplos describen cómo puede utilizar IAM para administrar su o
 
 == ¿A dónde ir después?
 
-* link:task-iam-get-started.html["Comience a usar IAM en la consola de NetApp"]
+* link:task-iam-get-started.html["Comience a usar IAM en la NetApp Console"]
 * link:task-iam-manage-folders-projects.html["Organice sus recursos en NetApp Console con carpetas y proyectos"]
-* link:task-iam-manage-members-permissions.html["Administrar los miembros de la consola de NetApp y sus permisos"]
-* link:task-iam-manage-resources.html["Administre la jerarquía de recursos en su organización de la consola de NetApp"]
+* link:task-iam-manage-members-permissions.html["Administrar los miembros de la NetApp Console y sus permisos"]
+* link:task-iam-manage-resources.html["Administre la jerarquía de recursos en su organización de la NetApp Console"]
 * link:task-iam-associate-agents.html["Asociar agentes con carpetas y proyectos"]
-* link:task-iam-switch-organizations-projects.html["Cambiar entre proyectos y organizaciones de la consola de NetApp"]
-* link:task-iam-rename-organization.html["Cambie el nombre de su organización de la consola de NetApp"]
+* link:task-iam-switch-organizations-projects.html["Cambiar entre proyectos y organizaciones de la NetApp Console"]
+* link:task-iam-rename-organization.html["Cambie el nombre de su organización de la NetApp Console"]
 * link:task-iam-audit-actions-timeline.html["Supervisar o auditar la actividad de IAM"]
-* link:reference-iam-predefined-roles.html["Roles de acceso a la consola de NetApp"]
+* link:reference-iam-predefined-roles.html["Roles de acceso a la NetApp Console"]
 * https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html["Obtenga más información sobre la API para NetApp Console IAM"^]
 

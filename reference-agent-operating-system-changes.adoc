@@ -40,7 +40,7 @@ Instalación manual::
 
 
 --
-Implementación desde la consola de NetApp:: Ubuntu 22.04 LTS
+Implementación desde la NetApp Console:: Ubuntu 22.04 LTS
 Implementación desde AWS Marketplace:: Ubuntu 22.04 LTS
 Implementación desde Azure Marketplace:: Ubuntu 22.04 LTS
 
@@ -92,7 +92,7 @@ Instalación manual::
 
 Tenga en cuenta lo siguiente sobre la compatibilidad con RHEL 8 y 9:
 
-Limitaciones:: La clasificación de datos de NetApp es compatible si instala el agente en un host RHEL 8 o 9 que reside localmente.  No es compatible si el host RHEL 8 o 9 reside en AWS, Azure o Google Cloud.
+Limitaciones:: La NetApp Data Classification es compatible si instala el agente en un host RHEL 8 o 9 que reside localmente.  No es compatible si el host RHEL 8 o 9 reside en AWS, Azure o Google Cloud.
 Herramienta de orquestación de contenedores:: Debe utilizar la herramienta Podman como herramienta de orquestación de contenedores al instalar el agente de consola en un host RHEL 8 o 9.  Docker Engine no es compatible con RHEL 8 y 9.
 Modo de implementación:: RHEL 8 y 9 son compatibles cuando se utiliza la consola en modo estándar y modo restringido.
 Versiones del agente de consola compatibles:: NetApp admite RHEL 8 y 9 a partir de las siguientes versiones del agente de consola:
@@ -102,7 +102,7 @@ Versiones del agente de consola compatibles:: NetApp admite RHEL 8 y 9 a partir 
 
 
 --
-Solo nuevas instalaciones manuales:: RHEL 8 y 9 son compatibles con _nuevas_ instalaciones de agentes cuando se instalan manualmente agentes en hosts que se ejecutan en sus instalaciones o en la nube.
+Solo nuevas instalaciones manuales:: RHEL 8 y 9 son compatibles con instalaciones de agentes _nuevos_ cuando se instalan agentes manualmente en hosts que se ejecutan en sus instalaciones o en la nube.
 Actualizaciones de RHEL:: Si tiene un agente existente ejecutándose en un host RHEL 7, NetApp no ​​admite la actualización del sistema operativo RHEL 7 a RHEL 8 o 9. <<rhel-7-agent,Obtenga más información sobre los agentes de consola existentes en RHEL 7 o CentOS 7>> .
 
 

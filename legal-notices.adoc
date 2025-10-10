@@ -47,4 +47,4 @@ link:https://www.netapp.com/company/legal/privacy-policy/["https://www.netapp.co
 
 Los archivos de aviso proporcionan información sobre derechos de autor y licencias de terceros utilizados en el software de NetApp .
 
-link:media/notice.pdf["Aviso para la consola de NetApp"^]
+link:media/notice.pdf["Aviso para la NetApp Console"^]

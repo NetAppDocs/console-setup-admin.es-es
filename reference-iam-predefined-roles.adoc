@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: reference-iam-predefined-roles.html 
 keywords: predefined roles, iam roles, organization admin, folder or project admin, classification viewer, snapcenter admin, role, iam role, admin, iam, identity and access management, access roles, rbac, bluexp 
-summary: La gestión de acceso e identidad de la consola de NetApp incluye roles predefinidos que puede asignar a los miembros de su organización. 
+summary: La gestión de acceso e identidad de la NetApp Console incluye roles predefinidos que puede asignar a los miembros de su organización. 
 ---
-= Obtenga más información sobre los roles de acceso a la consola de NetApp
+= Obtenga más información sobre los roles de acceso a la NetApp Console
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,13 +14,13 @@ summary: La gestión de acceso e identidad de la consola de NetApp incluye roles
 
 
 [role="lead"]
-La gestión de identidad y acceso (IAM) en la consola de NetApp proporciona roles predefinidos que puede asignar a los miembros de su organización en diferentes niveles de su jerarquía de recursos.  Antes de asignar estos roles, debe comprender los permisos que incluye cada rol.  Los roles se dividen en las siguientes categorías: plataforma, aplicación y servicio de datos.
+La gestión de identidad y acceso (IAM) en la NetApp Console proporciona roles predefinidos que puede asignar a los miembros de su organización en diferentes niveles de su jerarquía de recursos.  Antes de asignar estos roles, debe comprender los permisos que incluye cada rol.  Los roles se dividen en las siguientes categorías: plataforma, aplicación y servicio de datos.
 
 
 
 == Roles de la plataforma
 
-Los roles de plataforma otorgan permisos de administración de la consola de NetApp , incluida la asignación de roles y la gestión de usuarios.  La consola tiene varios roles de plataforma.
+Los roles de plataforma otorgan permisos de administración de la NetApp Console , incluida la asignación de roles y la gestión de usuarios.  La consola tiene varios roles de plataforma.
 
 [cols="1,2"]
 |===
@@ -104,13 +104,13 @@ La siguiente es una lista de roles en la categoría de servicio de datos.  Cada 
 | link:reference-iam-backup-rec-roles.html["Administrador de restauración de copias de seguridad y recuperación"] | Restaurar cargas de trabajo en Copia de seguridad y recuperación. 
 
 
-| link:reference-iam-backup-rec-roles.html["Administrador de clones de Backup and Recovery"] | Clonar aplicaciones y datos en Backup and Recovery. 
+| link:reference-iam-backup-rec-roles.html["Administrador de clones de Backup and Recovery"] | Clonar aplicaciones y datos en Copia de seguridad y recuperación. 
 
 
 | link:reference-iam-backup-rec-roles.html["Visor de copias de seguridad y recuperación"] | Ver información de copia de seguridad y recuperación. 
 
 
-| link:reference-iam-disaster-rec-roles.html["Administración de recuperación ante desastres"] | Realice cualquier acción en el servicio NetApp Disaster Recovery. 
+| link:reference-iam-disaster-rec-roles.html["Administración de recuperación ante desastres"] | Realice cualquier acción en el servicio NetApp Disaster Recovery . 
 
 
 | link:reference-iam-disaster-rec-roles.html["Administrador de conmutación por error de recuperación ante desastres"] | Realizar conmutaciones por error y migraciones. 
@@ -122,7 +122,7 @@ La siguiente es una lista de roles en la categoría de servicio de datos.  Cada 
 | link:reference-iam-disaster-rec-roles.html["Visor de recuperación ante desastres"] | Ver sólo información. 
 
 
-| Visor de clasificación | Permite a los usuarios ver los resultados del análisis de clasificación de datos de NetApp .  Los usuarios con este rol pueden ver información de cumplimiento y generar informes para los recursos a los que tienen permiso de acceso.  Estos usuarios no pueden habilitar ni deshabilitar el escaneo de volúmenes, depósitos o esquemas de bases de datos.  La clasificación no tiene rol de espectador. 
+| Visor de clasificación | Permite a los usuarios ver los resultados del análisis de NetApp Data Classification .  Los usuarios con este rol pueden ver información de cumplimiento y generar informes para los recursos a los que tienen permiso de acceso.  Estos usuarios no pueden habilitar ni deshabilitar el escaneo de volúmenes, depósitos o esquemas de bases de datos.  La clasificación no tiene rol de espectador. 
 
 
 | link:reference-iam-ransomware-roles.html["Administrador de resiliencia frente al ransomware"] | Administre acciones en las pestañas Proteger, Alertas, Recuperar, Configuración e Informes de NetApp Ransomware Resilience. 
@@ -137,14 +137,14 @@ La siguiente es una lista de roles en la categoría de servicio de datos.  Cada 
 | link:reference-iam-ransomware-roles.html["Visor del comportamiento del usuario de Ransomware Resilience"] | Vea alertas e información sobre comportamiento sospechoso de usuarios en Ransomware Resilience. 
 
 
-| Administrador de SnapCenter | Proporciona la capacidad de realizar copias de seguridad de instantáneas de clústeres ONTAP locales mediante NetApp Backup and Recovery para aplicaciones.  Un miembro que tiene este rol puede completar las siguientes acciones: * Completar cualquier acción desde Copia de seguridad y recuperación > Aplicaciones * Administrar todos los sistemas en los proyectos y carpetas para los que tiene permisos * Usar todos los servicios de la consola de NetApp SnapCenter no tiene un rol de espectador. 
+| Administrador de SnapCenter | Proporciona la capacidad de realizar copias de seguridad de instantáneas de clústeres ONTAP locales mediante NetApp Backup and Recovery para aplicaciones.  Un miembro que tiene este rol puede completar las siguientes acciones: * Completar cualquier acción desde Copia de seguridad y recuperación > Aplicaciones * Administrar todos los sistemas en los proyectos y carpetas para los que tiene permisos * Usar todos los servicios de la NetApp Console SnapCenter no tiene un rol de espectador. 
 |===
 
 
 == Enlaces relacionados
 
-* link:concept-identity-and-access-management.html["Obtenga más información sobre la gestión de identidad y acceso de la consola de NetApp"]
+* link:concept-identity-and-access-management.html["Obtenga más información sobre la gestión de identidad y acceso de la NetApp Console"]
 * link:task-iam-get-started.html["Comience a utilizar NetApp Console IAM"]
-* link:task-iam-manage-members-permissions.html["Administrar los miembros de la consola de NetApp y sus permisos"]
+* link:task-iam-manage-members-permissions.html["Administrar los miembros de la NetApp Console y sus permisos"]
 * https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html["Obtenga más información sobre la API para NetApp Console IAM"^]
 

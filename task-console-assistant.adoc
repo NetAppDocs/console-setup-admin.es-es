@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-console-assistant.html 
 keywords: bluexp,netapp console,console assistant,assistant,setup assistant,get started,quick start,first time user,first time setup,setup wizard 
-summary: 'Si es la primera vez que utiliza la consola de NetApp , el asistente de la consola lo guiará a través del proceso de configuración inicial.  El asistente le ayuda a agregar una cuenta de NetApp Support Site (NSS), agregar un agente de consola, agregar un clúster y agregar una licencia o suscripción, lo que facilita el inicio de la administración de sus datos.' 
+summary: 'Si es la primera vez que utiliza la NetApp Console, el asistente de la consola lo guiará a través del proceso de configuración inicial.  El asistente le ayuda a agregar una cuenta de NetApp Support Site (NSS), agregar un agente de consola, agregar un clúster y agregar una licencia o suscripción, lo que facilita el inicio de la administración de sus datos.' 
 ---
-= Comience a utilizar el asistente de la consola de NetApp
+= Comience a utilizar el asistente de la NetApp Console
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 'Si es la primera vez que utiliza la consola de NetApp , el asistente d
 
 
 [role="lead"]
-Si es la primera vez que utiliza la consola de NetApp con el rol de administrador de la organización, puede usar el asistente de la consola para que lo guíe a través del proceso de configuración inicial.  El asistente le ayuda a agregar una cuenta de NetApp Support Site (NSS), agregar un agente de consola, agregar un clúster y agregar una licencia o suscripción, lo que facilita el inicio de la administración de sus datos.
+Si es la primera vez que utiliza la NetApp Console con el rol de administrador de la organización, puede usar el asistente de la consola para que lo guíe a través del proceso de configuración inicial.  El asistente le ayuda a agregar una cuenta de NetApp Support Site (NSS), agregar un agente de consola, agregar un clúster y agregar una licencia o suscripción, lo que facilita el inicio de la administración de sus datos.
 
 
 
@@ -26,7 +26,7 @@ El asistente de consola solo está disponible para usuarios con el rol de admini
 
 == ¿Cuándo aparece el asistente de consola?
 
-El asistente de la consola está disponible en la página de inicio de la consola de NetApp hasta que se completen las tareas de configuración obligatorias.
+El asistente de la consola está disponible en la página de inicio de la NetApp Console hasta que se completen las tareas de configuración obligatorias.
 
 Utilice el asistente para completar estas tareas, algunas de las cuales son obligatorias:
 
@@ -41,7 +41,7 @@ Utilice el asistente para completar estas tareas, algunas de las cuales son obli
 
 == Habilitar el asistente de consola
 
-De forma predeterminada, la consola de NetApp muestra el asistente de la consola en la página de inicio para los usuarios nuevos que tienen el rol de administrador de la organización.
+De forma predeterminada, la NetApp Console muestra el asistente de la consola en la página de inicio para los usuarios nuevos que tienen el rol de administrador de la organización.
 
 
 TIP: Puedes despedir al asistente solo después de que tú u otra persona complete los elementos obligatorios.  Después de completar los elementos obligatorios, el asistente se descarta para todos los usuarios de su organización y no vuelve a aparecer.
@@ -50,7 +50,7 @@ TIP: Puedes despedir al asistente solo después de que tú u otra persona comple
 
 == Utilice el asistente de consola para comenzar
 
-El asistente de consola lo guía a través de la configuración de su entorno de consola de NetApp con estas tareas:
+El asistente de consola lo guía a través de la configuración de su entorno de NetApp Console con estas tareas:
 
 * Agregue una cuenta del sitio de soporte de NetApp (NSS).
 * Conéctese a su patrimonio de almacenamiento implementando un agente de consola, ya sea local o en la nube.  Puedes implementarlo manualmente o descargando un OVA.  Este paso es obligatorio.

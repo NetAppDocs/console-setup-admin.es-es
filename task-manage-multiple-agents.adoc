@@ -25,7 +25,7 @@ Si tiene varios agentes de consola, puede alternar entre ellos para ver los sist
 Por ejemplo, en un entorno de múltiples nubes, es posible que tenga un agente en AWS y otro en Google Cloud.  Cambie entre estos agentes para administrar los sistemas Cloud Volumes ONTAP en los respectivos entornos de nube.
 
 
-NOTE: Esta opción no está disponible al visualizar la consola de NetApp desde la interfaz de usuario local del agente
+NOTE: Esta opción no está disponible al visualizar la NetApp Console desde la interfaz de usuario local del agente
 
 .Paso
 . Seleccione el icono de Agentes de la consola (image:icon-agent.png["icono de agente"] ) en la parte superior derecha para ver la lista de agentes disponibles.

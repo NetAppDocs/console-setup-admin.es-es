@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concept-org-partnerships.html 
 keywords: identity federation, single sign-on, SSO, identity provider, IdP, SAML, Microsoft Entra ID, AD FS, PingFederate, ACS URL, Entity ID, user access, security, productivity, compliance, authentication, business continuity, account management, user experience, access control, workflow automation, credential management, login process, organization admin, bluexp, BlueXP 
-summary: La creación de asociaciones entre organizaciones en la consola de NetApp permite a los socios de la organización administrar de forma segura los recursos de NetApp a través de los límites organizacionales, lo que agiliza la colaboración y mejora la seguridad. 
+summary: La creación de asociaciones entre organizaciones en la NetApp Console permite a los socios de la organización administrar de forma segura los recursos de NetApp a través de los límites organizacionales, lo que agiliza la colaboración y mejora la seguridad. 
 ---
-= Asociaciones en la consola de NetApp
+= Asociaciones en la NetApp Console
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: La creación de asociaciones entre organizaciones en la consola de NetA
 
 
 [role="lead"]
-Al crear asociaciones entre organizaciones, la consola de NetApp permite a los socios administrar de forma segura los recursos de NetApp a través de los límites organizacionales, agilizando la colaboración y mejorando la seguridad.
+Al crear asociaciones entre organizaciones, la NetApp Console permite a los socios administrar de forma segura los recursos de NetApp a través de los límites organizacionales, agilizando la colaboración y mejorando la seguridad.
 
 .Roles requeridos
 Administración de asociacioneslink:reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso."]
@@ -30,15 +30,15 @@ Asigne a uno o más usuarios, tanto en la organización iniciadora como en la re
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dos"]Comparta el ID de su organización con la organización iniciadora
 [role="quick-margin-para"]
-Para iniciar una asociación, el iniciador debe conocer el ID de la organización de destino.  Sólo la organización respectiva puede acceder a esta ID de organización.  Compártalo directamente con la organización iniciadora fuera de la consola de NetApp mediante correo electrónico u otro método.
+Para iniciar una asociación, el iniciador debe conocer el ID de la organización de destino.  Sólo la organización respectiva puede acceder a esta ID de organización.  Compártalo directamente con la organización iniciadora fuera de la NetApp Console mediante correo electrónico u otro método.
 
 La organización iniciadora es la organización que concede acceso a sus recursos.
 
 image:diagram-partnership-org-id.png["diagrama que muestra las organizaciones iniciales"]
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Tres"]Inicie la asociación dentro de la consola de NetApp
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Tres"]Inicie la asociación dentro de la NetApp Console
 [role="quick-margin-para"]
-La organización que inicia la asociación lo hace desde la consola de NetApp enviando una solicitud de asociación.
+La organización que inicia la asociación lo hace desde la NetApp Console enviando una solicitud de asociación.
 
 image:diagram-partnership-accept.png["Diagrama que muestra la aceptación de la asociación"]
 

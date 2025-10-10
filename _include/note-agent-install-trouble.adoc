@@ -14,7 +14,7 @@ Tiene la opción de configurar un servidor proxy después de la instalación, pe
 
 
 
-NOTE: No es posible configurar un certificado para un servidor proxy transparente al instalar manualmente el agente de consola. Si necesita configurar un certificado para un servidor proxy transparente, debe utilizar la Consola de mantenimiento después de la instalación. Obtenga más información sobre ellink:reference-agent-maint-console.html["Consola de mantenimiento del agente"] .
+NOTE: No es posible configurar un certificado para un servidor proxy transparente al instalar manualmente el agente de consola.  Si necesita configurar un certificado para un servidor proxy transparente, debe utilizar la Consola de mantenimiento después de la instalación. Obtenga más información sobre ellink:reference-agent-maint-console.html["Consola de mantenimiento del agente"] .
 
 .Acerca de esta tarea
 El instalador que está disponible en el sitio de soporte de NetApp podría ser una versión anterior.  Después de la instalación, el agente de consola se actualiza automáticamente si hay una nueva versión disponible.
@@ -136,7 +136,7 @@ https://_ipaddress_[]
 .. Introduzca un nombre para el sistema.
 .. En *¿Está ejecutando en un entorno seguro?* mantenga el modo restringido deshabilitado.
 +
-Debes mantener el modo restringido deshabilitado porque estos pasos describen cómo usar la consola en modo estándar.  Debe habilitar el modo restringido solo si tiene un entorno seguro y desea desconectar esta cuenta de los servicios de backend.  Si ese es el caso,link:task-quick-start-restricted-mode.html["Siga los pasos para comenzar a utilizar la consola de NetApp en modo restringido"] .
+Debes mantener el modo restringido deshabilitado porque estos pasos describen cómo usar la consola en modo estándar.  Debe habilitar el modo restringido solo si tiene un entorno seguro y desea desconectar esta cuenta de los servicios de backend.  Si ese es el caso,link:task-quick-start-restricted-mode.html["Siga los pasos para comenzar a utilizar la NetApp Console en modo restringido"] .
 
 .. Seleccione *Comencemos*.
 

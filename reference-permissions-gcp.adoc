@@ -14,7 +14,7 @@ summary: El agente de consola requiere permisos para realizar acciones en su pro
 
 
 [role="lead"]
-La consola de NetApp requiere permisos para realizar acciones en Google Cloud.  Estos permisos están incluidos en una función personalizada proporcionada por NetApp.  Debes comprender qué hace el agente con estos permisos.
+La NetApp Console requiere permisos para realizar acciones en Google Cloud.  Estos permisos están incluidos en una función personalizada proporcionada por NetApp.  Debes comprender qué hace el agente con estos permisos.
 
 
 
@@ -230,7 +230,7 @@ includedPermissions:
 | - compute.networks.updatePolicy | Para aplicar reglas de firewall en las VPC y subredes de un par de alta disponibilidad. 
 
 
-| - compute.subnetworks.use - compute.subnetworks.useExternalIp - compute.instances.addAccessConfig | Para habilitar la clasificación de datos de NetApp . 
+| - compute.subnetworks.use - compute.subnetworks.useExternalIp - compute.instances.addAccessConfig | Para habilitar la NetApp Data Classification. 
 
 
 | - compute.instanceGroups.get - compute.addresses.get - compute.instances.updateNetworkInterface | Para crear y administrar máquinas virtuales de almacenamiento en pares HA de Cloud Volumes ONTAP . 

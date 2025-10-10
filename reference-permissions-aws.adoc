@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-permissions-aws.html 
 keywords: permissions, actions, aws, aws permissions, top secret, secret, aws top secret, aws secret, aws govcloud, govcloud, govcloud permissions, secret permissions, top secret permissions 
-summary: Cuando la consola de NetApp inicia la instancia del agente en AWS, adjunta una política a la instancia que proporciona al agente permisos para administrar recursos y procesos dentro de esa cuenta de AWS.  El agente utiliza los permisos para realizar llamadas API a varios servicios de AWS, incluidos EC2, S3, CloudFormation, IAM, el Servicio de administración de claves y más. 
+summary: Cuando la NetApp Console inicia la instancia del agente en AWS, adjunta una política a la instancia que proporciona al agente permisos para administrar recursos y procesos dentro de esa cuenta de AWS.  El agente utiliza los permisos para realizar llamadas API a varios servicios de AWS, incluidos EC2, S3, CloudFormation, IAM, el Servicio de administración de claves y más. 
 ---
 = Permisos de AWS para el agente de consola
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Cuando la consola de NetApp inicia la instancia del agente en AWS, adju
 
 
 [role="lead"]
-Cuando la consola de NetApp inicia una instancia de agente de consola en AWS, adjunta una política a la instancia que proporciona al agente permisos para administrar recursos y procesos dentro de esa cuenta de AWS.  El agente usa los permisos para realizar llamadas API a varios servicios de AWS, incluidos EC2, S3, CloudFormation, IAM, el Servicio de administración de claves (KMS) y más.
+Cuando la NetApp Console inicia una instancia de agente de consola en AWS, adjunta una política a la instancia que proporciona al agente permisos para administrar recursos y procesos dentro de esa cuenta de AWS.  El agente usa los permisos para realizar llamadas API a varios servicios de AWS, incluidos EC2, S3, CloudFormation, IAM, el Servicio de administración de claves (KMS) y más.
 
 
 
@@ -757,7 +757,7 @@ Para las regiones estándar, los permisos se distribuyen en dos políticas.  Se 
 
 == Cómo se utilizan los permisos de AWS
 
-Las siguientes secciones describen cómo se utilizan los permisos para cada servicio de datos o administración de la consola de NetApp .  Esta información puede ser útil si sus políticas corporativas establecen que los permisos solo se otorgan cuando es necesario.
+Las siguientes secciones describen cómo se utilizan los permisos para cada servicio de datos o administración de la NetApp Console .  Esta información puede ser útil si sus políticas corporativas establecen que los permisos solo se otorgan cuando es necesario.
 
 
 
@@ -805,7 +805,7 @@ s3:Obtener configuración de cifrado
 
 
 
-=== Copia de seguridad y recuperación de NetApp
+=== NetApp Backup and Recovery
 
 El agente realiza las siguientes solicitudes de API para administrar copias de seguridad en Amazon S3:
 
@@ -914,13 +914,13 @@ El agente realiza las siguientes solicitudes de API para implementar NetApp Data
 * formación de nubes:CreateStack
 * formación de nubes:Eliminar pila
 * formación de nubes: DescribeStacks
-* formación de nubes:DescribeStackEvents
+* formación de nubes: DescribeStackEvents
 * iam:AñadirRolAlPerfilDeInstancia
 * ec2:AsociarPerfilDeInstanciaSoy
 * ec2:DescribeIamInstanceProfileAssociations
 
 
-El agente realiza las siguientes solicitudes de API para escanear los depósitos S3 cuando utiliza la clasificación de datos de NetApp :
+El agente realiza las siguientes solicitudes de API para escanear los depósitos S3 cuando utiliza la NetApp Data Classification:
 
 * iam:AñadirRolAlPerfilDeInstancia
 * ec2:AsociarPerfilDeInstanciaSoy
@@ -1119,7 +1119,7 @@ El agente realiza las siguientes solicitudes de API para implementar y administr
 | formación de nubes: DescribeStacks | Sí | Sí | No 
 
 
-| formación de nubes:DescribeStackEvents | Sí | No | No 
+| formación de nubes: DescribeStackEvents | Sí | No | No 
 
 
 | formación de nubes: Validar plantilla | Sí | No | No 
@@ -1215,7 +1215,7 @@ A medida que se agreguen y eliminen permisos, los indicaremos en las secciones s
 
 === 9 de septiembre de 2024
 
-Se eliminaron los permisos de la política n.° 2 para las regiones estándar porque la consola de NetApp ya no admite el almacenamiento en caché perimetral de NetApp ni el descubrimiento y la administración de clústeres de Kubernetes.
+Se eliminaron los permisos de la política n.° 2 para las regiones estándar porque la NetApp Console ya no admite el almacenamiento en caché perimetral de NetApp ni el descubrimiento y la administración de clústeres de Kubernetes.
 
 .Ver los permisos que se eliminaron de la política
 [%collapsible]

@@ -16,7 +16,7 @@ summary: Desinstale un agente de consola para solucionar problemas o eliminarlo 
 [role="lead"]
 Desinstale un agente de consola para solucionar problemas o eliminarlo permanentemente del host.  Los pasos que debes seguir dependen del modo de implementación que estés utilizando.  Una vez que haya eliminado un agente de consola de su entorno, puede eliminarlo de la consola.
 
-link:concept-modes.html["Obtenga más información sobre los modos de implementación de la consola de NetApp"] .
+link:concept-modes.html["Obtenga más información sobre los modos de implementación de la NetApp Console"] .
 
 
 

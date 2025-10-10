@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-federation-adfs.html 
 keywords: federation, active directory federation services, adfs, ad fs, single sign-on, microsoft, federate, federated connection, SSO, identity federation, identity management, corporate identity 
-summary: 'Fedérese con sus Servicios de federación de Active Directory (AD FS) para habilitar el inicio de sesión único (SSO) para la consola de NetApp .  Esto permite a los usuarios iniciar sesión utilizando sus credenciales corporativas.' 
+summary: 'Federe con sus Servicios de federación de Active Directory (AD FS) para habilitar el inicio de sesión único (SSO) para la NetApp Console.  Esto permite a los usuarios iniciar sesión utilizando sus credenciales corporativas.' 
 ---
-= Federar la consola de NetApp con los Servicios de federación de Active Directory (AD FS)
+= Federar la NetApp Console con los Servicios de federación de Active Directory (AD FS)
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 'Fedérese con sus Servicios de federación de Active Directory (AD FS)
 
 
 [role="lead"]
-Federe sus Servicios de federación de Active Directory (AD FS) con la consola de NetApp para habilitar el inicio de sesión único (SSO) para la consola de NetApp .  Esto permite a los usuarios iniciar sesión en la consola utilizando sus credenciales corporativas.
+Federe sus Servicios de federación de Active Directory (AD FS) con la NetApp Console para habilitar el inicio de sesión único (SSO) para la NetApp Console.  Esto permite a los usuarios iniciar sesión en la consola utilizando sus credenciales corporativas.
 
 .Roles requeridos
 El rol de administrador de la federación es necesario para crear y administrar federaciones.  El espectador de la Federación puede ver la página de la Federación.link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso."]
@@ -22,13 +22,13 @@ El rol de administrador de la federación es necesario para crear y administrar 
 
 NOTE: Puede federarse con su IdP corporativo o con el sitio de soporte de NetApp .  NetApp recomienda elegir uno u otro, pero no ambos.
 
-NetApp solo admite el inicio de sesión único (SSO) iniciado por el proveedor de servicios (SP).  Primero, configure el proveedor de identidad para que confíe en la consola de NetApp como proveedor de servicios.  Luego, crea una conexión en la consola utilizando la configuración de tu proveedor de identidad.
+NetApp solo admite el inicio de sesión único (SSO) iniciado por el proveedor de servicios (SP).  Primero, configure el proveedor de identidad para que confíe en la NetApp Console como proveedor de servicios.  Luego, crea una conexión en la consola utilizando la configuración de tu proveedor de identidad.
 
-Puede configurar la federación con su servidor AD FS para habilitar el inicio de sesión único (SSO) para NetApp Console.  El proceso implica configurar AD FS para que confíe en la consola como proveedor de servicios y luego crear la conexión en la consola de NetApp .
+Puede configurar la federación con su servidor AD FS para habilitar el inicio de sesión único (SSO) para NetApp Console.  El proceso implica configurar AD FS para que confíe en la consola como proveedor de servicios y luego crear la conexión en la NetApp Console.
 
 .Antes de empezar
 * Se requiere una cuenta IdP con privilegios administrativos.  Coordínese con el administrador de su IdP para completar los pasos.
-* Identifique el dominio que desea utilizar para la federación.  Puedes utilizar tu dominio de correo electrónico o un dominio diferente que sea de tu propiedad.  Si desea utilizar un dominio distinto a su dominio de correo electrónico, primero debe verificar el dominio en la Consola.  Puedes hacer esto siguiendo los pasos de lalink:task-federation-verify-domain.html["Verifique su dominio en la consola de NetApp"] tema.
+* Identifique el dominio que desea utilizar para la federación.  Puedes utilizar tu dominio de correo electrónico o un dominio diferente que sea de tu propiedad.  Si desea utilizar un dominio distinto a su dominio de correo electrónico, primero debe verificar el dominio en la Consola.  Puedes hacer esto siguiendo los pasos de lalink:task-federation-verify-domain.html["Verifique su dominio en la NetApp Console"] tema.
 
 
 .Pasos
@@ -54,7 +54,7 @@ Puede configurar la federación con su servidor AD FS para habilitar el inicio d
 (new-object Net.WebClient -property @{Encoding = [Text.Encoding]::UTF8}).DownloadString("https://raw.github.com/auth0/AD FS-auth0/master/AD FS.ps1") | iex
 AddRelyingParty "urn:auth0:netapp-cloud-account" "https://netapp-cloud-account.auth0.com/login/callback"
 ----
-.. Alternativamente, puede crear la confianza manualmente en la consola de administración de AD FS.  Utilice los siguientes valores de la consola de NetApp al crear la confianza:
+.. Alternativamente, puede crear la confianza manualmente en la consola de administración de AD FS.  Utilice los siguientes valores de la NetApp Console al crear la confianza:
 +
 *** Al crear el identificador de confianza confiable, utilice el valor **YOUR_TENANT**: `netapp-cloud-account`
 *** Cuando seleccione *Habilitar soporte para WS-Federation*, utilice el valor **YOUR_AUTH0_DOMAIN**: `netapp-cloud-account.auth0.com`
@@ -64,7 +64,7 @@ AddRelyingParty "urn:auth0:netapp-cloud-account" "https://netapp-cloud-account.a
 
 
 +
-NetApp recomienda utilizar la URL de metadatos para permitir que la consola de NetApp recupere automáticamente la última configuración de AD FS.  Si descarga el archivo de metadatos de federación, deberá actualizarlo manualmente en la consola de NetApp cada vez que haya cambios en su configuración de AD FS.
+NetApp recomienda utilizar la URL de metadatos para permitir que la NetApp Console recupere automáticamente la última configuración de AD FS.  Si descarga el archivo de metadatos de federación, deberá actualizarlo manualmente en la NetApp Console cada vez que haya cambios en su configuración de AD FS.
 
 . Regrese a la consola y seleccione *Siguiente* para crear la conexión.
 . Cree la conexión con AD FS.
@@ -80,4 +80,4 @@ NetApp recomienda utilizar la URL de metadatos para permitir que la consola de N
 . Seleccione *Finalizar* para completar el proceso.
 
 
-Después de habilitar la federación, los usuarios pueden iniciar sesión en la consola de NetApp con sus credenciales corporativas.
+Después de habilitar la federación, los usuarios pueden iniciar sesión en la NetApp Console con sus credenciales corporativas.

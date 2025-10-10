@@ -7,7 +7,7 @@ Vaya al portal de Azure y asigne el rol personalizado de Azure a la máquina vir
 .Pasos
 . Desde el Portal de Azure, abra el servicio *Suscripciones* y seleccione su suscripción.
 +
-Es importante asignar el rol desde el servicio *Suscripciones* porque esto especifica el alcance de la asignación del rol a nivel de suscripción.  El _scope_ define el conjunto de recursos al que se aplica el acceso.  Si especifica un alcance en un nivel diferente (por ejemplo, en el nivel de máquina virtual), su capacidad para completar acciones desde la consola de NetApp se verá afectada.
+Es importante asignar el rol desde el servicio *Suscripciones* porque esto especifica el alcance de la asignación del rol a nivel de suscripción.  El _scope_ define el conjunto de recursos al que se aplica el acceso.  Si especifica un alcance en un nivel diferente (por ejemplo, en el nivel de máquina virtual), su capacidad para completar acciones desde la NetApp Console se verá afectada.
 
 +
 https://learn.microsoft.com/en-us/azure/role-based-access-control/scope-overview["Documentación de Microsoft Azure: Comprender el alcance de Azure RBAC"^]

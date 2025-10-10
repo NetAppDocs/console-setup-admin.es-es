@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: reference-iam-keystone-roles.html 
 keywords: predefined roles, iam roles, organization admin, folder or project admin, identity and access management, access roles, admin 
-summary: La gestión de acceso e identidad de la consola de NetApp proporciona dos roles Keystone que puede asignar a los miembros de su organización. 
+summary: La gestión de acceso e identidad de la NetApp Console proporciona dos roles Keystone que puede asignar a los miembros de su organización. 
 ---
-= Roles de acceso de Keystone en la consola de NetApp
+= Roles de acceso de Keystone en la NetApp Console
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -16,7 +16,7 @@ summary: La gestión de acceso e identidad de la consola de NetApp proporciona d
 [role="lead"]
 Los roles de Keystone brindan acceso a los paneles de Keystone y permiten a los usuarios ver y administrar su suscripción de Keystone .  Hay dos roles de Keystone : administrador de Keystone y visor de Keystone .  La principal diferencia entre los dos roles son las acciones que pueden realizar en Keystone.  El rol de administrador de Keystone es el único rol que puede crear solicitudes de servicio o modificar suscripciones.
 
-.Ejemplo de roles de Keystone en la consola de NetApp
+.Ejemplo de roles de Keystone en la NetApp Console
 XYZ Corporation tiene cuatro ingenieros de almacenamiento de diferentes departamentos que visualizan la información de suscripción de Keystone .  Aunque todos estos usuarios necesitan supervisar la suscripción de Keystone , solo el líder del equipo puede realizar solicitudes de servicio.  A tres de los miembros del equipo se les asigna el rol de *visualizador de Keystone *, mientras que al líder del equipo se le asigna el rol de *administrador de Keystone * para que haya un punto de control sobre las solicitudes de servicio de la empresa.
 
 La siguiente tabla indica las acciones que puede realizar cada rol de Keystone .
@@ -91,7 +91,7 @@ Sí
 
 
 
-3+| *Licencias y suscripciones*: 
+3+| * Licenses and subscriptions*: 
 
 
 | Puede ver licencias y suscripciones  a| 

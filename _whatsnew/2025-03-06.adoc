@@ -10,7 +10,7 @@
 
 ==== Acceso al Administrador del sistema ONTAP cuando BlueXP utiliza un conector
 
-Un administrador de BlueXP (usuarios con el rol de administrador de la organización) puede configurar BlueXP para solicitar a los usuarios que ingresen sus credenciales de ONTAP para acceder al administrador del sistema ONTAP .  Cuando esta configuración está habilitada, los usuarios deben ingresar sus credenciales de ONTAP cada vez, ya que no se almacenan en BlueXP.
+Un administrador de BlueXP (usuarios con el rol de administrador de la organización) puede configurar BlueXP para solicitar a los usuarios que ingresen sus credenciales de ONTAP para acceder al administrador del sistema de ONTAP .  Cuando esta configuración está habilitada, los usuarios deben ingresar sus credenciales de ONTAP cada vez, ya que no se almacenan en BlueXP.
 
 Esta función está disponible en la versión 3.9.49 y superiores del Conector. link:https://docs.netapp.com/us-en/bluexp-setup-admin//task-ontap-access-connector.html["Aprenda a configurar los ajustes de credenciales."^] .
 

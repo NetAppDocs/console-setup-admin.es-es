@@ -9,4 +9,4 @@
 . Seleccione *Finalizar* para completar el proceso.
 
 
-Después de habilitar la federación, los usuarios pueden iniciar sesión en la consola de NetApp con sus credenciales corporativas.
+Después de habilitar la federación, los usuarios pueden iniciar sesión en la NetApp Console con sus credenciales corporativas.

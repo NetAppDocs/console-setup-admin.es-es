@@ -18,14 +18,14 @@ Suscríbete a NetApp Intelligent Services desde el marketplace de tu proveedor d
 
 Una suscripción de mercado permite cobrar por los siguientes servicios de datos de NetApp :
 
-* Copia de seguridad y recuperación de NetApp
+* NetApp Backup and Recovery
 * Cloud Volumes ONTAP
-* Nivelación de la nube de NetApp
-* Resiliencia de NetApp frente al ransomware
-* Recuperación ante desastres de NetApp
+* NetApp Cloud Tiering
+* NetApp Ransomware Resilience
+* NetApp Disaster Recovery
 
 
-La clasificación de datos de NetApp se habilita a través de su suscripción, pero no hay ningún cargo por utilizar la clasificación.
+La NetApp Data Classification se habilita a través de su suscripción, pero no hay ningún cargo por utilizar la clasificación.
 
 .Antes de empezar
 Debe haber implementado previamente un agente de consola para poder suscribirse a los servicios de datos.  Debe asociar una suscripción de mercado a las credenciales de la nube conectadas a un agente de consola.
@@ -43,7 +43,7 @@ video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 . Seleccione *Credenciales de la organización*.
 . Seleccione el menú de acciones para un conjunto de credenciales asociadas con un agente de consola y luego seleccione *Configurar suscripción*.
 +
-Debe seleccionar las credenciales que estén asociadas con un agente de consola.  No se puede asociar una suscripción de Marketplace con credenciales asociadas con la consola de NetApp .
+Debe seleccionar las credenciales que estén asociadas con un agente de consola.  No se puede asociar una suscripción de Marketplace con credenciales asociadas con la NetApp Console.
 
 +
 image:screenshot_aws_configure_subscription.png["Una captura de pantalla del menú de acciones para un conjunto de credenciales existentes."]
@@ -55,7 +55,7 @@ image:screenshot_aws_configure_subscription.png["Una captura de pantalla del men
 .. Seleccione *Suscribirse*.
 .. Seleccione *Configurar su cuenta*.
 +
-Serás redirigido a la consola de NetApp .
+Serás redirigido a la NetApp Console.
 
 .. Desde la página *Asignación de suscripción*:
 +
@@ -82,7 +82,7 @@ Para todas las demás organizaciones o cuentas, deberá asociar manualmente la s
 . Seleccione *Credenciales de la organización*.
 . Seleccione el menú de acciones para un conjunto de credenciales asociadas con un agente de consola y luego seleccione *Configurar suscripción*.
 +
-Debe seleccionar las credenciales que estén asociadas con un agente de consola.  No se puede asociar una suscripción de Marketplace con credenciales asociadas con la consola de NetApp .
+Debe seleccionar las credenciales que estén asociadas con un agente de consola.  No se puede asociar una suscripción de Marketplace con credenciales asociadas con la NetApp Console.
 
 . Para asociar las credenciales con una suscripción existente, seleccione la suscripción de la lista desplegable y seleccione *Configurar*.
 . Para asociar las credenciales con una nueva suscripción, seleccione *Agregar suscripción > Continuar* y siga los pasos en Azure Marketplace:
@@ -92,7 +92,7 @@ Debe seleccionar las credenciales que estén asociadas con un agente de consola.
 .. Llene el formulario y seleccione *Suscribirse*.
 .. Una vez completado el proceso de suscripción, seleccione *Configurar cuenta ahora*.
 +
-Serás redirigido a la consola de NetApp .
+Serás redirigido a la NetApp Console.
 
 .. Desde la página *Asignación de suscripción*:
 +
@@ -131,10 +131,10 @@ image:screenshot_gcp_associate.gif["Una captura de pantalla de un proyecto de Go
 . Si aún no tiene una suscripción, seleccione *Agregar suscripción > Continuar* y siga los pasos en Google Cloud Marketplace.
 +
 
-NOTE: Antes de completar los siguientes pasos, asegúrese de tener privilegios de administrador de facturación en su cuenta de Google Cloud, así como un inicio de sesión en la consola de NetApp .
+NOTE: Antes de completar los siguientes pasos, asegúrese de tener privilegios de administrador de facturación en su cuenta de Google Cloud, así como un inicio de sesión en la NetApp Console .
 
 +
-.. Después de ser redirigido a la https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Página de Servicios Inteligentes de NetApp en Google Cloud Marketplace"^] , asegúrese de que el proyecto correcto esté seleccionado en el menú de navegación superior.
+.. Después de ser redirigido a la https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Página de NetApp Intelligent Services en Google Cloud Marketplace"^] , asegúrese de que el proyecto correcto esté seleccionado en el menú de navegación superior.
 +
 image:screenshot_gcp_cvo_marketplace.png["Una captura de pantalla de la página del mercado de Cloud Volumes ONTAP en Google Cloud."]
 
@@ -154,7 +154,7 @@ image:screenshot_gcp_marketplace_register.png["Una captura de pantalla de una ve
 .. Complete los pasos en la página *Asignación de suscripción*:
 +
 
-NOTE: Si alguien de su organización ya tiene una suscripción al mercado desde su cuenta de facturación, será redirigido a https://bluexp.netapp.com/ontap-cloud?x-gcp-marketplace-token=["la página Cloud Volumes ONTAP dentro de la consola de NetApp"^] en cambio.  Si esto no es esperado, comuníquese con su equipo de ventas de NetApp .  Google solo permite una suscripción por cuenta de facturación de Google.
+NOTE: Si alguien de su organización ya tiene una suscripción al mercado desde su cuenta de facturación, será redirigido a https://bluexp.netapp.com/ontap-cloud?x-gcp-marketplace-token=["la página Cloud Volumes ONTAP dentro de la NetApp Console"^] en cambio.  Si esto no es esperado, comuníquese con su equipo de ventas de NetApp .  Google solo permite una suscripción por cuenta de facturación de Google.
 
 +
 *** Seleccione las organizaciones o cuentas de la consola con las que desea asociar esta suscripción.

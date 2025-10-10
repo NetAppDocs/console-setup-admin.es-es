@@ -26,7 +26,7 @@ Estas limitaciones son específicas de la configuración de la consola y la admi
 
 === Posible conflicto con direcciones IP en el rango 172
 
-La consola de NetApp implementa un agente con dos interfaces que tienen direcciones IP en los rangos 172.17.0.0/16 y 172.18.0.0/16.
+La NetApp Console implementa un agente con dos interfaces que tienen direcciones IP en los rangos 172.17.0.0/16 y 172.18.0.0/16.
 
 Si su red tiene una subred configurada con cualquiera de estos rangos, es posible que experimente fallas de conectividad desde la consola.  Por ejemplo, la detección de clústeres ONTAP locales en la consola podría fallar.
 

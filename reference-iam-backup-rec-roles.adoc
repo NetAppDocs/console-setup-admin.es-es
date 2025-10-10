@@ -4,7 +4,7 @@ permalink: reference-iam-backup-rec-roles.html
 keywords: backing up, restoring, back up, backup, restore, cloud volumes ontap, aws, azure, s3, blob, google cloud, storagegrid, back up volumes, cloud backup, restore volumes, cost, on-premises ontap, onprem, applications, virtual machines, backup and recovery, roles, permissions, access control, role-based access control, rbac, role-based access 
 summary: Puede asignar los siguientes roles a los usuarios para brindarles acceso a NetApp Backup and Recovery dentro de la consola.  Los roles de respaldo y recuperación le brindan la flexibilidad de asignar a los usuarios un rol específico para las tareas que necesitan realizar dentro de su organización. La forma de asignar roles depende de su propio negocio y de sus prácticas de gestión de almacenamiento. 
 ---
-= Funciones de copia de seguridad y recuperación de NetApp en la consola de NetApp
+= Funciones de NetApp Backup and Recovery en la NetApp Console
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -21,11 +21,11 @@ El servicio utiliza los siguientes roles que son específicos de NetApp Backup a
 * *Superadministrador de Backup and Recovery*: realiza cualquier acción en NetApp Backup and Recovery.
 * *Administrador de copias de seguridad y recuperación*: realice copias de seguridad en instantáneas locales, replique en almacenamiento secundario y realice copias de seguridad en acciones de almacenamiento de objetos en NetApp Backup and Recovery.
 * *Administrador de restauración de copias de seguridad y recuperación*: restaure cargas de trabajo mediante NetApp Backup and Recovery.
-* *Administrador de clones de respaldo y recuperación*: clona aplicaciones y datos mediante NetApp Backup and Recovery.
-* *Visor de copias de seguridad y recuperación*: vea información en NetApp Backup and Recovery, pero no realice ninguna acción.
+* *Administrador de clones de respaldo y recuperación*: clona aplicaciones y datos usando NetApp Backup and Recovery.
+* *Visor de copias de seguridad y recuperación*: ve información en NetApp Backup and Recovery, pero no realiza ninguna acción.
 
 
-Para obtener detalles sobre todos los roles de acceso a la consola de NetApp , consulte https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["La documentación de configuración y administración de la consola"^] .
+Para obtener detalles sobre todos los roles de acceso a la NetApp Console , consulte https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["La documentación de configuración y administración de la consola"^] .
 
 
 

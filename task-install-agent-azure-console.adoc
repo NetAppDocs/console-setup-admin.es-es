@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-install-agent-azure-console.html 
 keywords: install connector, azure connector installation, azure connector, install connector in azure, bluexp, create connector 
-summary: Para crear un agente de consola en Azure desde la consola de NetApp , debe configurar su red, preparar los permisos de Azure y luego crear el agente de consola. 
+summary: Para crear un agente de consola en Azure desde la NetApp Console, debe configurar su red, preparar los permisos de Azure y luego crear el agente de consola. 
 ---
-= Crear un agente de consola en Azure desde la consola de NetApp
+= Crear un agente de consola en Azure desde la NetApp Console
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,11 +14,11 @@ summary: Para crear un agente de consola en Azure desde la consola de NetApp , d
 
 
 [role="lead"]
-Para crear un agente de consola en Azure desde la consola de NetApp , debe configurar su red, preparar los permisos de Azure y luego crear el agente de consola.
+Para crear un agente de consola en Azure desde la NetApp Console, debe configurar su red, preparar los permisos de Azure y luego crear el agente de consola.
 
 .Antes de empezar
 * Deberías tener unalink:concept-agents.html["comprensión de los agentes de consola"] .
-* Deberías revisarlink:reference-limitations.html["Limitaciones del agente de consola"] .
+* Deberías revisarlolink:reference-limitations.html["Limitaciones del agente de consola"] .
 
 
 
@@ -85,7 +85,7 @@ Para obtener información de licencias y enviar mensajes de AutoSupport al sopor
  a| 
 \ https://signin.b2c.netapp.com
  a| 
-Para actualizar las credenciales del sitio de soporte de NetApp (NSS) o para agregar nuevas credenciales de NSS a la consola de NetApp .
+Para actualizar las credenciales del sitio de soporte de NetApp (NSS) o para agregar nuevas credenciales de NSS a la NetApp Console.
 
 
 
@@ -99,7 +99,7 @@ Para obtener información de licencias y enviar mensajes de AutoSupport al sopor
  a| 
 \ https://api.bluexp.netapp.com \ https://netapp-cloud-account.auth0.com \ https://netapp-cloud-account.us.auth0.com \ https://console.netapp.com \ https://components.console.bluexp.netapp.com \ https://cdn.auth0.com
  a| 
-Proporcionar funciones y servicios dentro de la consola de NetApp .
+Proporcionar funciones y servicios dentro de la NetApp Console.
 
 
 
@@ -119,7 +119,7 @@ Aunque los puntos finales anteriores aún son compatibles, NetApp recomienda act
 --
 
 
-Puntos finales contactados desde la consola de NetApp:: A medida que utiliza la consola NetApp basada en web que se proporciona a través de la capa SaaS, esta se comunica con varios puntos finales para completar tareas de administración de datos.  Esto incluye los puntos finales que se contactan para implementar el agente de la consola desde la consola.
+Puntos finales contactados desde la consola de NetApp:: A medida que utiliza la NetApp Console basada en web que se proporciona a través de la capa SaaS, esta se comunica con varios puntos finales para completar tareas de administración de datos.  Esto incluye los puntos finales que se contactan para implementar el agente de la consola desde la consola.
 +
 --
 link:reference-networking-saas-console.html["Ver la lista de puntos finales contactados desde la consola de NetApp"] .
@@ -152,7 +152,7 @@ Si los sistemas Cloud Volumes ONTAP no tienen una conexión a Internet saliente 
 --
 
 
-Habilitar NTP:: Si planea utilizar NetApp Data Classification para escanear sus fuentes de datos corporativos, debe habilitar un servicio de Protocolo de tiempo de red (NTP) tanto en el agente de consola como en el sistema de clasificación de datos de NetApp para que la hora se sincronice entre los sistemas. https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html["Obtenga más información sobre la clasificación de datos de NetApp"^]
+Habilitar NTP:: Si planea utilizar NetApp Data Classification para escanear sus fuentes de datos corporativos, debe habilitar un servicio de Protocolo de tiempo de red (NTP) tanto en el agente de consola como en el sistema de NetApp Data Classification para que la hora se sincronice entre los sistemas. https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html["Obtenga más información sobre la clasificación de datos de NetApp"^]
 +
 --
 Debe implementar este requisito de red después de crear el agente de consola.
@@ -339,7 +339,7 @@ image:screenshot_azure_ad.png["Muestra el servicio Active Directory en Microsoft
 . Especifique detalles sobre la aplicación:
 +
 ** *Nombre*: Ingrese un nombre para la aplicación.
-** *Tipo de cuenta*: seleccione un tipo de cuenta (cualquiera funcionará con la consola de NetApp ).
+** *Tipo de cuenta*: seleccione un tipo de cuenta (cualquiera funcionará con la NetApp Console).
 ** *URI de redirección*: Puede dejar este campo en blanco.
 
 
@@ -426,10 +426,10 @@ Su entidad de servicio ya está configurada y debería haber copiado el ID de la
 
 == Paso 4: Crear el agente de consola
 
-Cree el agente de consola directamente desde la consola de NetApp .
+Cree el agente de consola directamente desde la NetApp Console.
 
 .Acerca de esta tarea
-* Al crear el agente de consola desde la consola, se implementa una máquina virtual en Azure utilizando una configuración predeterminada. No cambie a una instancia de VM más pequeña con menos CPU o menos RAM después de crear el agente de consola. link:reference-agent-default-config.html["Obtenga información sobre la configuración predeterminada para el agente de la consola"] .
+* Al crear el agente de consola desde la consola, se implementa una máquina virtual en Azure utilizando una configuración predeterminada.  No cambie a una instancia de VM más pequeña con menos CPU o menos RAM después de crear el agente de consola. link:reference-agent-default-config.html["Obtenga información sobre la configuración predeterminada para el agente de la consola"] .
 * Cuando la consola implementa el agente de la consola, crea un rol personalizado y lo asigna a la máquina virtual del agente de la consola.  Esta función incluye permisos que permiten al agente de consola administrar recursos de Azure.  Debe asegurarse de que la función se mantenga actualizada a medida que se agreguen nuevos permisos en versiones posteriores. link:reference-permissions-azure.html["Obtenga más información sobre el rol personalizado para el agente de consola"] .
 
 
@@ -523,4 +523,4 @@ Una vez completado el proceso, el agente de la consola estará disponible para s
 
 NOTE: Si la implementación falla, puedes descargar un informe y registros desde la Consola para ayudarte a solucionar los problemas.link:task-troubleshoot-agent.html#troubleshoot-installation["Aprenda a solucionar problemas de instalación."]
 
-Si tiene Azure Blob Storage en la misma suscripción de Azure donde creó el agente de consola, verá aparecer automáticamente un sistema de Azure Blob Storage en la página *Sistemas*. https://docs.netapp.com/us-en/bluexp-blob-storage/index.html["Aprenda a administrar Azure Blob Storage desde la consola de NetApp"^]
+Si tiene Azure Blob Storage en la misma suscripción de Azure donde creó el agente de consola, verá aparecer automáticamente un sistema de Azure Blob Storage en la página *Sistemas*. https://docs.netapp.com/us-en/bluexp-blob-storage/index.html["Aprenda a administrar Azure Blob Storage desde la NetApp Console"^]

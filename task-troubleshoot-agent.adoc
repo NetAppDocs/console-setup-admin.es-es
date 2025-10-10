@@ -236,7 +236,7 @@ image:screenshot-system-id.png["Una captura de pantalla que muestra el ID del si
 Si tiene problemas, NetApp podría solicitarle que envíe un mensaje de AutoSupport al soporte de NetApp para solucionar problemas.
 
 
-NOTE: La consola de NetApp tarda hasta cinco horas en enviar mensajes de AutoSupport debido al equilibrio de carga.  Para comunicaciones urgentes, descargue el archivo y envíelo manualmente.
+NOTE: La NetApp Console tarda hasta cinco horas en enviar mensajes de AutoSupport debido al equilibrio de carga.  Para comunicaciones urgentes, descargue el archivo y envíelo manualmente.
 
 .Pasos
 . Seleccione *Administración > Soporte > Agentes*.

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-iam-rename-organization.html 
 keywords: rename organization, change organization name, name change, rename, change name, iam, ID, integration, project, organization, API, identity and access management 
-summary: Si es necesario, puede cambiar el nombre de su organización de la consola de NetApp . 
+summary: Si es necesario, puede cambiar el nombre de su organización de la NetApp Console . 
 ---
 = Identificadores de organizaciones y proyectos
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Si es necesario, puede cambiar el nombre de su organización de la cons
 
 
 [role="lead"]
-Su organización de la consola NetApp tiene un nombre y un ID.  Puede elegir un nombre para su organización para ayudar a identificarla.  Es posible que también necesites recuperar el ID de la organización para ciertas integraciones.
+Su organización de la NetApp Console tiene un nombre y un ID.  Puede elegir un nombre para su organización para ayudar a identificarla.  Es posible que también necesites recuperar el ID de la organización para ciertas integraciones.
 
 
 

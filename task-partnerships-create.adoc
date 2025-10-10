@@ -4,7 +4,7 @@ permalink: task-partnerships-create.html
 keywords: partner organizations, create partnership, MSPs, service provider access 
 summary: Cree asociaciones para establecer conexiones seguras y administradas entre su organización y socios de confianza para la gestión colaborativa de recursos de NetApp . 
 ---
-= Administrar asociaciones en la consola de NetApp
+= Administrar asociaciones en la NetApp Console
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

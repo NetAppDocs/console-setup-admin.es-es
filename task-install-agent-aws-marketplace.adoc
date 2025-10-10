@@ -18,7 +18,7 @@ Puede crear un agente de consola en AWS directamente desde AWS Marketplace.  Par
 
 .Antes de empezar
 * Deberías tener unalink:concept-agents.html["comprensión de los agentes de consola"] .
-* Deberías revisarlink:reference-limitations.html["Limitaciones del agente de consola"] .
+* Deberías revisarlolink:reference-limitations.html["Limitaciones del agente de consola"] .
 
 
 
@@ -78,7 +78,7 @@ Para obtener información de licencias y enviar mensajes de AutoSupport al sopor
  a| 
 \ https://signin.b2c.netapp.com
  a| 
-Para actualizar las credenciales del sitio de soporte de NetApp (NSS) o para agregar nuevas credenciales de NSS a la consola de NetApp .
+Para actualizar las credenciales del sitio de soporte de NetApp (NSS) o para agregar nuevas credenciales de NSS a la NetApp Console.
 
 
 
@@ -92,7 +92,7 @@ Para obtener información de licencias y enviar mensajes de AutoSupport al sopor
  a| 
 \ https://api.bluexp.netapp.com \ https://netapp-cloud-account.auth0.com \ https://netapp-cloud-account.us.auth0.com \ https://console.netapp.com \ https://components.console.bluexp.netapp.com \ https://cdn.auth0.com
  a| 
-Proporcionar funciones y servicios dentro de la consola de NetApp .
+Proporcionar funciones y servicios dentro de la NetApp Console.
 
 
 
@@ -137,7 +137,7 @@ Si los sistemas Cloud Volumes ONTAP no tienen una conexión a Internet saliente 
 --
 
 
-Habilitar NTP:: Si planea utilizar NetApp Data Classification para escanear sus fuentes de datos corporativos, debe habilitar un servicio de Protocolo de tiempo de red (NTP) tanto en el agente de consola como en el sistema de clasificación de datos de NetApp para que la hora se sincronice entre los sistemas. https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html["Obtenga más información sobre la clasificación de datos de NetApp"^]
+Habilitar NTP:: Si planea utilizar NetApp Data Classification para escanear sus fuentes de datos corporativos, debe habilitar un servicio de Protocolo de tiempo de red (NTP) tanto en el agente de consola como en el sistema de NetApp Data Classification para que la hora se sincronice entre los sistemas. https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html["Obtenga más información sobre la clasificación de datos de NetApp"^]
 +
 --
 Implemente este acceso a la red después de crear el agente de consola.
@@ -207,7 +207,7 @@ Debes tener lo siguiente:
 
 
 .Pasos
-. Ir a la https://aws.amazon.com/marketplace/pp/prodview-jbay5iyfmu6ui["Listado de agentes de la consola de NetApp en AWS Marketplace"^]
+. Ir a la https://aws.amazon.com/marketplace/pp/prodview-jbay5iyfmu6ui["Listado de agentes de la NetApp Console en AWS Marketplace"^]
 . En la página de Marketplace, seleccione *Continuar con la suscripción*.
 . Para suscribirse al software, seleccione *Aceptar términos*.
 +
@@ -257,7 +257,7 @@ NOTE: Si la instalación falla, puede ver registros y un informe para ayudarlo a
 .. Introduzca un nombre para el sistema.
 .. En *¿Está ejecutando en un entorno seguro?* mantenga el modo restringido deshabilitado.
 +
-Mantenga el modo restringido deshabilitado para usar la consola en modo estándar.  Debe habilitar el modo restringido solo si tiene un entorno seguro y desea desconectar esta cuenta de los servicios de backend de la consola.  Si ese es el caso,link:task-quick-start-restricted-mode.html["Siga los pasos para comenzar a utilizar la consola de NetApp en modo restringido"] .
+Mantenga el modo restringido deshabilitado para utilizar la consola en modo estándar.  Debe habilitar el modo restringido solo si tiene un entorno seguro y desea desconectar esta cuenta de los servicios de backend de la consola.  Si ese es el caso,link:task-quick-start-restricted-mode.html["Siga los pasos para comenzar a utilizar la NetApp Console en modo restringido"] .
 
 .. Seleccione *Comencemos*.
 
@@ -267,6 +267,6 @@ Mantenga el modo restringido deshabilitado para usar la consola en modo estánda
 .Resultado
 El agente de consola ahora está instalado y configurado con su organización de consola.
 
-Abra un navegador web y vaya a https://console.netapp.com["Consola de NetApp"^] para comenzar a utilizar el agente de la consola con la consola.
+Abra un navegador web y vaya a https://console.netapp.com["NetApp Console"^] para comenzar a utilizar el agente de la consola con la consola.
 
-Si tiene depósitos de Amazon S3 en la misma cuenta de AWS donde creó el agente de consola, verá aparecer automáticamente un entorno de trabajo de Amazon S3 en la página *Sistemas*. https://docs.netapp.com/us-en/storage-management-s3-storage/index.html["Aprenda a administrar los buckets S3 desde la consola de NetApp"^]
+Si tiene depósitos de Amazon S3 en la misma cuenta de AWS donde creó el agente de consola, verá aparecer automáticamente un entorno de trabajo de Amazon S3 en la página *Sistemas*. https://docs.netapp.com/us-en/storage-management-s3-storage/index.html["Aprenda a administrar los buckets S3 desde la NetApp Console"^]

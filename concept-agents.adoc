@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concept-agents.html 
 keywords: 'concept, connectors, learn about connectors, what are connectors, what is a connector, what"s a connector, days, 14 days, when is a connector required, connector supported locations, restricted mode, private mode, dark site, permissions, multiple connectors, disaster recovery, agents, multiple agents, what is a Console agent' 
-summary: Un _agente de consola_ es un software de NetApp que se ejecuta en su red en la nube o en su red local.  Utilice un agente de consola para conectar los servicios de consola de NetApp a sus entornos de almacenamiento. 
+summary: Un _agente de consola_ es un software de NetApp que se ejecuta en su red en la nube o en su red local.  Utilice un agente de consola para conectar los servicios de NetApp Console a sus entornos de almacenamiento. 
 ---
-= Obtenga más información sobre los agentes de la consola de NetApp
+= Obtenga más información sobre los agentes de la NetApp Console
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Un _agente de consola_ es un software de NetApp que se ejecuta en su re
 
 
 [role="lead"]
-Un _agente de consola_ se ejecuta en su red en la nube o en su red local.  Utilice un agente de consola para conectar los servicios de consola de NetApp a sus entornos de almacenamiento.
+Un _agente de consola_ se ejecuta en su red en la nube o en su red local.  Utilice un agente de consola para conectar los servicios de NetApp Console a sus entornos de almacenamiento.
 
 
 
@@ -32,11 +32,11 @@ Algunas acciones requieren un agente de consola o un vínculo de cargas de traba
 No necesita un agente de consola para administrar Azure NetApp Files, pero se requiere uno para usar NetApp Data Classification para escanear Azure NetApp Files.
 
 * Google Cloud NetApp Volumes
-* Copia y sincronización de NetApp
+* NetApp Copy and Sync
 * Asesor digital
 * Supervisar el uso de la licencia, la supervisión de suscripciones requiere un agente de consola
 +
-Generalmente puedes agregar una licencia a la consola de NetApp sin un agente de consola.
+Generalmente puedes agregar una licencia a la NetApp Console sin un agente de consola.
 
 +
 Se requiere un agente para agregar licencias basadas en nodos de Cloud Volumes ONTAP porque los datos provienen de las licencias instaladas en los sistemas Cloud Volumes ONTAP .
@@ -63,18 +63,18 @@ En el modo estándar, la consola requiere un agente de consola para:
 * Funciones de administración de Amazon FSx para ONTAP
 * Almacenamiento de Amazon S3
 * Almacenamiento de blobs de Azure
-* Copia de seguridad y recuperación de NetApp
+* NetApp Backup and Recovery
 * Clasificación de datos
 * Cloud Volumes ONTAP
-* Recuperación ante desastres de NetApp
+* NetApp Disaster Recovery
 * Sistemas de la serie E
 * Eficiencia económica ^1^
 * Depósitos de Google Cloud Storage
 * Integración del clúster ONTAP local con los servicios de datos de NetApp
 * Resiliencia de NetApp frente al ransomware
 * Sistemas StorageGRID
-* Nivelación de la nube de NetApp
-* Almacenamiento en caché de volumen de NetApp
+* NetApp Cloud Tiering
+* NetApp Volume Caching
 
 
 ^1^ Puede acceder a estos servicios sin un agente de consola, pero se requiere un agente de consola para iniciar acciones.
@@ -85,7 +85,7 @@ Siempre necesitas un agente de consola para usar la consola en modo restringido.
 
 == Los agentes de consola deben estar operativos en todo momento
 
-Los agentes de consola son una parte fundamental de la consola de NetApp .  Es su responsabilidad (la del cliente) asegurarse de que los agentes relevantes estén disponibles, operativos y accesibles en todo momento.  La consola puede manejar interrupciones breves del agente, pero debe solucionar las fallas de infraestructura rápidamente.
+Los agentes de consola son una parte fundamental de la NetApp Console.  Es su responsabilidad (la del cliente) asegurarse de que los agentes relevantes estén disponibles, operativos y accesibles en todo momento.  La consola puede manejar interrupciones breves del agente, pero debe solucionar las fallas de infraestructura rápidamente.
 
 Esta documentación se rige por el EULA.  Utilizar el producto fuera de la documentación puede afectar su funcionalidad y sus derechos de EULA.
 
@@ -98,7 +98,7 @@ Puede instalar agentes en las siguientes ubicaciones:
 * Servicios web de Amazon
 * Microsoft Azure
 +
-Implemente un agente de consola en Azure en la misma región que los sistemas Cloud Volumes ONTAP que administra. Alternativamente, impleméntelo en el https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Par de regiones de Azure"^] . Esto garantiza que se utilice una conexión de Azure Private Link entre Cloud Volumes ONTAP y sus cuentas de almacenamiento asociadas. https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/task-enabling-private-link.html["Descubra cómo Cloud Volumes ONTAP utiliza un enlace privado de Azure"^]
+Implemente un agente de consola en Azure en la misma región que los sistemas Cloud Volumes ONTAP que administra.  Alternativamente, impleméntelo en el https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Par de regiones de Azure"^] .  Esto garantiza que se utilice una conexión de Azure Private Link entre Cloud Volumes ONTAP y sus cuentas de almacenamiento asociadas. https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/task-enabling-private-link.html["Descubra cómo Cloud Volumes ONTAP utiliza un enlace privado de Azure"^]
 
 * Google Cloud
 +
@@ -119,7 +119,7 @@ El agente utiliza TLS 1.3 para todas las comunicaciones con AWS, Azure y Google 
 
 Para utilizar la consola en modo restringido, instale un agente de consola y acceda a la interfaz de la consola que se ejecuta localmente en el agente de consola.
 
-link:concept-modes.html["Obtenga más información sobre los modos de implementación de la consola de NetApp"] .
+link:concept-modes.html["Obtenga más información sobre los modos de implementación de la NetApp Console"] .
 
 
 
@@ -127,16 +127,16 @@ link:concept-modes.html["Obtenga más información sobre los modos de implementa
 
 Puede instalar un agente de consola directamente desde la consola, desde el marketplace de su proveedor de nube o instalando manualmente el software en su propio host Linux o en su entorno VCenter.  La forma de comenzar dependerá de si utiliza la consola en modo estándar o en modo restringido.
 
-* link:concept-modes.html["Obtenga más información sobre los modos de implementación de la consola de NetApp"]
-* link:task-quick-start-standard-mode.html["Comience a utilizar la consola de NetApp en modo estándar"]
-* link:task-quick-start-restricted-mode.html["Comience a usar la consola de NetApp en modo restringido"]
+* link:concept-modes.html["Obtenga más información sobre los modos de implementación de la NetApp Console"]
+* link:task-quick-start-standard-mode.html["Comience a utilizar la NetApp Console en modo estándar"]
+* link:task-quick-start-restricted-mode.html["Comience a usar la NetApp Console en modo restringido"]
 
 
 
 
 == Permisos en la nube
 
-Necesita permisos específicos para crear el agente de consola directamente desde la consola de NetApp y otro conjunto de permisos para la instancia del agente de consola en sí.  Si crea el agente de consola en AWS o Azure directamente desde la consola, entonces la consola crea el agente de consola con los permisos que necesita.
+Necesita permisos específicos para crear el agente de consola directamente desde la NetApp Console y otro conjunto de permisos para la instancia del agente de consola en sí.  Si crea el agente de consola en AWS o Azure directamente desde la consola, entonces la consola crea el agente de consola con los permisos que necesita.
 
 Al utilizar la consola en modo estándar, la forma de proporcionar permisos depende de cómo planea crear el agente de la consola.
 
@@ -166,7 +166,7 @@ Es su responsabilidad actualizar las políticas del agente de la consola a medid
 
 == Actualizaciones de agente
 
-NetApp actualiza el software del agente mensualmente para agregar funciones y mejorar la estabilidad.  Algunas funciones de la consola, como Cloud Volumes ONTAP y la administración de clústeres de ONTAP locales, dependen de la versión y la configuración del agente de la consola.
+NetApp actualiza el software del agente mensualmente para agregar funciones y mejorar la estabilidad.  Algunas funciones de la consola, como Cloud Volumes ONTAP y la administración de clústeres ONTAP locales, dependen de la versión y la configuración del agente de la consola.
 
 En el modo estándar o restringido, el agente de la consola se actualiza automáticamente si tiene acceso a Internet.
 

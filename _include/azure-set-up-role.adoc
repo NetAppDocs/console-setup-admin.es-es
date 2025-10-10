@@ -5,7 +5,7 @@
 . Copiar el contenido dellink:reference-permissions-azure.html["Permisos de roles personalizados para el Conector"] y guardarlos en un archivo JSON.
 . Modifique el archivo JSON agregando identificadores de suscripción de Azure al ámbito asignable.
 +
-Debe agregar el ID de cada suscripción de Azure que desee utilizar con la consola de NetApp .
+Debe agregar el ID de cada suscripción de Azure que desee utilizar con la NetApp Console.
 
 +
 *Ejemplo*
