@@ -73,7 +73,7 @@ No
 | Ver alertas  a| 
 Sí
  a| 
-No
+Sí
 
 
 
