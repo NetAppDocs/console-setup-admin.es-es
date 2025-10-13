@@ -71,7 +71,7 @@ En el modo estándar, la consola requiere un agente de consola para:
 * Eficiencia económica ^1^
 * Depósitos de Google Cloud Storage
 * Integración del clúster ONTAP local con los servicios de datos de NetApp
-* Resiliencia de NetApp frente al ransomware
+* NetApp Ransomware Resilience
 * Sistemas StorageGRID
 * NetApp Cloud Tiering
 * NetApp Volume Caching

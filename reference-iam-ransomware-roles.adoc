@@ -14,7 +14,15 @@ summary: Dentro de NetApp Console, puede otorgar roles para proporcionar a los u
 
 
 [role="lead"]
-Los roles de resiliencia contra ransomware brindan a los usuarios acceso a NetApp Ransomware Resilience.  Los dos roles son administrador de protección contra ransomware y visor de protección contra ransomware.  La principal diferencia entre los dos roles son las acciones que pueden realizar en Ransomware Resilience.
+Los roles de resiliencia contra ransomware brindan a los usuarios acceso a NetApp Ransomware Resilience. Ransomware Resilience admite las siguientes funciones:
+
+* Administrador de resiliencia frente al ransomware
+* Visor de resiliencia contra ransomware
+* Comportamiento del usuario de Resiliencia ante Ransomware
+* Visor del comportamiento del usuario de Ransomware Resilience
+
+
+Los roles confieren diferentes accesos a configuraciones y acciones.  Para configurar o ver la actividad de comportamiento sospechoso del usuario, debe utilizar uno de los roles de comportamiento del usuario.
 
 La siguiente tabla muestra las acciones que puede realizar cada rol.
 

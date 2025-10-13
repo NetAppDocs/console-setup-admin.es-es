@@ -16,9 +16,9 @@ summary: Dentro de la NetApp Console, puede asignar roles a los usuarios según 
 [role="lead"]
 Dentro de la consola, puedes asignar roles a los usuarios según lo que necesiten hacer y dónde.
 
-Los usuarios con el rol de *Administrador de la organización* o *Administrador de carpeta o proyecto* tienen la responsabilidad de asignar roles a otros usuarios.  Puede asignar roles de acceso por proyecto o carpeta.  Por ejemplo, puede asignar a un usuario el rol de administrador de protección contra ransomware para un proyecto y el rol de administrador de SnapCenter para un proyecto diferente.  De manera alternativa, si un usuario necesita el rol de administrador de Clasificación para todos los proyectos dentro de una carpeta específica, puede otorgarle este rol a nivel de carpeta.
+Los usuarios con el rol de *Administrador de la organización* o *Administrador de carpeta o proyecto* tienen la responsabilidad de asignar roles a otros usuarios. Puede asignar roles de acceso por proyecto o carpeta. Por ejemplo, puede asignar a un usuario el rol de administrador de Ransomware Resilience para un proyecto y el rol de administrador de SnapCenter para un proyecto diferente. De manera alternativa, si un usuario necesita el rol de administrador de Clasificación para todos los proyectos dentro de una carpeta específica, puede otorgarle este rol a nivel de carpeta.
 
-Utilice roles de acceso para asignar acceso a los recursos de almacenamiento en función de las tareas específicas que los usuarios necesitan realizar.  Por ejemplo, si un usuario necesita interactuar con servicios de protección contra ransomware, se le debe otorgar un rol de acceso que incluya permisos de visualización o administrativos para el servicio de protección contra ransomware del proyecto para el cual se le otorga el rol de acceso.
+Utilice roles de acceso para asignar acceso a los recursos de almacenamiento en función de las tareas específicas que los usuarios necesitan realizar. Por ejemplo, si un usuario necesita interactuar con Ransomware Resilience, se le debe otorgar un rol de acceso que incluya permisos de visualización o administrativos para Ransomware Resilience para el proyecto para el cual se le otorga el rol de acceso.
 
 Asigne roles a los usuarios según su estrategia de IAM para mejorar la seguridad.  Los roles de IAM garantizan que los usuarios tengan solo el acceso que necesitan.
 
@@ -45,7 +45,7 @@ Normalmente, se asigna un rol al agregar un miembro a su organización, pero pue
 
 Puede asignar a un usuario un rol de acceso para su organización, carpeta o proyecto.
 
-Los miembros pueden tener múltiples roles dentro del mismo proyecto y en diferentes proyectos.  Por ejemplo, las organizaciones más pequeñas pueden asignar todos los roles de acceso disponibles al mismo usuario, mientras que las organizaciones más grandes pueden hacer que los usuarios realicen tareas más especializadas.  Como alternativa, también puede asignar a un usuario el rol de administrador de protección contra ransomware para una organización.  En ese ejemplo, el usuario podría realizar tareas de protección contra ransomware en todos los proyectos dentro de su organización.
+Los miembros pueden tener múltiples roles dentro del mismo proyecto y en diferentes proyectos. Por ejemplo, las organizaciones más pequeñas pueden asignar todos los roles de acceso disponibles al mismo usuario, mientras que las organizaciones más grandes pueden hacer que los usuarios realicen tareas más especializadas. Como alternativa, también puede asignar a un usuario el rol de administrador de resiliencia contra ransomware para una organización.  En ese ejemplo, el usuario podría realizar tareas de resiliencia frente a ransomware en todos los proyectos dentro de su organización.
 
 Su estrategia de roles de acceso debe estar alineada con la forma en que ha organizado sus recursos de NetApp .
 
