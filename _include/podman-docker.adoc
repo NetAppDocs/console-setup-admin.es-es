@@ -25,7 +25,7 @@ Siga estos pasos para instalar y configurar Podman:
 * Instalar Python3
 * Instalar el paquete podman-compose versión 1.0.6
 * Agregue podman-compose a la variable de entorno PATH
-* Si usa Red Hat Enterprise Linux 8, verifique que su versión de Podman esté usando Aardvark DNS en lugar de CNI
+* Si usa Red Hat Enterprise Linux, verifique que su versión de Podman esté usando Netavark Aardvark DNS en lugar de CNI
 
 
 

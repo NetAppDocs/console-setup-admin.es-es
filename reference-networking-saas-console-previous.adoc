@@ -225,3 +225,38 @@ NetApp recomienda permitir los puntos finales de la Opción 1 en su firewall, ya
 
 
 == Puntos finales de agentes locales
+
+[cols="2*"]
+|===
+| Puntos finales | Objetivo 
+
+
+| \ https://support.netapp.com \ https://mysupport.netapp.com | Para obtener información de licencias y enviar mensajes de AutoSupport al soporte de NetApp . 
+
+
+| \https://\*.api.bluexp.netapp.com \ https://api.bluexp.netapp.com \https://*.cloudmanager.cloud.netapp.com \ https://cloudmanager.cloud.netapp.com \ https://netapp-cloud-account.auth0.com \ https://netapp-cloud-account.us.auth0.com | Proporcionar funciones y servicios dentro de la NetApp Console. 
+
+
+ a| 
+Elija entre dos conjuntos de puntos finales:
+
+* Opción 1 (recomendada)
++
+\ https://bluexpinfraprod.eastus2.data.azurecr.io \ https://bluexpinfraprod.azurecr.io
+
+* Opción 2
++
+\https://*.blob.core.windows.net\ https://cloudmanagerinfraprod.azurecr.io
+
+
+ a| 
+Para obtener imágenes para las actualizaciones del agente de consola.
+
+NetApp recomienda permitir los puntos finales de la Opción 1 en su firewall, ya que son más seguros, y no permitir los puntos finales de la Opción 2, a menos que esté usando Ransomware Resilience o Backup and Recovery.  Tenga en cuenta lo siguiente acerca de estos puntos finales:
+
+* Los puntos finales de la opción 1 son compatibles con 3.9.47 y versiones posteriores.  Las versiones anteriores a 3.9.47 no admiten compatibilidad con versiones anteriores.
+* El agente de consola inicia primero el contacto con los puntos finales en la opción 2.  Si esos puntos finales no son accesibles, se contacta automáticamente con los puntos finales de la opción 1.
+* Si utiliza el agente de consola con NetApp Backup and Recovery o Ransomware Resilience, el sistema no admite puntos finales de la Opción 1.  Permitir puntos finales de la Opción 2 y no permitir la Opción 1.
+
+
+|===

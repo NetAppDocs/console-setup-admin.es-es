@@ -164,7 +164,7 @@ Servicios de datos y gestión de almacenamiento compatibles:: Los siguientes ser
 | Azure NetApp Files | Soporte completo 
 
 
-| Copia de seguridad y recuperación | Compatible con regiones gubernamentales y regiones comerciales con modo restringido. No compatible con regiones soberanas con modo restringido. En el modo restringido, NetApp Backup and Recovery solo admite la copia de seguridad y la restauración de datos de volumen ONTAP . https://docs.netapp.com/us-en/data-services-disaster-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["Ver la lista de destinos de respaldo admitidos para datos de ONTAP"^] No se admite la realización de copias de seguridad ni la restauración de datos de aplicaciones ni de máquinas virtuales. 
+| Copia de seguridad y recuperación | Compatible con regiones gubernamentales y regiones comerciales con modo restringido. No compatible con regiones soberanas con modo restringido. En el modo restringido, NetApp Backup and Recovery solo admite la copia de seguridad y la restauración de datos de volumen ONTAP . https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["Ver la lista de destinos de respaldo admitidos para datos de ONTAP"^] No se admite la realización de copias de seguridad ni la restauración de datos de aplicaciones ni de máquinas virtuales. 
 
 
 | NetApp Data Classification  a| 

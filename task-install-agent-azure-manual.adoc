@@ -149,7 +149,7 @@ Siga estos pasos para instalar y configurar Podman:
 * Instalar Python3
 * Instalar el paquete podman-compose versión 1.0.6
 * Agregue podman-compose a la variable de entorno PATH
-* Si usa Red Hat Enterprise Linux 8, verifique que su versión de Podman esté usando Aardvark DNS en lugar de CNI
+* Si usa Red Hat Enterprise Linux, verifique que su versión de Podman esté usando Netavark Aardvark DNS en lugar de CNI
 
 
 
@@ -349,13 +349,6 @@ Para obtener información de licencias y enviar mensajes de AutoSupport al sopor
 
 
  a| 
-\ https://support.netapp.com
- a| 
-Para obtener información de licencias y enviar mensajes de AutoSupport al soporte de NetApp .
-
-
-
- a| 
 \ https://signin.b2c.netapp.com
  a| 
 Para actualizar las credenciales del sitio de soporte de NetApp (NSS) o para agregar nuevas credenciales de NSS a la NetApp Console.
@@ -381,7 +374,7 @@ Proporcionar funciones y servicios dentro de la NetApp Console.
  a| 
 Para obtener imágenes para las actualizaciones del agente de consola.
 
-* Cuando se implementa un nuevo agente, la verificación de validación prueba la conectividad con los puntos finales actuales.  Si utilizaslink:link:reference-networking-saas-console-previous.html["puntos finales anteriores"] , la comprobación de validación falla.  Para evitar este error, omita la comprobación de validación.
+* Cuando se implementa un nuevo agente, la verificación de validación prueba la conectividad con los puntos finales actuales. Si utilizaslink:reference-networking-saas-console-previous.html["puntos finales anteriores"] , la comprobación de validación falla. Para evitar este error, omita la comprobación de validación.
 +
 Aunque los puntos finales anteriores aún son compatibles, NetApp recomienda actualizar las reglas de firewall a los puntos finales actuales lo antes posible. link:reference-networking-saas-console-previous.html#update-endpoint-list["Aprenda a actualizar su lista de puntos finales"] .
 
