@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-iam-ransomware-roles.html 
 keywords: predefined roles, iam roles, organization admin, folder or project admin, identity and access management, access roles, admin, 
-summary: Dentro de NetApp Console, puede otorgar roles para proporcionar a los usuarios acceso a NetApp Ransomware Resilience. 
+summary: Ransomware Resilience ofrece diferentes roles de usuario para administrar el acceso a privilegios, acciones e informes. 
 ---
 = Roles de acceso de resiliencia contra ransomware para la NetApp Console
 :hardbreaks:
@@ -22,32 +22,26 @@ Los roles de resiliencia contra ransomware brindan a los usuarios acceso a NetAp
 * Visor del comportamiento del usuario de Ransomware Resilience
 
 
-Los roles confieren diferentes accesos a configuraciones y acciones.  Para configurar o ver la actividad de comportamiento sospechoso del usuario, debe utilizar uno de los roles de comportamiento del usuario.
+Los roles confieren diferentes niveles de acceso a configuraciones y acciones.
 
-La siguiente tabla muestra las acciones que puede realizar cada rol.
+Las acciones disponibles para los roles de administrador de comportamiento del usuario y visor de comportamiento del usuario de Ransomware Resilience están limitadas a link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html["actividad sospechosa del usuario"^]. Estos roles están diseñados para agregarse a los roles de administrador o espectador de Ransomware Resilience. Para configurar los ajustes de comportamiento de usuario sospechoso y responder a las alertas, un usuario debe tener el rol de administrador de comportamiento de usuario de Ransomware Resilience. Para ver únicamente alertas de comportamiento sospechoso del usuario, el usuario debe tener el rol de visualizador de comportamiento del usuario de Ransomware Resilience.
 
-[cols="40,20a,20a,20a,20a"]
+La siguiente tabla diferencia las acciones disponibles para los roles de administrador y espectador de Ransomware Resilience.
+
+[cols="40,20a,20a"]
 |===
-| Característica y acción | Administrador de resiliencia frente al ransomware | Visor de resiliencia contra ransomware | Comportamiento del usuario de Resiliencia ante Ransomware | Visor del comportamiento del usuario de Ransomware Resilience 
+| Característica y acción | Administrador de resiliencia frente al ransomware | Visor de resiliencia contra ransomware 
 
 
 | Ver el panel y todas las pestañas  a| 
 Sí
  a| 
 Sí
- a| 
-No
- a| 
-No
 
 
 
 | En el panel, actualice el estado de la recomendación  a| 
 Sí
- a| 
-No
- a| 
-No
  a| 
 No
 
@@ -57,19 +51,11 @@ No
 Sí
  a| 
 No
- a| 
-No
- a| 
-No
 
 
 
 | Iniciar el descubrimiento de cargas de trabajo  a| 
 Sí
- a| 
-No
- a| 
-No
  a| 
 No
 
@@ -79,22 +65,14 @@ No
 Sí
  a| 
 No
- a| 
-No
- a| 
-No
 
 
 
-5+| *En la pestaña Proteger*: 
+3+| *En la pestaña Proteger*: 
 
 
 | Agregar, modificar o eliminar planes de protección  a| 
 Sí
- a| 
-No
- a| 
-No
  a| 
 No
 
@@ -104,19 +82,11 @@ No
 Sí
  a| 
 No
- a| 
-No
- a| 
-No
 
 
 
 | Identificar la exposición a datos sensibles  a| 
 Sí
- a| 
-No
- a| 
-No
  a| 
 No
 
@@ -126,10 +96,6 @@ No
 Sí
  a| 
 Sí
- a| 
-No
- a| 
-No
 
 
 
@@ -137,10 +103,6 @@ No
 Sí
  a| 
 Sí
- a| 
-No
- a| 
-No
 
 
 
@@ -148,19 +110,11 @@ No
 Sí
  a| 
 Sí
- a| 
-No
- a| 
-No
 
 
 
 | Crear, editar o eliminar un grupo de protección  a| 
 Sí
- a| 
-No
- a| 
-No
  a| 
 No
 
@@ -170,33 +124,21 @@ No
 Sí
  a| 
 Sí
- a| 
-No
- a| 
-No
 
 
 
-5+| *En la pestaña Alertas*: 
+3+| *En la pestaña Alertas*: 
 
 
 | Ver alertas y detalles de alertas  a| 
 Sí
  a| 
 Sí
- a| 
-No
- a| 
-No
 
 
 
 | Editar el estado del incidente  a| 
 Sí
- a| 
-No
- a| 
-No
  a| 
 No
 
@@ -206,10 +148,6 @@ No
 Sí
  a| 
 No
- a| 
-No
- a| 
-No
 
 
 
@@ -217,19 +155,11 @@ No
 Sí
  a| 
 Sí
- a| 
-No
- a| 
-No
 
 
 
 | Desestimar o resolver incidentes  a| 
 Sí
- a| 
-No
- a| 
-No
  a| 
 No
 
@@ -239,19 +169,11 @@ No
 Sí
  a| 
 No
- a| 
-No
- a| 
-No
 
 
 
 | Obtenga la lista completa de archivos afectados  a| 
 Sí
- a| 
-No
- a| 
-No
  a| 
 No
 
@@ -261,10 +183,6 @@ No
 Sí
  a| 
 Sí
- a| 
-No
- a| 
-No
 
 
 
@@ -272,22 +190,14 @@ No
 No
  a| 
 No
- a| 
-Sí
- a| 
-Sí
 
 
 
-5+| *En la pestaña Recuperar*: 
+3+| *En la pestaña Recuperar*: 
 
 
 | Descargar archivos afectados  a| 
 Sí
- a| 
-No
- a| 
-No
  a| 
 No
 
@@ -297,10 +207,6 @@ No
 Sí
  a| 
 No
- a| 
-No
- a| 
-No
 
 
 
@@ -308,10 +214,6 @@ No
 Sí
  a| 
 Sí
- a| 
-No
- a| 
-No
 
 
 
@@ -319,22 +221,14 @@ No
 Sí
  a| 
 Sí
- a| 
-No
- a| 
-No
 
 
 
-5+| *En la pestaña Configuración*: 
+3+| *En la pestaña Configuración*: 
 
 
 | Agregar o modificar destinos de copia de seguridad  a| 
 Sí
- a| 
-No
- a| 
-No
  a| 
 No
 
@@ -344,10 +238,6 @@ No
 Sí
  a| 
 Sí
- a| 
-No
- a| 
-No
 
 
 
@@ -355,19 +245,11 @@ No
 Sí
  a| 
 Sí
- a| 
-No
- a| 
-No
 
 
 
 | Agregar o modificar objetivos SIEM  a| 
 Sí
- a| 
-No
- a| 
-No
  a| 
 No
 
@@ -377,19 +259,11 @@ No
 Sí
  a| 
 No
- a| 
-No
- a| 
-No
 
 
 
 | Simulacro de preparación para el inicio  a| 
 Sí
- a| 
-No
- a| 
-No
  a| 
 No
 
@@ -399,19 +273,11 @@ No
 Sí
  a| 
 No
- a| 
-No
- a| 
-No
 
 
 
 | Simulacro de preparación para la edición  a| 
 Sí
- a| 
-No
- a| 
-No
  a| 
 No
 
@@ -421,19 +287,11 @@ No
 Sí
  a| 
 Sí
- a| 
-No
- a| 
-No
 
 
 
 | Actualizar la configuración de descubrimiento  a| 
 Sí
- a| 
-No
- a| 
-No
  a| 
 No
 
@@ -443,10 +301,6 @@ No
 Sí
  a| 
 Sí
- a| 
-No
- a| 
-No
 
 
 
@@ -454,23 +308,15 @@ No
 No
  a| 
 No
- a| 
-Sí
- a| 
-No
 
 
 
-5+| *En la pestaña Informes*: 
+3+| *En la pestaña Informes*: 
 
 
 | Descargar informes  a| 
 Sí
  a| 
 Sí
- a| 
-No
- a| 
-No
 
 |===

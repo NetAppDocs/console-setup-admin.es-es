@@ -2207,9 +2207,7 @@
   <block id="05271cfa0bdeea693a59837fb97cbc3b" category="list-text"><block ref="05271cfa0bdeea693a59837fb97cbc3b" category="inline-link-macro-rx"></block></block>
   <block id="d5c64a8daa89e747afab2353c532cfd0" category="inline-link-macro">Comience a utilizar NetApp Console IAM</block>
   <block id="065933ac7339c32c2a386f3f69e4fd61" category="list-text"><block ref="065933ac7339c32c2a386f3f69e4fd61" category="inline-link-macro-rx"></block></block>
-  <block id="470bbf3695958272c2830107baeb6411" category="summary">Dentro de NetApp Console, puede otorgar roles para proporcionar a los usuarios acceso a NetApp Ransomware Resilience.</block>
   <block id="5f87170a21a0b0d135060af816ac1433" category="doc">Roles de acceso de resiliencia contra ransomware para la NetApp Console</block>
-  <block id="e6d88107afe61c1a78c0dac0689d8fac" category="paragraph">La siguiente tabla muestra las acciones que puede realizar cada rol.</block>
   <block id="2961ef9224153d664a9bde6ee6ef2570" category="cell">En el panel, actualice el estado de la recomendación</block>
   <block id="bb73fa2a07d0c544491039dc1ffed7b8" category="cell">Iniciar el redescubrimiento de cargas de trabajo</block>
   <block id="26548eb85488e3cdc0f0b9b27802995f" category="cell">*En la pestaña Proteger*:</block>
@@ -2219,7 +2217,6 @@
   <block id="e1b7f478f4648932399a0f8d6835740b" category="cell">Enumere los planes de protección y los detalles</block>
   <block id="8921dd8678af3de7359bee784af9a8e0" category="cell">Lista de grupos de protección</block>
   <block id="97803e7af23cd9dd5e46bef4245a8480" category="cell">Ver detalles del grupo de protección</block>
-  <block id="70348d94ac22a6df8ff175b1e3a7535b" category="cell">Crear, editar o eliminar un grupo de protección</block>
   <block id="4330b42a340140b836c42bbe9c7105be" category="cell">Descargar datos</block>
   <block id="b1e60ac72e50f485ca0a5ea9c82143d2" category="cell">*En la pestaña Alertas*:</block>
   <block id="a0da34eb7fa7ce71299612d3548b6f6a" category="cell">Ver alertas y detalles de alertas</block>
@@ -5519,8 +5516,6 @@
   <block id="a11961cab6627eac643ea36ae57ce8df" category="sidebar">Roles Keystone</block>
   <block id="7654fe6ca44295ba5f844fc9798f0103" category="sidebar">Roles de almacenamiento</block>
   <block id="35cbd88f43ce85ef7ed6866daa2c6066" category="sidebar">Roles de servicios de datos</block>
-  <block id="38dd106db79e0463f64b237d9de58a8e" category="sidebar">Funciones de respaldo y recuperación</block>
-  <block id="2879d04f18c304fb2a3d5cf00deff6e2" category="sidebar">Funciones de recuperación ante desastres</block>
   <block id="4dd7bf281f080fe43c775a741f9f2cc1" category="sidebar">Organizaciones asociadas</block>
   <block id="d6cca643be1ccfaa32ccfdc068061f15" category="sidebar">Obtenga más información sobre las asociaciones entre organizaciones</block>
   <block id="d88a163f40de4d60f08d7006db6dbc69" category="sidebar">Crear una asociación organizacional</block>
@@ -5554,7 +5549,6 @@
   <block id="e4c0002e4f9f19273bc004922899fb85" category="sidebar">Acceso a la red de la consola (heredado)</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">Conocimiento y apoyo</block>
   <block id="253b718b7b0bb8f190e2ebe1c721295e" category="paragraph">Los roles de resiliencia contra ransomware brindan a los usuarios acceso a NetApp Ransomware Resilience. Ransomware Resilience admite las siguientes funciones:</block>
-  <block id="b7055c90f2b38b6e2d3cddd08ec5c936" category="paragraph">Los roles confieren diferentes accesos a configuraciones y acciones.  Para configurar o ver la actividad de comportamiento sospechoso del usuario, debe utilizar uno de los roles de comportamiento del usuario.</block>
   <block id="f75989b6aa2a7a3c16b04e40aebffd8f" category="paragraph">Los usuarios con el rol de *Administrador de la organización* o *Administrador de carpeta o proyecto* tienen la responsabilidad de asignar roles a otros usuarios. Puede asignar roles de acceso por proyecto o carpeta. Por ejemplo, puede asignar a un usuario el rol de administrador de Ransomware Resilience para un proyecto y el rol de administrador de SnapCenter para un proyecto diferente. De manera alternativa, si un usuario necesita el rol de administrador de Clasificación para todos los proyectos dentro de una carpeta específica, puede otorgarle este rol a nivel de carpeta.</block>
   <block id="e55d79a6c1774cf0f39d67ca04d67bc0" category="paragraph">Utilice roles de acceso para asignar acceso a los recursos de almacenamiento en función de las tareas específicas que los usuarios necesitan realizar. Por ejemplo, si un usuario necesita interactuar con Ransomware Resilience, se le debe otorgar un rol de acceso que incluya permisos de visualización o administrativos para Ransomware Resilience para el proyecto para el cual se le otorga el rol de acceso.</block>
   <block id="e6bf2bfbd541e12c3cb2fca42df08ed3" category="paragraph">Los miembros pueden tener múltiples roles dentro del mismo proyecto y en diferentes proyectos. Por ejemplo, las organizaciones más pequeñas pueden asignar todos los roles de acceso disponibles al mismo usuario, mientras que las organizaciones más grandes pueden hacer que los usuarios realicen tareas más especializadas. Como alternativa, también puede asignar a un usuario el rol de administrador de resiliencia contra ransomware para una organización.  En ese ejemplo, el usuario podría realizar tareas de resiliencia frente a ransomware en todos los proyectos dentro de su organización.</block>
@@ -5564,4 +5558,12 @@
   <block id="4ed68ecf8e006d0fab7f06897731cf53" category="list-text">Cuando se implementa un nuevo agente, la verificación de validación prueba la conectividad con los puntos finales actuales. Si utilizas<block ref="99a33b76fea6c3306005dfd630a43c9c" category="inline-link-macro-rx"></block> , la comprobación de validación falla. Para evitar este error, omita la comprobación de validación.</block>
   <block id="cfc9caf6832f568fe347d970af78e108" category="list-text">Si usa Red Hat Enterprise Linux, verifique que su versión de Podman esté usando Netavark Aardvark DNS en lugar de CNI</block>
   <block id="a0a50b50b6bb8edb1f818d3ca9526b4b" category="cell">Compatible con regiones gubernamentales y regiones comerciales con modo restringido. No compatible con regiones soberanas con modo restringido. En el modo restringido, NetApp Backup and Recovery solo admite la copia de seguridad y la restauración de datos de volumen ONTAP .<block ref="99e4ad11b9403b4c917ec7ce872ad637" category="inline-link-rx"></block> No se admite la realización de copias de seguridad ni la restauración de datos de aplicaciones ni de máquinas virtuales.</block>
+  <block id="7ce9d6824315daa5b3ba4a80bef8768d" category="summary">Ransomware Resilience ofrece diferentes roles de usuario para administrar el acceso a privilegios, acciones e informes.</block>
+  <block id="f74b0b36940f757370478cb904680fe8" category="paragraph">Los roles confieren diferentes niveles de acceso a configuraciones y acciones.</block>
+  <block id="d8ed8dce9d98718d4019d9388c24353d" category="inline-link-macro">actividad sospechosa del usuario</block>
+  <block id="592abd5ea65ad47726532e14cc5e25d7" category="paragraph">Las acciones disponibles para los roles de administrador de comportamiento del usuario y visor de comportamiento del usuario de Ransomware Resilience están limitadas a <block ref="ab0f0a524b6807cce9d5b60fdac0f887" category="inline-link-macro-rx"></block>. Estos roles están diseñados para agregarse a los roles de administrador o espectador de Ransomware Resilience. Para configurar los ajustes de comportamiento de usuario sospechoso y responder a las alertas, un usuario debe tener el rol de administrador de comportamiento de usuario de Ransomware Resilience. Para ver únicamente alertas de comportamiento sospechoso del usuario, el usuario debe tener el rol de visualizador de comportamiento del usuario de Ransomware Resilience.</block>
+  <block id="6ebf0d56afdbe7f6542cf91826e113ef" category="paragraph">La siguiente tabla diferencia las acciones disponibles para los roles de administrador y espectador de Ransomware Resilience.</block>
+  <block id="1ea8198251e36e2c445f036c869bfd7f" category="cell">Crear, editar o eliminar un grupo de protección</block>
+  <block id="a8b7063e167b83f7676ad4659510d5ea" category="sidebar">Funciones de copia de seguridad y recuperación</block>
+  <block id="ffce0d237e59f85993727b9607fade6c" category="sidebar">Funciones de recuperación ante desastres</block>
 </blocks>

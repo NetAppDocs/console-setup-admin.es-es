@@ -150,7 +150,7 @@ sidebar:
             url: "/reference-iam-storage-roles.html"
         - title: Roles de servicios de datos
           entries:
-          - title: Funciones de respaldo y recuperación
+          - title: Funciones de copia de seguridad y recuperación
             url: "/reference-iam-backup-rec-roles.html"
           - title: Funciones de recuperación ante desastres
             url: "/reference-iam-disaster-rec-roles.html"
