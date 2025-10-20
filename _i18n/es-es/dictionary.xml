@@ -2211,40 +2211,22 @@
   <block id="2961ef9224153d664a9bde6ee6ef2570" category="cell">En el panel, actualice el estado de la recomendación</block>
   <block id="bb73fa2a07d0c544491039dc1ffed7b8" category="cell">Iniciar el redescubrimiento de cargas de trabajo</block>
   <block id="26548eb85488e3cdc0f0b9b27802995f" category="cell">*En la pestaña Proteger*:</block>
-  <block id="8ae06231e3533fd967c3e2959a7f5325" category="cell">Agregar, modificar o eliminar planes de protección</block>
   <block id="bf4011ddd9ae5a6521f75843972999ab" category="cell">Proteger las cargas de trabajo</block>
-  <block id="579066063b3104c9f6c74d2084e0e7e4" category="cell">Identificar la exposición a datos sensibles</block>
   <block id="e1b7f478f4648932399a0f8d6835740b" category="cell">Enumere los planes de protección y los detalles</block>
   <block id="8921dd8678af3de7359bee784af9a8e0" category="cell">Lista de grupos de protección</block>
   <block id="97803e7af23cd9dd5e46bef4245a8480" category="cell">Ver detalles del grupo de protección</block>
   <block id="4330b42a340140b836c42bbe9c7105be" category="cell">Descargar datos</block>
   <block id="b1e60ac72e50f485ca0a5ea9c82143d2" category="cell">*En la pestaña Alertas*:</block>
-  <block id="a0da34eb7fa7ce71299612d3548b6f6a" category="cell">Ver alertas y detalles de alertas</block>
-  <block id="f700fad2259a25a87fbe56ba2810e8ff" category="cell">Editar el estado del incidente</block>
-  <block id="e975f9abac95a06f0645ce83ab0e4e37" category="cell">Marcar alerta para recuperación</block>
-  <block id="ef9988f85b068b8709daa3be2c31fca3" category="cell">Ver detalles del incidente</block>
-  <block id="d1f58f4fcc4cff94a574e5986b051d2f" category="cell">Desestimar o resolver incidentes</block>
-  <block id="f84e2dc493985bbd340b2cd14bf2daeb" category="cell">Bloquear usuario</block>
-  <block id="38de1b212ca13fa4c230f4c20adbb48a" category="cell">Obtenga la lista completa de archivos afectados</block>
-  <block id="4b1b2c63b979feafab4b35d6b2307876" category="cell">Descargar datos de alertas</block>
-  <block id="406fe9c43e4a6d01dd8db03e3c5cd178" category="cell">Ver actividad sospechosa del usuario</block>
   <block id="b338bf8c8e0fbc61d8a0fad3b4a74e35" category="cell">*En la pestaña Recuperar*:</block>
-  <block id="f5f949f53a00b2da6ffa7a9f7a0fd0f8" category="cell">Descargar archivos afectados</block>
-  <block id="65ca8041cc328ebb64db5f8368a9101a" category="cell">Restaurar la carga de trabajo</block>
-  <block id="4ebc1406711ca6754873e22a81f31c6f" category="cell">Descargar datos de recuperación</block>
   <block id="a4f2411faacb07693dd051a3d2d9f97e" category="cell">*En la pestaña Configuración*:</block>
   <block id="fc36f5b7ec87bb05d12fcec7b985fe79" category="cell">Agregar o modificar destinos de copia de seguridad</block>
   <block id="765ffd3ea8472bde364d6d75c648c7e2" category="cell">Lista de destinos de copia de seguridad</block>
   <block id="be9d2f996415c0e9128f109806d13e74" category="cell">Ver objetivos SIEM conectados</block>
   <block id="08fec10c338548595a28b0310a1c0600" category="cell">Agregar o modificar objetivos SIEM</block>
   <block id="0e12704ac2cf7981683f2392843a3751" category="cell">Configurar el simulacro de preparación</block>
-  <block id="fbca60f39e39ac567548a02c9e536305" category="cell">Simulacro de preparación para el inicio</block>
-  <block id="9e914ba4c13fe3f6329717ca31b8bfca" category="cell">Simulacro de preparación para el reinicio</block>
-  <block id="45f15fba3339f71439f0c72c967fc0d3" category="cell">Simulacro de preparación para la edición</block>
   <block id="62bbacc7c65bd53641f4347319efbc1b" category="cell">Revisar el estado del simulacro de preparación</block>
   <block id="0e6583bdbbf88acbfc57d3f868629d3c" category="cell">Actualizar la configuración de descubrimiento</block>
   <block id="5439d77b96ff7a9498be958a6755e89a" category="cell">Ver configuración de descubrimiento</block>
-  <block id="9bc78d326dd9484756d8fb832592a4b8" category="cell">Configurar ajustes de comportamiento de usuarios sospechosos</block>
   <block id="1ed006cd78ff9bf590a02c6fc268141f" category="cell">*En la pestaña Informes*:</block>
   <block id="a8017d11a1434e0a01ee8fa5f418c244" category="summary">Puede asignar los siguientes roles a los usuarios para brindarles acceso a las funciones de administración de almacenamiento en la NetApp Console.  Puede asignar a los usuarios un rol administrativo para administrar el almacenamiento o un rol de espectador para monitorear.</block>
   <block id="222c6290ae86e7e691125c5ef19048ae" category="doc">Roles de acceso al almacenamiento para la NetApp Console</block>
@@ -5558,12 +5540,56 @@
   <block id="4ed68ecf8e006d0fab7f06897731cf53" category="list-text">Cuando se implementa un nuevo agente, la verificación de validación prueba la conectividad con los puntos finales actuales. Si utilizas<block ref="99a33b76fea6c3306005dfd630a43c9c" category="inline-link-macro-rx"></block> , la comprobación de validación falla. Para evitar este error, omita la comprobación de validación.</block>
   <block id="cfc9caf6832f568fe347d970af78e108" category="list-text">Si usa Red Hat Enterprise Linux, verifique que su versión de Podman esté usando Netavark Aardvark DNS en lugar de CNI</block>
   <block id="a0a50b50b6bb8edb1f818d3ca9526b4b" category="cell">Compatible con regiones gubernamentales y regiones comerciales con modo restringido. No compatible con regiones soberanas con modo restringido. En el modo restringido, NetApp Backup and Recovery solo admite la copia de seguridad y la restauración de datos de volumen ONTAP .<block ref="99e4ad11b9403b4c917ec7ce872ad637" category="inline-link-rx"></block> No se admite la realización de copias de seguridad ni la restauración de datos de aplicaciones ni de máquinas virtuales.</block>
-  <block id="7ce9d6824315daa5b3ba4a80bef8768d" category="summary">Ransomware Resilience ofrece diferentes roles de usuario para administrar el acceso a privilegios, acciones e informes.</block>
-  <block id="f74b0b36940f757370478cb904680fe8" category="paragraph">Los roles confieren diferentes niveles de acceso a configuraciones y acciones.</block>
-  <block id="d8ed8dce9d98718d4019d9388c24353d" category="inline-link-macro">actividad sospechosa del usuario</block>
-  <block id="592abd5ea65ad47726532e14cc5e25d7" category="paragraph">Las acciones disponibles para los roles de administrador de comportamiento del usuario y visor de comportamiento del usuario de Ransomware Resilience están limitadas a <block ref="ab0f0a524b6807cce9d5b60fdac0f887" category="inline-link-macro-rx"></block>. Estos roles están diseñados para agregarse a los roles de administrador o espectador de Ransomware Resilience. Para configurar los ajustes de comportamiento de usuario sospechoso y responder a las alertas, un usuario debe tener el rol de administrador de comportamiento de usuario de Ransomware Resilience. Para ver únicamente alertas de comportamiento sospechoso del usuario, el usuario debe tener el rol de visualizador de comportamiento del usuario de Ransomware Resilience.</block>
-  <block id="6ebf0d56afdbe7f6542cf91826e113ef" category="paragraph">La siguiente tabla diferencia las acciones disponibles para los roles de administrador y espectador de Ransomware Resilience.</block>
-  <block id="1ea8198251e36e2c445f036c869bfd7f" category="cell">Crear, editar o eliminar un grupo de protección</block>
   <block id="a8b7063e167b83f7676ad4659510d5ea" category="sidebar">Funciones de copia de seguridad y recuperación</block>
   <block id="ffce0d237e59f85993727b9607fade6c" category="sidebar">Funciones de recuperación ante desastres</block>
+  <block id="fffc92a6b6a3b44b650e6669aa797cac" category="summary">Ransomware Resilience ofrece diferentes roles de usuario para administrar el acceso a configuraciones, acciones e informes.</block>
+  <block id="1f0992962e7aa72491d3ea02fc5edda4" category="paragraph">**Roles de base**</block>
+  <block id="170e16c6dd1a9b91467ae7129f97a1d7" category="list-text">Administrador de resiliencia contra ransomware: configure los ajustes de resiliencia contra ransomware; investigue y responda a las alertas de cifrado</block>
+  <block id="cdfd65d81032924213a156d66245ab10" category="list-text">Visor de resiliencia contra ransomware: vea incidentes de cifrado, informes y configuraciones de detección</block>
+  <block id="e8664260e9d447452785abaf08b8b8f6" category="inline-link-macro">Detección de actividad sospechosa de usuarios</block>
+  <block id="04724d8f5ba2b38975c69834e3e8b920" category="paragraph">**Roles de actividad de comportamiento del usuario**<block ref="885ef4a0557ed3cd017b2efccb0c3de5" category="inline-link-macro-rx"></block> Las alertas proporcionan visibilidad de datos tales como eventos de actividad de archivos; estas alertas incluyen nombres de archivos y acciones de archivos (como leer, escribir, eliminar, cambiar nombre) realizadas por el usuario.  Para limitar la visibilidad de estos datos, solo los usuarios con estos roles pueden administrar o ver estas alertas.</block>
+  <block id="eb660a2de52d250becf4703c75d4aaff" category="list-text">Administrador de comportamiento del usuario de Ransomware Resilience: active la detección de actividad sospechosa de usuarios, investigue y responda a las alertas de actividad sospechosa de usuarios</block>
+  <block id="fd26172aba8622db091eebe480cd7e37" category="list-text">Visor de comportamiento del usuario de Ransomware Resilience: vea alertas de actividad sospechosa del usuario</block>
+  <block id="e98813c3c921a36511f197fc7a9fe204" category="admonition">Los roles de comportamiento del usuario no son roles independientes; están diseñados para agregarse a los roles de administrador o espectador de Ransomware Resilience. Para obtener más información, consulte <block ref="97d5369167883766cc87d7bf7a5c9d91" category="inline-xref-macro-rx"></block>.</block>
+  <block id="aaf2eccc92917d658995c66b880cfb26" category="paragraph">Consulte las siguientes tablas para obtener descripciones detalladas de cada función.</block>
+  <block id="bc206e6bf9f2ba8322bc8d55dceb3451" category="section-title">Roles de base</block>
+  <block id="b9f5850597eac5d0eb99ea44b9b7fbc1" category="paragraph">La siguiente tabla describe las acciones disponibles para los roles de administrador y espectador de Ransomware Resilience.</block>
+  <block id="b3c2dec7fd62e5ac2afdc696b279f52e" category="cell">Agregar, modificar o eliminar planes de protección para políticas de _cifrado_</block>
+  <block id="daa48308bc964d092772d98c1a8a5562" category="cell">Identifique la exposición a datos confidenciales con la clasificación de datos</block>
+  <block id="3fa1d1b73ebf3c6b2e14ce235e91e131" category="cell">Crear, editar o eliminar grupos de protección</block>
+  <block id="3ebecde38a0e7a26d762a9e15a5a5a9a" category="cell">Ver alertas de cifrado y detalles de alertas</block>
+  <block id="b004643cf84c26e96f5e987bda405d21" category="cell">Editar el estado del incidente de cifrado</block>
+  <block id="518a814bfff8a4a1edc429720f3feeb4" category="cell">Marcar alerta de cifrado para recuperación</block>
+  <block id="783ddfc17d71a086a45112d2198f9149" category="cell">Ver detalles del incidente de cifrado</block>
+  <block id="2cf6d9c6c4e7e4e84b70b24691035739" category="cell">Descartar o resolver incidentes de cifrado</block>
+  <block id="6faf16eee5ba7ea63a49b8477a34791d" category="cell">Obtenga la lista completa de archivos afectados en el evento de cifrado</block>
+  <block id="972e748f513e3e427b0f8b61933ea87e" category="cell">Descargar datos de alertas de eventos de cifrado</block>
+  <block id="1ab486a8f581ae47a45d2d4deef97251" category="cell">Bloquear usuario (con configuración del agente de Workload Security)</block>
+  <block id="63ef6293e2221c1c01beb10f135a6c0e" category="cell">Descargar archivos afectados por el evento de cifrado</block>
+  <block id="fab67a6ef7c066c05b4a81be858d67bc" category="cell">Restaurar la carga de trabajo a partir de un evento de cifrado</block>
+  <block id="f9b0c09989fcd6b8da430effb430fd15" category="cell">Descargar datos de recuperación del evento de cifrado</block>
+  <block id="6a85f7b86db00c39f8204fc81ec39a9e" category="cell">Descargar informes de eventos de cifrado</block>
+  <block id="5f6caca12756189febec29e78ca157b3" category="cell">Iniciar, reiniciar o editar el simulacro de preparación</block>
+  <block id="ef42b54359e596b7aa50418f7960a6a5" category="section-title">Roles de comportamiento del usuario</block>
+  <block id="bdd638184754634b202e21c33e499493" category="paragraph">Para configurar los ajustes de comportamiento de usuario sospechoso y responder a las alertas, un usuario debe tener el rol de administrador de comportamiento de usuario de Ransomware Resilience. Para ver únicamente alertas de comportamiento sospechoso del usuario, el usuario debe tener el rol de visualizador de comportamiento del usuario de Ransomware Resilience.</block>
+  <block id="d8e882f82c91850fe60b139660a3451f" category="inline-link-macro">Configuración y alertas de actividad de usuario sospechosa</block>
+  <block id="64873820e76b32a77a5cf79a547b9efa" category="paragraph">Los roles de comportamiento del usuario deben otorgarse a los usuarios con privilegios de administrador o espectador de Ransomware Resilience existentes que necesitan acceso a<block ref="dabde4cfb2462919536551734d022527" category="inline-link-macro-rx"></block> .  Un usuario con el rol de administrador de Ransomware Resilience, por ejemplo, debería recibir el rol de administrador de comportamiento de usuario de Ransomware Resilience para configurar agentes de actividad de usuario y bloquear o desbloquear usuarios.  El rol de administrador de comportamiento del usuario de Ransomware Resilience no debe otorgarse a un visor de Ransomware Resilience.</block>
+  <block id="759c83e40f93cea3a1eccdc76fde4c4b" category="paragraph">La siguiente tabla describe las acciones disponibles para los roles de administrador y espectador del comportamiento del usuario de Ransomware Resilience.</block>
+  <block id="5c34bf47745609542194c315fe2964f9" category="cell">Crear, modificar o eliminar un agente de actividad del usuario</block>
+  <block id="485cfdddcabc76dc28501c429282df6b" category="cell">Crear o eliminar el conector del directorio de usuarios</block>
+  <block id="458cd4b16a6ccc8096a881213d00476c" category="cell">Pausar o reanudar el recopilador de datos</block>
+  <block id="82ad0db10e8a69c003b2b161e3364e26" category="cell">Realizar un simulacro de preparación ante una violación de datos</block>
+  <block id="ced72ba7a22f2e6df64b261e0e0a6067" category="cell">Agregar, modificar o eliminar planes de protección para políticas de _comportamiento sospechoso de usuarios_</block>
+  <block id="38b33583e093e4fae906630deb4cdba6" category="cell">Ver alertas de actividad del usuario y detalles de las alertas</block>
+  <block id="d50892e502cf72b3ff332800b1520eb6" category="cell">Editar el estado del incidente de actividad del usuario</block>
+  <block id="83cc063050f992a5b154b590dd0ec572" category="cell">Marcar la alerta de actividad del usuario para recuperación</block>
+  <block id="19981db9b0f973b5a01494a279e6253b" category="cell">Ver detalles de incidentes de actividad del usuario</block>
+  <block id="7df1d0b273c07752f3c6d8bae8860df1" category="cell">Descartar o resolver incidentes de actividad del usuario</block>
+  <block id="e0984822bc2981ddb16b2a2e5bb4dcdd" category="cell">Obtenga una lista completa de archivos afectados por usuarios sospechosos</block>
+  <block id="f7bc873fd62a198eead5ce503fec14d7" category="cell">Descargar datos de alertas de eventos de actividad del usuario</block>
+  <block id="e69a1c0d984eb32417be3469adae2895" category="cell">Bloquear o desbloquear usuario</block>
+  <block id="90b5bc69606833e095e0da3967bdfcdb" category="cell">Descargar archivos afectados por el evento de actividad del usuario</block>
+  <block id="59358657bd56c540dd5a88214e34361a" category="cell">Restaurar la carga de trabajo a partir del evento de actividad del usuario</block>
+  <block id="0bcd0f2de89d5cc2513b3b19cac9d193" category="cell">Descargar datos de recuperación del evento de actividad del usuario</block>
+  <block id="615b930aeaebafc57f53ff8e632fb38d" category="cell">Descargar informes de eventos de actividad del usuario</block>
 </blocks>

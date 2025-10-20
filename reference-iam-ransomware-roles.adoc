@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-iam-ransomware-roles.html 
 keywords: predefined roles, iam roles, organization admin, folder or project admin, identity and access management, access roles, admin, 
-summary: Ransomware Resilience ofrece diferentes roles de usuario para administrar el acceso a privilegios, acciones e informes. 
+summary: Ransomware Resilience ofrece diferentes roles de usuario para administrar el acceso a configuraciones, acciones e informes. 
 ---
 = Roles de acceso de resiliencia contra ransomware para la NetApp Console
 :hardbreaks:
@@ -16,17 +16,28 @@ summary: Ransomware Resilience ofrece diferentes roles de usuario para administr
 [role="lead"]
 Los roles de resiliencia contra ransomware brindan a los usuarios acceso a NetApp Ransomware Resilience. Ransomware Resilience admite las siguientes funciones:
 
-* Administrador de resiliencia frente al ransomware
-* Visor de resiliencia contra ransomware
-* Comportamiento del usuario de Resiliencia ante Ransomware
-* Visor del comportamiento del usuario de Ransomware Resilience
+**Roles de base**
+
+* Administrador de resiliencia contra ransomware: configure los ajustes de resiliencia contra ransomware; investigue y responda a las alertas de cifrado
+* Visor de resiliencia contra ransomware: vea incidentes de cifrado, informes y configuraciones de detección
 
 
-Los roles confieren diferentes niveles de acceso a configuraciones y acciones.
+**Roles de actividad de comportamiento del usuario**link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html["Detección de actividad sospechosa de usuarios"^] Las alertas proporcionan visibilidad de datos tales como eventos de actividad de archivos; estas alertas incluyen nombres de archivos y acciones de archivos (como leer, escribir, eliminar, cambiar nombre) realizadas por el usuario.  Para limitar la visibilidad de estos datos, solo los usuarios con estos roles pueden administrar o ver estas alertas.
 
-Las acciones disponibles para los roles de administrador de comportamiento del usuario y visor de comportamiento del usuario de Ransomware Resilience están limitadas a link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html["actividad sospechosa del usuario"^]. Estos roles están diseñados para agregarse a los roles de administrador o espectador de Ransomware Resilience. Para configurar los ajustes de comportamiento de usuario sospechoso y responder a las alertas, un usuario debe tener el rol de administrador de comportamiento de usuario de Ransomware Resilience. Para ver únicamente alertas de comportamiento sospechoso del usuario, el usuario debe tener el rol de visualizador de comportamiento del usuario de Ransomware Resilience.
+* Administrador de comportamiento del usuario de Ransomware Resilience: active la detección de actividad sospechosa de usuarios, investigue y responda a las alertas de actividad sospechosa de usuarios
+* Visor de comportamiento del usuario de Ransomware Resilience: vea alertas de actividad sospechosa del usuario
 
-La siguiente tabla diferencia las acciones disponibles para los roles de administrador y espectador de Ransomware Resilience.
+
+
+NOTE: Los roles de comportamiento del usuario no son roles independientes; están diseñados para agregarse a los roles de administrador o espectador de Ransomware Resilience. Para obtener más información, consulte <<Roles de comportamiento del usuario>>.
+
+Consulte las siguientes tablas para obtener descripciones detalladas de cada función.
+
+
+
+== Roles de base
+
+La siguiente tabla describe las acciones disponibles para los roles de administrador y espectador de Ransomware Resilience.
 
 [cols="40,20a,20a"]
 |===
@@ -71,7 +82,7 @@ No
 3+| *En la pestaña Proteger*: 
 
 
-| Agregar, modificar o eliminar planes de protección  a| 
+| Agregar, modificar o eliminar planes de protección para políticas de _cifrado_  a| 
 Sí
  a| 
 No
@@ -85,7 +96,7 @@ No
 
 
 
-| Identificar la exposición a datos sensibles  a| 
+| Identifique la exposición a datos confidenciales con la clasificación de datos  a| 
 Sí
  a| 
 No
@@ -113,7 +124,7 @@ Sí
 
 
 
-| Crear, editar o eliminar un grupo de protección  a| 
+| Crear, editar o eliminar grupos de protección  a| 
 Sí
  a| 
 No
@@ -130,64 +141,57 @@ Sí
 3+| *En la pestaña Alertas*: 
 
 
-| Ver alertas y detalles de alertas  a| 
+| Ver alertas de cifrado y detalles de alertas  a| 
 Sí
  a| 
 Sí
 
 
 
-| Editar el estado del incidente  a| 
-Sí
- a| 
-No
-
-
-
-| Marcar alerta para recuperación  a| 
+| Editar el estado del incidente de cifrado  a| 
 Sí
  a| 
 No
 
 
 
-| Ver detalles del incidente  a| 
-Sí
- a| 
-Sí
-
-
-
-| Desestimar o resolver incidentes  a| 
+| Marcar alerta de cifrado para recuperación  a| 
 Sí
  a| 
 No
 
 
 
-| Bloquear usuario  a| 
-Sí
- a| 
-No
-
-
-
-| Obtenga la lista completa de archivos afectados  a| 
-Sí
- a| 
-No
-
-
-
-| Descargar datos de alertas  a| 
+| Ver detalles del incidente de cifrado  a| 
 Sí
  a| 
 Sí
 
 
 
-| Ver actividad sospechosa del usuario  a| 
+| Descartar o resolver incidentes de cifrado  a| 
+Sí
+ a| 
 No
+
+
+
+| Obtenga la lista completa de archivos afectados en el evento de cifrado  a| 
+Sí
+ a| 
+No
+
+
+
+| Descargar datos de alertas de eventos de cifrado  a| 
+Sí
+ a| 
+Sí
+
+
+
+| Bloquear usuario (con configuración del agente de Workload Security)  a| 
+Sí
  a| 
 No
 
@@ -196,28 +200,28 @@ No
 3+| *En la pestaña Recuperar*: 
 
 
-| Descargar archivos afectados  a| 
+| Descargar archivos afectados por el evento de cifrado  a| 
 Sí
  a| 
 No
 
 
 
-| Restaurar la carga de trabajo  a| 
+| Restaurar la carga de trabajo a partir de un evento de cifrado  a| 
 Sí
  a| 
 No
 
 
 
-| Descargar datos de recuperación  a| 
+| Descargar datos de recuperación del evento de cifrado  a| 
 Sí
  a| 
 Sí
 
 
 
-| Descargar informes  a| 
+| Descargar informes de eventos de cifrado  a| 
 Sí
  a| 
 Sí
@@ -262,21 +266,7 @@ No
 
 
 
-| Simulacro de preparación para el inicio  a| 
-Sí
- a| 
-No
-
-
-
-| Simulacro de preparación para el reinicio  a| 
-Sí
- a| 
-No
-
-
-
-| Simulacro de preparación para la edición  a| 
+| Iniciar, reiniciar o editar el simulacro de preparación  a| 
 Sí
  a| 
 No
@@ -304,17 +294,155 @@ Sí
 
 
 
-| Configurar ajustes de comportamiento de usuarios sospechosos  a| 
-No
+3+| *En la pestaña Informes*: 
+
+
+| Descargar informes  a| 
+Sí
+ a| 
+Sí
+
+|===
+
+
+== Roles de comportamiento del usuario
+
+Para configurar los ajustes de comportamiento de usuario sospechoso y responder a las alertas, un usuario debe tener el rol de administrador de comportamiento de usuario de Ransomware Resilience. Para ver únicamente alertas de comportamiento sospechoso del usuario, el usuario debe tener el rol de visualizador de comportamiento del usuario de Ransomware Resilience.
+
+Los roles de comportamiento del usuario deben otorgarse a los usuarios con privilegios de administrador o espectador de Ransomware Resilience existentes que necesitan acceso alink:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html["Configuración y alertas de actividad de usuario sospechosa"^] .  Un usuario con el rol de administrador de Ransomware Resilience, por ejemplo, debería recibir el rol de administrador de comportamiento de usuario de Ransomware Resilience para configurar agentes de actividad de usuario y bloquear o desbloquear usuarios.  El rol de administrador de comportamiento del usuario de Ransomware Resilience no debe otorgarse a un visor de Ransomware Resilience.
+
+La siguiente tabla describe las acciones disponibles para los roles de administrador y espectador del comportamiento del usuario de Ransomware Resilience.
+
+[cols="40,20a,20a"]
+|===
+| Característica y acción | Comportamiento del usuario de Resiliencia ante Ransomware | Visor del comportamiento del usuario de Ransomware Resilience 
+
+
+3+| *En la pestaña Configuración*: 
+
+
+| Crear, modificar o eliminar un agente de actividad del usuario  a| 
+Sí
  a| 
 No
 
 
 
-3+| *En la pestaña Informes*: 
+| Crear o eliminar el conector del directorio de usuarios  a| 
+Sí
+ a| 
+No
 
 
-| Descargar informes  a| 
+
+| Pausar o reanudar el recopilador de datos  a| 
+Sí
+ a| 
+No
+
+
+
+| Realizar un simulacro de preparación ante una violación de datos  a| 
+Sí
+ a| 
+No
+
+
+
+3+| *En la pestaña Proteger*: 
+
+
+| Agregar, modificar o eliminar planes de protección para políticas de _comportamiento sospechoso de usuarios_  a| 
+Sí
+ a| 
+No
+
+
+
+3+| *En la pestaña Alertas*: 
+
+
+| Ver alertas de actividad del usuario y detalles de las alertas  a| 
+Sí
+ a| 
+Sí
+
+
+
+| Editar el estado del incidente de actividad del usuario  a| 
+Sí
+ a| 
+No
+
+
+
+| Marcar la alerta de actividad del usuario para recuperación  a| 
+Sí
+ a| 
+No
+
+
+
+| Ver detalles de incidentes de actividad del usuario  a| 
+Sí
+ a| 
+Sí
+
+
+
+| Descartar o resolver incidentes de actividad del usuario  a| 
+Sí
+ a| 
+No
+
+
+
+| Obtenga una lista completa de archivos afectados por usuarios sospechosos  a| 
+Sí
+ a| 
+Sí
+
+
+
+| Descargar datos de alertas de eventos de actividad del usuario  a| 
+Sí
+ a| 
+Sí
+
+
+
+| Bloquear o desbloquear usuario  a| 
+Sí
+ a| 
+No
+
+
+
+3+| *En la pestaña Recuperar*: 
+
+
+| Descargar archivos afectados por el evento de actividad del usuario  a| 
+Sí
+ a| 
+No
+
+
+
+| Restaurar la carga de trabajo a partir del evento de actividad del usuario  a| 
+Sí
+ a| 
+No
+
+
+
+| Descargar datos de recuperación del evento de actividad del usuario  a| 
+Sí
+ a| 
+Sí
+
+
+
+| Descargar informes de eventos de actividad del usuario  a| 
 Sí
  a| 
 Sí
