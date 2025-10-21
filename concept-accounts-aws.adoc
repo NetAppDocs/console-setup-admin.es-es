@@ -20,11 +20,11 @@ Descubra cómo la NetApp Console utiliza las credenciales de AWS para realizar a
 
 == Credenciales iniciales de AWS
 
-Cuando implementa un agente de consola desde la consola, debe proporcionar el ARN de un rol de IAM o claves de acceso para un usuario de IAM.  El método de autenticación debe tener permisos para implementar la consola en AWS.  Los permisos necesarios se enumeran en el enlace: task-install-agent-aws-the Console.html#console-permissions-aws[Política de implementación del agente para AWS].
+Cuando implementa un agente de consola desde la consola, debe proporcionar el ARN de un rol de IAM o claves de acceso para un usuario de IAM. El método de autenticación debe tener permisos para implementar la consola en AWS. Los permisos necesarios se enumeran en el enlace: task-install-agent-aws-the Console.html#aws-permissions-agent[Política de implementación del agente para AWS].
 
-Cuando la consola inicia la instancia del agente de consola en AWS, crea una función de IAM y un perfil de instancia para la instancia.  También adjunta una política que proporciona al agente de la consola permisos para administrar recursos y procesos dentro de esa cuenta de AWS. link:reference-permissions-aws.html["Revisar cómo la Consola utiliza los permisos"] .
+Cuando la consola inicia el agente de consola en AWS, crea una función de IAM y un perfil para el agente. También adjunta una política que proporciona al agente de la consola permisos para administrar recursos y procesos dentro de esa cuenta de AWS. link:reference-permissions-aws.html["Revisar cómo el Agente utiliza los permisos"].
 
-image:diagram_permissions_initial_aws.png["Una imagen conceptual que muestra la consola implementando el agente de consola en una cuenta de AWS.  Una política de IAM se asigna a un rol de IAM, que está asociado a la instancia de la consola."]
+image:diagram_permissions_initial_aws.png["Una imagen conceptual que muestra la consola implementando el agente de consola en una cuenta de AWS. Una política de IAM se asigna a un rol de IAM, que está asociado a la consola."]
 
 Si agrega un nuevo sistema Cloud Volumes ONTAP , la consola selecciona estas credenciales de AWS de forma predeterminada:
 
@@ -99,7 +99,7 @@ Las siguientes preguntas están relacionadas con credenciales y suscripciones.
 
 === ¿Cómo puedo rotar de forma segura mis credenciales de AWS?
 
-Como se describe en las secciones anteriores, la consola le permite proporcionar credenciales de AWS de varias maneras: un rol de IAM asociado con la instancia del agente de la consola, asumiendo un rol de IAM en una cuenta confiable o proporcionando claves de acceso de AWS.
+Como se describe en las secciones anteriores, la consola le permite proporcionar credenciales de AWS de varias maneras: un rol de IAM asociado con el agente de la consola, asumiendo un rol de IAM en una cuenta confiable o proporcionando claves de acceso de AWS.
 
 Con las dos primeras opciones, la consola utiliza el servicio de token de seguridad de AWS para obtener credenciales temporales que rotan constantemente.  Este proceso es la mejor práctica: es automático y seguro.
 

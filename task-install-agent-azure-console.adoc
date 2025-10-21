@@ -159,7 +159,7 @@ Debe implementar este requisito de red después de crear el agente de consola.
 
 Debe crear un rol personalizado que tenga permisos para implementar el agente de consola en Azure.
 
-Cree un rol personalizado de Azure que pueda asignar a su cuenta de Azure o a una entidad de servicio de Microsoft Entra.  La consola se autentica con Azure y utiliza estos permisos para crear la instancia del agente de la consola en su nombre.
+Cree un rol personalizado de Azure que pueda asignar a su cuenta de Azure o a una entidad de servicio de Microsoft Entra. La consola se autentica con Azure y utiliza estos permisos para crear el agente de la consola en su nombre.
 
 La consola implementa la máquina virtual del agente de consola en Azure y habilita una https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["identidad administrada asignada por el sistema"^] , crea el rol requerido y lo asigna a la VM. link:reference-permissions-azure.html["Revisar cómo la Consola utiliza los permisos"] .
 
@@ -444,7 +444,7 @@ https://learn.microsoft.com/en-us/azure/virtual-machines/linux-vm-connect?tabs=L
 
 * Si no desea que la consola cree automáticamente un rol de Azure para el agente de la consola, deberá crear el suyo propio.link:reference-permissions-azure.html["utilizando la política de esta página"] .
 +
-Estos permisos son para la propia instancia del agente de consola.  Es un conjunto de permisos diferente al que configuró previamente para implementar la máquina virtual del agente de consola.
+Estos permisos son para el propio agente de la consola. Es un conjunto de permisos diferente al que configuró previamente para implementar la máquina virtual del agente de consola.
 
 
 
@@ -481,7 +481,7 @@ El método de autenticación para la máquina virtual puede ser una contraseña 
 +
 https://learn.microsoft.com/en-us/azure/virtual-machines/linux-vm-connect?tabs=Linux["Obtenga información sobre cómo conectarse a una máquina virtual Linux en Azure"^]
 
-. En la página *Detalles*, ingrese un nombre para la instancia, especifique las etiquetas y elija si desea que la Consola cree un nuevo rol que tenga los permisos necesarios o si desea seleccionar un rol existente que haya configurado conlink:reference-permissions-azure.html["los permisos requeridos"] .
+. En la página *Detalles*, ingrese un nombre para el agente, especifique las etiquetas y elija si desea que la Consola cree un nuevo rol que tenga los permisos necesarios o si desea seleccionar un rol existente que configuró conlink:reference-permissions-azure.html["los permisos requeridos"] .
 +
 Tenga en cuenta que puede elegir las suscripciones de Azure asociadas con este rol.  Cada suscripción que elija proporciona al agente de la consola permisos para administrar recursos en esa suscripción (por ejemplo, Cloud Volumes ONTAP).
 
@@ -506,7 +506,7 @@ Si todavía estás usando ellink:reference-networking-saas-console-previous.html
 ====
 . Seleccione *Agregar*.
 +
-La consola prepara la instancia en aproximadamente 10 minutos.  Permanezca en la página hasta que se complete el proceso.
+La consola prepara al agente en aproximadamente 10 minutos. Permanezca en la página hasta que se complete el proceso.
 
 
 
@@ -516,4 +516,4 @@ Una vez completado el proceso, el agente de la consola estará disponible para s
 
 NOTE: Si la implementación falla, puedes descargar un informe y registros desde la Consola para ayudarte a solucionar los problemas.link:task-troubleshoot-agent.html#troubleshoot-installation["Aprenda a solucionar problemas de instalación."]
 
-Si tiene Azure Blob Storage en la misma suscripción de Azure donde creó el agente de consola, verá aparecer automáticamente un sistema de Azure Blob Storage en la página *Sistemas*. https://docs.netapp.com/us-en/bluexp-blob-storage/index.html["Aprenda a administrar Azure Blob Storage desde la NetApp Console"^]
+Si tiene Azure Blob Storage en la misma cuenta de Azure donde creó el agente de consola, verá que Azure Blob Storage aparece automáticamente en la página *Sistemas*. https://docs.netapp.com/us-en/bluexp-blob-storage/index.html["Aprenda a administrar Azure Blob Storage desde la NetApp Console"^]

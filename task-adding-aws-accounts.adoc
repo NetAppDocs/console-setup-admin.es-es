@@ -52,7 +52,7 @@ Rote manualmente las claves de acceso de AWS actualizándolas en la consola.
 
 Agregue credenciales de AWS adicionales a un agente de consola para que tenga los permisos necesarios para administrar recursos y procesos dentro de su entorno de nube pública.  Puede proporcionar el ARN de una función de IAM en otra cuenta o proporcionar claves de acceso de AWS.
 
-Si recién estás comenzando a usar la consola,link:concept-accounts-aws.html["Descubra cómo la NetApp Console utiliza las credenciales y los permisos de AWS"] .
+link:concept-accounts-aws.html["Descubra cómo la NetApp Console utiliza las credenciales y los permisos de AWS"].
 
 
 
@@ -61,7 +61,7 @@ Si recién estás comenzando a usar la consola,link:concept-accounts-aws.html["D
 Otorgue permisos antes de agregar credenciales de AWS a un agente de consola.  Los permisos permiten que un agente de consola administre recursos y procesos dentro de esa cuenta de AWS.  Puede proporcionar los permisos con el ARN de un rol en una cuenta confiable o claves de AWS.
 
 
-NOTE: Si implementó un agente de consola desde la consola, se agregaron automáticamente las credenciales de AWS para la cuenta en la que implementó un agente de consola.  Esto garantiza que se cuente con los permisos necesarios para administrar los recursos. link:concept-accounts-aws.html["Obtenga información sobre las credenciales y permisos de AWS"] .
+NOTE: Si implementó un agente de consola desde la consola, se agregaron automáticamente las credenciales de AWS para la cuenta en la que implementó un agente de consola. Esto garantiza que se cuente con los permisos necesarios para administrar los recursos.
 
 *Opciones*
 
@@ -73,7 +73,7 @@ NOTE: Si implementó un agente de consola desde la consola, se agregaron automá
 
 ==== Otorgar permisos asumiendo un rol de IAM en otra cuenta
 
-Puede configurar una relación de confianza entre la cuenta de AWS de origen en la que implementó una instancia del agente de consola y otras cuentas de AWS mediante roles de IAM.  Luego deberá proporcionar a la consola el ARN de los roles de IAM de las cuentas de confianza.
+Puede configurar una relación de confianza entre la cuenta de AWS de origen en la que implementó un agente de consola y otras cuentas de AWS mediante roles de IAM. Luego deberá proporcionar a la consola el ARN de los roles de IAM de las cuentas de confianza.
 
 Si hay un agente de consola instalado localmente, no podrá utilizar este método de autenticación.  Debes utilizar claves de AWS.
 
@@ -116,16 +116,15 @@ https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html["Do
 
 
 
-.Resultado
-La cuenta tiene los permisos requeridos. <<add-the-credentials,Ahora puedes agregar las credenciales a un agente de consola>> .
 
 
-
-=== Añade las credenciales
+=== Agregar las credenciales a un agente existente
 
 Después de proporcionar una cuenta de AWS con los permisos necesarios, puede agregar las credenciales para esa cuenta a un agente existente.  Esto le permite iniciar sistemas Cloud Volumes ONTAP en esa cuenta utilizando el mismo agente.
 
- New credentials in your cloud provider may take a few minutes to become available. Then, add the credentials.
+
+NOTE: Las nuevas credenciales de su proveedor de nube pueden tardar unos minutos en estar disponibles.
+
 .Pasos
 . Utilice la barra de navegación superior para seleccionar un agente de consola al que desea agregar credenciales.
 . En la barra de navegación izquierda, seleccione *Administración > Credenciales*.
@@ -143,7 +142,7 @@ Para pagar servicios a una tarifa por hora (PAYGO) o con un contrato anual, debe
 
 
 .Resultado
-Ahora puede cambiar a un conjunto diferente de credenciales desde la página Detalles y credenciales al agregar un sistema a la consola
+Ahora puede cambiar a un conjunto diferente de credenciales desde la página Detalles y credenciales al agregar una suscripción a la Consola.
 
 image:screenshot_accounts_switch_aws.png["Una captura de pantalla que muestra la selección entre cuentas de proveedores de nube después de seleccionar Cambiar cuenta en la página Detalles y credenciales."]
 
@@ -204,7 +203,7 @@ Referirse a link:https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policie
 
 
 .Resultado
-El rol IAM ahora tiene los permisos necesarios. <<add-the-credentials-2,Ahora puedes agregarlo a la consola>> .
+El rol IAM ahora tiene los permisos necesarios. <<add-the-credentials,Ahora puedes agregarlo a la consola>>.
 
 
 
@@ -220,9 +219,9 @@ Si acaba de crear el rol de IAM, es posible que pasen algunos minutos hasta que 
 +
 image:screenshot-settings-icon-organization.png["Una captura de pantalla que muestra el ícono de Configuración en la parte superior derecha de la consola."]
 
-. En la página *Credenciales de la organización* o *Credenciales de la cuenta*, seleccione *Agregar credenciales* y siga los pasos del asistente.
+. En la página *Credenciales de la organización*, seleccione *Agregar credenciales* y siga los pasos del asistente.
 +
-.. *Ubicación de credenciales*: seleccione *Amazon Web Services > NetApp Console*.
+.. *Ubicación de credenciales*: seleccione *Amazon Web Services > Consola*.
 .. *Definir credenciales*: proporcione el ARN (nombre de recurso de Amazon) de la función de IAM.
 .. *Revisar*: Confirme los detalles sobre las nuevas credenciales y seleccione *Agregar*.
 
@@ -239,7 +238,7 @@ Para obtener más detalles, consulte la https://docs.netapp.com/us-en/storage-ma
 
 == Configurar una suscripción a AWS
 
-Después de agregar sus credenciales de AWS, puede configurar una suscripción a AWS Marketplace con esas credenciales.  La suscripción le permite pagar Cloud Volumes ONTAP a una tarifa por hora (PAYGO) o mediante un contrato anual, y pagar otros servicios de datos.
+Después de agregar sus credenciales de AWS, puede configurar una suscripción a AWS Marketplace con esas credenciales. La suscripción le permite pagar los servicios de datos de NetApp y Cloud Volumes ONTAP a una tarifa por hora (PAYGO) o mediante un contrato anual.
 
 Hay dos escenarios en los que podrías configurar una suscripción a AWS Marketplace después de haber agregado las credenciales:
 
@@ -295,18 +294,18 @@ Para todas las demás organizaciones o cuentas, deberá asociar manualmente la s
 
 
 
-== Asocie una suscripción existente con su organización o cuenta
+== Asociar una suscripción existente con su organización
 
-Cuando se suscribe desde AWS Marketplace, el último paso del proceso es asociar la suscripción con su organización.  Si no completó este paso, no podrá usar la suscripción con su organización o cuenta.
+Cuando se suscribe desde AWS Marketplace, el último paso del proceso es asociar la suscripción con su organización. Si no completó este paso, no podrá utilizar la suscripción con su organización.
 
 * link:concept-modes.html["Obtenga más información sobre los modos de implementación de la consola"]
 * link:concept-identity-and-access-management.html["Obtenga más información sobre la gestión de identidad y acceso de la consola"]
 
 
-Siga los pasos a continuación si se suscribió a los servicios de datos inteligentes de NetApp desde AWS Marketplace, pero omitió el paso para asociar la suscripción con su cuenta.
+Siga los pasos a continuación si se suscribió a NetApp Intelligent Services desde AWS Marketplace, pero omitió el paso para asociar la suscripción con su cuenta.
 
 .Pasos
-. Confirme que no asoció su suscripción con su organización o cuenta de la consola.
+. Confirme que no asoció su suscripción con su organización de la consola.
 +
 .. Desde el menú de navegación, seleccione *Administración > Licenses and subscriptions*.
 .. Seleccione *Suscripciones*.
@@ -350,7 +349,7 @@ image:screenshot-subscription-assignment.png["Una captura de pantalla de la pág
 
 
 
-. Confirme que la suscripción esté asociada a su organización o cuenta.
+. Confirme que la suscripción esté asociada a su organización.
 +
 .. Desde el menú de navegación, seleccione *Administración > Licencias y suscripciones*.
 .. Seleccione *Suscripciones*.
@@ -359,7 +358,7 @@ image:screenshot-subscription-assignment.png["Una captura de pantalla de la pág
 
 . Confirme que la suscripción esté asociada con sus credenciales de AWS.
 +
-.. En la parte superior derecha de la consola, seleccione el ícono Configuración y seleccione *Credenciales*.
+.. Seleccione *Administración > Credenciales*.
 .. En la página *Credenciales de la organización*, verifique que la suscripción esté asociada con sus credenciales de AWS.
 +
 He aquí un ejemplo.
@@ -378,11 +377,11 @@ image:screenshot-credentials-with-subscription.png["Una captura de pantalla de l
 Edite sus credenciales de AWS cambiando el tipo de cuenta (claves de AWS o asumir rol), editando el nombre o actualizando las credenciales en sí (las claves o el ARN del rol).
 
 
-NOTE: No puede editar las credenciales de un perfil de instancia que esté asociado con una instancia de agente de consola o una instancia de Amazon FSx para ONTAP .  Solo puede cambiar el nombre de las credenciales de una instancia de FSx para ONTAP .
+NOTE: No puede editar las credenciales de un perfil de instancia que esté asociado con una instancia de agente de consola o una instancia de Amazon FSx para ONTAP . Solo puede cambiar el nombre de las credenciales de una instancia de FSx para ONTAP .
 
 .Pasos
 . Seleccione *Administración > Credenciales*.
-. En la página *Credenciales de la organización* o *Credenciales de la cuenta*, seleccione el menú de acciones para un conjunto de credenciales y luego seleccione *Editar credenciales*.
+. En la página *Credenciales de la organización*, seleccione el menú de acciones para un conjunto de credenciales y luego seleccione *Editar credenciales*.
 . Realice los cambios necesarios y luego seleccione *Aplicar*.
 
 
@@ -393,7 +392,7 @@ NOTE: No puede editar las credenciales de un perfil de instancia que esté asoci
 Si ya no necesita un conjunto de credenciales, puede eliminarlas.  Solo puedes eliminar credenciales que no estén asociadas a un sistema.
 
 
-TIP: No se pueden eliminar las credenciales de un perfil de instancia que esté asociado con una instancia del agente de consola.
+TIP: No se pueden eliminar las credenciales de un perfil de instancia que esté asociado con un agente de consola.
 
 .Pasos
 . Seleccione *Administración > Credenciales*.

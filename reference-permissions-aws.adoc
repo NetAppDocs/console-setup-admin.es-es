@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-permissions-aws.html 
 keywords: permissions, actions, aws, aws permissions, top secret, secret, aws top secret, aws secret, aws govcloud, govcloud, govcloud permissions, secret permissions, top secret permissions 
-summary: Cuando la NetApp Console inicia la instancia del agente en AWS, adjunta una política a la instancia que proporciona al agente permisos para administrar recursos y procesos dentro de esa cuenta de AWS.  El agente utiliza los permisos para realizar llamadas API a varios servicios de AWS, incluidos EC2, S3, CloudFormation, IAM, el Servicio de administración de claves y más. 
+summary: Cuando la NetApp Console inicia el agente en AWS, adjunta una política al agente que le proporciona permisos para administrar recursos y procesos dentro de esa cuenta de AWS. El agente utiliza los permisos para realizar llamadas API a varios servicios de AWS, incluidos EC2, S3, CloudFormation, IAM, el Servicio de administración de claves y más. 
 ---
 = Permisos de AWS para el agente de consola
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Cuando la NetApp Console inicia la instancia del agente en AWS, adjunta
 
 
 [role="lead"]
-Cuando la NetApp Console inicia una instancia de agente de consola en AWS, adjunta una política a la instancia que proporciona al agente permisos para administrar recursos y procesos dentro de esa cuenta de AWS.  El agente usa los permisos para realizar llamadas API a varios servicios de AWS, incluidos EC2, S3, CloudFormation, IAM, el Servicio de administración de claves (KMS) y más.
+Cuando la NetApp Console inicia un agente de consola en AWS, adjunta una política al agente que le proporciona permisos para administrar recursos y procesos dentro de esa cuenta de AWS. El agente usa los permisos para realizar llamadas API a varios servicios de AWS, incluidos EC2, S3, CloudFormation, IAM, el Servicio de administración de claves (KMS) y más.
 
 
 
@@ -1026,7 +1026,7 @@ El agente realiza las siguientes solicitudes de API para implementar y administr
 | Etiquete los recursos con las etiquetas "WorkingEnvironment" y "WorkingEnvironmentId", que se utilizan para el mantenimiento y la asignación de costos. | ec2:CrearEtiquetas | Sí | Sí | No 
 
 
-.6+| Administrar volúmenes EBS que Cloud Volumes ONTAP utiliza como almacenamiento de back-end | ec2:CrearVolumen | Sí | Sí | No 
+.6+| Administrar volúmenes EBS que Cloud Volumes ONTAP utiliza como almacenamiento de backend | ec2:CrearVolumen | Sí | Sí | No 
 
 
 | ec2:DescribeVolúmenes | Sí | Sí | Sí 

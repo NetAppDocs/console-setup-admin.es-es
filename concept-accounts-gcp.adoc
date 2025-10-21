@@ -24,8 +24,8 @@ Antes de poder usar la consola para administrar recursos en su proyecto de Googl
 
 Se deben establecer dos conjuntos de permisos antes de implementar un agente de consola directamente desde la consola:
 
-. Debe implementar un agente de consola mediante una cuenta de Google que tenga permisos para iniciar la instancia de VM del agente de consola desde la consola.
-. Al implementar el agente de la consola, se le solicitará que seleccione un https://cloud.google.com/iam/docs/service-accounts["cuenta de servicio"^] para la instancia de VM.  La consola obtiene permisos de la cuenta de servicio para crear y administrar sistemas Cloud Volumes ONTAP , administrar copias de seguridad mediante el respaldo y la recuperación de NetApp , y más.  Los permisos se proporcionan adjuntando un rol personalizado a la cuenta de servicio.
+. Debe implementar un agente de consola utilizando una cuenta de Google que tenga permisos para iniciar el agente de consola desde la consola.
+. Al implementar el agente de la consola, se le solicitará que seleccione un https://cloud.google.com/iam/docs/service-accounts["cuenta de servicio"^] para el agente La consola obtiene permisos de la cuenta de servicio para crear y administrar sistemas Cloud Volumes ONTAP , administrar copias de seguridad mediante el respaldo y la recuperación de NetApp , y más. Los permisos se proporcionan adjuntando un rol personalizado a la cuenta de servicio.
 
 
 La siguiente imagen representa los requisitos de permiso descritos en los números 1 y 2 anteriores:

@@ -4,7 +4,7 @@ permalink: task-adding-gcp-accounts.html
 keywords: permissions, gcp, marketplace, gcp subscription, subscription, gcp marketplace, subscribe, data tiering, tiering, setup, requirements, account for data tiering, account for tiering, interoperable, interoperability, interoperable storage access keys, access keys, bluexp 
 summary: Puede administrar las credenciales de Google Cloud asociadas con la instancia de máquina virtual del agente de la consola asociando una suscripción de Marketplace y solucionando problemas del proceso de suscripción.  Ambas tareas garantizan que puedas usar tu suscripción al mercado para pagar los servicios de datos. 
 ---
-= Administrar credenciales y suscripciones de Google Cloud para la NetApp Console
+= Asociar las credenciales del agente de Console con su suscripción a Google Cloud
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,6 +14,8 @@ summary: Puede administrar las credenciales de Google Cloud asociadas con la ins
 
 
 [role="lead"]
+Cuando crea un agente de consola en Google Cloud, puede usar las credenciales asociadas para suscribirse a NetApp Intelligent Services, que incluyen Cloud Volumes ONTAP y los servicios de datos de NetApp .  Debes asociar la suscripción con el agente cuyas credenciales deseas utilizar para pagar los servicios.
+
 Puede administrar las credenciales de Google Cloud asociadas con una instancia de máquina virtual del agente de consola asociando una suscripción de Marketplace y solucionando problemas del proceso de suscripción.  Ambas tareas garantizan que puedas usar tu suscripción al mercado para pagar los servicios de datos.
 
 
@@ -22,12 +24,16 @@ Puede administrar las credenciales de Google Cloud asociadas con una instancia d
 
 Cuando implementa un agente de consola en Google Cloud, la consola crea un conjunto predeterminado de credenciales que están asociadas con una instancia de VM del agente de consola.  En cualquier momento, puedes cambiar la suscripción de Google Cloud Marketplace asociada con estas credenciales.  La suscripción le permite crear un sistema Cloud Volumes ONTAP de pago por uso y utilizar otros servicios de datos.
 
-Reemplazar la suscripción actual del mercado por una nueva suscripción cambia la suscripción del mercado para cualquier sistema Cloud Volumes ONTAP existente y todos los sistemas nuevos.
+Reemplazar la suscripción actual del mercado por una nueva actualiza la suscripción para los sistemas Cloud Volumes ONTAP existentes y nuevos.
 
 .Pasos
-. Seleccione *Administración > *Credenciales*.
+. Seleccione *Administración > Credenciales*.
 . Seleccione *Credenciales de la organización*.
-. Seleccione el menú de acciones para un conjunto de credenciales asociadas con un agente de consola y luego seleccione *Configurar suscripción*.  +Se necesita una nueva captura de pantalla (TS)image:screenshot_gcp_add_subscription.png["Una captura de pantalla del menú de acciones para un conjunto de credenciales existentes."]
+. Seleccione el menú de acciones para un conjunto de credenciales asociadas con un agente de consola y luego seleccione *Configurar suscripción*.
+
+
+image:screenshot_gcp_add_subscription.png["Una captura de pantalla del menú de acciones para un conjunto de credenciales existentes."]
+
 . Para configurar una suscripción existente con las credenciales seleccionadas, seleccione un proyecto y una suscripción de Google Cloud de la lista desplegable y luego seleccione *Configurar*.
 +
 image:screenshot_gcp_associate.gif["Una captura de pantalla de un proyecto de Google Cloud y una suscripción seleccionada para las credenciales de Google Cloud."]
@@ -61,10 +67,10 @@ image:screenshot_gcp_marketplace_register.png["Una captura de pantalla de una ve
 NOTE: Si alguien de su organización ya tiene una suscripción al mercado desde su cuenta de facturación, será redirigido a https://bluexp.netapp.com/ontap-cloud?x-gcp-marketplace-token=["la página Cloud Volumes ONTAP dentro de la NetApp Console"^] en cambio.  Si esto no es esperado, comuníquese con su equipo de ventas de NetApp .  Google solo permite una suscripción por cuenta de facturación de Google.
 
 +
-*** Seleccione las organizaciones o cuentas de la consola con las que desea asociar esta suscripción.
-*** En el campo *Reemplazar suscripción existente*, elija si desea reemplazar automáticamente la suscripción existente de una organización o cuenta con esta nueva suscripción.
+*** Seleccione la organización de la consola con la que desea asociar esta suscripción.
+*** En el campo *Reemplazar suscripción existente*, elija si desea reemplazar automáticamente la suscripción existente de una organización con esta nueva suscripción.
 +
-La consola reemplaza la suscripción existente para todas las credenciales de la organización o cuenta con esta nueva suscripción.  Si un conjunto de credenciales nunca estuvo asociado con una suscripción, entonces esta nueva suscripción no estará asociada con esas credenciales.
+La consola reemplaza la suscripción existente para todas las credenciales de la organización con esta nueva suscripción. Si un conjunto de credenciales nunca estuvo asociado con una suscripción, entonces esta nueva suscripción no estará asociada con esas credenciales.
 
 +
 Para todas las demás organizaciones o cuentas, deberá asociar manualmente la suscripción repitiendo estos pasos.
@@ -90,7 +96,7 @@ image:screenshot_gcp_associate.gif["Una captura de pantalla de la página de asi
 
 == Solucionar problemas del proceso de suscripción de Marketplace
 
-A veces, la suscripción a los servicios de datos de NetApp a través de Google Cloud Marketplace puede fragmentarse debido a permisos incorrectos o por no seguir accidentalmente la redirección a la consola.  Si esto sucede, siga los siguientes pasos para completar el proceso de suscripción.
+La suscripción a los servicios de datos de NetApp a través de Google Cloud Marketplace puede fallar debido a permisos incorrectos o redirección faltante a la consola. Si esto sucede, siga los siguientes pasos para completar el proceso de suscripción.
 
 .Pasos
 . Navegar hasta el https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Página de NetApp en Google Cloud Marketplace"^] para verificar el estado del pedido.  Si la página dice *Administrar en el proveedor*, desplácese hacia abajo y seleccione *Administrar pedidos*.

@@ -150,13 +150,13 @@ Necesitará implementar este requisito de red después de crear el agente de con
 
 == Paso 2: Configurar los permisos de AWS para el agente de la consola
 
-La consola debe autenticarse con AWS antes de poder implementar la instancia del agente de la consola en su VPC.  Puede elegir uno de estos métodos de autenticación:
+La consola debe autenticarse con AWS antes de poder implementar el agente de la consola en su VPC. Puede elegir uno de estos métodos de autenticación:
 
 * Deje que la consola asuma un rol de IAM que tenga los permisos necesarios
 * Proporcionar una clave de acceso de AWS y una clave secreta para un usuario de IAM que tenga los permisos necesarios
 
 
-Con cualquiera de las opciones, el primer paso es crear una política de IAM.  Esta política contiene solo los permisos necesarios para iniciar la instancia del agente de la consola en AWS desde la consola.
+Con cualquiera de las opciones, el primer paso es crear una política de IAM. Esta política contiene solo los permisos necesarios para iniciar el agente de la consola en AWS desde la consola.
 
 Si es necesario, puede restringir la política de IAM mediante el IAM `Condition` elemento. https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html["Documentación de AWS: Elemento de condición"^]
 
@@ -166,7 +166,7 @@ Si es necesario, puede restringir la política de IAM mediante el IAM `Condition
 . Seleccione *JSON*.
 . Copie y pegue la siguiente política:
 +
-Esta política contiene solo los permisos necesarios para iniciar la instancia del agente de la consola en AWS desde la consola.  Cuando la consola crea el agente de la consola, aplica un nuevo conjunto de permisos a la instancia del agente de la consola que le permite administrar los recursos de AWS. link:reference-permissions-aws.html["Ver los permisos necesarios para la propia instancia del agente de la consola"] .
+Esta política contiene solo los permisos necesarios para iniciar el agente de la consola en AWS desde la consola.  Cuando la consola crea el agente de consola, aplica un nuevo conjunto de permisos al agente de consola que le permite administrar los recursos de AWS. link:reference-permissions-aws.html["Ver los permisos necesarios para el propio agente de la consola"].
 
 +
 [source, json]
@@ -283,7 +283,7 @@ Cree el agente de consola directamente desde la consola web.
 
 .Acerca de esta tarea
 * Al crear el agente de la consola desde la consola, se implementa una instancia EC2 en AWS utilizando una configuración predeterminada.  No cambie a una instancia EC2 más pequeña con menos CPU o menos RAM después de crear el agente de consola. link:reference-agent-default-config.html["Obtenga información sobre la configuración predeterminada para el agente de la consola"] .
-* Cuando la consola crea el agente de consola, crea una función de IAM y un perfil de instancia para la instancia.  Esta función incluye permisos que permiten al agente de la consola administrar los recursos de AWS.  Asegúrese de que la función se actualice a medida que se agreguen nuevos permisos en futuras versiones. link:reference-permissions-aws.html["Obtenga más información sobre la política de IAM para el agente de consola"] .
+* Cuando la consola crea el agente de consola, crea un rol de IAM y un perfil para el agente. Esta función incluye permisos que permiten al agente de la consola administrar los recursos de AWS. Asegúrese de que la función se actualice a medida que se agreguen nuevos permisos en futuras versiones. link:reference-permissions-aws.html["Obtenga más información sobre la política de IAM para el agente de consola"].
 
 
 .Antes de empezar
@@ -309,13 +309,13 @@ TIP: Si elige *Asumir rol*, puede crear el primer conjunto de credenciales desde
 
 . En la página *Detalles*, proporcione detalles sobre el agente de consola.
 +
-** Introduzca un nombre para la instancia.
-** Agregue etiquetas personalizadas (metadatos) a la instancia.
+** Introduzca un nombre.
+** Añadir etiquetas personalizadas (metadatos).
 ** Elija si desea que la Consola cree un nuevo rol que tenga los permisos necesarios o si desea seleccionar un rol existente que haya configurado conlink:reference-permissions-aws.html["los permisos requeridos"] .
 ** Elija si desea cifrar los discos EBS del agente de consola.  Tiene la opción de utilizar la clave de cifrado predeterminada o utilizar una clave personalizada.
 
 
-. En la página *Red*, especifique una VPC, una subred y un par de claves para la instancia, elija si desea habilitar una dirección IP pública y, opcionalmente, especifique una configuración de proxy.
+. En la página *Red*, especifique una VPC, una subred y un par de claves para el agente, elija si desea habilitar una dirección IP pública y, opcionalmente, especifique una configuración de proxy.
 +
 Asegúrese de tener el par de claves correcto para acceder a la máquina virtual del agente de consola.  Sin un par de claves, no puedes acceder a él.
 
@@ -336,7 +336,7 @@ Si todavía estás usando ellink:reference-networking-saas-console-previous.html
 ====
 . Seleccione *Agregar*.
 +
-La consola prepara la instancia en aproximadamente 10 minutos.  Permanezca en la página hasta que se complete el proceso.
+La consola implementa el agente en aproximadamente 10 minutos. Permanezca en la página hasta que se complete el proceso.
 
 
 

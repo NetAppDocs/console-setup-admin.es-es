@@ -38,9 +38,9 @@ link:task-prepare-restricted-mode.html["Obtenga más información sobre los requ
 link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Aprenda a configurar los permisos de AWS"]
 
 * Permisos para suscribirse y cancelar la suscripción a AWS Marketplace para su usuario de IAM.
-* Una comprensión de los requisitos de CPU y RAM para la instancia.
+* Una comprensión de los requisitos de CPU y RAM para el agente.
 +
-link:task-prepare-restricted-mode.html#step-3-review-host-requirements["Revisar los requisitos de la instancia"] .
+link:task-prepare-restricted-mode.html#step-3-review-host-requirements["Requisitos del agente de revisión"].
 
 * Un par de claves para la instancia EC2.
 
@@ -85,7 +85,7 @@ Si desea habilitar el cifrado de Amazon EBS en el volumen raíz, seleccione *Ava
 
 
 .Resultado
-AWS inicia el software con la configuración especificada.  La instancia del agente de consola y el software se ejecutan en aproximadamente cinco minutos.
+AWS inicia el software con la configuración especificada. El agente de consola se implementa en aproximadamente cinco minutos.
 
 .¿Que sigue?
 Configurar la NetApp Console.
@@ -139,7 +139,7 @@ image:screenshot_aws_iam_role.gif["Una captura de pantalla que muestra los campo
 
 
 .Resultado
-AWS inicia el software con la configuración especificada.  La instancia del agente de consola y el software se ejecutan en aproximadamente cinco minutos.
+AWS inicia el software con la configuración especificada. El agente de consola se implementa en aproximadamente cinco minutos.
 
 .¿Que sigue?
 Configurar la consola.
@@ -180,7 +180,7 @@ Tenga en cuenta lo siguiente al configurar la máquina virtual:
 image:screenshot-azure-sku.png["Una captura de pantalla de la creación de una nueva dirección IP en Azure que le permite elegir Básico en el campo SKU."]
 
 +
-Si utiliza una dirección IP de SKU estándar, la consola utiliza la dirección IP _privada_ del agente de la consola, en lugar de la IP pública.  Si la máquina que estás usando para acceder a la consola no tiene acceso a esa dirección IP privada, las acciones desde la consola fallarán.
+Si utiliza una dirección IP de SKU estándar, la consola utiliza la dirección IP _privada_ del agente de la consola, en lugar de la IP pública. Si la máquina que estás usando para acceder a la consola no tiene acceso a esa dirección IP privada, las acciones desde la consola fallarán.
 
 +
 https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses#sku["Documentación de Azure: SKU de IP pública"^]

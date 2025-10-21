@@ -3,9 +3,13 @@
 
 
 .Pasos
-. Seleccione *Administración > *Credenciales*.
+. Seleccione *Administración > Credenciales*.
 . Seleccione *Credenciales de la organización*.
-. Seleccione el menú de acciones para un conjunto de credenciales asociadas con un agente de consola y luego seleccione *Configurar suscripción*.  +Se necesita una nueva captura de pantalla (TS)image:screenshot_gcp_add_subscription.png["Una captura de pantalla del menú de acciones para un conjunto de credenciales existentes."]
+. Seleccione el menú de acciones para un conjunto de credenciales asociadas con un agente de consola y luego seleccione *Configurar suscripción*.
+
+
+image:screenshot_gcp_add_subscription.png["Una captura de pantalla del menú de acciones para un conjunto de credenciales existentes."]
+
 . Para configurar una suscripción existente con las credenciales seleccionadas, seleccione un proyecto y una suscripción de Google Cloud de la lista desplegable y luego seleccione *Configurar*.
 +
 image:screenshot_gcp_associate.gif["Una captura de pantalla de un proyecto de Google Cloud y una suscripción seleccionada para las credenciales de Google Cloud."]
@@ -39,10 +43,10 @@ image:screenshot_gcp_marketplace_register.png["Una captura de pantalla de una ve
 NOTE: Si alguien de su organización ya tiene una suscripción al mercado desde su cuenta de facturación, será redirigido a https://bluexp.netapp.com/ontap-cloud?x-gcp-marketplace-token=["la página Cloud Volumes ONTAP dentro de la NetApp Console"^] en cambio.  Si esto no es esperado, comuníquese con su equipo de ventas de NetApp .  Google solo permite una suscripción por cuenta de facturación de Google.
 
 +
-*** Seleccione las organizaciones o cuentas de la consola con las que desea asociar esta suscripción.
-*** En el campo *Reemplazar suscripción existente*, elija si desea reemplazar automáticamente la suscripción existente de una organización o cuenta con esta nueva suscripción.
+*** Seleccione la organización de la consola con la que desea asociar esta suscripción.
+*** En el campo *Reemplazar suscripción existente*, elija si desea reemplazar automáticamente la suscripción existente de una organización con esta nueva suscripción.
 +
-La consola reemplaza la suscripción existente para todas las credenciales de la organización o cuenta con esta nueva suscripción.  Si un conjunto de credenciales nunca estuvo asociado con una suscripción, entonces esta nueva suscripción no estará asociada con esas credenciales.
+La consola reemplaza la suscripción existente para todas las credenciales de la organización con esta nueva suscripción. Si un conjunto de credenciales nunca estuvo asociado con una suscripción, entonces esta nueva suscripción no estará asociada con esas credenciales.
 
 +
 Para todas las demás organizaciones o cuentas, deberá asociar manualmente la suscripción repitiendo estos pasos.

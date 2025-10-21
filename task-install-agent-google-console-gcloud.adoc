@@ -420,7 +420,7 @@ Si todavía estás usando ellink:reference-networking-saas-console-previous.html
 ====
 . Seleccione *Agregar*.
 +
-La instancia estará lista en aproximadamente 10 minutos; permanezca en la página hasta que se complete el proceso.
+El agente estará listo en aproximadamente 10 minutos; permanezca en la página hasta que se complete el proceso.
 
 
 

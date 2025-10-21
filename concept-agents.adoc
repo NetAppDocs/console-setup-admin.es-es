@@ -136,7 +136,7 @@ Puede instalar un agente de consola directamente desde la consola, desde el mark
 
 == Permisos en la nube
 
-Necesita permisos específicos para crear el agente de consola directamente desde la NetApp Console y otro conjunto de permisos para la instancia del agente de consola en sí.  Si crea el agente de consola en AWS o Azure directamente desde la consola, entonces la consola crea el agente de consola con los permisos que necesita.
+Necesita permisos específicos para crear el agente de consola directamente desde la NetApp Console y otro conjunto de permisos para el agente de consola en sí. Si crea el agente de consola en AWS o Azure directamente desde la consola, entonces la consola crea el agente de consola con los permisos que necesita.
 
 Al utilizar la consola en modo estándar, la forma de proporcionar permisos depende de cómo planea crear el agente de la consola.
 
