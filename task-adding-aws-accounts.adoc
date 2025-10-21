@@ -252,10 +252,6 @@ Reemplazar la suscripción actual del mercado por una nueva suscripción cambia 
 .Antes de empezar
 Debe crear un agente de consola antes de poder configurar una suscripción. link:concept-agents.html#agent-installation["Aprenda a crear un agente de consola"] .
 
-El siguiente vídeo muestra los pasos para suscribirse a NetApp Intelligent Services desde AWS Marketplace:
-
-.Suscríbase a NetApp Intelligent Services desde AWS Marketplace
-video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 .Pasos
 . Seleccione *Administración > Credenciales*.
 . Seleccione *Credenciales de la organización*.

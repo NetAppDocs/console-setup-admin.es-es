@@ -52,18 +52,14 @@ La consola reemplaza la suscripción existente para todas las credenciales de la
 Para todas las demás organizaciones o cuentas, deberá asociar manualmente la suscripción repitiendo estos pasos.
 
 *** Seleccione *Guardar*.
-+
-El siguiente vídeo muestra los pasos para suscribirse desde Google Cloud Marketplace:
-
-+
-.Suscríbete desde Google Cloud Marketplace
-video::373b96de-3691-4d84-b3f3-b05101161638[panopto]
 
 
-.. Una vez completado este proceso, regrese a la página Credenciales en la Consola y seleccione esta nueva suscripción.
+
+
+
+
+. Una vez completado este proceso, regrese a la página Credenciales en la Consola y seleccione esta nueva suscripción.
 +
 image:screenshot_gcp_associate.gif["Una captura de pantalla de la página de asignación de suscripción."]
-
-
 
 

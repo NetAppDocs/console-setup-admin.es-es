@@ -2,10 +2,6 @@
 :allow-uri-read: 
 
 
-El siguiente vídeo muestra los pasos para suscribirse a NetApp Intelligent Services desde AWS Marketplace:
-
-.Suscríbase a NetApp Intelligent Services desde AWS Marketplace
-video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 .Pasos
 . Seleccione *Administración > Credenciales*.
 . Seleccione *Credenciales de la organización*.

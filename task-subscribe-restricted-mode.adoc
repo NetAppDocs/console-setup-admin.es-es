@@ -34,10 +34,6 @@ Debe haber implementado previamente un agente de consola para poder suscribirse 
 ====
 .AWS
 --
-El siguiente vídeo muestra los pasos para suscribirse a NetApp Intelligent Services desde AWS Marketplace:
-
-.Suscríbase a NetApp Intelligent Services desde AWS Marketplace
-video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 .Pasos
 . Seleccione *Administración > Credenciales*.
 . Seleccione *Credenciales de la organización*.
@@ -105,12 +101,6 @@ La consola reemplaza la suscripción existente para todas las credenciales de la
 Para todas las demás organizaciones o cuentas, deberá asociar manualmente la suscripción repitiendo estos pasos.
 
 *** Seleccione *Guardar*.
-+
-El siguiente vídeo muestra los pasos para suscribirse desde Azure Marketplace:
-
-+
-.Suscríbase a NetApp Intelligent Services desde Azure Marketplace
-video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto]
 
 
 
@@ -170,19 +160,15 @@ La consola reemplaza la suscripción existente para todas las credenciales de la
 Para todas las demás organizaciones o cuentas, deberá asociar manualmente la suscripción repitiendo estos pasos.
 
 *** Seleccione *Guardar*.
-+
-El siguiente vídeo muestra los pasos para suscribirse desde Google Cloud Marketplace:
-
-+
-.Suscríbete desde Google Cloud Marketplace
-video::373b96de-3691-4d84-b3f3-b05101161638[panopto]
 
 
-.. Una vez completado este proceso, regrese a la página Credenciales en la Consola y seleccione esta nueva suscripción.
+
+
+
+
+. Una vez completado este proceso, regrese a la página Credenciales en la Consola y seleccione esta nueva suscripción.
 +
 image:screenshot_gcp_associate.gif["Una captura de pantalla de la página de asignación de suscripción."]
-
-
 
 
 

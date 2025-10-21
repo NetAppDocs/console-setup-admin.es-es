@@ -30,12 +30,6 @@ La consola reemplaza la suscripción existente para todas las credenciales de la
 Para todas las demás organizaciones o cuentas, deberá asociar manualmente la suscripción repitiendo estos pasos.
 
 *** Seleccione *Guardar*.
-+
-El siguiente vídeo muestra los pasos para suscribirse desde Azure Marketplace:
-
-+
-.Suscríbase a NetApp Intelligent Services desde Azure Marketplace
-video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto]
 
 
 
