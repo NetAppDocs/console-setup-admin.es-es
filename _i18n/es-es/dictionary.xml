@@ -572,8 +572,6 @@
   <block id="b4b78d037549f1e53319a933fd923727" category="list-text">Después de iniciar sesión, configure la consola:</block>
   <block id="fa4a4ed3171c9645519ee525ed212db9" category="list-text">Especifique la organización de la consola que se asociará con el agente de la consola.</block>
   <block id="d1caa1543690181f63b8c0e0933c0c49" category="paragraph">El modo restringido no es compatible cuando el agente de consola está instalado localmente.</block>
-  <block id="af60e7ca775342cbe207d574ae3a82ef" category="paragraph">El siguiente vídeo muestra los pasos para suscribirse a NetApp Intelligent Services desde AWS Marketplace:</block>
-  <block id="1cfe9a2e660a541826be5b5cc3018fdd" category="video-title">Suscríbase a NetApp Intelligent Services desde AWS Marketplace</block>
   <block id="aaf23e1cf00fee0789e1c392da395cc9" category="list-text">Seleccione el menú de acciones para un conjunto de credenciales asociadas con un agente de consola y luego seleccione *Configurar suscripción*.</block>
   <block id="601c60f4bc1d60fb12bbba2d26b90b33" category="paragraph">Debe seleccionar las credenciales que estén asociadas con un agente de consola.  No se puede asociar una suscripción de Marketplace con credenciales asociadas con la NetApp Console.</block>
   <block id="0d28acbceed906f52a206d0f3fb0add2" category="inline-image-macro">Una captura de pantalla del menú de acciones para un conjunto de credenciales existentes.</block>
@@ -593,8 +591,6 @@
   <block id="7dffa6296286b12f66d638f53340316c" category="list-text">Si se le solicita, inicie sesión en su cuenta de Azure.</block>
   <block id="9dc9a5b2f23fe90a0fd71125f3034dfd" category="list-text">Llene el formulario y seleccione *Suscribirse*.</block>
   <block id="3221538307211e131f96e1a83b1a5235" category="list-text">Una vez completado el proceso de suscripción, seleccione *Configurar cuenta ahora*.</block>
-  <block id="89d8b3b4c08395fc5dbef0d35cb50529" category="paragraph">El siguiente vídeo muestra los pasos para suscribirse desde Azure Marketplace:</block>
-  <block id="930540e35d6a8bd81f5882c46e1f93c2" category="video-title">Suscríbase a NetApp Intelligent Services desde Azure Marketplace</block>
   <block id="ef5d79e3ae5671ca28e5f6e3b02eed27" category="list-text">Para configurar una suscripción existente con las credenciales seleccionadas, seleccione un proyecto y una suscripción de Google Cloud de la lista desplegable y luego seleccione *Configurar*.</block>
   <block id="fff6f5125be05a94543d2e88dbd30b27" category="inline-image-macro">Una captura de pantalla de un proyecto de Google Cloud y una suscripción seleccionada para las credenciales de Google Cloud.</block>
   <block id="cab980518d03aa36afc924b709828a6e" category="paragraph"><block ref="cab980518d03aa36afc924b709828a6e" category="inline-image-macro-rx" type="image"></block></block>
@@ -613,8 +609,6 @@
   <block id="825c72d4114a9a71a355213f6b79c642" category="list-text">Complete los pasos en la página *Asignación de suscripción*:</block>
   <block id="58575503869d282abe104097770af48c" category="inline-link">la página Cloud Volumes ONTAP dentro de la NetApp Console</block>
   <block id="f363e3b5ffcff31a7405fb7c63982e48" category="admonition">Si alguien de su organización ya tiene una suscripción al mercado desde su cuenta de facturación, será redirigido a<block ref="eeda9d490d323c6921491a4ef94ce954" category="inline-link-rx"></block> en cambio.  Si esto no es esperado, comuníquese con su equipo de ventas de NetApp .  Google solo permite una suscripción por cuenta de facturación de Google.</block>
-  <block id="a6b7d96f53186edb463f8f8611f97cd9" category="paragraph">El siguiente vídeo muestra los pasos para suscribirse desde Google Cloud Marketplace:</block>
-  <block id="c9b7d3dfb0a91a99ab5deba597b6741a" category="video-title">Suscríbete desde Google Cloud Marketplace</block>
   <block id="a5a1d94d16067bff86c06d08991b799b" category="list-text">Una vez completado este proceso, regrese a la página Credenciales en la Consola y seleccione esta nueva suscripción.</block>
   <block id="467e5d6bbcd0ea531c8f7285b69e29ee" category="inline-image-macro">Una captura de pantalla de la página de asignación de suscripción.</block>
   <block id="60d2ed6f6e1774535b6e69274800381d" category="paragraph"><block ref="60d2ed6f6e1774535b6e69274800381d" category="inline-image-macro-rx" type="image"></block></block>
@@ -5602,4 +5596,5 @@
   <block id="8a62551759227881974703cf10bfc946" category="paragraph"><block ref="e2790838ef7051b1907224142bc33625" category="inline-link-macro-rx"></block>.</block>
   <block id="446a691d3cf6457cb60610b81794fdbc" category="paragraph">AWS inicia el software con la configuración especificada. El agente de consola se implementa en aproximadamente cinco minutos.</block>
   <block id="118b5697b68c5f4ada51d65dffac2674" category="paragraph">Si utiliza una dirección IP de SKU estándar, la consola utiliza la dirección IP _privada_ del agente de la consola, en lugar de la IP pública. Si la máquina que estás usando para acceder a la consola no tiene acceso a esa dirección IP privada, las acciones desde la consola fallarán.</block>
+  <block id="d1cb423c9810b1ddd65eea821845fff2" category="admonition">Para activar la detección de actividad de usuarios sospechosos, debe tener el rol de administrador de la organización de la consola.</block>
 </blocks>
