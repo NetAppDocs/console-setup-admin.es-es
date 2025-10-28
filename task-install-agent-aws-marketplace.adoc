@@ -177,7 +177,7 @@ Al crear el agente de consola, debe elegir un tipo de instancia EC2 que cumpla c
 
 UPC:: 8 núcleos u 8 vCPU
 RAM:: 32 GB
-Tipo de instancia de AWS EC2:: Un tipo de instancia que cumple con los requisitos de CPU y RAM anteriores.  Recomendamos t3.2xlarge.
+Tipo de instancia de AWS EC2:: Un tipo de instancia que cumple con los requisitos de CPU y RAM.  NetApp recomienda t3.2xlarge.
 
 
 

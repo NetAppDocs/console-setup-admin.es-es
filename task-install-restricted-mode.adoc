@@ -380,7 +380,7 @@ Proporcione a la consola los permisos que configuró previamente.
 
 
 
-== Paso 3: Proporcionar permisos a la NetApp Console
+== Paso 3: Proporcionar permisos al agente de la consola
 
 Si implementó el agente de consola desde Azure Marketplace o si instaló manualmente el software del agente de consola, deberá proporcionar los permisos que configuró previamente.
 

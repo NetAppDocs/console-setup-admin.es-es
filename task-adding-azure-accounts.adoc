@@ -165,7 +165,7 @@ image:screenshot_azure_shell_upload.png["Una captura de pantalla de Azure Cloud 
 +
 [source, azurecli]
 ----
-az role definition create --role-definition Connector_Policy.json
+az role definition create --role-definition agent_Policy.json
 ----
 +
 Ahora debería tener un rol personalizado llamado Operador de consola que puede asignar a la máquina virtual del agente de consola.

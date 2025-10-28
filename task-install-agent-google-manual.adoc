@@ -50,6 +50,12 @@ El agente de consola requiere este espacio en `/var` porque Docker o Podman est�
 
 
 --
+Tipo de máquina de Google Cloud:: Un tipo de instancia que cumple con los requisitos de CPU y RAM.  NetApp recomienda n2-standard-8.
++
+--
+El agente de consola es compatible con Google Cloud en una instancia de máquina virtual con un sistema operativo compatible. https://cloud.google.com/compute/shielded-vm/docs/shielded-vm["Características de las máquinas virtuales protegidas"^]
+
+--
 Hipervisor:: Se requiere un hipervisor alojado o de metal desnudo que esté certificado para ejecutar un sistema operativo compatible.
 [[podman-versions]]Requisitos del sistema operativo y del contenedor:: El agente de consola es compatible con los siguientes sistemas operativos cuando se utiliza la consola en modo estándar o modo restringido.  Se requiere una herramienta de orquestación de contenedores antes de instalar el agente.
 +
@@ -107,22 +113,10 @@ No compatible
 
 |===
 --
-Tipo de máquina de Google Cloud:: Un tipo de instancia que cumple con los requisitos de CPU y RAM anteriores.  Recomendamos n2-standard-8.
+Tipo de máquina de Google Cloud:: Un tipo de instancia que cumple con los requisitos de CPU y RAM.  NetApp recomienda n2-standard-8.
 +
 --
 El agente de consola es compatible con Google Cloud en una instancia de máquina virtual con un sistema operativo compatible. https://cloud.google.com/compute/shielded-vm/docs/shielded-vm["Características de las máquinas virtuales protegidas"^]
-
---
-Espacio en disco en /opt:: Deben estar disponibles 100 GiB de espacio
-+
---
-El agente utiliza `/opt` Para instalar el `/opt/application/netapp` directorio y su contenido.
-
---
-Espacio en disco en /var:: Deben estar disponibles 20 GiB de espacio
-+
---
-El agente de consola requiere este espacio en `/var` porque Docker o Podman están diseñados para crear los contenedores dentro de este directorio.  En concreto, crearán contenedores en el `/var/lib/containers/storage` directorio.  Los montajes externos o enlaces simbólicos no funcionan para este espacio.
 
 --
 

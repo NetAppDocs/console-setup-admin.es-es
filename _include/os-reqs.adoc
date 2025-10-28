@@ -148,7 +148,7 @@ UPC:: 8 núcleos u 8 vCPU
 RAM:: 32 GB
 
 
-Tipo de instancia de AWS EC2:: Un tipo de instancia que cumple con los requisitos de CPU y RAM anteriores.  Recomendamos t3.2xlarge.
+Tipo de instancia de AWS EC2:: Un tipo de instancia que cumple con los requisitos de CPU y RAM.  NetApp recomienda t3.2xlarge.
 
 
 Par de claves:: Cuando cree el agente de consola, deberá seleccionar un par de claves EC2 para usar con la instancia.
@@ -164,10 +164,10 @@ Límite de salto de respuesta PUT al usar IMDSv2:: Si IMDSv2 está habilitado en
 --
 
 
-Tamaño de la máquina virtual de Azure:: Un tipo de instancia que cumple con los requisitos de CPU y RAM anteriores.  Recomendamos Standard_D8s_v3.
+Tamaño de la máquina virtual de Azure:: Un tipo de instancia que cumple con los requisitos de CPU y RAM.  NetApp recomienda Standard_D8s_v3.
 
 
-Tipo de máquina de Google Cloud:: Un tipo de instancia que cumple con los requisitos de CPU y RAM anteriores.  Recomendamos n2-standard-8.
+Tipo de máquina de Google Cloud:: Un tipo de instancia que cumple con los requisitos de CPU y RAM.  NetApp recomienda n2-standard-8.
 +
 --
 El agente de consola es compatible con Google Cloud en una instancia de máquina virtual con un sistema operativo compatible. https://cloud.google.com/compute/shielded-vm/docs/shielded-vm["Características de las máquinas virtuales protegidas"^]

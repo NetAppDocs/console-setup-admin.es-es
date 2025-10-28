@@ -19,24 +19,19 @@ La NetApp Console, el agente de la NetApp Console y los servicios de datos de Ne
 Necesitará configurar el acceso a la red para lo siguiente:
 
 * Computadoras que acceden a la NetApp Console como software como servicio (SaaS)
-* Ubicaciones de red donde implementa agentes de consola que instala localmente o en la nube.
-* Puntos finales adicionales para ciertos servicios de datos de NetApp , incluido Cloud Volumes ONTAP.
+* Agentes de consola que se instalan localmente o en la nube. Agentes de consola.
 
 
 
-NOTE: NetApp ha reducido los puntos finales de red necesarios para la consola y los agentes de consola, lo que mejora la seguridad y simplifica la implementación.  Es importante destacar que todas las implementaciones anteriores a la versión 4.0.0 continúan siendo totalmente compatibles.  Si bien los puntos finales anteriores siguen estando disponibles para los agentes existentes, NetApp recomienda encarecidamente actualizar las reglas de firewall para los puntos finales actuales después de confirmar que las actualizaciones de los agentes fueron exitosas.link:reference-networking-saas-console-previous.html["Aprenda cómo actualizar su lista de puntos finales."]
+NOTE: Con 4.0.0, NetApp ha reducido los puntos finales de red necesarios para la consola y los agentes de consola, lo que mejora la seguridad y simplifica la implementación. Es importante destacar que todas las implementaciones anteriores a la versión 4.0.0 continúan siendo totalmente compatibles.  Si bien los puntos finales anteriores siguen estando disponibles para los agentes existentes, NetApp recomienda encarecidamente actualizar las reglas de firewall para los puntos finales actuales después de confirmar que las actualizaciones de los agentes fueron exitosas.link:reference-networking-saas-console-previous.html["Aprenda cómo actualizar su lista de puntos finales."]
 
 
 
-== Puntos finales contactados por la NetApp Console
+== Puntos finales contactados por la NetApp Console y los agentes de la consola
 
-Cada computadora que acceda a la NetApp Console debe tener conexiones a los puntos finales que se enumeran a continuación.
+Cada agente que implemente y cada computadora que acceda a la NetApp Console deben tener conexiones a los puntos finales que se enumeran a continuación.
 
-El sistema contacta estos puntos finales en dos escenarios:
-
-* Desde una computadora accediendo al https://console.netapp.com["NetApp Console"^] como software como servicio (SaaS).
-* Desde una computadora que accede directamente a un host del agente de la consola, ya sea para iniciar sesión y configurarlo o para acceder a la consola desde el host del agente.
-
+Los agentes de consola que están implementados en su proveedor de nube necesitan acceso a los puntos finales correspondientes a ese proveedor de nube.
 
 [cols="2*"]
 |===
@@ -70,23 +65,20 @@ Aunque los puntos finales anteriores aún son compatibles, NetApp recomienda act
 |===
 
 
-== Preparar la red para el agente de consola
+== Los puntos finales del proveedor de la nube se comunicaron con el agente de la consola
 
-Instala el agente de la consola localmente o en la nube, y este se comunica con los puntos finales para completar las acciones iniciadas por la consola.
+Los agentes de consola deben tener acceso a puntos finales adicionales si están implementados en su proveedor de nube.
 
-Los agentes de consola deben tener acceso a los mismos puntos finales que la NetApp Console, además de puntos finales adicionales según dónde instale el agente.
-
-Configure el acceso al punto final de la red antes de instalar el agente de la consola.
+Configure el acceso al punto final de la red del proveedor de nube antes de instalar el agente de la consola.
 
 * link:task-install-agent-aws-console.html#networking-aws-agent["Configurar el acceso a la red de AWS para un agente de consola"]
 * link:task-install-agent-azure-console.html#networking-azure-agent["Configurar el acceso a la red de Azure para un agente de consola"]
 * link:task-install-agent-google-console-gcloud.html#networking-gcp-agent["Configurar el acceso a la red de Google Cloud para un agente de la consola"]
-* link:task-install-agent-on-prem.html#network-access-agent["Configurar el acceso a la red local para un agente de consola"]
 
 
 
 
-== Preparar la red para Cloud Volumes ONTAP
+== Puntos finales de servicios de datos contactados por el agente de la consola
 
 Algunos servicios de datos de NetApp , así como Cloud Volumes ONTAP, requieren que el agente tenga acceso a Internet saliente adicional.
 
@@ -98,5 +90,3 @@ Algunos servicios de datos de NetApp , así como Cloud Volumes ONTAP, requieren 
 * link:https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/reference-networking-azure.html["Puntos de conexión para Cloud Volumes ONTAP en Azure"]
 * link:https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/reference-networking-gcp.html#outbound-internet-access["Puntos finales para Cloud Volumes ONTAP en Google Cloud"]
 
-
-https://docs.netapp.com/us-en/data-services-family/["Consulte la documentación de los servicios de datos de NetApp correspondientes."^]

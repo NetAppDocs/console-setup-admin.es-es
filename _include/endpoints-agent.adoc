@@ -46,6 +46,46 @@ Los puntos finales enumerados a continuación son todas entradas CNAME.
 
 | \ https://api.bluexp.netapp.com \ https://netapp-cloud-account.auth0.com \ https://netapp-cloud-account.us.auth0.com \ https://console.netapp.com \ https://components.console.bluexp.netapp.com \ https://cdn.auth0.com | Para proporcionar funciones y servicios dentro de la NetApp Console.
 
+[cols="2*"]
+|===
+| Puntos finales | Objetivo 
+
+
+ a| 
+\ https://support.netapp.com \ https://mysupport.netapp.com
+ a| 
+Para obtener información de licencias y enviar mensajes de AutoSupport al soporte de NetApp .
+
+
+
+ a| 
+\https://\*.api.bluexp.netapp.com \ https://api.bluexp.netapp.com \https://*.cloudmanager.cloud.netapp.com \ https://cloudmanager.cloud.netapp.com \ https://netapp-cloud-account.auth0.com \ https://netapp-cloud-account.us.auth0.com
+| Proporcionar funciones y servicios dentro de la NetApp Console. 
+
+
+ a| 
+Elija entre dos conjuntos de puntos finales:
+
+* Opción 1 (recomendada)
++
+\ https://bluexpinfraprod.eastus2.data.azurecr.io \ https://bluexpinfraprod.azurecr.io
+
+* Opción 2
++
+\https://*.blob.core.windows.net\ https://cloudmanagerinfraprod.azurecr.io
+
+
+ a| 
+Para obtener imágenes para las actualizaciones del agente de consola.
+
+NetApp recomienda permitir los puntos finales de la Opción 1 en su firewall, ya que son más seguros, y no permitir los puntos finales de la Opción 2, a menos que esté usando Ransomware Resilience o Backup and Recovery.  Tenga en cuenta lo siguiente acerca de estos puntos finales:
+
+* Los puntos finales de la opción 1 son compatibles con 3.9.47 y versiones posteriores.  Las versiones anteriores a 3.9.47 no admiten compatibilidad con versiones anteriores.
+* El agente de consola inicia primero el contacto con los puntos finales en la opción 2.  Si esos puntos finales no son accesibles, se contacta automáticamente con los puntos finales de la opción 1.
+* Si utiliza el agente de consola con NetApp Backup and Recovery o Ransomware Resilience, el sistema no admite puntos finales de la Opción 1.  Permitir puntos finales de la Opción 2 y no permitir la Opción 1.
+
+
+|===
 a| \ https://bluexpinfraprod.eastus2.data.azurecr.io \ https://bluexpinfraprod.azurecr.io a| Para obtener imágenes para las actualizaciones del agente de consola.
 
 * Cuando se implementa un nuevo agente, la verificación de validación prueba la conectividad con los puntos finales actuales. Si utilizaslink:reference-networking-saas-console-previous.html["puntos finales anteriores"] , la comprobación de validación falla. Para evitar este error, omita la comprobación de validación.
@@ -80,3 +120,56 @@ a| Si el agente de la consola está en una región comercial o soberana, puede e
 
 
 | Para obtener imágenes para las actualizaciones del agente de consola cuando el agente de consola está instalado en una región comercial o soberana.
+
+[cols="3*"]
+|===
+| *Puntos finales anteriores* | *Puntos finales para 4.0.0 y superiores* | *Objetivo* 
+
+
+ a| 
+* \ https://support.netapp.com
+* \ https://mysupport.netapp.com
+
+ a| 
+* \ https://mysupport.netapp.com
+* \ https://signin.b2c.netapp.com
+* \ https://support.netapp.com
+
+ a| 
+Para obtener licencias y comunicarse con el soporte técnico de NetApp .
+
+
+
+ a| 
+* \https://*.api.bluexp.netapp.com
+* \ https://api.bluexp.netapp.com
+* \https://*.cloudmanager.cloud.netapp.com
+* \ https://cloudmanager.cloud.netapp.com
+* \ https://netapp-cloud-account.auth0.com
+* \ https://netapp-cloud-account.us.auth0.com
+* \ https://console.bluexp.netapp.com
+* \https://*.console.bluexp.netapp.com
+
+ a| 
+* \ https://api.bluexp.netapp.com
+* \ https://netapp-cloud-account.auth0.com
+* \ https://netapp-cloud-account.us.auth0.com
+* \ https://console.netapp.com
+* \ https://components.console.bluexp.netapp.com
+* \ https://cdn.auth0.com
+
+ a| 
+Para operaciones diarias.
+
+
+
+ a| 
+* \https://*.blob.core.windows.net
+* \ https://cloudmanagerinfraprod.azurecr.io
+
+ a| 
+* \ https://bluexpinfraprod.eastus2.data.azurecr.io
+* \ https://bluexpinfraprod.azurecr.io
+
+| Para obtener imágenes para las actualizaciones del agente de consola. 
+|===

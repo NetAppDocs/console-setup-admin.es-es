@@ -50,6 +50,7 @@ El agente de consola requiere este espacio en `/var` porque Docker o Podman est�
 
 
 --
+Tipo de instancia de AWS EC2:: Un tipo de instancia que cumple con los requisitos de CPU y RAM.  NetApp recomienda t3.2xlarge.
 Hipervisor:: Se requiere un hipervisor alojado o de metal desnudo que esté certificado para ejecutar un sistema operativo compatible.
 [[podman-versions]]Requisitos del sistema operativo y del contenedor:: El agente de consola es compatible con los siguientes sistemas operativos cuando se utiliza la consola en modo estándar o modo restringido.  Se requiere una herramienta de orquestación de contenedores antes de instalar el agente.
 +
@@ -107,7 +108,6 @@ No compatible
 
 |===
 --
-Tipo de instancia de AWS EC2:: Un tipo de instancia que cumple con los requisitos de CPU y RAM anteriores.  Recomendamos t3.2xlarge.
 Par de claves:: Cuando cree el agente de consola, deberá seleccionar un par de claves EC2 para usar con la instancia.
 Límite de salto de respuesta PUT al usar IMDSv2:: Si IMDSv2 está habilitado en la instancia EC2 (esta es la configuración predeterminada para las nuevas instancias EC2), debe cambiar el límite de saltos de respuesta PUT en la instancia a 3.  Si no cambia el límite en la instancia EC2, recibirá un error de inicialización de la interfaz de usuario cuando intente configurar el agente.
 +
@@ -115,18 +115,6 @@ Límite de salto de respuesta PUT al usar IMDSv2:: Si IMDSv2 está habilitado en
 * link:task-require-imdsv2.html["Requerir el uso de IMDSv2 en instancias de Amazon EC2"]
 * https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-IMDS-existing-instances.html#modify-PUT-response-hop-limit["Documentación de AWS: Cambiar el límite de saltos de respuesta PUT"^]
 
-
---
-Espacio en disco en /opt:: Deben estar disponibles 100 GiB de espacio
-+
---
-El agente utiliza `/opt` Para instalar el `/opt/application/netapp` directorio y su contenido.
-
---
-Espacio en disco en /var:: Deben estar disponibles 20 GiB de espacio
-+
---
-El agente de consola requiere este espacio en `/var` porque Docker o Podman están diseñados para crear los contenedores dentro de este directorio.  En concreto, crearán contenedores en el `/var/lib/containers/storage` directorio.  Los montajes externos o enlaces simbólicos no funcionan para este espacio.
 
 --
 
