@@ -123,7 +123,7 @@ a| Si el agente de la consola está en una región comercial o soberana, puede e
 
 [cols="3*"]
 |===
-| *Puntos finales anteriores* | *Puntos finales para 4.0.0 y superiores* | *Objetivo* 
+| *Puntos finales para la versión 3.9.55 y anteriores* | *Puntos finales para 4.0.0 y superiores* | *Objetivo* 
 
 
  a| 

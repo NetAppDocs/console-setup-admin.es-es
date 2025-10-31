@@ -1012,7 +1012,6 @@
   <block id="e95d0df05962f4456b8b569c54b396c6" category="paragraph">La versión 4.0.0 está disponible para el modo estándar y el modo restringido.</block>
   <block id="5412276bd0dd11677309c5862e9a5a84" category="section-title">Consolidación y reducción de los puntos finales de red necesarios</block>
   <block id="d0994d4e248da3f28077f3de0aa07b31" category="paragraph">NetApp ha reducido los puntos finales de red necesarios para la consola y los agentes de consola, lo que mejora la seguridad y simplifica la implementación.  Es importante destacar que todas las implementaciones anteriores a la versión 4.0.0 continúan siendo totalmente compatibles.  Si bien los puntos finales anteriores siguen estando disponibles para los agentes existentes, NetApp recomienda encarecidamente actualizar las reglas de firewall para los puntos finales actuales después de confirmar que las actualizaciones de los agentes fueron exitosas.</block>
-  <block id="cca12c7916c4a96b099460567ed56f7b" category="list-text"><block ref="8aad0fd6d4c3bc8fa0ee8715b00de090" category="inline-link-macro-rx"></block> .</block>
   <block id="8880ac717c8ca7c5aacda1dbf0aa76b4" category="inline-link-macro">Obtenga más información sobre los puntos finales necesarios.</block>
   <block id="a65e1c365f170de138a296cb93571b83" category="list-text"><block ref="a65e1c365f170de138a296cb93571b83" category="inline-link-macro-rx"></block></block>
   <block id="dcd681e02807cfe12b61283485a64b57" category="section-title">Compatibilidad con la implementación de agentes de consola en VCenter</block>
@@ -5547,7 +5546,6 @@
   <block id="446a691d3cf6457cb60610b81794fdbc" category="paragraph">AWS inicia el software con la configuración especificada. El agente de consola se implementa en aproximadamente cinco minutos.</block>
   <block id="118b5697b68c5f4ada51d65dffac2674" category="paragraph">Si utiliza una dirección IP de SKU estándar, la consola utiliza la dirección IP _privada_ del agente de la consola, en lugar de la IP pública. Si la máquina que estás usando para acceder a la consola no tiene acceso a esa dirección IP privada, las acciones desde la consola fallarán.</block>
   <block id="d1cb423c9810b1ddd65eea821845fff2" category="admonition">Para activar la detección de actividad de usuarios sospechosos, debe tener el rol de administrador de la organización de la consola.</block>
-  <block id="148a5defddc98b9d994f39780f74e348" category="cell">*Puntos finales anteriores*</block>
   <block id="c563d78603e1e09616c6c043a19061ba" category="cell">*Puntos finales para 4.0.0 y superiores*</block>
   <block id="1463a95efc33a52765f03569e1e39a10" category="cell">*Objetivo*</block>
   <block id="3b02fb538695ecfedde92943f6fd865e" category="paragraph">Para obtener licencias y comunicarse con el soporte técnico de NetApp .</block>
@@ -5599,4 +5597,7 @@
   <block id="a64b4879b658ef7dd1a5bf863f66e510" category="section-title">Los puntos finales del proveedor de la nube se comunicaron con el agente de la consola</block>
   <block id="334af2b72c201a4f9aea3650a21ea8ec" category="paragraph">Configure el acceso al punto final de la red del proveedor de nube antes de instalar el agente de la consola.</block>
   <block id="9ccb545b97d1ad0ce41d2577f6ae2e82" category="section-title">Paso 3: Proporcionar permisos al agente de la consola</block>
+  <block id="9c4179cb78e78f8bd52b0a9525df84e3" category="cell">*Puntos finales para la versión 3.9.55 y anteriores*</block>
+  <block id="af1ce09274091f662d34169f09b1482e" category="inline-link-macro">Aprenda cómo actualizar su lista de puntos de conexión y vea una comparación.</block>
+  <block id="87bf0287482e9096c75805420a81b7ea" category="list-text"><block ref="eaf36d8f2aa9f00c9dd600ce08237a22" category="inline-link-macro-rx"></block>.</block>
 </blocks>

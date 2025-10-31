@@ -152,7 +152,7 @@ La versión 4.0.0 está disponible para el modo estándar y el modo restringido.
 
 NetApp ha reducido los puntos finales de red necesarios para la consola y los agentes de consola, lo que mejora la seguridad y simplifica la implementación.  Es importante destacar que todas las implementaciones anteriores a la versión 4.0.0 continúan siendo totalmente compatibles.  Si bien los puntos finales anteriores siguen estando disponibles para los agentes existentes, NetApp recomienda encarecidamente actualizar las reglas de firewall para los puntos finales actuales después de confirmar que las actualizaciones de los agentes fueron exitosas.
 
-* link:https://docs.netapp.com/us-en/console-setup-admin/reference-networking-saas-console-previous.html#update-endpoint-list["Aprenda a actualizar su lista de puntos finales"] .
+* link:https://docs.netapp.com/us-en/console-setup-admin/reference-networking-saas-console-previous.html#update-endpoint-list["Aprenda cómo actualizar su lista de puntos de conexión y vea una comparación."].
 * link:https://docs.netapp.com/us-en/console-setup-admin/reference-networking-saas-console.html["Obtenga más información sobre los puntos finales necesarios."]
 
 
