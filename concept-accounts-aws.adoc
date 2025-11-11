@@ -131,7 +131,7 @@ No, no es posible mover los recursos de AWS asociados con su sistema Cloud Volum
 
 === ¿Cómo funcionan las credenciales para las implementaciones del mercado y las implementaciones locales?
 
-Las secciones anteriores describen el método de implementación recomendado para el agente de la consola, que es desde la consola.  También puede implementar un agente en AWS desde AWS Marketplace y puede instalar manualmente el software del agente de consola en su propio host Linux.
+Las secciones anteriores describen el método de implementación recomendado para el agente de la consola, que es desde la consola. También puede implementar un agente en AWS desde AWS Marketplace y puede instalar manualmente el software del agente de consola en su propio host Linux o en su VCenter.
 
 Si utiliza el Marketplace, los permisos se proporcionan de la misma manera.  Solo necesita crear y configurar manualmente el rol de IAM y luego proporcionar permisos para cualquier cuenta adicional.
 
