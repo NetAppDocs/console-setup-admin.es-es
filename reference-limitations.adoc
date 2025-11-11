@@ -36,7 +36,7 @@ Ver artículo de la base de conocimientoslink:https://kb.netapp.com/Advice_and_T
 
 === No se admite el descifrado SSL
 
-La consola no admite configuraciones de firewall que tengan habilitado el descifrado SSL.  Si el descifrado SSL está habilitado, aparecen mensajes de error en la consola y la instancia del agente se muestra como inactiva.
+La consola no admite configuraciones de firewall que tengan habilitado el descifrado SSL. Si el descifrado SSL está habilitado, aparecen mensajes de error en la consola y la instancia del agente se muestra como *Desconectada*.
 
 Para mayor seguridad, tienes la opción delink:task-installing-https-cert.html["Instalar un certificado HTTPS firmado por una autoridad de certificación (CA)"] .
 
@@ -58,4 +58,4 @@ El agente no es compatible con una máquina virtual compartida con otras aplicac
 
 === Agentes y extensiones de terceros
 
-Los agentes de terceros o las extensiones de VM no son compatibles con la VM del agente.
+Los agentes de terceros o las extensiones de máquina virtual no son compatibles con la máquina virtual del agente.

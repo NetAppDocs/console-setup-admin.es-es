@@ -39,7 +39,7 @@ _silent_ ejecuta el script sin solicitar confirmación.
 
 == Eliminar agentes de la consola
 
-Si un agente de consola está inactivo, puedes eliminarlo de la lista de agentes.  Puede hacer esto si elimina la máquina virtual del agente o si desinstala el software del agente.
+Si ha eliminado una máquina virtual de agente o ha desinstalado el agente, debe eliminarlo de la lista de agentes en la consola. Después de eliminar una máquina virtual de agente o desinstalar el software del agente, este muestra el estado *Desconectado* en la consola.
 
 Tenga en cuenta lo siguiente sobre la eliminación de un agente de consola:
 
@@ -49,6 +49,6 @@ Tenga en cuenta lo siguiente sobre la eliminación de un agente de consola:
 
 .Pasos
 . Seleccione *Administración > Agentes*.
-. En la página *Descripción general*, seleccione el menú de acciones para un agente inactivo y seleccione *Eliminar agente*.
+. En la página *Resumen*, seleccione el menú de acciones para un agente desconectado y seleccione *Eliminar agente*.
 . Ingrese el nombre del agente a confirmar y luego seleccione *Eliminar*.
 

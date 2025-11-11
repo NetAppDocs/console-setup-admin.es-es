@@ -24,7 +24,7 @@ Los siguientes detalles de configuración se aplican si implementó un agente de
 
 
 
-=== Detalles AWS
+=== Detalles de la máquina virtual del agente de consola para AWS
 
 Si implementó un agente de consola desde la consola o desde el mercado del proveedor de la nube, tenga en cuenta lo siguiente:
 
@@ -40,7 +40,7 @@ El sistema operativo no incluye una GUI.  Debe utilizar una terminal para accede
 
 
 
-=== Detalles de Azure
+=== Detalles de la máquina virtual del agente de consola para Azure
 
 Si implementó un agente de consola desde la consola o desde el mercado del proveedor de la nube, tenga en cuenta lo siguiente:
 
@@ -55,7 +55,7 @@ El sistema operativo no incluye una GUI.  Debe utilizar una terminal para accede
 
 
 
-=== Detalles de Google Cloud
+=== Detalles de la máquina virtual del agente de consola para Google Cloud
 
 Si implementó un agente de consola desde la consola, tenga en cuenta lo siguiente:
 
@@ -74,7 +74,7 @@ El sistema operativo no incluye una GUI.  Debe utilizar una terminal para accede
 
 La carpeta de instalación del agente se encuentra en la siguiente ubicación:
 
-/opt/application/netapp/cloudmanager
+`/opt/application/netapp/cloudmanager`
 
 
 
@@ -82,12 +82,12 @@ La carpeta de instalación del agente se encuentra en la siguiente ubicación:
 
 Los archivos de registro se encuentran en las siguientes carpetas:
 
-* /opt/application/netapp/cloudmanager/log o
-* /opt/application/netapp/service-manager-2/logs (a partir de las nuevas instalaciones de 3.9.23)
+* `/opt/application/netapp/cloudmanager/log` o
+* `/opt/application/netapp/service-manager-2/logs` (a partir de las nuevas instalaciones 3.9.23)
 +
 Los registros de estas carpetas proporcionan detalles sobre el agente de la consola.
 
-* /opt/application/netapp/cloudmanager/docker_occm/data/log
+* `/opt/application/netapp/cloudmanager/docker_occm/data/log`
 +
 Los registros de esta carpeta proporcionan detalles sobre los servicios en la nube y el servicio de consola que se ejecuta en el agente de consola.
 
@@ -122,11 +122,11 @@ La siguiente configuración se aplica si instaló manualmente el agente de conso
 
 * La carpeta de instalación del agente se encuentra en la siguiente ubicación:
 +
-/opt/application/netapp/ds
+`/opt/application/netapp/ds`
 
 * Los archivos de registro se encuentran en las siguientes carpetas:
 +
-/var/lib/docker/volumes/ds_occmdata/_data/log
+`/var/lib/docker/volumes/ds_occmdata/_data/log`
 
 +
 Los registros de esta carpeta proporcionan detalles sobre el agente de la consola y las imágenes de Docker.

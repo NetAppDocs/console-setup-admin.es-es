@@ -127,7 +127,7 @@ Si la configuración del proxy de su red cambia, su agente podría perder el acc
 
 == Habilitar el tráfico directo de API
 
-Si configuró un agente de consola para usar un servidor proxy, puede habilitar el tráfico de API directo en el agente de consola para enviar llamadas de API directamente a los servicios del proveedor de nube sin pasar por el proxy. Los agentes que se ejecutan en AWS, Azure o Google Cloud admiten esta opción.
+Si configuró un agente de consola para usar un servidor proxy, puede habilitar el tráfico de API directo en el agente de consola para enviar llamadas de API directamente a los servicios del proveedor de la nube sin pasar por el proxy. Los agentes que se ejecutan en AWS, Azure o Google Cloud admiten esta opción.
 
 Si deshabilita Azure Private Links con Cloud Volumes ONTAP y usa puntos de conexión de servicio, habilite el tráfico de API directo.  De lo contrario, el tráfico no se enrutará correctamente.
 

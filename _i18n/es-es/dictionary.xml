@@ -361,8 +361,6 @@
   <block id="e115a77efdd4b6a7256261431461cb96" category="list-text">Si la contraseña incluye alguno de los siguientes caracteres especiales, debe escapar ese carácter especial anteponiéndolo con una barra invertida: &amp; o !</block>
   <block id="506c2c0c7f5b70af3df68c45c46f45a7" category="paragraph">Por ejemplo:</block>
   <block id="9a8e93f292200e4d86cfd716262b53cc" category="paragraph">\http://bxpproxyuser:netapp1\!@dirección:3128</block>
-  <block id="5ee4651c5c9cc230b5562d22f6bee0d6" category="paragraph"><block ref="a2bb8d2428da5c2a723c47bd3b78308d" prefix="" category="inline-code"></block>Especifica un certificado firmado por CA para usar para el acceso HTTPS entre el agente de consola y el servidor proxy.  Este parámetro es necesario para servidores proxy HTTPS, servidores proxy interceptores y servidores proxy transparentes.</block>
-  <block id="546e142a2330599c0ba92c6922dd0480" category="paragraph">+ Aquí hay un ejemplo de configuración de un servidor proxy transparente.  Cuando configura un proxy transparente, no necesita definir el servidor proxy.  Solo debe agregar un certificado firmado por una CA a su host del agente de consola:</block>
   <block id="4d286ab7c41699ac1c0222a6a25c8ee6" category="list-text">Si utilizó Podman, necesitará ajustar el puerto aardvark-dns.</block>
   <block id="e8dcd2e9fa3c43b9aef9e395e7e2b4c9" category="list-text">SSH a la máquina virtual del agente de consola.</block>
   <block id="dbd4c3db8125866be9bb5a796f445d43" category="list-text">Abra el archivo podman _/usr/share/containers/containers.conf_ y modifique el puerto elegido para el servicio DNS de Aardvark.  Por ejemplo, cámbielo a 54.</block>
@@ -536,7 +534,6 @@
   <block id="d85624226a34d354eb24bd9f58803ee7" category="list-text">Habilite e inicie el servicio podman.socket.</block>
   <block id="c258dc586685c07a851bfdce98251de9" category="list-text">Instalar python3.</block>
   <block id="97c0d440ee76e86ece38ee9da4a462cb" category="list-text">Instale el paquete del repositorio EPEL si aún no está disponible en su sistema.</block>
-  <block id="07a2769ace9f16b5207f20d01a394569" category="list-text">Si utiliza Red Hat Enterprise:</block>
   <block id="93052470e7c6a20358c8d89c161e4880" category="paragraph">Este paso es necesario porque podman-compose está disponible en el repositorio de Paquetes adicionales para Enterprise Linux (EPEL).</block>
   <block id="6f3a42415c589950b9ae4d3fe1f87dc7" category="list-text">Instalar el paquete podman-compose 1.0.6.</block>
   <block id="ec7c87651a5ede2a98ad4091fe48b517" category="admonition">Usando el<block ref="02c7499137a5d8d10292d68634eb22a0" prefix=" " category="inline-code"></block> El comando cumple con el requisito de agregar podman-compose a la variable de entorno PATH.  El comando de instalación agrega podman-compose a /usr/bin, que ya está incluido en el<block ref="c9bac30d1d0554c0790285219e5ad518" prefix=" " category="inline-code"></block> opción en el host.</block>
@@ -1763,12 +1760,10 @@
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">Los archivos de aviso proporcionan información sobre derechos de autor y licencias de terceros utilizados en el software de NetApp .</block>
   <block id="50dbf63cd0ab8144a287e5cd6a0f1de2" category="inline-link-macro">Aviso para la NetApp Console</block>
   <block id="2fdb3c88062031f1ec65eef60690cee3" category="paragraph"><block ref="2fdb3c88062031f1ec65eef60690cee3" category="inline-link-macro-rx"></block></block>
-  <block id="dee61e6ddd6fefdf0afebb3453a2f2ae" category="summary">Obtenga más información sobre el agente de consola antes de implementarlo.</block>
   <block id="40ee256581d30fba4f74b0c1e02c7709" category="doc">Configuración predeterminada para el agente de consola</block>
   <block id="7cfc350cfd83ea139353035474462a76" category="paragraph">Obtenga más información sobre la configuración del agente de consola antes de implementarlo.</block>
   <block id="87047facc49847cec237f6d055d56b31" category="section-title">Configuración predeterminada con acceso a Internet</block>
   <block id="ee67bef980f9156a14c8bfbb2de4f437" category="paragraph">Los siguientes detalles de configuración se aplican si implementó un agente de consola desde la NetApp Console, desde el mercado de su proveedor de nube o si instaló manualmente un agente de consola en un host Linux local que tiene acceso a Internet.</block>
-  <block id="5eeca886fa07462826a9ea747483f528" category="section-title">Detalles AWS</block>
   <block id="716a3a2cd4a75b8f8b3cee509c10b300" category="paragraph">Si implementó un agente de consola desde la consola o desde el mercado del proveedor de la nube, tenga en cuenta lo siguiente:</block>
   <block id="33ff271280dc3e0c2c15bf39aeefdeb9" category="list-text">El tipo de instancia EC2 es t3.2xlarge.</block>
   <block id="7c42c6e2f8295dada12f50f825327ddf" category="list-text">El sistema operativo de la imagen es Ubuntu 22.04 LTS.</block>
@@ -1776,22 +1771,15 @@
   <block id="688aea6136f160e02c8d5bbec6894343" category="list-text">La instalación incluye Docker Engine, que es la herramienta de orquestación de contenedores necesaria.</block>
   <block id="8061654f55b31a1347dadde5417b3bbe" category="list-text">El nombre de usuario para la instancia EC2 Linux es ubuntu (para los agentes creados antes de mayo de 2023, el nombre de usuario es ec2-user).</block>
   <block id="efabd80ebdd217a47d9be936e5f0b8aa" category="list-text">El disco del sistema predeterminado es un disco gp2 de 100 GiB.</block>
-  <block id="b8c4a5bd8ed4eb470e80955a542dd4bf" category="section-title">Detalles de Azure</block>
   <block id="f637fe372218bb6ee39fd481301dc99f" category="list-text">El tipo de VM es Standard_D8s_v3.</block>
   <block id="474a089504b47eb34ee00ee62f121108" category="list-text">El disco del sistema predeterminado es un disco SSD premium de 100 GiB.</block>
-  <block id="f246cf5f23e765f0a7ebed4a6c1d923a" category="section-title">Detalles de Google Cloud</block>
   <block id="691706b9c4449b81a486ce65a12e3b41" category="paragraph">Si implementó un agente de consola desde la consola, tenga en cuenta lo siguiente:</block>
   <block id="d8c41b98cc9656d72fb99f79ff2425ba" category="list-text">La instancia de VM es n2-standard-8.</block>
   <block id="6cb5fb9b61376b8ee3092321445fdea4" category="list-text">El disco del sistema predeterminado es un disco persistente SSD de 100 GiB.</block>
   <block id="bc4aa6323016172de14a6835883b27c7" category="section-title">Carpeta de instalación</block>
-  <block id="aca8e180ed4d4b3e9c008a4c9e1a9221" category="paragraph">La carpeta de instalación del agente se encuentra en la siguiente ubicación:</block>
-  <block id="1290fecb35d9c7e8b4f1faf1f9b5c7f3" category="paragraph">/opt/application/netapp/cloudmanager</block>
   <block id="81fae4ea40cc442afa43dab4cc001004" category="section-title">Archivos de registro</block>
   <block id="af22c16aeca9d8bc2515764efff73455" category="paragraph">Los archivos de registro se encuentran en las siguientes carpetas:</block>
-  <block id="ff6e28c8eaa73c74f132f30b8a504071" category="list-text">/opt/application/netapp/cloudmanager/log o</block>
-  <block id="f41aa0898b72dcd91cd63bd3d33d4258" category="list-text">/opt/application/netapp/service-manager-2/logs (a partir de las nuevas instalaciones de 3.9.23)</block>
   <block id="e414095fd4f025b97d685f64e5c1c7af" category="paragraph">Los registros de estas carpetas proporcionan detalles sobre el agente de la consola.</block>
-  <block id="b7fb1cb20b803995e802d3588f424efa" category="list-text">/opt/application/netapp/cloudmanager/docker_occm/data/log</block>
   <block id="d1a35865336c23dad37aac219ce9f1eb" category="paragraph">Los registros de esta carpeta proporcionan detalles sobre los servicios en la nube y el servicio de consola que se ejecuta en el agente de consola.</block>
   <block id="aa72bf3f5aa3c9bc5daf446b3f9fdc56" category="section-title">Servicio de agente de consola</block>
   <block id="f7a5a4e55ec5894123bb84b3d77ad464" category="list-text">El servicio del agente de consola se llama occm.</block>
@@ -1803,8 +1791,6 @@
   <block id="953a0ee991cb0f7fd649dff3efa51614" category="section-title">Configuración predeterminada sin acceso a Internet</block>
   <block id="23b1e0717b9b8b52e9ae0f29f7fc4241" category="inline-link-macro">Obtenga más información sobre esta opción de instalación</block>
   <block id="1422f7c6b7eca106db4cb823ab49f18a" category="paragraph">La siguiente configuración se aplica si instaló manualmente el agente de consola en un host Linux local que no tiene acceso a Internet. <block ref="571c6581ab5c68db9f7f7beaff42a50d" category="inline-link-macro-rx"></block> .</block>
-  <block id="7068d488f38430eabf6c395a593e8e5a" category="paragraph">/opt/application/netapp/ds</block>
-  <block id="a15b1a7954f2d926c5ee7f261a97b4d2" category="paragraph">/var/lib/docker/volumes/ds_occmdata/_data/log</block>
   <block id="76a8602c4b7b9c5cc69c5fd8bd4bd2e0" category="paragraph">Los registros de esta carpeta proporcionan detalles sobre el agente de la consola y las imágenes de Docker.</block>
   <block id="590b2ea5933ad8ead3c9a15a914f1a9c" category="list-text">Todos los servicios se ejecutan dentro de contenedores Docker</block>
   <block id="f76b4c57c56377745199382d59cdeed3" category="paragraph">Los servicios dependen del servicio de tiempo de ejecución de Docker que se esté ejecutando</block>
@@ -2164,7 +2150,6 @@
   <block id="0b4f61b04d569052cea1ace94b4690a4" category="cell"><block ref="0b4f61b04d569052cea1ace94b4690a4" category="inline-link-macro-rx"></block></block>
   <block id="b30f7fc42ef226f0249c91a8c5e5e7da" category="cell">Ver sólo información.</block>
   <block id="1393a4279651a3334e20f39925a139f5" category="cell">Visor de clasificación</block>
-  <block id="f373bf1ea256b4e774a8cdeea678371c" category="cell">Permite a los usuarios ver los resultados del análisis de NetApp Data Classification .  Los usuarios con este rol pueden ver información de cumplimiento y generar informes para los recursos a los que tienen permiso de acceso.  Estos usuarios no pueden habilitar ni deshabilitar el escaneo de volúmenes, depósitos o esquemas de bases de datos.  La clasificación no tiene rol de espectador.</block>
   <block id="c10ec7420a89528925b58b685b8759d7" category="cell"><block ref="c10ec7420a89528925b58b685b8759d7" category="inline-link-macro-rx"></block></block>
   <block id="2b0e5e5222c0782da1fb9f13296d9728" category="cell">Administre acciones en las pestañas Proteger, Alertas, Recuperar, Configuración e Informes de NetApp Ransomware Resilience.</block>
   <block id="afa8b9420190b4b20d1eb84b7e53d1d6" category="cell"><block ref="afa8b9420190b4b20d1eb84b7e53d1d6" category="inline-link-macro-rx"></block></block>
@@ -2253,7 +2238,6 @@
   <block id="3908aae7c317936ea6bb5e64e5b1e19b" category="inline-link-macro">Conflicto de IP del agente con la red existente</block>
   <block id="e0f2ecf720846ace68fd17b91a2fe18b" category="paragraph">Ver artículo de la base de conocimientos<block ref="7fdfcc240d5e57de761ad01a7e9f5a42" category="inline-link-macro-rx"></block> para obtener instrucciones sobre cómo cambiar la dirección IP de las interfaces del agente.</block>
   <block id="1bc21092e961975ea4123f4414693f69" category="section-title">No se admite el descifrado SSL</block>
-  <block id="312404bd3f092c4ae2981261f9be883d" category="paragraph">La consola no admite configuraciones de firewall que tengan habilitado el descifrado SSL.  Si el descifrado SSL está habilitado, aparecen mensajes de error en la consola y la instancia del agente se muestra como inactiva.</block>
   <block id="7bd92bd111bfbf23b12f73672eb0dd1c" category="inline-link-macro">Instalar un certificado HTTPS firmado por una autoridad de certificación (CA)</block>
   <block id="c3ce271d53cbf6a7afd137a37f4ee8d6" category="paragraph">Para mayor seguridad, tienes la opción de<block ref="11df3d19916b70ba1d82d33e876689bc" category="inline-link-macro-rx"></block> .</block>
   <block id="e949623e23f093c132f86ba2771e8a2e" category="section-title">Página en blanco al cargar la interfaz de usuario local</block>
@@ -2261,8 +2245,6 @@
   <block id="1f8685c3e9591b0ac770ad3c60e0ea9b" category="paragraph">Este problema está relacionado con un problema de almacenamiento en caché.  La solución alternativa es utilizar una sesión de navegador web privada o de incógnito.</block>
   <block id="3b9690f89f4029f3b099f8b7c371b951" category="section-title">Los hosts Linux compartidos no son compatibles</block>
   <block id="55334f6c7481482659eaa1b0aef1601a" category="paragraph">El agente no es compatible con una máquina virtual compartida con otras aplicaciones.  La VM debe estar dedicada al software del agente.</block>
-  <block id="39c131bd8f90ef7749228972a6486162" category="section-title">Agentes y extensiones de terceros</block>
-  <block id="4b7e9b197f794c9b7019035a05713f81" category="paragraph">Los agentes de terceros o las extensiones de VM no son compatibles con la VM del agente.</block>
   <block id="7b7f8f1228adee0b98f669d033848211" category="section-title">Actualice su lista de puntos finales a la lista revisada para 4.0.0 y versiones superiores</block>
   <block id="4c9c91c3daf4ca466e31f9eaa8cef3d2" category="paragraph">A partir de la versión 4.0.0, los agentes de consola requieren menos puntos finales.  Las implementaciones existentes anteriores a la versión 4.0.0 siguen siendo compatibles.  Después de actualizar a 4.0.0 o posterior, puede eliminar los puntos finales antiguos de su lista de permitidos cuando sea conveniente.</block>
   <block id="ae702d0a49628819c46d528d565558a9" category="inline-link-macro">Puntos finales compatibles con 4.0.0 y superiores</block>
@@ -3321,7 +3303,6 @@
   <block id="349027440539dc46278ee9e93260025d" category="section-title">Actualice el proxy del agente de la consola si pierde el acceso a Internet</block>
   <block id="71164e4bc7911ce651a366899f4f487b" category="paragraph">Si la configuración del proxy de su red cambia, su agente podría perder el acceso a Internet.  Por ejemplo, si alguien cambia la contraseña del servidor proxy o actualiza el certificado.  En este caso, necesitarás acceder a la interfaz de usuario directamente desde el host del agente de la consola y actualizar la configuración.  Asegúrese de tener acceso a la red del host del agente de la consola y de que pueda iniciar sesión en la consola.</block>
   <block id="54734e5bba3b83b2757e43d1ff24b2c4" category="section-title">Habilitar el tráfico directo de API</block>
-  <block id="2a398a7caf83846d0b6a5ffb7e46e036" category="paragraph">Si configuró un agente de consola para usar un servidor proxy, puede habilitar el tráfico de API directo en el agente de consola para enviar llamadas de API directamente a los servicios del proveedor de nube sin pasar por el proxy. Los agentes que se ejecutan en AWS, Azure o Google Cloud admiten esta opción.</block>
   <block id="c37870a98a047f7cae1ee48e164d5230" category="paragraph">Si deshabilita Azure Private Links con Cloud Volumes ONTAP y usa puntos de conexión de servicio, habilite el tráfico de API directo.  De lo contrario, el tráfico no se enrutará correctamente.</block>
   <block id="ac10c9401f16ed5ff0a029bce2712adc" category="inline-link">Obtenga más información sobre el uso de Azure Private Link o puntos de conexión de servicio con Cloud Volumes ONTAP</block>
   <block id="7036572e3eccb7a8e3ea89ae1a860266" category="paragraph"><block ref="7036572e3eccb7a8e3ea89ae1a860266" category="inline-link-rx"></block></block>
@@ -4554,7 +4535,6 @@
   <block id="776c814c9b0c72880dcd5eaf49118ff2" category="paragraph">Puede agregar y eliminar el Identificador uniforme de recursos (URI) de un agente.</block>
   <block id="ae3e99ad1c50edf4e25c2d64cf2eefa5" category="list-text">Expande la barra *URI del agente* para ver los URI del agente.</block>
   <block id="fb9b59364e346ccfcbfc4636f13644b5" category="list-text">Agregue y elimine URI y luego seleccione *Aplicar*.</block>
-  <block id="b6abeefbbae1a52ba573ab84b4b8c35a" category="summary">Si utiliza varios agentes de consola, puede cambiar entre ellos directamente desde la consola.  También puede administrar un solo sistema con múltiples agentes de consola.</block>
   <block id="322805244d3cfbc06b20be41ebf54d36" category="doc">Trabajar con múltiples agentes de consola</block>
   <block id="c73b380f2cf43cbe65e10db11adc4709" category="paragraph">Si utiliza varios agentes de consola, puede cambiar entre ellos directamente desde la consola para ver los sistemas asociados.</block>
   <block id="74bd0729b4aa2adbd6a34d8410d08abb" category="paragraph">Por ejemplo, en un entorno de múltiples nubes, es posible que tenga un agente en AWS y otro en Google Cloud.  Cambie entre estos agentes para administrar los sistemas Cloud Volumes ONTAP en los respectivos entornos de nube.</block>
@@ -4563,18 +4543,6 @@
   <block id="39a66cbd55302576b83a0a5471064712" category="inline-image-macro">Una captura de pantalla que muestra el ícono de Agentes en el encabezado y la acción Cambiar.</block>
   <block id="2bf29a9ec2a497699149ddb5c47450d4" category="paragraph"><block ref="2bf29a9ec2a497699149ddb5c47450d4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7453879259a0b97c6566954016435290" category="paragraph">La consola se actualiza y muestra los sistemas asociados con el agente seleccionado.</block>
-  <block id="5cb02414ba99e03fa83bad53db22c1e4" category="section-title">Configurar una configuración de recuperación ante desastres</block>
-  <block id="30e4546ef393337cf90d00ca9e7087d9" category="paragraph">Puede administrar un sistema con varios agentes de consola al mismo tiempo para fines de recuperación ante desastres.  Si un agente de la consola deja de funcionar, puedes cambiar al otro agente para administrar el sistema de inmediato.</block>
-  <block id="093c50014a3f6a42c69939ec5e59a13b" category="list-text">Cambie al otro agente de consola que desea administrar con el agente de consola.</block>
-  <block id="7a9a9f715597e50c4cb86a39ec829d54" category="list-text">Descubra el sistema existente.</block>
-  <block id="08018a7c53e51cbc09b4bf8d9664fd5e" category="inline-link">Agregue sistemas Cloud Volumes ONTAP existentes a la consola</block>
-  <block id="a6725a99f3665240f29a037172d05628" category="list-text"><block ref="a6725a99f3665240f29a037172d05628" category="inline-link-rx"></block></block>
-  <block id="a1ebf612d281c8e7fb16bbfa253b9627" category="inline-link">Descubra los clústeres de ONTAP</block>
-  <block id="49aaf65c31a811a37b2627a951f6f6d2" category="list-text"><block ref="49aaf65c31a811a37b2627a951f6f6d2" category="inline-link-rx"></block></block>
-  <block id="6bf1988b3312f00ea9a8a52aa7a47355" category="list-text">Si administra un sistema Cloud Volumes ONTAP , ajuste el Modo de administración de capacidad al *Modo manual*.</block>
-  <block id="0bf2e021b970775f65586d6866bfeb5f" category="paragraph">Para evitar problemas de contención, solo el agente de consola principal debe configurarse en *Modo automático*.</block>
-  <block id="f05a0e154340f7c017b3a9bfa5a8bf05" category="inline-link">Obtenga más información sobre el modo de gestión de capacidad</block>
-  <block id="17fc88f224620f6881e6e779aa01025c" category="paragraph"><block ref="17fc88f224620f6881e6e779aa01025c" category="inline-link-rx"></block></block>
   <block id="1e12fbabb20fb5fd9d147dfb17d80816" category="summary">Según las acciones que haya realizado en la consola, es posible que haya asociado las credenciales de ONTAP y las credenciales del sitio de soporte de NetApp (NSS) con su inicio de sesión de usuario.  Puede ver y administrar esas credenciales después de haberlas asociado.  Por ejemplo, si cambia la contraseña de estas credenciales, deberá actualizar la contraseña en la Consola.</block>
   <block id="d86c06c14b06c848fca4417d1ccfa279" category="doc">Administrar las credenciales asociadas con el inicio de sesión de su NetApp Console</block>
   <block id="823a6e1d7fe661be55dd3af05f972b11" category="section-title">Credenciales de ONTAP</block>
@@ -5130,11 +5098,9 @@
   <block id="e1b145fbf942267f38a8e6f0928d8629" category="paragraph"><block ref="9ff6aead716ef57f3a1e9e40a858062f" prefix="" category="inline-code"></block></block>
   <block id="0bb43692ecd0352eecc69c235e34d6f0" category="paragraph">_silent_ ejecuta el script sin solicitar confirmación.</block>
   <block id="5706dd8bbae1725311aa98f5ff571442" category="section-title">Eliminar agentes de la consola</block>
-  <block id="d6e4f33a31f72ef4b58be87971dbaf7e" category="paragraph">Si un agente de consola está inactivo, puedes eliminarlo de la lista de agentes.  Puede hacer esto si elimina la máquina virtual del agente o si desinstala el software del agente.</block>
   <block id="6535e883467a2f7723aa12bfbf398d49" category="paragraph">Tenga en cuenta lo siguiente sobre la eliminación de un agente de consola:</block>
   <block id="41b9dde34c587a177c2f3827a8427dfd" category="list-text">Esta acción no elimina la máquina virtual.</block>
   <block id="4d921e8b119cda6cf295382929919d43" category="list-text">Esta acción no se puede revertir: una vez que elimines un agente de consola, no podrás volver a agregarlo.</block>
-  <block id="3865cf3e4751d28b58d7666313ad5652" category="list-text">En la página *Descripción general*, seleccione el menú de acciones para un agente inactivo y seleccione *Eliminar agente*.</block>
   <block id="592190ac81807f2097b7f4253f7b5646" category="list-text">Ingrese el nombre del agente a confirmar y luego seleccione *Eliminar*.</block>
   <block id="2c474831a621d6f0b4bdd5da67196b84" category="summary">Cuando utiliza el modo estándar o el modo restringido, la NetApp Console actualiza automáticamente su agente de consola a la última versión, siempre que el agente de consola tenga acceso a Internet saliente para obtener la actualización de software.</block>
   <block id="ca901ca59322c0976d1191fbab40ddfb" category="doc">Administrar actualizaciones del agente de la consola</block>
@@ -5197,24 +5163,19 @@
   <block id="54fd6ad42040e4dcd0dcda5cc49c6c66" category="summary">Conozca las novedades en las funciones de administración de la NetApp Console : IAM, agentes de consola, credenciales de proveedores de nube y más.</block>
   <block id="490414e0366b091220802d406e52c076" category="doc">Qué hay de nuevo</block>
   <block id="3243765239f2c6f00af00297914a69d4" category="paragraph">Conozca las novedades en las funciones de administración de la NetApp Console : administración de identidad y acceso (IAM), agentes de consola, credenciales de proveedores de nube y más.</block>
-  <block id="91d6aafc857e46203357e992ab4434f8" category="section-title">6 de octubre de 2025</block>
   <block id="b9d888f58b09c4007db0247286e392b5" category="section-title">11 de agosto de 2025</block>
   <block id="328e39c031d3f6a77403904d6dda2377" category="section-title">31 de julio de 2025</block>
   <block id="6bf86021a24fd009a31d432250a9ad20" category="section-title">21 de julio de 2025</block>
   <block id="f2673d4a3fe0162a501d43f5168ae950" category="section-title">14 de julio de 2025</block>
-  <block id="f27f1ce6df3e2ec2518f77e8e1a4a531" category="section-title">9 de junio de 2025</block>
   <block id="1971cba9fca6bc598cf10a08dfb20cb6" category="section-title">29 de mayo de 2025</block>
   <block id="4409983c60e456858bb3e9ef5737f98a" category="section-title">14 de abril de 2025</block>
   <block id="5f2734b84896bdabcf7fd3574325d116" category="section-title">28 de marzo de 2025</block>
   <block id="f070435ef55d6c7cc1db59f0a41a4609" category="section-title">10 de marzo de 2025</block>
-  <block id="278edfabbac204688aa13f79c6f52497" category="section-title">6 de marzo de 2025</block>
   <block id="df3f743aae5476a7b16bbbc329251f85" category="section-title">18 de febrero de 2025</block>
   <block id="c523b074da0b63e607578686184d5981" category="section-title">10 de febrero de 2025</block>
   <block id="2b513ec32615ab736c1cab315db516f8" category="section-title">13 de enero de 2025</block>
   <block id="c33f35ab44944cc0d09e5bb702125592" category="section-title">16 de diciembre de 2024</block>
-  <block id="1f86b1e4048d088ce153a6f451fb30d6" category="section-title">9 de diciembre de 2024</block>
   <block id="a1fe52ea216874a5214f41ae7e5bbd63" category="section-title">10 de octubre de 2024</block>
-  <block id="e5182edc3707e8e354c40ab7fa819f39" category="section-title">7 de octubre de 2024</block>
   <block id="964635dcf6206ebb279b58d13cf69a92" category="section-title">30 de septiembre de 2024</block>
   <block id="2e5948b55d019081bde9b17268d72c2c" category="section-title">Conector 3.9.44</block>
   <block id="eef503d0bc4de5d76d47f4691b412e15" category="paragraph">Esta versión incluye soporte para Docker Engine 26, una mejora en los certificados SSL y correcciones de errores.</block>
@@ -5603,4 +5564,49 @@
   <block id="caf28471250404467f130940e7fd6e28" category="cell">Los usuarios con el rol de usuario de Google Cloud NetApp Volumes pueden ver Google Cloud NetApp Volumes.</block>
   <block id="ab925d8c9a6924f34df64e8e1fb1a38d" category="list-text">*Visor de Google Cloud NetApp Volumes *: Vea los Google Cloud NetApp Volumes en la consola.</block>
   <block id="7d04a8adb8b138151b42f809761295c7" category="cell"><block ref="7d04a8adb8b138151b42f809761295c7" category="inline-link-macro-rx"></block></block>
+  <block id="a5e170ce8c9d104f0b20e67e54257be5" category="paragraph">Necesitará agregar información de proxy si su red requiere un proxy para acceder a Internet. Puede agregar un proxy explícito durante la instalación. Los parámetros --proxy y --cacert son opcionales y no se le pedirá que los agregue. Si tiene un servidor proxy explícito, deberá introducir los parámetros tal y como se muestran.</block>
+  <block id="247a6a0ee254b2ff09347b727ee46227" category="inline-link-macro">Obtenga información sobre la consola de mantenimiento del agente.</block>
+  <block id="ed63faa45dd9543220a2183fa0e02b97" category="admonition">Si quieres configurar un proxy transparente, puedes hacerlo después de la instalación. <block ref="6d6c38ccb358695b7ab850225fcd83aa" category="inline-link-macro-rx"></block></block>
+  <block id="fbcd7669a7a0c8cc9053c7c78029654b" category="admonition">No es posible configurar un certificado para un servidor proxy transparente al instalar manualmente el agente de consola. Si necesita configurar un certificado para un servidor proxy transparente, debe utilizar la Consola de mantenimiento después de la instalación. Obtén más información sobre <block ref="d3f69ee6935d5f5f8542f4da69ac2bb6" category="inline-link-macro-rx"></block>.</block>
+  <block id="4fcd2b24226e5ab1f33572cdc55d9b7b" category="list-text">Si utiliza Red Hat Enterprise 9:</block>
+  <block id="334ed7efb24267c8a9d5f60a214ee627" category="list-text">Instalar el paquete podman-compose 1.5.0.</block>
+  <block id="83291537b9ae75a78c7add56b73a4688" category="list-text">Si utiliza Red Hat Enterprise Linux 8:</block>
+  <block id="9c1b6a208384484254769349d91e3af9" category="doc">Agente de consola 4.1.0</block>
+  <block id="e8cdaf5bab63b64f0740dc40a9389ed9" category="paragraph">Esta versión del agente de consola incluye mejoras de seguridad, correcciones de errores y las siguientes características:</block>
+  <block id="e32e1b9613d2e086e1fc46ae7489620c" category="paragraph">La versión 4.1.0 está disponible para el modo estándar y el modo restringido.</block>
+  <block id="650940dddaeb353d547fc2674ba4d35b" category="paragraph-title">Indicadores de estado del agente renombrados</block>
+  <block id="9722491a4236a9be86f414fa5b3eebb8" category="paragraph">Se renombraron los indicadores de estado del agente de la consola de *Activo* e *Inactivo* a *Conectado* y *Desconectado* para que su propósito sea más claro.</block>
+  <block id="d9e7da7d4b9cc9086a7ab3a5a270f7da" category="paragraph-title">Compatibilidad con Red Hat Enterprise Linux (RHEL) 9.6 y Podman 5.4.0</block>
+  <block id="d90d113f70d4f4d024f99f4015bbbb96" category="paragraph">El agente de consola ahora es compatible con RHEL 9.6 y Podman 5.4.0. Además, al usar RHEL 9 y versiones posteriores, NetApp admite podman-compose 1.5.0.</block>
+  <block id="2749b80160d80f9500fa8b5d5b4da1ba" category="section-title">Administración de la NetApp Console</block>
+  <block id="a0d96dec6c85f67c2563063cec22ac66" category="paragraph">Esta versión incluye lo siguiente:</block>
+  <block id="ac740509743c941164fb7e88fc8b768e" category="paragraph-title">Nueva dirección de correo electrónico para las notificaciones de la NetApp Console</block>
+  <block id="3ded9fa2f8cf197bdf563d5509101e3a" category="paragraph">La dirección de correo electrónico que envía notificaciones de NetApp Console ha cambiado de *service@console.bluexp.netapp.com* a *service@console.bluexp.netapp.com*. NetApp recomienda actualizar las reglas de correo electrónico para permitir *service@console.netapp.com* para garantizar que siga recibiendo notificaciones por correo electrónico de NetApp Console .</block>
+  <block id="6ee211c536d8760f2108dd2c3e9fde0b" category="summary">Obtenga más información sobre el agente de consola antes de implementarlo.</block>
+  <block id="e079e06be34bd849355b3a013a28ade3" category="section-title">Detalles de la máquina virtual del agente de consola para AWS</block>
+  <block id="0759ecf4e00f5c23dd6fcb46adfd5f73" category="section-title">Detalles de la máquina virtual del agente de consola para Azure</block>
+  <block id="a284e20714904b80b3bc57b894975967" category="section-title">Detalles de la máquina virtual del agente de consola para Google Cloud</block>
+  <block id="ccc39ad27a3e5ae6ae32a3552e89ecf6" category="paragraph">La carpeta de instalación del agente se encuentra en la siguiente ubicación:</block>
+  <block id="d19b8636dbd523d212642fc43cc17d39" category="paragraph"><block ref="1290fecb35d9c7e8b4f1faf1f9b5c7f3" prefix="" category="inline-code"></block></block>
+  <block id="549ccc427eb51e8795fefc7eb58efbd7" category="list-text"><block ref="9038f40808a3b534dd4031904a7d2ce8" prefix="" category="inline-code"></block> o</block>
+  <block id="7879cfbe1211d2f970424c1b2506a0a1" category="list-text"><block ref="0d4b69d94aa57fab56e1a31c631b6b9d" prefix="" category="inline-code"></block> (a partir de las nuevas instalaciones 3.9.23)</block>
+  <block id="77504c6121663bb82697faa2adb426c0" category="list-text"><block ref="b7fb1cb20b803995e802d3588f424efa" prefix="" category="inline-code"></block></block>
+  <block id="8c0ce03e205216a2506b72de21ab36d0" category="paragraph"><block ref="7068d488f38430eabf6c395a593e8e5a" prefix="" category="inline-code"></block></block>
+  <block id="a7678a59b185360eec3ece4df3f90a18" category="paragraph"><block ref="a15b1a7954f2d926c5ee7f261a97b4d2" prefix="" category="inline-code"></block></block>
+  <block id="49868b41c479810c405bc3509cdb1907" category="cell">Permite a los usuarios ver los resultados del análisis de NetApp Data Classification . Los usuarios con este rol pueden ver información de cumplimiento y generar informes para los recursos a los que tienen permiso de acceso. Estos usuarios no pueden habilitar ni deshabilitar el escaneo de volúmenes, depósitos o esquemas de bases de datos. La clasificación no tiene un rol de administrador.</block>
+  <block id="93fd98d5e6dc8e59c7d87e83e4b28b54" category="paragraph">La consola no admite configuraciones de firewall que tengan habilitado el descifrado SSL. Si el descifrado SSL está habilitado, aparecen mensajes de error en la consola y la instancia del agente se muestra como *Desconectada*.</block>
+  <block id="5ef1446cf0ab868961d473d928c394d6" category="section-title">Agentes y extensiones de terceros</block>
+  <block id="08ea771e22fb933fc1428178b36eb902" category="paragraph">Los agentes de terceros o las extensiones de máquina virtual no son compatibles con la máquina virtual del agente.</block>
+  <block id="c976a9d1d7322a1a795f641867000e2b" category="paragraph">Si configuró un agente de consola para usar un servidor proxy, puede habilitar el tráfico de API directo en el agente de consola para enviar llamadas de API directamente a los servicios del proveedor de la nube sin pasar por el proxy. Los agentes que se ejecutan en AWS, Azure o Google Cloud admiten esta opción.</block>
+  <block id="8b1d2ab0552c5d7793153d9fda3b575d" category="paragraph"><block ref="51298227862ac5270d9350ee1061138a" category="inline-link-macro-rx"></block>.</block>
+  <block id="e5d52cc85bda9d53a6d755f08201667b" category="summary">Si utiliza varios agentes de consola, puede cambiar entre ellos directamente desde la consola.</block>
+  <block id="b634c2786e9d7bad38c80a81b3416dd7" category="paragraph">Si ha eliminado una máquina virtual de agente o ha desinstalado el agente, debe eliminarlo de la lista de agentes en la consola. Después de eliminar una máquina virtual de agente o desinstalar el software del agente, este muestra el estado *Desconectado* en la consola.</block>
+  <block id="f6b8e4c4df658aad1c40b366b5c5d259" category="list-text">En la página *Resumen*, seleccione el menú de acciones para un agente desconectado y seleccione *Eliminar agente*.</block>
+  <block id="77750efa6f5ff153acdc42067058017f" category="section-title">10 de noviembre de 2025</block>
+  <block id="a41dd7aa7d921f9f0881a705d3679e6c" category="section-title">6 de octubre de 2025</block>
+  <block id="791d05d0e9072626d0316ef0a7cf21bc" category="section-title">9 de junio de 2025</block>
+  <block id="cceeb5ea78b799b3b8575b2829590616" category="section-title">6 de marzo de 2025</block>
+  <block id="527d18dfa760fc67196d102d429a8ea0" category="section-title">9 de diciembre de 2024</block>
+  <block id="f66c63cf0ff76c19209f85ca687a2fb4" category="section-title">7 de octubre de 2024</block>
+  <block id="827939177a8e56e6d981ae1fc3dcb065" category="section-title">9 de septiembre de 2024</block>
 </blocks>

@@ -260,7 +260,7 @@ Donde <versión> es la versión del agente de consola que descargó.
  ./NetApp_Console_Agent_Cloud_<version> --proxy <HTTP or HTTPS proxy server> --cacert <path and file name of a CA-signed certificate>
 ----
 +
-Necesitará agregar información de proxy si su red requiere un proxy para acceder a Internet.  Puede agregar un proxy transparente o explícito.  Los parámetros --proxy y --cacert son opcionales y no se le pedirá que los agregue.  Si tiene un servidor proxy, deberá ingresar los parámetros como se muestra.
+Necesitará agregar información de proxy si su red requiere un proxy para acceder a Internet. Puede agregar un proxy explícito durante la instalación. Los parámetros --proxy y --cacert son opcionales y no se le pedirá que los agregue. Si tiene un servidor proxy explícito, deberá introducir los parámetros tal y como se muestran.
 
 +
 A continuación se muestra un ejemplo de configuración de un servidor proxy explícito con un certificado firmado por una CA:
@@ -300,16 +300,9 @@ Por ejemplo:
 
 
 
-`--cacert`Especifica un certificado firmado por CA para usar para el acceso HTTPS entre el agente de consola y el servidor proxy.  Este parámetro es necesario para servidores proxy HTTPS, servidores proxy interceptores y servidores proxy transparentes.
 
-+ Aquí hay un ejemplo de configuración de un servidor proxy transparente.  Cuando configura un proxy transparente, no necesita definir el servidor proxy.  Solo debe agregar un certificado firmado por una CA a su host del agente de consola:
+NOTE: Si quieres configurar un proxy transparente, puedes hacerlo después de la instalación. link:reference-agent-maint-console.html["Obtenga información sobre la consola de mantenimiento del agente."]
 
-+
-
-[source, cli]
-----
- ./NetApp_Console_Agent_Cloud_v4.0.0 --cacert /tmp/cacert/certificate.cer
-----
 . Si utilizó Podman, necesitará ajustar el puerto aardvark-dns.
 +
 .. SSH a la máquina virtual del agente de consola.
