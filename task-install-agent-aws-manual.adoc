@@ -53,18 +53,41 @@ El agente de consola requiere este espacio en `/var` porque Docker o Podman est�
 Tipo de instancia de AWS EC2:: Un tipo de instancia que cumple con los requisitos de CPU y RAM.  NetApp recomienda t3.2xlarge.
 Hipervisor:: Se requiere un hipervisor alojado o de metal desnudo que esté certificado para ejecutar un sistema operativo compatible.
 [[podman-versions]]Requisitos del sistema operativo y del contenedor:: El agente de consola es compatible con los siguientes sistemas operativos cuando se utiliza la consola en modo estándar o modo restringido.  Se requiere una herramienta de orquestación de contenedores antes de instalar el agente.
-+
---
+
+
 [cols="2a,2a,2a,2a,2a"]
 |===
-| Sistema operativo | Versiones de sistema operativo compatibles | Versiones de agente compatibles | Herramienta de contenedor requerida | SELinux a 
+| Sistema operativo | Versiones de sistema operativo compatibles | Versiones de agente compatibles | Herramienta de contenedor requerida | SELinux 
 
 
  a| 
 Red Hat Enterprise Linux
+
+
+
+ a| 
  a| 
 9.1 a 9.4
 
+* Sólo versiones en idioma inglés.
+* El host debe estar registrado en Red Hat Subscription Management.  Si no está registrado, el host no puede acceder a los repositorios para actualizar el software de terceros requerido durante la instalación del agente.
+
+ a| 
+3.9.50 o posterior con la consola en modo estándar o modo restringido
+ a| 
+Podman versión 5.4.0 con podman-compose 1.5.0.
+
+<<podman-configuration,Ver los requisitos de configuración de Podman>> .
+ a| 
+Compatible con modo de aplicación o modo permisivo
+
+* La administración de los sistemas Cloud Volumes ONTAP NO es compatible con agentes que tengan SELinux habilitado en el sistema operativo.
+
+
+
+
+ a| 
+ a| 
 8.6 a 8.10
 
 * Sólo versiones en idioma inglés.
@@ -86,6 +109,10 @@ Compatible con modo de aplicación o modo permisivo
 
  a| 
 Ubuntu
+
+
+
+ a| 
  a| 
 24,04 LTS
  a| 
@@ -98,6 +125,7 @@ No compatible
 
 
  a| 
+ a| 
 22,04 LTS
  a| 
 3.9.50 o posterior
@@ -107,7 +135,6 @@ Motor Docker 23.0.6 a 28.0.0.
 No compatible
 
 |===
---
 Par de claves:: Cuando cree el agente de consola, deberá seleccionar un par de claves EC2 para usar con la instancia.
 Límite de salto de respuesta PUT al usar IMDSv2:: Si IMDSv2 está habilitado en la instancia EC2 (esta es la configuración predeterminada para las nuevas instancias EC2), debe cambiar el límite de saltos de respuesta PUT en la instancia a 3.  Si no cambia el límite en la instancia EC2, recibirá un error de inicialización de la interfaz de usuario cuando intente configurar el agente.
 +
