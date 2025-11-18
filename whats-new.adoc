@@ -32,7 +32,7 @@ La versión 4.1.0 está disponible para el modo estándar y el modo restringido.
 Se renombraron los indicadores de estado del agente de la consola de *Activo* e *Inactivo* a *Conectado* y *Desconectado* para que su propósito sea más claro.
 
 .Compatibilidad con Red Hat Enterprise Linux (RHEL) 9.6 y Podman 5.4.0
-El agente de consola ahora es compatible con RHEL 9.6 y Podman 5.4.0. Además, al usar RHEL 9 y versiones posteriores, NetApp admite podman-compose 1.5.0.
+Al instalar manualmente un agente de consola, el agente ahora admite RHEL 9.6 con Podman 5.4.0. Además, al usar RHEL 9 y versiones posteriores, NetApp admite podman-compose 1.5.0. link:https://docs.netapp.com/us-en/console-setup-admin/task-install-agent-on-prem.html["Ver requisitos del sistema operativo"].
 
 
 
@@ -1378,6 +1378,35 @@ Los nuevos usuarios que se registren en BlueXP ahora deberán verificar su direc
 Esta versión del conector BlueXP incluye pequeñas mejoras de seguridad y correcciones de errores.
 
 La versión 3.9.41 está disponible para el modo estándar y el modo restringido.
+
+
+
+=== Fin del soporte para RHEL 7 y CentOS 7
+
+El 30 de junio de 2024, RHEL 7 alcanzó el final del mantenimiento (EOM), mientras que CentOS 7 alcanzó el final de su vida útil (EOL).  NetApp suspendió el soporte para agentes en estas distribuciones de Linux el 30 de junio de 2024.
+
+https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux/rhel-7-end-of-maintenance["Red Hat: Qué debe saber sobre el fin del mantenimiento de Red Hat Enterprise Linux 7"^]
+
+Si tiene un agente existente ejecutándose en RHEL 7 o CentOS 7, NetApp no ​​admite la actualización ni la conversión del sistema operativo a RHEL 8 o 9.  Debe crear un nuevo agente en un sistema operativo compatible.
+
+. Configurar un host RHEL 8 o 9.
+. Instalar Podman.
+. Instalar un _nuevo_ agente.
+. Configure el agente para descubrir los sistemas que administraba el agente anterior.
+. Redescubrir los sistemas.
++
+Consulte las siguientes páginas para redescubrir sus sistemas después de implementar un nuevo agente de consola.
+
++
+** https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/task-adding-systems.html["Agregar sistemas Cloud Volumes ONTAP existentes"^]
+** https://docs.netapp.com/us-en/storage-management-ontap-onprem/task-discovering-ontap.html["Descubra los clústeres ONTAP locales"^]
+** https://docs.netapp.com/us-en/storage-management-fsx-ontap/use/task-create-fsx-system.html["Crear o descubrir un sistema FSx para ONTAP"^]
+** https://docs.netapp.com/us-en/storage-management-azure-netapp-files/task-create-system.html["Crear un sistema de Azure NetApp Files"^]
+** https://docs.netapp.com/us-en/storage-management-e-series/task-discover-e-series.html["Descubra los sistemas de la Serie E"^]
+** https://docs.netapp.com/us-en/storage-management-storagegrid/task-discover-storagegrid.html["Descubra los sistemas StorageGRID"^]
+
+
+
 
 
 
