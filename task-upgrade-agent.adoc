@@ -68,7 +68,7 @@ Para volver a habilitar la actualización automática, siga estos pasos y config
 +
 [source, json]
 ----
-  "isUpgradeDisabled": true,
+  "isUpgradeDisabled": true
 ----
 . Guarde su archivo.
 . Reinicie el servicio del administrador de servicios 2 ejecutando el siguiente comando:
@@ -77,12 +77,11 @@ Para volver a habilitar la actualización automática, siga estos pasos y config
 ----
 systemctl restart netapp-service-manager.service
 ----
-. Ejecute el siguiente comando y verifique que el estado del agente se muestre como _activo(en ejecución)_: _
+. Ejecute el siguiente comando y verifique que el estado del agente se muestre como _activo (en ejecución)_:
 +
 [source, cli]
 ----
 systemctl status netapp-service-manager.service
-_
 ----
 
 

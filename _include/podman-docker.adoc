@@ -118,15 +118,17 @@ NOTE: Usando el `dnf install` El comando cumple con el requisito de agregar podm
 
 
 . Verifique si su networkBackend está configurado en CNI ejecutando el siguiente comando:
-+
-[source, cli]
+
+
+[listing]
 ----
 podman info | grep networkBackend
 ----
 . Si la red Backend está configurada en `CNI` , tendrás que cambiarlo a `netavark` .
 . Instalar `netavark` y `aardvark-dns` utilizando el siguiente comando:
-+
-[source, cli]
+
+
+[listing]
 ----
 dnf install aardvark-dns netavark
 ----
@@ -136,21 +138,21 @@ Si `/etc/containers/containers.conf` no existe, realice los cambios de configura
 
 +
 .. Reiniciar podman.
-+
-[source, cli]
+
+
+
+
+[listing]
 ----
 systemctl restart podman
 ----
-.. Confirme que networkBackend ahora se cambió a "netavark" usando el siguiente comando:
-+
-[source, cli]
+. Confirme que networkBackend ahora se cambió a "netavark" usando el siguiente comando:
+
+
+[listing]
 ----
 podman info | grep networkBackend
 ----
-
-
-
-
 --
 .Motor Docker
 --
