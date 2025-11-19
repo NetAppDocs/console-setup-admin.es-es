@@ -5563,12 +5563,6 @@
   <block id="b3df2aaed88f61f572a7284cb28844ec" category="inline-link-macro">Ver requisitos del sistema operativo</block>
   <block id="43a9602052a44f890e2bbc95a0205a46" category="paragraph">Al instalar manualmente un agente de consola, el agente ahora admite RHEL 9.6 con Podman 5.4.0. Además, al usar RHEL 9 y versiones posteriores, NetApp admite podman-compose 1.5.0. <block ref="dd394ea917033ddbf269729b5d828637" category="inline-link-macro-rx"></block>.</block>
   <block id="823f8bc81b61298de6fde6292c77465f" category="list-text">Redescubrir los sistemas.</block>
-  <block id="0d23055c9cd9e24b47c678ce2ce12890" category="doc">Puerto a utilizar para el demonio de reenvío DNS con Netavark en un puente rootful</block>
-  <block id="a4a1852476f94952d74e4b8343a1caa2" category="paragraph">vi /usr/share/containers/containers.conf</block>
-  <block id="d5b159520f19881fc40a4bd748f62fc6" category="section-title">Modo y DNS habilitados.</block>
-  <block id="b1a96ed8e5a02719308e8b11ad1f055b" category="section-title">Utilizar un puerto alternativo podría ser útil si otros servicios DNS...</block>
-  <block id="090648da33ae39ea5780d1a31fb1c849" category="section-title">ejecutar en la máquina.</block>
-  <block id="876565374bfaef3930e6f9d90f47177b" category="paragraph"># dns_bind_port = 54</block>
   <block id="f20af7c9fe0c9b9091735f55df3a51e1" category="list-text">Si crea un agente de consola en una región estándar de AWS directamente desde la consola, esta aplicará automáticamente las políticas al agente.</block>
   <block id="8a2272b9faf18eb35a631e80900ec216" category="section-title">Permisos heredados para Copia de seguridad y recuperación</block>
   <block id="cf1f3a91d24e23f8dd4687e01a5c8192" category="paragraph">Solo necesitas los siguientes permisos si habilitaste las funciones de indexación heredadas antes del lanzamiento de la versión 2 de indexación:</block>
@@ -5600,4 +5594,8 @@
   <block id="04a0a4e163c04f3082e39c4a05b56121" category="paragraph">Agregar las credenciales de AWS otorga permisos para crear un agente de consola.</block>
   <block id="325cf27c7a62fb4beb8b270094e56814" category="paragraph">Debe asociar las credenciales que agregue a un agente de la consola con una suscripción a AWS Marketplace para pagar por Cloud Volumes ONTAP a una tarifa por hora (PAYGO) y otros servicios de datos de NetApp o mediante un contrato anual. <block ref="ec04a55c38de32bb88fa7b4155061e7c" category="inline-link-macro-rx"></block>.</block>
   <block id="349b76807d98d4378df29b585951b7a4" category="summary">Obtenga información sobre las configuraciones predeterminadas del agente de consola para implementaciones estándar (con acceso a Internet) en AWS, Azure y Google Cloud, así como para implementaciones restringidas (sin acceso a Internet) en entornos locales.</block>
+  <block id="95df10d2ac630ff125b089e1f8e0e67f" category="paragraph">Necesitará agregar información de proxy si su red requiere un proxy para acceder a Internet. Puede agregar un proxy transparente o explícito. Los parámetros --proxy y --cacert son opcionales y no se le pedirá que los agregue. Si tiene un servidor proxy, deberá ingresar los parámetros como se muestra.</block>
+  <block id="64de7c6251637d266e8df72d8ab7c1d3" category="paragraph">--proxy configura el agente de la consola para utilizar un servidor proxy HTTP o HTTPS utilizando uno de los siguientes formatos:</block>
+  <block id="9d9d85de516d17d89215c336041bd69c" category="paragraph">--cacert especifica un certificado firmado por CA para usar para el acceso HTTPS entre el agente de consola y el servidor proxy. Este parámetro es necesario para servidores proxy HTTPS, servidores proxy interceptores y servidores proxy transparentes.</block>
+  <block id="fa5c0c80d3dab7b433f9ebd1f6d0e8db" category="paragraph">A continuación se muestra un ejemplo de configuración de un servidor proxy transparente. Cuando configura un proxy transparente, no necesita definir el servidor proxy. Solo debe agregar un certificado firmado por una CA a su host del agente de consola:</block>
 </blocks>
