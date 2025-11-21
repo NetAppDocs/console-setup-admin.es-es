@@ -1919,14 +1919,8 @@
   <block id="38b9e3522d3a7fe6b61f60b3419f6cd2" category="summary">Puede asignar los siguientes roles a los usuarios para brindarles acceso a NetApp Disaster Recovery dentro de la consola.  Los roles de recuperación ante desastres le brindan la flexibilidad de asignar a los usuarios un rol específico para las tareas que necesitan realizar dentro de su organización. La forma de asignar roles depende de su propio negocio y de sus prácticas de gestión de almacenamiento.</block>
   <block id="26c3a94bfb05fb2052bc1a9cc30a1cf4" category="doc">Funciones de NetApp Disaster Recovery en la NetApp Console</block>
   <block id="881a358307b4d99de00f95aa58fb5a43" category="paragraph">La recuperación ante desastres utiliza los siguientes roles:</block>
-  <block id="3db89b44d26706e71a450352c7c5a1da" category="list-text">*Administrador de recuperación ante desastres*: Realizar cualquier acción.</block>
-  <block id="1e732ca66bd89df595b8e795e5dfa4ac" category="list-text">*Administrador de conmutación por error de recuperación ante desastres*: realiza conmutaciones por error y migraciones.</block>
-  <block id="014b84d038553d60cf09cbddcb4e7d08" category="list-text">*Administrador de aplicaciones de recuperación ante desastres*: crear planes de replicación.  Modificar los planes de replicación.  Iniciar pruebas de conmutación por error.</block>
-  <block id="ca931702830a76aaa24d5f451156d2b4" category="list-text">*Visor de recuperación ante desastres*: Ver solo información.</block>
   <block id="05d21d5a33096194ae80a609c95e316b" category="paragraph">La siguiente tabla indica las acciones que puede realizar cada rol.</block>
   <block id="df2d943b4d0652d322ec6b3cb52e3036" category="cell">Administración de recuperación ante desastres</block>
-  <block id="71aa2505b70e192a741f69ce63677f4b" category="cell">Administrador de conmutación por error de recuperación ante desastres</block>
-  <block id="49f16ca5444f519e5203bb5067957eef" category="cell">Administrador de aplicaciones de recuperación ante desastres</block>
   <block id="ba4b33592d18613c28d684c20110e152" category="cell">Visor de recuperación ante desastres</block>
   <block id="20f0d287f3a16854279c9e5960c749e1" category="cell">*En la pestaña Sitios*:</block>
   <block id="24f9533e942cbf2b6f6f10572e7060a3" category="cell">Ver sitios</block>
@@ -2838,8 +2832,6 @@
   <block id="babc7ae953e58c8202e366520ae9baf4" category="list-text"><block ref="babc7ae953e58c8202e366520ae9baf4" category="inline-link-rx"></block></block>
   <block id="6187e32203fd05e22e575166349f5b99" category="inline-link">Documentos de copia de seguridad y recuperación</block>
   <block id="9964d0b6e519677dfa6bcd4597b081a2" category="list-text"><block ref="9964d0b6e519677dfa6bcd4597b081a2" category="inline-link-rx"></block></block>
-  <block id="e97ae785ddbd746339946844f92175e6" category="inline-link">Documentos de clasificación</block>
-  <block id="6847efe16c9bfc0feacaef65fc05b7b9" category="list-text"><block ref="6847efe16c9bfc0feacaef65fc05b7b9" category="inline-link-rx"></block></block>
   <block id="2971acb1ab572cfb61b7c86d49e2b300" category="inline-link">Documentación de Cloud Volumes ONTAP</block>
   <block id="8c1b893f08cfaa147e0cf92bf09039b9" category="list-text"><block ref="8c1b893f08cfaa147e0cf92bf09039b9" category="inline-link-rx"></block></block>
   <block id="32bf39c0f4f8e0ff3b8343a1c55eccc0" category="inline-link">Documentación de la billetera digital</block>
@@ -4633,21 +4625,13 @@
   <block id="4e6fd6febc63e73f33b1e12bb15eab7a" category="paragraph">Una organización asociada primero debe agregar miembros a la asociación antes de poder asignarles roles para los recursos de su organización.<block ref="af42bf104f841b0c4c7b71f12b6693d9" category="inline-link-macro-rx"></block></block>
   <block id="575c38cd2c5990295bb75895f260de3b" category="section-title">Comprender los roles de los usuarios asociados</block>
   <block id="a7a7adfb76bf7fb68d92346dfa9d529d" category="paragraph">Puede administrar los roles de los miembros de las organizaciones asociadas de la misma manera que lo hace con los suyos propios.  Sin embargo, no todos los roles están disponibles para los usuarios asociados.  En particular, no puede otorgar a los usuarios socios un rol que permita actualizaciones de software.  La actualización del software ONTAP generalmente requiere acceso directo a la red.</block>
-  <block id="aa5691f6d018b3411c8082be20a4529f" category="paragraph">Puede asignar los siguientes roles a los usuarios socios:</block>
-  <block id="eaec472b7a23d9c311a78adfd10b1032" category="inline-link-macro">Administrador de copias de seguridad y recuperación</block>
-  <block id="9b589496549b93bcbd645613fbd03c9c" category="list-text"><block ref="9b589496549b93bcbd645613fbd03c9c" category="inline-link-macro-rx"></block></block>
   <block id="8cf933db073501a5f76a2e7dfd953164" category="list-text"><block ref="8cf933db073501a5f76a2e7dfd953164" category="inline-link-macro-rx"></block></block>
   <block id="29ff866c1c97d8c216bf004c4f447a77" category="inline-link-macro">Restaurar administrador</block>
   <block id="4662f8e16785669755651e2b47080d3a" category="list-text"><block ref="4662f8e16785669755651e2b47080d3a" category="inline-link-macro-rx"></block></block>
   <block id="0ebca6a2628eb3838eff9087ecfc2909" category="inline-link-macro">Clonar administrador</block>
   <block id="4db6f06f37e5b34186c68c70b344b6e5" category="list-text"><block ref="4db6f06f37e5b34186c68c70b344b6e5" category="inline-link-macro-rx"></block></block>
-  <block id="760c54a4cb61f02dffc8c2331073ae1d" category="list-text"><block ref="760c54a4cb61f02dffc8c2331073ae1d" category="inline-link-macro-rx"></block></block>
-  <block id="db385d806691bf16134876c971ae47ac" category="list-text"><block ref="db385d806691bf16134876c971ae47ac" category="inline-link-macro-rx"></block></block>
-  <block id="456f871b4f4ee4ad376b69d4040f5120" category="list-text"><block ref="456f871b4f4ee4ad376b69d4040f5120" category="inline-link-macro-rx"></block></block>
-  <block id="78d4b42d7cc8df44f5151da486494386" category="list-text"><block ref="78d4b42d7cc8df44f5151da486494386" category="inline-link-macro-rx"></block></block>
   <block id="107d607a0fbcdbb5eddd688662ad90ca" category="inline-link-macro">Analista de soporte de operaciones</block>
   <block id="f06c384501f4ddab22ea69f586c70caf" category="list-text"><block ref="f06c384501f4ddab22ea69f586c70caf" category="inline-link-macro-rx"></block></block>
-  <block id="67580c71df9613a2df5711bad8e2d8d9" category="list-text"><block ref="67580c71df9613a2df5711bad8e2d8d9" category="inline-link-macro-rx"></block></block>
   <block id="31597ba98a5fab9e8c6bca4a800f5ea5" category="inline-link-macro">Obtenga más información sobre los roles predefinidos</block>
   <block id="dbf8f6054238418a17441da56cada5ea" category="paragraph"><block ref="dbf8f6054238418a17441da56cada5ea" category="inline-link-macro-rx"></block></block>
   <block id="f2d039d8870676819e12952f7e38048c" category="section-title">Agregar un rol a un usuario socio</block>
@@ -5303,7 +5287,6 @@
   <block id="e4c0002e4f9f19273bc004922899fb85" category="sidebar">Acceso a la red de la consola (heredado)</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">Conocimiento y apoyo</block>
   <block id="253b718b7b0bb8f190e2ebe1c721295e" category="paragraph">Los roles de resiliencia contra ransomware brindan a los usuarios acceso a NetApp Ransomware Resilience. Ransomware Resilience admite las siguientes funciones:</block>
-  <block id="f75989b6aa2a7a3c16b04e40aebffd8f" category="paragraph">Los usuarios con el rol de *Administrador de la organización* o *Administrador de carpeta o proyecto* tienen la responsabilidad de asignar roles a otros usuarios. Puede asignar roles de acceso por proyecto o carpeta. Por ejemplo, puede asignar a un usuario el rol de administrador de Ransomware Resilience para un proyecto y el rol de administrador de SnapCenter para un proyecto diferente. De manera alternativa, si un usuario necesita el rol de administrador de Clasificación para todos los proyectos dentro de una carpeta específica, puede otorgarle este rol a nivel de carpeta.</block>
   <block id="e55d79a6c1774cf0f39d67ca04d67bc0" category="paragraph">Utilice roles de acceso para asignar acceso a los recursos de almacenamiento en función de las tareas específicas que los usuarios necesitan realizar. Por ejemplo, si un usuario necesita interactuar con Ransomware Resilience, se le debe otorgar un rol de acceso que incluya permisos de visualización o administrativos para Ransomware Resilience para el proyecto para el cual se le otorga el rol de acceso.</block>
   <block id="e6bf2bfbd541e12c3cb2fca42df08ed3" category="paragraph">Los miembros pueden tener múltiples roles dentro del mismo proyecto y en diferentes proyectos. Por ejemplo, las organizaciones más pequeñas pueden asignar todos los roles de acceso disponibles al mismo usuario, mientras que las organizaciones más grandes pueden hacer que los usuarios realicen tareas más especializadas. Como alternativa, también puede asignar a un usuario el rol de administrador de resiliencia contra ransomware para una organización.  En ese ejemplo, el usuario podría realizar tareas de resiliencia frente a ransomware en todos los proyectos dentro de su organización.</block>
   <block id="c36b12344113082dcf8a9786e36a3536" category="cell">Resiliencia frente al ransomware</block>
@@ -5504,7 +5487,6 @@
   <block id="77504c6121663bb82697faa2adb426c0" category="list-text"><block ref="b7fb1cb20b803995e802d3588f424efa" prefix="" category="inline-code"></block></block>
   <block id="8c0ce03e205216a2506b72de21ab36d0" category="paragraph"><block ref="7068d488f38430eabf6c395a593e8e5a" prefix="" category="inline-code"></block></block>
   <block id="a7678a59b185360eec3ece4df3f90a18" category="paragraph"><block ref="a15b1a7954f2d926c5ee7f261a97b4d2" prefix="" category="inline-code"></block></block>
-  <block id="49868b41c479810c405bc3509cdb1907" category="cell">Permite a los usuarios ver los resultados del análisis de NetApp Data Classification . Los usuarios con este rol pueden ver información de cumplimiento y generar informes para los recursos a los que tienen permiso de acceso. Estos usuarios no pueden habilitar ni deshabilitar el escaneo de volúmenes, depósitos o esquemas de bases de datos. La clasificación no tiene un rol de administrador.</block>
   <block id="93fd98d5e6dc8e59c7d87e83e4b28b54" category="paragraph">La consola no admite configuraciones de firewall que tengan habilitado el descifrado SSL. Si el descifrado SSL está habilitado, aparecen mensajes de error en la consola y la instancia del agente se muestra como *Desconectada*.</block>
   <block id="5ef1446cf0ab868961d473d928c394d6" category="section-title">Agentes y extensiones de terceros</block>
   <block id="08ea771e22fb933fc1428178b36eb902" category="paragraph">Los agentes de terceros o las extensiones de máquina virtual no son compatibles con la máquina virtual del agente.</block>
@@ -5665,4 +5647,17 @@
   <block id="bc803c81454ea9df76e9060827a7bc53" category="list-text">compute.instances.addAccessConfig</block>
   <block id="f14cdbbd5f80553660910a0a1219e605" category="section-title">26 de noviembre de 2025</block>
   <block id="3f7540ad5f30cb6539b7476d85d2f608" category="paragraph">Los permisos se han actualizado para aclarar su uso, pero no se han añadido ni eliminado permisos. Se añaden tres columnas para indicar si cada permiso se utiliza para la implementación, las operaciones diarias o la eliminación. Aparte de esto, algunos permisos están segregados en función de su uso para NetApp Data Classification y NetApp Backup and Recovery.</block>
+  <block id="babdf7713555e95437e95d0dc578e050" category="list-text">*Administrador de recuperación ante desastres*: Realice cualquier acción.</block>
+  <block id="756062c061caa73b104caf35ad95abd9" category="list-text">*Administrador de recuperación ante desastres*: Realizar la conmutación por error y las migraciones.</block>
+  <block id="99c828ca537070159318271d66dda996" category="list-text">*Administrador de aplicaciones de recuperación ante desastres*: Crear planes de replicación. Modificar los planes de replicación. Iniciar pruebas de conmutación por error.</block>
+  <block id="10bfeabec8da9ffb3c60c40834621a5d" category="list-text">*Visor de recuperación ante desastres*: Solo visualización de información.</block>
+  <block id="f66b3ba81642886354f66476eebc171c" category="cell">Permite a los usuarios ver los resultados del análisis de NetApp Data Classification . Los usuarios con este rol pueden ver información de cumplimiento y generar informes para los recursos a los que tienen permiso de acceso. Estos usuarios no pueden habilitar ni deshabilitar el escaneo de volúmenes, depósitos o esquemas de bases de datos. La clasificación de datos no tiene un rol de administrador.</block>
+  <block id="9320804217d782369dccfe3cfe90fd29" category="inline-link">Documentos de clasificación de datos</block>
+  <block id="81584a5aa440695d6dd39594311c7b2d" category="list-text"><block ref="81584a5aa440695d6dd39594311c7b2d" category="inline-link-rx"></block></block>
+  <block id="d1047a2a7e1c25fc1d5cbd4c2dea5954" category="paragraph">Los usuarios con el rol de *Administrador de la organización* o *Administrador de carpeta o proyecto* tienen la responsabilidad de asignar roles a otros usuarios. Puede asignar roles de acceso por proyecto o carpeta. Por ejemplo, puede asignar a un usuario el rol de administrador de Ransomware Resilience para un proyecto y el rol de administrador de SnapCenter para un proyecto diferente. Como alternativa, si un usuario necesita el rol de administrador de Resiliencia contra Ransomware para todos los proyectos dentro de una carpeta específica, puede otorgarle este rol a nivel de carpeta.</block>
+  <block id="4c56531120cb5dd49448926a4a5fd1fd" category="paragraph">Puedes asignar los siguientes roles a los usuarios asociados:</block>
+  <block id="c291dac152d909d3eb9020000be43137" category="inline-link-macro">Visor de clasificación de datos</block>
+  <block id="c7e28713a896e9488b74e428eb025ad0" category="list-text"><block ref="c7e28713a896e9488b74e428eb025ad0" category="inline-link-macro-rx"></block></block>
+  <block id="08324e7c6f4c191ebd76163dd3616c9a" category="list-text"><block ref="08324e7c6f4c191ebd76163dd3616c9a" category="inline-link-macro-rx"></block></block>
+  <block id="4feead535ae6dd1e4ba78516194fe4b1" category="list-text"><block ref="4feead535ae6dd1e4ba78516194fe4b1" category="inline-link-macro-rx"></block></block>
 </blocks>

@@ -881,7 +881,7 @@ Solo necesitas los siguientes permisos si habilitaste las funciones de indexaci�
 
 
 
-=== Clasificación
+=== Clasificación de datos
 
 El agente realiza las siguientes solicitudes de API para implementar NetApp Data Classification:
 
