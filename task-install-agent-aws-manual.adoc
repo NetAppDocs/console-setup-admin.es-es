@@ -188,13 +188,13 @@ Dependiendo de su sistema operativo, se requiere Podman o Docker Engine antes de
 ====
 .Podman
 --
-Siga estos pasos para instalar y configurar Podman:
+Instalar y configurar Podman:
 
 * Habilitar e iniciar el servicio podman.socket
 * Instalar Python3
-* Instalar el paquete podman-compose versión 1.0.6
+* Instalar el paquete podman-compose correspondiente
 * Agregue podman-compose a la variable de entorno PATH
-* Si usa Red Hat Enterprise Linux, verifique que su versión de Podman esté usando Netavark Aardvark DNS en lugar de CNI
+* Verifique que su versión de Podman esté usando Netavark Aardvark DNS en lugar de CNI
 
 
 
@@ -210,7 +210,7 @@ rm /var/run/docker.sock
 ----
 . Instalar Podman.
 +
-Puede obtener Podman desde los repositorios oficiales de Red Hat Enterprise Linux.
+Obtenga Podman de los repositorios de Red Hat Enterprise Linux.
 
 +
 Para Red Hat Enterprise Linux 9:
@@ -246,34 +246,32 @@ sudo systemctl enable --now podman.socket
 ----
 sudo dnf install python3
 ----
-. Instale el paquete del repositorio EPEL si aún no está disponible en su sistema.
-
-
-Este paso es necesario porque podman-compose está disponible en el repositorio de Paquetes adicionales para Enterprise Linux (EPEL).
-
-. Si utiliza Red Hat Enterprise 9:
+. Instale EPEL para obtener podman-compose.
++
+.. Si utiliza Red Hat Enterprise 9:
 +
 [source, cli]
 ----
 sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
 ----
-+
-.. Instalar el paquete podman-compose 1.5.0.
+
+
+. Instalar el paquete podman-compose 1.5.0.
 +
 [source, cli]
 ----
 sudo dnf install podman-compose-1.5.0
 ----
-
-
-. Si utiliza Red Hat Enterprise Linux 8:
++
+.. Si utiliza Red Hat Enterprise Linux 8:
 +
 [source, cli]
 ----
 sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
 ----
-+
-.. Instalar el paquete podman-compose 1.0.6.
+
+
+. Instalar el paquete podman-compose 1.0.6.
 +
 [source, cli]
 ----
@@ -283,10 +281,11 @@ sudo dnf install podman-compose-1.0.6
 
 NOTE: Usando el `dnf install` El comando cumple con el requisito de agregar podman-compose a la variable de entorno PATH.  El comando de instalación agrega podman-compose a /usr/bin, que ya está incluido en el `secure_path` opción en el host.
 
-.. Si usa Red Hat Enterprise Linux 8, verifique que su versión de Podman esté usando NetAvark con Aardvark DNS en lugar de CNI.
+. Si usa Red Hat Enterprise Linux 8, verifique que su versión de Podman esté usando NetAvark con Aardvark DNS en lugar de CNI.
++
+.. Verifique si su networkBackend está configurado en CNI ejecutando el siguiente comando:
 
 
-. Verifique si su networkBackend está configurado en CNI ejecutando el siguiente comando:
 
 
 [listing]
@@ -330,7 +329,7 @@ Siga la documentación de Docker para instalar Docker Engine.
 .Pasos
 . https://docs.docker.com/engine/install/["Ver instrucciones de instalación desde Docker"^]
 +
-Siga los pasos para instalar una versión compatible de Docker Engine.  No instale la última versión, ya que la consola no es compatible.
+Instale una versión compatible de Docker Engine siguiendo los pasos. No instale la última versión, ya que la consola no la admite.
 
 . Verifique que Docker esté habilitado y ejecutándose.
 +
