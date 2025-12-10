@@ -16,7 +16,7 @@ summary: Las limitaciones conocidas identifican plataformas, dispositivos o func
 [role="lead"]
 Las limitaciones conocidas identifican plataformas, dispositivos o funciones que no son compatibles con esta versión del producto o que no interoperan correctamente con él. Revise estas limitaciones cuidadosamente.
 
-Estas limitaciones son específicas de la configuración de la consola y la administración de NEtApp: el agente, la plataforma de software como servicio (SaaS) y más.
+Estas limitaciones son específicas de la configuración de la NetApp Console : el agente, la plataforma de software como servicio (SaaS) y más.
 
 
 

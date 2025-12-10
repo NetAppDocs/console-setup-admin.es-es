@@ -14,10 +14,10 @@ Es su responsabilidad actualizar la función personalizada a medida que se agreg
 .. Sube el archivo YAML que incluye los permisos necesarios.
 .. Cree un rol personalizado mediante el uso de `gcloud iam roles create` dominio.
 +
-El siguiente ejemplo crea un rol denominado "conector" a nivel de proyecto:
+El siguiente ejemplo crea un rol llamado "agente" a nivel de proyecto:
 
 +
-`gcloud iam roles create connector --project=myproject --file=connector.yaml`
+`gcloud iam roles create connector --project=myproject --file=agent.yaml`
 
 +
 https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Documentación de Google Cloud: Creación y administración de roles personalizados"^]

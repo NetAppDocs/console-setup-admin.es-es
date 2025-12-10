@@ -16,10 +16,10 @@ Puede asignar los siguientes roles a los usuarios para brindarles acceso a NetAp
 
 La recuperación ante desastres utiliza los siguientes roles:
 
-* *Administrador de recuperación ante desastres*: Realice cualquier acción.
-* *Administrador de recuperación ante desastres*: Realizar la conmutación por error y las migraciones.
-* *Administrador de aplicaciones de recuperación ante desastres*: Crear planes de replicación. Modificar los planes de replicación. Iniciar pruebas de conmutación por error.
-* *Visor de recuperación ante desastres*: Solo visualización de información.
+* *Administrador de recuperación ante desastres*: Realizar cualquier acción.
+* *Administrador de conmutación por error de recuperación ante desastres*: realiza conmutaciones por error y migraciones.
+* *Administrador de aplicaciones de recuperación ante desastres*: crear planes de replicación. Modificar los planes de replicación. Iniciar pruebas de conmutación por error.
+* *Visor de recuperación ante desastres*: Ver solo información.
 
 
 La siguiente tabla indica las acciones que puede realizar cada rol.

@@ -18,7 +18,7 @@ NetApp movió la mayoría de las opciones del menú al panel de navegación izqu
 
 ==== Canvas se reemplaza por la página de Sistemas
 
-NetApp cambió el nombre del Canvas a la página *Sistemas*.  Vaya a la página *Sistema* desde el menú *Almacenamiento > Administración*.
+NetApp cambió el nombre del Canvas a la página *Sistemas*. Vaya a la página *Sistemas* desde el menú *Almacenamiento > Administración*.
 
 image:https://docs.netapp.com/us-en/console-setup-admin/media/screenshot-storage-mgmt.png["Una captura de pantalla de la página de sistemas."]
 

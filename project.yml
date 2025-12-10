@@ -248,8 +248,10 @@ sidebar:
     entries:
     - title: Consola de mantenimiento del agente
       entries:
-      - title: Consola de mantenimiento del agente
+      - title: Comprobaciones de configuración
         url: "/reference-agent-maint-console.html"
+      - title: Proxy transparente
+        url: "/reference-agent-maint-console-proxy.html"
     - title: Permisos
       entries:
       - title: Resumen de permisos

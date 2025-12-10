@@ -101,7 +101,7 @@ Las siguientes preguntas están relacionadas con credenciales y suscripciones.
 
 Como se describe en las secciones anteriores, la consola le permite proporcionar credenciales de AWS de varias maneras: un rol de IAM asociado con el agente de la consola, asumiendo un rol de IAM en una cuenta confiable o proporcionando claves de acceso de AWS.
 
-Con las dos primeras opciones, la consola utiliza el servicio de token de seguridad de AWS para obtener credenciales temporales que rotan constantemente.  Este proceso es la mejor práctica: es automático y seguro.
+Con las dos primeras opciones, la consola utiliza el servicio de token de seguridad de AWS para obtener credenciales temporales que rotan constantemente. Este proceso es la mejor práctica: es automático y seguro.
 
 Si proporciona a la consola claves de acceso de AWS, debe rotar las claves actualizándolas en la consola a intervalos regulares.  Este es un proceso completamente manual.
 

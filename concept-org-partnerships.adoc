@@ -14,7 +14,7 @@ summary: La creación de asociaciones entre organizaciones en la NetApp Console 
 
 
 [role="lead"]
-Al crear asociaciones entre organizaciones, la NetApp Console permite a los socios administrar de forma segura los recursos de NetApp a través de los límites organizacionales, agilizando la colaboración y mejorando la seguridad.
+La creación de asociaciones entre organizaciones en la NetApp Console permite a los socios administrar de forma segura los recursos de NetApp a través de los límites organizacionales, agilizando la colaboración y mejorando la seguridad.
 
 .Roles requeridos
 Administración de asociacioneslink:reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso."]

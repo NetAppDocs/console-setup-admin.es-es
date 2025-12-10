@@ -47,7 +47,7 @@ Los puntos finales enumerados a continuación son todas entradas CNAME.
 
 
  a| 
-\ https://www.googleapis.com/compute/v1/ \ https://compute.googleapis.com/compute/v1 \ https://cloudresourcemanager.googleapis.com/v1/projects \ https://www.googleapis.com/compute/beta \ https://storage.googleapis.com/storage/v1 \ https://www.googleapis.com/storage/v1 \ https://iam.googleapis.com/v1 \ https://cloudkms.googleapis.com/v1 \ https://www.googleapis.com/deploymentmanager/v2/projects
+\ https://www.googleapis.com/compute/v1/ \ https://compute.googleapis.com/compute/v1 \ https://cloudresourcemanager.googleapis.com/v1/projects \ https://www.googleapis.com/compute/beta \ https://storage.googleapis.com/storage/v1 \ https://www.googleapis.com/storage/v1 \ https://iam.googleapis.com/v1 \ https://cloudkms.googleapis.com/v1 \// https://config.googleapis.com/v1/projects
  a| 
 Para administrar recursos en Google Cloud.
 
@@ -155,6 +155,8 @@ title: Console agent deployment policy
 description: Permissions for the user who deploys the Console agent
 stage: GA
 includedPermissions:
+
+- cloudbuild.builds.get
 - compute.disks.create
 - compute.disks.get
 - compute.disks.list
@@ -192,6 +194,19 @@ includedPermissions:
 - compute.zoneOperations.get
 - compute.zones.get
 - compute.zones.list
+- *config.deployments.create*
+- *config.operations.get*
+- *config.deployments.delete*
+- *config.deployments.deleteState*
+- *config.deployments.get*
+- *config.deployments.getState*
+- *config.deployments.list*
+- *config.deployments.update*
+- *config.deployments.updateState*
+- *config.previews.get*
+- *config.previews.list*
+- *config.revisions.get*
+- *config.resources.list*
 - deploymentmanager.compositeTypes.get
 - deploymentmanager.compositeTypes.list
 - deploymentmanager.deployments.create
@@ -210,16 +225,25 @@ includedPermissions:
 - deploymentmanager.types.list
 - resourcemanager.projects.get
 - compute.instances.setServiceAccount
+- *iam.serviceAccounts.actAs*
+- *iam.serviceAccounts.create*
 - iam.serviceAccounts.list
+- *iam.serviceAccountKeys.create*
+- *storage.buckets.create*
+- *storage.buckets.get*
+- *storage.objects.create*
+- *storage.folders.create*
+- *storage.objects.list*
+
 ----
 .. Desde Google Cloud, activa Cloud Shell.
 .. Sube el archivo YAML que incluye los permisos necesarios.
 .. Cree un rol personalizado mediante el uso de `gcloud iam roles create` dominio.
 +
-El siguiente ejemplo crea un rol denominado "connectorDeployment" a nivel de proyecto:
+El siguiente ejemplo crea un rol denominado "agentDeployment" a nivel de proyecto:
 
 +
-Roles de iam de gcloud crean un conectorDeployment --project=myproject --file=connector-deployment.yaml
+Roles de iam de gcloud crean un conector de implementación --proyecto=miproyecto --archivo=agent-deployment.yaml
 
 +
 https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Documentación de Google Cloud: Creación y administración de roles personalizados"^]
@@ -234,7 +258,7 @@ https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single
 
 
 
-== Paso 3: Configurar permisos para las operaciones del agente de la consola
+== Paso 3: Crea una cuenta de servicio de Google Cloud para usar con el agente
 
 Se requiere una cuenta de servicio de Google Cloud para proporcionar al agente de la consola los permisos que necesita para administrar recursos en Google Cloud.  Cuando cree el agente de consola, deberá asociar esta cuenta de servicio con la máquina virtual del agente de consola.
 
@@ -248,10 +272,10 @@ Es su responsabilidad actualizar la función personalizada a medida que se agreg
 .. Sube el archivo YAML que incluye los permisos necesarios.
 .. Cree un rol personalizado mediante el uso de `gcloud iam roles create` dominio.
 +
-El siguiente ejemplo crea un rol denominado "conector" a nivel de proyecto:
+El siguiente ejemplo crea un rol llamado "agente" a nivel de proyecto:
 
 +
-`gcloud iam roles create connector --project=myproject --file=connector.yaml`
+`gcloud iam roles create connector --project=myproject --file=agent.yaml`
 
 +
 https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Documentación de Google Cloud: Creación y administración de roles personalizados"^]
@@ -350,6 +374,7 @@ Debe habilitar varias API de Google Cloud antes de implementar el agente de cons
 .Paso
 . Habilite las siguientes API de Google Cloud en su proyecto:
 +
+** API de Cloud Infrastructure Manager
 ** API de Cloud Deployment Manager V2
 ** API de registro en la nube
 ** API del administrador de recursos en la nube
@@ -371,8 +396,10 @@ https://cloud.google.com/apis/docs/getting-started#enabling_apis["Documentación
 
 Cree un agente de consola directamente desde la consola.
 
-.Acerca de esta tarea
 Al crear el agente de consola, se implementa una instancia de máquina virtual en Google Cloud utilizando una configuración predeterminada.  No cambie a una instancia de VM más pequeña con menos CPU o menos RAM después de crear el agente de consola. link:reference-agent-default-config.html["Obtenga información sobre la configuración predeterminada para el agente de la consola"] .
+
+
+NOTE: Cuando implementa un agente en Google Cloud, el agente crea un depósito para almacenar archivos de implementación.
 
 .Antes de empezar
 Debes tener lo siguiente:

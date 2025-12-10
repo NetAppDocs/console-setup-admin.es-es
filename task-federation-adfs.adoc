@@ -74,10 +74,14 @@ NetApp recomienda utilizar la URL de metadatos para permitir que la NetApp Conso
 
 . Seleccione *Crear conexión*.  La creación de la conexión puede tardar unos segundos.
 . Seleccione *Siguiente*.
-. Seleccione *Probar conexión* para probar su conexión.  Se le dirigirá a una página de inicio de sesión para su servidor IdP.  Inicie sesión con sus credenciales de IdP para completar la prueba y regresar a la consola para habilitar la conexión.
-. Seleccione *Siguiente*.
-. En la página *Habilitar federación*, revise los detalles de la federación y luego seleccione *Habilitar federación*.
+. . Seleccione *Probar conexión* para probar su conexión. Se le dirigirá a una página de inicio de sesión para su servidor IdP. Inicie sesión con sus credenciales de IdP.  Después de iniciar sesión, regrese a la Consola para habilitar la conexión.
+. En la consola, seleccione *Siguiente* para revisar la página de resumen.
+. Configurar notificaciones.
++
+Elija entre siete días o 30 días.  El sistema envía notificaciones de vencimiento por correo electrónico y las muestra en la consola a cualquier usuario con los siguientes roles: superadministrador, administrador de la organización, administrador de la federación y visor de la federación.
+
+. Revise los detalles de la federación y luego seleccione *Habilitar federación*.
 . Seleccione *Finalizar* para completar el proceso.
 
 
-Después de habilitar la federación, los usuarios pueden iniciar sesión en la NetApp Console con sus credenciales corporativas.
+Después de habilitar la federación, los usuarios inician sesión en la NetApp Console con sus credenciales corporativas.

@@ -1,0 +1,84 @@
+---
+sidebar: sidebar 
+permalink: reference-agent-maint-console-config-checker.html 
+keywords: transparent proxy, connector certificate, agent maintenance console, proxy configuration, connector proxy. agent proxy 
+summary: Puede utilizar la consola de mantenimiento del agente de consola para configurar un agente de consola para que utilice un servidor proxy transparente. 
+---
+= Validación del agente con la consola de mantenimiento
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Puede utilizar la consola de mantenimiento del agente de consola para validar la instalación y configuración de un agente de consola.
+
+
+
+== Acceder a la consola de mantenimiento del agente
+
+Puede acceder a la consola de mantenimiento desde el host del agente de la consola.  Navegue al siguiente directorio:
+
+[source, cli]
+----
+/opt/application/netapp/service-manager-2/agent-maint-console
+----
+
+
+== Validación del comprobador de configuración
+
+El `config-checker validate` El comando le permite validar la configuración de un agente de consola.
+
+
+
+=== Parámetros
+
+`--services <comma-separated list of services to validate>`--*REQUERIDO*--
+
+[role="quick-margin-para"]
+Elija uno o más servicios para validar.  Los nombres de servicio válidos son:*`PLATFORM` que valida la conectividad de la red a los puntos finales de la consola requeridos.
+
+`--validationTypes <comma-separated list validation types to run>`--*OBLIGATORIO*-- Elija entre uno o más tipos de validación para ejecutar.  Los tipos de validación válidos son: * `NETWORK` que valida la conectividad de la red a los puntos finales de la consola requeridos.
+
+`--proxy <url>`--*OPCIONAL*--
+
+[role="quick-margin-para"]
+Especifica la URL del servidor proxy que se utilizará para la validación.  Obligatorio si su agente está configurado para utilizar un servidor proxy.
+
+`--certs <paths>`--*OPCIONAL*--
+
+[role="quick-margin-para"]
+Especifica la ruta a uno o más archivos de certificado que se utilizarán para la validación.  Los archivos del certificado deben estar en formato PEM.  Separe varias rutas con comas.  Este parámetro es necesario si su agente utiliza un certificado personalizado.
+
+
+
+=== Ejemplos de validación del verificador de configuración
+
+.Validación básica:
+[source, cli]
+----
+./agent-maint-console config-checker validate --services PLATFORM --validationTypes NETWORK
+----
+.Validación donde se utiliza un servidor proxy para el agente:
+[source, cli]
+----
+./agent-maint-console config-checker validate --services PLATFORM --validationTypes NETWORK --proxy http://proxy.company.com:8080
+----
+.Validación donde se utiliza un certificado para el agente:
+[source, cli]
+----
+./agent-maint-console config-checker validate --services PLATFORM --validationTypes NETWORK --certs /path/to/cert1.pem,/path/to/cert2.pem
+----
+
+
+=== Ver ayuda para cualquier comando
+
+Para ver la ayuda de cualquier comando, agregue `--help` al mando.  Por ejemplo, para ver la ayuda de la `proxy add` Comando, utilice el siguiente comando:
+
+[source, cli]
+----
+./agent-maint-console proxy add --help
+----

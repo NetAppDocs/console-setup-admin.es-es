@@ -35,7 +35,7 @@ El administrador de carpeta o proyecto puede ver a todos los miembros en la pág
 
 == Agregue miembros a su organización
 
-Puede agregar dos tipos de miembros a su organización: una cuenta de usuario y una cuenta de servicio. Las aplicaciones utilizan cuentas de servicio para realizar tareas de API sin intervención humana.  Una persona normalmente utiliza una cuenta de usuario para iniciar sesión y administrar recursos.
+Puede agregar dos tipos de miembros a su organización: una cuenta de usuario y una cuenta de servicio. Las aplicaciones utilizan cuentas de servicio para realizar tareas de API automáticamente.  Las personas usan cuentas de usuario para iniciar sesión y administrar recursos.
 
 Los usuarios deben registrarse en la NetApp Console antes de poder agregarlos a una organización o asignarles un rol.  Crea cuentas de servicio directamente desde la consola.
 
@@ -97,7 +97,11 @@ Si desea utilizar la autenticación JWT, tenga su clave pública o certificado l
 . Introduzca un nombre para la cuenta de servicio.
 . Si desea utilizar la autenticación JWT, seleccione *Usar autenticación JWT de clave privada* y cargue su clave RSA pública o certificado.  Omite este paso si deseas utilizar un ID de cliente y un secreto en su lugar.
 +
-Su certificado X.509.  Debe estar en formato PEM, CRT o CER.
+Su certificado X.509. Debe estar en formato PEM, CRT o CER.
+
++
+.. Configure notificaciones de vencimiento para su certificado.  Elija entre siete días o 30 días.  Las notificaciones de vencimiento se envían por correo electrónico y se muestran en la consola a los usuarios con el rol de superadministrador o administrador de la organización.
+
 
 . Utilice la sección *Seleccionar una organización, carpeta o proyecto* para elegir el nivel de su jerarquía de recursos para el cual el miembro debe tener permisos.
 +
@@ -145,7 +149,7 @@ La tabla *Miembros* enumera los miembros de su organización.
 
 Es posible que necesites eliminar a un miembro de tu organización (por ejemplo, si abandona tu empresa).
 
-El sistema elimina los permisos del miembro pero conserva sus cuentas de consola y del sitio de soporte de NetApp .
+Cuando se elimina un miembro, el sistema revoca sus permisos pero conserva sus cuentas de consola y del sitio de soporte de NetApp .
 
 .Pasos
 . Desde la página *Miembros*, navegue hasta un miembro en la tabla, seleccioneimage:icon-action.png["Un icono que consta de tres puntos uno al lado del otro."] luego seleccione *Eliminar usuario*.
@@ -165,7 +169,7 @@ Al volver a crear las credenciales, elimina las credenciales existentes para la 
 . Seleccione *Miembros*.
 . En la tabla *Miembros*, navegue hasta una cuenta de servicio, seleccioneimage:icon-action.png["Un icono que consta de tres puntos uno al lado del otro."] y luego seleccione *Recrear secretos*.
 . Seleccione *Recrear*.
-. Descargue o copie el ID del cliente y el secreto del cliente.  + El secreto del cliente se muestra solo una vez. Cópielo o descárguelo y guárdelo de forma segura.
+. Descargue o copie el ID del cliente y el secreto del cliente. + La consola muestra el secreto del cliente solo una vez. Cópielo o descárguelo y guárdelo de forma segura.
 
 
 
@@ -174,7 +178,7 @@ Al volver a crear las credenciales, elimina las credenciales existentes para la 
 
 Si un usuario pierde el acceso a su dispositivo MFA, puede eliminar o deshabilitar su configuración MFA.
 
-Los usuarios deben reconfigurar MFA al iniciar sesión después de la eliminación.  Si el usuario solo perdió el acceso a su dispositivo MFA temporalmente, puede usar el código de recuperación que guardó cuando configuró MFA para iniciar sesión.
+Los usuarios deben configurar MFA nuevamente cuando inicien sesión después de la eliminación. Si el usuario solo perdió el acceso a su dispositivo MFA temporalmente, puede usar el código de recuperación que guardó cuando configuró MFA para iniciar sesión.
 
 Si no tienen su código de recuperación, deshabilite temporalmente MFA para permitir el inicio de sesión. Cuando deshabilita MFA para un usuario, esta se deshabilita solo durante ocho horas y luego se vuelve a habilitar automáticamente. Al usuario se le permite un inicio de sesión durante ese tiempo sin MFA. Después de las ocho horas, el usuario deberá utilizar MFA para iniciar sesión.
 

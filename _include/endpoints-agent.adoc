@@ -22,6 +22,13 @@ Los puntos finales enumerados a continuación son todas entradas CNAME.
 
 | Para administrar los recursos de AWS.  El punto final depende de su región de AWS. https://docs.aws.amazon.com/general/latest/gr/rande.html["Consulte la documentación de AWS para obtener más detalles."^]
 
+| Amazon FsX para NetApp ONTAP:
+
+* api.workloads.netapp.com
+
+
+| La consola basada en web se comunica con este punto final para interactuar con las API de Workload Factory para administrar y operar FSx para cargas de trabajo basadas en ONTAP .
+
 | \ https://management.azure.com \ https://login.microsoftonline.com \ https://blob.core.windows.net \ https://core.windows.net
 
 | Para administrar recursos en regiones públicas de Azure.
@@ -38,7 +45,7 @@ Los puntos finales enumerados a continuación son todas entradas CNAME.
 
 | Para administrar recursos en las regiones de Azure China.
 
-| \ https://www.googleapis.com/compute/v1/ \ https://compute.googleapis.com/compute/v1 \ https://cloudresourcemanager.googleapis.com/v1/projects \ https://www.googleapis.com/compute/beta \ https://storage.googleapis.com/storage/v1 \ https://www.googleapis.com/storage/v1 \ https://iam.googleapis.com/v1 \ https://cloudkms.googleapis.com/v1 \ https://www.googleapis.com/deploymentmanager/v2/projects
+| \ https://www.googleapis.com/compute/v1/ \ https://compute.googleapis.com/compute/v1 \ https://cloudresourcemanager.googleapis.com/v1/projects \ https://www.googleapis.com/compute/beta \ https://storage.googleapis.com/storage/v1 \ https://www.googleapis.com/storage/v1 \ https://iam.googleapis.com/v1 \ https://cloudkms.googleapis.com/v1 \// https://config.googleapis.com/v1/projects
 
 | Para administrar recursos en Google Cloud.
 

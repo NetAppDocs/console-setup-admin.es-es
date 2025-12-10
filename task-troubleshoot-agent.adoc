@@ -22,7 +22,7 @@ Si tiene una cuenta del sitio de soporte de NetApp , también puede ver lalink:h
 
 == Mensajes de error comunes y resoluciones
 
-La tabla enumera los mensajes de error más comunes y sus sugerencias de resolución:
+Esta tabla enumera mensajes de error comunes y muestra cómo solucionarlos:
 
 [cols="19,27,27"]
 |===
@@ -37,7 +37,7 @@ La instalación del agente ha fallado
 * Verifique que el servicio Service Manager esté activo.
 * Verifique que todos los contenedores estén ejecutándose.
 * Asegúrese de que su firewall permita el acceso al servicio en el puerto 8888.
-* Si el problema persiste, comuníquese con el soporte técnico.
+* Si aún tienes problemas, contacta con el soporte técnico.
 
 
 
@@ -70,7 +70,8 @@ No se puede cargar información de soporte para el agente.
  a| 
 Este mensaje aparece si el agente no puede acceder a su cuenta de soporte.
  a| 
-* *.
+* Verifique que el agente tenga acceso saliente a los puntos finales requeridos.link:reference-networking-saas-console.html["Obtenga más información sobre los puntos finales de acceso a la red necesarios."]
+
 
 |===
 
@@ -127,6 +128,28 @@ Asegúrese de que el agente de la consola tenga el acceso a la red que necesita.
 
 
 
+=== Ejecutar comprobaciones de configuración en el agente de la consola
+
+Ejecute comprobaciones de configuración en los agentes de la consola desde la consola o desde la consola de mantenimiento del agente para asegurarse de que estén conectados.
+
+También puede ejecutar comprobaciones de configuración mediante la consola de mantenimiento del agente.link:reference-agent-maint-console-config-checker.html["Obtenga más información sobre el uso del comando validate de config-checker."]
+
+
+NOTE: Sólo puedes validar agentes que tengan un estado de *Conectado*.
+
+.Pasos desde la consola
+. Seleccione *Administración > Agentes*.
+. Seleccione el menú de acciones de un agente de consola que desee verificar y elija *Validar*.
++
+image:screenshot-agent-validate.png["Una captura de pantalla que muestra la opción Validar en el menú Acciones de un agente."]
+
++
+La validación puede tardar hasta 15 minutos.  Los resultados se muestran cuando está terminado.
+
+
+
+
+
 == Problemas de instalación del agente de consola
 
 Si la instalación falla, consulte el informe y los registros para resolver los problemas.
@@ -151,14 +174,10 @@ También puede acceder al informe de validación en formato JSON y a los registr
 
 === Deshabilitar las comprobaciones de configuración para instalaciones manuales
 
-Puede haber ocasiones en las que necesite deshabilitar las comprobaciones de configuración que verifican la conectividad saliente durante la instalación. Por ejemplo:
-
-* Al instalar manualmente un agente en su entorno de Government Cloud, debe deshabilitar las comprobaciones de configuración o la instalación fallará.
-* También es posible que desees deshabilitar estas comprobaciones si continúas usando la lista de puntos finales anterior para las actualizaciones del agente.
-
+Puede haber ocasiones en las que necesite deshabilitar las comprobaciones de configuración que verifican la conectividad saliente durante la instalación. Por ejemplo, al instalar manualmente un agente en su entorno de Government Cloud, debe deshabilitar las comprobaciones de configuración o la instalación fallará.
 
 .Pasos
-Puede deshabilitar la verificación de configuración configurando el indicador _skipConfigCheck_ en el archivo _com/opt/application/netapp/service-manager-2/config.json_.  De forma predeterminada, esta bandera se establece como falsa y la verificación de configuración verifica el acceso saliente para el agente.  Establezca esta bandera como verdadera para deshabilitar la verificación.  Debe estar familiarizado con la sintaxis JSON antes de completar este paso.
+Puede deshabilitar la verificación de configuración configurando el indicador _skipConfigCheck_ en el archivo _com/opt/application/netapp/service-manager-2/config.json_. De forma predeterminada, esta bandera se establece como falsa y la verificación de configuración verifica el acceso saliente para el agente. Establezca esta bandera como verdadera para deshabilitar la verificación. Familiarícese con la sintaxis JSON antes de completar este paso.
 
 Para volver a habilitar la verificación de configuración, siga estos pasos y configure el indicador _skipConfigCheck_ en falso.
 
@@ -186,22 +205,6 @@ systemctl stop netapp-service-manager.service
 systemctl restart netapp-service-manager.service
 ----
 
-
-
-
-=== Instalación fallida en los puntos finales utilizados para las actualizaciones
-
-Si todavía estás usando ellink:reference-networking-saas-console-previous.html["puntos finales anteriores"] utilizado para actualizaciones de agente, la validación falla con un error.  Para evitar esto, desmarque la casilla de verificación *Configuración del agente de validación* u omita la verificación de configuración al instalar en un VCenter.
-
-NetApp recomienda actualizar las reglas de su firewall para permitir el acceso alink:reference-networking-saas-console.html["puntos finales actuales"] A la mayor brevedad posible. link:reference-networking-saas-console-previous.html#update-endpoint-list["Aprenda a actualizar sus puntos finales"] .
-
-Asegúrese de verificar que el único error esté relacionado con los puntos finales anteriores:
-
-* \ https://bluexpinfraprod.eastus2.data.azurecr.io
-* \ https://bluexpinfraprod.azurecr.io
-
-
-Si hay otros errores, deberá resolverlos antes de continuar.
 
 
 

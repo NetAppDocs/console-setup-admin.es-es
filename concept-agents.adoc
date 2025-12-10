@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-agents.html 
-keywords: 'concept, connectors, learn about connectors, what are connectors, what is a connector, what"s a connector, days, 14 days, when is a connector required, connector supported locations, restricted mode, private mode, dark site, permissions, multiple connectors, disaster recovery, agents, multiple agents, what is a Console agent' 
+keywords: 'concept, Console agents, learn about agents, what are connectors, what is a connector, what"s a connector, when is a connector required, connector supported locations, restricted mode, private mode, dark site, permissions, multiple connectors, disaster recovery, agents, multiple agents, what is a Console agent' 
 summary: Un _agente de consola_ es un software de NetApp que se ejecuta en su red en la nube o en su red local.  Utilice un agente de consola para conectar los servicios de NetApp Console a sus entornos de almacenamiento. 
 ---
 = Obtenga más información sobre los agentes de la NetApp Console

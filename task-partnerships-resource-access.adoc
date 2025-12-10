@@ -27,7 +27,7 @@ Una organización asociada primero debe agregar miembros a la asociación antes 
 
 Puede administrar los roles de los miembros de las organizaciones asociadas de la misma manera que lo hace con los suyos propios.  Sin embargo, no todos los roles están disponibles para los usuarios asociados.  En particular, no puede otorgar a los usuarios socios un rol que permita actualizaciones de software.  La actualización del software ONTAP generalmente requiere acceso directo a la red.
 
-Puedes asignar los siguientes roles a los usuarios asociados:
+Puede asignar los siguientes roles a los usuarios socios:
 
 * link:reference-iam-platform-roles.html#organization-admin-roles["Administrador de la organización"]
 * link:reference-iam-platform-roles.html#organization-admin-roles["Administrador de carpetas o proyectos"]
@@ -37,16 +37,12 @@ Puedes asignar los siguientes roles a los usuarios asociados:
 * link:reference-iam-backup-rec-roles.html["Visor de copias de seguridad"]
 * link:reference-iam-backup-rec-roles.html["Restaurar administrador"]
 * link:reference-iam-backup-rec-roles.html["Clonar administrador"]
-* link:reference-iam-predefined-roles.html["Visor de clasificación de datos"]
 * link:reference-iam-disaster-rec-roles.html["Administración de recuperación ante desastres"]
 * link:reference-iam-disaster-rec-roles.html["Administrador de conmutación por error de recuperación ante desastres"]
 * link:reference-iam-disaster-rec-roles.html["Administrador de aplicaciones de recuperación ante desastres"]
 * link:reference-iam-disaster-rec-roles.html["Visor de recuperación ante desastres"]
 * link:reference-iam-storage-roles.html["Analista de soporte de operaciones"]
-* link:reference-iam-ransomware-roles.html["Administrador de resiliencia frente al ransomware"]
-* link:reference-iam-ransomware-roles.html["Visor de resiliencia contra ransomware"]
-* link:reference-iam-ransomware-roles.html#user-behavior-roles["Comportamiento del usuario de Resiliencia ante Ransomware"]
-* link:reference-iam-ransomware-roles.html#user-behavior-roles["Visor del comportamiento del usuario de Ransomware Resilience"]
+* link:reference-iam-predefined-roles.html["Visor de clasificación"]
 
 
 link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles predefinidos"]

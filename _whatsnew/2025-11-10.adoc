@@ -23,4 +23,4 @@ Al instalar manualmente un agente de consola, el agente ahora admite RHEL 9.6 co
 Esta versión incluye lo siguiente:
 
 .Nueva dirección de correo electrónico para las notificaciones de la NetApp Console
-La dirección de correo electrónico que envía notificaciones de NetApp Console ha cambiado de *service@console.bluexp.netapp.com* a *service@console.bluexp.netapp.com*. NetApp recomienda actualizar las reglas de correo electrónico para permitir *service@console.netapp.com* para garantizar que siga recibiendo notificaciones por correo electrónico de NetApp Console .
+La dirección de correo electrónico que envía notificaciones de NetApp Console ha cambiado de *service@console.bluexp.netapp.com* a *service@console.bluexp.netapp.com*. NetApp recomienda actualizar las reglas de correo electrónico para permitir *service@console.netapp.com* para garantizar que continúe recibiendo notificaciones por correo electrónico de la NetApp Console .

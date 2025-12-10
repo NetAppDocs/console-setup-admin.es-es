@@ -20,18 +20,18 @@ Dentro de la NetApp Console, organiza tus recursos de NetApp usando proyectos y 
 
 == Agregar una carpeta o proyecto
 
-Cuando creas tu organización, ésta incluye un único proyecto.  Agregue proyectos para administrar recursos y carpetas para agrupar proyectos relacionados.
+Cuando creas tu organización, ésta incluye un único proyecto. Agregue proyectos para administrar recursos y carpetas para agrupar proyectos relacionados.
 
-La jerarquía de recursos de su organización puede tener hasta siete niveles, con carpetas anidadas en seis niveles de profundidad y proyectos en el séptimo.
+Puede crear hasta siete niveles de carpetas y proyectos en la estructura de recursos de su organización.  Cree carpetas dentro de carpetas para crear una estructura anidada para su organización.
 
 .Pasos
 . Seleccione *Administración > Identidad y acceso*.
 . Seleccione *Organización*.
 . Desde la página *Organización*, seleccione *Agregar carpeta o proyecto*.
 . Seleccione *Carpeta* o *Proyecto*.
-. Proporcione detalles sobre la carpeta o el proyecto:
+. Introduzca los detalles de la carpeta o del proyecto:
 +
-** *Nombre y ubicación*: Ingrese un nombre y elija una ubicación en la jerarquía para la carpeta o el proyecto.  Una carpeta o proyecto puede estar directamente debajo de la organización o dentro de una carpeta.
+** *Nombre y ubicación*: Ingrese un nombre y elija una ubicación en la jerarquía para la carpeta o el proyecto. Coloque una carpeta o proyecto debajo de la organización o dentro de otra carpeta.
 ** *Recursos*: Seleccione los recursos que desea asociar con esta carpeta o proyecto.
 +
 Puede seleccionar recursos asociados con la carpeta o proyecto principal.
@@ -41,7 +41,7 @@ link:concept-identity-and-access-management.html#associate-resource-folder["Apre
 
 ** *Acceso*: Vea los miembros que tendrán acceso a la carpeta o al proyecto según los permisos existentes ya definidos en su jerarquía de recursos.
 +
-Seleccione *Agregar un miembro* para asignar acceso y un rol a miembros adicionales. Un rol define los permisos que tienen los miembros para la carpeta o el proyecto.
+Seleccione *Agregar un miembro* para asignar acceso y un rol.
 
 +
 link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso"] .
@@ -68,10 +68,7 @@ Si es necesario, puede cambiar el nombre de sus carpetas y proyectos.
 
 Elimina carpetas y proyectos que ya no necesites.
 
-.Antes de empezar
-* Asegúrese de que la carpeta o el proyecto no tengan recursos asociados. <<modify-resources,Aprenda a disociar recursos>> .
-* Asegúrese de que la carpeta o el proyecto no tengan recursos asociados.
-
+Antes de eliminar una carpeta o un proyecto, asegúrese de que no contenga ningún recurso. <<modify-resources,Aprenda a eliminar recursos>>.
 
 .Pasos
 . Desde la página *Organización*, navegue hasta un proyecto o carpeta en la tabla, seleccioneimage:icon-action.png["Un icono con tres puntos"] y luego seleccione *Eliminar*.
@@ -101,7 +98,7 @@ image:screenshot-iam-allocated-resources.png["Una captura de pantalla de la pág
 
 
 
-== Modificar los recursos asociados a una carpeta o proyecto
+== Cambiar los recursos asociados a una carpeta o proyecto
 
 Los miembros con permisos para una carpeta o proyecto pueden acceder a sus recursos asociados.
 
@@ -119,7 +116,7 @@ En la tabla, la columna *Estado* identifica los recursos que están asociados co
 +
 image:screenshot-iam-associate-resources.png["Una captura de pantalla de la página Editar proyecto que muestra la opción Asociar recursos que está disponible después de seleccionar recursos que actualmente no están asociados."]
 
-. Seleccione *Aplicar*
+. Seleccione *Aplicar*.
 
 
 
@@ -136,9 +133,9 @@ image:screenshot-iam-member-access.png["Una captura de pantalla de la página Ed
 
 == Modificar el acceso de los miembros a una carpeta o proyecto
 
-Modificar el acceso de los miembros para garantizar que los miembros correctos puedan acceder a los recursos asociados.
+Modificar el acceso de los miembros para controlar el acceso a los recursos.
 
-El acceso de miembros proporcionado en un nivel de jerarquía superior no se puede cambiar en niveles inferiores.  Actualice los permisos de los miembros en el nivel de jerarquía superior para cambiar el acceso.  Alternativamente, puedeslink:task-iam-manage-roles.html#manage-permissions["Administrar permisos desde la página Miembros"] .
+No se puede cambiar el acceso de los miembros en niveles inferiores si se hereda de un nivel de jerarquía superior.   Actualice los permisos de los miembros en el nivel de jerarquía superior para cambiar el acceso. Alternativamente, puede link:task-iam-manage-roles.html#manage-permissions["Administrar permisos desde la página Miembros"].
 
 link:concept-identity-and-access-management.html#role-inheritance["Obtenga más información sobre la herencia de roles"] .
 
