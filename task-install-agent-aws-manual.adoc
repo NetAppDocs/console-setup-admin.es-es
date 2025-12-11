@@ -81,9 +81,6 @@ Podman versión 5.4.0 con podman-compose 1.5.0.
  a| 
 Compatible con modo de aplicación o modo permisivo
 
-* La administración de los sistemas Cloud Volumes ONTAP NO es compatible con agentes que tengan SELinux habilitado en el sistema operativo.
-
-
 
 
  a| 
@@ -102,9 +99,6 @@ Podman versión 4.9.4 con podman-compose 1.5.0.
  a| 
 Compatible con modo de aplicación o modo permisivo
 
-* La administración de los sistemas Cloud Volumes ONTAP NO es compatible con agentes que tengan SELinux habilitado en el sistema operativo.
-
-
 
 
  a| 
@@ -122,9 +116,6 @@ Podman versión 4.6.1 o 4.9.4 con podman-compose 1.0.6.
 <<podman-configuration,Ver los requisitos de configuración de Podman>> .
  a| 
 Compatible con modo de aplicación o modo permisivo
-
-* La administración de los sistemas Cloud Volumes ONTAP NO es compatible con agentes que tengan SELinux habilitado en el sistema operativo.
-
 
 
 
