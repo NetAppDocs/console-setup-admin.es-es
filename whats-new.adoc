@@ -728,25 +728,6 @@ Esta función está disponible en la versión 3.9.49 y superiores del Conector. 
 
 
 
-=== Actualización del conector 3.9.48
-
-
-
-==== Capacidad para deshabilitar la configuración de actualización automática del Conector
-
-Puede desactivar la función de actualización automática del Conector.
-
-Cuando utiliza BlueXP en modo estándar o modo restringido, BlueXP actualiza automáticamente su Conector a la última versión, siempre que el Conector tenga acceso a Internet saliente para obtener la actualización del software.  Si necesita administrar manualmente cuándo se actualiza el conector, ahora puede deshabilitar las actualizaciones automáticas para el modo estándar o el modo restringido.
-
-
-NOTE: Este cambio no afecta al modo privado de BlueXP , donde siempre deberás actualizar el conector tú mismo.
-
-Esta función está disponible en la versión 3.9.48 y superiores del Conector.
-
-link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["Descubra cómo deshabilitar la actualización automática del Conector."^]
-
-
-
 == 18 de febrero de 2025
 
 

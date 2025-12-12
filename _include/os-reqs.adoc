@@ -153,7 +153,7 @@ Versión de Podman 4.6.1 o 4.9.4
 
 <<podman-configuration,Ver los requisitos de configuración de Podman>> .
  a| 
-Compatible con modo de aplicación o modo permisivo ^1^
+Compatible con modo de aplicación o modo permisivo
 
 
 
