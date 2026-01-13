@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
-permalink: concept-modes.html 
+permalink: concept-console.html 
 keywords: dark site, internet, on prem, no internet, supported deployments, govcloud, government access, environments, supported environments, deployment modes, modes, private mode, restricted mode, il6, sc2s, c2s, dark site, sovereign region, saas, government region, secret region, top secret, aws secret, aws top secret, private 
-summary: 'La NetApp Console ofrece múltiples _modos de implementación_ que le permiten satisfacer sus requisitos comerciales y de seguridad. El _modo estándar_ aprovecha una capa de software como servicio (SaaS) para proporcionar funcionalidad completa, mientras que el _modo restringido_ y el _modo privado_ están disponibles para organizaciones que tienen restricciones de conectividad.' 
+summary: NetApp Console ofrece una experiencia SaaS para acceso completo a las funciones o una opción autohospedada para organizaciones con restricciones de conectividad. 
 ---
-= Obtenga más información sobre los modos de implementación de la NetApp Console
+= Obtenga más información sobre la NetApp Console
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,14 +14,13 @@ summary: 'La NetApp Console ofrece múltiples _modos de implementación_ que le 
 
 
 [role="lead"]
-La NetApp Console ofrece múltiples _modos de implementación_ que le permiten satisfacer sus requisitos comerciales y de seguridad.
+NetApp Console ofrece una experiencia SaaS para acceso completo a las funciones o una opción autohospedada para organizaciones con restricciones de conectividad.
 
-* El _modo estándar_ aprovecha una capa de software como servicio (SaaS) para proporcionar una funcionalidad completa.  Los usuarios acceden a la consola a través de una interfaz alojada en la web
-* El _modo restringido_ está disponible para organizaciones que tienen restricciones de conectividad y desean instalar la NetApp Console en su propia nube pública.  Los usuarios acceden a la consola a través de una interfaz basada en web alojada en un agente de consola en su entorno de nube.
-+
-NetApp Console restringe el tráfico, la comunicación y los datos en modo restringido, y usted debe asegurarse de que su entorno (local y en la nube) cumpla con las regulaciones requeridas.
+Puede utilizar NetApp Console de dos maneras: como una experiencia SaaS totalmente administrada o como una solución autohospedada en su propio entorno de nube. Con la opción SaaS, accede a la consola a través de console.netapp.com mientras NetApp administra toda la infraestructura, la autenticación y las actualizaciones. Obtendrás acceso completo a las funciones directamente desde tu navegador web. Si elige la opción autohospedada, instalará un agente de consola en su entorno de AWS, Azure o Google Cloud. La interfaz se ejecuta localmente y el agente mantiene una conectividad saliente limitada a NetApp para tareas esenciales como autenticación y actualizaciones.
 
+Elija la experiencia SaaS si su organización tiene conectividad a Internet estándar. Se beneficia de la configuración más sencilla, actualizaciones automáticas y acceso completo a todos los sistemas de almacenamiento, servicios de datos y funciones avanzadas de NetApp . Puede agregar agentes directamente desde la consola y NetApp se encarga de todo el mantenimiento.
 
+Seleccione la opción autohospedada si su organización requiere controles estrictos de conectividad, seguridad o cumplimiento, como en el gobierno o en industrias reguladas. Obtendrás más control y aislamiento de la red, pero solo podrás administrar sistemas de almacenamiento NetApp seleccionados y utilizar servicios de datos limitados, con algunas funciones no disponibles. Instala un agente de consola manualmente y accede a la consola directamente desde la interfaz del agente local. Instale su agente a través de su mercado en la nube o mediante una instalación manual, y el agente se comunicará únicamente de manera saliente con NetApp, lo que garantiza que no haya conexiones entrantes a Internet.
 
 
 

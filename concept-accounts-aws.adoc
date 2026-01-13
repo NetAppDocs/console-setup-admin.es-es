@@ -24,7 +24,7 @@ Cuando implementa un agente de consola desde la consola, debe proporcionar el AR
 
 Cuando la consola inicia el agente de consola en AWS, crea una función de IAM y un perfil para el agente. También adjunta una política que proporciona al agente de la consola permisos para administrar recursos y procesos dentro de esa cuenta de AWS. link:reference-permissions-aws.html["Revisar cómo el Agente utiliza los permisos"].
 
-image:diagram_permissions_initial_aws.png["Una imagen conceptual que muestra la consola implementando el agente de consola en una cuenta de AWS. Una política de IAM se asigna a un rol de IAM, que está asociado a la consola."]
+image:diagram_permissions_initial_aws.png["Una imagen conceptual que muestra la consola implementando el agente de consola en una cuenta de AWS."]
 
 Si agrega un nuevo sistema Cloud Volumes ONTAP , la consola selecciona estas credenciales de AWS de forma predeterminada:
 
@@ -51,7 +51,7 @@ Revise las secciones a continuación para obtener más detalles.
 
 Para utilizar la consola con cuentas de AWS adicionales, proporcione claves de AWS o el ARN de un rol en una cuenta de confianza. La siguiente imagen muestra dos cuentas adicionales, una que proporciona permisos a través de un rol de IAM en una cuenta confiable y otra a través de las claves de AWS de un usuario de IAM:
 
-image:diagram_permissions_multiple_aws.png["Una imagen conceptual que muestra dos cuentas adicionales.  Cada uno tiene una política de IAM, una está asociada a un usuario de IAM y la otra está asociada a un rol de IAM."]
+image:diagram_permissions_multiple_aws.png["Una imagen conceptual que muestra dos cuentas adicionales. Cada uno tiene una política IAM. Uno está asociado a un usuario de IAM y el otro está asociado a un rol de IAM."]
 
 Para agregar las credenciales de la cuenta a la consola, especifique el nombre de recurso de Amazon (ARN) del rol de IAM o las claves de AWS para el usuario de IAM.
 

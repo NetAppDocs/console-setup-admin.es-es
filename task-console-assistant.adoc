@@ -14,7 +14,7 @@ summary: 'Si es la primera vez que utiliza la NetApp Console, el asistente de la
 
 
 [role="lead"]
-Si es la primera vez que utiliza la NetApp Console con el rol de administrador de la organización, puede usar el asistente de la consola para que lo guíe a través del proceso de configuración inicial.  El asistente le ayuda a agregar una cuenta de NetApp Support Site (NSS), agregar un agente de consola, agregar un clúster y agregar una licencia o suscripción, lo que facilita el inicio de la administración de sus datos.
+Si es la primera vez que utiliza la NetApp Console (SaaS) con el rol de administrador de la organización, puede usar el asistente de la consola para que lo guíe a través del proceso de configuración inicial. El asistente le ayuda a agregar una cuenta de NetApp Support Site (NSS), agregar un agente de consola, agregar un clúster y agregar una licencia o suscripción, lo que facilita el inicio de la administración de sus datos.
 
 
 
@@ -22,39 +22,22 @@ Si es la primera vez que utiliza la NetApp Console con el rol de administrador d
 
 El asistente de consola solo está disponible para usuarios con el rol de administrador de la organización.
 
+De forma predeterminada, la NetApp Console muestra el asistente de la consola en la página de inicio para los usuarios nuevos que tienen el rol de administrador de la organización. Permanecerá disponible hasta que complete las tareas obligatorias de crear un agente de consola y agregar un sistema.
 
-
-== ¿Cuándo aparece el asistente de consola?
-
-El asistente de la consola está disponible en la página de inicio de la NetApp Console hasta que se completen las tareas de configuración obligatorias.
-
-Utilice el asistente para completar estas tareas, algunas de las cuales son obligatorias:
+Utilice el asistente para completar estas tareas, que proporcionan la configuración mínima para su entorno de NetApp Console :
 
 * Agregue una cuenta del sitio de soporte de NetApp (NSS).
-* Conéctese a su patrimonio de almacenamiento implementando un agente de consola (paso obligatorio).
-* Administre su sistema agregando o descubriendo un clúster (paso obligatorio).
++
+link:task-adding-nss-accounts.html["Aprenda cómo agregar una cuenta NSS"].
+
+* Conéctese a su patrimonio de almacenamiento implementando un agente de consola.
++
+link:task-install-agent-on-prem.html["Aprenda a instalar un agente de consola local."]
+
+* Administrar un sistema de almacenamiento agregando o descubriendo un clúster
 * Agregue una suscripción de mercado o una licencia PAYGO.
-* Enlaces de servicios de datos abiertos.
++
+link:https://docs.netapp.com/us-en/console-licenses-subscriptions/index.html["Aprenda a agregar licencias y suscripciones"^].
 
-
-
-
-== Habilitar el asistente de consola
-
-De forma predeterminada, la NetApp Console muestra el asistente de la consola en la página de inicio para los usuarios nuevos que tienen el rol de administrador de la organización.
-
-
-TIP: Puedes despedir al asistente solo después de que tú u otra persona complete los elementos obligatorios.  Después de completar los elementos obligatorios, el asistente se descarta para todos los usuarios de su organización y no vuelve a aparecer.
-
-
-
-== Utilice el asistente de consola para comenzar
-
-El asistente de consola lo guía a través de la configuración de su entorno de NetApp Console con estas tareas:
-
-* Agregue una cuenta del sitio de soporte de NetApp (NSS).
-* Conéctese a su patrimonio de almacenamiento implementando un agente de consola, ya sea local o en la nube.  Puedes implementarlo manualmente o descargando un OVA.  Este paso es obligatorio.
-* Administre su sistema agregando o descubriendo un clúster.  Este paso es obligatorio.
-* Agregue una suscripción de mercado o una licencia PAYGO.
-* Obtenga más información sobre los servicios de datos de NetApp .
+* Revisar la información de los servicios de datos.
 

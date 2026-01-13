@@ -13,77 +13,72 @@ indexpage:
     puede controlar el acceso a sus recursos mediante la gestión de identidad y acceso
     (IAM), administrar agentes de consola, cuentas de proveedores de nube y más.
   tiles:
-  - title: Empezar
+  - title: Aprenda los conceptos básicos
     links:
     - title: Obtenga más información sobre la NetApp Console
       url: concept-overview.html
+    - title: Obtenga más información sobre los agentes de consola
+      url: concept-agents.html
+    - title: Aprenda sobre la gestión de identidad y acceso
+      url: concept-identity-and-access-management.html
     - title: Obtenga más información sobre los modos de implementación
       url: concept-modes.html
-    - title: Comience con el modo estándar
-      url: task-quick-start-standard-mode.html
-    - title: Comience con el modo restringido
-      url: "/task-quick-start-restricted-mode.html"
-  - title: Configurar identidad y acceso
+  - title: Empezar
     links:
-    - title: Obtenga información sobre la gestión de identidades y accesos de la consola
-        (IAM)
+    - title: Introducción a NetApp Console (SaaS)
+      url: task-quick-start-standard-mode.html
+    - title: Preparar el acceso a la red para la NetApp Console
+      url: reference-networking-saas-console.html
+    - title: Regístrese en la NetApp Console
+      url: task-sign-up-saas.html
+    - title: Utilice el asistente de NetApp Console (SaaS)
+      url: task-console-assistant.html
+    - title: Implementar la NetApp Console en modo restringido (implementaciones de
+        nube soberana)
+      url: "/task-quick-start-restricted-mode.html"
+  - title: Implementar la gestión de identidad y acceso (IAM)
+    links:
+    - title: Planifique su estrategia de IAM
       url: concept-identity-and-access-management.html
-    - title: Comience con la identidad y el acceso
-      url: task-iam-get-started.html
-    - title: Organiza tus recursos con carpetas y proyectos
+    - title: Agregar carpetas y proyectos
       url: task-iam-manage-folders-projects.html
-    - title: Agregar miembros y cuentas de servicio
-      url: task-iam-manage-members-permissions.html
-    - title: Utilice roles para controlar el acceso de los miembros a los recursos
+    - title: Comprender cómo funcionan los roles de acceso
       url: task-iam-manage-roles.html
-  - title: Agentes de consola
+    - title: Agregar miembros, cuentas de servicio y grupos federados
+      url: task-iam-manage-members-permissions.html
+  - title: Implementar agentes de la consola
     links:
     - title: Obtenga más información sobre los agentes de consola
-      url: concept-connectors.html
-    - title: Ver permisos de AWS
-      url: reference-permissions-aws.html
-    - title: Ver permisos de Azure
-      url: reference-permissions-azure.html
-    - title: Ver los permisos de Google Cloud
-      url: reference-permissions-gcp.html
-  - title: AWS
+      url: concept-agents.html
+    - title: Implementar un agente local
+      url: "/task-install-agent-on-prem.html"
+    - title: Implementar un agente en AWS
+      url: "/task-install-agent-aws-console.html"
+    - title: Implementar un agente en Azure
+      url: "/task-install-agent-azure-console.html"
+    - title: Implementar un agente en Google Cloud
+      url: "/task-install-agent-google-console-gcloud.html"
+    - title: Mantener agentes de consola
+      url: task-maintain-agents.html
+  - title: Seguridad y cumplimiento
     links:
-    - title: Comience en una región estándar de AWS
-      url: task-quick-start-standard-mode.html
-    - title: Comience en una región de AWS GovCloud
-      url: task-quick-start-restricted-mode.html
-    - title: Comience a usar AWS Secret o Top Secret Cloud
-      url: https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/task-getting-started-aws-c2s.html
-    - title: Ver las políticas de IAM para el agente de la consola
-      url: reference-permissions-aws.html
-    - title: Administrar credenciales y suscripciones
-      url: task-adding-aws-accounts.html
-  - title: Azur
+    - title: Fedérese con su proveedor de identidad
+      url: "/concept-federation.html"
+    - title: Habilitar el modo de solo lectura
+      url: task-enable-read-only-mode.html
+    - title: Monitorear la actividad de la consola
+      url: "/task-monitor-cm-operations.html"
+    - title: Implementar la NetApp Console en modo restringido (implementaciones de
+        nube soberana)
+      url: "/task-quick-start-restricted-mode.html"
+    - title: Cumplimiento de SOC-2
+      url: https://www.netapp.com/company/trust-center/compliance/soc-2/
+  - title: Asociaciones de consolas
     links:
-    - title: Comience en una región estándar de Azure
-      url: task-quick-start-standard-mode.html
-    - title: Comience en una región de Azure Government
-      url: task-quick-start-restricted-mode.html
-    - title: Introducción a Azure IL6
-      url: task-quick-start-private-mode.html
-    - title: Ver el rol personalizado para el agente de la consola
-      url: reference-permissions-azure.html
-    - title: Administrar credenciales y suscripciones
-      url: task-adding-azure-accounts.html
-  - title: Google Cloud
-    links:
-    - title: Comience en una región estándar de Google Cloud
-      url: task-quick-start-standard-mode.html
-    - title: Ver la cuenta de servicio del agente de la consola
-      url: reference-permissions-gcp.html
-    - title: Administrar credenciales y suscripciones
-      url: task-adding-gcp-accounts.html
-  - title: En las instalaciones
-    links:
-    - title: Instalar y configurar manualmente un agente de consola en modo estándar
-      url: task-install-connector-on-prem.html
-    - title: Instalar y configurar un agente de consola en VCenter
-      url: task-install-agent-on-prem-ova.html
+    - title: Obtenga más información sobre las asociaciones entre organizaciones
+      url: "/concept-org-partnerships.html"
+    - title: Crear una asociación organizacional
+      url: "/task-partnerships-create.html"
   - title: Blogs y comunidad
     links:
     - title: NetApp Console

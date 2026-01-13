@@ -14,13 +14,9 @@ summary: Si los miembros de su organización necesitan usar un agente de consola
 
 
 [role="lead"]
-Cuando un _administrador de la organización_ crea un agente de consola, este se asocia automáticamente con el proyecto seleccionado actualmente dentro de la organización.  Aunque alguien con el rol de _Administrador de la organización_ puede acceder a ese agente de consola desde cualquier lugar de la organización.  Otros miembros de su organización solo pueden acceder a ese agente de consola desde el proyecto en el que se creó, a menos que asocie ese agente de consola con otros proyectos.
+Asocie agentes de la consola con proyectos específicos para habilitar la administración de recursos y el acceso al servicio de datos. Los recursos descubiertos a través de un agente de consola requieren que tanto el recurso como el agente estén asociados con los mismos proyectos respectivos para el acceso del equipo.
 
-.Antes de empezar
-Revise cómo funciona la asociación del agente de consola. link:concept-identity-and-access-management.html#associate-agents["Obtenga información sobre cómo usar el agente de consola con identidad y acceso"] .
-
-.Acerca de esta tarea
-Un administrador de carpeta o proyecto puede ver todos los agentes de la consola en la página *Agente*, pero solo puede asociar agentes de la consola con carpetas y proyectos para los que tenga permisos. link:reference-iam-predefined-roles.html["Obtenga más información sobre las acciones que un administrador de carpeta o proyecto puede completar"] .
+Los superadministradores y administradores de organizaciones pueden crear agentes y asociar cualquier agente con cualquier proyecto o carpeta. Los administradores de carpetas o proyectos solo pueden asociar agentes existentes con carpetas y proyectos para los que tengan permisos. link:reference-iam-predefined-roles.html["Obtenga más información sobre las acciones que un administrador de carpeta o proyecto puede completar"].
 
 .Pasos
 . Seleccione *Administración > Identidad y acceso* > *Agentes*.

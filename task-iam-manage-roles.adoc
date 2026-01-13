@@ -4,7 +4,7 @@ permalink: task-iam-manage-roles.html
 keywords: projects, access, resources, user roles, iam, identity and access management, folder, organization, permissions, roles, members, access roles 
 summary: Dentro de la NetApp Console, puede asignar roles a los usuarios según lo que necesiten hacer y dónde. 
 ---
-= Utilice roles para administrar el acceso de los usuarios a los recursos de la NetApp Console
+= Administrar el acceso de los miembros en la NetApp Console
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,28 +14,88 @@ summary: Dentro de la NetApp Console, puede asignar roles a los usuarios según 
 
 
 [role="lead"]
-Dentro de la consola, puedes asignar roles a los usuarios según lo que necesiten hacer y dónde.
+Administrar el acceso de los miembros en su organización de la consola. Asignar roles para establecer permisos. Eliminar miembros cuando se van.
 
-Los usuarios con el rol de *Administrador de la organización* o *Administrador de carpeta o proyecto* tienen la responsabilidad de asignar roles a otros usuarios. Puede asignar roles de acceso por proyecto o carpeta. Asignar roles de acceso por proyecto o carpeta.  Por ejemplo, asigne el rol de administrador de Resiliencia contra ransomware a un usuario para un proyecto y el rol de administrador de SnapCenter para otro.  Para otorgarle a un usuario el rol de administrador de Ransomware Resilience para todos los proyectos en una carpeta, asigne el rol a nivel de carpeta.
+.Roles de acceso requeridos
+Superadministrador, administrador de la organización o administrador de carpeta o proyecto (para carpetas y proyectos que administra). Enlace:reference-iam-predefined-roles.html[Obtenga información sobre los roles de acceso].
 
-Utilice roles de acceso para asignar acceso a los recursos de almacenamiento en función de las tareas específicas que los usuarios necesitan realizar. Por ejemplo, si un usuario necesita interactuar con Ransomware Resilience, se le debe otorgar un rol de acceso que incluya permisos de visualización o administrativos para Ransomware Resilience para el proyecto para el cual se le otorga el rol de acceso.
-
-Asigne roles según su estrategia de IAM para mejorar la seguridad.  Los roles de IAM limitan el acceso del usuario únicamente a lo necesario.
+Puede asignar roles de acceso por proyecto o carpeta. Por ejemplo, asigne un rol a un usuario para dos proyectos específicos o asigne el rol a nivel de carpeta para darle a un usuario el rol de administrador de Ransomware Resilience para todos los proyectos en una carpeta.
 
 
-NOTE: Recuerde que no puede otorgar acceso directo a los recursos.  Asignar recursos a los proyectos primero.  Considere configurar su jerarquía de recursos antes de asignar acceso a los usuarios.link:task-iam-manage-folders-projects.html["Aprenda a organizar sus recursos con carpetas y proyectos."]
+NOTE: Agregue sus carpetas y proyectos antes de asignar acceso a los usuarios. link:task-iam-manage-folders-projects.html["Aprenda a agregar carpetas y proyectos."]
+
+
+
+== Comprenda cómo se otorga el acceso en la NetApp Console
+
+La NetApp Console utiliza un modelo de control de acceso basado en roles (RBAC) para administrar los permisos de los usuarios. Puede asignar roles predefinidos a los miembros de forma individual o a través de grupos federados. Puede agregar y asignar roles a cuentas de servicio, así como a grupos federados. Cada rol define qué acciones puede realizar un miembro en los recursos asociados.
+
+Tenga en cuenta lo siguiente sobre cómo conceder acceso en la NetApp Console:
+
+* Todos los usuarios deben registrarse primero en la NetApp Console antes de poder obtener acceso a los recursos.
+* Debe asignar explícitamente un rol a cada usuario en la Consola antes de que puedan acceder a los recursos, incluso si son miembros de un grupo federado al que se le ha asignado un rol.
+* Puede agregar cuentas de servicio directamente desde la consola y asignarles roles.
+
+
+
+
+=== Uso de la herencia de roles
+
+Cuando se asigna un rol a nivel de organización, carpeta o proyecto en NetApp Console, ese rol es heredado automáticamente por todos los recursos dentro del alcance seleccionado. Por ejemplo, los roles a nivel de carpeta se aplican a todos los proyectos contenidos, mientras que los roles a nivel de proyecto se aplican a todos los recursos dentro de ese proyecto.
+
+
+
+== Ver miembros de la organización
+
+Para comprender qué recursos y permisos están disponibles para un miembro, puede ver los roles asignados al miembro en diferentes niveles de la jerarquía de recursos de su organización.link:task-iam-manage-roles.html["Aprenda a usar roles para controlar el acceso a los recursos de la consola."^]
+
+.Pasos
+. Seleccione *Administración > Identidad y acceso*.
+. Seleccione *Miembros*.
++
+La tabla *Miembros* enumera los miembros de su organización.
+
+. Desde la página *Miembros*, navegue hasta un miembro en la tabla, seleccioneimage:icon-action.png["Un icono que consta de tres puntos uno al lado del otro."] y luego seleccione *Ver detalles*.
+
 
 
 
 == Ver los roles asignados a un miembro
 
-Cuando agrega un miembro a su organización, se le solicita que le asigne un rol. Puede verificar qué roles tienen asignados actualmente.
+Puede verificar qué roles tienen asignados actualmente.
 
 Si tiene el rol de _Administrador de carpeta o de proyecto_, la página muestra todos los miembros de la organización.  Sin embargo, solo puede ver y administrar los permisos de miembros para las carpetas y proyectos para los que tiene permisos. link:reference-iam-predefined-roles.html["Obtenga más información sobre las acciones que un administrador de carpeta o proyecto puede completar"] .
 
-. Desde la página *Miembros*, navegue hasta un miembro en la tabla, seleccioneimage:icon-action.png["Un icono que consta de tres puntos uno al lado del otro."] y luego seleccione *Ver detalles*.
+. Desde la página *Miembros*, navegue hasta un miembro en la tabla, seleccione image:icon-action.png["Un icono que consta de tres puntos uno al lado del otro."] y luego seleccione *Ver detalles*.
 . En la tabla, expanda la fila correspondiente a la organización, carpeta o proyecto donde desea ver el rol asignado al miembro y seleccione *Ver* en la columna *Rol*.
 
+
+
+
+== Ver miembros asociados a una carpeta o proyecto
+
+Puede ver los miembros que tienen acceso a una carpeta o proyecto específico.
+
+.Pasos
+. Seleccione *Administración > Identidad y acceso*.
+. Seleccione *Organización*.
+. Desde la página *Organización*, navegue hasta un proyecto o carpeta en la tabla, seleccioneimage:icon-action.png["Un icono que consta de tres puntos uno al lado del otro."] y luego seleccione *Editar carpeta* o *Editar proyecto*.
++
+** Seleccione *Acceso* para ver los miembros que tienen acceso a la carpeta o al proyecto.
++
+image:screenshot-iam-member-access.png["Una captura de pantalla de la página Editar proyecto que muestra los miembros que tienen acceso al proyecto."]
+
+
+
+
+
+
+
+== Asignar o modificar el acceso de los miembros
+
+Una vez que un usuario se registra en NetApp Console, puede agregarlo a su organización y asignarle un rol para brindarle acceso a los recursos. link:task-iam-manage-members-permissions.html#add-members["Aprenda cómo agregar miembros a su organización."^]
+
+Puede ajustar el acceso de un miembro agregando o eliminando roles según sea necesario.
 
 
 
@@ -45,15 +105,17 @@ Normalmente, se asigna un rol al agregar un miembro a su organización, pero pue
 
 Puede asignar a un usuario un rol de acceso para su organización, carpeta o proyecto.
 
-Los miembros pueden tener múltiples roles dentro del mismo proyecto y en diferentes proyectos. Por ejemplo, las organizaciones más pequeñas pueden asignar todos los roles de acceso disponibles al mismo usuario, mientras que las organizaciones más grandes pueden hacer que los usuarios realicen tareas más especializadas. Como alternativa, también puede asignar a un usuario el rol de administrador de resiliencia contra ransomware para una organización.  En ese ejemplo, el usuario podría realizar tareas de resiliencia frente a ransomware en todos los proyectos dentro de su organización.
+Los miembros pueden tener múltiples roles dentro del mismo proyecto y en diferentes proyectos. Por ejemplo, las organizaciones más pequeñas pueden asignar todos los roles de acceso disponibles al mismo usuario, mientras que las organizaciones más grandes pueden hacer que los usuarios realicen tareas más especializadas. Como alternativa, también puede asignar a un usuario el rol de administrador de Resiliencia contra ransomware a nivel de la organización. En ese ejemplo, el usuario podría realizar tareas de resiliencia frente a ransomware en todos los proyectos dentro de su organización.
 
 Su estrategia de roles de acceso debe estar alineada con la forma en que ha organizado sus recursos de NetApp .
 
 
-TIP: A un miembro al que se le asigna el rol de administrador de la organización no se le pueden asignar roles adicionales.  Ya tienen permisos en toda la organización.  A un miembro con el rol de Carpeta o Proyecto no se le puede asignar ningún otro rol dentro de la carpeta o el proyecto donde ya tiene ese rol.  Ambos roles proporcionan acceso a todos los servicios dentro del alcance que están asignados.
+TIP: A un miembro al que se le asigna el rol de administrador de la organización no se le pueden asignar roles adicionales. Ya tienen permisos en toda la organización. A un miembro con el rol de administrador de carpeta o proyecto no se le puede asignar ningún otro rol dentro de la carpeta o el proyecto donde ya tiene ese rol. Ambos roles proporcionan acceso a todos los servicios dentro del alcance que están asignados.
 
 .Pasos
 . Seleccione *Administración > Identidad y acceso*.
+. Seleccione *Miembros*.
+. Seleccione una de las pestañas de miembros: *Usuarios*, *Cuentas de servicio* o *Grupos federados*.
 . Seleccione el menú de accionesimage:icon-action.png["un icono con tres puntos verticales"] junto al miembro al que desea asignar un rol y seleccione *Agregar un rol*.
 . Para agregar un rol, complete los pasos en el cuadro de diálogo:
 +
@@ -80,12 +142,38 @@ NOTE: Los usuarios deben tener al menos un rol asignado.  No se pueden eliminar 
 
 .Pasos
 . Seleccione *Administración > Identidad y acceso*.
+. Seleccione *Miembros*.
+. Seleccione una de las pestañas de miembros: *Usuarios*, *Cuentas de servicio* o *Grupos federados*.
 . Desde la página *Miembros*, navegue hasta un miembro en la tabla, seleccioneimage:icon-action.png["Un icono que consta de tres puntos uno al lado del otro."] y luego seleccione *Ver detalles*.
 . En la tabla, expanda la fila correspondiente a la organización, carpeta o proyecto donde desea cambiar el rol asignado al miembro y seleccione *Ver* en la columna *Rol* para ver los roles asignados a este miembro.
 . Puede cambiar un rol existente de un miembro o eliminar un rol.
 +
 .. Para cambiar el rol de un miembro, seleccione *Cambiar* junto al rol que desea cambiar.  Sólo puedes cambiar un rol a un rol dentro de la misma categoría de rol.  Por ejemplo, puede cambiar de un rol de servicio de datos a otro.  Confirmar el cambio.
-.. Para desasignar el rol de un miembro, seleccioneimage:icon-delete.png["Un icono que se parece a un bote de basura"] al lado del rol para desasignar al miembro el rol respectivo.  Se le pedirá que confirme la eliminación.
+.. Para desasignar el rol de un miembro, seleccione image:icon-delete.png["Un icono que se parece a un bote de basura"] junto al rol para eliminar el rol respectivo del miembro.. Se le pedirá que confirme la eliminación.
 
 
+
+
+
+
+== Eliminar un miembro de su organización
+
+Eliminar a un miembro si abandona tu organización.
+
+Cuando se elimina un miembro, el sistema revoca sus permisos de consola, pero conserva sus cuentas de consola y del sitio de soporte de NetApp .
+
+[NOTE]
+====
+.Miembros federados
+* Los usuarios federados pierden automáticamente el acceso a la NetApp Console cuando se los elimina de su IdP. Pero aún así debes eliminarlos de tu organización de consola para mantener tu lista de miembros actualizada.
+* Si elimina un usuario de un grupo federado en su IdP, perderá el acceso a la consola asociado con ese grupo. Sin embargo, aún conservan cualquier acceso asociado con un rol explícito asignado a ellos en la Consola.
+
+
+====
+.Pasos
+. Seleccione *Administración > Identidad y acceso*.
+. Seleccione *Miembros*.
+. Seleccione una de las pestañas de miembros: *Usuarios*, *Cuentas de servicio* o *Grupos federados*.
+. Desde la página *Miembros*, navegue hasta un miembro en la tabla, seleccioneimage:icon-action.png["Un icono que consta de tres puntos uno al lado del otro."] luego seleccione *Eliminar usuario*.
+. Confirme que desea eliminar al miembro de su organización.
 

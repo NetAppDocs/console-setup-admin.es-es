@@ -26,11 +26,6 @@ NetApp solo admite el inicio de sesión único (SSO) iniciado por el proveedor d
 
 Puede configurar la federación con su servidor AD FS para habilitar el inicio de sesión único (SSO) para NetApp Console.  El proceso implica configurar AD FS para que confíe en la consola como proveedor de servicios y luego crear la conexión en la NetApp Console.
 
-.Antes de empezar
-* Se requiere una cuenta IdP con privilegios administrativos.  Coordínese con el administrador de su IdP para completar los pasos.
-* Identifique el dominio que desea utilizar para la federación.  Puedes utilizar tu dominio de correo electrónico o un dominio diferente que sea de tu propiedad.  Si desea utilizar un dominio distinto a su dominio de correo electrónico, primero debe verificar el dominio en la Consola.  Puedes hacer esto siguiendo los pasos de lalink:task-federation-verify-domain.html["Verifique su dominio en la NetApp Console"] tema.
-
-
 .Pasos
 . Seleccione *Administración > Identidad y acceso*.
 . Seleccione *Federación* para ver la página *Federaciones*.
@@ -74,7 +69,11 @@ NetApp recomienda utilizar la URL de metadatos para permitir que la NetApp Conso
 
 . Seleccione *Crear conexión*.  La creación de la conexión puede tardar unos segundos.
 . Seleccione *Siguiente*.
-. . Seleccione *Probar conexión* para probar su conexión. Se le dirigirá a una página de inicio de sesión para su servidor IdP. Inicie sesión con sus credenciales de IdP.  Después de iniciar sesión, regrese a la Consola para habilitar la conexión.
+. Seleccione *Probar conexión* para probar su conexión. Se le dirigirá a una página de inicio de sesión para su servidor IdP. Inicie sesión con sus credenciales de IdP. Después de iniciar sesión, regrese a la Consola para habilitar la conexión.
++
+
+NOTE: Al utilizar la consola en modo restringido, copie la URL en una ventana de incógnito del navegador o en un navegador separado para iniciar sesión en su IdP.
+
 . En la consola, seleccione *Siguiente* para revisar la página de resumen.
 . Configurar notificaciones.
 +

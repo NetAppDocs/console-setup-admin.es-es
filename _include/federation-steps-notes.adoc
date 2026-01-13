@@ -1,0 +1,41 @@
+= 
+:allow-uri-read: 
+
+
+.Pasos
+. Seleccione *Administración > Identidad y acceso*.
+. Seleccione *Federación* para ver la página *Federaciones*.
+. Seleccione *Configurar nueva federación*.
+
+
+. Seleccione *Siguiente*.
+. Seleccione *Probar conexión* para probar su conexión. Se le dirigirá a una página de inicio de sesión para su servidor IdP. Inicie sesión con sus credenciales de IdP. Después de iniciar sesión, regrese a la Consola para habilitar la conexión.
++
+
+NOTE: Al utilizar la consola en modo restringido, copie la URL en una ventana de incógnito del navegador o en un navegador separado para iniciar sesión en su IdP.
+
+. En la consola, seleccione *Siguiente* para revisar la página de resumen.
+. Configurar notificaciones.
++
+Elija entre siete días o 30 días.  El sistema envía notificaciones de vencimiento por correo electrónico y las muestra en la consola a cualquier usuario con los siguientes roles: superadministrador, administrador de la organización, administrador de la federación y visor de la federación.
+
+. Revise los detalles de la federación y luego seleccione *Habilitar federación*.
+. Seleccione *Finalizar* para completar el proceso.
+
+
+Después de habilitar la federación, los usuarios inician sesión en la NetApp Console con sus credenciales corporativas.
+
+. Introduzca los detalles de su dominio:
++
+.. Elija si desea utilizar un dominio verificado o su dominio de correo electrónico.  El dominio de correo electrónico es el dominio asociado con la cuenta con la que ha iniciado sesión.
+.. Introduzca el nombre de la federación que está configurando.
+.. Si elige un dominio verificado, seleccione el dominio de la lista.
+
+
+. Seleccione *Siguiente*.
+
+
+.Antes de empezar
+* Se requiere una cuenta IdP con privilegios administrativos.  Coordínese con el administrador de su IdP para completar los pasos.
+* Identifique el dominio que desea utilizar para la federación.  Puedes utilizar tu dominio de correo electrónico o un dominio diferente que sea de tu propiedad.  Si desea utilizar un dominio distinto a su dominio de correo electrónico, primero debe verificar el dominio en la Consola.  Puedes hacer esto siguiendo los pasos de lalink:task-federation-verify-domain.html["Verifique su dominio en la NetApp Console"] tema.
+

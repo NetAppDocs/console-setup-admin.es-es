@@ -97,7 +97,7 @@ La lista *Miembro* muestra los miembros que la organización asociada ha agregad
 . Puede cambiar un rol existente de un miembro o eliminar un rol.
 +
 .. Para cambiar el rol de un miembro, seleccione *Cambiar* junto al rol que desea cambiar.  Sólo puedes cambiar un rol a un rol dentro de la misma categoría de rol.  Por ejemplo, puede cambiar de un rol de servicio de datos a otro.  Confirmar el cambio.
-.. Para desasignar el rol de un miembro, seleccioneimage:icon-delete.png["Un icono que se parece a un bote de basura"] al lado del rol para desasignar al miembro el rol respectivo.  Se le pedirá que confirme la eliminación.
+.. Para desasignar el rol de un miembro, seleccione image:icon-delete.png["Un icono que se parece a un bote de basura"] junto al rol para eliminar el rol respectivo del miembro.. Se le pedirá que confirme la eliminación.
 
 
 

@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-iam-manage-folders-projects.html 
 keywords: folders, projects, resource hierarchy, create folders, create projects, iam, identity and access management, project id 
-summary: Dentro de la NetApp Console, el uso de la gestión de identidad y acceso le permite representar una jerarquía de recursos completa mediante carpetas y proyectos. 
+summary: Agregue carpetas y proyectos para que coincidan con la estructura de su negocio. Después de crear carpetas y proyectos, puede asociar recursos a ellos y administrar el acceso de los miembros a esos proyectos. 
 ---
-= Organice los recursos de su NetApp Console con carpetas y proyectos
+= Agregue carpetas y proyectos a su organización de la NetApp Console
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,15 +14,71 @@ summary: Dentro de la NetApp Console, el uso de la gestión de identidad y acces
 
 
 [role="lead"]
-Dentro de la NetApp Console, organiza tus recursos de NetApp usando proyectos y carpetas.  Un _proyecto_ representa un espacio de trabajo en la consola al que los miembros de la organización acceden para administrar _recursos_ (por ejemplo, un sistema Cloud Volumes ONTAP ).  Una _carpeta_ agrupa proyectos relacionados.  Después de organizar sus recursos en carpetas y proyectos, puede otorgar acceso granular a los recursos proporcionando a los miembros de la organización permisos para carpetas y proyectos específicos.
+Agregue carpetas y proyectos para que coincidan con la estructura de su negocio. Después de crear carpetas y proyectos, puede asociar recursos a ellos y administrar el acceso de los miembros a esos proyectos.
+
+La consola crea automáticamente un proyecto para usted cuando crea una nueva organización. La mayoría de las organizaciones necesitan más de un proyecto, así como carpetas para mantener las cosas organizadas. link:concept-identity-and-access-management.html["Obtenga información sobre la jerarquía de recursos en la NetApp Console"].
+
+
+
+== Uso de carpetas y proyectos para organizar recursos
+
+En NetApp Console, una organización contiene carpetas y proyectos que lo ayudan a organizar sus recursos. Las carpetas le ayudan a agrupar proyectos relacionados, y los proyectos le ayudan a administrar los recursos y el acceso de los miembros.
+
+
+
+=== Carpetas
+
+Las carpetas le ayudan a organizar proyectos relacionados. Puede crear carpetas anidadas para representar diferentes niveles de la estructura de su organización. Por ejemplo, puede crear una carpeta de nivel superior para cada unidad de negocio y luego crear subcarpetas para diferentes equipos dentro de esa unidad de negocio. Luego crea proyectos dentro de carpetas.
+
+Las carpetas también le permiten administrar el acceso de los miembros de manera más eficiente mediante la herencia de roles. Cuando se asignan roles a miembros a nivel de carpeta, estos heredan permisos para todos los proyectos y carpetas secundarios.
+
+
+NOTE: Las carpetas son una herramienta organizativa y no son visibles para los miembros que no tienen permisos de IAM, como el administrador de la organización, el administrador de la carpeta o del proyecto o los roles de superadministrador. Los miembros acceden a los proyectos, no a las carpetas.
+
+Los administradores de la organización pueden delegar responsabilidades administrativas mediante la creación de carpetas. Después de crear una carpeta, un administrador de la organización puede asignar a un miembro los roles de administrador de carpeta o proyecto para carpetas específicas. Estos miembros pueden luego administrar todos los proyectos dentro de esa carpeta sin tener acceso a toda la organización.
+
+Las carpetas pueden tener otras carpetas o proyectos como hijos, pero no pueden tener recursos directamente asociados a ellas. Los recursos deben estar asociados a un proyecto.
+
+[[associate-resource-folder]]
+[NOTE]
+====
+.Cuándo asociar un recurso a una carpeta
+Un _administrador de la organización_ puede asociar un recurso con una carpeta para que un _administrador de carpeta o proyecto_ pueda vincularlo a los proyectos apropiados en la carpeta.
+
+Por ejemplo, digamos que tienes una carpeta que contiene dos proyectos:
+
+image:diagram-iam-resource-association-folder-1.png["Un diagrama que muestra una carpeta y dos proyectos que residen en la carpeta: proyecto A y proyecto B."]
+
+El _administrador de la organización_ puede asociar un recurso con la carpeta:
+
+image:diagram-iam-resource-association-folder-2.png["Un diagrama que muestra una carpeta con un recurso asociado a la carpeta. Dos proyectos que residen en la carpeta: proyecto A y proyecto B."]
+
+Asociar un recurso a una carpeta no lo hace accesible a todos los proyectos; solo el administrador de la carpeta o del proyecto puede verlo.  El administrador de carpeta o proyecto decide qué proyectos pueden acceder a él y asocia el recurso con los proyectos adecuados.
+
+En este ejemplo, el administrador asocia el recurso con el Proyecto A:
+
+image:diagram-iam-resource-association-folder-3.png["Un diagrama que muestra una carpeta con dos proyectos que residen en la carpeta: proyecto A y proyecto B. Un recurso que está asociado con el proyecto A."]
+
+Los miembros que tienen permisos para el proyecto A ahora pueden acceder al recurso.
+
+====
+
+
+=== Proyectos
+
+Asociar recursos a proyectos para permitir que los miembros puedan administrarlos. Los recursos deben estar asociados a un proyecto para su administración y acceso por parte de los usuarios.
+
+Una organización puede tener uno o varios proyectos. Un proyecto puede estar directamente bajo la organización o dentro de una carpeta. Si se utiliza un agente para descubrir recursos dentro de un proyecto, también debe asociar el agente con ese proyecto.
+
+Los usuarios navegan entre los proyectos asignados en la página *Sistemas* para administrar los recursos asociados con cada proyecto.
 
 
 
 == Agregar una carpeta o proyecto
 
-Cuando creas tu organización, ésta incluye un único proyecto. Agregue proyectos para administrar recursos y carpetas para agrupar proyectos relacionados.
+Agregue proyectos para administrar recursos y carpetas para agrupar proyectos relacionados. Cuando se crea una nueva organización, la Consola incluye un proyecto.
 
-Puede crear hasta siete niveles de carpetas y proyectos en la estructura de recursos de su organización.  Cree carpetas dentro de carpetas para crear una estructura anidada para su organización.
+Puede crear hasta siete niveles de carpetas y proyectos en la estructura de recursos de su organización. Cree carpetas anidadas para organizar sus recursos según sea necesario.
 
 .Pasos
 . Seleccione *Administración > Identidad y acceso*.
@@ -31,18 +87,16 @@ Puede crear hasta siete niveles de carpetas y proyectos en la estructura de recu
 . Seleccione *Carpeta* o *Proyecto*.
 . Introduzca los detalles de la carpeta o del proyecto:
 +
-** *Nombre y ubicación*: Ingrese un nombre y elija una ubicación en la jerarquía para la carpeta o el proyecto. Coloque una carpeta o proyecto debajo de la organización o dentro de otra carpeta.
-** *Recursos*: Seleccione los recursos que desea asociar con esta carpeta o proyecto.
-+
-Puede seleccionar recursos asociados con la carpeta o proyecto principal.
+** *Nombre y ubicación*: Ingrese un nombre y elija una ubicación para la carpeta o el proyecto. Puede colocar carpetas o proyectos dentro de la organización o dentro de otra carpeta.
+** *Recursos*: Seleccione los recursos que desea asociar con esta carpeta o proyecto. Si aún no ha agregado sistemas de almacenamiento a la consola, puede realizar este paso más adelante.
+
 
 +
-link:concept-identity-and-access-management.html#associate-resource-folder["Aprenda cuándo asociar un recurso con una carpeta"] .
 
-** *Acceso*: Vea los miembros que tendrán acceso a la carpeta o al proyecto según los permisos existentes ya definidos en su jerarquía de recursos.
+NOTE: Los miembros no pueden acceder a los recursos de una carpeta hasta que esos recursos se asignen a un proyecto. Utilice carpetas para guardar recursos temporalmente hasta que cree los proyectos necesarios. Esto puede ayudar al administrador de la organización a delegar la asignación de recursos a un administrador de carpeta o proyecto, quien luego asigna recursos a los proyectos dentro de la carpeta.
+
 +
-Seleccione *Agregar un miembro* para asignar acceso y un rol.
-
+** *Acceso*: Seleccione *Agregar un miembro* para asignar acceso y un rol. Puede agregar o eliminar miembros del proyecto o carpeta en cualquier momento.
 +
 link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso"] .
 
@@ -55,7 +109,7 @@ link:reference-iam-predefined-roles.html["Obtenga más información sobre los ro
 
 == Cambiar el nombre de una carpeta o proyecto
 
-Si es necesario, puede cambiar el nombre de sus carpetas y proyectos.
+Cambie el nombre de una carpeta o proyecto según sea necesario. El cambio de nombre no afecta los recursos asociados ni el acceso de los miembros.
 
 .Pasos
 . Desde la página *Organización*, navegue hasta un proyecto o carpeta en la tabla, seleccioneimage:icon-action.png["Un icono con tres puntos"] y luego seleccione *Editar carpeta* o *Editar proyecto*.
@@ -66,7 +120,7 @@ Si es necesario, puede cambiar el nombre de sus carpetas y proyectos.
 
 == Eliminar una carpeta o proyecto
 
-Elimina carpetas y proyectos que ya no necesites.
+Elimina carpetas y proyectos que ya no necesites, por ejemplo, después de una reestructuración del equipo o de la finalización de un proyecto.
 
 Antes de eliminar una carpeta o un proyecto, asegúrese de que no contenga ningún recurso. <<modify-resources,Aprenda a eliminar recursos>>.
 
@@ -100,10 +154,7 @@ image:screenshot-iam-allocated-resources.png["Una captura de pantalla de la pág
 
 == Cambiar los recursos asociados a una carpeta o proyecto
 
-Los miembros con permisos para una carpeta o proyecto pueden acceder a sus recursos asociados.
-
-.Antes de empezar
-link:concept-identity-and-access-management.html#associate-resource-folder["Aprenda cuándo asociar un recurso con una carpeta"] .
+Puede cambiar los recursos asociados a una carpeta o proyecto a medida que cambian las necesidades de su organización.
 
 .Pasos
 . Desde la página *Organización*, navegue hasta un proyecto o carpeta en la tabla, seleccioneimage:icon-action.png["Un icono que consta de tres puntos uno al lado del otro."] y luego seleccione *Editar carpeta* o *Editar proyecto*.
@@ -112,7 +163,7 @@ link:concept-identity-and-access-management.html#associate-resource-folder["Apre
 En la tabla, la columna *Estado* identifica los recursos que están asociados con la carpeta o el proyecto.
 
 . Seleccione los recursos que desea asociar o disociar.
-. Dependiendo de los recursos que haya seleccionado, seleccione *Asociar con el proyecto* o *Desasociar del proyecto*.
+. Según los recursos que haya seleccionado, seleccione *Asociar con el proyecto* o *Desasociar del proyecto*.
 +
 image:screenshot-iam-associate-resources.png["Una captura de pantalla de la página Editar proyecto que muestra la opción Asociar recursos que está disponible después de seleccionar recursos que actualmente no están asociados."]
 
@@ -123,7 +174,13 @@ image:screenshot-iam-associate-resources.png["Una captura de pantalla de la pág
 
 == Ver miembros asociados a una carpeta o proyecto
 
-* Seleccione *Acceso* para ver los miembros que tienen acceso a la carpeta o al proyecto.
+Puede ver los miembros asociados a una carpeta o proyecto desde la página *Organización*.
+
+.Pasos
+. Desde la página *Organización*, navegue hasta un proyecto o carpeta en la tabla, seleccioneimage:icon-action.png["Un icono que consta de tres puntos uno al lado del otro."] y luego seleccione *Editar carpeta* o *Editar proyecto*.
+. En la página *Editar*, seleccione *Acceso* para ver la lista de miembros que tienen acceso a la carpeta o proyecto seleccionado.
++
+** Seleccione *Acceso* para ver los miembros que tienen acceso a la carpeta o al proyecto.
 +
 image:screenshot-iam-member-access.png["Una captura de pantalla de la página Editar proyecto que muestra los miembros que tienen acceso al proyecto."]
 
@@ -131,13 +188,13 @@ image:screenshot-iam-member-access.png["Una captura de pantalla de la página Ed
 
 
 
+
+
 == Modificar el acceso de los miembros a una carpeta o proyecto
 
-Modificar el acceso de los miembros para controlar el acceso a los recursos.
+Modificar el acceso de los miembros para controlar el acceso a los recursos. Recuerde que los roles asignados a nivel de carpeta son heredados por todos los proyectos y carpetas secundarios.
 
-No se puede cambiar el acceso de los miembros en niveles inferiores si se hereda de un nivel de jerarquía superior.   Actualice los permisos de los miembros en el nivel de jerarquía superior para cambiar el acceso. Alternativamente, puede link:task-iam-manage-roles.html#manage-permissions["Administrar permisos desde la página Miembros"].
-
-link:concept-identity-and-access-management.html#role-inheritance["Obtenga más información sobre la herencia de roles"] .
+No se puede cambiar el acceso de los miembros en niveles inferiores si se hereda del nivel de carpeta o de organización. Cambiar el permiso del miembro en el nivel de jerarquía superior para cambiar el acceso. Alternativamente, puede link:task-iam-manage-roles.html#manage-permissions["Administrar permisos desde la página Miembros"].
 
 .Pasos
 . Desde la página *Organización*, navegue hasta un proyecto o carpeta en la tabla, seleccioneimage:icon-action.png["Un icono que consta de tres puntos uno al lado del otro."] y luego seleccione *Editar carpeta* o *Editar proyecto*.

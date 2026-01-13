@@ -34,8 +34,8 @@ Puede asignar el rol de analista de soporte operativo a los usuarios para brinda
 | Regístrese para recibir soporte y enviar casos a través de la Consola | Sí 
 
 
-| Sí | Ver la página de Auditoría y notificaciones 
+| Ver la página de Auditoría y notificaciones | Sí 
 
 
-| Sí | Ver, descargar y configurar alertas 
+| Ver, descargar y configurar alertas | Sí 
 |===

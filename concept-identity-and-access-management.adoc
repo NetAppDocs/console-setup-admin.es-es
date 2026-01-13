@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-identity-and-access-management.html 
 keywords: iam overview, overview, how iam works, iam example, organization, folders, projects, resources, members, roles, permissions, resource hierarchy, identity and access management, access roles, iam, bluexp IAM 
-summary: 'La gestión de identidad y acceso (IAM) en la NetApp Console le permite controlar el acceso a los recursos de su organización.' 
+summary: 'Utilice la gestión de identidad y acceso (IAM) de NetApp Console para estructurar y controlar el acceso a los recursos según la jerarquía de su negocio, como por ubicación, departamento o proyecto.' 
 ---
 = Obtenga más información sobre la gestión de identidad y acceso de la NetApp Console
 :hardbreaks:
@@ -14,230 +14,190 @@ summary: 'La gestión de identidad y acceso (IAM) en la NetApp Console le permit
 
 
 [role="lead"]
-La gestión de identidad y acceso (IAM) dentro de la NetApp Console le permite organizar y controlar el acceso a sus recursos de NetApp .  Puede organizar sus recursos según la jerarquía de su organización.  Por ejemplo, puede organizar los recursos por ubicación geográfica, sitio o unidad de negocio.  Luego, puede asignar roles de IAM a miembros en partes específicas de la jerarquía, lo que impide el acceso a recursos en otras partes de la jerarquía.
+Utilice la gestión de identidad y acceso (IAM) de la consola de NetApp para organizar sus recursos de NetApp y controlar el acceso según la estructura de su negocio: por ubicación, departamento o proyecto.
 
-* link:concept-modes.html["Obtenga más información sobre los modos de implementación de la consola"]
+Los recursos se organizan jerárquicamente: la organización está en la parte superior, seguida de las carpetas (que pueden contener otras carpetas o proyectos) y luego los proyectos, que contienen sistemas de almacenamiento, cargas de trabajo y agentes.
 
-
-
-
-== Cómo funciona el IAM
-
-IAM le permite otorgar acceso a recursos asignando a los usuarios roles de acceso a partes específicas de la jerarquía.  Por ejemplo, a un miembro se le puede asignar el rol de administrador de carpeta o de proyecto para un proyecto con cinco recursos.
-
-Al utilizar IAM, administra los siguientes componentes:
-
-* La organización
-* Carpetas
-* Proyectos
-* Recursos
-* Miembros
-* Roles y permisos
-* Agentes de consola
+Asigne permisos de control de acceso basado en roles (RBAC) a los miembros a nivel de organización, carpeta o proyecto para garantizar que los usuarios tengan el acceso adecuado a los recursos.
 
 
-Los recursos están organizados jerárquicamente:
-
-* La organización es la cima de la jerarquía.
-* Las carpetas son hijas de la organización o de otra carpeta.
-* Los proyectos son hijos de la organización o de una carpeta.
-* Los recursos están asociados a una o más carpetas o proyectos.
-
+NOTE: Debe tener los roles de _Superadministrador_, _Administrador de la organización_ o _Administrador de carpeta o proyecto_ para administrar IAM en NetApp Console.
 
 La siguiente imagen ilustra esta jerarquía en un nivel básico.
 
-image:diagram-iam-resource-hierarchy.png["Un diagrama conceptual que muestra la jerarquía de recursos para la gestión de acceso: una organización, carpetas, proyectos y recursos."]
+image:diagram-iam-resource-hierarchy.png["Un diagrama conceptual que muestra los componentes de la gestión de recursos."]]
 
 
 
-=== Organización
+== Componentes de gestión de identidad y acceso
 
-Una _organización_ es el nivel superior del sistema IAM de la consola y normalmente representa a su empresa.  Su organización consta de carpetas, proyectos, miembros, roles y recursos.  Los agentes están asociados con proyectos específicos en la organización.
-
-
-
-=== Carpetas
-
-Una _carpeta_ le permite agrupar proyectos relacionados y separarlos de otros proyectos en su organización.  Por ejemplo, una carpeta podría representar una ubicación geográfica (UE o Este de EE. UU.), un sitio (Londres o Toronto) o una unidad de negocio (ingeniería o marketing).
-
-Puede organizar carpetas para que contengan proyectos, otras carpetas o ambas.  Son opcionales.
+Dentro de NetApp Console, usted organiza sus recursos de almacenamiento utilizando tres componentes principales: componentes organizativos, componentes de recursos y componentes de acceso de usuario.
 
 
 
-=== Proyectos
+=== Proyectos y carpetas dentro de su organización
 
-Un _proyecto_ representa un espacio de trabajo en la Consola al que los miembros de la organización acceden desde la página *Sistemas* para administrar recursos.  Por ejemplo, un proyecto puede incluir un sistema Cloud Volumes ONTAP , un clúster ONTAP local o un sistema de archivos FSx para ONTAP .
+Dentro de su estructura IAM, usted trabaja con tres componentes organizativos: organizaciones, proyectos y carpetas. Puede conceder acceso a los usuarios asignándoles roles en cualquiera de estos niveles.
 
-Una organización puede tener uno o varios proyectos.  Un proyecto puede residir directamente debajo de la organización o dentro de una carpeta.
+Organización:: Una _organización_ es el nivel superior del sistema IAM de la consola y normalmente representa a su empresa.  Su organización consta de carpetas, proyectos, miembros, roles y recursos.  Los agentes están asociados con proyectos específicos en la organización.
+Proyectos:: Un _proyecto_ se utiliza para proporcionar acceso a un recurso de almacenamiento. Debes asignar recursos al proyecto antes de que alguien pueda acceder a ellos. Puedes asignar múltiples recursos a un solo proyecto y también puedes tener múltiples proyectos. Luego, asigna permisos a los usuarios del proyecto para darles acceso a los recursos dentro del mismo.
++
+--
+Por ejemplo, puede asociar un sistema ONTAP local con un solo proyecto o con todos los proyectos de su organización, según sus necesidades.
+
+link:task-iam-manage-folders-projects.html["Aprenda cómo agregar proyectos a su organización."^]
+
+--
+Carpetas:: Agrupe proyectos relacionados en _carpetas_ para organizarlos por ubicación, sitio o unidad de negocio. No se pueden asociar recursos directamente con carpetas, pero asignarle a un usuario un rol a nivel de carpeta le da acceso a todos los proyectos en esa carpeta.
+
+
+link:task-iam-manage-folders-projects.html["Aprenda cómo agregar carpetas a su organización."]
 
 
 
 === Recursos
 
-Un _recurso_ es un sistema que usted creó o descubrió en la Consola.
+Los _recursos_ incluyen sistemas de almacenamiento, suscripciones a Keystone y agentes de consola.
 
-Cuando crea o descubre un recurso, éste se asocia con el proyecto seleccionado actualmente.  Es posible que ese sea el único proyecto con el que desee asociar este recurso.  Pero puede optar por asociar el recurso con proyectos adicionales en su organización.
++ Debe asociar un recurso a un proyecto antes de que alguien pueda acceder a él.
 
-Por ejemplo, puede asociar un sistema Cloud Volumes ONTAP con un proyecto adicional o con todos los proyectos de su organización.  La forma de asociar un recurso depende de las necesidades de su organización.
++
 
+Por ejemplo, puede asociar un sistema Cloud Volumes ONTAP con un proyecto o con todos los proyectos de su organización. La forma de asociar un recurso depende de las necesidades de su organización.
 
-TIP: Los agentes también pueden asociarse a más de un proyecto. <<associate-agents,Obtenga más información sobre el uso de agentes con IAM>> .
++
 
+link:task-iam-manage-resources.html["Aprenda a asociar recursos a proyectos."]
 
-
-==== Cuándo asociar un recurso a una carpeta
-
-También tiene la opción de asociar un recurso con una carpeta, pero esto es opcional y satisface las necesidades de un caso de uso específico.
-
-Un _administrador de la organización_ puede asociar un recurso con una carpeta para que un _administrador de carpeta o proyecto_ pueda vincularlo a los proyectos apropiados en la carpeta.
-
-Por ejemplo, digamos que tienes una carpeta que contiene dos proyectos:
-
-image:diagram-iam-resource-association-folder-1.png["Un diagrama que muestra una carpeta y dos proyectos que residen en la carpeta: proyecto A y proyecto B."]
-
-El _administrador de la organización_ puede asociar un recurso con la carpeta:
-
-image:diagram-iam-resource-association-folder-2.png["Un diagrama que muestra una carpeta, un recurso asociado con la carpeta y dos proyectos que residen en la carpeta: proyecto A y proyecto B."]
-
-Asociar un recurso a una carpeta no lo hace accesible a todos los proyectos; solo el administrador de la carpeta o del proyecto puede verlo.  El administrador de carpeta o proyecto decide qué proyectos pueden acceder a él y asocia el recurso con los proyectos adecuados.
-
-En este ejemplo, el administrador asocia el recurso con el Proyecto A:
-
-image:diagram-iam-resource-association-folder-3.png["Un diagrama que muestra una carpeta, dos proyectos que residen en la carpeta: proyecto A y proyecto B, y un recurso asociado con el proyecto A."]
-
-Los miembros que tienen permisos para el proyecto A ahora pueden acceder al recurso.
-
-
-
-=== Miembros
-
-Los miembros de su organización son cuentas de usuario o cuentas de servicio.  Una cuenta de servicio normalmente es utilizada por una aplicación para completar tareas específicas sin intervención humana.
-
-Cada organización incluye al menos un usuario con el rol _Administrador de la organización_ (la consola asigna automáticamente este rol al usuario que crea la organización).  Puede agregar otros miembros a la organización y asignar diferentes permisos en distintos niveles de la jerarquía de recursos.
-
-
-
-=== Roles y permisos
-
-No se otorgan permisos directamente a los miembros de la organización.  En lugar de ello, se le otorga a cada miembro un rol.  Un rol contiene un conjunto de permisos que permiten a un miembro realizar acciones específicas en un nivel específico de la jerarquía de recursos.
-
-Otorgar roles a nivel jerárquico restringe el acceso a los recursos y servicios que un miembro necesita.
-
-
-
-==== Dónde puedes asignar roles en la jerarquía
-
-Cuando asocia un miembro con un rol, debe seleccionar toda la organización, una carpeta específica o un proyecto específico.  El rol que seleccione otorga a un miembro permisos sobre los recursos en la parte seleccionada de la jerarquía.
-
-
-
-==== Herencia de roles
-
-Cuando se asigna un rol, este se hereda a lo largo de la jerarquía de la organización:
-
-Organización:: Otorgarle a un miembro un rol de acceso a nivel de organización le otorga permisos para todas las carpetas, proyectos y recursos.
-Carpetas:: Cuando se otorga un rol de acceso a nivel de carpeta, todas las carpetas, proyectos y recursos de la carpeta heredan ese rol.
+Sistemas de almacenamiento y suscripciones Keystone:: Los sistemas de almacenamiento son los recursos principales que administra en NetApp Console. La NetApp Console admite la gestión de sistemas de almacenamiento locales y en la nube. Debe agregar un sistema de almacenamiento a un proyecto antes de que alguien pueda acceder a él.
 +
 --
-Por ejemplo, si asigna un rol a nivel de carpeta y esa carpeta tiene tres proyectos, el miembro tendrá permisos para esos tres proyectos y cualquier recurso asociado.
+Los sistemas de almacenamiento se asocian automáticamente con el proyecto donde se agregan, pero también puedes asociarlos con otros proyectos o carpetas desde la página *Recursos*.
+
+Las suscripciones de Keystone también son recursos que puede asociar con proyectos para otorgar a los usuarios acceso a la suscripción en NetApp Console.
 
 --
-Proyectos:: Cuando se otorga un rol de acceso a nivel de proyecto, todos los recursos asociados con ese proyecto heredan ese rol.
+
+
+[[associate-agents]]
+Agentes de consola:: Los administradores de la organización crean agentes de consola para administrar los sistemas de almacenamiento y habilitar los servicios de datos de NetApp . Los agentes están inicialmente vinculados al proyecto donde se crean, pero los administradores pueden agregarlos a otros proyectos o carpetas desde la página Agentes.
++
+--
+Asociar un agente a un proyecto permite la gestión de recursos en ese proyecto, mientras que asociar un agente a una carpeta permite a los administradores de carpetas o proyectos decidir qué proyectos deben usar el agente. Los agentes deben estar vinculados a proyectos específicos para proporcionar capacidades de gestión.
+
+link:task-iam-associate-agents.html["Aprenda a asociar agentes con proyectos."]
+
+--
 
 
 
 
-==== Roles múltiples
+=== Miembros y roles
 
-Puede asignar a cada miembro de la organización un rol en diferentes niveles de la jerarquía de la organización.  Puede ser el mismo rol o un rol diferente.  Por ejemplo, puede asignar un rol de miembro A para el proyecto 1 y el proyecto 2.  O puede asignar un rol de miembro A para el proyecto 1 y un rol B para el proyecto 2.
+Miembros:: Los miembros de su organización son cuentas de usuario o cuentas de servicio.  Una cuenta de servicio normalmente es utilizada por una aplicación para completar tareas específicas sin intervención humana.
++
+--
+Debe agregar miembros a su organización después de que se registren en NetApp Console. Una vez agregados, puede asignarles roles para proporcionar acceso a los recursos. Puede agregar manualmente cuentas de servicio desde la consola o automatizar su creación y administración a través de la API IAM de la NetApp Console .
 
+link:task-iam-manage-members-permissions.html#add-members["Aprenda cómo agregar miembros a su organización."^]
 
+--
+Roles de acceso:: La consola proporciona roles de acceso que puedes asignar a los miembros de tu organización.
++
+--
+Cuando asocias a un miembro con un rol, puedes otorgar ese rol para toda la organización, una carpeta específica o un proyecto específico. El rol que seleccione otorga a un miembro permisos sobre los recursos en la parte seleccionada de la jerarquía.
 
-==== Roles de acceso
+La NetApp Console proporciona roles granulares que se adhieren a los principios de "mínimo privilegio", lo que significa que los roles de acceso están diseñados para brindar a los usuarios acceso solo a lo que necesitan.
 
-La consola proporciona roles de acceso que puedes asignar a los miembros de tu organización.
+Esto significa que a los usuarios se les pueden asignar múltiples roles a medida que sus funciones se amplían.
 
 link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso"] .
 
+--
 
 
-=== Agentes de consola
 
-Cuando un _administrador de la organización_ crea un agente de la consola, la consola asocia automáticamente ese agente con la organización y el proyecto seleccionado actualmente.  El _administrador de la organización_ tiene acceso automático a ese agente desde cualquier lugar de la organización.  Pero si tiene otros miembros en su organización con roles diferentes, esos miembros solo podrán acceder a ese agente desde el proyecto en el que fue creado, a menos que asocie ese agente con otros proyectos.
 
-Pones un agente de consola a disposición de otro proyecto en estos casos:
+== Ejemplos de estrategias de IAM
 
-* Desea permitir que los miembros de su organización utilicen un agente existente para crear o descubrir sistemas adicionales en otro proyecto
-* Asoció un recurso existente con otro proyecto y ese recurso es administrado por un agente de la consola
+
+
+=== Estrategia de organización pequeña
+
+Para las organizaciones con menos de 50 usuarios y administración de almacenamiento centralizada, considere un enfoque simplificado utilizando roles de superadministrador y supervisor.
+
+**Ejemplo: Corporación ABC (equipo de 5 personas)**
+
+* **Estructura:** Organización única con 3 proyectos (Producción, Desarrollo, Respaldo)
+* **Roles:**
 +
-Si se descubre un recurso que asocia con un proyecto adicional mediante un agente de consola, también deberá asociar el agente con el proyecto con el que ahora está asociado el recurso. De lo contrario, los miembros que no tengan el rol de _Administrador de la organización_ no podrán acceder al agente y al recurso asociado desde la página *Sistemas*.
+** 2 miembros senior: rol de *Superadministrador* para acceso administrativo completo
+** 3 miembros del equipo: rol de *Supervisor* para monitoreo sin derechos de modificación
+
+
+* **Estrategia del agente:** Un solo agente asociado con todos los proyectos para acceso compartido a recursos
+* **Beneficios:** Administración simplificada, menor complejidad de roles, adecuado para equipos que requieren un amplio acceso
 
 
 
-Puede crear una asociación desde la página *Agentes* dentro de la Consola IAM:
 
-* Asociar un agente de consola a un proyecto
+=== Estrategia empresarial multirregional
+
+Para organizaciones grandes con operaciones regionales y equipos especializados, implemente un enfoque jerárquico con carpetas que representen límites geográficos o de unidades de negocios.
+
+**Ejemplo: Corporación XYZ (empresa multinacional)**
+
+* **Estructura:** Organización > Carpetas regionales (Norteamérica, Europa, Asia-Pacífico) > Carpetas de proyectos por región
+* **Roles de plataforma:**
 +
-Cuando asocia un agente de consola a un proyecto, se puede acceder a ese agente desde la página *Sistemas* al visualizar el proyecto.
+** 1 *Administrador de la organización*: Supervisión global y gestión de políticas
+** 3 *Administradores de carpetas o proyectos*: Control regional (uno por región)
+** 1 *Administrador de la federación*: Integración del proveedor de identidad corporativa
 
-* Asociar un agente de consola con una carpeta
+
+* **Roles de almacenamiento por región:**
 +
-Asociar un agente de consola con una carpeta no hace que ese agente sea accesible automáticamente desde todos los proyectos de la carpeta.  Los miembros de la organización no pueden acceder a un agente de consola desde un proyecto hasta que asocie el agente con ese proyecto específico.
+** 9 *Administrador de almacenamiento*: descubre y administra sistemas de almacenamiento en regiones asignadas
+** 2 *Visor de almacenamiento*: Supervise los recursos de almacenamiento en todas las regiones
+** 1 *Especialista en salud del sistema*: Administra la salud del almacenamiento sin modificaciones del sistema
 
+
+* **Roles de servicio de datos:**
 +
-Un _administrador de la organización_ puede asociar un agente de consola con una carpeta para que el _administrador de carpeta o proyecto_ pueda tomar la decisión de asociar ese agente con los proyectos apropiados que residen en la carpeta.
+** *Administrador de copias de seguridad y recuperación*: por proyecto, según las responsabilidades de copia de seguridad
+** *Administrador de resiliencia ante ransomware*: Supervisión del equipo de seguridad en todos los proyectos
+
+
+* **Estrategia del agente:** Agentes regionales asociados a proyectos geográficos apropiados
+* **Beneficios:** Mayor seguridad mediante la segregación de roles, autonomía regional y cumplimiento de las regulaciones locales.
 
 
 
 
+=== Estrategia de especialización departamental
 
-== Ejemplos de IAM
+Para las organizaciones con equipos especializados que requieren acceso a servicios de datos específicos, utilice asignaciones de roles específicas según las responsabilidades funcionales.
 
-Estos ejemplos demuestran cómo podría configurar su organización.
+**Ejemplo: TechCorp (empresa tecnológica de tamaño mediano)**
 
-
-
-=== Organización sencilla
-
-El siguiente diagrama muestra un ejemplo simple de una organización que utiliza el proyecto predeterminado y ninguna carpeta.  Un solo miembro gestiona toda la organización.
-
-image:diagram-iam-example-hierarchy-simple.png["Un diagrama conceptual que muestra una organización con un proyecto, recursos asociados y un administrador de la organización."]
-
-
-
-=== Organización avanzada
-
-El siguiente diagrama muestra una organización que utiliza carpetas para organizar los proyectos para cada ubicación geográfica en el negocio.  Cada proyecto tiene su propio conjunto de recursos asociados.  Los miembros incluyen un administrador de la organización y un administrador para cada carpeta de la organización.
-
-image:diagram-iam-example-hierarchy-advanced.png["Un diagrama conceptual que muestra una organización con tres carpetas, cada una con tres proyectos y sus recursos asociados.  Hay cuatro miembros: un administrador de la organización y tres administradores de carpetas."]
+* **Estructura:** Organización > Carpetas departamentales (TI, Seguridad, Desarrollo) > Recursos específicos del proyecto
+* **Roles especializados:**
++
+** Equipo de seguridad: roles de *Administrador de resiliencia contra ransomware* y *Visor de clasificación*
+** Equipo de respaldo: *Superadministrador de respaldo y recuperación* para operaciones de respaldo integrales
+** Equipo de desarrollo: *Administrador de almacenamiento* para la gestión del entorno de prueba
+** Equipo de cumplimiento: *Analista de soporte operativo* para supervisar y respaldar la gestión de casos
 
 
-
-== Qué puedes hacer con IAM
-
-Los siguientes ejemplos describen cómo puede utilizar IAM para administrar su organización de consola:
-
-* Otorgar roles específicos a miembros específicos para que sólo puedan completar las tareas requeridas.
-* Modificar los permisos de los miembros porque se cambiaron de departamento o porque tienen responsabilidades adicionales.
-* Eliminar un usuario que abandonó la empresa.
-* Agregue carpetas o proyectos a su jerarquía porque una nueva unidad de negocios ha agregado almacenamiento de NetApp .
-* Asociar un recurso con otro proyecto porque ese recurso tiene capacidad que otro equipo puede utilizar.
-* Ver los recursos a los que un miembro puede acceder.
-* Ver los miembros y recursos asociados con un proyecto específico.
+* **Estrategia del agente:** Agentes vinculados a proyectos departamentales según la propiedad de los recursos
+* **Beneficios:** Control de acceso personalizado, eficiencia operativa mejorada y responsabilidad clara por tareas especializadas
 
 
 
 
-== ¿A dónde ir después?
+== Próximos pasos con IAM en la NetApp Console
 
 * link:task-iam-get-started.html["Comience a usar IAM en la NetApp Console"]
-* link:task-iam-manage-folders-projects.html["Organice sus recursos en NetApp Console con carpetas y proyectos"]
-* link:task-iam-manage-members-permissions.html["Administrar los miembros de la NetApp Console y sus permisos"]
-* link:task-iam-manage-resources.html["Administre la jerarquía de recursos en su organización de la NetApp Console"]
-* link:task-iam-associate-agents.html["Asociar agentes con carpetas y proyectos"]
-* link:task-iam-switch-organizations-projects.html["Cambiar entre proyectos y organizaciones de la NetApp Console"]
-* link:task-iam-rename-organization.html["Cambie el nombre de su organización de la NetApp Console"]
 * link:task-iam-audit-actions-timeline.html["Supervisar o auditar la actividad de IAM"]
-* link:reference-iam-predefined-roles.html["Roles de acceso a la NetApp Console"]
 * https://docs.netapp.com/us-en/console-automation/tenancyv4/overview.html["Obtenga más información sobre la API para NetApp Console IAM"^]
 

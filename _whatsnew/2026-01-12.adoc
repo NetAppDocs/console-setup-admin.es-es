@@ -1,0 +1,32 @@
+= Agente de consola 4.3.0
+:allow-uri-read: 
+
+
+
+
+=== Agente de consola 4.3.0
+
+La versión 4.3.0 admite tanto el modo estándar como el modo restringido.
+
+Esta versión del agente de consola incluye mejoras de seguridad, correcciones de errores y las siguientes características:
+
+.Capacidad para validar las conexiones de red de los agentes de la consola
+Ahora puede validar las conexiones de red de los agentes de consola conectados directamente desde la NetApp Console. Esta función ayuda a verificar la conectividad y solucionar problemas con los agentes de la consola.
+
+link:https://docs.netapp.com/us-en/console-setup-admin/task-troubleshoot-agent.html#verify-network-access["Aprenda a ejecutar comprobaciones de configuración en agentes de la consola."]
+
+
+
+=== Administración de la NetApp Console
+
+Esta versión incluye lo siguiente:
+
+.Compatibilidad con la federación cuando la NetApp Console está en modo restringido
+Ahora puede habilitar la federación para una organización de NetApp Console que esté en modo restringido. Esto permite a los usuarios iniciar sesión en la consola utilizando sus credenciales corporativas mientras mantienen los beneficios de seguridad del modo restringido.
+
+.Modo de solo lectura
+Puede configurar una organización de la NetApp Console en modo de solo lectura. En el modo de solo lectura, los usuarios pueden ver recursos y configuraciones, pero no pueden realizar cambios. Un administrador de organización o un superadministrador puede habilitar el modo de solo lectura para una organización. Cuando el modo de solo lectura está habilitado, los usuarios con roles administrativos deben elevar manualmente sus permisos para realizar cambios según sea necesario.
+
+link:https://docs.netapp.com/us-en/console-setup-admin/task-enable-read-only-mode.html["Aprenda cómo habilitar el modo de solo lectura para una organización de consola."]
+
+link:https://docs.netapp.com/us-en/console-setup-admin/task-user-settings["Aprenda cómo elevar su rol cuando su organización está en modo de solo lectura."]

@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: task-user-settings.html 
-keywords: user profile, mfa, change password, role, login, multi-factor, authentication, dark mode 
-summary: Dentro de la Consola, cada usuario tiene un perfil que contiene información sobre el usuario y su configuración. Puede ver y editar la configuración de su perfil. 
+keywords: user profile, mfa, change password, role, login, multi-factor, authentication, dark mode, read-only mode, contact admin 
+summary: 'Puede modificar su perfil de consola, lo que incluye cambiar su contraseña, habilitar la autenticación multifactor (MFA) y ver quién es su administrador de consola.' 
 ---
 = Administrar la configuración de usuario de la NetApp Console
 :hardbreaks:
@@ -22,7 +22,7 @@ Dentro de la Consola, cada usuario tiene un perfil que contiene información sob
 
 == Cambiar tu nombre para mostrar
 
-Puedes cambiar el nombre para mostrar de tu consola que se utiliza para identificarte y que es visible para otros usuarios. Su nombre para mostrar no es el mismo que su nombre de usuario o dirección de correo electrónico, los cuales no se pueden cambiar.
+Puedes cambiar el nombre para mostrar de tu consola, que te identifica ante otros usuarios. No puedes cambiar tu nombre de usuario ni dirección de correo electrónico.
 
 .Pasos
 . Seleccione el ícono de perfil en la esquina superior derecha de la Consola para ver el panel de configuración de Usuario.
@@ -32,11 +32,29 @@ Puedes cambiar el nombre para mostrar de tu consola que se utiliza para identifi
 
 
 
+== Mejora tu rol en modo de solo lectura
+
+En algunos casos, el administrador de su organización puede poner su organización en modo de solo lectura. Si tiene un rol de administrador, debe elevar los permisos para realizar cambios. Esto garantiza que los cambios sean intencionales y autorizados.
+
+Después de elevar su rol, podrá realizar cambios en la Consola hasta que expire su sesión actual.
+
+Cuando haya terminado, cierre la sesión de la consola o mueva el control deslizante hacia atrás para regresar al modo de solo lectura. El sistema elimina sus permisos elevados cuando su sesión expira.
+
+.Pasos
+. Seleccione el ícono de perfil en la esquina superior derecha de la Consola para ver el panel de configuración de Usuario.
+. Para el estado de *Modo de solo lectura*, mueva el control deslizante a la posición *Elevado* y confirme los cambios.
++
+image:screenshot-user-elevated.png["Una captura de pantalla que muestra el control deslizante del modo de solo lectura en la posición elevada."]
+
+
+
+
+
 == Configurar la autenticación multifactor
 
 Configure la autenticación multifactor (MFA) para mejorar la seguridad al requerir un segundo método de verificación.
 
-Los usuarios que utilizan el inicio de sesión único con un proveedor de identidad externo o el sitio de soporte de NetApp no ​​pueden habilitar MFA.  Si alguna de estas situaciones es cierta para usted, no verá la opción para habilitar MFA en la configuración de su perfil.
+Los usuarios que utilizan el inicio de sesión único con un proveedor de identidad externo o el sitio de soporte de NetApp no ​​pueden habilitar MFA. Si alguna de estas situaciones es cierta para usted, no verá la opción para habilitar MFA en la configuración de su perfil.
 
 No habilite MFA si su cuenta de usuario se utiliza para acceder a la API.  La autenticación multifactor detiene el acceso a la API cuando está habilitada para una cuenta de usuario.  Utilice cuentas de servicio para todo el acceso a la API.
 
@@ -75,7 +93,7 @@ Solo puedes usar los códigos de recuperación una vez.  Si usas o pierdes el tu
 
 == Eliminar su configuración de MFA
 
-Para dejar de usar la autenticación multifactor (MFA) para su inicio de sesión, elimine su configuración de MFA.  Esto elimina la necesidad de ingresar un código de un solo uso desde su aplicación de autenticación cuando inicia sesión.
+Cuando haya terminado, cierre la sesión de la consola o mueva el control deslizante hacia atrás para regresar al modo de solo lectura. El sistema elimina sus permisos elevados cuando su sesión expira.
 
 
 NOTE: Si no puede acceder a su aplicación de autenticación o código de recuperación, deberá comunicarse con el administrador de su organización para restablecer su configuración de MFA.

@@ -83,7 +83,7 @@ La consola necesita permisos para realizar acciones en Azure.  Puede otorgar los
 .Acerca de esta tarea
 La siguiente imagen muestra cómo la consola obtiene permisos para realizar operaciones en Azure.  Un objeto principal de servicio, que está vinculado a una o más suscripciones de Azure, representa la consola en Microsoft Entra ID y se asigna a un rol personalizado que permite los permisos necesarios.
 
-image:diagram_azure_authentication.png["Imagen conceptual que muestra la consola obteniendo autenticación y autorización de Microsoft Entra ID antes de poder realizar una llamada API.  En Active Directory, la función Consola define los permisos.  Está vinculado a una o más suscripciones de Azure y a un objeto principal de servicio que representa la aplicación Cloud Manager."]
+image:diagram_azure_authentication.png["Imagen conceptual que muestra la consola obteniendo autenticación y autorización de Microsoft Entra ID antes de poder realizar una llamada API. La función Consola define permisos en Active Directory. Está vinculado a una o más suscripciones de Azure y a un objeto de entidad de servicio que representa la aplicación de consola."]
 
 .Pasos
 . <<Crear una aplicación Microsoft Entra>> .

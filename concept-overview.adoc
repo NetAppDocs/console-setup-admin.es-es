@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-overview.html 
 keywords: overview, concepts, features, use case, cloud manager, bluexp, how bluexp works, supported cloud providers, cloud providers, hyperscalers, aws, google, how NetApp Console works 
-summary: La NetApp Console proporciona una gestión centralizada de los servicios de datos y almacenamiento de NetApp en entornos locales y en la nube a escala empresarial. 
+summary: La consola unifica la gestión y protección del almacenamiento en nubes híbridas múltiples con servicios de datos integrados para proteger y optimizar los datos. 
 ---
 = Obtenga más información sobre la NetApp Console
 :hardbreaks:
@@ -14,25 +14,19 @@ summary: La NetApp Console proporciona una gestión centralizada de los servicio
 
 
 [role="lead"]
-La NetApp Console proporciona una gestión centralizada del almacenamiento de NetApp y de los NetApp Data Services en entornos locales y en la nube a nivel empresarial, brindando información en tiempo real, flujos de trabajo más rápidos y una administración simplificada, que es altamente segura y compatible.
-
-Está disponible como una plataforma de servicio (SaaS) que proporciona gestión de almacenamiento, movilidad de datos, protección de datos y análisis y control de datos.  Las capacidades de gestión se proporcionan a través de una consola basada en web y API.
-
-
-
-== Funciones
-
 La consola unifica la gestión y protección del almacenamiento en nubes híbridas múltiples con servicios de datos integrados para proteger y optimizar los datos.
 
+Está disponible como una plataforma de servicio (SaaS) o una opción autohospedada que puede instalar en su nube soberana. Proporciona gestión de almacenamiento, movilidad de datos, protección de datos y análisis y control de datos. Las capacidades de gestión se proporcionan a través de una consola basada en web y API.
 
 
-=== Gestión centralizada del almacenamiento
+
+== Gestión centralizada del almacenamiento
 
 Descubra, implemente y administre el almacenamiento local y en la nube con la consola.
 
 
 
-==== Almacenamiento en la nube y local compatible
+=== Almacenamiento en la nube y local compatible
 
 Puede administrar los siguientes tipos de almacenamiento desde la consola:
 
@@ -68,15 +62,15 @@ Almacenamiento de objetos en la nube::
 
 
 
-==== Gestión de almacenamiento
+=== Gestión de almacenamiento
 
 Dentro de la consola, los _sistemas_ representan el almacenamiento descubierto o implementado.  Puede seleccionar un _sistema_ para integrarlo con los servicios de datos de NetApp o administrar el almacenamiento, como agregar volúmenes.
 
-image:screenshot-canvas.png["Una captura de pantalla de la consola que muestra varios sistemas, uno de los cuales está seleccionado y muestra la capacidad de habilitar los servicios de datos de NetApp o seleccionar *Ingresar sistema* para administrar el almacenamiento."]
+image:screenshot-canvas.png["Una captura de pantalla de la consola que muestra varios sistemas. Se selecciona uno y se muestra la capacidad de habilitar los servicios de datos de NetApp o seleccionar *Ingresar sistema* para administrar el almacenamiento."]
 
 
 
-=== Servicios de datos integrados y gestión de almacenamiento para proteger, asegurar y optimizar los datos
+== Servicios de datos integrados y gestión de almacenamiento para proteger, asegurar y optimizar los datos
 
 La consola proporciona servicios de datos para proteger y mantener la disponibilidad del almacenamiento.
 
@@ -147,11 +141,11 @@ link:concept-agents.html["Obtenga más información sobre los agentes de consola
 
 
 
-=== Modos de implementación
+=== Implementación de SaaS versus nube soberana
 
-NetApp ofrece dos modos de implementación para la NetApp Console: el _modo estándar_ utiliza una capa de software como servicio (SaaS) para una funcionalidad completa, mientras que el _modo restringido_ limita la conectividad saliente.
+Puede comenzar a utilizar NetApp Console suscribiéndose a la oferta SaaS o implementándola en su nube soberana. Cuando implementa NetApp Console en una nube soberana, NetApp limita la conectividad saliente para cumplir con los requisitos de seguridad y cumplimiento de su organización. No todas las funciones y servicios están disponibles cuando la consola se implementa en una nube soberana.
 
-NetApp continúa ofreciendo BlueXP para sitios que no necesitan conectividad saliente.  BlueXP solo está disponible en modo privado.link:task-quick-start-private-mode.html["Obtenga información sobre BlueXP (modo privado) para sitios sin conectividad a Internet."]
+NetApp continúa ofreciendo BlueXP para sitios que no desean conectividad saliente. BlueXP se puede instalar en su red sin conectividad saliente. link:task-quick-start-private-mode.html["Obtenga información sobre BlueXP (modo privado) para sitios sin conectividad a Internet."]
 
 link:concept-modes.html["Obtenga más información sobre los modos de implementación"] .
 

@@ -44,9 +44,11 @@ La tabla destaca las características de la página Auditoría y del Centro de n
 
 == Auditar la actividad del usuario desde la página Auditoría
 
+Utilice la página Auditoría para identificar quién realizó una acción o su estado.
+
 La página Auditoría muestra las acciones que los usuarios completaron para administrar su organización o cuenta.  Esto incluye acciones de gestión como asociar usuarios, crear sistemas, crear agentes y más.
 
-Utilice la página Auditoría para identificar quién realizó una acción o su estado.
+También puedes verificar quién agregó un miembro a una organización o que un proyecto se eliminó correctamente.
 
 .Pasos
 . Seleccione *Administración > Auditoría*.

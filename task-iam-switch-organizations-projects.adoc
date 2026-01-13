@@ -31,14 +31,14 @@ Si es miembro de varias organizaciones, puede cambiar entre ellas en cualquier m
 image:screenshot-iam-switch-organizations.png["Una captura de pantalla del banner superior donde puede seleccionar el menú desplegable Organización y luego seleccionar otra organización."]
 
 . Si tiene alguna organización asociada, seleccione la pestaña *Asociación* para ver las organizaciones asociadas disponibles.
-
-
-+ La pestaña *Asociación* no se muestra si no tienes ninguna organización asociada.
++
+La pestaña *Asociación* no se muestra si no tienes ninguna organización asociada.
 
 . Seleccione otra organización y luego seleccione *Cambiar*.
++
+Si tiene alguna organización asociada, seleccione la pestaña *Asociación* para ver las organizaciones asociadas disponibles.
 
 
-+ Si tiene alguna organización asociada, seleccione la pestaña *Asociación* para ver las organizaciones asociadas disponibles.
 
 
 
