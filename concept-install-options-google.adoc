@@ -14,7 +14,7 @@ summary: Hay algunas formas diferentes de crear un agente de consola en Google C
 
 
 [role="lead"]
-Hay algunas formas diferentes de crear un agente de consola en Google Cloud.  La forma más común es hacerlo directamente desde la NetApp Console .  ---
+Hay algunas formas diferentes de crear un agente de consola en Google Cloud.  La forma más común es hacerlo directamente desde la NetApp Console .
 
 Están disponibles las siguientes opciones de instalación:
 
