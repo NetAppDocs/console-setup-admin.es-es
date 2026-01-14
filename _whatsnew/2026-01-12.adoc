@@ -15,11 +15,6 @@ Ahora puede validar las conexiones de red de los agentes de consola conectados d
 
 link:https://docs.netapp.com/us-en/console-setup-admin/task-troubleshoot-agent.html#verify-network-access["Aprenda a ejecutar comprobaciones de configuración en agentes de la consola."]
 
-.Permisos adicionales de Google Cloud para Cloud Volumes ONTAP
-Para admitir la administración de Cloud Volumes ONTAP en Google Cloud, el agente de la consola ahora requiere un permiso adicional. Se ha agregado el siguiente permiso a la cuenta de servicio utilizada por el agente de la consola: compute.forwardingRules.update
-
-link:https://docs.netapp.com/us-en/console-setup-admin/reference-permissions-gcp.html#gcp-permissions-change-log["Ver el registro de cambios de permisos."]
-
 
 
 === Administración de la NetApp Console
