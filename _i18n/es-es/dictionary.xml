@@ -5744,9 +5744,7 @@
   <block id="1065e278b83db0baa7239d1c2c89e558" category="paragraph">La consola muestra el secreto del cliente solo una vez. Cópielo de forma segura; podrá volver a crearlo más tarde si lo pierde.</block>
   <block id="6c07155a6c5b387b3649e57518b2acbf" category="list-text">Si eligió la autenticación JWT, descargue o copie el ID del cliente y la audiencia JWT. La consola muestra esta información solo una vez y no permite recuperarla más tarde.</block>
   <block id="1e5bd0e3b2f8efdd44ff92b7d355c374" category="section-title">Agregue un grupo federado a su organización</block>
-  <block id="c4d8a0f38fcfd51b64b45642a963ccd2" category="paragraph">Puede agregar un grupo federado de su proveedor de identidad (IdP) a su organización. Los miembros del grupo federado heredan los roles que usted asigna al grupo en la Consola.</block>
   <block id="1f87469083830ec60b59de86a65908a9" category="inline-link-macro">Aprenda cómo configurar la federación.</block>
-  <block id="44c50d77ce337726b2c52859655871e2" category="paragraph">Asegúrese de lo siguiente antes de agregar un grupo federado: * Debe haber configurado ya la federación entre su IdP y la consola. <block ref="562353f9c9a6ec120d22140ce361907b" category="inline-link-macro-rx"></block> *El grupo ya debe existir en tu IdP. * Debes saber el nombre exacto del grupo en tu IdP. * Los usuarios que pertenecen al grupo ya deben haberse registrado en la NetApp Console y se les debe asignar explícitamente un rol en la consola.</block>
   <block id="16a2c505069eacd418dca553f5b68d99" category="list-text">Para *Tipo de miembro*, seleccione *Grupo federado*.</block>
   <block id="00cfd65508d24955faa8b609b29efc15" category="list-text">Seleccione la federación de la que es miembro el grupo</block>
   <block id="be1ae879869c7f401beda2410fc2ef42" category="list-text">Para *Nombre del grupo*, ingrese el nombre exacto del grupo en su IdP.</block>
@@ -5903,9 +5901,13 @@
   <block id="4c61619ce49044f354b1f5cc38707fd2" category="sidebar">Permisos del agente de AWS y reglas de seguridad</block>
   <block id="20ec4216ad7aef42619add3b96b89c33" category="sidebar">Permisos de Azure y reglas de seguridad requeridas</block>
   <block id="347863a199ea8f4c7e1e9540d041ca12" category="sidebar">Permisos de Google Cloud y reglas de firewall requeridas</block>
-  <block id="772b95b1a689cd9ca0f7d8935114e25c" category="paragraph-title">Permisos adicionales de Google Cloud para Cloud Volumes ONTAP</block>
-  <block id="335ea2f40a7e49b48a24b0867a975d2b" category="paragraph">Para admitir la administración de Cloud Volumes ONTAP en Google Cloud, el agente de la consola ahora requiere un permiso adicional. Se ha agregado el siguiente permiso a la cuenta de servicio utilizada por el agente de la consola: compute.forwardingRules.update</block>
-  <block id="b4c9682d1423fe286221a4951d5900b8" category="paragraph"><block ref="b4c9682d1423fe286221a4951d5900b8" category="inline-link-macro-rx"></block></block>
-  <block id="b18fad63d8ccb120bf7c88b5cde19431" category="cell">calcular.reenvíoReglas.actualizar</block>
-  <block id="d82499f632494fadd7c3cb95a45cdd03" category="cell">Actualizar las reglas de reenvío existentes para la gestión del tráfico.</block>
+  <block id="9f3261123c8a658e7b62dee5c17371f4" category="paragraph-title">Acceso basado en roles para grupos federados en la NetApp Console</block>
+  <block id="c4d7a3f544d6f76c7c70bcb232209dbf" category="paragraph">NetApp Console admite la asignación de roles a grupos federados (por ejemplo, grupos de Active Directory), lo que permite a los administradores automatizar la incorporación y salida de usuarios en función de la membresía del grupo en el proveedor de identidad (IdP) de la organización. Esta función reduce la sobrecarga administrativa y garantiza un acceso seguro y consistente al actualizar instantáneamente el acceso a la consola a medida que cambian las membresías del grupo.</block>
+  <block id="ac4ebbe533b328180ba7587ac3ed17ea" category="inline-link-macro">Aprenda cómo proporcionar acceso a un grupo federado a su organización.</block>
+  <block id="bd8d483345dcb63c75668983c3887b87" category="paragraph"><block ref="bd8d483345dcb63c75668983c3887b87" category="inline-link-macro-rx"></block></block>
+  <block id="8e21188f4a561525a629d0158af709a2" category="paragraph">Puede agregar un grupo federado de su proveedor de identidad (IdP) a su organización y asignarle uno o más roles. Los miembros del grupo federado heredan los roles que usted asigna al grupo en la Consola.</block>
+  <block id="74339c243d7e2c57c81d3b6eeb492598" category="paragraph">Antes de poder asignar un rol a un grupo federado, asegúrese de lo siguiente:</block>
+  <block id="99673e10ad28f12bcaf375fb16592097" category="list-text">Configure la federación entre su IdP y la consola. <block ref="562353f9c9a6ec120d22140ce361907b" category="inline-link-macro-rx"></block></block>
+  <block id="2e2db2e64333e9c722068fbbc6cceb8e" category="list-text">El grupo ya debe existir en su IdP y debe tener asignado acceso a la aplicación de la Consola.</block>
+  <block id="06d5b18e5be0feb68eea2f9f0a2102d0" category="list-text">Los usuarios que pertenecen al grupo ya deben haberse registrado en la NetApp Console y se les debe asignar explícitamente un rol en la consola. NetApp recomienda asignar un rol de acceso mínimo, como Visor de la organización.</block>
 </blocks>

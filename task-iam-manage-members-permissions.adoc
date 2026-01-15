@@ -133,10 +133,14 @@ La consola muestra el secreto del cliente solo una vez. Cópielo de forma segura
 
 == Agregue un grupo federado a su organización
 
-Puede agregar un grupo federado de su proveedor de identidad (IdP) a su organización. Los miembros del grupo federado heredan los roles que usted asigna al grupo en la Consola.
+Puede agregar un grupo federado de su proveedor de identidad (IdP) a su organización y asignarle uno o más roles. Los miembros del grupo federado heredan los roles que usted asigna al grupo en la Consola.
 
-.Antes de empezar:
-Asegúrese de lo siguiente antes de agregar un grupo federado: * Debe haber configurado ya la federación entre su IdP y la consola. link:concept-federation.html["Aprenda cómo configurar la federación."] *El grupo ya debe existir en tu IdP. * Debes saber el nombre exacto del grupo en tu IdP. * Los usuarios que pertenecen al grupo ya deben haberse registrado en la NetApp Console y se les debe asignar explícitamente un rol en la consola.
+Antes de poder asignar un rol a un grupo federado, asegúrese de lo siguiente:
+
+* Configure la federación entre su IdP y la consola. link:concept-federation.html["Aprenda cómo configurar la federación."]
+* El grupo ya debe existir en su IdP y debe tener asignado acceso a la aplicación de la Consola.
+* Los usuarios que pertenecen al grupo ya deben haberse registrado en la NetApp Console y se les debe asignar explícitamente un rol en la consola. NetApp recomienda asignar un rol de acceso mínimo, como Visor de la organización.
+
 
 .Pasos
 . Seleccione *Administración > Identidad y acceso*.
