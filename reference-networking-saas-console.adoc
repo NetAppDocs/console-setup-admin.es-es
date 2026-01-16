@@ -90,3 +90,21 @@ Algunos servicios de datos de NetApp , así como Cloud Volumes ONTAP, requieren 
 * link:https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/reference-networking-azure.html["Puntos de conexión para Cloud Volumes ONTAP en Azure"]
 * link:https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/reference-networking-gcp.html#outbound-internet-access["Puntos finales para Cloud Volumes ONTAP en Google Cloud"]
 
+
+
+
+=== Puntos finales para cargas de trabajo
+
+El agente de la consola debe poder acceder al siguiente punto final para las cargas de trabajo de NetApp .
+
+[cols="2*"]
+|===
+| Puntos finales | Objetivo 
+
+
+ a| 
+\ https://api.workloads.netapp.com
+ a| 
+La consola basada en web se comunica con este punto final para interactuar con las API de Workload Factory para administrar y operar cargas de trabajo basadas en FSx para ONTAP.
+
+|===

@@ -5910,4 +5910,8 @@
   <block id="99673e10ad28f12bcaf375fb16592097" category="list-text">Configure la federación entre su IdP y la consola. <block ref="562353f9c9a6ec120d22140ce361907b" category="inline-link-macro-rx"></block></block>
   <block id="2e2db2e64333e9c722068fbbc6cceb8e" category="list-text">El grupo ya debe existir en su IdP y debe tener asignado acceso a la aplicación de la Consola.</block>
   <block id="06d5b18e5be0feb68eea2f9f0a2102d0" category="list-text">Los usuarios que pertenecen al grupo ya deben haberse registrado en la NetApp Console y se les debe asignar explícitamente un rol en la consola. NetApp recomienda asignar un rol de acceso mínimo, como Visor de la organización.</block>
+  <block id="881a7400da554e794b5b8e9d39c7db4a" category="section-title">Puntos finales para cargas de trabajo</block>
+  <block id="7226c299553546c713e6b5ab556098c8" category="paragraph">El agente de la consola debe poder acceder al siguiente punto final para las cargas de trabajo de NetApp .</block>
+  <block id="0eda8bbe61d2248f5418aba76b8dc5b1" category="paragraph">\ https://api.workloads.netapp.com</block>
+  <block id="a2d795d1d62d99052325545b09f9236f" category="paragraph">La consola basada en web se comunica con este punto final para interactuar con las API de Workload Factory para administrar y operar cargas de trabajo basadas en FSx para ONTAP.</block>
 </blocks>
