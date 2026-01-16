@@ -5470,7 +5470,6 @@
   <block id="c7c19a46289db74512cc747670442409" category="inline-link-macro">Aprenda cómo habilitar el modo de solo lectura para una organización de consola.</block>
   <block id="701595799e137f6efaa9c9cd9be54125" category="paragraph"><block ref="701595799e137f6efaa9c9cd9be54125" category="inline-link-macro-rx"></block></block>
   <block id="4380e2b873a072c906edb6d21b6eb823" category="inline-link-macro">Aprenda cómo elevar su rol cuando su organización está en modo de solo lectura.</block>
-  <block id="b45238e19857e4059227131bbda630a6" category="paragraph"><block ref="b45238e19857e4059227131bbda630a6" category="inline-link-macro-rx"></block></block>
   <block id="0c2fbb6854f3455435639851d8cd9997" category="inline-image-macro">Una imagen conceptual que muestra la consola implementando el agente de consola en una cuenta de AWS.</block>
   <block id="a13b8f382ebf56f2b82af89db286c5a4" category="paragraph"><block ref="a13b8f382ebf56f2b82af89db286c5a4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4159a33176d30977a2d9b1b4ff27b420" category="inline-image-macro">Una imagen conceptual que muestra dos cuentas adicionales. Cada uno tiene una política IAM. Uno está asociado a un usuario de IAM y el otro está asociado a un rol de IAM.</block>
@@ -5914,4 +5913,5 @@
   <block id="7226c299553546c713e6b5ab556098c8" category="paragraph">El agente de la consola debe poder acceder al siguiente punto final para las cargas de trabajo de NetApp .</block>
   <block id="0eda8bbe61d2248f5418aba76b8dc5b1" category="paragraph">\ https://api.workloads.netapp.com</block>
   <block id="a2d795d1d62d99052325545b09f9236f" category="paragraph">La consola basada en web se comunica con este punto final para interactuar con las API de Workload Factory para administrar y operar cargas de trabajo basadas en FSx para ONTAP.</block>
+  <block id="1f48aa3b8a17cda9bff69e07d29acd50" category="paragraph"><block ref="1f48aa3b8a17cda9bff69e07d29acd50" category="inline-link-macro-rx"></block></block>
 </blocks>
