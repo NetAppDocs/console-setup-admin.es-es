@@ -264,7 +264,7 @@ sidebar:
     - title: Consola de mantenimiento del agente
       entries:
       - title: Comprobaciones de configuración
-        url: "/reference-agent-maint-console.html"
+        url: "/reference-agent-maint-console-config-checker.html"
       - title: Proxy transparente
         url: "/reference-agent-maint-console-proxy.html"
     - title: Permisos del agente del proveedor de nube y requisitos de red

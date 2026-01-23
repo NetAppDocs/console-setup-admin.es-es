@@ -5461,8 +5461,6 @@
   <block id="79af92d05f2b214eab2c765e215beb6b" category="doc">Agente de consola 4.3.0</block>
   <block id="6f1b51eea64496510e6cf5a5a2d57d29" category="paragraph">La versión 4.3.0 admite tanto el modo estándar como el modo restringido.</block>
   <block id="664a9e1da962d9131b0a035da50bbcc7" category="paragraph-title">Capacidad para validar las conexiones de red de los agentes de la consola</block>
-  <block id="81cc16a2354d8ec80802e2e4ac22f15a" category="paragraph">Ahora puede validar las conexiones de red de los agentes de consola conectados directamente desde la NetApp Console. Esta función ayuda a verificar la conectividad y solucionar problemas con los agentes de la consola.</block>
-  <block id="65ce32eae3a28c0b24f8cc33c345ab84" category="paragraph"><block ref="65ce32eae3a28c0b24f8cc33c345ab84" category="inline-link-macro-rx"></block></block>
   <block id="8b71edf4fd7d99d72da1d37de5e154b7" category="paragraph-title">Compatibilidad con la federación cuando la NetApp Console está en modo restringido</block>
   <block id="58bbe2cc0931c12594be1bafb70597fb" category="paragraph">Ahora puede habilitar la federación para una organización de NetApp Console que esté en modo restringido. Esto permite a los usuarios iniciar sesión en la consola utilizando sus credenciales corporativas mientras mantienen los beneficios de seguridad del modo restringido.</block>
   <block id="ac811c471ef716f9c8a3865d7f14caa3" category="paragraph-title">Modo de solo lectura</block>
@@ -5914,4 +5912,7 @@
   <block id="0eda8bbe61d2248f5418aba76b8dc5b1" category="paragraph">\ https://api.workloads.netapp.com</block>
   <block id="a2d795d1d62d99052325545b09f9236f" category="paragraph">La consola basada en web se comunica con este punto final para interactuar con las API de Workload Factory para administrar y operar cargas de trabajo basadas en FSx para ONTAP.</block>
   <block id="1f48aa3b8a17cda9bff69e07d29acd50" category="paragraph"><block ref="1f48aa3b8a17cda9bff69e07d29acd50" category="inline-link-macro-rx"></block></block>
+  <block id="3a78a8ea0b02debae5e6b16cc1929cb5" category="paragraph">Ahora puedes validar las conexiones de red de los agentes de Console conectados directamente desde la NetApp Console. Esta función te ayuda a verificar la conectividad y solucionar problemas con los agentes de Console. Esto se suma a la capacidad existente de ejecutar diagnósticos de red desde la línea de comandos de la consola de mantenimiento del agente de Console (CLI).</block>
+  <block id="16e0d5a8229f3c0136c12aa9def60bb1" category="inline-link-macro">Aprende cómo ejecutar la configuración desde NetApp Console.</block>
+  <block id="3cb937c3382e580784aa7486c365ec19" category="paragraph"><block ref="3cb937c3382e580784aa7486c365ec19" category="inline-link-macro-rx"></block></block>
 </blocks>
