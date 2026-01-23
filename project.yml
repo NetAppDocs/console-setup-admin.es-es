@@ -30,7 +30,7 @@ sidebar:
         url: "/concept-modes.html"
       - title: Cuentas de soporte de NetApp
         url: "/task-adding-nss-accounts.html"
-      - title: Agentes de consola
+      - title: Entiende los agentes de la consola
         url: "/concept-agents.html"
       - title: Gestión de identidad y acceso
         url: "/concept-identity-and-access-management.html"
@@ -56,10 +56,16 @@ sidebar:
         url: "/task-subscribe-restricted-mode.html"
       - title: Qué puedes hacer a continuación
         url: "/reference-whats-next-restricted-mode.html"
+    - title: Empieza con el modo privado
+      entries:
+      - title: Flujo de trabajo de introducción
+        url: "/task-quick-start-private-mode.html"
   - title: Utilice la NetApp Console
     entries:
     - title: Iniciar sesión en la NetApp Console
       url: "/task-logging-in.html"
+    - title: Trabajar con múltiples agentes de consola
+      url: "/task-manage-multiple-agents.html"
     - title: Ver métricas en la página de inicio de la NetApp Console
       url: "/task-dashboard.html"
     - title: Administrar la configuración de usuario de la NetApp Console
@@ -126,16 +132,10 @@ sidebar:
           url: "/task-installing-https-cert.html"
         - title: Configurar un agente de consola para utilizar un servidor proxy
           url: "/task-configuring-proxy.html"
-        - title: Trabajar con múltiples agentes de consola
-          url: "/task-manage-multiple-agents.html"
         - title: Solucionar problemas del agente de la consola
           url: "/task-troubleshoot-agent.html"
         - title: Desinstalar y eliminar el agente de consola
           url: "/task-uninstall-agent.html"
-        - title: Configuración predeterminada
-          url: "/reference-agent-default-config.html"
-        - title: Aplicar permisos de ONTAP en la NetApp Console
-          url: "/task-ontap-access-agent.html"
       - title: Administrar las credenciales del proveedor de la nube
         entries:
         - title: AWS
@@ -239,6 +239,8 @@ sidebar:
             url: "/task-federation-manage.html"
           - title: Importe su conexión federada existente
             url: "/task-federation-import.html"
+      - title: Aplicar permisos de ONTAP en la NetApp Console
+        url: "/task-ontap-access-agent.html"
       - title: Habilitar el modo de solo lectura para una organización
         url: "/task-enable-read-only-mode.html"
       - title: Cumplimiento de SOC-2 para la NetApp Console
@@ -293,6 +295,8 @@ sidebar:
       url: "/reference-networking-saas-console-previous.html"
     - title: Requerir el uso de IMDSv2 en instancias EC2
       url: "/task-require-imdsv2.html"
+    - title: Configuración predeterminada del agente
+      url: "/reference-agent-default-config.html"
   - title: Conocimiento y apoyo
     entries:
     - title: Regístrese para recibir asistencia

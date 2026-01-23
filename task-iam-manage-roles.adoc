@@ -109,9 +109,6 @@ Los miembros pueden tener múltiples roles dentro del mismo proyecto y en difere
 
 Su estrategia de roles de acceso debe estar alineada con la forma en que ha organizado sus recursos de NetApp .
 
-
-TIP: A un miembro al que se le asigna el rol de administrador de la organización no se le pueden asignar roles adicionales. Ya tienen permisos en toda la organización. A un miembro con el rol de administrador de carpeta o proyecto no se le puede asignar ningún otro rol dentro de la carpeta o el proyecto donde ya tiene ese rol. Ambos roles proporcionan acceso a todos los servicios dentro del alcance que están asignados.
-
 .Pasos
 . Seleccione *Administración > Identidad y acceso*.
 . Seleccione *Miembros*.
