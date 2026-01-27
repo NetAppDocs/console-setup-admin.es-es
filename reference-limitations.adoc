@@ -34,9 +34,9 @@ Ver artículo de la base de conocimientoslink:https://kb.netapp.com/Advice_and_T
 
 
 
-=== No se admite el descifrado SSL
+=== El descifrado SSL es compatible solo con Cloud Volumes ONTAP
 
-La consola no admite configuraciones de firewall que tengan habilitado el descifrado SSL. Si el descifrado SSL está habilitado, aparecen mensajes de error en la consola y la instancia del agente se muestra como *Desconectada*.
+Los servidores proxy transparentes son compatibles solo con agentes asociados con Cloud Volumes ONTAP. No puedes usar un proxy transparente para un agente si se usa con otros servicios de datos de NetApp. Si usas servicios de datos de NetApp con Cloud Volumes ONTAP, crea un agente dedicado para Cloud Volumes ONTAP donde puedas usar un servidor proxy transparente.
 
 Para mayor seguridad, tienes la opción delink:task-installing-https-cert.html["Instalar un certificado HTTPS firmado por una autoridad de certificación (CA)"] .
 
