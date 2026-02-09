@@ -377,16 +377,14 @@ Habilite varias API de Google Cloud antes de implementar el agente de consola y 
 .Paso
 . Habilite las siguientes API de Google Cloud en su proyecto:
 +
-** API de Cloud Infrastructure Manager
 ** API de Cloud Deployment Manager V2
+** API de Cloud Infrastructure Manager
 ** API de registro en la nube
 ** API del administrador de recursos en la nube
 ** API de Compute Engine
 ** API de gestión de identidad y acceso (IAM)
-** API del servicio de administración de claves en la nube (KMS)
-+
-(Obligatorio solo si planea utilizar NetApp Backup and Recovery con claves de cifrado administradas por el cliente (CMEK))
-
+** API del servicio de gestión de claves en la nube (KMS) (necesaria solo si planeas usar NetApp Backup and Recovery con claves de cifrado gestionadas por el cliente (CMEK))
+** API de Cloud Quotas (necesaria para implementaciones de Cloud Volumes ONTAP usando Infrastructure Manager)
 
 
 

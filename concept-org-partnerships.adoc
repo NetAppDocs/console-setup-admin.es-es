@@ -4,7 +4,7 @@ permalink: concept-org-partnerships.html
 keywords: identity federation, single sign-on, SSO, identity provider, IdP, SAML, Microsoft Entra ID, AD FS, PingFederate, ACS URL, Entity ID, user access, security, productivity, compliance, authentication, business continuity, account management, user experience, access control, workflow automation, credential management, login process, organization admin, bluexp, BlueXP 
 summary: La creación de asociaciones entre organizaciones en la NetApp Console permite a los socios de la organización administrar de forma segura los recursos de NetApp a través de los límites organizacionales, lo que agiliza la colaboración y mejora la seguridad. 
 ---
-= Asociaciones en la NetApp Console
+= Asociaciones de organizaciones en NetApp Console
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -26,7 +26,7 @@ Los clientes pueden autorizar a los MSP o revendedores a administrar entornos Ne
 Como socio, obtiene visibilidad y control centralizados en todos los entornos de los clientes.  Puede cambiar fácilmente a la organización de un cliente para administrar recursos, ejecutar servicios de datos y monitorear la salud dentro de límites definidos, lo que reduce las herramientas personalizadas y garantiza la alineación con las políticas de cada cliente.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1"]Asignar a uno o más usuarios el rol de administrador de asociación
-Asigne a uno o más usuarios, tanto en la organización iniciadora como en la receptora, el rol de administrador de asociaciones para crear y administrar asociaciones. Puede asignar el rol de visualizador de asociaciones a usuarios que solo necesitan ver asociaciones, y no administrarlas.
+Asigna a uno o varios usuarios, tanto en la organización iniciadora como en la receptora, el rol de Partnership admin para crear y gestionar asociaciones. puedes asignar el rol de Partnership viewer a usuarios que solo necesiten ver asociaciones y no gestionarlas.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dos"]Comparta el ID de su organización con la organización iniciadora
 [role="quick-margin-para"]

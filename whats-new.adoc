@@ -18,6 +18,12 @@ Conozca las novedades en las funciones de administración de la NetApp Console :
 
 
 
+== 09 de febrero de 2026
+
+includes::_whatsnew/2026-02-09.adoc[]
+
+
+
 == 13 de enero de 2026
 
 

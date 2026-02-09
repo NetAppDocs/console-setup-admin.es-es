@@ -18,7 +18,7 @@ Utilice la gestión de identidad y acceso (IAM) de la consola de NetApp para org
 
 Los recursos se organizan jerárquicamente: la organización está en la parte superior, seguida de las carpetas (que pueden contener otras carpetas o proyectos) y luego los proyectos, que contienen sistemas de almacenamiento, cargas de trabajo y agentes.
 
-Asigne permisos de control de acceso basado en roles (RBAC) a los miembros a nivel de organización, carpeta o proyecto para garantizar que los usuarios tengan el acceso adecuado a los recursos.
+Asigna roles de acceso a nivel de organización, carpeta o proyecto para que los usuarios tengan el acceso correcto a los recursos.
 
 
 NOTE: Debe tener los roles de _Superadministrador_, _Administrador de la organización_ o _Administrador de carpeta o proyecto_ para administrar IAM en NetApp Console.
@@ -57,7 +57,7 @@ link:task-iam-manage-folders-projects.html["Aprenda cómo agregar carpetas a su 
 
 === Recursos
 
-Los _recursos_ incluyen sistemas de almacenamiento, suscripciones a Keystone y agentes de consola.
+Un _recurso_ es una entidad de la que la Console tiene conocimiento y que puede asignarse a un proyecto. _Recursos_ incluyen sistemas de almacenamiento, suscripciones a Keystone, algunas cargas de trabajo de Backup and Recovery, así como agentes de la Console.
 
 + Debe asociar un recurso a un proyecto antes de que alguien pueda acceder a él.
 
@@ -69,14 +69,10 @@ Por ejemplo, puede asociar un sistema Cloud Volumes ONTAP con un proyecto o con 
 
 link:task-iam-manage-resources.html["Aprenda a asociar recursos a proyectos."]
 
-Sistemas de almacenamiento y suscripciones Keystone:: Los sistemas de almacenamiento son los recursos principales que administra en NetApp Console. La NetApp Console admite la gestión de sistemas de almacenamiento locales y en la nube. Debe agregar un sistema de almacenamiento a un proyecto antes de que alguien pueda acceder a él.
-+
---
-Los sistemas de almacenamiento se asocian automáticamente con el proyecto donde se agregan, pero también puedes asociarlos con otros proyectos o carpetas desde la página *Recursos*.
-
-Las suscripciones de Keystone también son recursos que puede asociar con proyectos para otorgar a los usuarios acceso a la suscripción en NetApp Console.
-
---
+Sistemas de almacenamiento y suscripciones Keystone:: Los sistemas de almacenamiento son los recursos principales que gestionas en NetApp Console. NetApp Console admite la gestión de sistemas de almacenamiento tanto locales como en la nube. Debes añadir un sistema de almacenamiento a un proyecto para que puedan acceder a él quienes estén asignados al proyecto.
+Sistemas de almacenamiento:: Los sistemas de almacenamiento se asocian automáticamente al proyecto donde se añaden, pero puedes asociarlos a otros proyectos o carpetas desde la página *Resources*. No puedes asociar sistemas de almacenamiento FSx para NetApp ONTAP a proyectos o carpetas, pero puedes verlos en la página *Systems* o desde Workloads.
+Suscripciones a Keystone:: Las suscripciones de Keystone también son recursos que puede asociar con proyectos para otorgar a los usuarios acceso a la suscripción en NetApp Console.
+Cargas de trabajo de Backup and Recovery (Oracle y Microsoft SQL Server):: Algunas cargas de trabajo de Backup and Recovery también se consideran recursos. Puedes asignar permisos a los usuarios para acceder a Backup and Recovery
 
 
 [[associate-agents]]

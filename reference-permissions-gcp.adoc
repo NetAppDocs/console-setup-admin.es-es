@@ -191,6 +191,7 @@ includedPermissions:
 - compute.forwardingRules.delete
 - compute.forwardingRules.get
 - compute.forwardingRules.setLabels
+- compute.forwardingRules.update
 - compute.globalOperations.get
 - compute.healthChecks.create
 - compute.healthChecks.delete
@@ -406,6 +407,9 @@ El agente de la consola usa los permisos en la función personalizada para admin
 
 
 | calcular.reenvíoReglas.establecerEtiquetas | Establecer o actualizar etiquetas en las reglas de reenvío para la organización. | No | Sí | No 
+
+
+| compute.forwardingRules.update | Actualiza las reglas de reenvío existentes para la gestión del tráfico. | No | Sí | No 
 
 
 | computar.globalOperations.get | Para obtener el estado de las operaciones. | Sí | Sí | No 
@@ -790,6 +794,12 @@ El agente de consola usa los permisos en la función personalizada para administ
 == Registro de cambios
 
 Los permisos agregados y eliminados se detallan a continuación.
+
+
+
+=== 09 de febrero de 2026
+
+El permiso `compute.forwardingRules.update` se añade para dar soporte a Infrastructure Manager en implementaciones de Cloud Volumes ONTAP en Google Cloud.
 
 
 
