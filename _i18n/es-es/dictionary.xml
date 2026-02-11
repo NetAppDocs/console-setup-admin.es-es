@@ -5367,13 +5367,6 @@
   <block id="47d455f427b4674cc00157a8a2934409" category="paragraph">Se agregaron los siguientes permisos a esta política:</block>
   <block id="e97ae785ddbd746339946844f92175e6" category="inline-link">Documentos de clasificación</block>
   <block id="6847efe16c9bfc0feacaef65fc05b7b9" category="list-text"><block ref="6847efe16c9bfc0feacaef65fc05b7b9" category="inline-link-rx"></block></block>
-  <block id="9b894a36c4ebb01df8469fa98daba21f" category="summary">Ocasionalmente, NetApp actualiza los permisos necesarios para la cuenta de servicio utilizada para el agente de consola cuando se implementa en Google Cloud.</block>
-  <block id="d6d6c33d995f278b372d3d2f7a10524d" category="doc">Administrar los permisos del agente de la consola para las implementaciones de Google Cloud</block>
-  <block id="daf1fbd23852baa7dc431ec2658722d9" category="inline-link-macro">Verificar la lista de permisos de Google requeridos</block>
-  <block id="c35025e4c3afa1c5d645893259cbce25" category="paragraph"><block ref="df29c88404b44d3e8df12197653b40b2" category="inline-link-macro-rx"></block>.</block>
-  <block id="4860b54918e1580143a7c01984c21fe1" category="paragraph">Utilice Google Cloud Console para actualizar la función de IAM asignada a la cuenta de servicio para que coincida con el nuevo conjunto de permisos.</block>
-  <block id="34e82a1501cca5af4e190be9c03c0fbb" category="inline-link-macro">Documentación de Google Cloud: Editar una función personalizada</block>
-  <block id="322a5219fa870735040f24cb43da8303" category="paragraph"><block ref="322a5219fa870735040f24cb43da8303" category="inline-link-macro-rx"></block></block>
   <block id="16d62d361fbd1153b9fe75b035aa7c51" category="paragraph">Puede actualizar el servidor proxy transparente existente de un agente de consola mediante el<block ref="091092579ca8cede1b760e7c5a90a003" prefix=" " category="inline-code"></block> comando o elimine el servidor proxy transparente mediante el uso del<block ref="ef5ebb9e0c08ee0463e7503ff1111f4c" prefix=" " category="inline-code"></block> dominio.  Para obtener más información, revise la documentación de<block ref="1b2f5cd7e64b458e431e40fa20571324" category="inline-link-macro-rx"></block> .</block>
   <block id="e403ae80ee5407293bf60157033759c8" category="list-text">Introduzca los detalles de la carpeta o del proyecto:</block>
   <block id="70fdeef63f056c10a8cdcc5f3fbc8eb3" category="inline-xref">Aprenda a eliminar recursos</block>
@@ -5935,5 +5928,21 @@
   <block id="d82499f632494fadd7c3cb95a45cdd03" category="cell">Actualiza las reglas de reenvío existentes para la gestión del tráfico.</block>
   <block id="c9d872b23d54864ab58551a55106a3db" category="section-title">09 de febrero de 2026</block>
   <block id="86adfecaaa4dc7c9c4b8f67dcfd84a27" category="paragraph">El permiso<block ref="b18fad63d8ccb120bf7c88b5cde19431" prefix=" " category="inline-code"></block> se añade para dar soporte a Infrastructure Manager en implementaciones de Cloud Volumes ONTAP en Google Cloud.</block>
-  <block id="dea86e9f14e9d4847c31a2b6d002bdbc" category="paragraph">includes::_whatsnew/2026-02-09.adoc[]</block>
+  <block id="aca93a34ac0830ae93442a45a45230ca" category="summary">Puedes gestionar las credenciales de Google Cloud que están asociadas con la instancia de VM del agente de la Consola asociando una suscripción de marketplace y solucionando problemas en el proceso de suscripción. Ambas tareas aseguran que puedas usar tu suscripción de marketplace para pagar los servicios de datos.</block>
+  <block id="a5902f6d28779078fd2033b21af7a5fe" category="doc">Administra las credenciales y suscripciones de Google Cloud para NetApp Console</block>
+  <block id="7fb6ce6ba61ee2f889266f6591c8bf62" category="paragraph">Puedes gestionar las credenciales de Google Cloud que están asociadas con una instancia de VM del agente de Console al asociar una suscripción de marketplace y al solucionar problemas del proceso de suscripción. Ambas tareas aseguran que puedas usar tu suscripción de marketplace para pagar servicios de datos.</block>
+  <block id="209e33f8aa50ade8c82e5bc82a8c023d" category="section-title">Asocia una suscripción de Marketplace con las credenciales de Google Cloud</block>
+  <block id="eb7e6d1f8bb6ef3fd9a4c9dde493222f" category="paragraph">Cuando implementas un agente de Console en Google Cloud, Console crea un conjunto predeterminado de credenciales que están asociadas con una instancia de VM del agente de Console. En cualquier momento, puedes cambiar la suscripción de Google Cloud Marketplace que está asociada con estas credenciales. La suscripción te permite crear un sistema Cloud Volumes ONTAP de pago por uso y usar otros servicios de datos.</block>
+  <block id="55c766cf4228626844250621a71175de" category="section-title">Soluciona problemas en el proceso de suscripción de Marketplace</block>
+  <block id="22799693f8d16282f927158e17952aae" category="paragraph">A veces, suscribirse a los servicios de datos de NetApp a través de Google Cloud Marketplace puede volverse fragmentado por permisos incorrectos o por no seguir accidentalmente la redirección a la Consola. Si esto pasa, usa los siguientes pasos para completar el proceso de suscripción.</block>
+  <block id="5e8a9e85694a19d502ffc719ffe16636" category="inline-link">Página de NetApp en Google Cloud Marketplace</block>
+  <block id="d6e50a6d3ec0159b4980423911b0d4c3" category="list-text">Navega hasta<block ref="50dc0afbab90b927abe9802e2e044626" category="inline-link-rx"></block> para comprobar el estado del pedido. Si la página indica *Manage on Provider*, desplázate hacia abajo y selecciona *Manage Orders*.</block>
+  <block id="1602e955f4d68623784fbd9b3e232de3" category="inline-image-macro">Una captura de pantalla de la página del marketplace después de la suscripción.</block>
+  <block id="138509c56fb0084f814c9be7b6c3f21d" category="paragraph"><block ref="138509c56fb0084f814c9be7b6c3f21d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e934500d9ced37392a4bfadda2e26daf" category="list-text">Si el pedido muestra una marca de verificación verde y esto es inesperado, es posible que otra persona de la organización que usa la misma cuenta de facturación ya esté suscrita. Si esto es inesperado o necesitas los detalles de esta suscripción, contacta a tu equipo de ventas de NetApp.</block>
+  <block id="bb7a877315ec49d95bef4521481a238d" category="inline-image-macro">Una captura de pantalla de un derecho aceptado.</block>
+  <block id="57c37d5700a1b0612b4ca2402852172a" category="paragraph"><block ref="57c37d5700a1b0612b4ca2402852172a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="342df35452bbec008148c714d47038f6" category="list-text">Si el pedido muestra un reloj y el estado *Pendiente*, vuelve a la página del marketplace y elige *Manage on Provider* para completar el proceso como se documentó arriba.</block>
+  <block id="9547217bb6aa822040056cba67310321" category="inline-image-macro">Una captura de pantalla de un derecho pendiente del marketplace.</block>
+  <block id="e6ec8d6dff39d45a9056311495699cef" category="paragraph"><block ref="e6ec8d6dff39d45a9056311495699cef" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
