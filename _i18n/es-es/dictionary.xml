@@ -5945,4 +5945,7 @@
   <block id="342df35452bbec008148c714d47038f6" category="list-text">Si el pedido muestra un reloj y el estado *Pendiente*, vuelve a la página del marketplace y elige *Manage on Provider* para completar el proceso como se documentó arriba.</block>
   <block id="9547217bb6aa822040056cba67310321" category="inline-image-macro">Una captura de pantalla de un derecho pendiente del marketplace.</block>
   <block id="e6ec8d6dff39d45a9056311495699cef" category="paragraph"><block ref="e6ec8d6dff39d45a9056311495699cef" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="718285f559bff92f1fc2fb988df3fabe" category="doc">Agente de Console 4.4.1</block>
+  <block id="3ffe5c6490eae7ac4252c8efb9559119" category="paragraph-title">Accede a NetApp Data Infrastructure Insights desde NetApp Console</block>
+  <block id="0597e1be82ceeb01b40b4706c1dc68e1" category="paragraph">Puedes acceder a una prueba gratuita de NetApp Data Infrastructure Insights desde NetApp Console. Ve a *Governance* &gt; *Data Infrastructure Insights* para registrarte y explorar información y análisis sobre tu entorno de datos.</block>
 </blocks>
