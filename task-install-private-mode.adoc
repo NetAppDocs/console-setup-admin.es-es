@@ -1,0 +1,195 @@
+---
+sidebar: sidebar 
+permalink: task-install-private-mode.html 
+keywords: install dark site, deploy dark site, install private mode, deploy private mode, install agent dark site, agent dark site, dark site, private mode, no internet 
+summary: Despliega la NetApp Console en modo privado para que puedas usarla sin conectividad saliente. Para empezar, instala un Console agent, configura la NetApp Console accediendo a la interfaz de usuario que se ejecuta en el Console agent y luego proporciona los permisos de cloud que configuraste previamente. 
+---
+= Implementa el agente de la consola en modo privado
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Despliega la NetApp Console en modo privado para que puedas usarla sin conectividad saliente. Para empezar, instala un Console agent, configura la NetApp Console accediendo a la interfaz de usuario que se ejecuta en el Console agent y luego proporciona los permisos de cloud que configuraste previamente.
+
+
+
+== Paso 1: Instalar el agente de la consola
+
+Descarga el instalador del producto desde el sitio de soporte de NetApp y luego instala manualmente la Console en tu propio host Linux.
+
+Para usar la NetApp Console en el https://aws.amazon.com/federal/secret-cloud/["AWS Secret Cloud"^] o el https://aws.amazon.com/federal/top-secret-cloud/["AWS Top Secret Cloud"^], entonces deberías seguir instrucciones separadas para empezar en esos entornos. https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/task-getting-started-aws-c2s.html["Aprende cómo empezar con Cloud Volumes ONTAP en AWS Secret Cloud o Top Secret Cloud"^]
+
+.Antes de empezar
+* Se necesitan privilegios de root para instalar el agente de la Console.
+* Dependiendo de su sistema operativo, se requiere Podman o Docker Engine antes de instalar el agente de consola.
+
+
+.Pasos
+. Descarga el software del agente de la consola desde https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["Sitio de soporte de NetApp"^]
++
+Asegúrate de descargar el instalador offline para redes privadas sin acceso a internet.
+
+. Copie el instalador al host Linux.
+. Asignar permisos para ejecutar el script.
++
+[source, cli]
+----
+chmod +x /path/NetApp-Console-Private-Mode-<version>
+----
++
+Donde <versión> es la versión del agente de consola que descargó.
+
+. Ejecute el script de instalación:
++
+[source, cli]
+----
+sudo /path/NetApp-Console-Private-Mode-<version>
+----
++
+Donde <versión> es la versión del agente de consola que descargó.
+
+
+
+.Resultado
+El agente de la Consola está instalado. Ahora puedes configurar la NetApp Console.
+
+
+
+== Paso 2: Configurar la NetApp Console
+
+Cuando accedes a la NetApp Console por primera vez, te pedirán que configures la NetApp Console.
+
+.Pasos
+. Abre un navegador web e introduce la dirección IP del host Linux donde instalaste el agente de la Console.
+. Selecciona *Configurar nuevo agente de consola* y sigue las instrucciones para configurar el sistema.
++
+** *Detalles del sistema*: Ingresa un nombre para el agente de la Console y el nombre de tu empresa.
+** *Crear un usuario administrador*: crea el usuario administrador del sistema.
+** *Revisa*: Revisa los detalles, acepta el acuerdo de licencia y luego selecciona *Configurar*.
+
+
+. Inicia sesión en NetApp Console usando el usuario administrador que acabas de crear.
+
+
+.Resultado
+El agente de la Consola ya está instalado. Accede a su dirección IP en un navegador web para acceder a la NetApp Console en modo privado.
+
+Cuando haya nuevas versiones del software de la Console disponibles, se publicarán en el NetApp Support Site. link:task-upgrade-agent.html["Aprende cómo actualizar el agente de la NetApp Console"].
+
+.¿Que sigue?
+Proporciónale al agente de la Consola los permisos del proveedor de cloud que configuraste previamente.
+
+
+
+== Paso 3: proporciona permisos al agente de la consola
+
+Si quieres crear entornos de trabajo Cloud Volumes ONTAP, tendrás que proporcionar al agente de la Console los permisos del proveedor de cloud que configuraste previamente.
+
+link:task-prepare-private-mode.html#step-6-prepare-cloud-permissions["Aprenda a preparar los permisos en la nube"].
+
+[role="tabbed-block"]
+====
+.Rol de AWS IAM
+--
+Adjunta el rol de IAM que creaste anteriormente a la instancia EC2 del agente de la consola.
+
+.Pasos
+. Vaya a la consola de Amazon EC2.
+. Seleccionar *Instancias*.
+. Seleccione la instancia del agente de consola.
+. Seleccione *Acciones > Seguridad > Modificar rol de IAM*.
+. Seleccione el rol de IAM y seleccione *Actualizar rol de IAM*.
+
+
+--
+.Clave de acceso de AWS
+--
+Proporciónale al agente de la consola la clave de acceso de AWS para un usuario de IAM que tenga los permisos necesarios.
+
+.Pasos
+. Seleccione *Administración > Credenciales*.
+. Seleccione *Credenciales de la organización*.
+. Seleccione *Agregar credenciales* y siga los pasos del asistente.
++
+.. *Ubicación de credenciales*: seleccione *Amazon Web Services > Agente.
+.. *Definir credenciales*: ingrese una clave de acceso de AWS y una clave secreta.
+.. *Suscripción al Marketplace*: asocie una suscripción al Marketplace con estas credenciales suscribiéndose ahora o seleccionando una suscripción existente.
+.. *Revisar*: Confirme los detalles sobre las nuevas credenciales y seleccione *Agregar*.
+
+
+
+
+--
+.Rol de Azure
+--
+Vaya al portal de Azure y asigne el rol personalizado de Azure a la máquina virtual del agente de consola para una o más suscripciones.
+
+.Pasos
+. Desde el Portal de Azure, abra el servicio *Suscripciones* y seleccione su suscripción.
++
+Es importante asignar el rol desde el servicio *Suscripciones* porque esto especifica el alcance de la asignación del rol a nivel de suscripción.  El _scope_ define el conjunto de recursos al que se aplica el acceso.  Si especifica un alcance en un nivel diferente (por ejemplo, en el nivel de máquina virtual), su capacidad para completar acciones desde la NetApp Console se verá afectada.
+
++
+https://learn.microsoft.com/en-us/azure/role-based-access-control/scope-overview["Documentación de Microsoft Azure: Comprender el alcance de Azure RBAC"^]
+
+. Seleccione *Control de acceso (IAM)* > *Agregar* > *Agregar asignación de rol*.
+. En la pestaña *Rol*, seleccione el rol *Operador de consola* y seleccione *Siguiente*.
++
+
+NOTE: Operador de consola es el nombre predeterminado proporcionado en la política.  Si eligió un nombre diferente para el rol, seleccione ese nombre en su lugar.
+
+. En la pestaña *Miembros*, complete los siguientes pasos:
++
+.. Asignar acceso a una *Identidad administrada*.
+.. Seleccione *Seleccionar miembros*, seleccione la suscripción en la que se creó la máquina virtual del agente de consola, en *Identidad administrada*, elija *Máquina virtual* y, luego, seleccione la máquina virtual del agente de consola.
+.. Seleccionar *Seleccionar*.
+.. Seleccione *Siguiente*.
+.. Seleccione *Revisar + asignar*.
+.. Si desea administrar recursos en suscripciones de Azure adicionales, cambie a esa suscripción y repita estos pasos.
+
+
+
+
+--
+.entidad de servicio de Azure
+--
+Proporciónale al agente de la Consola las credenciales de la entidad de seguridad del servicio Azure que configuraste anteriormente.
+
+.Pasos
+. Seleccione *Administración > Credenciales*.
+. Seleccione *Agregar credenciales* y siga los pasos del asistente.
++
+.. *Ubicación de credenciales*: seleccione *Microsoft Azure > Agente*.
+.. *Definir credenciales*: ingrese información sobre la entidad de servicio de Microsoft Entra que otorga los permisos necesarios:
++
+*** ID de la aplicación (cliente)
+*** ID de directorio (inquilino)
+*** Secreto del cliente
+
+
+.. *Suscripción al Marketplace*: asocie una suscripción al Marketplace con estas credenciales suscribiéndose ahora o seleccionando una suscripción existente.
+.. *Revisar*: Confirme los detalles sobre las nuevas credenciales y seleccione *Agregar*.
+
+
+
+
+--
+.Cuenta de servicio de Google Cloud
+--
+Asocie la cuenta de servicio con la máquina virtual del agente de consola.
+
+.Pasos
+. Vaya al portal de Google Cloud y asigne la cuenta de servicio a la instancia de VM del agente de consola.
++
+https://cloud.google.com/compute/docs/access/create-enable-service-accounts-for-instances#changeserviceaccountandscopes["Documentación de Google Cloud: Cómo cambiar la cuenta de servicio y los ámbitos de acceso de una instancia"^]
+
+. Si desea administrar recursos en otros proyectos, otorgue acceso agregando la cuenta de servicio con el rol de agente de consola a ese proyecto.  Necesitarás repetir este paso para cada proyecto.
+
+
+--
+====

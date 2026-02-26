@@ -2,7 +2,7 @@
 :allow-uri-read: 
 
 
-. Copiar el contenido dellink:reference-permissions-azure.html["Permisos de roles personalizados para el Conector"] y guardarlos en un archivo JSON.
+. Copiar el contenido dellink:reference-permissions-azure.html["Permisos de roles personalizados para el agente de la consola"] y guardarlos en un archivo JSON.
 . Modifique el archivo JSON agregando identificadores de suscripción de Azure al ámbito asignable.
 +
 Debe agregar el ID de cada suscripción de Azure que desee utilizar con la NetApp Console.

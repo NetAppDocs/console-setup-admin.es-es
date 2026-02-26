@@ -75,7 +75,7 @@ Para obtener información de licencias y enviar mensajes de AutoSupport al sopor
 
 
  a| 
-\ https://api.bluexp.netapp.com \ https://netapp-cloud-account.auth0.com \ https://netapp-cloud-account.us.auth0.com \ https://console.netapp.com \ https://components.console.bluexp.netapp.com \ https://cdn.auth0.com
+\https://api.bluexp.netapp.com \https://netapp-cloud-account.auth0.com \https://netapp-cloud-account.us.auth0.com \https://console.netapp.com \https://components.console.netapp.com \https://cdn.auth0.com
  a| 
 Proporcionar funciones y servicios dentro de la NetApp Console.
 
@@ -97,7 +97,7 @@ Aunque los puntos finales anteriores aún son compatibles, NetApp recomienda act
 --
 
 
-Puntos finales contactados desde la consola de NetApp:: A medida que utiliza la NetApp Console basada en web que se proporciona a través de la capa SaaS, esta se comunica con varios puntos finales para completar tareas de administración de datos.  Esto incluye los puntos finales que se contactan para implementar el agente de la consola desde la consola.
+Puntos finales contactados desde la consola de NetApp:: A medida que usas la aplicación basada en web NetApp Console SaaS, esta contacta varios endpoints para completar tareas de gestión de datos. Esto incluye endpoints a los que se conecta para desplegar el agente de la Console desde la Console.
 +
 --
 link:reference-networking-saas-console.html["Ver la lista de puntos finales contactados desde la consola de NetApp"] .
@@ -374,6 +374,7 @@ Debe habilitar varias API de Google Cloud antes de implementar el agente de cons
 .Paso
 . Habilite las siguientes API de Google Cloud en su proyecto:
 +
+** Cloud Build API (necesaria para implementaciones de Cloud Volumes ONTAP en modo privado usando Infrastructure Manager)
 ** API de Cloud Deployment Manager V2
 ** API de Cloud Infrastructure Manager
 ** API de registro en la nube

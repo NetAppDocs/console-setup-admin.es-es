@@ -6,7 +6,7 @@
 
 === Agente de Console 4.4.1
 
-La versión 4.4.0 es compatible tanto con el modo estándar como con el modo restringido.
+La versión 4.4.1 es compatible tanto con el modo estándar como con el modo restringido.
 
 Esta versión del agente de la Console incluye mejoras de seguridad y correcciones de errores.
 

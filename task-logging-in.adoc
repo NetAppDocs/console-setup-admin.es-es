@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-logging-in.html 
 keywords: logging in, log in, sign in, signing in, cloud central, netapp cloud central, user account, federated, federation, federated login, federation login, login with netapp, log in with netapp, sign up, create account 
-summary: La forma de iniciar sesión en la NetApp Console depende del modo de implementación que esté utilizando. 
+summary: Después de registrarse en la NetApp Console, puede iniciar sesión desde la consola basada en web para comenzar a administrar sus datos y su infraestructura de almacenamiento. 
 ---
-= Inicie sesión en la NetApp Console
+= Iniciar sesión en la NetApp Console
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,63 +14,23 @@ summary: La forma de iniciar sesión en la NetApp Console depende del modo de im
 
 
 [role="lead"]
-La forma de iniciar sesión en la NetApp Console depende del modo de implementación que esté utilizando.
-
-Su sesión se cerrará automáticamente después de 24 horas o si cierra su navegador.
-
-link:concept-modes.html["Obtenga más información sobre los modos de implementación de la consola"] .
-
-[role="tabbed-block"]
-====
-.Modo estándar
---
 Después de registrarse en la NetApp Console, puede iniciar sesión desde la consola basada en web para comenzar a administrar sus datos y su infraestructura de almacenamiento.
 
-.Acerca de esta tarea
-Puede iniciar sesión en la NetApp Console mediante una de las siguientes opciones:
-
-* Sus credenciales existentes del sitio de soporte de NetApp (NSS)
-* Una cuenta de NetApp Console que utiliza su dirección de correo electrónico y una contraseña
-* Una conexión federada
-+
-Puede utilizar el inicio de sesión único para iniciar sesión con las credenciales de su directorio corporativo (identidad federada). link:concept-federation.html["Aprenda a configurar la federación de identidades"] .
-
-
+Después de que te registres, el administrador de la organización de Console debe agregar tu cuenta de usuario a una organización antes de que puedas acceder a cualquier recurso. Si inicias sesión pero no ves ningún recurso, contacta al administrador de tu organización. link:task-user-settings.html#contact-admin["Contacta al administrador de tu organización"].
 
 .Pasos
-. Abra un navegador web y vaya a https://console.netapp.com["NetApp Console"]
+. Ve a la URL de la consola NetApp. La URL depende de qué modo de la consola esté usando tu organización:
++
+** **Modo estándar*: Abre un navegador web y ve a la https://console.netapp.com["NetApp Console"]
+** **Modo restringido o modo privado**: abre un navegador web y ve a la dirección IP donde está instalado el agente de la NetApp Console.
+
+
 . En la página *Iniciar sesión*, ingrese la dirección de correo electrónico asociada con su inicio de sesión.
-. Dependiendo del método de autenticación asociado con su inicio de sesión, se le solicitará que ingrese sus credenciales:
+. Dependiendo del método de autenticación asociado a tu inicio de sesión, se te pedirá que introduzcas tus credenciales.
 +
-** Credenciales de la nube de NetApp : Ingrese su contraseña
-** Usuario federado: Ingrese sus credenciales de identidad federada
-** Cuenta del sitio de soporte de NetApp : Ingrese sus credenciales del sitio de soporte de NetApp
+** Sus credenciales existentes del sitio de soporte de NetApp (NSS)
+** Una cuenta de NetApp Console que utiliza su dirección de correo electrónico y una contraseña
+** Una conexión federada si tu administrador ha configurado la federación de identidades para tu organización
 
 
 
-
-.Resultado
-Ya ha iniciado sesión y puede comenzar a usar para administrar su infraestructura híbrida de múltiples nubes.
-
---
-.Modo restringido
---
-Cuando utiliza la consola en modo restringido, debe iniciar sesión en la consola desde la interfaz de usuario que se ejecuta localmente en el agente.
-
-.Acerca de esta tarea
-La consola admite el inicio de sesión con una de las siguientes opciones cuando está en modo restringido:
-
-* Un inicio de sesión en la NetApp Console usando su dirección de correo electrónico y una contraseña
-* Una conexión federada
-+
-Puede utilizar el inicio de sesión único para iniciar sesión con las credenciales de su directorio corporativo (identidad federada). link:concept-federation.html["Aprenda a utilizar la federación de identidades"] .
-
-
-
-.Pasos
-. Abra un navegador web e ingrese la dirección IP donde está instalado el agente.
-. Introduzca su nombre de usuario y contraseña para iniciar sesión.
-
-
---
-====

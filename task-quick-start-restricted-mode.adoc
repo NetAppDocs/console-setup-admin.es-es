@@ -4,7 +4,7 @@ permalink: task-quick-start-restricted-mode.html
 keywords: quick start, restricted mode quick start, govcloud, government, aws gov, azure gov 
 summary: Comience a utilizar la NetApp Console en modo restringido preparando su entorno e implementando el agente de la consola. 
 ---
-= Flujo de trabajo de introducción (modo restringido)
+= Flujo de trabajo para empezar con NetApp Console en modo restringido
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -35,3 +35,103 @@ El modo restringido generalmente lo utilizan los gobiernos estatales y locales y
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Tres"] link:task-subscribe-restricted-mode.html["Suscríbete a los NetApp Intelligent Services (opcional)"]
 [role="quick-margin-para"]
 Opcional: Suscríbase a NetApp Intelligent Services desde el mercado de su proveedor de nube para pagar los servicios de datos a una tarifa por hora (PAYGO) o mediante un contrato anual.  Los NetApp Intelligent Services incluyen NetApp Backup and Recovery, Cloud Volumes ONTAP, NetApp Cloud Tiering, NetApp Ransomware Resilience y NetApp Disaster Recovery.  La NetApp Data Classification está incluida en su suscripción sin costo adicional.
+
+
+
+== Funciones y servicios compatibles para NetApp Console en modo restringido
+
+La siguiente tabla muestra las funciones de gestión del almacenamiento, los servicios de datos y las funciones administrativas disponibles en NetApp Console cuando lo instalas en modo restringido.
+
+[cols="3*"]
+|===
+| Área de productos | NetApp servicio o función | Agente de consola requerido 
+
+
+.3+| *Gestión de sistemas de almacenamiento* Esta tabla muestra qué sistemas de almacenamiento puedes gestionar desde la NetApp Console. No se enumeran los destinos de backup para NetApp Backup and Recovery. | Azure NetApp Files | No 
+
+
+| Cloud Volumes ONTAP | Sí 
+
+
+| Clústeres ONTAP locales | Necesario para la detección y la gestión. Puedes usar la detección directa sin un agente de Console, pero necesitas un agente para usar las funciones de gestión. 
+
+
+.3+| *Servicios de datos* (el modo restringido admite menos servicios de datos que el modo estándar)  a| 
+Backup and Recovery
+
+* Compatible en regiones gubernamentales y regiones comerciales con modo restringido. No es compatible en regiones soberanas con modo restringido.
+* En modo restringido, NetApp Backup and Recovery admite solo la copia de seguridad y restauración de datos de volúmenes ONTAP. https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["Ver la lista de destinos de respaldo admitidos para datos de ONTAP"^]
+
+| Se admite en regiones gubernamentales y regiones comerciales con modo restringido. No se admite en regiones soberanas con modo restringido. En modo restringido, NetApp Backup and Recovery admite solo la copia de seguridad y restauración de datos de volumen ONTAP. https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["Ver la lista de destinos de respaldo admitidos para datos de ONTAP"^] 
+
+
+ a| 
+NetApp Data Classification
+
+* Compatible con regiones gubernamentales con modo restringido.  No compatible con regiones comerciales ni con regiones soberanas con modo restringido.
+
+| Sí 
+
+
+ a| 
+NetApp Replication
+
+* Compatible con regiones gubernamentales con modo restringido.  No compatible con regiones comerciales ni con regiones soberanas con modo restringido.
+
+| Sí*, (no es necesario si se replica de ONTAP on-premises a ONTAP on-premises) 
+
+
+| *Características del contrato de soporte de NetApp* | Ninguno | N/A 
+
+
+.12+| *Funciones administrativas* | Auditoría | No 
+
+
+| Centro de automatización | No 
+
+
+| Federación | No 
+
+
+| Gestión de identidad y acceso | No 
+
+
+ a| 
+Gestión de Licenses and subscriptions
+
+Tenga en cuenta lo siguiente:
+
+* Suscripciones al Marketplace (contratos por hora y anuales)
++
+** Para Cloud Volumes ONTAP, solo se admiten licencias basadas en capacidad.
+** En Azure, no se admiten contratos anuales con regiones gubernamentales.
+
+
+* Trae tu propia bebida
++
+Para Cloud Volumes ONTAP, BYOL admite tanto las licencias basadas en capacidad como las licencias basadas en nodos.
+
+
+| No 
+
+
+| Administrar las credenciales del proveedor de la nube | No 
+
+
+| Autenticación multifactor (usuarios locales) | No 
+
+
+| Notificaciones | No 
+
+
+| Cuentas NSS | No 
+
+
+| Asociaciones de la organización | No 
+
+
+| Modo de solo lectura | No 
+
+
+| Notificaciones | No 
+|===

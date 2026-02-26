@@ -27,15 +27,10 @@ indexpage:
     links:
     - title: Introducción a NetApp Console (SaaS)
       url: task-quick-start-standard-mode.html
-    - title: Preparar el acceso a la red para la NetApp Console
-      url: reference-networking-saas-console.html
-    - title: Regístrese en la NetApp Console
-      url: task-sign-up-saas.html
-    - title: Utilice el asistente de NetApp Console (SaaS)
-      url: task-console-assistant.html
-    - title: Implementar la NetApp Console en modo restringido (implementaciones de
-        nube soberana)
+    - title: Implementar la NetApp Console en modo restringido
       url: "/task-quick-start-restricted-mode.html"
+    - title: Implementa NetApp Console en modo privado
+      url: "/task-quick-start-private-mode.html"
   - title: Implementar la gestión de identidad y acceso (IAM)
     links:
     - title: Planifique su estrategia de IAM

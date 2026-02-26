@@ -248,7 +248,7 @@ Para obtener información de licencias y enviar mensajes de AutoSupport al sopor
 
 
  a| 
-\ https://api.bluexp.netapp.com \ https://netapp-cloud-account.auth0.com \ https://netapp-cloud-account.us.auth0.com \ https://console.netapp.com \ https://components.console.bluexp.netapp.com \ https://cdn.auth0.com
+\https://api.bluexp.netapp.com \https://netapp-cloud-account.auth0.com \https://netapp-cloud-account.us.auth0.com \https://console.netapp.com \https://components.console.netapp.com \https://cdn.auth0.com
  a| 
 Proporcionar funciones y servicios dentro de la NetApp Console.
 
@@ -316,7 +316,7 @@ Para obtener información de licencias y enviar mensajes de AutoSupport al sopor
 
 
  a| 
-\ https://api.bluexp.netapp.com \ https://netapp-cloud-account.auth0.com \ https://netapp-cloud-account.us.auth0.com \ https://console.netapp.com \ https://components.console.bluexp.netapp.com \ https://cdn.auth0.com
+\https://api.bluexp.netapp.com \https://netapp-cloud-account.auth0.com \https://netapp-cloud-account.us.auth0.com \https://console.netapp.com \https://components.console.netapp.com \https://cdn.auth0.com
  a| 
 Proporcionar funciones y servicios dentro de la NetApp Console.
 
@@ -788,6 +788,13 @@ Si no elimina estas variables del sistema, la instalación fallará.
 +
 Elija descargar los archivos de instalación del agente o una URL a los archivos.
 
+
+
++
+
+NOTE: Descarga el instalador del agente "online" que está pensado para usar en tu red o en la cloud. Hay un instalador "offline" independiente para el agente de la Console, pero solo es compatible con implementaciones en modo privado.
+
++
 ** Sitio de soporte de NetApp (necesario si aún no tiene acceso a la consola) https://mysupport.netapp.com/site/products/all/details/netapp-console/downloads-tab["Sitio de soporte de NetApp"^] ,
 
 
@@ -872,7 +879,7 @@ Necesitará registrar el agente de consola dentro de la NetApp Console.
 
 == Registrar el agente de consola con NetApp Console
 
-Inicie sesión en la consola y asocie el agente de la consola con su organización.  La forma de iniciar sesión depende del modo en que esté utilizando la Consola.  Si está utilizando la consola en modo estándar, inicie sesión a través del sitio web de SaaS.  Si está utilizando la consola en modo restringido, inicie sesión localmente desde el host del agente de la consola.
+Inicia sesión en la Console y asocia el Console agent con tu organización. Cómo inicies sesión depende del modo en el que estés usando Console. Si estás usando Console en modo estándar, inicias sesión a través del sitio web SaaS. Si estás usando Console en modo restringido o privado, inicias sesión localmente desde el host del Console agent.
 
 .Pasos
 . Abra un navegador web e ingrese la URL del host del agente de la consola:

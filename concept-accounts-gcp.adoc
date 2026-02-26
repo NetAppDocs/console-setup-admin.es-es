@@ -36,6 +36,7 @@ Para saber cómo configurar permisos, consulte las siguientes páginas:
 
 * link:task-install-agent-google-console-gcloud.html#agent-permissions-google["Configurar los permisos de Google Cloud para el modo estándar"]
 * link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Configurar permisos para el modo restringido"]
+* link:task-prepare-private-mode.html#step-6-prepare-cloud-permissions["Configura permisos para el modo privado"]
 
 
 

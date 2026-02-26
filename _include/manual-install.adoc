@@ -36,6 +36,13 @@ Si no elimina estas variables del sistema, la instalación fallará.
 +
 Elija descargar los archivos de instalación del agente o una URL a los archivos.
 
+
+
++
+
+NOTE: Descarga el instalador del agente "online" que está pensado para usar en tu red o en la cloud. Hay un instalador "offline" independiente para el agente de la Console, pero solo es compatible con implementaciones en modo privado.
+
++
 ** Sitio de soporte de NetApp (necesario si aún no tiene acceso a la consola) https://mysupport.netapp.com/site/products/all/details/netapp-console/downloads-tab["Sitio de soporte de NetApp"^] ,
 
 

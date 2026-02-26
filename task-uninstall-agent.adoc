@@ -16,11 +16,9 @@ summary: Desinstale un agente de consola para solucionar problemas o eliminarlo 
 [role="lead"]
 Desinstale un agente de consola para solucionar problemas o eliminarlo permanentemente del host.  Los pasos que debes seguir dependen del modo de implementación que estés utilizando.  Una vez que haya eliminado un agente de consola de su entorno, puede eliminarlo de la consola.
 
-link:concept-modes.html["Obtenga más información sobre los modos de implementación de la NetApp Console"] .
 
 
-
-== Desinstalar el agente cuando se utiliza el modo estándar o restringido
+== Desinstala el agente cuando tiene conectividad de salida
 
 Si está utilizando el modo estándar o el modo restringido (en otras palabras, el host del agente tiene conectividad saliente), debe seguir los pasos a continuación para desinstalar el agente.
 
@@ -33,6 +31,42 @@ Si está utilizando el modo estándar o el modo restringido (en otras palabras, 
 +
 _silent_ ejecuta el script sin solicitar confirmación.
 
+
+
+
+
+== Desinstala el agente cuando no tiene conectividad de salida
+
+Si tu agente no tiene conectividad de salida (por ejemplo, en modo privado), debes eliminar manualmente el software del agente del host.
+
+.Paso
+. Conéctese a la máquina virtual Linux para el agente de consola.
+. Desde el host Linux, ejecuta los siguientes comandos:
++
+[source, cli]
+----
+/opt/application/netapp/ds/cleanup.sh
+rm -rf /opt/application/netapp/
+----
+. Desde el host Linux, elimina los archivos de imagen de contenedor antiguos y no utilizados para liberar espacio libre en el directorio /var para la reinstalación.
++
+[role="tabbed-block"]
+====
+.Podman
+--
+[source, cli]
+----
+podman system prune --all
+----
+--
+.Docker
+--
+[source, cli]
+----
+docker system prune -a
+----
+--
+====
 
 
 

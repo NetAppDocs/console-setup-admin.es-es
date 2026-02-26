@@ -17,7 +17,7 @@ Conexiones a redes de destino:: El agente de consola requiere una conexión de r
 Acceso a Internet de salida:: La ubicación de red donde implementa el agente de consola debe tener una conexión a Internet saliente para comunicarse con puntos finales específicos.
 
 
-Puntos finales contactados desde la consola de NetApp:: A medida que utiliza la NetApp Console basada en web que se proporciona a través de la capa SaaS, esta se comunica con varios puntos finales para completar tareas de administración de datos.  Esto incluye los puntos finales que se contactan para implementar el agente de la consola desde la consola.
+Puntos finales contactados desde la consola de NetApp:: A medida que usas la aplicación basada en web NetApp Console SaaS, esta contacta varios endpoints para completar tareas de gestión de datos. Esto incluye endpoints a los que se conecta para desplegar el agente de la Console desde la Console.
 +
 --
 link:reference-networking-saas-console.html["Ver la lista de puntos finales contactados desde la consola de NetApp"] .

@@ -1,0 +1,24 @@
+---
+sidebar: sidebar 
+permalink: reference-whats-next-private-mode.html 
+keywords: private mode, supported features for private mode 
+summary: Después de que empieces a usar NetApp Console en modo privado, puedes comenzar a usar los servicios que son compatibles con el modo privado. 
+---
+= Qué puedes hacer a continuación (modo privado)
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Después de que empieces a usar NetApp Console en modo privado, puedes comenzar a usar los servicios que son compatibles con el modo privado.
+
+Para obtener ayuda, consulta la siguiente documentación:
+
+* https://docs.netapp.com/us-en/storage-management-ontap-onprem/index.html["Descubra los clústeres ONTAP locales"^]
+* https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-compliance-dark-site.html["Analiza los datos de volúmenes ONTAP locales usando NetApp Classification"^]
+* https://docs.netapp.com/us-en/console-licenses-subscriptions/task-manage-on-prem-clusters.html["Supervisa el uso de licencias"^]
+
