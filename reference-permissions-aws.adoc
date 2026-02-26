@@ -906,6 +906,7 @@ El agente realiza las siguientes solicitudes de API para implementar NetApp Data
 * formación de nubes:Eliminar pila
 * formación de nubes: DescribeStacks
 * formación de nubes: DescribeStackEvents
+* cloudformation:ListStacks
 * iam:AñadirRolAlPerfilDeInstancia
 * ec2:AsociarPerfilDeInstanciaSoy
 * ec2:DescribeIamInstanceProfileAssociations
@@ -1195,6 +1196,14 @@ El agente realiza las siguientes solicitudes de API para implementar y administr
 == Registro de cambios
 
 A medida que se agreguen y eliminen permisos, los indicaremos en las secciones siguientes.
+
+
+
+=== 24 febrero 2026
+
+Ahora se requiere el siguiente permiso para Data Classification:
+
+cloudformation:ListStacks
 
 
 
