@@ -67,7 +67,7 @@ Tenga en cuenta que algunos servicios podrían ser compatibles con limitaciones.
 | Copia de seguridad y recuperación | Síhttps://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-no-internet-connectivity["Ver la lista de destinos de respaldo admitidos para los datos de volumen de ONTAP"^] 
 
 
-| Clasificación | Sí 
+| Clasificación de datos | Sí 
 
 
 | Copiar y sincronizar | No 
