@@ -108,6 +108,7 @@ Para las regiones estándar, los permisos se distribuyen en dos políticas.  Se 
         "cloudformation:CreateStack",
         "cloudformation:DescribeStacks",
         "cloudformation:DescribeStackEvents",
+        "cloudformation:ListStacks",
         "cloudformation:ValidateTemplate",
         "cloudformation:DeleteStack",
         "iam:PassRole",
@@ -405,6 +406,7 @@ Para las regiones estándar, los permisos se distribuyen en dos políticas.  Se 
         "cloudformation:DeleteStack",
         "cloudformation:DescribeStacks",
         "cloudformation:DescribeStackEvents",
+        "cloudformation:ListStacks",
         "cloudformation:ValidateTemplate",
         "s3:GetObject",
         "s3:ListBucket",
@@ -549,6 +551,7 @@ Para las regiones estándar, los permisos se distribuyen en dos políticas.  Se 
         "cloudformation:DeleteStack",
         "cloudformation:DescribeStacks",
         "cloudformation:DescribeStackEvents",
+        "cloudformation:ListStacks",
         "cloudformation:ValidateTemplate",
         "iam:PassRole",
         "iam:CreateRole",
@@ -668,6 +671,7 @@ Para las regiones estándar, los permisos se distribuyen en dos políticas.  Se 
         "cloudformation:DeleteStack",
         "cloudformation:DescribeStacks",
         "cloudformation:DescribeStackEvents",
+        "cloudformation:ListStacks",
         "cloudformation:ValidateTemplate",
         "iam:PassRole",
         "iam:CreateRole",
@@ -882,7 +886,7 @@ Solo necesitas los siguientes permisos si habilitaste las funciones de indexaci�
 
 
 
-=== Clasificación de datos
+=== NetApp Data Classification
 
 El agente realiza las siguientes solicitudes de API para implementar NetApp Data Classification:
 
