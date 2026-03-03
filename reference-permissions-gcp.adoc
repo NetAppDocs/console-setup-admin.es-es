@@ -328,7 +328,7 @@ El agente de la consola usa los permisos en la función personalizada para admin
 | config.deployments.deleteState | No | No | Sí 
 
 
-| config.deployments.get | No | Sí | No 
+| config.deployments.get | No | Sí | Sí 
 
 
 | config.deployments.getLock | No | Sí | No 
