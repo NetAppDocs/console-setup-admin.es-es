@@ -43,6 +43,8 @@ Puede asignar los siguientes roles a los usuarios socios:
 * link:reference-iam-disaster-rec-roles.html["Visor de recuperación ante desastres"]
 * link:reference-iam-storage-roles.html["Analista de soporte de operaciones"]
 * link:reference-iam-predefined-roles.html["Visor de clasificación"]
+* link:reference-iam-keystone-roles.html["Administrador de Keystone"]
+* link:reference-iam-keystone-roles.html["Visor de Keystone"]
 
 
 link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles predefinidos"]
