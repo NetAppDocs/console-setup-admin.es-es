@@ -347,7 +347,7 @@ Para Cloud Volumes ONTAP, BYOL admite tanto las licencias basadas en capacidad c
 | Asociaciones de la organización | No 
 
 
-| Modo de solo lectura | No 
+| Modo de solo lectura | Sí 
 
 
 | Notificaciones | No 
@@ -579,7 +579,7 @@ Ten en cuenta que algunos servicios pueden ser compatibles con limitaciones. Par
 | Área de productos | NetApp servicio o función | Modo restringido | Modo privado 
 
 
-.10+| *Gestión de sistemas de almacenamiento* Esta tabla muestra qué sistemas de almacenamiento puedes gestionar desde la NetApp Console. No se enumeran los destinos de backup para NetApp Backup and Recovery. | Alertas | No | No 
+.12+| *Gestión de sistemas de almacenamiento* Esta tabla muestra qué sistemas de almacenamiento puedes gestionar desde la NetApp Console. No se enumeran los destinos de backup para NetApp Backup and Recovery. | Alertas | No | No 
 
 
 | Amazon FSx para ONTAP | No | No 
@@ -609,74 +609,74 @@ Ten en cuenta que algunos servicios pueden ser compatibles con limitaciones. Par
 | Serie E | No | No 
 
 
-| StorageGRID | No | No | Fábrica de carga de trabajo 
+| StorageGRID | No | No 
 
 
-| No | No .8+| *Servicios de datos* | Backup and Recovery 
+| Fábrica de carga de trabajo | No | No 
 
 
-| Síhttps://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["Ver la lista de destinos de respaldo admitidos para los datos de volumen de ONTAP"^] | Síhttps://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-no-internet-connectivity["Ver la lista de destinos de respaldo admitidos para los datos de volumen de ONTAP"^] | Clasificación de NetApp 
+.8+| *Servicios de datos* | Backup and Recovery | Síhttps://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["Ver la lista de destinos de respaldo admitidos para los datos de volumen de ONTAP"^] | Síhttps://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-no-internet-connectivity["Ver la lista de destinos de respaldo admitidos para los datos de volumen de ONTAP"^] 
 
 
-| Sí | Sí | Copiar y sincronizar 
+| Clasificación de NetApp | Sí | Sí 
 
 
-| No | No | NetApp Disaster Recovery 
+| Copiar y sincronizar | No | No 
 
 
-| No | No | Protección contra ransomware de NetApp 
+| NetApp Disaster Recovery | No | No 
 
 
-| No | No | NetApp Replication 
+| Protección contra ransomware de NetApp | No | No 
 
 
-| Sí | Sí | NetApp Cloud Tiering 
+| NetApp Replication | Sí | Sí 
 
 
-| No | No | NetApp Volume Caching 
+| NetApp Cloud Tiering | No | No 
 
 
-| No | No .4+| *Características del contrato de soporte de NetApp* | Asesor digital 
+| NetApp Volume Caching | No | No 
 
 
-| No | No | Planificación del ciclo de vida 
+.4+| *Características del contrato de soporte de NetApp* | Asesor digital | No | No 
 
 
-| No | No | Actualizaciones de software 
+| Planificación del ciclo de vida | No | No 
 
 
-| No | No | Sostenibilidad 
+| Actualizaciones de software | No | No 
 
 
-| No | No .9+| *Funciones administrativas* | Métricas del panel para servicios de almacenamiento y datos 
+| Sostenibilidad | No | No 
 
 
-| No | No | Gestión de identidad y acceso 
+.9+| *Funciones administrativas* | Métricas del panel para servicios de almacenamiento y datos | No | No 
 
 
-| Sí | Sí | Administrar las credenciales del proveedor de la nube 
+| Gestión de identidad y acceso | Sí | Sí 
 
 
-| Sí | Sí | Federación 
+| Administrar las credenciales del proveedor de la nube | Sí | Sí 
 
 
-| Sí | No | Licenses and subscriptions 
+| Federación | Sí | No 
 
 
-| Sí | Sí | Autenticación multifactor 
+| Licenses and subscriptions | Sí | Sí 
 
 
-| Sí | No | Cuentas NSS 
+| Autenticación multifactor | Sí | No 
 
 
-| Sí | No | Asociaciones de la organización 
+| Cuentas NSS | Sí | No 
 
 
-| Sí | No | Modo de solo lectura 
+| Asociaciones de la organización | Sí | No 
 
 
-| No | No | Notificaciones | Sí 
+| Modo de solo lectura | Sí | No 
 
 
-| No | Auditoría | Sí | Sí 
+| Notificaciones | Sí | No | Auditoría 
 |===
