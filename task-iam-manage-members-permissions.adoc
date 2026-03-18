@@ -27,7 +27,7 @@ La NetApp Console utiliza el control de acceso basado en roles (RBAC) para admin
 
 Tenga en cuenta lo siguiente sobre cómo conceder acceso en la NetApp Console:
 
-* Todos los usuarios deben registrarse primero en la NetApp Console antes de poder obtener acceso a los recursos.
+* Todos los usuarios deben registrarse primero en la NetApp Console antes de que se les pueda conceder acceso a los recursos, incluso si forman parte de un grupo federado.
 * Debe asignar explícitamente un rol a cada usuario en la Consola antes de que puedan acceder a los recursos, incluso si son miembros de un grupo federado al que se le ha asignado un rol.
 * Puede agregar cuentas de servicio directamente desde la consola y asignarles roles.
 
