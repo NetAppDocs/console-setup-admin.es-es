@@ -55,13 +55,14 @@ NOTE: Si anteriormente configuró la federación usando NetApp Cloud Central (un
 NetApp admite los siguientes protocolos y proveedores de identidad para la federación:
 
 .Protocolos
-* Proveedores de identidad de lenguaje de marcado de aserción de seguridad (SAML)
-* Servicios de federación de Active Directory (AD FS)
+* link:task-federation-adfs.html["Servicios de federación de Active Directory (AD FS)"]
+* link:task-federation-entra-id.html["Identificador de Microsoft Entra"]
+* link:link:task-federation-saml.html["Proveedores de identidad de lenguaje de marcado de aserción de seguridad (SAML)"]
 
 
 .Proveedores de identidad
-* Identificador de Microsoft Entra
-* Federación de ping
+* link:task-federation-entra-id.html["Identificador de Microsoft Entra"]
+* link:task-federation-ping.html["Federación de ping"]
 
 
 
@@ -91,11 +92,3 @@ Pruebe su conexión federada antes de habilitarla. Utilice la opción de prueba 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["Tres"]Habilite su conexión en la Consola
 [role="quick-margin-para"]
 Después de habilitar la conexión, los usuarios pueden iniciar sesión en la consola utilizando sus credenciales corporativas.
-
-Revise el tema de su respectivo protocolo o IdP para comenzar:
-
-* link:task-federation-adfs.html["Configurar una conexión federada con AD FS"]
-* link:task-federation-entra-id.html["Configurar una conexión federada con Microsoft Entra ID"]
-* link:task-federation-ping.html["Configurar una conexión federada con PingFederate"]
-* link:task-federation-saml.html["Configurar una conexión federada con un proveedor de identidad SAML"]
-
