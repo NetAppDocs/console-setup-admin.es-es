@@ -26,9 +26,16 @@ Puede ver y administrar recursos desde la página *Recursos* en la Consola.
 
 Puede asociar varios tipos de recursos a proyectos en su organización de NetApp Console :
 
-Recursos de almacenamiento:: Los recursos de almacenamiento son el tipo de recurso más común en su organización y representan sistemas de almacenamiento locales y en la nube. Cuando agrega un sistema de almacenamiento a la Consola, puede agregarlo a una carpeta o proyecto. Hasta entonces, la consola lo marca como no descubierto y no lo muestra en la página *Recursos*.
-Agentes de consola:: Si utilizó un agente de consola para descubrir sistemas de almacenamiento, agregue el agente a la misma carpeta o proyecto. Esto permite a los usuarios realizar funciones habilitadas por el agente, como servicios de datos o administración de almacenamiento nativo de la consola. Puede agregar agentes a carpetas o proyectos desde la página *Agentes* en la Consola. link:task-iam-associate-agents.html["Aprenda a asociar un agente de consola con una carpeta o un proyecto"].
-Suscripciones a Keystone:: Si tiene suscripciones de Keystone en su organización, puede verlas en la página *Recursos*. Puede asociar suscripciones de Keystone con carpetas o proyectos para proporcionar acceso a los miembros que tienen permisos para esas carpetas o proyectos.
+Recursos de almacenamiento:: Los recursos de almacenamiento son el tipo de recurso más común en tu organización y representan tanto sistemas de almacenamiento locales como en la nube. Cuando añades un sistema de almacenamiento a la Console, necesitas añadirlo a un proyecto. Hasta entonces, la Console lo marca como no descubierto y no lo muestra en la página *Resources*.
++
+--
+
+NOTE: Los usuarios con el rol Org admin pueden añadir recursos a la carpeta para delegar la tarea de asociar el recurso con los proyectos a los administradores de carpetas o proyectos de la carpeta respectiva. link:task-iam-manage-folders-projects.html#associate-resource-folder["Obtenga información sobre cómo asociar un recurso con una carpeta"].
+
+--
+Agentes de consola:: Si usaste un agente de la Console para descubrir sistemas de almacenamiento, añade el agente al mismo proyecto que el sistema de almacenamiento. Esto permite a los usuarios realizar funciones habilitadas por agentes, como servicios de datos o gestión de almacenamiento nativa de la Console. Puedes añadir agentes a proyectos desde la página *Agents* en la Console. link:task-iam-associate-agents.html["Aprende cómo asociar un agente de la NetApp Console a un proyecto"].
+Suscripciones a Keystone:: Si tienes suscripciones a Keystone en tu organización, puedes verlas en la página *Recursos*. Puedes asociar suscripciones a Keystone con proyectos para dar acceso a los miembros que tienen permisos para esos proyectos.
+Cargas de trabajo de copia de seguridad y recuperación:: Las cargas de trabajo de copia de seguridad y recuperación también se consideran recursos. Puedes asignar permisos a los usuarios para acceder a las cargas de trabajo de copia de seguridad y recuperación asociando las cargas de trabajo con proyectos. Por ejemplo, asigna a un usuario acceso a una carga de trabajo de copia de seguridad y recuperación asociándola con un proyecto al que el usuario pueda acceder y otorgándole el rol de copia de seguridad y recuperación adecuado.
 
 
 

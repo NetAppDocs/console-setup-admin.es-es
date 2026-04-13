@@ -4,7 +4,7 @@ permalink: reference-permissions-aws.html
 keywords: permissions, actions, aws, aws permissions, top secret, secret, aws top secret, aws secret, aws govcloud, govcloud, govcloud permissions, secret permissions, top secret permissions 
 summary: Cuando la NetApp Console inicia el agente en AWS, adjunta una política al agente que le proporciona permisos para administrar recursos y procesos dentro de esa cuenta de AWS. El agente utiliza los permisos para realizar llamadas API a varios servicios de AWS, incluidos EC2, S3, CloudFormation, IAM, el Servicio de administración de claves y más. 
 ---
-= Permisos de AWS para el agente de consola
+= Permisos de AWS para el agente de la NetApp Console
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

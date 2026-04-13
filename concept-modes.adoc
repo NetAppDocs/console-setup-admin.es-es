@@ -559,9 +559,10 @@ Autenticación:: La autenticación se proporciona a través de la gestión local
 
 El modo privado está disponible descargando el instalador "offline" desde el NetApp Support Site.
 
-+ link:task-quick-start-private-mode.html["Aprende cómo empezar con el modo privado"].
+link:task-quick-start-private-mode.html["Aprende cómo empezar con el modo privado"].
 
-+ NOTA: Si quieres usar NetApp Console en el https://aws.amazon.com/federal/secret-cloud/["AWS Secret Cloud"^] o en el https://aws.amazon.com/federal/top-secret-cloud/["AWS Top Secret Cloud"^], entonces debes seguir instrucciones separadas para comenzar en esos entornos. https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/task-getting-started-aws-c2s.html["Aprende cómo empezar con Cloud Volumes ONTAP en AWS Secret Cloud o Top Secret Cloud"^]
+
+NOTE: Si quieres usar la NetApp Console en el https://aws.amazon.com/federal/secret-cloud/["AWS Secret Cloud"^] o el https://aws.amazon.com/federal/top-secret-cloud/["AWS Top Secret Cloud"^], entonces deberías seguir instrucciones separadas para empezar en esos entornos. https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/task-getting-started-aws-c2s.html["Aprende cómo empezar con Cloud Volumes ONTAP en AWS Secret Cloud o Top Secret Cloud"^]
 
 
 

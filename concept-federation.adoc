@@ -56,7 +56,7 @@ NetApp admite los siguientes protocolos y proveedores de identidad para la feder
 
 .Protocolos
 * link:task-federation-adfs.html["Servicios de federación de Active Directory (AD FS)"]
-* link:link:task-federation-saml.html["Proveedores de identidad de lenguaje de marcado de aserción de seguridad (SAML)"]
+* link:task-federation-saml.html["Proveedores de identidad de lenguaje de marcado de aserción de seguridad (SAML)"]
 
 
 .Proveedores de identidad

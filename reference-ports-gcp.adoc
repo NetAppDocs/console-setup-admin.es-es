@@ -4,7 +4,7 @@ permalink: reference-ports-gcp.html
 keywords: ports, firewall rules, http, https, inbound, outbound, connector, agent 
 summary: Las reglas de firewall de Google Cloud para el agente requieren reglas tanto entrantes como salientes.  La NetApp Console crea automáticamente este grupo de seguridad cuando crea un agente de consola desde la consola. Para otras opciones de instalación, debe configurar este grupo de seguridad manualmente. 
 ---
-= Reglas de firewall del agente en Google Cloud
+= Reglas de firewall del agente de consola en Google Cloud
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

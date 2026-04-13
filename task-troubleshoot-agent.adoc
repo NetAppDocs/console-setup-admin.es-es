@@ -122,17 +122,17 @@ La consola muestra la versión en la parte superior de la página.
 
 
 
-== Verifica el acceso a la red y a los puertos para el agente de la Console
+== Valida que el agente de la consola cumple los requisitos
 
-Asegúrese de que el agente de la consola tenga el acceso a la red que necesita.link:reference-networking-saas-console.html["Obtenga más información sobre los puntos de acceso de red necesarios."]
+Los agentes de Consola requieren acceso a ciertos puntos finales de red, necesitan tener varios puertos abiertos y deben cumplir requisitos de hardware. Puedes validar que tu agente de Consola cumple estos requisitos desde la Consola o usando la consola de mantenimiento del agente.
 
+link:reference-networking-saas-console.html["Obtenga más información sobre los puntos de acceso de red necesarios."] enlace:
 
+Durante la instalación, NetApp comprueba que el host del agente tenga al menos el 80 por ciento del espacio en disco total disponible, lo que incluye 48 GB en `/opt` y 32 GB en `/var` (80 GB en total). Después de la instalación, requiere que al menos el 20 por ciento del disco total permanezca disponible, lo que incluye 12 GB en `/opt` y 8 GB en `/var` (20 GB en total).
 
-=== Ejecutar comprobaciones de configuración en el agente de la consola
+link:reference-networking-saas-console.html["Obtenga más información sobre los puntos de acceso de red necesarios."] enlace:
 
-Ejecuta comprobaciones de configuración en los agentes de Console desde la Console o la consola de mantenimiento del Agent para asegurarte de que pueden acceder a los endpoints requeridos y que los puertos necesarios están abiertos.
-
-También puede ejecutar comprobaciones de configuración mediante la consola de mantenimiento del agente.link:reference-agent-maint-console-config-checker.html["Obtenga más información sobre el uso del comando validate de config-checker."]
+También puedes ejecutar comprobaciones de validación usando la consola de mantenimiento del agente. link:reference-agent-maint-console-config-checker.html["Obtenga más información sobre el uso del comando validate de config-checker."]
 
 
 NOTE: Sólo puedes validar agentes que tengan un estado de *Conectado*.

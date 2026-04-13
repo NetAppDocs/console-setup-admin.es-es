@@ -1,0 +1,70 @@
+---
+sidebar: sidebar 
+permalink: task-update-agent-addressing.html 
+keywords: agent ip address, agent uri, change ip address, edit uri, agent network, agent addressing 
+summary: Cuando cambie la configuración de la red, es posible que tengas que actualizar la dirección IP del agente en tu proveedor de nube y sus URI registradas en la NetApp Console. 
+---
+= Actualizar el direccionamiento y los URI de los agentes
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cuando cambie la configuración de la red, es posible que tengas que actualizar la dirección IP del agente en tu proveedor de nube y sus URI registradas en la NetApp Console.
+
+
+
+== Cambiar la dirección IP de un agente
+
+Puede cambiar las direcciones IP internas y públicas de la instancia del agente asignada por su proveedor de nube si es necesario.
+
+.Pasos
+. Siga las instrucciones de su proveedor de nube para cambiar la dirección IP local o la dirección IP pública (o ambas) para la instancia del agente.
+. Reinicie la instancia del agente para registrar una nueva dirección IP pública con la consola.
+. Si cambió la dirección IP privada, actualice la ubicación de la copia de seguridad de los archivos de configuración de Cloud Volumes ONTAP para que las copias de seguridad se envíen a la nueva dirección IP privada en el agente.
++
+Actualice la ubicación de la copia de seguridad para cada sistema Cloud Volumes ONTAP .
+
++
+.. Desde la CLI de Cloud Volumes ONTAP , configure el nivel de privilegio en avanzado:
+
+
+
+
+[listing]
+----
+set -privilege advanced
+----
+. Ejecute el siguiente comando para mostrar el destino de la copia de seguridad actual:
+
+
+[listing]
+----
+system configuration backup settings show
+----
+. Ejecute el siguiente comando para actualizar la dirección IP del destino de respaldo:
+
+
+[listing]
+----
+system configuration backup settings modify -destination <target-location>
+----
+
+
+== Editar las URI de un agente
+
+Actualización del URI de un agente de la consola si cambian tus requisitos de red. Esto garantiza una gestión ininterrumpida, segura y conforme de tu infraestructura de almacenamiento.
+
+.Pasos
+. Seleccione *Administración > Agentes*.
+. En la página *Descripción general*, seleccione el menú de acciones para un agente de consola y seleccione *Editar agente*.
++
+El agente de la consola debe estar activo para editarlo.
+
+. Expande la barra *URI del agente* para ver los URI del agente.
+. Agregue y elimine URI y luego seleccione *Aplicar*.
+

@@ -10,11 +10,11 @@ La versión 4.5.0 es compatible tanto con el modo estándar como con el modo res
 
 Esta versión del agente de la Console incluye mejoras de seguridad y correcciones de errores, así como la siguiente nueva función.
 
-.Soporte para comprobaciones de configuración en los puertos requeridos
-Puedes validar que los puertos necesarios para el agente de la Console están abiertos usando comprobaciones de configuración. Puedes hacer comprobaciones de configuración desde la Console o desde la consola de mantenimiento del Agent. link:https://docs.netapp.com/console-setup-admin/task-troubleshoot-agent.html["Aprende más sobre cómo ejecutar comprobaciones de configuración en el agente de la consola."]
+.Soporte para la comprobación de la configuración de los puertos necesarios
+Puedes validar que los puertos necesarios para el agente de la Console están abiertos usando comprobaciones de configuración. Puedes hacer comprobaciones de configuración desde la Console o desde la consola de mantenimiento del Agent. link:https://docs.netapp.com/us-en/console-setup-admin/task-troubleshoot-agent.html["Aprende más sobre cómo ejecutar comprobaciones de configuración en el agente de la consola."]
 
 
 
 === Administración de consola
 
-Puedes asignar funciones Keystone a los usuarios asociados para que esos usuarios puedan gestionar recursos Keystone en una organización asociada. link:https://docs.netapp.com/console-setup-admin/console-administration/task-partnerships-assign-users.html["Obtén más información sobre cómo asignar roles de Keystone a usuarios asociados."]
+Puedes asignar funciones Keystone a los usuarios asociados para que esos usuarios puedan gestionar recursos Keystone en una organización asociada. link:https://docs.netapp.com/us-en/console-setup-admin/task-partnerships-assign-users.html["Obtén más información sobre cómo asignar roles de Keystone a usuarios asociados."]

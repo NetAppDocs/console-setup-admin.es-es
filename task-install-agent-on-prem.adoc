@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: task-install-agent-on-prem.html 
-keywords: install connector, on prem connector installation, on prem connector, install connector on prem, manual install 
-summary: Instale un agente de consola local y luego inicie sesión y configúrelo para que funcione con su organización de consola. 
+keywords: deploy agent, on prem agent deployment, on prem agent, deploy connector on prem, manual deployment 
+summary: Implementa un agente de Console en tus instalaciones y luego inicia sesión y configúralo para que funcione con tu organización de Console. 
 ---
-= Instalar manualmente un agente de consola local
+= Implementa manualmente un agente de Console en las instalaciones
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,10 +14,10 @@ summary: Instale un agente de consola local y luego inicie sesión y configúrel
 
 
 [role="lead"]
-Instale un agente de consola local y luego inicie sesión y configúrelo para que funcione con su organización de consola.
+Implementa un agente de Console en tus instalaciones y luego inicia sesión y configúralo para que funcione con tu organización de Console.
 
 
-NOTE: Si es un usuario de VMWare, puede utilizar un OVA para instalar un agente de consola en su VCenter.link:task-install-agent-on-prem-ova.html["Obtenga más información sobre cómo instalar un agente en un VCenter."]
+NOTE: Si eres usuario de VMWare, puedes utilizar un OVA para desplegar un agente de Console en tu VCenter. link:task-install-agent-on-prem-ova.html["Más información sobre el despliegue de un agente en un VCenter."]
 
 Antes de realizar la instalación, deberá asegurarse de que su host (VM o host Linux) cumpla con los requisitos y de que el agente de la consola tenga acceso saliente a Internet y a las redes específicas.  Si planea utilizar servicios de datos de NetApp u opciones de almacenamiento en la nube como Cloud Volumes ONTAP, deberá crear credenciales en su proveedor de nube para agregarlas a la consola para que el agente de la consola pueda realizar acciones en la nube en su nombre.
 

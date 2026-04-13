@@ -25,7 +25,7 @@ Realice estas tareas de mantenimiento mediante la consola web de la máquina vir
 
 
 .Limitaciones
-Aún no se admite la actualización del agente a través de la consola.  Además, solo puedes ver información sobre la dirección IP, DNS y puertas de enlace.
+Sólo puedes ver (no actualizar) la información sobre la dirección IP, DNS y gateways a través de la consola de mantenimiento.
 
 
 

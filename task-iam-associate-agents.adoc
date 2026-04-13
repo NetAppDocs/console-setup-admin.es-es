@@ -18,6 +18,9 @@ Asocie agentes de la consola con proyectos específicos para habilitar la admini
 
 Los superadministradores y administradores de organizaciones pueden crear agentes y asociar cualquier agente con cualquier proyecto o carpeta. Los administradores de carpetas o proyectos solo pueden asociar agentes existentes con carpetas y proyectos para los que tengan permisos. link:reference-iam-predefined-roles.html["Obtenga más información sobre las acciones que un administrador de carpeta o proyecto puede completar"].
 
+
+NOTE: Los usuarios con el rol Org admin pueden añadir recursos a la carpeta para delegar la tarea de asociar el recurso con los proyectos a los administradores de carpetas o proyectos de la carpeta respectiva. link:task-iam-manage-folders-projects.html#associate-resource-folder["Obtenga información sobre cómo asociar un recurso con una carpeta"].
+
 .Pasos
 . Seleccione *Administración > Identidad y acceso* > *Agentes*.
 . Desde la tabla, busque el agente de consola que desea asociar.

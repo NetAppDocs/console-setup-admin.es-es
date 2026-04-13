@@ -4,7 +4,7 @@ permalink: reference-networking-saas-console.html
 keywords: networking, urls, endpoints, web browser, console, network, set up networking, bluexp 
 summary: La NetApp Console, el agente de la NetApp Console y los servicios de datos de NetApp requieren acceso a Internet saliente y la capacidad de comunicarse con los puntos finales necesarios. 
 ---
-= Preparar el acceso a la red para la NetApp Console
+= Acceso a la red para NetApp Console
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

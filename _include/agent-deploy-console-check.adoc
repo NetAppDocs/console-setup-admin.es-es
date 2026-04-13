@@ -10,7 +10,9 @@
 +
 []
 ====
-Si todavía estás usando ellink:reference-networking-saas-console-previous.html["puntos finales anteriores"] utilizado para actualizaciones de agente, la validación falla con un error.  Para evitar esto, desmarque la casilla de verificación para omitir la comprobación de validación.
+** Si todavía estás usando ellink:reference-networking-saas-console-previous.html["puntos finales anteriores"] utilizado para actualizaciones de agente, la validación falla con un error.  Para evitar esto, desmarque la casilla de verificación para omitir la comprobación de validación.
+** Durante la instalación, NetApp comprueba que el host del agente tenga al menos el 80 por ciento del espacio en disco total disponible, lo que incluye 48 GB en `/opt` y 32 GB en `/var` (80 GB en total). Después de la instalación, requiere que al menos el 20 por ciento del disco total permanezca disponible, lo que incluye 12 GB en `/opt` y 8 GB en `/var` (20 GB en total).
+
 
 ====
 

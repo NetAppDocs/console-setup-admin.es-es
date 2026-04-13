@@ -4,7 +4,7 @@ permalink: reference-whats-next.html
 keywords: standard mode, what you can do 
 summary: Ahora que ha iniciado sesión y configurado la NetApp Console en modo estándar, los usuarios pueden crear y descubrir sistemas de almacenamiento y utilizar servicios de datos de NetApp . 
 ---
-= Qué puedes hacer a continuación (modo estándar)
+= Próximos pasos para NetApp Console en modo estándar
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

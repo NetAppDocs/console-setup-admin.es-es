@@ -4,7 +4,7 @@ permalink: task-install-agent-google-console-gcloud.html
 keywords: install connector, google cloud connector installation, google cloud connector, install connector in google cloud, bluexp, gcloud, create connector, gcp installation, gcp connector 
 summary: Para crear un agente de consola en Google Cloud desde NetApp Consoel o mediante Google Cloud, debe configurar su red, preparar los permisos de Google Cloud, habilitar las API de Google Cloud y, luego, crear el agente de consola. 
 ---
-= Crear un agente de consola en Google Cloud desde la NetApp Console
+= Implementa un agente de Console en Google Cloud desde NetApp Console
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,9 @@ summary: Para crear un agente de consola en Google Cloud desde NetApp Consoel o 
 
 
 [role="lead"]
-Puedes crear un agente de consola en Google Cloud desde la consola.  Debe configurar su red, preparar los permisos de Google Cloud, habilitar las API de Google Cloud y luego crear el agente de consola.
+Puedes desplegar un agente de la Consola en Google Cloud desde la Consola. Debes configurar tu red, preparar los permisos de Google Cloud, habilitar las API de Google Cloud y luego desplegar el agente de la Consola.
+
+Al desplegar un agente en Google Cloud, se inicia una instancia de VM que ejecuta Linux y el software del agente de la consola en una VPC de tu elección.
 
 .Antes de empezar
 * Deberías tener unalink:concept-agents.html["comprensión de los agentes de consola"] .
@@ -441,7 +443,9 @@ link:reference-ports-gcp.html["Reglas de firewall en Google Cloud"]
 +
 []
 ====
-Si todavía estás usando ellink:reference-networking-saas-console-previous.html["puntos finales anteriores"] utilizado para actualizaciones de agente, la validación falla con un error.  Para evitar esto, desmarque la casilla de verificación para omitir la comprobación de validación.
+** Si todavía estás usando ellink:reference-networking-saas-console-previous.html["puntos finales anteriores"] utilizado para actualizaciones de agente, la validación falla con un error.  Para evitar esto, desmarque la casilla de verificación para omitir la comprobación de validación.
+** Durante la instalación, NetApp comprueba que el host del agente tenga al menos el 80 por ciento del espacio en disco total disponible, lo que incluye 48 GB en `/opt` y 32 GB en `/var` (80 GB en total). Después de la instalación, requiere que al menos el 20 por ciento del disco total permanezca disponible, lo que incluye 12 GB en `/opt` y 8 GB en `/var` (20 GB en total).
+
 
 ====
 . Seleccione *Agregar*.

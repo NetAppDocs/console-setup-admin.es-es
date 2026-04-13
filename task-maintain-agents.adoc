@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: task-maintain-agents.html 
-keywords: agent operating system, agent maintenance, vm maintenance, os updates, operating system updates, stop agent, restart agent, notifications, agent health, agent disk space, agent cpu usage, agent ram usage, agent vm, agent ip address, agent uri, connector, connector health 
+keywords: agent operating system, agent maintenance, vm maintenance, os updates, operating system updates, stop agent, restart agent, notifications, agent health, agent disk space, agent cpu usage, agent ram usage, agent vm, connector, connector health 
 summary: El mantenimiento del sistema operativo en el host del agente es su responsabilidad.  Por ejemplo, debe aplicar actualizaciones de seguridad al sistema operativo en el host del agente de la consola siguiendo los procedimientos estándar de su empresa para la distribución del sistema operativo. 
 ---
-= Mantener la máquina virtual y el sistema operativo del agente de consola
+= Mantén la máquina virtual para un agente de Console instalado manualmente
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,14 +14,31 @@ summary: El mantenimiento del sistema operativo en el host del agente es su resp
 
 
 [role="lead"]
-El mantenimiento del sistema operativo en el host del agente de la consola es responsabilidad suya (del cliente).  Por ejemplo, usted (el cliente) debe aplicar actualizaciones de seguridad al sistema operativo en el host del agente siguiendo los procedimientos estándar de su empresa para la distribución del sistema operativo.
+Cuando instalas manualmente un agente de Console, mantener el sistema operativo en el host del agente es tu responsabilidad (del cliente). Por ejemplo, tú (el cliente) deberías aplicar actualizaciones de seguridad al sistema operativo en el host del agente siguiendo los procedimientos estándar de tu empresa para la distribución del sistema operativo.
 
 
 
-== Parches del sistema operativo y el agente
+== Aplicar actualizaciones del sistema operativo al host agente
 
 Aplicar parches de seguridad del sistema operativo sin detener los servicios del host del agente.
 
+Para mantener la compatibilidad con las configuraciones admitidas, debes evitar que Docker o Podman se actualicen durante la aplicación rutinaria de parches del sistema operativo. Puedes hacerlo excluyendo temporalmente Docker o Podman durante las actualizaciones o configurando permanentemente el gestor de paquetes para que omita las actualizaciones de Docker o Podman.
+
+Los siguientes son ejemplos de cómo excluir actualizaciones de Docker o Podman para diferentes distribuciones de Linux. Consulta la documentación de tu distribución de Linux para obtener las instrucciones más actualizadas sobre cómo excluir paquetes de las actualizaciones.
+
+.Ejemplo de Podman
+[source, bash]
+----
+sudo yum update --exclude=podman
+sudo yum upgrade
+----
+.Ejemplo de Docker
+[source, bash]
+----
+sudo apt-mark hold docker-ce docker-ce-cli containerd.io
+sudo apt update
+sudo apt upgrade
+----
 
 
 == Tipo de máquina virtual o instancia
@@ -47,7 +64,7 @@ Por ejemplo, la consola le notifica cuando un recurso del agente (CPU, RAM o esp
 
 NOTE: Trabaje con el soporte de NetApp si tiene preguntas sobre cómo modificar la máquina virtual de su agente.
 
-link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#notification-center["Más información."^]
+link:https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operations.html#notification-center["Más información."^]
 
 [cols="47,47"]
 |===
@@ -94,57 +111,4 @@ Google Cloud:: No puedes especificar un método de autenticación cuando creas u
 https://cloud.google.com/compute/docs/instances/connecting-to-instance["Google Cloud Docs: Conectarse a máquinas virtuales Linux"^]
 
 --
-
-
-
-
-== Cambiar la dirección IP de un agente
-
-Puede cambiar las direcciones IP internas y públicas de la instancia del agente asignada por su proveedor de nube si es necesario.
-
-.Pasos
-. Siga las instrucciones de su proveedor de nube para cambiar la dirección IP local o la dirección IP pública (o ambas) para la instancia del agente.
-. Reinicie la instancia del agente para registrar una nueva dirección IP pública con la consola.
-. Si cambió la dirección IP privada, actualice la ubicación de la copia de seguridad de los archivos de configuración de Cloud Volumes ONTAP para que las copias de seguridad se envíen a la nueva dirección IP privada en el agente.
-+
-Actualice la ubicación de la copia de seguridad para cada sistema Cloud Volumes ONTAP .
-
-+
-.. Desde la CLI de Cloud Volumes ONTAP , configure el nivel de privilegio en avanzado:
-
-
-
-
-[listing]
-----
-set -privilege advanced
-----
-. Ejecute el siguiente comando para mostrar el destino de la copia de seguridad actual:
-
-
-[listing]
-----
-system configuration backup settings show
-----
-. Ejecute el siguiente comando para actualizar la dirección IP del destino de respaldo:
-
-
-[listing]
-----
-system configuration backup settings modify -destination <target-location>
-----
-
-
-== Editar las URI de un agente
-
-Puede agregar y eliminar el Identificador uniforme de recursos (URI) de un agente.
-
-.Pasos
-. Seleccione *Administración > Agentes*.
-. En la página *Descripción general*, seleccione el menú de acciones para un agente de consola y seleccione *Editar agente*.
-+
-El agente de la consola debe estar activo para editarlo.
-
-. Expande la barra *URI del agente* para ver los URI del agente.
-. Agregue y elimine URI y luego seleccione *Aplicar*.
 

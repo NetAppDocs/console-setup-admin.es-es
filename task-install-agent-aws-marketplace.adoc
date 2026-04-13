@@ -4,7 +4,7 @@ permalink: task-install-agent-aws-marketplace.html
 keywords: install connector, aws connector installation, aws connector, install connector in aws, bluexp, aws marketplace, manual install, create connector 
 summary: Para crear un agente de consola desde AWS Marketplace, debe configurar su red, preparar los permisos de AWS, revisar los requisitos de la instancia y luego crear el agente de consola. 
 ---
-= Cree un agente de consola desde AWS Marketplace
+= Implementa un agente de consola desde AWS Marketplace
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,9 @@ summary: Para crear un agente de consola desde AWS Marketplace, debe configurar 
 
 
 [role="lead"]
-Puede crear un agente de consola en AWS directamente desde AWS Marketplace.  Para crear un agente de consola desde AWS Marketplace, debe configurar su red, preparar los permisos de AWS, revisar los requisitos de la instancia y luego crear el agente de consola.
+Puedes implementar un agente de Console en AWS directamente desde AWS Marketplace. Para implementar un agente de Console desde AWS Marketplace, necesitas configurar tu red, preparar los permisos de AWS, revisar los requisitos de la instancia y luego implementar el agente de Console.
+
+La implementación de un agente en AWS lanza una instancia EC2 que ejecuta Linux y el software del agente de la consola en una VPC de tu elección.
 
 .Antes de empezar
 * Deberías tener unalink:concept-agents.html["comprensión de los agentes de consola"] .

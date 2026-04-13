@@ -274,10 +274,9 @@ Su entidad de servicio ya está configurada y debería haber copiado el ID de la
 Después de proporcionar una cuenta de Azure con los permisos necesarios, puede agregar las credenciales para esa cuenta a la consola.  Al completar este paso podrá iniciar Cloud Volumes ONTAP con diferentes credenciales de Azure.
 
 .Antes de empezar
-Si acaba de crear estas credenciales en su proveedor de nube, es posible que pasen algunos minutos hasta que estén disponibles para su uso.  Espere unos minutos antes de agregar las credenciales a la consola.
+* Si acaba de crear estas credenciales en su proveedor de nube, es posible que pasen algunos minutos hasta que estén disponibles para su uso.  Espere unos minutos antes de agregar las credenciales a la consola.
+* Necesitas crear un agente de Console antes de poder configurar una suscripción. link:concept-agent-install-options.html["Aprenda a crear un agente de consola"].
 
-.Antes de empezar
-Debe crear un agente de consola antes de poder cambiar la configuración de la consola. link:concept-agents.html#agent-installation["Aprenda a crear un agente de consola"] .
 
 .Pasos
 . Seleccione *Administración > Credenciales*.
