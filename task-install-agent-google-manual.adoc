@@ -19,7 +19,7 @@ Para implementar manualmente el agente de la Console en tu propio host Linux, ne
 Al desplegar un agente en Google Cloud, se inicia una instancia de VM que ejecuta Linux y el software del agente de la consola en una VPC de tu elección.
 
 .Antes de empezar
-* link:concept-agents.html["Obtenga más información sobre los agentes de consola"].
+* link:concept-agent-install-options.html#agent-cloud-manual-deploy["Aprende cuándo desplegar manualmente en Google Cloud"].
 * Deberías revisarlolink:reference-limitations.html["Limitaciones del agente de consola"] .
 
 

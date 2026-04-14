@@ -19,7 +19,7 @@ Puedes implementar un agente de Console en AWS directamente desde AWS Marketplac
 La implementación de un agente en AWS lanza una instancia EC2 que ejecuta Linux y el software del agente de la consola en una VPC de tu elección.
 
 .Antes de empezar
-* Deberías tener unalink:concept-agents.html["comprensión de los agentes de consola"] .
+* link:concept-agent-install-options.html#agent-marketplace-deploy["Aprende cuándo implementar desde AWS Marketplace"].
 * Deberías revisarlolink:reference-limitations.html["Limitaciones del agente de consola"] .
 
 

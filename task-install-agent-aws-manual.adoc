@@ -19,7 +19,7 @@ Puedes implementar manualmente un agente de la Console en un host Linux que se e
 La implementación de un agente en AWS lanza una instancia EC2 que ejecuta Linux y el software del agente de la consola en una VPC de tu elección.
 
 .Antes de empezar
-* Deberías tener unalink:concept-agents.html["comprensión de los agentes de consola"] .
+* link:concept-agent-install-options.html#agent-cloud-manual-deploy["Aprende cuándo implementar manualmente en AWS"].
 * Deberías revisarlolink:reference-limitations.html["Limitaciones del agente de consola"] .
 
 

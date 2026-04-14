@@ -19,7 +19,7 @@ Puedes desplegar un agente de la Consola en Google Cloud desde la Consola. Debes
 Al desplegar un agente en Google Cloud, se inicia una instancia de VM que ejecuta Linux y el software del agente de la consola en una VPC de tu elección.
 
 .Antes de empezar
-* Deberías tener unalink:concept-agents.html["comprensión de los agentes de consola"] .
+* link:concept-agent-install-options.html#agent-console-deploy["Aprende cuándo desplegar desde la consola"].
 * Deberías revisarlolink:reference-limitations.html["Limitaciones del agente de consola"] .
 
 

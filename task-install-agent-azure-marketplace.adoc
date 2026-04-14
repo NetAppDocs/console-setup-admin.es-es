@@ -22,7 +22,7 @@ Al desplegar un agente en Azure, se inicia una VM que ejecuta Linux y el softwar
 NOTE: Despliega un agente de Console en la misma región de Azure que los sistemas Cloud Volumes ONTAP que administra, o en la https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Par de regiones de Azure"^]. Esto asegura que se use una conexión Azure Private Link entre Cloud Volumes ONTAP y sus cuentas de almacenamiento asociadas.
 
 .Antes de empezar
-* Deberías tener unalink:concept-agents.html["comprensión de los agentes de consola"] .
+* link:concept-agent-install-options.html#agent-marketplace-deploy["Aprende cuándo desplegar desde Azure Marketplace"].
 * Revisarlink:reference-limitations.html["Limitaciones del agente de consola"] .
 
 
