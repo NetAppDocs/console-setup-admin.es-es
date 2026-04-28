@@ -182,7 +182,7 @@ NetApp recomienda a los clientes que trabajen con su representante de NetApp par
 | Federación | No 
 
 
-| Gestión de identidad y acceso | No 
+| Gestión de identidad y acceso | Sí 
 
 
  a| 
@@ -321,7 +321,7 @@ NetApp Replication
 | Federación | No 
 
 
-| Gestión de identidad y acceso | No 
+| Gestión de identidad y acceso | Sí 
 
 
  a| 
@@ -474,7 +474,7 @@ https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/task-manage
 | No 
 
 
-| Gestión de identidad y acceso | No 
+| Gestión de identidad y acceso | Sí 
 
 
 | Administrar las credenciales del proveedor de la nube | No 
