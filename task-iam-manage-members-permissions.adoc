@@ -14,7 +14,7 @@ summary: Administre los miembros de su organización para otorgar permisos en di
 
 
 [role="lead"]
-Dentro de la consola, usted otorga a los usuarios acceso a proyectos o carpetas según un rol de acceso. Un _rol de acceso_ contiene un conjunto de permisos que permiten a un miembro (usuario o cuenta de servicio) realizar acciones específicas en el nivel asignado de la jerarquía de recursos.
+Dentro de la NetApp Console, tú concedes a los usuarios acceso a proyectos o carpetas según un rol de acceso. Un _rol de acceso_ contiene un conjunto de permisos que permite a un miembro (usuario o cuenta de servicio) realizar acciones específicas en el nivel asignado de la jerarquía de recursos.
 
 .Roles de acceso requeridos
 Superadministrador, administrador de la organización o administrador de carpeta o proyecto (para carpetas y proyectos que administra). link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso"].
@@ -23,7 +23,7 @@ Superadministrador, administrador de la organización o administrador de carpeta
 
 == Comprenda cómo se otorga el acceso en la NetApp Console
 
-La NetApp Console utiliza el control de acceso basado en roles (RBAC) para administrar los permisos. Asignar roles a los usuarios individualmente o a través de grupos federados. Cada rol define acciones permitidas para recursos específicos.
+La consola NetApp utiliza el control de acceso basado en roles (RBAC) para gestionar los permisos. Asigna roles a los usuarios de forma individual o a través de grupos federados. Cada rol define las acciones permitidas para recursos específicos.
 
 Tenga en cuenta lo siguiente sobre cómo conceder acceso en la NetApp Console:
 
@@ -54,7 +54,7 @@ Los usuarios se registran en la NetApp Console, pero un administrador de organiz
 El usuario ya debe haberse registrado en la NetApp Console. Si aún no se han registrado, diríjalos a link:task-sign-up-saas.html["Regístrese en la NetApp Console."]
 
 
-NOTE: Si está agregando un usuario que forma parte de un grupo federado, asegúrese de que el usuario ya se haya registrado en la NetApp Console y se le haya asignado explícitamente un rol en la consola. NetApp recomienda asignar un rol de acceso mínimo, como Visor de la organización.
+NOTE: Si estás agregando un usuario que forma parte de un grupo federado, asegúrate de que el usuario ya se haya registrado en NetApp Console y se le haya asignado explícitamente un rol en la consola. NetApp recomienda asignar un rol de acceso mínimo, como Visualizador de organización.
 
 .Pasos
 . Seleccione *Administración > Identidad y acceso*.
@@ -100,7 +100,7 @@ Para la autenticación JWT, prepare su clave pública o certificado.
 . Introduzca un nombre para la cuenta de servicio.
 . Para utilizar la autenticación JWT, seleccione *Usar autenticación JWT de clave privada* y cargue su clave RSA pública o certificado. Omitir si se utiliza el ID del cliente y el secreto.
 +
-Su certificado X.509. Debe estar en formato PEM, CRT o CER.
+Sube tu certificado X.509 en formato PEM, CRT o CER.
 
 +
 .. Configure notificaciones de vencimiento para su certificado.  Elija entre siete días o 30 días.  Las notificaciones de vencimiento se envían por correo electrónico y se muestran en la consola a los usuarios con el rol de superadministrador o administrador de la organización.
@@ -121,7 +121,7 @@ Tenga en cuenta lo siguiente:
 link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso"] .
 
 . Para dar acceso a más carpetas, proyectos o roles, seleccione *Agregar rol*, elija la carpeta, el proyecto o la categoría de rol y seleccione un rol.
-. Si no eligió utilizar la autenticación JWT, descargue o copie el ID del cliente y el secreto del cliente.
+. Si no usaste la autenticación JWT, descarga o copia el client ID y el client secret.
 +
 La consola muestra el secreto del cliente solo una vez. Cópielo de forma segura; podrá volver a crearlo más tarde si lo pierde.
 
@@ -136,12 +136,12 @@ La consola muestra el secreto del cliente solo una vez. Cópielo de forma segura
 Puede agregar un grupo federado de su proveedor de identidad (IdP) a su organización y asignarle uno o más roles. Los miembros del grupo federado heredan los roles que usted asigna al grupo en la Consola.
 
 
-IMPORTANT: Cuando agregas un grupo federado a la Consola y le asignas un rol, solo los usuarios que son miembros del grupo en tu IdP y que ya se han registrado en la NetApp Console y se les ha asignado explícitamente un rol en la Consola pueden acceder a los recursos. NetApp recomienda asignar un rol de acceso mínimo, como organization viewer, a estos usuarios.
+IMPORTANT: Cuando agregas un grupo federado a la Consola y le asignas un rol, solo los usuarios que son miembros del grupo en tu IdP y ya se han registrado en la Consola de NetApp y se les ha asignado explícitamente un rol en la Consola pueden acceder a los recursos. NetApp recomienda asignar un rol de acceso mínimo, como organization viewer, a estos usuarios.
 
 Antes de poder asignar un rol a un grupo federado, asegúrese de lo siguiente:
 
 * Configure la federación entre su IdP y la consola. link:concept-federation.html["Aprenda cómo configurar la federación."]
-* El grupo ya debe existir en su IdP y debe tener asignado acceso a la aplicación de la Consola.
+* El grupo ya debe existir en tu IdP y se le debe haber asignado acceso de aplicación a la NetApp Console.
 
 
 .Pasos
@@ -149,7 +149,7 @@ Antes de poder asignar un rol a un grupo federado, asegúrese de lo siguiente:
 . Seleccione *Miembros*.
 . Seleccione *Agregar un miembro*.
 . Para *Tipo de miembro*, seleccione *Grupo federado*.
-. Seleccione la federación de la que es miembro el grupo
+. Selecciona la federación a la que pertenece el grupo.
 . Para *Nombre del grupo*, ingrese el nombre exacto del grupo en su IdP.
 . Utilice la sección *Seleccionar una organización, carpeta o proyecto* para elegir el nivel de su jerarquía de recursos para el cual el miembro debe tener permisos.
 +

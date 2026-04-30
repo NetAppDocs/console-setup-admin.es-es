@@ -58,7 +58,7 @@ Para administrar recursos en Google Cloud.
  a| 
 \ https://mysupport.netapp.com
  a| 
-Para obtener información de licencias y enviar mensajes de AutoSupport al soporte de NetApp .
+Para obtener información sobre licencias y enviar mensajes de AutoSupport al soporte de NetApp.
 
 
 
@@ -72,7 +72,7 @@ Para actualizar las credenciales del sitio de soporte de NetApp (NSS) o para agr
  a| 
 \ https://support.netapp.com
  a| 
-Para obtener información de licencias y enviar mensajes de AutoSupport al soporte de NetApp , así como para recibir actualizaciones de software para Cloud Volumes ONTAP.
+Para obtener información sobre licencias y enviar mensajes de AutoSupport al soporte de NetApp, así como para recibir actualizaciones de software para Cloud Volumes ONTAP.
 
 
 
@@ -95,65 +95,10 @@ Aunque los puntos finales anteriores aún son compatibles, NetApp recomienda act
 * Cuando actualice los puntos finales actuales en su firewall, sus agentes existentes continuarán funcionando.
 
 
-
-
- a| 
-\https://occmclientinfragov.azurecr.us.io \https://bluexpinfraprod.azurecr.io
- a| 
-Para obtener imágenes para las actualizaciones del agente de consola.
-
-* Cuando se implementa un nuevo agente, la verificación de validación prueba la conectividad con los puntos finales actuales. Si utilizaslink:reference-networking-saas-console-previous.html["puntos finales anteriores"] , la comprobación de validación falla. Para evitar este error, omita la comprobación de validación.
-+
-Aunque los puntos finales anteriores aún son compatibles, NetApp recomienda actualizar las reglas de firewall a los puntos finales actuales lo antes posible. link:reference-networking-saas-console-previous.html#update-endpoint-list["Aprenda a actualizar su lista de puntos finales"] .
-
-* Cuando actualice los puntos finales actuales en su firewall, sus agentes existentes continuarán funcionando.
-
-
-^1^ NetApp recomienda permitir los puntos finales de la Opción 1 en su firewall, ya que son más seguros, y no permitir los puntos finales de la Opción 2.  Tenga en cuenta lo siguiente acerca de estos puntos finales:
-
-+ * A partir de la versión 3.9.47 del agente de consola, el sistema admite los puntos finales enumerados en la opción 1.  Las versiones anteriores del agente de consola no admiten compatibilidad con versiones anteriores.  * El agente de la consola primero contacta los puntos finales en la opción 2.  Si esos puntos finales no son accesibles, se contacta automáticamente con los puntos finales de la opción 1.  * Si utiliza el agente de consola con NetApp Backup and Recovery o Ransomware Resilience, el sistema no admite puntos finales de la Opción 1.  Permitir puntos finales de la Opción 2 y no permitir la Opción 1.
-
-
-
- a| 
-Si el agente de la consola se encuentra en una región gubernamental de AWS: \https://*.blob.core.windows.net https://cloudmanagerinfraprod.azurecr.io
- a| 
-Para obtener imágenes para las actualizaciones del agente de Console cuando el agente de Console está instalado en una región gubernamental de AWS.
-
-
-
- a| 
-Si el agente de la consola se encuentra en una región de Azure Government: \https://*.blob.core.windows.net https://occmclientinfragov.azurecr.us
- a| 
-Para obtener imágenes para las actualizaciones del agente de Console cuando el agente de Console está instalado en una región Azure Government.
-
-
-
- a| 
-Si el agente de la Consola se encuentra en una región comercial o en una región soberana, puedes elegir entre dos conjuntos de endpoints:
-
-* Opción 1 (recomendada) ^1^
-+
-\ https://bluexpinfraprod.eastus2.data.azurecr.io \ https://bluexpinfraprod.azurecr.io
-
-* Opción 2
-+
-\https://*.blob.core.windows.net\ https://cloudmanagerinfraprod.azurecr.io
-
-
- a| 
-Para obtener imágenes para las actualizaciones del agente de la consola cuando el agente de la consola está instalado en una región comercial o en una región soberana.
-
 |===
 --
 
 
-| *Puntos finales para 3.9.55 y versiones inferiores* | *Puntos finales para 4.0.0 y versiones superiores* | *Finalidad*
-
-a| * https://support.netapp.com * https://mysupport.netapp.com a| * https://mysupport.netapp.com * https://signin.b2c.netapp.com * https://support.netapp.com a| Para licencias y contactar con el soporte de NetApp. a| * https://*.api.bluexp.netapp.com * https://api.bluexp.netapp.com * https://*.cloudmanager.cloud.netapp.com * https://cloudmanager.cloud.netapp.com * https://netapp-cloud-account.auth0.com * https://netapp-cloud-account.us.auth0.com * https://console.netapp.com * https://*.console.netapp.com a| * https://api.bluexp.netapp.com * https://netapp-cloud-account.auth0.com * https://netapp-cloud-account.us.auth0.com * https://console.netapp.com * https://components.console.netapp.com * https://cdn.auth0.com a| Para las operaciones diarias. a| * https://*.blob.core.windows.net * https://cloudmanagerinfraprod.azurecr.io a| * https://bluexpinfraprod.eastus2.data.azurecr.io * https://bluexpinfraprod.azurecr.io | Para obtener imágenes para las actualizaciones del agente de Console.
-
-|===
-|===
 Puntos finales contactados desde la consola de NetApp:: A medida que usas la aplicación basada en web NetApp Console SaaS, esta contacta varios endpoints para completar tareas de gestión de datos. Esto incluye endpoints a los que se conecta para desplegar el agente de la Console desde la Console.
 +
 --

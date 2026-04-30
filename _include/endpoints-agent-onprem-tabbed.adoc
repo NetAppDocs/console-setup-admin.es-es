@@ -1,0 +1,34 @@
+= 
+:allow-uri-read: 
+
+
+[role="tabbed-block"]
+====
+.Puntos finales mínimos requeridos
+--
+Estos puntos finales son necesarios para todas las implementaciones del agente de la consola. Se necesitan puntos finales adicionales para gestionar los recursos de NetApp en AWS o Azure.
+
+[cols="2a,1a"]
+|===
+| Puntos finales | Propósito Directiva no resuelta en <stdin> - include::endpoints-agent.adoc[tag=nss-endpoints] Directiva no resuelta en <stdin> - include::endpoints-agent.adoc[tag=saas-endpoints] Directiva no resuelta en <stdin> - include::endpoints-agent.adoc[tag=upgrade-endpoints] 
+|===
+--
+.Puntos de enlace adicionales para los recursos de AWS
+--
+Cuando el agente de la consola se instala en las instalaciones, necesita acceso de red a los siguientes endpoints de AWS adicionales para administrar sistemas NetApp (como Cloud Volumes ONTAP) implementados en AWS.
+
+[cols="2a,1a"]
+|===
+| Puntos finales | Propósito Directiva no resuelta en <stdin> - include::endpoints-agent.adoc[tag=aws-endpoints] 
+|===
+--
+.Puntos finales adicionales para recursos Azure
+--
+Cuando el agente de la consola se instala en las instalaciones, necesita acceso de red a los siguientes puntos finales adicionales de Azure para gestionar los sistemas NetApp (como Cloud Volumes ONTAP) desplegados en Azure.
+
+[cols="2a,1a"]
+|===
+| Puntos finales | Propósito Directiva no resuelta en <stdin> - include::endpoints-agent.adoc[tag=azure-public-endpoints] Directiva no resuelta en <stdin> - include::endpoints-agent.adoc[tag=azure-china-endpoints] 
+|===
+--
+====

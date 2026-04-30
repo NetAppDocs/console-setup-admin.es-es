@@ -14,14 +14,14 @@ summary: 'Utilice la gestión de identidad y acceso (IAM) de NetApp Console para
 
 
 [role="lead"]
-Utilice la gestión de identidad y acceso (IAM) de la consola de NetApp para organizar sus recursos de NetApp y controlar el acceso según la estructura de su negocio: por ubicación, departamento o proyecto.
+Usa la gestión de identidades y accesos (IAM) de la NetApp Console para organizar tus recursos de NetApp y controlar el acceso según la estructura de tu empresa: por ubicación, departamento o proyecto.
 
 Organizas los recursos en una jerarquía: la organización está en la parte superior, luego las carpetas (que pueden tener otras carpetas o proyectos) y después los proyectos, que tienen sistemas de almacenamiento, cargas de trabajo y agentes.
 
 Asigna roles de acceso a nivel de organización, carpeta o proyecto para que los usuarios tengan el acceso correcto a los recursos.
 
 
-NOTE: Debes tener los roles _Super admin_, _Organization admin_ o _Folder or project admin_ para gestionar IAM en NetApp Console.
+NOTE: Debes tener el rol _Super admin_, _Organization admin_ o _Folder or project admin_ para gestionar IAM en la NetApp Console.
 
 La siguiente imagen ilustra esta jerarquía en un nivel básico.
 
@@ -31,7 +31,7 @@ image:diagram-iam-resource-hierarchy.png["Un diagrama conceptual que muestra los
 
 == Componentes de gestión de identidad y acceso
 
-NetApp Console IAM se basa en tres tipos de componentes: componentes organizativos que definen la jerarquía, recursos que se asignan dentro de esa jerarquía y miembros y roles que controlan quién puede acceder a qué.
+La NetApp Console IAM se basa en tres tipos de componentes: componentes organizativos que definen la jerarquía, recursos que se asignan dentro de esa jerarquía y miembros y roles que controlan quién puede acceder a qué.
 
 
 
@@ -48,11 +48,11 @@ Por ejemplo, puede asociar un sistema ONTAP local con un solo proyecto o con tod
 link:task-iam-manage-folders-projects.html["Aprenda cómo agregar proyectos a su organización."^]
 
 --
-Carpetas:: Agrupa los proyectos relacionados en _carpetas_ para organizarlos por ubicación, sitio o unidad de negocio. No puedes asociar recursos directamente a las carpetas, pero asignar a un usuario un rol a nivel de carpeta le da acceso a todos los proyectos de esa carpeta.
+Carpetas:: Agrupa los proyectos relacionados en _carpetas_ para organizarlos por ubicación, sitio o unidad de negocio. No puedes asociar recursos directamente con carpetas, pero asignar a un usuario un rol a nivel de carpeta le da acceso a todos los proyectos de esa carpeta.
 
 
 
-NOTE: Los usuarios con el rol Org admin pueden añadir recursos a una carpeta para delegar la tarea de asociar el recurso con proyectos a un Folder o a los administradores de proyecto de la carpeta respectiva. link:task-iam-manage-folders-projects.html#associate-resource-folder["Obtenga información sobre cómo asociar un recurso con una carpeta"].
+NOTE: Los usuarios con el rol Org admin pueden agregar recursos a una carpeta para delegar la tarea de asociar el recurso con los proyectos a los administradores de carpetas o proyectos de la carpeta respectiva. link:task-iam-manage-folders-projects.html#associate-resource-folder["Obtenga información sobre cómo asociar un recurso con una carpeta"].
 
 
 
@@ -72,8 +72,8 @@ Sistemas de almacenamiento:: Los sistemas de almacenamiento son los recursos pri
 Los sistemas de almacenamiento se asocian automáticamente al proyecto donde se añaden, pero puedes asociarlos a otros proyectos o carpetas desde la página *Resources*. No puedes asociar sistemas de almacenamiento FSx para NetApp ONTAP a proyectos o carpetas, pero puedes verlos en la página *Systems* o desde Workloads.
 
 --
-Suscripciones a Keystone:: Las suscripciones de Keystone también son recursos que puede asociar con proyectos para otorgar a los usuarios acceso a la suscripción en NetApp Console.
-Cargas de trabajo de Backup and Recovery (Oracle y Microsoft SQL Server):: Algunas cargas de trabajo de copia de seguridad y recuperación también se consideran recursos. Asigna una carga de trabajo de copia de seguridad y recuperación a un proyecto para conceder acceso a los usuarios.
+Suscripciones a Keystone:: Las suscripciones a Keystone también son recursos que puedes asociar con proyectos para conceder a los usuarios acceso a la suscripción en NetApp Console.
+Cargas de trabajo de Backup and Recovery (Oracle y Microsoft SQL Server):: Algunas cargas de trabajo de copia de seguridad y recuperación también se consideran recursos. Asigna una carga de trabajo de copia de seguridad y recuperación a un proyecto para dar acceso a los usuarios.
 
 
 [[associate-agents]]
@@ -104,9 +104,9 @@ Roles de acceso:: La consola proporciona roles de acceso que puedes asignar a lo
 --
 Cuando asocias un miembro con un rol, puedes conceder ese rol para toda la organización, una carpeta específica o un proyecto específico. El rol que selecciones le da a un miembro permiso para los recursos en la parte seleccionada de la jerarquía.
 
-NetApp Console proporciona funciones granulares que se adhieren a los principios de "mínimo privilegio", lo que significa que las funciones de acceso están diseñadas para dar a los usuarios acceso solo a lo que necesitan.
+NetApp Console proporciona funciones granulares que se adhieren al principio de "mínimo privilegio", lo que significa que los roles de acceso están diseñados para dar a los usuarios acceso solo a lo que necesitan.
 
-Los usuarios pueden tener varios roles a medida que sus funciones se amplían.
+Los usuarios pueden tener varias funciones a medida que se amplían sus obligaciones.
 
 link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso"] .
 
@@ -125,17 +125,17 @@ La estructura IAM adecuada depende del tamaño de tu organización y de cómo es
 
 Para las organizaciones con menos de 50 usuarios y administración de almacenamiento centralizada, considere un enfoque simplificado utilizando roles de superadministrador y supervisor.
 
-**Ejemplo: Corporación ABC (equipo de 5 personas)**
+*Ejemplo: ABC Corporation (equipo de 5 personas)*
 
-* **Estructura:** Organización única con 3 proyectos (Producción, Desarrollo, Respaldo)
-* **Roles:**
+* *Estructura:* Organización única con 3 proyectos (Producción, Desarrollo, Respaldo)
+* *Roles:*
 +
 ** 2 miembros senior: rol de *Superadministrador* para acceso administrativo completo
 ** 3 miembros del equipo: rol de *Supervisor* para monitoreo sin derechos de modificación
 
 
-* **Estrategia del agente:** Un solo agente asociado con todos los proyectos para acceso compartido a recursos
-* **Beneficios:** Administración simplificada, menor complejidad de roles, adecuado para equipos que requieren un amplio acceso
+* *Estrategia de agente:* Un único agente asociado a todos los proyectos para el acceso compartido a los recursos
+* *Ventajas:* Simplificación de la administración, reducción de la complejidad de las funciones, adecuado para equipos que requieren un amplio acceso
 
 
 
@@ -144,31 +144,31 @@ Para las organizaciones con menos de 50 usuarios y administración de almacenami
 
 Para organizaciones grandes con operaciones regionales y equipos especializados, implemente un enfoque jerárquico con carpetas que representen límites geográficos o de unidades de negocios.
 
-**Ejemplo: Corporación XYZ (empresa multinacional)**
+*Ejemplo: XYZ Corporation (empresa multinacional)*
 
-* **Estructura:** Organización > Carpetas regionales (Norteamérica, Europa, Asia-Pacífico) > Carpetas de proyectos por región
-* **Roles de plataforma:**
+* *Estructura:* Organización > Carpetas regionales (Norteamérica, Europa, Asia-Pacífico) > Carpetas de proyectos por región
+* *Funciones de la plataforma:*
 +
 ** 1 *Administrador de la organización*: Supervisión global y gestión de políticas
 ** 3 *Administradores de carpetas o proyectos*: Control regional (uno por región)
 ** 1 *Administrador de la federación*: Integración del proveedor de identidad corporativa
 
 
-* **Roles de almacenamiento por región:**
+* *Funciones de almacenamiento por región:*
 +
 ** 9 *Administrador de almacenamiento*: descubre y administra sistemas de almacenamiento en regiones asignadas
 ** 2 *Visor de almacenamiento*: Supervise los recursos de almacenamiento en todas las regiones
 ** 1 *Especialista en salud del sistema*: Administra la salud del almacenamiento sin modificaciones del sistema
 
 
-* **Roles de servicio de datos:**
+* *Funciones de servicio de datos:*
 +
 ** *Administrador de copias de seguridad y recuperación*: por proyecto, según las responsabilidades de copia de seguridad
 ** *Administrador de resiliencia ante ransomware*: Supervisión del equipo de seguridad en todos los proyectos
 
 
-* **Estrategia del agente:** Agentes regionales asociados a proyectos geográficos apropiados
-* **Beneficios:** Mayor seguridad mediante la segregación de roles, autonomía regional y cumplimiento de las regulaciones locales.
+* *Estrategia de agentes:* Agentes regionales asociados a proyectos geográficos adecuados
+* *Ventajas:* Mayor seguridad gracias a la segregación de roles, la autonomía regional y el cumplimiento de la normativa local
 
 
 
@@ -177,10 +177,10 @@ Para organizaciones grandes con operaciones regionales y equipos especializados,
 
 Para las organizaciones con equipos especializados que requieren acceso a servicios de datos específicos, utilice asignaciones de roles específicas según las responsabilidades funcionales.
 
-**Ejemplo: TechCorp (empresa tecnológica de tamaño mediano)**
+*Ejemplo: TechCorp (empresa tecnológica de tamaño medio)*
 
-* **Estructura:** Organización > Carpetas departamentales (TI, Seguridad, Desarrollo) > Recursos específicos del proyecto
-* **Roles especializados:**
+* *Estructura:* Organización > Carpetas de departamento (IT, Seguridad, Desarrollo) > Recursos específicos del proyecto
+* *Funciones especializadas:*
 +
 ** Equipo de seguridad: roles de *Administrador de resiliencia contra ransomware* y *Visor de clasificación*
 ** Equipo de respaldo: *Superadministrador de respaldo y recuperación* para operaciones de respaldo integrales
@@ -188,8 +188,8 @@ Para las organizaciones con equipos especializados que requieren acceso a servic
 ** Equipo de cumplimiento: *Analista de soporte operativo* para supervisar y respaldar la gestión de casos
 
 
-* **Estrategia del agente:** Agentes vinculados a proyectos departamentales según la propiedad de los recursos
-* **Beneficios:** Control de acceso personalizado, eficiencia operativa mejorada y responsabilidad clara por tareas especializadas
+* *Estrategia de agentes:* Agentes vinculados a proyectos departamentales en función de la propiedad de los recursos
+* *Ventajas:* Control de acceso a medida, mayor eficiencia operativa y responsabilidad clara en tareas especializadas
 
 
 
