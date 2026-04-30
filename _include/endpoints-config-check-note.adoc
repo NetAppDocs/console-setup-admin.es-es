@@ -4,7 +4,7 @@
 
 [IMPORTANT]
 ====
-* Para las nuevas implementaciones de agentes, NetApp verifica los siguientes puntos finales:link:reference-networking-saas-console.html["listado aquí"^] .  Esta comprobación de configuración falla con un error si está utilizando los puntos finales anteriores utilizados para las actualizaciones.link:reference-networking-saas-console-previous.html["listado aquí"] .  NetApp recomienda actualizar sus reglas de firewall para permitir el acceso a los puntos finales actuales y bloquear el acceso a los puntos finales anteriores lo antes posible.link:reference-networking-saas-console-previous.html#update-endpoint-list["Aprenda a actualizar su red"] .
+* Para las nuevas implantaciones de agentes, NetApp comprueba los siguientes puntos finales: link:reference-networking-saas-console.html["listado aquí"^]. Esta comprobación de configuración falla con un error si estás utilizando los puntos finales anteriores usados para las actualizaciones, link:reference-networking-saas-console-previous.html["listado aquí"]. NetApp recomienda actualizar las reglas de firewall para permitir el acceso a los puntos finales actuales y bloquear el acceso a los puntos finales anteriores lo antes posible. link:reference-networking-saas-console-previous.html#update-endpoint-list["Aprenda a actualizar su red"].
 * Si actualiza los puntos finales en su firewall, sus agentes existentes continuarán funcionando.
 
 

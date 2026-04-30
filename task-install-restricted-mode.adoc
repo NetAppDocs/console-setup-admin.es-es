@@ -48,7 +48,7 @@ link:task-prepare-restricted-mode.html#step-3-review-host-requirements["Requisit
 
 
 .Pasos
-. Ir a la https://aws.amazon.com/marketplace/pp/prodview-jbay5iyfmu6ui["Listado de agentes de la NetApp Console en AWS Marketplace"^]
+. Ve a https://aws.amazon.com/marketplace/pp/prodview-jbay5iyfmu6ui["Listado de agentes de la NetApp Console en AWS Marketplace"^].
 . En la página de Marketplace, seleccione *Continuar con la suscripción*.
 . Para suscribirse al software, seleccione *Aceptar términos*.
 +
@@ -217,7 +217,7 @@ Debes tener lo siguiente:
 * Privilegios de root para instalar el agente de consola.
 * Detalles sobre un servidor proxy, si se requiere un proxy para el acceso a Internet desde el agente de la consola.
 +
-Tiene la opción de configurar un servidor proxy después de la instalación, pero para hacerlo es necesario reiniciar el agente de la consola.
+Tienes la opción de configurar un servidor proxy después de la instalación, pero hacerlo requiere reiniciar el agente de la NetApp Console.
 
 * Un certificado firmado por una CA, si el servidor proxy usa HTTPS o si el proxy es un proxy interceptor.
 
@@ -245,9 +245,9 @@ Si no elimina estas variables del sistema, la instalación fallará.
 
 . Descargue el software del agente de consola y luego cópielo al host Linux.  Puede descargarlo desde la NetApp Console o desde el sitio de soporte de NetApp .
 +
-** NetApp Console: vaya a *Agentes > Administración > Implementar agente > Local > Instalación manual*.
+** NetApp Console: Ve a *Agentes > Gestión > Desplegar agente > On-prem > Instalación manual*.
 +
-Elija descargar los archivos de instalación del agente o una URL a los archivos.
+Elige descargar los archivos del instalador del agente o copiar una URL a los archivos.
 
 
 
@@ -256,7 +256,7 @@ Elija descargar los archivos de instalación del agente o una URL a los archivos
 NOTE: Descarga el instalador del agente "online" que está pensado para usar en tu red o en la cloud. Hay un instalador "offline" independiente para el agente de la Console, pero solo es compatible con implementaciones en modo privado.
 
 +
-** Sitio de soporte de NetApp (necesario si aún no tiene acceso a la consola) https://mysupport.netapp.com/site/products/all/details/netapp-console/downloads-tab["Sitio de soporte de NetApp"^] ,
+** NetApp Support Site (necesario si aún no tienes acceso a la consola) https://mysupport.netapp.com/site/products/all/details/netapp-console/downloads-tab["Sitio de soporte de NetApp"^].
 
 
 . Asignar permisos para ejecutar el script.
@@ -281,17 +281,17 @@ Tendrás que añadir información del proxy si tu red requiere un proxy para acc
 
 
 
-NOTE: Si quieres configurar un proxy transparente, puedes hacerlo después de la instalación. link:reference-agent-maint-console-proxy.html["Obtenga información sobre la consola de mantenimiento del agente."]
+NOTE: Si quieres configurar un proxy transparente, puedes hacerlo después de instalar un agente. link:reference-agent-maint-console-proxy.html["Obtenga información sobre la consola de mantenimiento del agente."].
 
 +
 
-A continuación se muestra un ejemplo de configuración de un servidor proxy explícito con un certificado firmado por una CA:
+He aquí un ejemplo de configuración de un servidor proxy explícito con un certificado firmado por una CA:
 
 +
 
 [source, cli]
 ----
-./NetApp_Console_Agent_Cloud_v4.0.0--proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
+./NetApp_Console_Agent_Cloud_v4.0.0 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
 ----
 +
 `--proxy` configura el agente de Console para usar un servidor proxy HTTP o HTTPS usando uno de los siguientes formatos:
@@ -414,7 +414,7 @@ Proporcione a la NetApp Console la clave de acceso de AWS para un usuario de IAM
 . Seleccione *Credenciales de la organización*.
 . Seleccione *Agregar credenciales* y siga los pasos del asistente.
 +
-.. *Ubicación de credenciales*: seleccione *Amazon Web Services > Agente.
+.. *Ubicación de credenciales*: seleccione *Amazon Web Services > Agente*.
 .. *Definir credenciales*: ingrese una clave de acceso de AWS y una clave secreta.
 .. *Suscripción al Marketplace*: asocie una suscripción al Marketplace con estas credenciales suscribiéndose ahora o seleccionando una suscripción existente.
 .. *Revisar*: Confirme los detalles sobre las nuevas credenciales y seleccione *Agregar*.

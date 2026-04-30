@@ -117,10 +117,10 @@ Aunque los puntos finales anteriores aún son compatibles, NetApp recomienda act
 --
 
 
-Puntos finales contactados desde la consola de NetApp:: A medida que usas la aplicación basada en web NetApp Console SaaS, esta contacta varios endpoints para completar tareas de gestión de datos. Esto incluye endpoints a los que se conecta para desplegar el agente de la Console desde la Console.
+Puntos finales contactados desde la consola de NetApp:: A medida que usas la aplicación SaaS NetApp Console basada en web, esta se pone en contacto con varios endpoints para completar tareas de gestión de datos. Esto incluye endpoints con los que se contacta para desplegar el agente de la Console desde la Console.
 +
 --
-link:reference-networking-saas-console.html["Ver la lista de puntos finales contactados desde la consola de NetApp"] .
+link:reference-networking-saas-console.html["Ver la lista de puntos finales contactados desde la NetApp Console"].
 
 --
 
@@ -136,7 +136,7 @@ Servidor proxy:: NetApp admite configuraciones de proxy explícitas y transparen
 --
 
 
-Puertos:: No hay tráfico entrante al agente de la consola, a menos que usted lo inicie o si se utiliza como proxy para enviar mensajes de AutoSupport desde Cloud Volumes ONTAP al soporte de NetApp .
+Puertos:: No hay tráfico entrante al agente de la Consola, a menos que tú lo inicies o se utilice como proxy para enviar mensajes de AutoSupport desde Cloud Volumes ONTAP a NetApp Support.
 +
 --
 * HTTP (80) y HTTPS (443) brindan acceso a la interfaz de usuario local, que utilizará en circunstancias excepcionales.
@@ -150,7 +150,7 @@ Si los sistemas Cloud Volumes ONTAP no tienen una conexión a Internet saliente 
 --
 
 
-Habilitar NTP:: Si planea utilizar NetApp Data Classification para escanear sus fuentes de datos corporativos, debe habilitar un servicio de Protocolo de tiempo de red (NTP) tanto en el agente de consola como en el sistema de NetApp Data Classification para que la hora se sincronice entre los sistemas. https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html["Obtenga más información sobre la clasificación de datos de NetApp"^]
+Habilitar NTP:: Si tienes pensado usar NetApp Data Classification para analizar tus fuentes de datos corporativas, deberías habilitar un servicio de Network Time Protocol (NTP) tanto en el agente de la Console como en el sistema NetApp Data Classification para que la hora esté sincronizada entre los sistemas. https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html["Más información sobre NetApp Data Classification"^].
 +
 --
 Debe implementar este requisito de red después de crear el agente de consola.
@@ -396,7 +396,7 @@ image:screenshot_azure_service_mgmt_apis_add.gif["Una captura de pantalla del po
 . En el servicio *Microsoft Entra ID*, seleccione *Registros de aplicaciones* y seleccione la aplicación.
 . Copie el *ID de la aplicación (cliente)* y el *ID del directorio (inquilino)*.
 +
-image:screenshot_azure_app_ids.gif["Una captura de pantalla que muestra el ID de la aplicación (cliente) y el ID del directorio (inquilino) de una aplicación en Microsoft Entra IDy."]
+image:screenshot_azure_app_ids.gif["Una captura de pantalla que muestra el ID de la aplicación (cliente) y el ID del directorio (tenant) para una aplicación en Microsoft Entra ID."]
 
 +
 Cuando agrega la cuenta de Azure a la consola, debe proporcionar el identificador de la aplicación (cliente) y el identificador del directorio (inquilino) para la aplicación.  La consola utiliza los ID para iniciar sesión mediante programación.
@@ -498,15 +498,15 @@ link:reference-ports-azure.html["Ver las reglas del grupo de seguridad para Azur
 
 
 
-. Revise sus selecciones para verificar que su configuración sea correcta.
+. Revisa tus selecciones para verificar que tu configuración es correcta.
 +
-.. La casilla de verificación *Validar configuración del agente* está marcada de forma predeterminada para que la consola valide los requisitos de conectividad de red cuando se implementa.  Si la consola no logra implementar el agente, proporciona un informe para ayudarlo a solucionar el problema.  Si la implementación se realiza correctamente, no se proporciona ningún informe.
+.. La casilla de comprobación *Validar configuración del agente* está seleccionada de forma predeterminada para que la Console valide los requisitos de conectividad de red cuando despliegas. Si la Console no puede desplegar el agente, te proporciona un informe para ayudarte a solucionar el problema. Si el despliegue se realiza correctamente, no se proporciona ningún informe.
 
 
 +
-[]
+[NOTE]
 ====
-** Si todavía estás usando ellink:reference-networking-saas-console-previous.html["puntos finales anteriores"] utilizado para actualizaciones de agente, la validación falla con un error.  Para evitar esto, desmarque la casilla de verificación para omitir la comprobación de validación.
+** Si todavía estás usando la link:reference-networking-saas-console-previous.html["puntos finales anteriores"] utilizada para las actualizaciones de agentes, la validación falla con un error. Para evitar esto, desmarca la casilla de comprobación para omitir la comprobación de validación.
 ** Durante la instalación, NetApp comprueba que el host del agente tenga al menos el 80 por ciento del espacio en disco total disponible, lo que incluye 48 GB en `/opt` y 32 GB en `/var` (80 GB en total). Después de la instalación, requiere que al menos el 20 por ciento del disco total permanezca disponible, lo que incluye 12 GB en `/opt` y 8 GB en `/var` (20 GB en total).
 
 

@@ -128,7 +128,7 @@ Servidor proxy:: NetApp admite configuraciones de proxy explícitas y transparen
 --
 
 
-Puertos:: No hay tráfico entrante al agente de la consola, a menos que usted lo inicie o si se utiliza como proxy para enviar mensajes de AutoSupport desde Cloud Volumes ONTAP al soporte de NetApp .
+Puertos:: No hay tráfico entrante al agente de la Consola, a menos que tú lo inicies o se utilice como proxy para enviar mensajes de AutoSupport desde Cloud Volumes ONTAP a NetApp Support.
 +
 --
 * HTTP (80) y HTTPS (443) brindan acceso a la interfaz de usuario local, que utilizará en circunstancias excepcionales.
@@ -142,7 +142,7 @@ Si los sistemas Cloud Volumes ONTAP no tienen una conexión a Internet saliente 
 --
 
 
-Habilitar NTP:: Si planea utilizar NetApp Data Classification para escanear sus fuentes de datos corporativos, debe habilitar un servicio de Protocolo de tiempo de red (NTP) tanto en el agente de consola como en el sistema de NetApp Data Classification para que la hora se sincronice entre los sistemas. https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html["Obtenga más información sobre la clasificación de datos de NetApp"^]
+Habilitar NTP:: Si tienes pensado usar NetApp Data Classification para analizar tus fuentes de datos corporativas, deberías habilitar un servicio de Network Time Protocol (NTP) tanto en el agente de la Console como en el sistema NetApp Data Classification para que la hora esté sincronizada entre los sistemas. https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html["Más información sobre NetApp Data Classification"^].
 +
 --
 Implemente este acceso a la red después de crear el agente de consola.
@@ -212,7 +212,7 @@ Debes tener lo siguiente:
 
 
 .Pasos
-. Ir a la https://aws.amazon.com/marketplace/pp/prodview-jbay5iyfmu6ui["Listado de agentes de la NetApp Console en AWS Marketplace"^]
+. Ve a https://aws.amazon.com/marketplace/pp/prodview-jbay5iyfmu6ui["Listado de agentes de la NetApp Console en AWS Marketplace"^].
 . En la página de Marketplace, seleccione *Continuar con la suscripción*.
 . Para suscribirse al software, seleccione *Aceptar términos*.
 +

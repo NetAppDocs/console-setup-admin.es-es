@@ -42,7 +42,7 @@ image:screenshot_gcp_associate.gif["Una captura de pantalla de un proyecto de Go
 NOTE: Antes de completar los siguientes pasos, asegúrese de tener privilegios de administrador de facturación en su cuenta de Google Cloud, así como un inicio de sesión en la NetApp Console .
 
 +
-.. Después de ser redirigido a la https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Página de NetApp Intelligent Services en Google Cloud Marketplace"^] , asegúrese de que el proyecto correcto esté seleccionado en el menú de navegación superior.
+.. Después de que te redirijan a https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Página de NetApp Intelligent Services en Google Cloud Marketplace"^], asegúrate de que el proyecto correcto esté seleccionado en el menú de navegación superior.
 +
 image:screenshot_gcp_cvo_marketplace.png["Una captura de pantalla de la página del mercado de Cloud Volumes ONTAP en Google Cloud."]
 
@@ -62,7 +62,7 @@ image:screenshot_gcp_marketplace_register.png["Una captura de pantalla de una ve
 .. Complete los pasos en la página *Asignación de suscripción*:
 +
 
-NOTE: Si alguien de su organización ya tiene una suscripción al mercado desde su cuenta de facturación, será redirigido a https://bluexp.netapp.com/ontap-cloud?x-gcp-marketplace-token=["la página Cloud Volumes ONTAP dentro de la NetApp Console"^] en cambio.  Si esto no es esperado, comuníquese con su equipo de ventas de NetApp .  Google solo permite una suscripción por cuenta de facturación de Google.
+NOTE: Si alguien de tu organización ya tiene una suscripción a Marketplace desde tu cuenta de facturación, entonces se te redirigirá a https://bluexp.netapp.com/ontap-cloud?x-gcp-marketplace-token=["la página Cloud Volumes ONTAP dentro de la NetApp Console"^] en su lugar. Si esto es inesperado, contacta a tu equipo de ventas de NetApp. Google permite solo una suscripción por cuenta de facturación de Google.
 
 +
 *** Seleccione la organización de la consola con la que desea asociar esta suscripción.

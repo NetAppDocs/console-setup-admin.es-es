@@ -15,7 +15,7 @@ El agente utiliza `/opt` Para instalar el `/opt/application/netapp` directorio y
 
 ** `/var`:Debe haber 40 GiB de espacio disponibles
 +
-El agente de consola requiere este espacio en `/var` porque Podman o Docker están diseñados para crear los contenedores dentro de este directorio.  En concreto, crearán contenedores en el `/var/lib/containers/storage` directorio y `/var/lib/docker` para Docker. Los montajes externos o enlaces simbólicos no funcionan para este espacio.
+El agente de la Consola requiere este espacio en `/var` porque Podman o Docker están diseñados para crear los contenedores dentro de este directorio. Específicamente, crearán contenedores en el directorio `/var/lib/containers/storage` y `/var/lib/docker` para Docker. Los montajes externos o symlinks no funcionan para este espacio.
 
 
 
@@ -115,7 +115,7 @@ Ubuntu
  a| 
 3.9.45 o posterior con la NetApp Console en modo estándar o modo restringido
  a| 
-Motor Docker 23.06 a 28.0.0.
+Motor Docker 23.0.6 a 28.0.0.
  a| 
 No compatible
 
@@ -220,7 +220,7 @@ El agente utiliza `/opt` Para instalar el `/opt/application/netapp` directorio y
 Espacio en disco en /var:: Deben estar disponibles 20 GiB de espacio
 +
 --
-El agente de consola requiere este espacio en `/var` porque Docker o Podman están diseñados para crear los contenedores dentro de este directorio.  En concreto, crearán contenedores en el `/var/lib/containers/storage` directorio.  Los montajes externos o enlaces simbólicos no funcionan para este espacio.
+El agente de la Consola requiere este espacio en `/var` porque Docker o Podman están diseñados para crear los contenedores dentro de este directorio. Específicamente, crearán contenedores en el directorio `/var/lib/containers/storage`. Los montajes externos o enlaces simbólicos no funcionan para este espacio.
 
 --
 

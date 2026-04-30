@@ -12,7 +12,7 @@ Debe seleccionar las credenciales que estén asociadas con un agente de consola.
 +
 image:screenshot_aws_configure_subscription.png["Una captura de pantalla del menú de acciones para un conjunto de credenciales existentes."]
 
-. Para asociar las credenciales con una suscripción existente, seleccione la suscripción de la lista desplegable y seleccione *Configurar*.
+. Para asociar las credenciales a una suscripción existente, selecciona la suscripción en la lista desplegable y selecciona *Configurar*.
 . Para asociar las credenciales con una nueva suscripción, seleccione *Agregar suscripción > Continuar* y siga los pasos en AWS Marketplace:
 +
 .. Seleccione *Ver opciones de compra*.

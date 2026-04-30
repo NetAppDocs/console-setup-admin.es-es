@@ -60,7 +60,7 @@ El agente utiliza `/opt` Para instalar el `/opt/application/netapp` directorio y
 
 ** `/var`:Debe haber 40 GiB de espacio disponibles
 +
-El agente de consola requiere este espacio en `/var` porque Podman o Docker están diseñados para crear los contenedores dentro de este directorio.  En concreto, crearán contenedores en el `/var/lib/containers/storage` directorio y `/var/lib/docker` para Docker. Los montajes externos o enlaces simbólicos no funcionan para este espacio.
+El agente de la Consola requiere este espacio en `/var` porque Podman o Docker están diseñados para crear los contenedores dentro de este directorio. Específicamente, crearán contenedores en el directorio `/var/lib/containers/storage` y `/var/lib/docker` para Docker. Los montajes externos o symlinks no funcionan para este espacio.
 
 
 
@@ -154,7 +154,7 @@ Ubuntu
  a| 
 3.9.45 o posterior con la NetApp Console en modo estándar o modo restringido
  a| 
-Motor Docker 23.06 a 28.0.0.
+Motor Docker 23.0.6 a 28.0.0.
  a| 
 No compatible
 
@@ -198,7 +198,7 @@ Siga estos pasos para instalar y configurar Podman:
 
 * Habilitar e iniciar el servicio podman.socket
 * Instalar Python3
-* Instalar el paquete podman-compose versión 1.0.6
+* Instala el paquete podman-compose (varía según la versión de Red Hat)
 * Agregue podman-compose a la variable de entorno PATH
 * Si usa Red Hat Enterprise Linux, verifique que su versión de Podman esté usando Netavark Aardvark DNS en lugar de CNI
 
@@ -529,7 +529,7 @@ Servidor proxy:: NetApp admite configuraciones de proxy explícitas y transparen
 --
 
 
-Puertos:: No hay tráfico entrante al agente de la consola, a menos que usted lo inicie o si se utiliza como proxy para enviar mensajes de AutoSupport desde Cloud Volumes ONTAP al soporte de NetApp .
+Puertos:: No hay tráfico entrante al agente de la Consola, a menos que tú lo inicies o se utilice como proxy para enviar mensajes de AutoSupport desde Cloud Volumes ONTAP a NetApp Support.
 +
 --
 * HTTP (80) y HTTPS (443) brindan acceso a la interfaz de usuario local, que utilizará en circunstancias excepcionales.
@@ -543,7 +543,7 @@ Si los sistemas Cloud Volumes ONTAP no tienen una conexión a Internet saliente 
 --
 
 
-Habilitar NTP:: Si planea utilizar NetApp Data Classification para escanear sus fuentes de datos corporativos, debe habilitar un servicio de Protocolo de tiempo de red (NTP) tanto en el agente de consola como en el sistema de NetApp Data Classification para que la hora se sincronice entre los sistemas. https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html["Obtenga más información sobre la clasificación de datos de NetApp"^]
+Habilitar NTP:: Si tienes pensado usar NetApp Data Classification para analizar tus fuentes de datos corporativas, deberías habilitar un servicio de Network Time Protocol (NTP) tanto en el agente de la Console como en el sistema NetApp Data Classification para que la hora esté sincronizada entre los sistemas. https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html["Más información sobre NetApp Data Classification"^].
 +
 --
 Si planea crear un agente de consola desde el mercado de su proveedor de nube, implemente este requisito de red después de crear el agente de consola.
@@ -796,7 +796,7 @@ image:screenshot_azure_service_mgmt_apis_add.gif["Una captura de pantalla del po
 . En el servicio *Microsoft Entra ID*, seleccione *Registros de aplicaciones* y seleccione la aplicación.
 . Copie el *ID de la aplicación (cliente)* y el *ID del directorio (inquilino)*.
 +
-image:screenshot_azure_app_ids.gif["Una captura de pantalla que muestra el ID de la aplicación (cliente) y el ID del directorio (inquilino) de una aplicación en Microsoft Entra IDy."]
+image:screenshot_azure_app_ids.gif["Una captura de pantalla que muestra el ID de la aplicación (cliente) y el ID del directorio (tenant) para una aplicación en Microsoft Entra ID."]
 
 +
 Cuando agrega la cuenta de Azure a la consola, debe proporcionar el identificador de la aplicación (cliente) y el identificador del directorio (inquilino) para la aplicación.  La consola utiliza los ID para iniciar sesión mediante programación.
@@ -848,7 +848,7 @@ https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-
 .. Desde el servicio IAM y administración, seleccione *Cuentas de servicio > Crear cuenta de servicio*.
 .. Ingrese los detalles de la cuenta de servicio y seleccione *Crear y continuar*.
 .. Seleccione el rol que acaba de crear.
-.. Complete los pasos restantes para crear el rol.
+.. Termina los pasos restantes para crear la cuenta de servicio.
 +
 https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_service_account["Documentación de Google Cloud: Creación de una cuenta de servicio"^]
 

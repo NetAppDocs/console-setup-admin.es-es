@@ -42,7 +42,7 @@ Puntos finales contactados durante la instalación manual:: Cuando instala manua
  a| 
 Para obtener imágenes, el instalador necesita acceso a uno de estos dos conjuntos de puntos finales.  ^1^ Se recomiendan los puntos finales enumerados en la opción 1 porque son más seguros.  Le recomendamos que configure su firewall para permitir los puntos finales enumerados en la opción 1 y deshabilitar los puntos finales enumerados en la opción 2.  Tenga en cuenta lo siguiente acerca de estos puntos finales:
 
-* Los puntos finales enumerados en la opción 1 son compatibles a partir de la versión 3.9.47 del agente de consola.  No hay compatibilidad con versiones anteriores del agente de consola.
+* Los puntos finales enumerados en la opción 1 son compatibles a partir de la versión 3.9.47 del agente de Console. No existe compatibilidad con versiones anteriores del agente de Console.
 * El agente de la consola se comunica primero con los puntos finales enumerados en la opción 2.  Si esos puntos finales no son accesibles, el agente de la consola se comunica automáticamente con los puntos finales enumerados en la opción 1.
 * Los puntos finales de la opción 1 no son compatibles si utiliza el agente de consola con NetApp Backup and Recovery o NetApp Ransomware Resilience.  En este caso, puede deshabilitar los puntos finales enumerados en la opción 1, mientras que permite los puntos finales enumerados en la opción 2.
 
@@ -111,14 +111,12 @@ Puntos finales contactados durante la instalación manual:: Cuando instala manua
  a| 
 Se recomiendan los puntos finales enumerados en la opción 1 porque son más seguros.  Le recomendamos que configure su firewall para permitir los puntos finales enumerados en la opción 1 y deshabilitar los puntos finales enumerados en la opción 2.  Tenga en cuenta lo siguiente acerca de estos puntos finales:
 
-* Los puntos finales enumerados en la opción 1 son compatibles a partir de la versión 3.9.47 del agente de consola.  No hay compatibilidad con versiones anteriores del agente de consola.
+* Los puntos finales enumerados en la opción 1 son compatibles a partir de la versión 3.9.47 del agente de Console. No existe compatibilidad con versiones anteriores del agente de Console.
 * El agente de la consola se comunica primero con los puntos finales enumerados en la opción 2.  Si esos puntos finales no son accesibles, el agente de la consola se comunica automáticamente con los puntos finales enumerados en la opción 1.
 * Los puntos finales de la opción 1 no son compatibles si utiliza el agente de consola con NetApp Backup and Recovery o NetApp Ransomware Resilience.  En este caso, puede deshabilitar los puntos finales enumerados en la opción 1, mientras que permite los puntos finales enumerados en la opción 2.
 
 
 |===
-+
-
-Se recomiendan los puntos finales enumerados en la opción 1 porque son más seguros.  Le recomendamos que configure su firewall para permitir los puntos finales enumerados en la opción 1 y deshabilitar los puntos finales enumerados en la opción 2.  Tenga en cuenta lo siguiente acerca de estos puntos finales: ** Los puntos finales enumerados en la opción 1 son compatibles a partir de la versión 3.9.47 del agente de consola.  No hay compatibilidad con versiones anteriores del agente de consola.  ** El agente de la consola se comunica primero con los puntos finales enumerados en la opción 2.  Si esos puntos finales no son accesibles, el agente de la consola se comunica automáticamente con los puntos finales enumerados en la opción 1.  ** Los puntos finales de la opción 1 no son compatibles si utiliza el agente de consola con NetApp Backup and Recovery o NetApp Ransomware Resilience.  En este caso, puede deshabilitar los puntos finales enumerados en la opción 1, mientras que permite los puntos finales enumerados en la opción 2.
+Se recomiendan los puntos finales enumerados en la opción 1 porque son más seguros. Te recomendamos que configures tu firewall para permitir los puntos finales enumerados en la opción 1, mientras que no permites los puntos finales enumerados en la opción 2. Ten en cuenta lo siguiente sobre estos puntos finales: ** Los puntos finales enumerados en la opción 1 son compatibles a partir de la versión 3.9.47 del agente de la Consola. No hay compatibilidad con versiones anteriores del agente de la Consola. ** El agente de la Consola contacta primero los puntos finales enumerados en la opción 2. Si esos puntos finales no están accesibles, el agente de la Consola contacta automáticamente los puntos finales enumerados en la opción 1. ** Los puntos finales de la opción 1 no son compatibles si usas el agente de la Consola con NetApp Backup and Recovery o NetApp Ransomware Resilience. En este caso, puedes no permitir los puntos finales enumerados en la opción 1, mientras permites los puntos finales enumerados en la opción 2.
 
 Es posible que el host intente actualizar los paquetes del sistema operativo durante la instalación.  El host puede ponerse en contacto con diferentes sitios de duplicación para estos paquetes de SO.

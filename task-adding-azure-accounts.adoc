@@ -239,7 +239,7 @@ Cuando agrega la cuenta de Azure a la consola, debe proporcionar el identificado
 . En el servicio *Microsoft Entra ID*, seleccione *Registros de aplicaciones* y seleccione la aplicación.
 . Copie el *ID de la aplicación (cliente)* y el *ID del directorio (inquilino)*.
 +
-image:screenshot_azure_app_ids.gif["Una captura de pantalla que muestra el ID de la aplicación (cliente) y el ID del directorio (inquilino) de una aplicación en Microsoft Entra IDy."]
+image:screenshot_azure_app_ids.gif["Una captura de pantalla que muestra el ID de la aplicación (cliente) y el ID del directorio (tenant) para una aplicación en Microsoft Entra ID."]
 
 +
 Cuando agrega la cuenta de Azure a la consola, debe proporcionar el identificador de la aplicación (cliente) y el identificador del directorio (inquilino) para la aplicación.  La consola utiliza los ID para iniciar sesión mediante programación.
@@ -329,7 +329,7 @@ Al reemplazar la suscripción actual del mercado, se actualiza para los sistemas
 +
 Debe seleccionar las credenciales que estén asociadas con un agente de consola.  No se puede asociar una suscripción de Marketplace con credenciales asociadas con la NetApp Console.
 
-. Para asociar las credenciales con una suscripción existente, seleccione la suscripción de la lista desplegable y seleccione *Configurar*.
+. Para asociar las credenciales a una suscripción existente, selecciona la suscripción en la lista desplegable y selecciona *Configurar*.
 . Para asociar las credenciales con una nueva suscripción, seleccione *Agregar suscripción > Continuar* y siga los pasos en Azure Marketplace:
 +
 .. Si se le solicita, inicie sesión en su cuenta de Azure.

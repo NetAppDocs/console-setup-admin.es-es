@@ -56,9 +56,9 @@ Acceso a Internet de salida:: La ubicación de red donde implementa el agente de
 Puntos finales contactados desde computadoras al usar la NetApp Console basada en web::
 +
 --
-Las computadoras que acceden a la consola desde un navegador web deben tener la capacidad de comunicarse con varios puntos finales.  Necesitará usar la consola para configurar el agente de la consola y para el uso diario de la consola.
+Los ordenadores que acceden a la Console desde un navegador web deben tener la capacidad de ponerse en contacto con varios puntos finales.
 
-link:reference-networking-saas-console.html["Preparar la red para la consola de NetApp"] .
+link:reference-networking-saas-console.html["Prepara la red para la NetApp Console"].
 
 --
 
@@ -196,7 +196,7 @@ Servidor proxy:: NetApp admite configuraciones de proxy explícitas y transparen
 --
 
 
-Puertos:: No hay tráfico entrante al agente de la consola, a menos que usted lo inicie o si se utiliza como proxy para enviar mensajes de AutoSupport desde Cloud Volumes ONTAP al soporte de NetApp .
+Puertos:: No hay tráfico entrante al agente de la Consola, a menos que tú lo inicies o se utilice como proxy para enviar mensajes de AutoSupport desde Cloud Volumes ONTAP a NetApp Support.
 +
 --
 * HTTP (80) y HTTPS (443) brindan acceso a la interfaz de usuario local, que utilizará en circunstancias excepcionales.
@@ -210,7 +210,7 @@ Si los sistemas Cloud Volumes ONTAP no tienen una conexión a Internet saliente 
 --
 
 
-Habilitar NTP:: Si planea utilizar NetApp Data Classification para escanear sus fuentes de datos corporativos, debe habilitar un servicio de Protocolo de tiempo de red (NTP) tanto en el agente de consola como en el sistema de NetApp Data Classification para que la hora se sincronice entre los sistemas. https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html["Obtenga más información sobre la clasificación de datos de NetApp"^]
+Habilitar NTP:: Si tienes pensado usar NetApp Data Classification para analizar tus fuentes de datos corporativas, deberías habilitar un servicio de Network Time Protocol (NTP) tanto en el agente de la Console como en el sistema NetApp Data Classification para que la hora esté sincronizada entre los sistemas. https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html["Más información sobre NetApp Data Classification"^].
 
 
 
@@ -384,7 +384,7 @@ image:screenshot_azure_service_mgmt_apis_add.gif["Una captura de pantalla del po
 . En el servicio *Microsoft Entra ID*, seleccione *Registros de aplicaciones* y seleccione la aplicación.
 . Copie el *ID de la aplicación (cliente)* y el *ID del directorio (inquilino)*.
 +
-image:screenshot_azure_app_ids.gif["Una captura de pantalla que muestra el ID de la aplicación (cliente) y el ID del directorio (inquilino) de una aplicación en Microsoft Entra IDy."]
+image:screenshot_azure_app_ids.gif["Una captura de pantalla que muestra el ID de la aplicación (cliente) y el ID del directorio (tenant) para una aplicación en Microsoft Entra ID."]
 
 +
 Cuando agrega la cuenta de Azure a la consola, debe proporcionar el identificador de la aplicación (cliente) y el identificador del directorio (inquilino) para la aplicación.  La consola utiliza los ID para iniciar sesión mediante programación.
@@ -492,7 +492,7 @@ NOTE: Si la implementación falla, puede acceder al informe de validación y a l
 
 == Registrar el agente de consola con NetApp Console
 
-Inicie sesión en la consola y asocie el agente de la consola con su organización.  La forma de iniciar sesión depende del modo en que esté utilizando la Consola.  Si está utilizando la consola en modo estándar, inicie sesión a través del sitio web de SaaS.  Si está utilizando la consola en modo restringido o privado, inicie sesión localmente desde el host del agente de la consola.
+Inicia sesión en la Console y asocia el Console agent con tu organización. Cómo inicias sesión depende del modo en que estés usando la Console. Si estás usando la Console en modo estándar, inicias sesión a través del sitio web SaaS. Si estás usando la Console en modo restringido o privado, inicias sesión localmente desde el host del Console agent.
 
 .Pasos
 . Abra un navegador web e ingrese la URL del host del agente de la consola:
@@ -531,7 +531,7 @@ Si acaba de crear estas credenciales de AWS, es posible que tarden unos minutos 
 . Seleccione *Credenciales de la organización*.
 . Seleccione *Agregar credenciales* y siga los pasos del asistente.
 +
-.. *Ubicación de credenciales*: seleccione *Amazon Web Services > Agente.
+.. *Ubicación de credenciales*: seleccione *Amazon Web Services > Agente*.
 .. *Definir credenciales*: ingrese una clave de acceso de AWS y una clave secreta.
 .. *Suscripción al Marketplace*: asocie una suscripción al Marketplace con estas credenciales suscribiéndose ahora o seleccionando una suscripción existente.
 .. *Revisar*: Confirme los detalles sobre las nuevas credenciales y seleccione *Agregar*.
@@ -545,7 +545,7 @@ Ya puedes ir a la https://console.netapp.com["NetApp Console"^] para comenzar a 
 .Azur
 --
 .Antes de empezar
-Si acaba de crear estas credenciales de Azure, es posible que tarden unos minutos en estar disponibles.  Espere unos minutos antes de agregar las credenciales del agente de consola.
+Si acabas de crear estas credenciales de Azure, pueden tardar unos minutos en estar disponibles. Espera unos minutos antes de agregar las credenciales al agente de la NetApp Console.
 
 .Pasos
 . Seleccione *Administración > Credenciales*.

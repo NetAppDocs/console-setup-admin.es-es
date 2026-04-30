@@ -65,7 +65,7 @@ Por ejemplo, si tuviera dos proyectos y quisiera que el mismo usuario tuviera el
 +
 La lista *Miembro* muestra los miembros que la organización asociada ha agregado a la asociación.
 
-. Seleccione el menú de accionesimage:icon-action.png["un icono con tres puntos verticales"] junto al miembro al que desea asignar un rol y seleccione *Agregar un rol*.
+. Selecciona el menú de acciones image:icon-action.png["un icono con tres puntos verticales"] junto al miembro al que quieres asignar un rol y selecciona *Agregar un rol*.
 . Para agregar un rol, complete los pasos en el cuadro de diálogo:
 +
 ** *Seleccione una organización, carpeta o proyecto*: elija el nivel de su jerarquía de recursos para el cual el miembro debe tener permisos.
@@ -99,7 +99,7 @@ La lista *Miembro* muestra los miembros que la organización asociada ha agregad
 . Puede cambiar un rol existente de un miembro o eliminar un rol.
 +
 .. Para cambiar el rol de un miembro, seleccione *Cambiar* junto al rol que desea cambiar.  Sólo puedes cambiar un rol a un rol dentro de la misma categoría de rol.  Por ejemplo, puede cambiar de un rol de servicio de datos a otro.  Confirmar el cambio.
-.. Para desasignar el rol de un miembro, seleccione image:icon-delete.png["Un icono que se parece a un bote de basura"] junto al rol para eliminar el rol respectivo del miembro.. Se le pedirá que confirme la eliminación.
+.. Para desasignar la función de un miembro, selecciona image:icon-delete.png["Un icono que se parece a un bote de basura"] junto a la función para eliminar la función correspondiente del miembro. Se te pedirá que confirmes la eliminación.
 
 
 

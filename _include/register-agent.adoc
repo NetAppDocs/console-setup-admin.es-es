@@ -2,7 +2,7 @@
 :allow-uri-read: 
 
 
-Inicie sesión en la consola y asocie el agente de la consola con su organización.  La forma de iniciar sesión depende del modo en que esté utilizando la Consola.  Si está utilizando la consola en modo estándar, inicie sesión a través del sitio web de SaaS.  Si está utilizando la consola en modo restringido o privado, inicie sesión localmente desde el host del agente de la consola.
+Inicia sesión en la Console y asocia el Console agent con tu organización. Cómo inicias sesión depende del modo en que estés usando la Console. Si estás usando la Console en modo estándar, inicias sesión a través del sitio web SaaS. Si estás usando la Console en modo restringido o privado, inicias sesión localmente desde el host del Console agent.
 
 .Pasos
 . Abra un navegador web e ingrese la URL del host del agente de la consola:

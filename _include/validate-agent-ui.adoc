@@ -13,6 +13,5 @@ NOTE: Si la consola implementa correctamente el agente, no genera un informe y a
 +
 Debes comenzar todo el proceso nuevamente si deseas intentar implementar el agente nuevamente.
 
+. Acceda al informe y a los registros desde el host del agente de la consola
 
-
-Acceda al informe y a los registros desde el host del agente de la consola

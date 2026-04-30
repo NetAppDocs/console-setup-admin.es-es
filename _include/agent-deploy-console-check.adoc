@@ -2,15 +2,15 @@
 :allow-uri-read: 
 
 
-. Revise sus selecciones para verificar que su configuración sea correcta.
+. Revisa tus selecciones para verificar que tu configuración es correcta.
 +
-.. La casilla de verificación *Validar configuración del agente* está marcada de forma predeterminada para que la consola valide los requisitos de conectividad de red cuando se implementa.  Si la consola no logra implementar el agente, proporciona un informe para ayudarlo a solucionar el problema.  Si la implementación se realiza correctamente, no se proporciona ningún informe.
+.. La casilla de comprobación *Validar configuración del agente* está seleccionada de forma predeterminada para que la Console valide los requisitos de conectividad de red cuando despliegas. Si la Console no puede desplegar el agente, te proporciona un informe para ayudarte a solucionar el problema. Si el despliegue se realiza correctamente, no se proporciona ningún informe.
 
 
 +
-[]
+[NOTE]
 ====
-** Si todavía estás usando ellink:reference-networking-saas-console-previous.html["puntos finales anteriores"] utilizado para actualizaciones de agente, la validación falla con un error.  Para evitar esto, desmarque la casilla de verificación para omitir la comprobación de validación.
+** Si todavía estás usando la link:reference-networking-saas-console-previous.html["puntos finales anteriores"] utilizada para las actualizaciones de agentes, la validación falla con un error. Para evitar esto, desmarca la casilla de comprobación para omitir la comprobación de validación.
 ** Durante la instalación, NetApp comprueba que el host del agente tenga al menos el 80 por ciento del espacio en disco total disponible, lo que incluye 48 GB en `/opt` y 32 GB en `/var` (80 GB en total). Después de la instalación, requiere que al menos el 20 por ciento del disco total permanezca disponible, lo que incluye 12 GB en `/opt` y 8 GB en `/var` (20 GB en total).
 
 

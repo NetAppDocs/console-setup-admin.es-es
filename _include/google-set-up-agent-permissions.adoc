@@ -17,8 +17,10 @@ Es su responsabilidad actualizar la función personalizada a medida que se agreg
 El siguiente ejemplo crea un rol llamado "agente" a nivel de proyecto:
 
 +
-`gcloud iam roles create connector --project=myproject --file=agent.yaml`
-
+[source, shell]
+----
+gcloud iam roles create agent --project=myproject --file=agent.yaml
+----
 +
 https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Documentación de Google Cloud: Creación y administración de roles personalizados"^]
 
@@ -29,13 +31,13 @@ https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-
 .. Desde el servicio IAM y administración, seleccione *Cuentas de servicio > Crear cuenta de servicio*.
 .. Ingrese los detalles de la cuenta de servicio y seleccione *Crear y continuar*.
 .. Seleccione el rol que acaba de crear.
-.. Complete los pasos restantes para crear el rol.
+.. Termina los pasos restantes para crear la cuenta de servicio.
 +
 https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_service_account["Documentación de Google Cloud: Creación de una cuenta de servicio"^]
 
 
 
-. Si planea implementar sistemas Cloud Volumes ONTAP en proyectos diferentes al proyecto donde reside el agente de la consola, deberá proporcionar a la cuenta de servicio del agente de la consola acceso a esos proyectos.
+. Si planeas desplegar sistemas Cloud Volumes ONTAP en proyectos distintos al proyecto donde reside el agente de la Console, entonces tendrás que proporcionar a la cuenta de servicio del agente de la Console acceso a esos proyectos.
 +
 Por ejemplo, supongamos que el agente de consola está en el proyecto 1 y desea crear sistemas Cloud Volumes ONTAP en el proyecto 2.  Necesitará otorgar acceso a la cuenta de servicio en el proyecto 2.
 
