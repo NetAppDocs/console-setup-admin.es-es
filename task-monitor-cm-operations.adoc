@@ -154,7 +154,7 @@ Todos los demás usuarios y destinatarios están configurados para no recibir ni
 Debe tener el rol de administrador de la organización para personalizar la configuración de notificaciones.
 
 .Pasos
-. Seleccione *Administración > Configuración de notificaciones*.
+. Selecciona *Administración > Configuración de notificaciones*.
 . Seleccione *Usuarios de la organización* o *Destinatarios adicionales*.
 +
 La página *Destinatarios adicionales* le permite configurar la Consola para notificar a las personas que son miembros de su organización de la Consola.

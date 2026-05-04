@@ -28,7 +28,7 @@ Una suscripción al mercado permite cobrar por los siguientes servicios de datos
 La NetApp Data Classification se habilita a través de su suscripción, pero no hay ningún cargo por utilizar la clasificación.
 
 .Antes de empezar
-Debe haber implementado previamente un agente de consola para poder suscribirse a los servicios de datos.  Debe asociar una suscripción de mercado a las credenciales de la nube conectadas a un agente de consola.
+Ya debes haber desplegado un agente de la NetApp Console para suscribirte a los servicios de datos. Necesitas asociar una suscripción de marketplace a las credenciales de la nube conectadas a un agente de la NetApp Console.
 
 [role="tabbed-block"]
 ====

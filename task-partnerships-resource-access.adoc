@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-partnerships-resource-access.html 
-keywords: role-based access, partnership access, partner resources, resource access, grant acces, provide partner access, partnership organization 
+keywords: role-based access, partnership access, partner resources, resource access, grant access, provide partner access, partnership organization 
 summary: Puede otorgar acceso a los usuarios asociados asignándoles roles específicos para carpetas y proyectos dentro de su organización. 
 ---
 = Proporcionar acceso a recursos a los usuarios asociados
@@ -27,7 +27,7 @@ Una organización asociada primero debe agregar miembros a la asociación antes 
 
 Puede administrar los roles de los miembros de las organizaciones asociadas de la misma manera que lo hace con los suyos propios.  Sin embargo, no todos los roles están disponibles para los usuarios asociados.  En particular, no puede otorgar a los usuarios socios un rol que permita actualizaciones de software.  La actualización del software ONTAP generalmente requiere acceso directo a la red.
 
-Puede asignar los siguientes roles a los usuarios socios:
+Puedes asignar las siguientes funciones a los usuarios asociados:
 
 * link:reference-iam-platform-roles.html#organization-admin-roles["Administrador de la organización"]
 * link:reference-iam-platform-roles.html#organization-admin-roles["Administrador de carpetas o proyectos"]
@@ -61,7 +61,7 @@ Por ejemplo, si tuviera dos proyectos y quisiera que el mismo usuario tuviera el
 . Seleccione *Administración > Identidad y acceso*.
 . Seleccione *Asociaciones*.
 . Seleccione la pestaña *Asociación iniciada*.
-. Seleccione el menú de accionesimage:icon-action.png["un icono con tres puntos verticales"] junto a la asociación establecida que desea ver, seleccione *Ver detalles*.
+. Selecciona el menú de acciones image:icon-action.png["un icono con tres puntos verticales"] junto a la asociación establecida que quieres ver y selecciona *Ver detalles*.
 +
 La lista *Miembro* muestra los miembros que la organización asociada ha agregado a la asociación.
 
@@ -90,7 +90,7 @@ Puede cambiar o eliminar un rol que haya asignado a un miembro de una organizaci
 . Seleccione *Administración > Identidad y acceso*.
 . Seleccione *Asociaciones*.
 . Seleccione la pestaña *Asociación iniciada*.
-. Seleccione el menú de accionesimage:icon-action.png["un icono con tres puntos verticales"] junto a la asociación establecida que desea ver, seleccione *Ver detalles*.
+. Selecciona el menú de acciones image:icon-action.png["un icono con tres puntos verticales"] junto a la asociación establecida que quieres ver y selecciona *Ver detalles*.
 +
 La lista *Miembro* muestra los miembros que la organización asociada ha agregado a la asociación.
 

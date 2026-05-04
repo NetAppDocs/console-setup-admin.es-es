@@ -756,7 +756,7 @@ El agente realiza las siguientes solicitudes de API para implementar y administr
 | Cifrar cuentas de almacenamiento durante la creación | Microsoft.ManagedIdentity/userAssignedIdentities/asignar/acción | Sí | Sí | No 
 
 
-.3+| Utilice conjuntos de escala de máquinas virtuales en el modo de orquestación flexible para especificar zonas específicas para Cloud Volumes ONTAP | Microsoft.Compute/virtualMachineScaleSets/write | Sí | No | No 
+.3+| Usa Virtual Machine Scale Sets en el modo de orquestación flexible para especificar zonas concretas para Cloud Volumes ONTAP | Microsoft.Compute/virtualMachineScaleSets/write | Sí | No | No 
 
 
 | Microsoft.Compute/virtualMachineScaleSets/lectura | Sí | No | No 

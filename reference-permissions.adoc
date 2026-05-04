@@ -160,7 +160,7 @@ Al usar NetApp Backup and Recovery para realizar copias de seguridad de Cloud Vo
 |===
 
 
-=== Copia y sincronización de NetApp
+=== NetApp Copy and Sync
 
 [cols="20,60,20"]
 |===

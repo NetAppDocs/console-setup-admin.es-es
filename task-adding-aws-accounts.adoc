@@ -14,7 +14,7 @@ summary: Agregue y administre las credenciales de AWS para que la NetApp Console
 
 
 [role="lead"]
-Agregue y administre las credenciales de AWS para poder implementar y administrar recursos de la nube en sus cuentas de AWS desde la NetApp Console.  Si administra varias suscripciones de AWS Marketplace, puede asignar a cada una de ellas diferentes credenciales de AWS desde la página Credenciales.
+Agrega y administra credenciales de AWS para que puedas implementar y gestionar recursos en la nube en tus cuentas de AWS desde la NetApp Console. Si gestionas varias suscripciones de AWS Marketplace, puedes asignar cada una de ellas a diferentes credenciales de AWS desde la página Credentials.
 
 
 
@@ -99,7 +99,7 @@ La cuenta tiene los permisos requeridos. <<add-the-credentials,Ahora puedes agre
 
 ==== Otorgar permisos proporcionando claves de AWS
 
-Si desea proporcionar a la consola claves de AWS para un usuario de IAM, deberá otorgarle los permisos necesarios a ese usuario.  La política de IAM de la consola define las acciones y los recursos de AWS que la consola puede utilizar.
+Si quieres proporcionar a la consola claves de AWS para un usuario de IAM, entonces necesitas conceder los permisos necesarios a ese usuario. La política de IAM de la consola define las acciones y recursos de AWS que la consola puede usar.
 
 Debe utilizar este método de autenticación si hay un agente de consola instalado localmente.  No puedes utilizar un rol IAM.
 
@@ -189,7 +189,7 @@ Por ejemplo, la política debería verse así:
 }
 ----
 +
-Referirse a link:https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies-cross-account-resource-access.html["Documentación de AWS Identity and Access Management (IAM)"^] para obtener más información sobre el acceso a recursos entre cuentas en IAM.
+Consulta link:https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies-cross-account-resource-access.html["Documentación de AWS Identity and Access Management (IAM)"^] para más información sobre el acceso a recursos entre cuentas en IAM.
 
 ** Cree una política que incluya los permisos necesarios para crear un agente de consola.
 +
@@ -212,7 +212,7 @@ El rol IAM ahora tiene los permisos necesarios. <<add-the-credentials,Ahora pued
 Después de proporcionar al rol IAM los permisos necesarios, agregue el ARN del rol a la consola.
 
 .Antes de empezar
-Si acaba de crear el rol de IAM, es posible que pasen algunos minutos hasta que esté disponible para su uso.  Espere unos minutos antes de agregar las credenciales a la consola.
+Si acabas de crear el rol IAM, pueden pasar unos minutos hasta que esté disponible para su uso. Espera unos minutos antes de agregar las credenciales a la NetApp Console.
 
 .Pasos
 . Seleccione *Administración > Credenciales*.
@@ -232,7 +232,7 @@ image:screenshot-settings-icon-organization.png["Una captura de pantalla que mue
 
 == Agregar credenciales a la consola para Amazon FSx para ONTAP
 
-Para obtener más detalles, consulte la https://docs.netapp.com/us-en/storage-management-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["La documentación de la consola para Amazon FSx para ONTAP"^]
+Para más información, consulta el https://docs.netapp.com/us-en/storage-management-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["Documentación de la consola para Amazon FSx para ONTAP"^]
 
 
 
@@ -292,7 +292,7 @@ Para todas las demás organizaciones o cuentas, deberá asociar manualmente la s
 
 == Asociar una suscripción existente con su organización
 
-Cuando se suscribe desde AWS Marketplace, el último paso del proceso es asociar la suscripción con su organización. Si no completó este paso, no podrá utilizar la suscripción con su organización.
+Cuando te suscribes desde AWS Marketplace, el último paso del proceso es asociar la suscripción con tu organización. Si no completaste este paso, entonces no puedes usar la suscripción con tu organización.
 
 * link:concept-modes.html["Obtenga más información sobre los modos de implementación de la consola"]
 * link:concept-identity-and-access-management.html["Obtenga más información sobre la gestión de identidad y acceso de la consola"]

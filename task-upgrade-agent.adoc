@@ -20,7 +20,7 @@ El agente de Consola se actualiza automáticamente cuando tiene conectividad sal
 
 == Actualizar el agente de la consola
 
-El agente de la consola debe reiniciarse durante el proceso de actualización, por lo que la NetApp Console no ​​estará disponible durante la actualización.
+El agente de la Consola debe reiniciarse durante el proceso de actualización, por lo que la Consola NetApp no estará disponible durante la actualización.
 
 .Pasos
 . Descargue el software del agente de consola desde https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["Sitio de soporte de NetApp"^] .

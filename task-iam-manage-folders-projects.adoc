@@ -16,7 +16,7 @@ summary: Agregue carpetas y proyectos para que coincidan con la estructura de su
 [role="lead"]
 Agregue carpetas y proyectos para que coincidan con la estructura de su negocio. Después de crear carpetas y proyectos, puede asociar recursos a ellos y administrar el acceso de los miembros a esos proyectos.
 
-La consola crea automáticamente un proyecto para usted cuando crea una nueva organización. La mayoría de las organizaciones necesitan más de un proyecto, así como carpetas para mantener las cosas organizadas. link:concept-identity-and-access-management.html["Obtenga información sobre la jerarquía de recursos en la NetApp Console"].
+La NetApp Console crea automáticamente un proyecto para ti cuando creas una nueva organización. La mayoría de las organizaciones necesitan más de un proyecto, así como carpetas para mantener todo organizado. link:concept-identity-and-access-management.html["Obtenga información sobre la jerarquía de recursos en la NetApp Console"].
 
 
 
@@ -35,7 +35,7 @@ Las carpetas también le permiten administrar el acceso de los miembros de maner
 
 NOTE: Las carpetas son una herramienta organizativa y no son visibles para los miembros que no tienen permisos de IAM, como el administrador de la organización, el administrador de la carpeta o del proyecto o los roles de superadministrador. Los miembros acceden a los proyectos, no a las carpetas.
 
-Los administradores de la organización pueden delegar responsabilidades administrativas mediante la creación de carpetas. Después de crear una carpeta, un administrador de la organización puede asignar a un miembro los roles de administrador de carpeta o proyecto para carpetas específicas. Estos miembros pueden luego administrar todos los proyectos dentro de esa carpeta sin tener acceso a toda la organización.
+Los administradores de la organización pueden delegar responsabilidades administrativas mediante la creación de carpetas. Después de crear una carpeta, un administrador de la organización puede asignar a un miembro la función de administrador de carpetas o de proyectos para carpetas concretas. Estos miembros pueden entonces gestionar todos los proyectos dentro de esa carpeta sin tener acceso a toda la organización.
 
 Las carpetas pueden tener otras carpetas o proyectos como hijos, pero no pueden tener recursos directamente asociados a ellas. Los recursos deben estar asociados a un proyecto.
 
@@ -194,7 +194,7 @@ image:screenshot-iam-member-access.png["Una captura de pantalla de la página Ed
 
 Modificar el acceso de los miembros para controlar el acceso a los recursos. Recuerde que los roles asignados a nivel de carpeta son heredados por todos los proyectos y carpetas secundarios.
 
-No se puede cambiar el acceso de los miembros en niveles inferiores si se hereda del nivel de carpeta o de organización. Cambiar el permiso del miembro en el nivel de jerarquía superior para cambiar el acceso. Alternativamente, puede link:task-iam-manage-roles.html#manage-permissions["Administrar permisos desde la página Miembros"].
+No puedes cambiar el acceso de los miembros en los niveles inferiores si se hereda del nivel de carpeta u organización. Cambia el permiso del miembro en el nivel jerárquico superior para cambiar el acceso. O también puedes link:task-iam-manage-roles.html#manage-permissions["Administrar permisos desde la página Miembros"].
 
 .Pasos
 . Desde la página *Organización*, navegue hasta un proyecto o carpeta en la tabla, seleccioneimage:icon-action.png["Un icono que consta de tres puntos uno al lado del otro."] y luego seleccione *Editar carpeta* o *Editar proyecto*.

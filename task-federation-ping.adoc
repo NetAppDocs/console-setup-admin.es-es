@@ -17,14 +17,14 @@ summary: 'Fedérese con su proveedor de IdP de PingFederate para habilitar el in
 Fedérese con su proveedor de IdP de PingFederate para habilitar el inicio de sesión único (SSO) para la NetApp Console.  Esto permite a los usuarios iniciar sesión utilizando sus credenciales corporativas.
 
 .Roles requeridos
-El rol de administrador de la federación es necesario para crear y administrar federaciones.  El espectador de la Federación puede ver la página de la Federación.link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso."]
+El rol de administrador de la Federación es necesario para crear y gestionar federaciones. El visor de la Federación puede ver la página de la Federación. link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso."]
 
 
 NOTE: Puede federarse con su IdP corporativo o con el sitio de soporte de NetApp .  NetApp recomienda elegir uno u otro, pero no ambos.
 
 NetApp solo admite el inicio de sesión único (SSO) iniciado por el proveedor de servicios (SP).  Primero debe configurar el proveedor de identidad para confiar en NetApp como proveedor de servicios.  Luego, puede crear una conexión en la consola que utilice la configuración del proveedor de identidad.
 
-Puede configurar una conexión federada con PingFederate para habilitar el inicio de sesión único (SSO) para la consola.  El proceso implica configurar su servidor PingFederate para que confíe en la consola como proveedor de servicios y luego crear la conexión en la consola.
+Puedes configurar una conexión federada con PingFederate para habilitar el inicio de sesión único (SSO) para la Console. El proceso implica configurar tu servidor PingFederate para que confíe en la Console como proveedor de servicios y luego crear la conexión en la Console.
 
 .Antes de empezar
 * Se requiere una cuenta IdP con privilegios administrativos.  Coordínese con el administrador de su IdP para completar los pasos.
@@ -51,7 +51,7 @@ Puede configurar una conexión federada con PingFederate para habilitar el inici
 +
 *** Para la *URL de respuesta* o la *URL del servicio de consumidor de afirmaciones (ACS)*, utilice `https://netapp-cloud-account.auth0.com/login/callback`
 *** Para la *URL de cierre de sesión*, utilice `https://netapp-cloud-account.auth0.com/logout`
-*** Para *ID de audiencia/entidad*, utilice `urn:auth0:netapp-cloud-account:<fed-domain-name-saml>` donde <fed-domain-name-pingfederate> es el nombre de dominio de la federación.  Por ejemplo, si su dominio es `example.com` , el ID de audiencia/entidad sería `urn:auth0:netappcloud-account:fed-example-com-pingfederate` .
+*** Para *ID de público/entidad*, usa `urn:auth0:netapp-cloud-account:<fed-domain-name-pingfederate>` donde <fed-domain-name-pingfederate> es el nombre de dominio de la federación. Por ejemplo, si tu dominio es `example.com`, el ID de público/entidad sería `urn:auth0:netapp-cloud-account:fed-example-com-pingfederate`.
 
 
 .. Copie la URL del servidor PingFederate.  Necesitará esta URL al crear la conexión en la consola.
@@ -59,7 +59,7 @@ Puede configurar una conexión federada con PingFederate para habilitar el inici
 
 
 . Regrese a la consola y seleccione *Siguiente* para crear la conexión.
-. Crea la conexión con PingFederate
+. Crea la conexión con PingFederate.
 +
 .. Ingrese la URL del servidor PingFederate que copió en el paso anterior.
 .. Cargue el certificado de firma X.509.  El certificado debe estar en formato PEM, CER o CRT.

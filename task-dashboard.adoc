@@ -39,7 +39,7 @@ Cada panel de la página de inicio requiere diferentes roles de usuario:
 
 Si no tiene permisos para acceder a un panel, éste mostrará un mensaje indicando que no tiene permisos para usarlo.
 
-https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso a la NetApp Console ."] .
+link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso a la NetApp Console"].
 
 .Pasos
 . Desde el menú de la NetApp Console , seleccione *Inicio*.

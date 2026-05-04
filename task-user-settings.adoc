@@ -93,8 +93,6 @@ Solo puedes usar los códigos de recuperación una vez.  Si usas o pierdes el tu
 
 == Eliminar su configuración de MFA
 
-Cuando haya terminado, cierre la sesión de la consola o mueva el control deslizante hacia atrás para regresar al modo de solo lectura. El sistema elimina sus permisos elevados cuando su sesión expira.
-
 
 NOTE: Si no puede acceder a su aplicación de autenticación o código de recuperación, deberá comunicarse con el administrador de su organización para restablecer su configuración de MFA.
 

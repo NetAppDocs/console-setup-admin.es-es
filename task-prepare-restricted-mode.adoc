@@ -625,7 +625,7 @@ Para las regiones estándar, los permisos se distribuyen en dos políticas.  Se 
 --
 Cree un rol personalizado de Azure con los permisos necesarios.  Asignarás esta función a la máquina virtual del agente de consola.
 
-Tenga en cuenta que puede crear un rol personalizado de Azure mediante el portal de Azure, Azure PowerShell, la CLI de Azure o la API REST.  Los siguientes pasos muestran cómo crear el rol mediante la CLI de Azure.  Si prefiere utilizar un método diferente, consulte https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Documentación de Azure"^]
+Ten en cuenta que puedes crear un rol personalizado de Azure usando el portal de Azure, Azure PowerShell, Azure CLI o API de REST. Los siguientes pasos muestran cómo crear el rol usando Azure CLI. Si prefieres usar un método diferente, consulta https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Documentación de Azure"^].
 
 .Pasos
 . Si planea instalar manualmente el software en su propio host, habilite una identidad administrada asignada por el sistema en la máquina virtual para poder proporcionar los permisos de Azure necesarios a través de un rol personalizado.

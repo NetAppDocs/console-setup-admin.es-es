@@ -51,7 +51,7 @@ Puede asociar varias cuentas NSS a su organización; sin embargo, no puede tener
 NOTE: NetApp utiliza Microsoft Entra ID como proveedor de identidad para servicios de autenticación específicos de soporte y licencias.
 
 .Pasos
-. En *Administración > Soporte*.
+. Selecciona *Administración > Soporte*.
 . Seleccione *Administración NSS*.
 . Seleccione *Agregar cuenta NSS*.
 . Seleccione *Continuar* para ser redirigido a una página de inicio de sesión de Microsoft.
@@ -65,7 +65,7 @@ Esta es una identificación generada por el sistema que se asigna a su correo el
 +
 ** Si alguna vez necesita actualizar sus tokens de credenciales de inicio de sesión, también hay una opción *Actualizar credenciales* en elimage:https://raw.githubusercontent.com/NetAppDocs/console-family/main/media/icon-nss-menu.png["Un icono de tres puntos horizontales"] menú.
 +
-Al utilizar esta opción se le solicitará que inicie sesión nuevamente.  Tenga en cuenta que el token de estas cuentas caduca después de 90 días.  Se publicará una notificación para avisarle de esto.
+Si usas esta opción, se te pedirá que vuelvas a iniciar sesión. Ten en cuenta que el token de estas cuentas caduca después de 90 días. Se publicará una notificación para avisarte de esto.
 
 
 
@@ -95,7 +95,7 @@ Las credenciales vencidas pueden afectar lo siguiente, pero no se limitan a:
 Además, puede actualizar las credenciales NSS asociadas con su organización si desea cambiar la cuenta NSS asociada con su organización.  Por ejemplo, si la persona asociada a su cuenta NSS ha abandonado su empresa.
 
 .Pasos
-. En *Administración > Soporte*.
+. Selecciona *Administración > Soporte*.
 . Seleccione *Administración NSS*.
 . Para la cuenta NSS que desea actualizar, seleccioneimage:icon-action.png["Un icono que consta de tres puntos uno al lado del otro."] y luego seleccione *Actualizar credenciales*.
 . Cuando se le solicite, seleccione *Continuar* para ser redirigido a una página de inicio de sesión de Microsoft.
@@ -114,7 +114,7 @@ Si su organización tiene varias cuentas de sitio de soporte de NetApp , puede c
 Primero debes haber asociado la cuenta con la Consola.
 
 .Pasos
-. En *Administración > Soporte*.
+. Selecciona *Administración > Soporte*.
 . Seleccione *Administración NSS*.
 . Complete los siguientes pasos para cambiar la cuenta NSS:
 +
@@ -139,7 +139,7 @@ Por seguridad, la dirección de correo electrónico asociada a una cuenta NSS no
 TIP: Cuando accede a la página de administración de NSS, la consola genera un token para cada cuenta en la tabla.  Ese token incluye información sobre la dirección de correo electrónico asociada.  El token se elimina cuando abandonas la página.  La información nunca se almacena en caché, lo que ayuda a proteger su privacidad.
 
 .Pasos
-. En *Administración > Soporte*.
+. Selecciona *Administración > Soporte*.
 . Seleccione *Administración NSS*.
 . Para la cuenta NSS que desea actualizar, seleccioneimage:icon-action.png["Un icono que consta de tres puntos uno al lado del otro."] y luego seleccione *Mostrar dirección de correo electrónico*.  Puede utilizar el botón Copiar para copiar la dirección de correo electrónico.
 
@@ -153,7 +153,7 @@ Elimina cualquiera de las cuentas NSS que ya no quieras utilizar con la consola.
 No se puede eliminar una cuenta que esté actualmente asociada a un sistema Cloud Volumes ONTAP .  Primero necesitas<<attach-system-nss-account,Adjuntar esos sistemas a una cuenta NSS diferente>> .
 
 .Pasos
-. En *Administración > Soporte*.
+. Selecciona *Administración > Soporte*.
 . Seleccione *Administración NSS*.
 . Para la cuenta NSS que desea eliminar, seleccioneimage:icon-action.png["Un icono que consta de tres puntos uno al lado del otro."] y luego seleccione *Eliminar*.
 . Seleccione *Eliminar* para confirmar.

@@ -17,15 +17,15 @@ summary: Puedes agregar usuarios a una asociación agregándolos a la organizaci
 Puedes agregar usuarios a una asociación agregándolos a la organización asociada.  Después de agregar usuarios, la organización asociada es responsable de asignarles roles para recursos específicos en su organización.
 
 .Roles requeridos
-El rol de *Administrador de asociación* es necesario para crear y gestionar asociaciones.  El *visor de asociaciones* puede ver la página de Asociaciones.link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso."]
+El rol *Partnership admin* es necesario para crear y gestionar asociaciones. El rol *Partnership viewer* puede ver la página de Asociaciones. link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso."]
 
-Puedes eliminar usuarios de una asociación en cualquier momento.  Eliminar a un usuario de una asociación revoca inmediatamente su acceso a cualquier recurso en la organización asociada.
+Puedes eliminar usuarios de una asociación en cualquier momento. Eliminar a un usuario de una asociación revoca inmediatamente su acceso a cualquier recurso de la organización asociada.
 
 
 
 == Agregar miembros a una asociación
 
-Cuando agrega miembros a una asociación, el *administrador de la asociación* de la organización asociada debe asignarles roles para recursos específicos en su organización antes de que puedan acceder a esos recursos.
+Cuando añades miembros a una asociación, el *administrador de la asociación* de la organización asociada debe asignarles roles para determinados recursos de su organización antes de que puedan acceder a esos recursos.
 
 Después de agregar miembros a una asociación, los miembros se muestran como miembros en la organización asociada, donde el socio puede asignarlos a los recursos.
 
@@ -33,15 +33,15 @@ Después de agregar miembros a una asociación, los miembros se muestran como mi
 . Seleccione *Administración > Identidad y acceso*.
 . Seleccione *Asociaciones*.
 . Seleccione la pestaña *Asociación recibida*.
-. Seleccione el menú de accionesimage:icon-action.png["un icono con tres puntos verticales"] junto a la asociación establecida a la que desea agregar miembros, seleccione *Agregar miembros*.
-. Elija uno o más miembros para agregarlos a la asociación y seleccione *Agregar*.
+. Selecciona el menú de acciones image:icon-action.png["un icono con tres puntos verticales"] junto a la asociación establecida a la que quieres añadir miembros y selecciona *Añadir miembros*.
+. Elige uno o más miembros para añadir a la asociación y selecciona *Añadir*.
 
 
 
 
 == Eliminar miembros de una asociación
 
-Puedes eliminar miembros de una asociación en cualquier momento.  Eliminar a un usuario de una asociación revoca inmediatamente su acceso a cualquier recurso en la organización asociada.
+Puedes eliminar miembros de una asociación en cualquier momento. Eliminar a un usuario de una asociación revoca inmediatamente su acceso a cualquier recurso de la organización asociada.
 
 Si desea ajustar el rol que tiene un miembro o los recursos a los que puede acceder, el administrador de la asociación de la organización asociada debe realizar esos cambios.
 
@@ -49,7 +49,7 @@ Si desea ajustar el rol que tiene un miembro o los recursos a los que puede acce
 . Seleccione *Administración > Identidad y acceso*.
 . Seleccione *Asociaciones*.
 . Seleccione la pestaña *Asociación recibida*.
-. Seleccione el menú de accionesimage:icon-action.png["un icono con tres puntos verticales"] junto al miembro que desea eliminar y seleccione *Eliminar asociación*.
+. Selecciona el menú de acciones image:icon-action.png["un icono con tres puntos verticales"] junto al miembro que quieres quitar y selecciona *Eliminar asociación*.
 . Confirme la acción seleccionando *Eliminar* en el cuadro de diálogo.
 
 

@@ -30,7 +30,7 @@ NOTE: Despliega un agente de Console en la misma región de Azure que los sistem
 
 == Paso 1: Configurar la red
 
-Asegúrese de que la ubicación de red donde planea instalar el agente de consola admita los siguientes requisitos. Estos requisitos permiten que el agente de consola administre recursos en su nube híbrida.
+Asegúrate de que la ubicación de red donde planeas instalar el agente de la NetApp Console cumple con los siguientes requisitos. Estos requisitos permiten que el agente de la NetApp Console gestione los recursos en tu nube híbrida.
 
 Región de Azure:: Si usa Cloud Volumes ONTAP, el agente de la consola debe implementarse en la misma región de Azure que los sistemas Cloud Volumes ONTAP que administra, o en la https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Par de regiones de Azure"^] para los sistemas Cloud Volumes ONTAP .  Este requisito garantiza que se utilice una conexión de Azure Private Link entre Cloud Volumes ONTAP y sus cuentas de almacenamiento asociadas.
 +
@@ -417,7 +417,7 @@ Tenga en cuenta lo siguiente al configurar la máquina virtual:
 +
 link:reference-ports-azure.html["Ver las reglas del grupo de seguridad para Azure"] .
 
-** Identidad*: En *Administración*, seleccione *Habilitar identidad administrada asignada por el sistema*.
+** *Identidad*: En *Administración*, seleccione *Habilitar identidad administrada asignada por el sistema*.
 +
 Esta configuración es importante porque una identidad administrada permite que la máquina virtual del agente de consola se identifique con Microsoft Entra ID sin proporcionar ninguna credencial. https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["Obtenga más información sobre las identidades administradas para los recursos de Azure"^] .
 
@@ -449,7 +449,7 @@ Mantenga el modo restringido deshabilitado para utilizar la consola en modo est�
 
 
 .Resultado
-Ahora ha instalado el agente de la consola y lo ha configurado con su organización de la consola.
+Ya has instalado el agente de Console y lo has configurado con tu organización de Console.
 
 Si tiene Azure Blob Storage en la misma suscripción de Azure donde creó el agente de consola, verá aparecer automáticamente un sistema de Azure Blob Storage en la página *Sistemas*. https://docs.netapp.com/us-en/bluexp-blob-storage/index.html["Aprenda a administrar Azure Blob Storage desde la consola"^]
 

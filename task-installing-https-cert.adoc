@@ -90,7 +90,7 @@ Debe renovar el certificado HTTPS del agente antes de que caduque para garantiza
 . Seleccione *Administración > Agentes*.
 . En la página *Descripción general*, seleccione el menú de acciones para un agente de consola y seleccione *Configuración HTTPS*.
 +
-Se muestran detalles sobre el certificado, incluida la fecha de vencimiento.
+Detalles sobre la visualización del certificado, incluida la fecha de caducidad.
 
 . Seleccione *Cambiar certificado* y siga los pasos para generar un CSR o instalar su propio certificado firmado por CA.
 

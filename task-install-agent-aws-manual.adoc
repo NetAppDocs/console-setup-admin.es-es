@@ -498,7 +498,7 @@ Siga los pasos para preparar los permisos para la consola.
 .. Seleccione *JSON* y copie y pegue el contenido dellink:reference-permissions-aws.html["Política de IAM para el agente de consola"] .
 .. Complete los pasos restantes para crear la política.
 +
-Según los servicios de datos de NetApp que planee utilizar, es posible que deba crear una segunda política.  Para las regiones estándar, los permisos se distribuyen en dos políticas.  Se requieren dos políticas debido a un límite máximo de tamaño de caracteres para las políticas administradas en AWS. link:reference-permissions-aws.html["Obtenga más información sobre las políticas de IAM para el agente de consola"] .
+En función de los servicios de datos de NetApp que planeas usar, puede que necesites crear una segunda política. Para las regiones estándar, los permisos se reparten en dos políticas. Se necesitan dos políticas debido a un límite de tamaño máximo de caracteres para las políticas administradas en AWS. link:reference-permissions-aws.html["Obtenga más información sobre las políticas de IAM para el agente de consola"].
 
 
 
@@ -695,7 +695,7 @@ Debes mantener el modo restringido deshabilitado porque estos pasos describen c�
 
 
 
-Si tiene depósitos de Amazon S3 en la misma cuenta de AWS donde creó el agente de consola, verá aparecer automáticamente un sistema de almacenamiento de Amazon S3 en la página *Sistemas*. https://docs.netapp.com/us-en/storage-management-s3-storage/index.html["Aprenda a administrar los buckets S3 desde NetApp ConsoleP"^]
+Si tienes buckets de Amazon S3 en la misma cuenta de AWS donde creaste el agente de la Console, verás que aparece automáticamente un sistema de almacenamiento de Amazon S3 en la página *Systems*. https://docs.netapp.com/us-en/storage-management-s3-storage/index.html["Aprenda a administrar los buckets S3 desde la NetApp Console"^]
 
 
 

@@ -66,7 +66,7 @@ El grupo de seguridad predefinido para el agente incluye las siguientes reglas d
 
 === Reglas de salida avanzadas
 
-Si necesita reglas rígidas para el tráfico saliente, puede usar la siguiente información para abrir solo aquellos puertos que el agente requiere para la comunicación saliente.
+Si necesita reglas rígidas para el tráfico saliente, puede utilizar la siguiente información para abrir solo aquellos puertos que el agente requiere para la comunicación saliente.
 
 
 NOTE: La dirección IP de origen es el host del agente.
@@ -85,5 +85,5 @@ NOTE: La dirección IP de origen es el host del agente.
 | TCP | 8080 | Clasificación de datos | Sonda a la instancia de clasificación de datos durante la implementación 
 
 
-| DNS | UDP | 53 | DNS | Utilizado para la resolución de DNS por la consola 
+| DNS | UDP | 53 | DNS | Utilizado para la resolución de DNS por la NetApp Console 
 |===

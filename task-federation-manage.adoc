@@ -14,10 +14,10 @@ summary: Después de agregar una conexión federada, puede administrarla en la N
 
 
 [role="lead"]
-Puede administrar su federación en la NetApp Console.  Puede desactivarlo, actualizar credenciales vencidas, así como desactivarlo si ya no lo necesita.
+Puedes gestionar tu federación en la NetApp Console. Puedes desactivarla, actualizar las credenciales caducadas o eliminarla si ya no la necesitas.
 
 .Roles requeridos
-El rol de administrador de la federación es necesario para crear y administrar federaciones.  El espectador de la Federación puede ver la página de la Federación.link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso."]
+El rol de administrador de la Federación es necesario para crear y gestionar federaciones. El visor de la Federación puede ver la página de la Federación. link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso."]
 
 También puede agregar un dominio verificado adicional a una federación existente, lo que le permite utilizar múltiples dominios para su conexión federada.
 
@@ -82,7 +82,7 @@ Pruebe la conexión de una federación existente para verificar que funciona.  E
 .Pasos
 . Seleccione *Administración > Identidad y acceso*.
 . Seleccione la pestaña *Federación*.
-. Seleccione el menú de accionesimage:button_3_vert_dots.png["un icono con tres puntos verticales"] junto a la federación a la que desea agregar un dominio verificado y seleccione *Probar conexión*.
+. Selecciona el menú de acciones image:button_3_vert_dots.png["un icono con tres puntos verticales"] junto a la federación que quieres probar y selecciona *Probar conexión*.
 . Seleccione *Prueba*.  El sistema le solicita que inicie sesión con sus credenciales corporativas.  Si la conexión es exitosa, será redirigido a la NetApp Console.  Si falla la conexión, verá un mensaje de error que indica el problema con la federación.
 . Seleccione *Listo* para regresar a la pestaña *Federación*.
 
@@ -98,7 +98,7 @@ Deshabilite una federación antes de eliminarla, como por ejemplo al desmantelar
 .Pasos
 . Seleccione *Administración > Identidad y acceso*.
 . Seleccione la pestaña *Federación*.
-. Seleccione el menú de accionesimage:button_3_vert_dots.png["un icono con tres puntos verticales"] junto a la federación a la que desea agregar un dominio verificado y seleccione *Deshabilitar*.
+. Selecciona el menú de acciones image:button_3_vert_dots.png["un icono con tres puntos verticales"] junto a la federación que quieres desactivar y selecciona *Desactivar*.
 
 
 
@@ -113,7 +113,7 @@ No es posible recuperar una federación después de eliminarla.  Debes crear una
 IMPORTANT: Debes deshabilitar una federación antes de poder eliminarla.  No es posible recuperar una federación después de eliminarla.
 
 .Pasos
-. Seleccione *Administración > Identidad y acceso* .
+. Seleccione *Administración > Identidad y acceso*.
 . Seleccione *Federaciones* para ver la página *Federaciones*.
-. Seleccione el menú de accionesimage:button_3_vert_dots.png["un icono con tres puntos verticales"] junto a la federación a la que desea agregar un dominio verificado y seleccione *Eliminar*.
+. Selecciona el menú de acciones image:button_3_vert_dots.png["un icono con tres puntos verticales"] junto a la federación que quieres eliminar y selecciona *Eliminar*.
 

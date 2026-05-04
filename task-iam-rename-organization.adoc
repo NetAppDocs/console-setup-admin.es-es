@@ -8,9 +8,10 @@ summary: Si es necesario, puede cambiar el nombre de su organización de la NetA
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
-:icons: font
+:icons: 
 :linkattrs: 
 :imagesdir: ./media/
+:icontype: fontapp
 
 
 [role="lead"]
@@ -20,14 +21,14 @@ Su organización de la NetApp Console tiene un nombre y un ID.  Puede elegir un 
 
 == Cambie el nombre de su organización
 
-Puede cambiar el nombre de su organización.  Esto es útil si apoyas a más de una organización.
+Puedes cambiar el nombre de tu organización. Esto es útil si das soporte a más de una organización.
 
 .Pasos
 . Seleccione *Administración > Identidad y acceso*.
 . Seleccione *Organización*.
 . Desde la página *Organización*, navegue hasta la primera fila de la tabla, seleccioneimage:icon-action.png["Un icono que consta de tres puntos uno al lado del otro."] y luego seleccione *Editar organización*.
 +
-image:screenshot-iam-edit-organization.png["Una captura de pantalla de la página Descripción general que muestra el ícono de acciones y la opción Editar organización."]
+image:screenshot-iam-edit-organization.png["Una captura de pantalla de la página Organization que muestra el icono de acciones y la opción Edit organization."]
 
 . Ingrese un nuevo nombre para la organización y seleccione *Aplicar*.
 

@@ -35,9 +35,6 @@ image:screenshot-iam-switch-organizations.png["Una captura de pantalla del banne
 La pestaña *Asociación* no se muestra si no tienes ninguna organización asociada.
 
 . Seleccione otra organización y luego seleccione *Cambiar*.
-+
-Si tiene alguna organización asociada, seleccione la pestaña *Asociación* para ver las organizaciones asociadas disponibles.
-
 
 
 

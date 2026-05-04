@@ -21,7 +21,7 @@ Después de que te registres, el administrador de la organización de Console de
 .Pasos
 . Ve a la URL de la consola NetApp. La URL depende de qué modo de la consola esté usando tu organización:
 +
-** *Modo estándar*: Abre un navegador web y ve a la https://console.netapp.com["NetApp Console"]
+** *Modo estándar*: Abre un navegador web y ve a la https://console.netapp.com["NetApp Console"^].
 ** **Modo restringido o modo privado**: abre un navegador web y ve a la dirección IP donde está instalado el agente de la NetApp Console.
 
 

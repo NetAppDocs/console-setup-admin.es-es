@@ -17,7 +17,7 @@ summary: Administre los miembros de su organización para otorgar permisos en di
 Proteja el acceso de los usuarios a su organización de NetApp Console administrando la configuración de seguridad de los miembros. Puede restablecer las contraseñas de usuario, administrar la autenticación multifactor (MFA) y recrear las credenciales de la cuenta de servicio.
 
 .Roles de acceso requeridos
-Superadministrador, administrador de la organización o administrador de carpeta o proyecto (para carpetas y proyectos que administra). Enlace:reference-iam-predefined-roles.html[Obtenga información sobre los roles de acceso].
+Superadministrador, administrador de la organización o administrador de carpeta o proyecto (para carpetas y proyectos que administra). link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso"].
 
 
 
@@ -60,7 +60,7 @@ La tabla *Miembros* enumera los miembros de su organización.
 
 == Recrear las credenciales para una cuenta de servicio
 
-Puede crear nuevas credenciales para un servicio si las pierde o necesita actualizarlas.
+Puedes crear nuevas credenciales para una cuenta de servicio si las pierdes o necesitas actualizarlas.
 
 Al crear nuevas credenciales se eliminan las antiguas. No puedes utilizar las credenciales antiguas.
 

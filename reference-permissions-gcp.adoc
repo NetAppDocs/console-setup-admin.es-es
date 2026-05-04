@@ -605,7 +605,7 @@ El agente de la consola usa los permisos en la función personalizada para admin
 | logging.privateLogEntries.list | Sí | Sí | No 
 
 
-| registro.logEntries.create .2+| Cree y enrute archivos de registro para monitoreo, depuración y auditoría. | Sí | Sí | No 
+| registro.logEntries.create .2+| Crea y enruta entradas de registro para supervisión, depuración y auditoría. | Sí | Sí | No 
 
 
 | registro.logEntries.route | Sí | Sí | No 

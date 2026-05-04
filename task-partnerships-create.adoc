@@ -19,7 +19,7 @@ Cree asociaciones para establecer conexiones seguras y administradas entre su or
 Las asociaciones le permiten administrar de forma segura los recursos de NetApp a través de los límites con relaciones basadas en roles en la consola.  La organización iniciadora concede acceso a sus recursos, mientras que la organización receptora proporciona los usuarios o las cuentas de servicio a los que se les concederá acceso.  Las asociaciones se establecen a través de un flujo de trabajo de autoservicio, que brinda a la organización iniciadora control total sobre qué recursos se comparten, qué roles se asignan y la capacidad de incorporar, administrar o revocar el acceso de los socios según sea necesario.
 
 .Roles requeridos
-El rol de *Administrador de asociación* es necesario para crear y gestionar asociaciones.  El *visor de asociaciones* puede ver la página de Asociaciones.link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso."]
+El rol *Partnership admin* es necesario para crear y gestionar asociaciones. El rol *Partnership viewer* puede ver la página de Asociaciones. link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso."]
 
 
 
@@ -51,7 +51,7 @@ Una solicitud de asociación entre una organización y otra debe ser aceptada po
 . Seleccione la pestaña *Asociación recibida*.
 . Navegue hasta la asociación recibida que desea aprobar y seleccioneimage:icon-action.png["Un icono que consta de tres puntos uno al lado del otro."] y luego seleccione *Aprobar*.
 . Revise los detalles de la asociación, incluido el nombre y el ID de la organización que solicitó la asociación y seleccione *Siguiente*.
-. Opcional, agregue miembros de la organización a la asociación y seleccione *Aplicar*.
+. Opcionalmente, añade miembros de la organización a la asociación y selecciona *Apply*.
 +
 Puede agregar miembros adicionales a través de la página *Asociación* en cualquier momento.
 
@@ -62,7 +62,7 @@ NOTE: Cualquier miembro que agregue se volverá visible en la organización del 
 
 
 .Resultado
-La asociación que usted aprobó ahora muestra un estado de *Establecido*.  Los usuarios con roles de *Administrador de asociación* o *Visor de asociación* en cualquiera de las organizaciones pueden ver la asociación.
+La asociación que aprobaste ahora muestra el estado *Established*. Los usuarios con los roles *Partnership admin* o *Partnership viewer* en cualquiera de las dos organizaciones pueden ver la asociación.
 
 
 
@@ -75,8 +75,8 @@ Administrador de asociaciones, visor de asociaciones.link:reference-iam-predefin
 
 .Pasos
 . Seleccione *Administración > Identidad y acceso*.
-. Seleccione las *Asociaciones*.
-. Seleccione la pestaña *Asociaciones iniciadas* o *Asociaciones recibidas*.
+. Seleccione la pestaña *Asociaciones*.
+. Selecciona la pestaña *Asociaciones iniciadas* o la pestaña *Asociaciones recibidas*.
 . Revise la tabla respectiva que muestra las asociaciones y sus estados.
 
 
@@ -91,8 +91,8 @@ Administrador de asociación.link:reference-iam-predefined-roles.html["Obtenga m
 
 .Pasos
 . Seleccione *Administración > Identidad y acceso*.
-. Seleccione las *Asociaciones*.
-. Seleccione la pestaña *Asociaciones iniciadas*.
+. Seleccione la pestaña *Asociaciones*.
+. Selecciona la pestaña *Alianzas iniciadas*.
 . Revise la tabla respectiva que muestra las asociaciones y sus estados.
 . Navegue hasta la asociación iniciada que desea deshabilitar y seleccioneimage:icon-action.png["Un icono que consta de tres puntos uno al lado del otro."] y luego seleccione *Deshabilitar*.
 

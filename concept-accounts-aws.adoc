@@ -20,9 +20,9 @@ Usted administra las credenciales de AWS y las suscripciones al marketplace dire
 
 == Credenciales iniciales de AWS
 
-Cuando implementa un agente de consola desde la consola, debe proporcionar el ARN de un rol de IAM o claves de acceso para un usuario de IAM. El método de autenticación debe tener permisos para implementar el agente de la consola en AWS.  Los permisos necesarios se enumeran en ellink:task-install-agent-aws-console.html#aws-permissions-agent["Política de despliegue de agentes para AWS"] .
+Cuando implementas un agente de Console desde la Console, necesitas proporcionar el ARN de un rol de IAM o las claves de acceso de un usuario de IAM. El método de autenticación debe tener permisos para implementar el agente de Console en AWS. Los permisos necesarios se enumeran en el link:task-install-agent-aws-console.html#aws-permissions-agent["Política de despliegue de agentes para AWS"].
 
-Cuando la consola inicia el agente de consola en AWS, crea una función de IAM y un perfil para el agente. También adjunta una política que proporciona al agente de la consola permisos para administrar recursos y procesos dentro de esa cuenta de AWS. link:reference-permissions-aws.html["Revisar cómo el Agente utiliza los permisos"].
+Cuando la Console lanza el Console agent en AWS, crea un rol IAM y un perfil para el agente. También adjunta una política que proporciona al Console agent permisos para administrar recursos y procesos dentro de esa cuenta de AWS. link:reference-permissions-aws.html["Revisa cómo utiliza el agente los permisos"].
 
 image:diagram_permissions_initial_aws.png["Una imagen conceptual que muestra la consola implementando el agente de consola en una cuenta de AWS."]
 
@@ -30,7 +30,7 @@ Si agrega un nuevo sistema Cloud Volumes ONTAP , la consola selecciona estas cre
 
 image:screenshot_accounts_select_aws.gif["Una captura de pantalla que muestra la opción Cambiar cuenta en la página Detalles y credenciales."]
 
-Implemente todos sus sistemas Cloud Volumes ONTAP utilizando las credenciales iniciales de AWS o puede agregar credenciales adicionales.
+Puedes implementar todos tus sistemas Cloud Volumes ONTAP utilizando las credenciales iniciales de AWS o puedes añadir credenciales adicionales.
 
 
 
@@ -131,7 +131,7 @@ No, no es posible mover los recursos de AWS asociados con su sistema Cloud Volum
 
 === ¿Cómo funcionan las credenciales para las implementaciones del mercado y las implementaciones locales?
 
-Las secciones anteriores describen el método de implementación recomendado para el agente de la consola, que es desde la consola. También puede implementar un agente en AWS desde AWS Marketplace y puede instalar manualmente el software del agente de consola en su propio host Linux o en su VCenter.
+Las secciones anteriores describen el método de implementación recomendado para el agente de la consola, que es desde la consola. También puedes implementar un agente en AWS desde AWS Marketplace y puedes instalar manualmente el software del agente de la consola en tu propio host Linux o en tu vCenter.
 
 Si utiliza el Marketplace, los permisos se proporcionan de la misma manera.  Solo necesita crear y configurar manualmente el rol de IAM y luego proporcionar permisos para cualquier cuenta adicional.
 

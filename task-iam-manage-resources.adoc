@@ -30,7 +30,7 @@ Recursos de almacenamiento:: Los recursos de almacenamiento son el tipo de recur
 +
 --
 
-NOTE: Los usuarios con el rol Org admin pueden añadir recursos a la carpeta para delegar la tarea de asociar el recurso con los proyectos a los administradores de carpetas o proyectos de la carpeta respectiva. link:task-iam-manage-folders-projects.html#associate-resource-folder["Obtenga información sobre cómo asociar un recurso con una carpeta"].
+NOTE: Los usuarios con el rol Org admin pueden agregar recursos a una carpeta para delegar la tarea de asociar el recurso con los proyectos a los administradores de carpetas o proyectos de la carpeta respectiva. link:task-iam-manage-folders-projects.html#associate-resource-folder["Obtenga información sobre cómo asociar un recurso con una carpeta"].
 
 --
 Agentes de consola:: Si usaste un agente de la Console para descubrir sistemas de almacenamiento, añade el agente al mismo proyecto que el sistema de almacenamiento. Esto permite a los usuarios realizar funciones habilitadas por agentes, como servicios de datos o gestión de almacenamiento nativa de la Console. Puedes añadir agentes a proyectos desde la página *Agents* en la Console. link:task-iam-associate-agents.html["Aprende cómo asociar un agente de la NetApp Console a un proyecto"].
@@ -86,7 +86,7 @@ Tenga en cuenta que solo puede seleccionar entre las carpetas y los proyectos pa
 .Después de terminar
 Si descubre un recurso mediante un agente de consola, asocie el agente de consola con el proyecto para otorgar acceso.  De lo contrario, los miembros sin el rol de _Administrador de la organización_ no podrán acceder al agente de la consola ni a su recurso asociado.
 
-link:task-iam-associate-connectors.html["Aprenda a asociar un agente de consola con una carpeta o un proyecto"].
+link:task-iam-associate-agents.html["Aprenda a asociar un agente de consola con una carpeta o un proyecto"] .
 
 
 

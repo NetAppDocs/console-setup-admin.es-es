@@ -168,7 +168,7 @@ Cree un rol personalizado de Azure que pueda asignar a su cuenta de Azure o a un
 
 La consola implementa la máquina virtual del agente de consola en Azure y habilita una https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["identidad administrada asignada por el sistema"^] , crea el rol requerido y lo asigna a la VM. link:reference-permissions-azure.html["Revisar cómo la Consola utiliza los permisos"] .
 
-Tenga en cuenta que puede crear un rol personalizado de Azure mediante el portal de Azure, Azure PowerShell, la CLI de Azure o la API REST.  Los siguientes pasos muestran cómo crear el rol mediante la CLI de Azure.  Si prefiere utilizar un método diferente, consulte https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Documentación de Azure"^]
+Ten en cuenta que puedes crear un rol personalizado de Azure usando el portal de Azure, Azure PowerShell, Azure CLI o API de REST. Los siguientes pasos muestran cómo crear el rol usando Azure CLI. Si prefieres usar un método diferente, consulta https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Documentación de Azure"^].
 
 .Pasos
 . Copie los permisos necesarios para un nuevo rol personalizado en Azure y guárdelos en un archivo JSON.
@@ -455,9 +455,9 @@ Estos permisos son para el propio agente de la consola. Es un conjunto de permis
 
 .Pasos
 . Seleccione *Administración > Agentes*.
-. En la página *Descripción general*, seleccione *Implementar agente > Azure*
+. En la página *Overview*, selecciona *Deploy agent > Azure*.
 . En la página *Revisión*, revise los requisitos para implementar un agente.  Estos requisitos también se detallan más arriba en esta página.
-. En la página *Autenticación de máquina virtual*, seleccione la opción de autenticación que coincida con cómo configura los permisos de Azure:
+. En la página *Autenticación de máquina virtual*, selecciona la opción de autenticación que coincida con la forma en que configuraste los permisos de Azure:
 +
 ** Seleccione *Iniciar sesión* para iniciar sesión en su cuenta Microsoft, que debería tener los permisos necesarios.
 +
@@ -481,22 +481,19 @@ TIP: Si ya ha iniciado sesión en una cuenta de Azure, la consola usa automátic
 
 . En la página *Autenticación de máquina virtual*, elija una suscripción de Azure, una ubicación, un nuevo grupo de recursos o un grupo de recursos existente y, luego, elija un método de autenticación para la máquina virtual del agente de consola que está creando.
 +
-El método de autenticación para la máquina virtual puede ser una contraseña o una clave pública SSH.
++ El método de autenticación de la máquina virtual puede ser una contraseña o una clave pública SSH.
 
 +
-https://learn.microsoft.com/en-us/azure/virtual-machines/linux-vm-connect?tabs=Linux["Obtenga información sobre cómo conectarse a una máquina virtual Linux en Azure"^]
++ https://learn.microsoft.com/en-us/azure/virtual-machines/linux-vm-connect?tabs=Linux["Obtenga información sobre cómo conectarse a una máquina virtual Linux en Azure"^]
 
-. En la página *Detalles*, ingrese un nombre para el agente, especifique las etiquetas y elija si desea que la Consola cree un nuevo rol que tenga los permisos necesarios o si desea seleccionar un rol existente que configuró conlink:reference-permissions-azure.html["los permisos requeridos"] .
+. En la página *Detalles*, introduce un nombre para el agente, especifica las etiquetas y elige si quieres que la Consola cree un nuevo rol que tenga los permisos necesarios, o si prefieres seleccionar un rol existente que configuraste con link:reference-permissions-azure.html["los permisos requeridos"].
 +
 Tenga en cuenta que puede elegir las suscripciones de Azure asociadas con este rol.  Cada suscripción que elija proporciona al agente de la consola permisos para administrar recursos en esa suscripción (por ejemplo, Cloud Volumes ONTAP).
 
 . En la página *Red*, elija una red virtual y una subred, si desea habilitar una dirección IP pública y, opcionalmente, especifique una configuración de proxy.
-+
-** En la página *Grupo de seguridad*, elija si desea crear un nuevo grupo de seguridad o si desea seleccionar un grupo de seguridad existente que permita las reglas de entrada y salida requeridas.
+. En la página *Grupo de seguridad*, elija si desea crear un nuevo grupo de seguridad o si desea seleccionar un grupo de seguridad existente que permita las reglas de entrada y salida requeridas.
 +
 link:reference-ports-azure.html["Ver las reglas del grupo de seguridad para Azure"] .
-
-
 
 . Revisa tus selecciones para verificar que tu configuración es correcta.
 +

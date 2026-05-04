@@ -91,13 +91,13 @@ NetApp Replication
 
 * Compatible con regiones gubernamentales con modo restringido.  No compatible con regiones comerciales ni con regiones soberanas con modo restringido.
 
-| Sí*, (no es necesario si se replica de ONTAP on-premises a ONTAP on-premises) 
+| Sí* (no es necesario si se replica de ONTAP on-premises a ONTAP on-premises) 
 
 
 | *Características del contrato de soporte de NetApp* | Ninguno | N/A 
 
 
-.12+| *Funciones administrativas* | Auditoría | No 
+.11+| *Funciones administrativas* | Auditoría | No 
 
 
 | Centro de automatización | No 
@@ -144,7 +144,4 @@ Para Cloud Volumes ONTAP, BYOL admite tanto las licencias basadas en capacidad c
 
 
 | Modo de solo lectura | No 
-
-
-| Notificaciones | No 
 |===

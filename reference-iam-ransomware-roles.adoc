@@ -16,13 +16,13 @@ summary: Ransomware Resilience ofrece diferentes roles de usuario para administr
 [role="lead"]
 Los roles de resiliencia contra ransomware brindan a los usuarios acceso a NetApp Ransomware Resilience. Ransomware Resilience admite las siguientes funciones:
 
-**Roles de base**
+*Funciones básicas*
 
 * Administrador de resiliencia contra ransomware: configure los ajustes de resiliencia contra ransomware; investigue y responda a las alertas de cifrado
 * Visor de resiliencia contra ransomware: vea incidentes de cifrado, informes y configuraciones de detección
 
 
-**Roles de actividad de comportamiento del usuario**link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html["Detección de actividad sospechosa de usuarios"^] Las alertas proporcionan visibilidad de datos tales como eventos de actividad de archivos; estas alertas incluyen nombres de archivos y acciones de archivos (como leer, escribir, eliminar, cambiar nombre) realizadas por el usuario.  Para limitar la visibilidad de estos datos, solo los usuarios con estos roles pueden administrar o ver estas alertas.
+*Roles de actividad del comportamiento del usuario* link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html["Detección de actividad sospechosa de usuarios"^] las alertas proporcionan visibilidad de datos como eventos de actividad de archivos; estas alertas incluyen nombres de archivos y acciones de archivos (como leer, escribir, eliminar, renombrar) realizadas por el usuario. Para limitar la visibilidad de estos datos, solo los usuarios con estos roles pueden gestionar o ver estas alertas.
 
 * Administrador de comportamiento del usuario de Ransomware Resilience: active la detección de actividad sospechosa de usuarios, investigue y responda a las alertas de actividad sospechosa de usuarios
 * Visor de comportamiento del usuario de Ransomware Resilience: vea alertas de actividad sospechosa del usuario
@@ -309,7 +309,7 @@ Sí
 
 Para configurar los ajustes de comportamiento de usuario sospechoso y responder a las alertas, un usuario debe tener el rol de administrador de comportamiento de usuario de Ransomware Resilience. Para ver únicamente alertas de comportamiento sospechoso del usuario, el usuario debe tener el rol de visualizador de comportamiento del usuario de Ransomware Resilience.
 
-Los roles de comportamiento del usuario deben otorgarse a los usuarios con privilegios de administrador o espectador de Ransomware Resilience existentes que necesitan acceso alink:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html["Configuración y alertas de actividad de usuario sospechosa"^] .  Un usuario con el rol de administrador de Ransomware Resilience, por ejemplo, debería recibir el rol de administrador de comportamiento de usuario de Ransomware Resilience para configurar agentes de actividad de usuario y bloquear o desbloquear usuarios.  El rol de administrador de comportamiento del usuario de Ransomware Resilience no debe otorgarse a un visor de Ransomware Resilience.
+Los roles de comportamiento de usuario deben conferirse a usuarios con privilegios existentes de administrador o visor de Ransomware Resilience que necesiten acceso a link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html["Configuración y alertas de actividad de usuario sospechosa"^]. Un usuario con el rol de administrador de Ransomware Resilience, por ejemplo, debe recibir el rol de administrador de comportamiento de usuario de Ransomware Resilience para configurar agentes de actividad de usuario y bloquear o desbloquear usuarios. El rol de administrador de comportamiento de usuario de Ransomware Resilience no debe conferirse a un visor de Ransomware Resilience.
 
 
 NOTE: Para activar la detección de actividad de usuarios sospechosos, debe tener el rol de administrador de la organización de la consola.

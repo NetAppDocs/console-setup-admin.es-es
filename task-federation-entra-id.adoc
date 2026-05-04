@@ -17,14 +17,14 @@ summary: 'Fedérese con su proveedor de IdP de Microsoft Entra ID para habilitar
 Fedérese con su proveedor de IdP de Microsoft Entra ID para habilitar el inicio de sesión único (SSO) para la NetApp Console.  Esto permite a los usuarios iniciar sesión utilizando sus credenciales corporativas.
 
 .Roles requeridos
-El rol de administrador de la federación es necesario para crear y administrar federaciones.  El espectador de la Federación puede ver la página de la Federación.link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso."]
+El rol de administrador de la Federación es necesario para crear y gestionar federaciones. El visor de la Federación puede ver la página de la Federación. link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso."]
 
 
 NOTE: Puede federarse con su IdP corporativo o con el sitio de soporte de NetApp .  NetApp recomienda elegir uno u otro, pero no ambos.
 
 NetApp solo admite el inicio de sesión único (SSO) iniciado por el proveedor de servicios (SP).  Primero debe configurar el proveedor de identidad para confiar en NetApp como proveedor de servicios.  Luego, puede crear una conexión en la consola que utilice la configuración del proveedor de identidad.
 
-Puede configurar una conexión federada con Microsoft Entra ID para habilitar el inicio de sesión único (SSO) para la consola.  El proceso implica configurar su ID de Microsoft Entra para confiar en la consola como proveedor de servicios y luego crear la conexión en la consola.
+Puedes configurar una conexión federada con Microsoft Entra ID para habilitar el inicio de sesión único (SSO) para la Console. El proceso implica configurar tu Microsoft Entra ID para que confíe en la Console como proveedor de servicios y luego crear la conexión en la Console.
 
 .Antes de empezar
 * Se requiere una cuenta IdP con privilegios administrativos.  Coordínese con el administrador de su IdP para completar los pasos.
@@ -64,7 +64,7 @@ Puede configurar una conexión federada con Microsoft Entra ID para habilitar el
 +
 .. Utilice los siguientes valores al registrar su aplicación Microsoft Entra ID para confiar en la consola:
 +
-*** Para la *URL de redirección*, utilice `https://services.cloud.netapp.com`
+*** Para la *Redirección URL*, usa `https://services.cloud.netapp.com`
 *** Para la *URL de respuesta*, utilice `https://netapp-cloud-account.auth0.com/login/callback`
 
 
@@ -77,9 +77,9 @@ Puede configurar una conexión federada con Microsoft Entra ID para habilitar el
 [discrete]
 ====== Crear conexión
 
-. Crear la conexión con Microsoft Entra ID
+. Crea la conexión con Microsoft Entra ID.
 +
-.. Ingrese el ID de cliente y el secreto de cliente que creó en el paso anterior.
+.. Introduce el ID de cliente y el secreto de cliente que creaste en el paso anterior.
 .. Introduzca el nombre de dominio de Microsoft Entra ID.
 
 

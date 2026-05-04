@@ -57,7 +57,7 @@ system configuration backup settings modify -destination <target-location>
 
 == Editar las URI de un agente
 
-Actualización del URI de un agente de la consola si cambian tus requisitos de red. Esto garantiza una gestión ininterrumpida, segura y conforme de tu infraestructura de almacenamiento.
+Actualiza el URI de un agente de NetApp Console si cambian tus requisitos de red. Esto garantiza una gestión ininterrumpida, segura y conforme de tu infraestructura de almacenamiento.
 
 .Pasos
 . Seleccione *Administración > Agentes*.

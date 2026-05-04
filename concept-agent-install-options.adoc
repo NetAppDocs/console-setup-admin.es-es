@@ -41,7 +41,7 @@ Elige este método cuando:
 * El menor número de pasos manuales de cualquier método de despliegue en la nube
 
  a| 
-* No disponible para entornos on-premises, modo restringido o air-gapped
+* No disponible para entornos locales, modo restringido o entornos aislados
 
 
 |===
@@ -100,7 +100,7 @@ Elige este método cuando:
 
  a| 
 * La mayoría de los pasos de cualquier método de despliegue. Debes preparar el host, instalar Podman o Docker, configurar la red, instalar el software y proporcionar permisos manualmente
-* * La implementación se inicia fuera de la NetApp Console, así que el flujo de trabajo guiado no está disponible
+* La implantación se inicia fuera de la NetApp Console, por lo que el flujo de trabajo guiado no está disponible
 
 
 |===
@@ -108,9 +108,9 @@ link:task-install-agent-aws-manual.html["Instalar manualmente un agente de conso
 
 
 
-== Instala manualmente en las instalaciones usando VCenter (OVA)
+== Instala manualmente en las instalaciones usando vCenter (OVA)
 
-Si usas VMware VCenter, puedes desplegar el agente de la Console importando un archivo OVA (Open Virtual Appliance). El OVA es una imagen de máquina virtual preconfigurada que despliegas con el cliente vSphere, sin instalar Linux ni configurar un runtime de contenedores.
+Si usas VMware vCenter, puedes desplegar el agente de la Consola importando un archivo OVA (Open Virtual Appliance). El OVA es una imagen de VM preconfigurada que despliegas con el cliente vSphere, sin necesidad de instalar Linux ni configurar un runtime de contenedor.
 
 Elige este método cuando:
 
@@ -131,24 +131,24 @@ NOTE: No puedes gestionar los recursos de Google Cloud desde un agente de la Con
 * Sólo en las instalaciones; no disponible para implementaciones en la nube
 * Incluye una consola de mantenimiento basada en menús para tareas de mantenimiento de agentes
 * Flujo de trabajo de implementación familiar para administradores de VMware
-* * La imagen preconfigurada de la máquina virtual ayuda a evitar errores y hace que el mantenimiento sea más fácil
+* La imagen preconfigurada de la VM ayuda a prevenir errores y hace que el mantenimiento sea más fácil
 
  a| 
-* Requiere VCenter; no puede instalarse directamente en un host ESXi bare metal
+* Requiere vCenter; no puede instalarse directamente en un host ESXi bare metal
 
 
 |===
-link:task-install-agent-on-prem-ova.html["Implementa localmente usando VCenter"]
+link:task-install-agent-on-prem-ova.html["Implementa localmente usando vCenter"]
 
 
 
-== Instala manualmente en las instalaciones (sin VCenter)
+== Instala manualmente en las instalaciones (sin vCenter)
 
 Puedes instalar manualmente el agente de la NetApp Console en cualquier host Linux local. Debes configurar el host Linux y el runtime de contenedores (Docker o Podman), y luego instalar el agente de la NetApp Console.
 
 Elige este método cuando:
 
-* Estás realizando una implementación local y no tienes un entorno VMware VCenter.
+* Estás realizando una implementación local y no tienes un entorno VMware vCenter.
 * Te sientes cómodo con la administración de Linux y quieres gestionar el host subyacente tú mismo.
 * Quieres controlar cuándo se actualiza el agente de la consola.
 

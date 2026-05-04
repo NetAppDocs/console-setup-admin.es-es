@@ -33,7 +33,7 @@ Si el agente de la consola no tiene una conexión a Internet saliente, los siste
 
 
 
-IMPORTANT: Una vez que haya configurado un proxy, no podrá cambiar el tipo de proxy.  Si necesita cambiar el tipo de proxy, elimine el agente de consola y agregue un nuevo agente con el nuevo tipo de proxy.
+IMPORTANT: Una vez que hayas configurado un proxy, no puedes cambiar el tipo de proxy. Si necesitas cambiar el tipo de proxy, debes eliminar el agente de la NetApp Console y agregar un nuevo agente con el nuevo tipo de proxy.
 
 
 
@@ -115,7 +115,7 @@ Asegúrese de que el archivo del certificado esté en formato PEM y resida en el
 Puede actualizar el servidor proxy transparente existente de un agente de consola mediante el `proxy update` comando o elimine el servidor proxy transparente mediante el uso del `proxy remove` dominio.  Para obtener más información, revise la documentación delink:reference-agent-maint-console-proxy.html["Consola de mantenimiento del agente"] .
 
 
-IMPORTANT: Una vez que haya configurado un proxy, no podrá cambiar el tipo de proxy.  Si necesita cambiar el tipo de proxy, elimine el agente de consola y agregue un nuevo agente con el nuevo tipo de proxy.
+IMPORTANT: Una vez que hayas configurado un proxy, no puedes cambiar el tipo de proxy. Si necesitas cambiar el tipo de proxy, debes eliminar el agente de la NetApp Console y agregar un nuevo agente con el nuevo tipo de proxy.
 
 
 
@@ -127,7 +127,7 @@ Si la configuración del proxy de su red cambia, su agente podría perder el acc
 
 == Habilitar el tráfico directo de API
 
-Si configuró un agente de consola para usar un servidor proxy, puede habilitar el tráfico de API directo en el agente de consola para enviar llamadas de API directamente a los servicios del proveedor de la nube sin pasar por el proxy. Los agentes que se ejecutan en AWS, Azure o Google Cloud admiten esta opción.
+Si configuraste un agente de la consola para usar un servidor proxy, puedes habilitar el tráfico directo de API en el agente de la consola para enviar llamadas de API directamente a los servicios del proveedor de la nube sin pasar por el proxy. Los agentes que se ejecutan en AWS, Azure o Google Cloud admiten esta opción.
 
 Si deshabilita Azure Private Links con Cloud Volumes ONTAP y usa puntos de conexión de servicio, habilite el tráfico de API directo.  De lo contrario, el tráfico no se enrutará correctamente.
 

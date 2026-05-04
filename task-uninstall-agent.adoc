@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-uninstall-agent.html 
 keywords: uninstall, remove connector, uninstall connector, uninstall agent, remove agent 
-summary: Desinstale un agente de consola para solucionar problemas o eliminarlo permanentemente del host.  Los pasos que debes seguir dependen del modo de implementación que estés utilizando.  Una vez que haya eliminado un agente de consola de su entorno, puede eliminarlo de la consola. 
+summary: Desinstala un agente de Console para solucionar problemas o para eliminarlo permanentemente del host. Los pasos que necesitas seguir dependen del modo de despliegue que estés usando. Una vez que hayas eliminado un agente de Console de tu entorno, puedes eliminarlo de la Console. 
 ---
 = Desinstalar y eliminar un agente de consola
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Desinstale un agente de consola para solucionar problemas o eliminarlo 
 
 
 [role="lead"]
-Desinstale un agente de consola para solucionar problemas o eliminarlo permanentemente del host.  Los pasos que debes seguir dependen del modo de implementación que estés utilizando.  Una vez que haya eliminado un agente de consola de su entorno, puede eliminarlo de la consola.
+Desinstala un agente de Console para solucionar problemas o para eliminarlo permanentemente del host. Los pasos que necesitas seguir dependen del modo de despliegue que estés usando. Una vez que hayas eliminado un agente de Console de tu entorno, puedes eliminarlo de la Console.
 
 
 
@@ -83,6 +83,6 @@ Tenga en cuenta lo siguiente sobre la eliminación de un agente de consola:
 
 .Pasos
 . Seleccione *Administración > Agentes*.
-. En la página *Resumen*, seleccione el menú de acciones para un agente desconectado y seleccione *Eliminar agente*.
+. En la página *Overview*, selecciona el menú de acciones para un agente desconectado y selecciona *Remove agent*.
 . Ingrese el nombre del agente a confirmar y luego seleccione *Eliminar*.
 

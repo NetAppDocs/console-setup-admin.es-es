@@ -39,7 +39,7 @@ Las siguientes tablas indican las acciones que cada rol de la plataforma de cons
 | Crear agentes | Sí | No 
 
 
-| Crear, modificar o eliminar sistemas desde la consola (agregar o descubrir sistemas) | Sí | Sí 
+| Crear, modificar o eliminar sistemas desde la Console (añadir o descubrir sistemas) | Sí | Sí 
 
 
 | Crear carpetas y proyectos, incluida la eliminación | Sí | No 

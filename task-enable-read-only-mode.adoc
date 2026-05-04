@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-enable-read-only-mode.html 
 keywords: sign up, signing up, sign in, signing in, login with netapp, log in with netapp, create account, account, log in with nss, nss, nss login 
-summary: Para comenzar a utilizar la consola, el primer paso es registrarse o iniciar sesión utilizando sus credenciales del sitio de soporte de NetApp o creando un inicio de sesión en la NetApp Console . Si es el primer usuario de su empresa en registrarse, creará una nueva organización en la Consola como administrador de la organización. Si tu empresa ya cuenta con una organización, puedes registrarte o iniciar sesión para acceder a ella. 
+summary: Como medida de seguridad, puede habilitar el modo de solo lectura para su organización de NetApp Console . En el modo de solo lectura, los usuarios pueden ver recursos y configuraciones, pero no pueden realizar cambios. 
 ---
 = Habilitar el modo de solo lectura para una organización de NetApp Console
 :hardbreaks:
@@ -40,70 +40,3 @@ Cuando el modo de solo lectura está habilitado, los usuarios ven un banner que 
 image:screenshot-read-only-slider.png["Una captura de pantalla que muestra el interruptor del modo de solo lectura en la posición Activado."]
 
 
-
-
-
-== Regístrese en NetApp Console como administrador inicial de la organización
-
-Si su empresa no tiene una organización de NetApp Console , regístrese para crear una. El primer usuario es el administrador y gestiona las cuentas y los permisos. Puede actualizar roles y agregar administradores más tarde.
-
-.Pasos
-. Abra un navegador web y vaya a https://console.netapp.com["NetApp Console"^]
-. Si tiene una cuenta del sitio de soporte de NetApp , ingrese la dirección de correo electrónico asociada a su cuenta directamente en la página *Iniciar sesión*.
-+
-La consola lo registra como parte de este inicio de sesión inicial con sus credenciales del sitio de soporte de NetApp .
-
-. Si desea registrarse creando un inicio de sesión de consola, seleccione *Registrarse*.
-+
-.. En la página *Registrarse*, ingrese la información requerida y seleccione *Siguiente*.
-+
-
-NOTE: Sólo se permiten caracteres ingleses en el formulario de registro.
-
-.. Revise su bandeja de entrada en busca de un correo electrónico de NetApp que incluye instrucciones para verificar su dirección de correo electrónico.
-+
-Verifique su dirección de correo electrónico para completar el registro.
-
-
-
-. Después de iniciar sesión, revise y acepte el Acuerdo de licencia de usuario final.
-. En la página *Bienvenido*, crea una organización.
-. Seleccione *Comencemos*.
-
-
-+ Como administrador por primera vez, siga el proceso guiado para agregar almacenamiento, crear un agente de consola y más. link:task-console-assistant.html["Obtenga información sobre cómo utilizar el Asistente de consola."]
-
-.Próximos pasos
-Como administrador, después de completar los pasos incluidos en el Asistente de consola, debe planificar su estrategia de identidad y acceso, agregar usuarios a su organización y asignar roles. link:task-iam-get-started.html["Obtenga información sobre la gestión de identidad y acceso para la NetApp Console"]
-
-
-
-== Regístrese o inicie sesión en la NetApp Console cuando ya exista una organización
-
-Si su empresa ya tiene una organización de NetApp Console , regístrese o inicie sesión para acceder a ella. Su método de registro o inicio de sesión depende de si su empresa utiliza la federación de identidad o tiene credenciales del sitio de soporte de NetApp . De lo contrario, cree un inicio de sesión en la NetApp Console .
-
-.Pasos
-. Abra un navegador web y vaya a https://console.netapp.com["NetApp Console"^]
-. Si tiene una cuenta del sitio de soporte de NetApp o si su empresa ha configurado el inicio de sesión único (SSO), ingrese su dirección de correo electrónico asociada o sus credenciales de SSO en la página *Iniciar sesión*. Siga las instrucciones para completar el inicio de sesión.
-+
-En ambos casos, usted se registra en la Consola como parte de este inicio de sesión inicial.
-
-. Si desea registrarse creando un inicio de sesión de consola, seleccione *Registrarse*.
-+
-.. En la página *Registrarse*, ingrese la información requerida y seleccione *Siguiente*.
-+
-
-NOTE: Sólo se permiten caracteres ingleses en el formulario de registro.
-
-.. Revise su bandeja de entrada en busca de un correo electrónico de NetApp que incluye instrucciones para verificar su dirección de correo electrónico.
-+
-Verifique su dirección de correo electrónico para completar el registro.
-
-
-
-. Después de iniciar sesión, revise y acepte el Acuerdo de licencia de usuario final.
-. Si el sistema le solicita que cree una organización, cierre el cuadro de diálogo e infórmeselo a un administrador de la consola para que pueda agregarlo a su organización de la consola y brindarle acceso. link:task-user-settings.html#contact-admin["Aprenda cómo comunicarse con un administrador de la organización."]
-
-
-.Próximos pasos
-Una vez que tenga acceso a su organización, podrá comenzar a administrar el almacenamiento y utilizar los servicios de datos que se le hayan asignado.

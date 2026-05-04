@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: reference-agent-maint-console-config-checker.html 
-keywords: transparent proxy, connector certificate, agent maintenance console, proxy configuration, connector proxy. agent proxy 
-summary: Puede utilizar la consola de mantenimiento del agente de consola para configurar un agente de consola para que utilice un servidor proxy transparente. 
+keywords: agent maintenance console, agent troubleshooting, network connectivity validation, agent validation, hardware requirements, deployment readiness, operational compliance, installation troubleshooting 
+summary: Puede utilizar la consola de mantenimiento del agente de consola para validar la instalación y configuración de un agente de consola. 
 ---
 = Validación del agente de consola con la consola de mantenimiento en NetApp Console
 :hardbreaks:
@@ -20,7 +20,7 @@ Puede utilizar la consola de mantenimiento del agente de consola para validar la
 
 == Acceder a la consola de mantenimiento del agente
 
-Puede acceder a la consola de mantenimiento desde el host del agente de la consola.  Navegue al siguiente directorio:
+Puedes acceder a la consola de mantenimiento desde el host del agente de consola. Navega hasta el siguiente directorio:
 
 [source, cli]
 ----
@@ -41,9 +41,10 @@ El `config-checker validate` El comando le permite validar la configuración de 
 [role="quick-margin-para"]
 Elige uno o más servicios para validar. Los nombres de servicio válidos son:
 
-*`PLATFORM` que valida la conectividad de red a los endpoints requeridos de la Console, así como si los puertos requeridos están abiertos para el agente de la Console.
+* `PLATFORM` que valida la conectividad de red a los endpoints requeridos de la Console, así como si los puertos requeridos están abiertos para el agente de la Console.
 
-`--validationTypes <comma-separated list validation types to run>` --*REQUIRED*-- Elige uno o más tipos de validación para ejecutar. Los tipos de validación válidos son:
+
+`--validationTypes <comma-separated list of validation types to run>` --*REQUIRED*-- Elige uno o más tipos de validación para ejecutar. Los tipos de validación válidos son:
 
 * `NETWORK` que valida la conectividad de red con los puntos finales de la NetApp Console requeridos.
 * `HARDWARE` que valida que el host del agente cumple los requisitos mínimos de hardware para el agente de NetApp Console.

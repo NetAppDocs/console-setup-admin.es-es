@@ -305,7 +305,7 @@ Para gestionar los recursos de Google Cloud, despliega tu agente en Google Cloud
 
 El modo de despliegue de tu consola, el entorno de almacenamiento y tus necesidades de soberanía de datos determinan dónde despliegas los agentes. Despliega varios agentes en distintos entornos para la separación organizativa o por necesidades empresariales.
 
-Puedes desplegar agentes directamente desde la Console, desde tu cloud marketplace o manualmente en VCenter o en tus instalaciones. link:concept-agent-install-options.html["Compara los métodos de implementación para elegir el más adecuado para tu entorno"].
+Puedes desplegar agentes directamente desde la NetApp Console, desde tu marketplace en la nube o manualmente en vCenter o en tus instalaciones. link:concept-agent-install-options.html["Compara los métodos de implementación para elegir el más adecuado para tu entorno"].
 
 
 
@@ -313,7 +313,7 @@ Puedes desplegar agentes directamente desde la Console, desde tu cloud marketpla
 
 Implementa agentes en tu cloud o en tus instalaciones para conectar con la aplicación SaaS Console alojada en la nube. Los agentes permiten funciones avanzadas mientras la interfaz de usuario de Console sigue siendo accesible desde cualquier lugar.
 
-Puedes instalar agentes directamente desde la Console cuando usas la aplicación SaaS (modo estándar). Puedes instalar en AWS, Azure o Google Cloud, o manualmente en tus instalaciones en tu propio host Linux o en tu entorno VCenter.
+Puedes instalar agentes directamente desde la NetApp Console cuando uses la aplicación SaaS (modo estándar). Puedes instalar en AWS, Azure o Google Cloud, o manualmente en tus instalaciones en tu propio host Linux o en tu entorno vCenter.
 
 
 

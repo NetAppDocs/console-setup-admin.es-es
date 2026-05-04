@@ -291,7 +291,7 @@ Ahora debería tener un rol de IAM que tenga los permisos necesarios o un usuari
 
 == Paso 3: Crear el agente de consola
 
-Cree el agente de consola directamente desde la consola web.
+Crea el agente de Console directamente desde la consola web de Console.
 
 .Acerca de esta tarea
 * Al crear el agente de la consola desde la consola, se implementa una instancia EC2 en AWS utilizando una configuración predeterminada.  No cambie a una instancia EC2 más pequeña con menos CPU o menos RAM después de crear el agente de consola. link:reference-agent-default-config.html["Obtenga información sobre la configuración predeterminada para el agente de la consola"] .
@@ -311,10 +311,10 @@ Debes tener lo siguiente:
 
 .Pasos
 . Seleccione *Administración > Agentes*.
-. En la página *Descripción general*, seleccione *Implementar agente > AWS*
+. En la página *Overview*, selecciona *Deploy agent > AWS*.
 . Siga los pasos del asistente para crear el agente de consola:
-. En la página *Introducción* se ofrece una descripción general del proceso.
-. En la página *Credenciales de AWS*, especifique su región de AWS y luego elija un método de autenticación, que puede ser un rol de IAM que la consola puede asumir o una clave de acceso y una clave secreta de AWS.
+. En la página *Introducción*, revisa la descripción general del proceso.
+. En la página *Credenciales de AWS*, especifica tu región de AWS y luego elige un método de autenticación, que puede ser un rol de IAM que NetApp Console pueda asumir o una clave de acceso y una clave secreta de AWS.
 +
 
 TIP: Si elige *Asumir rol*, puede crear el primer conjunto de credenciales desde el asistente de implementación del agente de la consola.  Cualquier conjunto adicional de credenciales debe crearse desde la página Credenciales.  Luego estarán disponibles en una lista desplegable del asistente. link:task-adding-aws-accounts.html["Aprenda cómo agregar credenciales adicionales"] .
@@ -327,7 +327,7 @@ TIP: Si elige *Asumir rol*, puede crear el primer conjunto de credenciales desde
 ** Elija si desea cifrar los discos EBS del agente de consola.  Tiene la opción de utilizar la clave de cifrado predeterminada o utilizar una clave personalizada.
 
 
-. En la página *Red*, especifique una VPC, una subred y un par de claves para el agente, elija si desea habilitar una dirección IP pública y, opcionalmente, especifique una configuración de proxy.
+. En la página *Red*, especifica una VPC, una subred y un par de claves para el agente, elige si quieres habilitar una dirección IP pública y, opcionalmente, especifica una configuración de proxy.
 +
 Asegúrese de tener el par de claves correcto para acceder a la máquina virtual del agente de consola.  Sin un par de claves, no puedes acceder a él.
 

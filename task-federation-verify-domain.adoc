@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-federation-verify-domain.html 
 keywords: federation, active directory federation services, adfs, ad fs, single sign-on, microsoft, federate, federated connection, SSO, identity federation, identity management, corporate identity 
-summary: Solo puedes usar dominios verificados para la federación. Si deseas federar con un dominio diferente a tu dominio de correo electrónico, primero debes verificar que eres el propietario del dominio.  Sólo se pueden utilizar dominios verificados para la federación. 
+summary: Si quieres federarte con un dominio que es diferente de tu dominio de correo electrónico, primero debes verificar que eres el propietario del dominio. Solo puedes usar dominios verificados para la federación. 
 ---
 = Verifique el dominio de correo electrónico para su conexión federada
 :hardbreaks:
@@ -14,14 +14,14 @@ summary: Solo puedes usar dominios verificados para la federación. Si deseas fe
 
 
 [role="lead"]
-Si desea federarse con un dominio diferente a su dominio de correo electrónico, primero debe verificar que es el propietario del dominio.  Sólo se pueden utilizar dominios verificados para la federación.
+Si quieres federarte con un dominio que es diferente de tu dominio de correo electrónico, primero debes verificar que eres el propietario del dominio. Solo puedes usar dominios verificados para la federación.
 
 .Roles requeridos
-El rol de administrador de la federación es necesario para crear y administrar federaciones.  El espectador de la Federación puede ver la página de la Federación.link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso."]
+El rol de administrador de la Federación es necesario para crear y gestionar federaciones. El visor de la Federación puede ver la página de la Federación. link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso."]
 
 Para verificar su dominio es necesario agregar un registro TXT a la configuración de DNS de su dominio.  Este registro se utiliza para demostrar que usted es el propietario del dominio y permite que la NetApp Console confíe en el dominio para la federación.  Es posible que necesite coordinar con su administrador de TI o de red para completar este paso.
 
-Por ejemplo, si usas Microsoft Entra ID, puedes seguir los pasos indicados en la documentación de Microsoft link:https://learn.microsoft.com/en-us/entra/fundamentals/add-custom-domain["Agrega un dominio con Microsoft Entra ID"].
+Por ejemplo, si usas Microsoft Entra ID, puedes seguir los pasos indicados en la documentación de Microsoft https://learn.microsoft.com/en-us/entra/fundamentals/add-custom-domain["Agrega un dominio con Microsoft Entra ID"^].
 
 .Pasos
 . Seleccione *Administración > Identidad y acceso*.

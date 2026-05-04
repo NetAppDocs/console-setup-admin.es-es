@@ -456,7 +456,7 @@ NOTE: Operador de consola es el nombre predeterminado proporcionado en la polít
 --
 .entidad de servicio de Azure
 --
-Proporcione a la NetApp Console las credenciales para la entidad de servicio de Azure que configuró previamente.
+Proporciona a la consola NetApp las credenciales de la entidad de servicio principal de Azure que configuraste anteriormente.
 
 .Pasos
 . Seleccione *Administración > Credenciales*.
@@ -477,7 +477,7 @@ Proporcione a la NetApp Console las credenciales para la entidad de servicio de 
 
 
 .Resultado
-La NetApp Console ahora tiene los permisos que necesita para realizar acciones en Azure en su nombre.
+La NetApp Console ahora tiene los permisos que necesita para realizar acciones en Azure en tu nombre.
 
 --
 .Cuenta de servicio de Google Cloud

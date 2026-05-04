@@ -27,7 +27,7 @@ Los roles de plataforma otorgan permisos de administración de la NetApp Console
 | Rol de la plataforma | Responsabilidades 
 
 
-| link:reference-iam-platform-roles.html#organization-admin-roles["Administrador de la organización"] | Permite a un usuario acceso sin restricciones a todos los proyectos y carpetas dentro de una organización, agregar miembros a cualquier proyecto o carpeta, así como realizar cualquier tarea y utilizar cualquier servicio de datos que no tenga un rol explícito asociado.  Los usuarios con este rol administran su organización creando carpetas y proyectos, asignando roles, agregando usuarios y administrando sistemas si tienen las credenciales adecuadas.  Este es el único rol de acceso que puede crear agentes de consola. 
+| link:reference-iam-platform-roles.html#organization-admin-roles["Administrador de la organización"] | Permite a un usuario el acceso sin restricciones a todos los proyectos y carpetas de una organización. Puede añadir miembros a cualquier proyecto o carpeta, así como realizar cualquier tarea y utilizar cualquier servicio de datos que no tenga un rol explícito asociado. Los usuarios con este rol gestionan tu organización creando carpetas y proyectos, asignando roles, añadiendo usuarios y gestionando sistemas si tienen las credenciales adecuadas. Este es el único rol de acceso que puede crear agentes de Console. 
 
 
 | link:reference-iam-platform-roles.html#organization-admin-roles["Administrador de carpetas o proyectos"] | Permite a un usuario acceso sin restricciones a los proyectos y carpetas asignados. Pueden agregar miembros a las carpetas o proyectos que administran, así como realizar cualquier tarea y utilizar cualquier servicio de datos o aplicación en los recursos dentro de la carpeta o el proyecto que están asignados. Los administradores de carpetas o proyectos no pueden crear agentes de consola. 
@@ -48,7 +48,7 @@ Los roles de plataforma otorgan permisos de administración de la NetApp Console
 | link:reference-iam-platform-roles.html#super-admin-roles["Superadministrador"] | Proporciona al usuario un subconjunto de roles de administrador.  Esta función está diseñada para organizaciones más pequeñas que quizás no necesiten distribuir las responsabilidades de la consola entre varios usuarios. 
 
 
-| link:reference-iam-platform-roles.html#super-admin-roles["Súper espectador"] | Proporciona al usuario un subconjunto de roles de espectador.  Esta función está diseñada para organizaciones más pequeñas que quizás no necesiten distribuir las responsabilidades de la consola entre varios usuarios. 
+| link:reference-iam-platform-roles.html#super-admin-roles["Súper espectador"] | Proporciona al usuario un subconjunto de funciones de visor. Esta función está diseñada para organizaciones más pequeñas que pueden no necesitar distribuir las responsabilidades de la consola entre varios usuarios. 
 |===
 
 
@@ -104,10 +104,10 @@ La siguiente es una lista de roles en la categoría de servicio de datos.  Cada 
 | link:reference-iam-backup-rec-roles.html["Administrador de copias de seguridad y recuperación"] | Realice copias de seguridad en instantáneas locales, replique en almacenamiento secundario y realice copias de seguridad en almacenamiento de objetos. 
 
 
-| link:reference-iam-backup-rec-roles.html["Administrador de restauración de copias de seguridad y recuperación"] | Restaurar cargas de trabajo en Copia de seguridad y recuperación. 
+| link:reference-iam-backup-rec-roles.html["Administrador de restauración de copias de seguridad y recuperación"] | Restaura cargas de trabajo en NetApp Backup and Recovery. 
 
 
-| link:reference-iam-backup-rec-roles.html["Administrador de clones de Backup and Recovery"] | Clonar aplicaciones y datos en Copia de seguridad y recuperación. 
+| link:reference-iam-backup-rec-roles.html["Administrador de clones de Backup and Recovery"] | Clona aplicaciones y datos en Backup and Recovery. 
 
 
 | link:reference-iam-backup-rec-roles.html["Visor de copias de seguridad y recuperación"] | Ver información de copia de seguridad y recuperación. 

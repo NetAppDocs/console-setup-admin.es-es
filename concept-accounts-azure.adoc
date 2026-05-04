@@ -44,7 +44,7 @@ La identidad administrada asignada por el sistema asignada a la máquina virtual
 
 Si desea utilizar diferentes credenciales de Azure con la consola, debe otorgar los permisos necesarios mediantelink:task-adding-azure-accounts.html["Creación y configuración de una entidad de servicio en Microsoft Entra ID"] para cada cuenta de Azure.  La siguiente imagen muestra dos cuentas adicionales, cada una configurada con una entidad de servicio y un rol personalizado que proporciona permisos:
 
-image:diagram_permissions_multiple_azure.png["Una imagen conceptual que muestra la cuenta inicial de Azure que recibe permisos a través de un rol personalizado y una identidad administrada y dos cuentas adicionales que reciben permisos a través de un rol personalizado y una entidad de servicio."]
+image:diagram_permissions_multiple_azure.png["Una imagen conceptual que muestra la cuenta Azure inicial que recibe permisos a través de un rol personalizado y una identidad gestionada y dos cuentas adicionales que reciben permisos a través de un rol personalizado y un service principal."]
 
 Entonces lo haríaslink:task-adding-azure-accounts.html#add-credentials-azure["Agregue las credenciales de la cuenta a la consola"] proporcionando detalles sobre la entidad principal del servicio AD.
 

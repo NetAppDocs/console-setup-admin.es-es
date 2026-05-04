@@ -19,7 +19,7 @@ Para desplegar un agente de Console en Google Cloud mediante Google Cloud, neces
 Al desplegar un agente en Google Cloud, se inicia una instancia de VM que ejecuta Linux y el software del agente de la consola en una VPC de tu elección.
 
 .Antes de empezar
-* Deberías tener un link:concept-agents.html["Obtenga más información sobre los agentes de consola"].
+* link:concept-agents.html["Obtenga más información sobre los agentes de consola"].
 * Deberías revisarlolink:reference-limitations.html["Limitaciones del agente de consola"] .
 
 
@@ -147,7 +147,7 @@ Implemente este requisito de red después de crear el agente de consola.
 Configure permisos para que el usuario de Google Cloud implemente la máquina virtual del agente de consola desde Google Cloud.
 
 .Pasos
-. Crear un rol personalizado en Google Platform:
+. Crear un rol personalizado en Google Cloud:
 +
 .. Cree un archivo YAML que incluya los siguientes permisos:
 +
@@ -248,8 +248,10 @@ includedPermissions:
 El siguiente ejemplo crea un rol denominado "connectorDeployment" a nivel de proyecto:
 
 +
-Roles de iam de gcloud crean un conectorDeployment --project=myproject --file=connector-deployment.yaml
-
+[source, bash]
+----
+gcloud iam roles create connectorDeployment --project=myproject --file=connector-deployment.yaml
+----
 +
 https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Documentación de Google Cloud: Creación y administración de roles personalizados"^]
 
