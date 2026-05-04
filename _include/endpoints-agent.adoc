@@ -95,47 +95,14 @@ NetApp recomienda permitir los puntos finales de la Opción 1 en su firewall, ya
 |===
 a| \ https://bluexpinfraprod.eastus2.data.azurecr.io \ https://bluexpinfraprod.azurecr.io a| Para obtener imágenes para las actualizaciones del agente de consola.
 
-* Cuando se implementa un nuevo agente, la verificación de validación prueba la conectividad con los puntos finales actuales. Si utilizaslink:reference-networking-saas-console-previous.html["puntos finales anteriores"] , la comprobación de validación falla. Para evitar este error, omita la comprobación de validación.
-+
-Aunque los puntos finales anteriores aún son compatibles, NetApp recomienda actualizar las reglas de firewall a los puntos finales actuales lo antes posible. link:reference-networking-saas-console-previous.html#update-endpoint-list["Aprenda a actualizar su lista de puntos finales"] .
-
 * Cuando actualice los puntos finales actuales en su firewall, sus agentes existentes continuarán funcionando.
 
 
 a| https://occmclientinfragov.azurecr.us https://bluexpinfraprod.azurecr.io a| Para obtener imágenes para las actualizaciones de los agentes de la Consola.
 
-* Cuando se implementa un nuevo agente, la verificación de validación prueba la conectividad con los puntos finales actuales. Si utilizaslink:reference-networking-saas-console-previous.html["puntos finales anteriores"] , la comprobación de validación falla. Para evitar este error, omita la comprobación de validación.
-+
-Aunque los puntos finales anteriores aún son compatibles, NetApp recomienda actualizar las reglas de firewall a los puntos finales actuales lo antes posible. link:reference-networking-saas-console-previous.html#update-endpoint-list["Aprenda a actualizar su lista de puntos finales"] .
-
-* Cuando actualice los puntos finales actuales en su firewall, sus agentes existentes continuarán funcionando.
-
-
 ^1^ NetApp recomienda permitir los puntos finales de la Opción 1 en su firewall, ya que son más seguros, y no permitir los puntos finales de la Opción 2.  Tenga en cuenta lo siguiente acerca de estos puntos finales:
 
 + A partir de la versión 3.9.47 del agente de la consola, el sistema admite los endpoints enumerados en la opción 1. Las versiones anteriores del agente de la consola no admiten compatibilidad con versiones anteriores. * El agente de la consola primero contacta los endpoints de la opción 2. Si esos endpoints no están accesibles, contacta automáticamente los endpoints de la opción 1. * Si usas el agente de la consola con NetApp Backup and Recovery o Ransomware Resilience, el sistema no admite los endpoints de la opción 1. Permite los endpoints de la opción 2 y no permitas la opción 1.
-
-| Si el agente de la consola está en una región gubernamental de AWS: \https://*.blob.core.windows.net \ https://cloudmanagerinfraprod.azurecr.io
-
-| Para obtener imágenes para las actualizaciones del agente de consola cuando el agente de consola está instalado en una región de AWS Government.
-
-| Si el agente de la consola está en una región de Azure Government: \https://*.blob.core.windows.net \ https://occmclientinfragov.azurecr.us
-
-| Para obtener imágenes para las actualizaciones del agente de consola cuando el agente de consola está instalado en una región de Azure Government.
-
-a| Si el agente de la consola está en una región comercial o soberana, puede elegir entre dos conjuntos de puntos finales:
-
-* Opción 1 (recomendada) ^1^
-+
-\ https://bluexpinfraprod.eastus2.data.azurecr.io \ https://bluexpinfraprod.azurecr.io
-
-* Opción 2
-+
-\https://*.blob.core.windows.net\ https://cloudmanagerinfraprod.azurecr.io
-
-
-
-| Para obtener imágenes para las actualizaciones del agente de consola cuando el agente de consola está instalado en una región comercial o soberana.
 
 [cols="3*"]
 |===
@@ -186,6 +153,7 @@ Para operaciones diarias.
  a| 
 * \ https://bluexpinfraprod.eastus2.data.azurecr.io
 * \ https://bluexpinfraprod.azurecr.io
+* \https://occmclientinfragov.azurecr.us.io (si estás en un entorno de modo restringido)
 
 | Para obtener imágenes para las actualizaciones del agente de consola. 
 |===

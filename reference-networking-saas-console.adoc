@@ -55,13 +55,6 @@ Los agentes de consola que están implementados en su proveedor de nube necesita
  a| 
 Para obtener imágenes para las actualizaciones del agente de consola.
 
-* Cuando se implementa un nuevo agente, la verificación de validación prueba la conectividad con los puntos finales actuales. Si utilizaslink:reference-networking-saas-console-previous.html["puntos finales anteriores"] , la comprobación de validación falla. Para evitar este error, omita la comprobación de validación.
-+
-Aunque los puntos finales anteriores aún son compatibles, NetApp recomienda actualizar las reglas de firewall a los puntos finales actuales lo antes posible. link:reference-networking-saas-console-previous.html#update-endpoint-list["Aprenda a actualizar su lista de puntos finales"] .
-
-* Cuando actualice los puntos finales actuales en su firewall, sus agentes existentes continuarán funcionando.
-
-
 |===
 
 
