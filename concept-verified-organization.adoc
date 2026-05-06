@@ -1,0 +1,60 @@
+---
+sidebar: sidebar 
+permalink: concept-verified-organization.html 
+keywords: verified organization, organization verification, cmat, crm id, business account, identity and access management, iam, organization governance 
+summary: Las organizaciones verificadas vinculan tu organización de NetApp Console a tu cuenta de empresa de NetApp para que la identidad y la gobernanza sean coherentes en todos los sistemas. 
+---
+= Conoce las organizaciones verificadas en NetApp Console
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Una organización verificada vincula tu organización en la NetApp Console a la identidad de cuenta empresarial de NetApp (por ejemplo, un CMAT ID). Esto ayuda a la Console a aplicar una identidad de organización y un modelo de gobernanza coherentes en los sistemas de NetApp.
+
+
+
+== Por qué verificar tu organización
+
+Verificar tu organización puede ayudarte:
+
+* Alinea tu organización de NetApp Console con la identidad de tu cuenta de empresa NetApp.
+* Mejora la coherencia en los flujos de trabajo de administración, informes y soporte.
+* Reduce la ambigüedad cuando tus equipos trabajen en varios servicios de NetApp.
+* Admite controles de gobernanza que dependen de una identidad de organización confiable.
+
+
+
+
+== Qué cambia tras la verificación
+
+Después de que tu organización esté verificada:
+
+* La organización está asociada a una identidad de cuenta de empresa NetApp.
+* La Consola puede tratar esa identidad de organización como autorizada para la asignación a nivel empresarial.
+* Algunos cambios de perfil de organización pueden estar restringidos en la NetApp Console si son gestionados por el sistema de origen.
+
+
+
+
+== Antes de verificar
+
+Antes de verificar tu organización, confirma lo siguiente:
+
+* Tienes el rol administrativo requerido para tu organización.
+* Tienes los datos de la organización necesarios para la verificación.
+* Has coordinado con tu equipo de cuentas de NetApp si es necesario validar la correspondencia entre empresa y cuenta.
+
+
+
+
+== Información relacionada
+
+* link:task-verify-organization.html["Verifica tu organización"]
+* link:concept-identity-and-access-management.html["Aprenda sobre la gestión de identidad y acceso"]
+* link:task-iam-rename-organization.html["Identificadores de organizaciones y proyectos"]
+

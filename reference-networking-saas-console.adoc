@@ -51,7 +51,7 @@ Los agentes de consola que están implementados en su proveedor de nube necesita
 
 
  a| 
-\ https://bluexpinfraprod.eastus2.data.azurecr.io \ https://bluexpinfraprod.azurecr.io
+\https://bluexpinfraprod.eastus2.data.azurecr.io \https://bluexpinfraprod.azurecr.io \https://occmclientinfragov.azurecr.us (necesario para implementaciones en modo restringido)
  a| 
 Para obtener imágenes para las actualizaciones del agente de consola.
 

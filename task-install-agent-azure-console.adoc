@@ -102,7 +102,7 @@ Proporcionar funciones y servicios dentro de la NetApp Console.
 
 
  a| 
-\ https://bluexpinfraprod.eastus2.data.azurecr.io \ https://bluexpinfraprod.azurecr.io
+\https://bluexpinfraprod.eastus2.data.azurecr.io \https://bluexpinfraprod.azurecr.io \https://occmclientinfragov.azurecr.us (necesario para implementaciones en modo restringido)
  a| 
 Para obtener imágenes para las actualizaciones del agente de consola.
 

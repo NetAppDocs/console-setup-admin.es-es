@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: task-verify-organization.html 
+keywords: verify organization, organization verification, cmat, crm id, business account, iam, digital advisor, AIQ, identity and access management 
+summary: Verifica tu organización para vincular tu organización de NetApp Console con la identidad de tu cuenta empresarial de NetApp. 
+---
+= Verifica tu organización en NetApp Console
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Verificar tu organización vincula tu organización de Console con la identidad de tu cuenta empresarial de NetApp. Esto te permite usar funciones como Digital Advisor y las recomendaciones de AIQ.
+
+.Roles requeridos
+Org admin o Super admin. link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso."]
+
+Si tu empresa tiene más de una cuenta de empresa con NetApp, debes verificar tu organización y asociarla a la cuenta de empresa correcta. Si tu empresa tiene solo una cuenta de empresa con NetApp, tu organización se verifica automáticamente y se vincula a esa cuenta de empresa.
+
+Cuando tu organización de la Console está asociada con tu cuenta de empresa, Digital Advisor solo te muestra los recursos asociados a esa cuenta. Si tienes varias cuentas de empresa, tendrás que seleccionar una para asociarla con tu organización de la Console. Si necesitas cambiar la asociación, puedes verificar tu organización de nuevo y seleccionar una cuenta de empresa diferente.
+
+.Pasos
+. Seleccione *Administración > Identidad y acceso*.
+. Seleccione *Organización*.
+. En la página *Organización*, selecciona *Verificar* junto al título de la página.
++
+image:screenshot-iam-verify-org.png["Una captura de pantalla de la página Organization que muestra el botón Verify junto al título de la página."]
+
+. En el cuadro de diálogo *Asociar cuenta de empresa*, elige la cuenta de empresa que quieres asociar con tu organización.
+
