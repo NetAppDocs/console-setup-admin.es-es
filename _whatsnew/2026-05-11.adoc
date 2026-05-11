@@ -1,0 +1,20 @@
+= Agente de Console 4.7.0
+:allow-uri-read: 
+
+
+
+
+=== Agente de Console 4.7.0
+
+La versión 4.7.0 es compatible tanto con el modo estándar como con el modo restringido.
+
+Esta versión del agente de la Console incluye mejoras de seguridad y correcciones de errores.
+
+
+
+=== Administración de la NetApp Console
+
+Esta versión incluye la siguiente novedad.
+
+.Verifica tu organización de la consola
+Por defecto, Digital Advisor muestra todas las cuentas de NetApp asociadas con tu empresa, en lugar de solo tu organización de Console. Para limitar lo que se muestra en Digital Advisor a una cuenta específica, verifica la cuenta de empresa que quieres usar con tu organización de Console. link:https://docs.netapp.com/us-en/console-setup-admin/task-iam-organization-verify.html["Aprende cómo verificar tu organización de consola"^]

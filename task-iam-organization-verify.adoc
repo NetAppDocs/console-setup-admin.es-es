@@ -1,0 +1,45 @@
+---
+sidebar: sidebar 
+permalink: task-iam-organization-verify.html 
+keywords: verify Console organization, associate business account, CMAT account, digital advisor, filtering, organization verification,, business account management, multi-account NetApp customers, organization governance, account ownership verification, resource visibility control 
+summary: Por defecto, Digital Advisor muestra todas las cuentas de NetApp asociadas a tu empresa, en lugar de solo tu organización de Console. Para limitar lo que se muestra en Digital Advisor a una cuenta específica, verifica la cuenta de empresa que quieres usar con tu organización de Console. 
+---
+= Verifica tu organización de NetApp Console
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Por defecto, Digital Advisor muestra todas las cuentas de NetApp asociadas a tu empresa, en lugar de solo tu organización de Console. Para limitar lo que se muestra en Digital Advisor a una cuenta específica, verifica la cuenta de empresa que quieres usar con tu organización de Console.
+
+
+
+== Antes de empezar
+
+Debes tener el rol de administrador de organización para verificar tu organización. Tu usuario también debe estar asociado con una cuenta NetApp Support Site (NSS). link:task-adding-nss-accounts["Aprende a asociar tu cuenta NSS"].
+
+
+NOTE: Si tu empresa solo tiene una cuenta de empresa y tu usuario está asociado a una cuenta del sitio de soporte NetApp, la consola verifica automáticamente tu organización.
+
+
+
+== Verifica tu organización
+
+.Pasos
+. Si tu usuario tiene acceso a más de una organización, selecciona la organización que quieres verificar en el menú desplegable Organización.
+. En *Administración > Identidad y acceso*.
+. Seleccione *Organización*.
+. Junto al título de la página, selecciona *Verificar*.
++
+image:screenshot-iam-verify-org.png["Una captura de pantalla de la página Organization con el botón Verify resaltado."]
+
++
+
+NOTE: Si tu empresa solo tiene una cuenta de empresa, la etiqueta junto al encabezado de la página dirá *Verificado* y no tienes que hacer nada.
+
+. En el cuadro de diálogo *Asociar cuenta de empresa*, selecciona la cuenta de empresa que quieres asociar con tu organización Console en el menú desplegable. Luego selecciona *Asociar*.
+
