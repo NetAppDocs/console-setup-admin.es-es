@@ -5244,7 +5244,6 @@
   <block id="1bad3fa525f7b2c60b554cc8a36a911c" category="list-text">cloudformation:ListStacks</block>
   <block id="a09b37992441a5c2061c0ef135b80024" category="section-title">24 febrero 2026</block>
   <block id="51b31e1901c03d4b274f371dd730c779" category="paragraph">Ahora se requiere el siguiente permiso para Data Classification:</block>
-  <block id="9ba1f0e426e643179b44f5146f795c55" category="cell">Permite a los usuarios ver los resultados del escaneo de NetApp Data Classification. Los usuarios con este rol pueden ver información de cumplimiento y generar informes para los recursos a los que tienen permiso de acceso. Estos usuarios no pueden habilitar ni deshabilitar el escaneo de volúmenes, buckets o esquemas de bases de datos. Data Classification no tiene un rol de administrador.</block>
   <block id="9320804217d782369dccfe3cfe90fd29" category="inline-link">Documentos de Data Classification</block>
   <block id="81584a5aa440695d6dd39594311c7b2d" category="list-text"><block ref="81584a5aa440695d6dd39594311c7b2d" category="inline-link-rx"></block></block>
   <block id="c19e034a7ae60fb90287c5050a076d5a" category="inline-link">Documentos de Licenses and subscriptions</block>
@@ -6237,4 +6236,21 @@
   <block id="4b07d8c632f7928fdf0e60a617989db7" category="admonition">Si tu empresa solo tiene una cuenta de empresa, la etiqueta junto al encabezado de la página dirá *Verificado* y no tienes que hacer nada.</block>
   <block id="3d07160a1a5d13a62207154073e62d4b" category="list-text">En el cuadro de diálogo *Asociar cuenta de empresa*, selecciona la cuenta de empresa que quieres asociar con tu organización Console en el menú desplegable. Luego selecciona *Asociar*.</block>
   <block id="9b70df306d1f1719fd9d70e02911394c" category="section-title">11 de mayo de 2026</block>
+  <block id="de30fd3780cc78f3815357af7be9582f" category="summary">NetApp Data Classification admite dos roles para gestionar el acceso de lectura y escritura a los activos.</block>
+  <block id="cfc16ea75f5fe37fc225466703a3e96a" category="doc">NetApp roles de Data Classification en NetApp Console</block>
+  <block id="c7142c29e40d2d08c7f6837910052a0d" category="paragraph">NetApp Data Classification es compatible con la gestión de identidades y accesos para darte la flexibilidad de asignar a los usuarios un rol específico para las tareas que necesitan realizar dentro de tu organización. Cómo asignas los roles depende de tu propia empresa y de las prácticas de gestión del almacenamiento.</block>
+  <block id="cf045f1c49e0697a2bf307b157804096" category="paragraph">La clasificación de datos admite dos funciones:</block>
+  <block id="cdbb30b6fb90f85be1fbc19b17c2c986" category="list-text">Administrador de cumplimiento</block>
+  <block id="5308b341304a681aa5133cab92637fa3" category="paragraph">La función Compliance admin solo funciona a nivel de organización para gestionar el acceso a los recursos de NetApp Data Classification. Si un usuario tiene responsabilidades inferiores a las de un Organization admin, debe tener la función Compliance admin para instalar NetApp Data Classification.</block>
+  <block id="649d32860b6e76fc8dac7eb5040880b7" category="admonition">El rol Compliance admin no es un rol independiente. Los usuarios con el rol Compliance admin también deben estar asociados con al menos un <block ref="336c7f0741b180c58df89adadda6c36f" category="inline-link-macro-rx"></block>.</block>
+  <block id="afb0c02ddaf124b42741f1794d2a3702" category="admonition">La función de Compliance admin se añadió a NetApp Data Classification en la versión 1.54. Si habías implementado NetApp Data Classification antes de esta versión y tenías una función de plataforma con menos acceso que un organization admin, la función de Compliance admin se asoció automáticamente a la cuenta de usuario.</block>
+  <block id="f0f2ac698359c5e4834475e633063b01" category="paragraph">El visor de clasificación está diseñado para usuarios que necesitan acceder a los resultados de las exploraciones en NetApp Data Classification, pero no necesitan acceder a los recursos de configuración. Los usuarios con el rol de visor de clasificación pueden ver los resultados de las exploraciones de asignación y completas para evaluar áreas de ahorro de almacenamiento o posibles riesgos de datos. Los usuarios con el rol de visor de clasificación también pueden generar informes para los recursos a los que tienen acceso. Estos usuarios no pueden activar ni desactivar la exploración de volúmenes, buckets o esquemas de bases de datos.</block>
+  <block id="ab066b3292d8ab61ef3b5c77169cdd19" category="section-title">Más información</block>
+  <block id="4964a8f5f86e15358c2fc765883fe9b2" category="inline-link-macro">Conoce NetApp Data Classification</block>
+  <block id="5ced687e00d6efd9bda8689abae14e58" category="list-text"><block ref="5ced687e00d6efd9bda8689abae14e58" category="inline-link-macro-rx"></block></block>
+  <block id="ae8e202976179a823c177023962ba12a" category="cell"><block ref="ae8e202976179a823c177023962ba12a" category="inline-link-macro-rx"></block></block>
+  <block id="c1e616bcb4ff762399549fa457f2d29b" category="cell">Necesario para instalar NetApp Data Classification y para asociar permisos a nivel de organización en NetApp Data Classification.</block>
+  <block id="47a46671c1a0773fed715c3799195b7f" category="cell"><block ref="47a46671c1a0773fed715c3799195b7f" category="inline-link-macro-rx"></block></block>
+  <block id="d1bd98b9d900098c018b826ca4e6bd65" category="cell">Permite a los usuarios ver los resultados del escaneo de NetApp Data Classification. Los usuarios con este rol pueden ver información de cumplimiento y generar informes para los recursos a los que tienen permiso de acceso. Estos usuarios no pueden habilitar ni deshabilitar el escaneo de volúmenes, buckets o esquemas de bases de datos.</block>
+  <block id="eeeb9dcaeb66c431b51b12eff19105f3" category="sidebar">Funciones de clasificación de datos</block>
 </blocks>

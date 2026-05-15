@@ -217,6 +217,8 @@ sidebar:
           entries:
           - title: Funciones de copia de seguridad y recuperación
             url: "/reference-iam-backup-rec-roles.html"
+          - title: Funciones de clasificación de datos
+            url: "/reference-iam-data-classification.html"
           - title: Funciones de recuperación ante desastres
             url: "/reference-iam-disaster-rec-roles.html"
           - title: Funciones de resiliencia frente al ransomware

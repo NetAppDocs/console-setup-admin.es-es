@@ -1,0 +1,46 @@
+---
+sidebar: sidebar 
+permalink: reference-iam-data-classification.html 
+keywords: role-based access control, IAM roles, access delegation, data classification, cloud data sense, compliance admin, classification viewer 
+summary: NetApp Data Classification admite dos roles para gestionar el acceso de lectura y escritura a los activos. 
+---
+= NetApp roles de Data Classification en NetApp Console
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Data Classification es compatible con la gestión de identidades y accesos para darte la flexibilidad de asignar a los usuarios un rol específico para las tareas que necesitan realizar dentro de tu organización. Cómo asignas los roles depende de tu propia empresa y de las prácticas de gestión del almacenamiento.
+
+La clasificación de datos admite dos funciones:
+
+* Administrador de cumplimiento
+* Visor de clasificación
+
+
+
+
+== Administrador de cumplimiento
+
+La función Compliance admin solo funciona a nivel de organización para gestionar el acceso a los recursos de NetApp Data Classification. Si un usuario tiene responsabilidades inferiores a las de un Organization admin, debe tener la función Compliance admin para instalar NetApp Data Classification.
+
+
+IMPORTANT: El rol Compliance admin no es un rol independiente. Los usuarios con el rol Compliance admin también deben estar asociados con al menos un link:reference-iam-platform-roles.html["Rol de la plataforma"].
+
+
+NOTE: La función de Compliance admin se añadió a NetApp Data Classification en la versión 1.54. Si habías implementado NetApp Data Classification antes de esta versión y tenías una función de plataforma con menos acceso que un organization admin, la función de Compliance admin se asoció automáticamente a la cuenta de usuario.
+
+
+
+== Visor de clasificación
+
+El visor de clasificación está diseñado para usuarios que necesitan acceder a los resultados de las exploraciones en NetApp Data Classification, pero no necesitan acceder a los recursos de configuración. Los usuarios con el rol de visor de clasificación pueden ver los resultados de las exploraciones de asignación y completas para evaluar áreas de ahorro de almacenamiento o posibles riesgos de datos. Los usuarios con el rol de visor de clasificación también pueden generar informes para los recursos a los que tienen acceso. Estos usuarios no pueden activar ni desactivar la exploración de volúmenes, buckets o esquemas de bases de datos.
+
+
+
+== Más información
+
+* link:https://docs.netapp.com/us-en/data-services-data-classification/concept-classification.html["Conoce NetApp Data Classification"^]
+
