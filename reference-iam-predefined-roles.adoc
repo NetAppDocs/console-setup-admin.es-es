@@ -73,6 +73,12 @@ La siguiente es una lista de roles en la categoría de aplicación.  Cada rol ot
 | link:reference-iam-keystone-roles.html["Visor de Keystone"] | Los usuarios con el rol de visualizador de Keystone NO PUEDEN crear solicitudes de servicio.  Permite a los usuarios monitorear y visualizar el consumo, los activos y la información administrativa dentro del inquilino de Keystone al que están accediendo. 
 
 
+| link:reference-iam-licenses-subscriptions.html["Administrador de licencias y suscripciones"] | Los usuarios con el rol de administrador de licencias y suscripciones pueden crear, actualizar y eliminar licencias directas y suscripciones de marketplace para NetApp Console y los servicios de datos afiliados. 
+
+
+| link:reference-iam-licenses-subscriptions.html["Visor de licencias y suscripciones"] | Los usuarios con la función de visor de licencias y suscripciones pueden ver las licencias directas y las suscripciones al marketplace para la NetApp Console y los servicios de datos afiliados. 
+
+
 | Rol de configuración del mediador de ONTAP | Las cuentas de servicio con la función de configuración de Mediador de ONTAP pueden crear solicitudes de servicio.  Esta función es necesaria en una cuenta de servicio para configurar una instancia de lalink:https://docs.netapp.com/us-en/ontap/mediator/mediator-overview-concept.html["Mediador de la nube de ONTAP"^] . 
 
 
