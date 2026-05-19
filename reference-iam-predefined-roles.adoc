@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reference-iam-predefined-roles.html 
-keywords: predefined roles, iam roles, organization admin, folder or project admin, classification viewer, snapcenter admin, role, iam role, admin, iam, identity and access management, access roles, rbac, bluexp 
+keywords: predefined roles, iam roles, organization admin, folder or project admin, classification viewer, snapcenter admin, role, iam role, admin, iam, identity and access management, access role, rbac, console 
 summary: La gestión de acceso e identidad de la NetApp Console incluye roles predefinidos que puede asignar a los miembros de su organización. 
 ---
 = Roles de acceso a la NetApp Console
@@ -14,7 +14,7 @@ summary: La gestión de acceso e identidad de la NetApp Console incluye roles pr
 
 
 [role="lead"]
-La gestión de identidad y acceso (IAM) en la NetApp Console proporciona roles predefinidos que puede asignar a los miembros de su organización en diferentes niveles de su jerarquía de recursos.  Antes de asignar estos roles, debe comprender los permisos que incluye cada rol.  Los roles se dividen en las siguientes categorías: plataforma, aplicación y servicio de datos.
+La gestión de identidades y accesos (IAM) en la NetApp Console proporciona funciones predefinidas que puedes asignar a los miembros de tu organización en los distintos niveles de tu jerarquía de recursos. Antes de asignar estas funciones, deberías entender los permisos que incluye cada una de ellas. Las funciones se dividen en las siguientes categorías: plataforma, aplicación y servicio de datos. Las tablas también incluyen el nombre de la API de cada función para los clientes que gestionan las asignaciones de funciones mediante la API.
 
 
 
@@ -22,33 +22,35 @@ La gestión de identidad y acceso (IAM) en la NetApp Console proporciona roles p
 
 Los roles de plataforma otorgan permisos de administración de la NetApp Console , incluida la asignación de roles y la gestión de usuarios.  La consola tiene varios roles de plataforma.
 
-[cols="1,2"]
+*Nombre API es el identificador de rol utilizado en las APIs. Copia el valor exactamente como se muestra (incluyendo mayúsculas y guiones bajos).
+
+[cols="1,2,3"]
 |===
-| Rol de la plataforma | Responsabilidades 
+| Rol de la plataforma | Nombre de la API* | Responsabilidades 
 
 
-| link:reference-iam-platform-roles.html#organization-admin-roles["Administrador de la organización"] | Permite a un usuario el acceso sin restricciones a todos los proyectos y carpetas de una organización. Puede añadir miembros a cualquier proyecto o carpeta, así como realizar cualquier tarea y utilizar cualquier servicio de datos que no tenga un rol explícito asociado. Los usuarios con este rol gestionan tu organización creando carpetas y proyectos, asignando roles, añadiendo usuarios y gestionando sistemas si tienen las credenciales adecuadas. Este es el único rol de acceso que puede crear agentes de Console. 
+| link:reference-iam-platform-roles.html#organization-admin-roles["Administrador de la organización"] | ORGANIZATION_ADMIN | Permite a un usuario el acceso sin restricciones a todos los proyectos y carpetas de una organización. Puede añadir miembros a cualquier proyecto o carpeta, así como realizar cualquier tarea y utilizar cualquier servicio de datos que no tenga un rol explícito asociado. Los usuarios con este rol gestionan tu organización creando carpetas y proyectos, asignando roles, añadiendo usuarios y gestionando sistemas si tienen las credenciales adecuadas. Este es el único rol de acceso que puede crear agentes de Console. 
 
 
-| link:reference-iam-platform-roles.html#organization-admin-roles["Administrador de carpetas o proyectos"] | Permite a un usuario acceso sin restricciones a los proyectos y carpetas asignados. Pueden agregar miembros a las carpetas o proyectos que administran, así como realizar cualquier tarea y utilizar cualquier servicio de datos o aplicación en los recursos dentro de la carpeta o el proyecto que están asignados. Los administradores de carpetas o proyectos no pueden crear agentes de consola. 
+| link:reference-iam-platform-roles.html#organization-admin-roles["Administrador de carpetas o proyectos"] | ADMINISTRADOR_DE_CARPETAS_O_PROYECTOS | Permite a un usuario acceso sin restricciones a los proyectos y carpetas asignados. Pueden agregar miembros a las carpetas o proyectos que administran, así como realizar cualquier tarea y utilizar cualquier servicio de datos o aplicación en los recursos dentro de la carpeta o el proyecto que están asignados. Los administradores de carpetas o proyectos no pueden crear agentes de consola. 
 
 
-| link:reference-iam-platform-roles.html#federation-roles["Administración de la federación"] | Permite a un usuario crear y administrar federaciones con la consola, lo que habilita el inicio de sesión único (SSO). 
+| link:reference-iam-platform-roles.html#federation-roles["Administración de la federación"] | FEDERATION_ADMIN | Permite a un usuario crear y administrar federaciones con la consola, lo que habilita el inicio de sesión único (SSO). 
 
 
-| link:reference-iam-platform-roles.html#federation-roles["Visor de la Federación"] | Permite que un usuario vea las federaciones existentes con la consola.  No se pueden crear ni administrar federaciones. 
+| link:reference-iam-platform-roles.html#federation-roles["Visor de la Federación"] | VISOR_DE_LA_FEDERACIÓN | Permite que un usuario vea las federaciones existentes con la consola.  No se pueden crear ni administrar federaciones. 
 
 
-| link:reference-iam-platform-roles.html#partnership-roles["Administración de asociaciones"] | Permite a un usuario crear y gestionar asociaciones. 
+| link:reference-iam-platform-roles.html#partnership-roles["Administración de asociaciones"] | ASOCIACIÓN_ADMIN | Permite a un usuario crear y gestionar asociaciones. 
 
 
-| link:reference-iam-platform-roles.html#partnership-roles["Visor de asociaciones"] | Permite a un usuario ver las asociaciones existentes.  No se pueden crear ni gestionar asociaciones. 
+| link:reference-iam-platform-roles.html#partnership-roles["Visor de asociaciones"] | VISOR_DE_ASOCIACIONES | Permite a un usuario ver las asociaciones existentes.  No se pueden crear ni gestionar asociaciones. 
 
 
-| link:reference-iam-platform-roles.html#super-admin-roles["Superadministrador"] | Proporciona al usuario un subconjunto de roles de administrador.  Esta función está diseñada para organizaciones más pequeñas que quizás no necesiten distribuir las responsabilidades de la consola entre varios usuarios. 
+| link:reference-iam-platform-roles.html#super-admin-roles["Superadministrador"] | SUPER_ADMIN | Proporciona al usuario un subconjunto de roles de administrador.  Esta función está diseñada para organizaciones más pequeñas que quizás no necesiten distribuir las responsabilidades de la consola entre varios usuarios. 
 
 
-| link:reference-iam-platform-roles.html#super-admin-roles["Súper espectador"] | Proporciona al usuario un subconjunto de funciones de visor. Esta función está diseñada para organizaciones más pequeñas que pueden no necesitar distribuir las responsabilidades de la consola entre varios usuarios. 
+| link:reference-iam-platform-roles.html#super-admin-roles["Súper espectador"] | SUPER_VIEWER | Proporciona al usuario un subconjunto de funciones de visor. Esta función está diseñada para organizaciones más pequeñas que pueden no necesitar distribuir las responsabilidades de la consola entre varios usuarios. 
 |===
 
 
@@ -56,42 +58,42 @@ Los roles de plataforma otorgan permisos de administración de la NetApp Console
 
 La siguiente es una lista de roles en la categoría de aplicación.  Cada rol otorga permisos específicos dentro de su alcance designado.  Los usuarios que no tengan el rol de plataforma o aplicación requerido no pueden acceder a la aplicación respectiva.
 
-[cols="1,2"]
+[cols="1,2,3"]
 |===
-| Rol de la aplicación | Responsabilidades 
+| Rol de la aplicación | Nombre de la API* | Responsabilidades 
 
 
-| link:reference-iam-gcnv-roles.html["Administrador de Google Cloud NetApp Volumes"] | Los usuarios con el rol de Google Cloud NetApp Volumes pueden descubrir y administrar Google Cloud NetApp Volumes. 
+| link:reference-iam-gcnv-roles.html["Administrador de Google Cloud NetApp Volumes"] | GCNV_ADMIN | Los usuarios con el rol de Google Cloud NetApp Volumes pueden descubrir y administrar Google Cloud NetApp Volumes. 
 
 
-| link:reference-iam-gcnv-roles.html["Visor de Google Cloud NetApp Volumes"] | Los usuarios con el rol de usuario de Google Cloud NetApp Volumes pueden ver Google Cloud NetApp Volumes. 
+| link:reference-iam-gcnv-roles.html["Visor de Google Cloud NetApp Volumes"] | GCNV_VIEWER | Los usuarios con el rol de usuario de Google Cloud NetApp Volumes pueden ver Google Cloud NetApp Volumes. 
 
 
-| link:reference-iam-keystone-roles.html["Administrador de Keystone"] | Los usuarios con el rol de administrador de Keystone pueden crear solicitudes de servicio.  Permite a los usuarios supervisar y ver el uso, los recursos y los detalles de administración dentro del inquilino de Keystone al que están accediendo. 
+| link:reference-iam-keystone-roles.html["Administrador de Keystone"] | KEYSTONE_ADMIN | Los usuarios con el rol de administrador de Keystone pueden crear solicitudes de servicio.  Permite a los usuarios supervisar y ver el uso, los recursos y los detalles de administración dentro del inquilino de Keystone al que están accediendo. 
 
 
-| link:reference-iam-keystone-roles.html["Visor de Keystone"] | Los usuarios con el rol de visualizador de Keystone NO PUEDEN crear solicitudes de servicio.  Permite a los usuarios monitorear y visualizar el consumo, los activos y la información administrativa dentro del inquilino de Keystone al que están accediendo. 
+| link:reference-iam-keystone-roles.html["Visor de Keystone"] | KEYSTONE_VIEWER | Los usuarios con el rol de visualizador de Keystone NO PUEDEN crear solicitudes de servicio.  Permite a los usuarios monitorear y visualizar el consumo, los activos y la información administrativa dentro del inquilino de Keystone al que están accediendo. 
 
 
-| link:reference-iam-licenses-subscriptions.html["Administrador de licencias y suscripciones"] | Los usuarios con el rol de administrador de licencias y suscripciones pueden crear, actualizar y eliminar licencias directas y suscripciones de marketplace para NetApp Console y los servicios de datos afiliados. 
+| link:reference-iam-licenses-subscriptions.html["Administrador de licencias y suscripciones"] |  | Los usuarios con el rol de administrador de licencias y suscripciones pueden crear, actualizar y eliminar licencias directas y suscripciones de marketplace para NetApp Console y los servicios de datos afiliados. 
 
 
-| link:reference-iam-licenses-subscriptions.html["Visor de licencias y suscripciones"] | Los usuarios con la función de visor de licencias y suscripciones pueden ver las licencias directas y las suscripciones al marketplace para la NetApp Console y los servicios de datos afiliados. 
+| link:reference-iam-licenses-subscriptions.html["Visor de licencias y suscripciones"] |  | Los usuarios con la función de visor de licencias y suscripciones pueden ver las licencias directas y las suscripciones al marketplace para la NetApp Console y los servicios de datos afiliados. 
 
 
-| Rol de configuración del mediador de ONTAP | Las cuentas de servicio con la función de configuración de Mediador de ONTAP pueden crear solicitudes de servicio.  Esta función es necesaria en una cuenta de servicio para configurar una instancia de lalink:https://docs.netapp.com/us-en/ontap/mediator/mediator-overview-concept.html["Mediador de la nube de ONTAP"^] . 
+| Rol de configuración del mediador de ONTAP | ONTAP_MEDIATOR_SETUP | Las cuentas de servicio con la función de configuración de Mediador de ONTAP pueden crear solicitudes de servicio.  Esta función es necesaria en una cuenta de servicio para configurar una instancia de lalink:https://docs.netapp.com/us-en/ontap/mediator/mediator-overview-concept.html["Mediador de la nube de ONTAP"^] . 
 
 
-| link:reference-iam-analyst-roles.html["Analista de soporte de operaciones"] | Proporciona acceso a alertas y herramientas de monitoreo y la capacidad de ingresar y administrar casos de soporte. 
+| link:reference-iam-analyst-roles.html["Analista de soporte de operaciones"] | ANALISTA_SOPORTE_OPERATIVO | Proporciona acceso a alertas y herramientas de monitoreo y la capacidad de ingresar y administrar casos de soporte. 
 
 
-| link:reference-iam-storage-roles.html["Administrador de almacenamiento"] | Administrar las funciones de gobernanza y salud del almacenamiento, descubrir recursos de almacenamiento, así como modificar y eliminar sistemas existentes. 
+| link:reference-iam-storage-roles.html["Administrador de almacenamiento"] | STORAGE_ADMIN | Administrar las funciones de gobernanza y salud del almacenamiento, descubrir recursos de almacenamiento, así como modificar y eliminar sistemas existentes. 
 
 
-| link:reference-iam-storage-roles.html["Visor de almacenamiento"] | Visualizar el estado del almacenamiento y las funciones de gobernanza, así como también los recursos de almacenamiento descubiertos previamente.  No se pueden descubrir, modificar ni eliminar sistemas de almacenamiento existentes. 
+| link:reference-iam-storage-roles.html["Visor de almacenamiento"] | VISOR_ALMACENAMIENTO | Visualizar el estado del almacenamiento y las funciones de gobernanza, así como también los recursos de almacenamiento descubiertos previamente.  No se pueden descubrir, modificar ni eliminar sistemas de almacenamiento existentes. 
 
 
-| link:reference-iam-storage-roles.html["Especialista en salud del sistema"] | Administrar funciones de almacenamiento, salud y gobernanza, todos los permisos del administrador de almacenamiento, excepto no poder modificar ni eliminar sistemas existentes. 
+| link:reference-iam-storage-roles.html["Especialista en salud del sistema"] | ESPECIALISTA_SALUD_SISTEMA | Administrar funciones de almacenamiento, salud y gobernanza, todos los permisos del administrador de almacenamiento, excepto no poder modificar ni eliminar sistemas existentes. 
 |===
 
 
@@ -99,57 +101,57 @@ La siguiente es una lista de roles en la categoría de aplicación.  Cada rol ot
 
 La siguiente es una lista de roles en la categoría de servicio de datos.  Cada rol otorga permisos específicos dentro de su alcance designado.  Los usuarios que no tengan el rol de servicio de datos requerido o un rol de plataforma no podrán acceder al servicio de datos.
 
-[cols="10,24"]
+[cols="1,2,3"]
 |===
-| Rol de servicio de datos | Responsabilidades 
+| Rol de servicio de datos | Nombre de la API* | Responsabilidades 
 
 
-| link:reference-iam-backup-rec-roles.html["Superadministrador de copias de seguridad y recuperación"] | Realice cualquier acción en NetApp Backup and Recovery. 
+| link:reference-iam-backup-rec-roles.html["Superadministrador de copias de seguridad y recuperación"] | BACKUP_SUPER_ADMIN | Realice cualquier acción en NetApp Backup and Recovery. 
 
 
-| link:reference-iam-backup-rec-roles.html["Administrador de copias de seguridad y recuperación"] | Realice copias de seguridad en instantáneas locales, replique en almacenamiento secundario y realice copias de seguridad en almacenamiento de objetos. 
+| link:reference-iam-backup-rec-roles.html["Administrador de copias de seguridad y recuperación"] | BACKUP_ADMIN | Realice copias de seguridad en instantáneas locales, replique en almacenamiento secundario y realice copias de seguridad en almacenamiento de objetos. 
 
 
-| link:reference-iam-backup-rec-roles.html["Administrador de restauración de copias de seguridad y recuperación"] | Restaura cargas de trabajo en NetApp Backup and Recovery. 
+| link:reference-iam-backup-rec-roles.html["Administrador de restauración de copias de seguridad y recuperación"] | RESTORE_ADMIN | Restaura cargas de trabajo en NetApp Backup and Recovery. 
 
 
-| link:reference-iam-backup-rec-roles.html["Administrador de clones de Backup and Recovery"] | Clona aplicaciones y datos en Backup and Recovery. 
+| link:reference-iam-backup-rec-roles.html["Administrador de clones de Backup and Recovery"] | CLONE_ADMIN | Clona aplicaciones y datos en Backup and Recovery. 
 
 
-| link:reference-iam-backup-rec-roles.html["Visor de copias de seguridad y recuperación"] | Ver información de copia de seguridad y recuperación. 
+| link:reference-iam-backup-rec-roles.html["Visor de copias de seguridad y recuperación"] | BACKUP_VIEWER | Ver información de copia de seguridad y recuperación. 
 
 
-| link:reference-iam-disaster-rec-roles.html["Administración de recuperación ante desastres"] | Realice cualquier acción en el servicio NetApp Disaster Recovery . 
+| link:reference-iam-disaster-rec-roles.html["Administración de recuperación ante desastres"] | ADMINISTRADOR DE RECUPERACIÓN ANTE DESASTRES | Realice cualquier acción en el servicio NetApp Disaster Recovery . 
 
 
-| link:reference-iam-disaster-rec-roles.html["Administrador de conmutación por error de recuperación ante desastres"] | Realizar conmutaciones por error y migraciones. 
+| link:reference-iam-disaster-rec-roles.html["Administrador de conmutación por error de recuperación ante desastres"] | DISASTER_RECOVERY_FAILOVER_ADMIN | Realizar conmutaciones por error y migraciones. 
 
 
-| link:reference-iam-disaster-rec-roles.html["Administrador de aplicaciones de recuperación ante desastres"] | Cree planes de replicación, cámbielos e inicie conmutaciones por error de prueba. 
+| link:reference-iam-disaster-rec-roles.html["Administrador de aplicaciones de recuperación ante desastres"] | DISASTER_RECOVERY_APPLICATION_ADMIN | Cree planes de replicación, cámbielos e inicie conmutaciones por error de prueba. 
 
 
-| link:reference-iam-disaster-rec-roles.html["Visor de recuperación ante desastres"] | Ver sólo información. 
+| link:reference-iam-disaster-rec-roles.html["Visor de recuperación ante desastres"] | DISASTER_RECOVERY_VIEWER | Ver sólo información. 
 
 
-| link:reference-iam-data-classification.html["Administrador de cumplimiento"] | Necesario para instalar NetApp Data Classification y para asociar permisos a nivel de organización en NetApp Data Classification. 
+| link:reference-iam-data-classification.html["Administrador de cumplimiento"] |  | Necesario para instalar NetApp Data Classification y para asociar permisos a nivel de organización en NetApp Data Classification. 
 
 
-| link:reference-iam-data-classification.html["Visor de clasificación"] | Permite a los usuarios ver los resultados del escaneo de NetApp Data Classification. Los usuarios con este rol pueden ver información de cumplimiento y generar informes para los recursos a los que tienen permiso de acceso. Estos usuarios no pueden habilitar ni deshabilitar el escaneo de volúmenes, buckets o esquemas de bases de datos. 
+| link:reference-iam-data-classification.html["Visor de clasificación"] | VISOR_CLASIFICACIÓN | Permite a los usuarios ver los resultados del escaneo de NetApp Data Classification. Los usuarios con este rol pueden ver información de cumplimiento y generar informes para los recursos a los que tienen permiso de acceso. Estos usuarios no pueden habilitar ni deshabilitar el escaneo de volúmenes, buckets o esquemas de bases de datos. 
 
 
-| link:reference-iam-ransomware-roles.html["Administrador de resiliencia frente al ransomware"] | Administre acciones en las pestañas Proteger, Alertas, Recuperar, Configuración e Informes de NetApp Ransomware Resilience. 
+| link:reference-iam-ransomware-roles.html["Administrador de resiliencia frente al ransomware"] | RANSOMWARE_PROTECTION_ADMIN | Administre acciones en las pestañas Proteger, Alertas, Recuperar, Configuración e Informes de NetApp Ransomware Resilience. 
 
 
-| link:reference-iam-ransomware-roles.html["Visor de resiliencia contra ransomware"] | Vea datos de carga de trabajo, vea datos de alerta, descargue datos de recuperación y descargue informes en Ransomware Resilience. 
+| link:reference-iam-ransomware-roles.html["Visor de resiliencia contra ransomware"] | RANSOMWARE_PROTECTION_VIEWER | Vea datos de carga de trabajo, vea datos de alerta, descargue datos de recuperación y descargue informes en Ransomware Resilience. 
 
 
-| link:reference-iam-ransomware-roles.html["Comportamiento del usuario de Resiliencia ante Ransomware"] | Configure, administre y visualice la detección, alertas y monitoreo de comportamiento sospechoso de usuarios en Ransomware Resilience. 
+| link:reference-iam-ransomware-roles.html["Comportamiento del usuario de Resiliencia ante Ransomware"] | RANSOMWARE_RESILIENCE_USER_BEHAVIOR_ADMIN | Configure, administre y visualice la detección, alertas y monitoreo de comportamiento sospechoso de usuarios en Ransomware Resilience. 
 
 
-| link:reference-iam-ransomware-roles.html["Visor del comportamiento del usuario de Ransomware Resilience"] | Vea alertas e información sobre comportamiento sospechoso de usuarios en Ransomware Resilience. 
+| link:reference-iam-ransomware-roles.html["Visor del comportamiento del usuario de Ransomware Resilience"] | RANSOMWARE_RESILIENCE_USER_BEHAVIOR_VIEWER | Vea alertas e información sobre comportamiento sospechoso de usuarios en Ransomware Resilience. 
 
 
-| Administrador de SnapCenter | Proporciona la capacidad de realizar copias de seguridad de instantáneas de clústeres ONTAP locales mediante NetApp Backup and Recovery para aplicaciones.  Un miembro que tiene este rol puede completar las siguientes acciones: * Completar cualquier acción desde Copia de seguridad y recuperación > Aplicaciones * Administrar todos los sistemas en los proyectos y carpetas para los que tiene permisos * Usar todos los servicios de la NetApp Console SnapCenter no tiene un rol de espectador. 
+| Administrador de SnapCenter | SNAPCENTER_ADMIN | Proporciona la capacidad de realizar copias de seguridad de instantáneas de clústeres ONTAP locales mediante NetApp Backup and Recovery para aplicaciones.  Un miembro que tiene este rol puede completar las siguientes acciones: * Completar cualquier acción desde Copia de seguridad y recuperación > Aplicaciones * Administrar todos los sistemas en los proyectos y carpetas para los que tiene permisos * Usar todos los servicios de la NetApp Console SnapCenter no tiene un rol de espectador. 
 |===
 
 
