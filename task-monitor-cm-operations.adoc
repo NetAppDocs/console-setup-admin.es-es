@@ -142,7 +142,7 @@ Puede enviar tipos específicos de notificaciones por correo electrónico para e
 
 [NOTE]
 ====
-* La consola envía notificaciones por correo electrónico para el agente, licencias y suscripciones, NetApp Copy and Sync y NetApp Backup and Recovery.
+* La consola envía notificaciones por correo electrónico para el agente, las licencias y las suscripciones, NetApp Copy and Sync, NetApp Backup and Recovery y NetApp Ransomware Resilience.
 * No se admite el envío de notificaciones por correo electrónico cuando el agente de la consola está instalado en un sitio sin acceso a Internet.
 
 
