@@ -30,6 +30,7 @@ Tenga en cuenta lo siguiente sobre cómo conceder acceso en la NetApp Console:
 * Todos los usuarios deben registrarse primero en la NetApp Console antes de que se les pueda conceder acceso a los recursos, incluso si forman parte de un grupo federado.
 * Debe asignar explícitamente un rol a cada usuario en la Consola antes de que puedan acceder a los recursos, incluso si son miembros de un grupo federado al que se le ha asignado un rol.
 * Puede agregar cuentas de servicio directamente desde la consola y asignarles roles.
+* Puedes elegir entre las funciones admitidas al asignar funciones a usuarios o cuentas de servicio.
 
 
 
@@ -74,7 +75,7 @@ Tenga en cuenta lo siguiente:
 
 . *Seleccione una categoría* y luego seleccione un *Rol* que proporcione al miembro permisos para los recursos asociados con la organización, carpeta o proyecto que seleccionó.
 +
-link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso"] .
+En la lista desplegable solo se muestran los roles admitidos. link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso"].
 
 . Para dar acceso a más carpetas, proyectos o roles, seleccione *Agregar rol*, elija la carpeta, el proyecto o la categoría de rol y seleccione un rol.
 . Seleccione *Agregar*.
@@ -163,7 +164,7 @@ Tenga en cuenta lo siguiente:
 
 . Seleccione una *Categoría* y luego seleccione un *Rol* que le otorgue al miembro permisos para los recursos en la organización, carpeta o proyecto que usted seleccionó.
 +
-link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso"] .
+En la lista desplegable solo se muestran los roles admitidos. link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso"].
 
 . Para dar acceso a más carpetas, proyectos o roles, seleccione *Agregar rol*, elija la carpeta, el proyecto o la categoría de rol y seleccione un rol.
 

@@ -16,8 +16,6 @@ summary: Si quieres federarte con un dominio que es diferente de tu dominio de c
 [role="lead"]
 Si quieres federarte con un dominio que es diferente de tu dominio de correo electrónico, primero debes verificar que eres el propietario del dominio. Solo puedes usar dominios verificados para la federación.
 
-Este flujo de trabajo de verificación de dominios es diferente del de verificación de organizaciones. link:task-verify-organization.html["Aprende cómo verificar tu organización"].
-
 .Roles requeridos
 El rol de administrador de la Federación es necesario para crear y gestionar federaciones. El visor de la Federación puede ver la página de la Federación. link:reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso."]
 

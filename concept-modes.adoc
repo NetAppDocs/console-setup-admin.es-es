@@ -125,16 +125,19 @@ NetApp recomienda que los clientes trabajen con su representante de NetApp para 
 | Almacenamiento en la nube de Google | Sí 
 
 
+| Acceso a suscripciones Keystone | Sí 
+
+
 | Clústeres ONTAP locales | Necesario para la detección y la gestión. Puedes usar la detección directa sin un agente de Console, pero necesitas un agente para usar las funciones de gestión. 
 
 
 | StorageGRID | Sí 
 
 
-| Cargas de trabajo | No 
+| Cargas de trabajo | No .8+| *Servicios de datos* 
 
 
-.8+| *Servicios de datos* | NetApp Backup and Recovery | Sí 
+| NetApp Backup and Recovery | Sí 
 
 
 | Clasificación de NetApp | Sí 
@@ -155,10 +158,10 @@ NetApp recomienda que los clientes trabajen con su representante de NetApp para 
 | NetApp Cloud Tiering | Sí 
 
 
-| NetApp Volume Caching | Sí 
+| NetApp Volume Caching | Sí .5+| *Características del contrato de soporte de NetApp* 
 
 
-.5+| *Características del contrato de soporte de NetApp* | Asesor digital | Sí 
+| Asesor digital | Sí 
 
 
 | Eficiencia económica | Sí 
@@ -170,10 +173,10 @@ NetApp recomienda que los clientes trabajen con su representante de NetApp para 
 | Actualizaciones de software | No 
 
 
-| Sostenibilidad | Sí 
+| Sostenibilidad | Sí .12+| *Funciones administrativas* 
 
 
-.12+| *Funciones administrativas* | Auditoría | No 
+| Auditoría | No 
 
 
 | Centro de automatización | No 
