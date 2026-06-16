@@ -1,0 +1,25 @@
+= Lanzamiento de private mode (4.7.0)
+:allow-uri-read: 
+
+
+
+
+=== Lanzamiento de private mode (4.7.0)
+
+Ya está disponible para descargar un nuevo modo privado desde https://mysupport.netapp.com/site/downloads["Sitio de soporte de NetApp"^]
+
+La versión 4.7.0 incluye actualizaciones de los siguientes componentes y servicios de NetApp Console.
+
+[cols="3*"]
+|===
+| Componente o servicio | Versión incluida en este lanzamiento | Cambios desde el lanzamiento anterior del modo privado 
+
+
+| Agente de consola | 4.7.0 | Ve al https://docs.netapp.com/us-en/console-setup-admin/whats-new.html#2026-05-11.html["Novedades en la página de NetApp Console"^] y revisa los cambios incluidos para las versiones 4.7.0. 
+
+
+| NetApp Backup and Recovery | 5.4.0 (08 de junio de 2026) | Ve a https://docs.netapp.com/us-en/data-services-backup-recovery/whats-new.html["novedades en la página de NetApp Backup and Recovery"^]. 
+
+
+| NetApp Data Classification | 1.54.0 (11 de mayo de 2026) | Ve a https://docs.netapp.com/us-en/data-services-data-classification/whats-new.html["novedades en la página de clasificación de NetApp"^]. 
+|===
