@@ -100,4 +100,11 @@ El agente de la consola debe poder acceder al siguiente punto final para las car
  a| 
 La consola basada en web se comunica con este punto final para interactuar con las API de Workload Factory para administrar y operar cargas de trabajo basadas en FSx para ONTAP.
 
+
+
+ a| 
+\https://ws.workloads.bluexp.netapp.com
+ a| 
+El backend de Workload Factory lo utiliza para consultar al agente de la Console sobre las operaciones de ONTAP.
+
 |===
