@@ -1,0 +1,17 @@
+= Agente de Console 4.8.0
+:allow-uri-read: 
+
+
+
+
+=== Agente de Console 4.8.0
+
+La versión 4.8.0 es compatible tanto con el modo estándar como con el modo restringido.
+
+Esta versión del agente de la Console incluye mejoras de seguridad y correcciones de errores.
+
+
+
+=== Administración de la NetApp Console
+
+Esta versión incluye mejoras de seguridad y correcciones de errores.

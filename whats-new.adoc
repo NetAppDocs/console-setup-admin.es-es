@@ -43,6 +43,24 @@ La versión 4.7.0 incluye actualizaciones de los siguientes componentes y servic
 |===
 
 
+== 8 de junio de 2026
+
+
+
+=== Agente de Console 4.8.0
+
+La versión 4.8.0 es compatible tanto con el modo estándar como con el modo restringido.
+
+Esta versión del agente de la Console incluye mejoras de seguridad y correcciones de errores.
+
+
+
+=== Administración de la NetApp Console
+
+Esta versión incluye mejoras de seguridad y correcciones de errores.
+
+
+
 == 11 de mayo de 2026
 
 
