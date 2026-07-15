@@ -27,6 +27,7 @@ NOTE: Con 4.0.0, NetApp ha reducido los puntos finales de red necesarios para la
 
 
 
+[[endpoints-contacted-by-netapp-console-and-console-agents]]
 == Puntos finales contactados por la NetApp Console y los agentes de la consola
 
 Cada agente que implemente y cada computadora que acceda a la NetApp Console deben tener conexiones a los puntos finales que se enumeran a continuación.
@@ -58,6 +59,7 @@ Para obtener imágenes para las actualizaciones del agente de consola.
 |===
 
 
+[[cloud-provider-endpoints-contacted-the-console-agent]]
 == Los puntos finales del proveedor de la nube se comunicaron con el agente de la consola
 
 Los agentes de consola deben tener acceso a puntos finales adicionales si están implementados en su proveedor de nube.
@@ -71,12 +73,14 @@ Configure el acceso al punto final de la red del proveedor de nube antes de inst
 
 
 
+[[data-services-endpoints-contacted-by-the-console-agent]]
 == Puntos finales de servicios de datos contactados por el agente de la consola
 
 Algunos servicios de datos de NetApp , así como Cloud Volumes ONTAP, requieren que el agente tenga acceso a Internet saliente adicional.
 
 
 
+[[endpoints-for-cloud-volumes-ontap]]
 === Puntos finales para Cloud Volumes ONTAP
 
 * link:https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/reference-networking-aws.html#outbound-internet-access-for-cloud-volumes-ontap-nodes["Puntos finales para Cloud Volumes ONTAP en AWS"]
@@ -86,6 +90,7 @@ Algunos servicios de datos de NetApp , así como Cloud Volumes ONTAP, requieren 
 
 
 
+[[endpoints-for-workloads]]
 === Puntos finales para cargas de trabajo
 
 El agente de la consola debe poder acceder al siguiente punto final para las cargas de trabajo de NetApp .

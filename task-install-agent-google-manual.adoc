@@ -25,6 +25,7 @@ Al desplegar un agente en Google Cloud, se inicia una instancia de VM que ejecut
 
 
 
+[[step-1-review-host-requirements]]
 == Paso 1: Revisar los requisitos del host
 
 El software del agente de consola debe ejecutarse en un host que cumpla con los requisitos específicos del sistema operativo, requisitos de RAM, requisitos de puerto, etc.
@@ -156,6 +157,8 @@ No compatible
 |===
 
 
+[[step-2-install-podman-or-docker-engine]]
+[[podman-configuration]]
 == Paso 2: Instalar Podman o Docker Engine
 
 Dependiendo de su sistema operativo, se requiere Podman o Docker Engine antes de instalar el agente.
@@ -341,6 +344,7 @@ sudo systemctl enable docker && sudo systemctl start docker
 ====
 
 
+[[step-3-set-up-networking]]
 == Paso 3: Configurar la red
 
 Configure su red para que el agente de la consola pueda administrar recursos y procesos dentro de su entorno de nube híbrida.  Por ejemplo, debe asegurarse de que haya conexiones disponibles para las redes de destino y que el acceso a Internet saliente esté disponible.
@@ -445,6 +449,8 @@ Habilitar NTP:: Si tienes pensado usar NetApp Data Classification para analizar 
 
 
 
+[[step-4-set-up-permissions-for-the-console-agent]]
+[[agent-permissions-google]]
 == Paso 4: Configurar permisos para el agente de la consola
 
 Se requiere una cuenta de servicio de Google Cloud para proporcionar al agente de la consola los permisos que necesita para administrar recursos en Google Cloud.  Cuando cree el agente de consola, deberá asociar esta cuenta de servicio con la máquina virtual del agente de consola.
@@ -504,6 +510,7 @@ Para más detalles, consulte https://cloud.google.com/iam/docs/granting-changing
 
 
 
+[[step-5-set-up-shared-vpc-permissions]]
 == Paso 5: Configurar permisos de VPC compartidos
 
 Si está utilizando una VPC compartida para implementar recursos en un proyecto de servicio, deberá preparar sus permisos.
@@ -556,6 +563,7 @@ Notas:
 ====
 
 
+[[step-6-enable-google-cloud-apis]]
 == Paso 6: Habilitar las API de Google Cloud
 
 Se deben habilitar varias API de Google Cloud antes de poder implementar un agente de consola en Google Cloud.
@@ -580,6 +588,7 @@ https://cloud.google.com/apis/docs/getting-started#enabling_apis["Documentación
 
 
 
+[[step-7-install-the-console-agent]]
 == Paso 7: Instalar el agente de consola
 
 Una vez completados los requisitos previos, puede instalar manualmente el software en su propio host Linux.
@@ -746,6 +755,7 @@ Si tiene depósitos de Google Cloud Storage en la misma cuenta de Google Cloud d
 
 
 
+[[step-8-provide-permissions-to-console-agent]]
 == Paso 8: Proporcionar permisos al agente de la consola
 
 Debes proporcionar al agente de la consola los permisos de Google Cloud que configuraste previamente.  Al proporcionar los permisos, se permite que el agente de la consola administre sus datos y la infraestructura de almacenamiento en Google Cloud.

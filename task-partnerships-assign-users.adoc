@@ -23,6 +23,7 @@ Puedes eliminar usuarios de una asociación en cualquier momento. Eliminar a un 
 
 
 
+[[add-members-to-a-partnership]]
 == Agregar miembros a una asociación
 
 Cuando añades miembros a una asociación, el *administrador de la asociación* de la organización asociada debe asignarles roles para determinados recursos de su organización antes de que puedan acceder a esos recursos.
@@ -39,6 +40,7 @@ Después de agregar miembros a una asociación, los miembros se muestran como mi
 
 
 
+[[remove-members-from-a-partnership]]
 == Eliminar miembros de una asociación
 
 Puedes eliminar miembros de una asociación en cualquier momento. Eliminar a un usuario de una asociación revoca inmediatamente su acceso a cualquier recurso de la organización asociada.
@@ -55,6 +57,7 @@ Si desea ajustar el rol que tiene un miembro o los recursos a los que puede acce
 
 
 
+[[view-role-information-for-a-user]]
 == Ver información de roles de un usuario
 
 Puede ver el rol que se le ha asignado a un usuario y los recursos asociados.

@@ -18,6 +18,7 @@ Un agente de Console es un componente de software ligero que instalas en tu red 
 
 
 
+[[what-a-console-agent-does]]
 == Qué hace un agente de Console
 
 Un agente de Console salva la brecha de conectividad entre tus sistemas de almacenamiento y NetApp Console. Conecta de forma segura tu infraestructura a las APIs de NetApp y a Console, permitiéndote:
@@ -30,6 +31,7 @@ Un agente de Console salva la brecha de conectividad entre tus sistemas de almac
 
 
 
+[[console-agent-architecture]]
 === Arquitectura del agente de consola
 
 Los agentes funcionan con procesos ligeros que:
@@ -42,6 +44,8 @@ Los agentes funcionan con procesos ligeros que:
 
 
 
+[[console-agent-availability-and-operational-requirements]]
+[[agents-must-be-operational-at-all-times]]
 === Disponibilidad del agente de la consola y requisitos operativos
 
 Los agentes de consola son fundamentales para NetApp Console. Los agentes deben permanecer operativos y accesibles para que los servicios de gestión y datos sean ininterrumpidos. Tú eres responsable de garantizar:
@@ -54,6 +58,7 @@ Los agentes de consola son fundamentales para NetApp Console. Los agentes deben 
 
 
 
+[[when-you-need-a-console-agent]]
 == Cuando necesites un agente de Consola
 
 Necesitas desplegar al menos un agente de Console cuando quieras:
@@ -290,6 +295,7 @@ link:concept-modes.html["Obtenga más información sobre los modos de implementa
 
 
 
+[[deployment-options-for-console-agents]]
 == Opciones de despliegue para agentes de Console
 
 Puedes desplegar agentes de Console en:
@@ -309,6 +315,7 @@ Puedes desplegar agentes directamente desde la NetApp Console, desde tu marketpl
 
 
 
+[[agents-for-the-netapp-console-saas-application-standard-mode]]
 === Agentes para la aplicación SaaS de NetApp Console (modo estándar)
 
 Implementa agentes en tu cloud o en tus instalaciones para conectar con la aplicación SaaS Console alojada en la nube. Los agentes permiten funciones avanzadas mientras la interfaz de usuario de Console sigue siendo accesible desde cualquier lugar.
@@ -317,6 +324,7 @@ Puedes instalar agentes directamente desde la NetApp Console cuando uses la apli
 
 
 
+[[agents-for-netapp-console-in-restricted-mode]]
 === Agentes para NetApp Console en modo restringido
 
 En modo restringido, los usuarios acceden a la NetApp Console directamente desde un agente instalado, no desde la aplicación SaaS alojada en la nube. Debes instalar al menos un agente para que sirva como punto de acceso a la Console. Se necesitan agentes adicionales para habilitar los servicios de datos y gestionar los sistemas de almacenamiento.
@@ -325,6 +333,7 @@ Instala agentes desde el marketplace de tu proveedor de nube o instalando manual
 
 
 
+[[agents-for-netapp-console-in-private-mode-on-premises-or-in-the-cloud-with-no-outbound-connectivity]]
 === Agentes para NetApp Console en modo privado (en las instalaciones o en la nube sin conectividad saliente)
 
 En modo privado, los usuarios acceden a la NetApp Console directamente desde un agente instalado. Debes instalar al menos un agente para que sirva como punto de acceso a la Console. Se necesitan agentes adicionales para habilitar los servicios de datos y gestionar los sistemas de almacenamiento.
@@ -333,6 +342,7 @@ Instala agentes en tu centro de datos o en un entorno aislado por aire. Los agen
 
 
 
+[[use-multiple-agents-when-needed]]
 === Usa varios agentes cuando lo necesites
 
 Cada agente funciona de forma independiente y puede gestionar varios sistemas de almacenamiento y servicios de datos. Despliega varios agentes cuando lo necesites:
@@ -349,6 +359,7 @@ Por ejemplo:
 
 
 
+[[console-agent-upgrades]]
 == Actualizaciones del agente de consola
 
 Los agentes en la nube se actualizan automáticamente cuando tienen acceso a Internet saliente. Para los agentes sin acceso a Internet (modo privado), consulta link:task-upgrade-agent.html["Administrar actualizaciones del agente de la consola"] para obtener instrucciones de actualización manual.

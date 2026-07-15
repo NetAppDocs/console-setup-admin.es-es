@@ -29,6 +29,8 @@ Las siguientes tablas indican las acciones que cada rol de la plataforma de cons
 
 
 
+[[organization-administration-roles]]
+[[organization-admin-roles]]
 == Roles de administración de la organización
 
 [cols="2,1,1"]
@@ -79,6 +81,7 @@ Las siguientes tablas indican las acciones que cada rol de la plataforma de cons
 |===
 
 
+[[federation-roles]]
 == Roles de la federación
 
 [cols="2,1,1"]
@@ -105,6 +108,7 @@ Las siguientes tablas indican las acciones que cada rol de la plataforma de cons
 |===
 
 
+[[partnership-roles]]
 == Roles de asociación
 
 [cols="2,1,1"]
@@ -125,6 +129,8 @@ Las siguientes tablas indican las acciones que cada rol de la plataforma de cons
 |===
 
 
+[[super-admin-and-viewer-roles]]
+[[super-admin-roles]]
 == Roles de superadministrador y espectador
 
 El rol de *Superadministrador* proporciona acceso completo para administrar las funciones de la consola, el almacenamiento y los servicios de datos.  Este rol es adecuado para aquellos que supervisan la administración y la gobernanza.  Por el contrario, el rol de *Supervisor* ofrece acceso de solo lectura, ideal para auditores o partes interesadas que necesitan visibilidad sin realizar cambios.

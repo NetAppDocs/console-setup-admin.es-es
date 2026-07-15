@@ -18,6 +18,7 @@ El agente de la consola requiere permisos para realizar acciones en Google Cloud
 
 
 
+[[google-cloud-user-account-permissions]]
 == Permisos de la cuenta de usuario de Google Cloud
 
 La siguiente función personalizada otorga a un usuario de Google Cloud los permisos necesarios para implementar un agente.  Aplique este rol personalizado al usuario que implementará el agente.
@@ -115,6 +116,7 @@ includedPermissions:
 ====
 
 
+[[service-account-permissions]]
 == Permisos de la cuenta de servicio
 
 La función personalizada a continuación le otorga a la cuenta de servicio de Google Cloud asociada al agente de la consola los permisos necesarios para administrar recursos y procesos en su red de Google Cloud.
@@ -302,12 +304,14 @@ includedPermissions:
 ====
 
 
+[[how-google-cloud-permissions-are-used]]
 == Cómo se utilizan los permisos de Google Cloud
 
 El agente de la consola usa los permisos en la función personalizada para administrar los recursos de Cloud Volumes ONTAP y los procesos de servicios de datos de NetApp en su red de Google Cloud.  Las siguientes secciones describen cómo el agente utiliza estos permisos.
 
 
 
+[[permissions-used-for-cloud-volumes-ontap]]
 === Permisos utilizados para Cloud Volumes ONTAP
 
 El agente de la consola usa los permisos en la función personalizada para administrar los recursos y procesos de Cloud Volumes ONTAP en su red de Google Cloud.  Las siguientes secciones describen cómo el agente utiliza estos permisos.
@@ -748,6 +752,7 @@ El agente de la consola usa los permisos en la función personalizada para admin
 ====
 
 
+[[permissions-used-for-netapp-backup-and-recovery]]
 === Permisos utilizados para NetApp Backup and Recovery
 
 El agente de consola usa los permisos en el rol personalizado para administrar los recursos y procesos de NetApp Backup and Recovery en su red de Google Cloud.  Las siguientes secciones describen cómo el agente utiliza estos permisos.
@@ -777,6 +782,7 @@ El agente de consola usa los permisos en el rol personalizado para administrar l
 ====
 
 
+[[permissions-used-for-netapp-data-classification]]
 === Permisos utilizados para la NetApp Data Classification
 
 El agente de consola usa los permisos en la función personalizada para administrar los recursos y procesos de NetApp Data Classification en su red de Google Cloud.  Las siguientes secciones describen cómo el agente utiliza estos permisos.
@@ -801,30 +807,36 @@ El agente de consola usa los permisos en la función personalizada para administ
 ====
 
 
+[[change-log]]
+[[gcp-permissions-change-log]]
 == Registro de cambios
 
 Los permisos agregados y eliminados se detallan a continuación.
 
 
 
+[[13-april-2026]]
 === 13 abril 2026
 
 Se añade el permiso `compute.disks.update` para actualizar los parámetros de IOPS y rendimiento en un agregado o disco Hyperdisk Balanced en sistemas Cloud Volumes ONTAP.
 
 
 
+[[26-february-2026]]
 === 26 febrero 2026
 
 Los permisos `cloudbuild.workerpools.get` y `cloudbuild.workerpools.list` se añaden para dar soporte a Infrastructure Manager en implementaciones en modo privado de Cloud Volumes ONTAP en Google Cloud.
 
 
 
+[[09-february-2026]]
 === 09 de febrero de 2026
 
 El permiso `compute.forwardingRules.update` se añade para dar soporte a Infrastructure Manager en implementaciones de Cloud Volumes ONTAP en Google Cloud.
 
 
 
+[[08-december-2025]]
 === 08 de diciembre de 2025
 
 NetApp está migrando de Google Cloud Deployment Manager a Google Cloud Infrastructure Manager (IM) para implementar y ejecutar el agente de consola en Google Cloud.  Se agregaron los siguientes permisos para respaldar este cambio.
@@ -916,12 +928,14 @@ Los siguientes permisos agregados son necesarios para la cuenta de servicio util
 
 
 
+[[26-november-2025]]
 === 26 de noviembre de 2025
 
 Los permisos se han actualizado para aclarar su uso, pero no se han añadido ni eliminado permisos. Se añaden tres columnas para indicar si cada permiso se utiliza para la implementación, las operaciones diarias o la eliminación. Aparte de esto, algunos permisos están segregados en función de su uso para NetApp Data Classification y NetApp Backup and Recovery.
 
 
 
+[[06-february-2023]]
 === 6 de febrero de 2023
 
 Se agregó el siguiente permiso a esta política:
@@ -933,6 +947,7 @@ Este permiso es necesario para Cloud Volumes ONTAP.
 
 
 
+[[27-january-2023]]
 === 27 de enero de 2023
 
 Se agregaron los siguientes permisos a esta política:

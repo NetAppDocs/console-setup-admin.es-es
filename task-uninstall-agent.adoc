@@ -18,6 +18,7 @@ Desinstala un agente de Console para solucionar problemas o para eliminarlo perm
 
 
 
+[[uninstall-the-agent-when-it-has-outbound-connectivity]]
 == Desinstala el agente cuando tiene conectividad de salida
 
 Si está utilizando el modo estándar o el modo restringido (en otras palabras, el host del agente tiene conectividad saliente), debe seguir los pasos a continuación para desinstalar el agente.
@@ -35,6 +36,7 @@ _silent_ ejecuta el script sin solicitar confirmación.
 
 
 
+[[uninstall-the-agent-when-it-has-no-outbound-connectivity]]
 == Desinstala el agente cuando no tiene conectividad de salida
 
 Si tu agente no tiene conectividad de salida (por ejemplo, en modo privado), debes eliminar manualmente el software del agente del host.
@@ -71,6 +73,7 @@ docker system prune -a
 
 
 
+[[remove-console-agents-from-the-console]]
 == Eliminar agentes de la consola
 
 Si ha eliminado una máquina virtual de agente o ha desinstalado el agente, debe eliminarlo de la lista de agentes en la consola. Después de eliminar una máquina virtual de agente o desinstalar el software del agente, este muestra el estado *Desconectado* en la consola.

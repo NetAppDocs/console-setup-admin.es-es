@@ -18,6 +18,7 @@ Descubra cómo la NetApp Console usa las credenciales de Azure para realizar acc
 
 
 
+[[initial-azure-credentials]]
 == Credenciales iniciales de Azure
 
 Al implementar un agente de consola desde la consola, debe usar una cuenta de Azure o una entidad de servicio que tenga permisos para implementar la máquina virtual del agente de consola.  Los permisos necesarios se enumeran en ellink:task-install-agent-azure-console.html#agent-custom-role["Política de implementación de agentes para Azure"] .
@@ -34,12 +35,14 @@ Puede implementar todos sus sistemas Cloud Volumes ONTAP utilizando las credenci
 
 
 
+[[additional-azure-subscriptions-for-a-managed-identity]]
 == Suscripciones adicionales de Azure para una identidad administrada
 
 La identidad administrada asignada por el sistema asignada a la máquina virtual del agente de consola está asociada con la suscripción en la que inició el agente de consola.  Si desea seleccionar una suscripción de Azure diferente, deberá:link:task-adding-azure-accounts.html#associate-additional-azure-subscriptions-with-a-managed-identity["asociar la identidad administrada con esas suscripciones"] .
 
 
 
+[[additional-azure-credentials]]
 == Credenciales adicionales de Azure
 
 Si desea utilizar diferentes credenciales de Azure con la consola, debe otorgar los permisos necesarios mediantelink:task-adding-azure-accounts.html["Creación y configuración de una entidad de servicio en Microsoft Entra ID"] para cada cuenta de Azure.  La siguiente imagen muestra dos cuentas adicionales, cada una configurada con una entidad de servicio y un rol personalizado que proporciona permisos:
@@ -54,6 +57,7 @@ image:screenshot_accounts_switch_azure.gif["Una captura de pantalla que muestra 
 
 
 
+[[credentials-and-marketplace-subscriptions]]
 == Credenciales y suscripciones al mercado
 
 Las credenciales que agrega a un agente de consola deben estar asociadas a una suscripción de Azure Marketplace para que pueda pagar Cloud Volumes ONTAP a una tarifa por hora (PAYGO) o por los servicios de datos de NetApp o mediante un contrato anual.
@@ -68,12 +72,14 @@ Tenga en cuenta lo siguiente sobre las credenciales de Azure y las suscripciones
 
 
 
+[[faq]]
 == Preguntas frecuentes
 
 La siguiente pregunta está relacionada con credenciales y suscripciones.
 
 
 
+[[can-i-change-the-azure-marketplace-subscription-for-cloud-volumes-ontap-systems]]
 === ¿Puedo cambiar la suscripción de Azure Marketplace para los sistemas Cloud Volumes ONTAP ?
 
 Sí, puedes.  Cuando cambia la suscripción de Azure Marketplace asociada con un conjunto de credenciales de Azure, todos los sistemas Cloud Volumes ONTAP existentes y nuevos se cobrarán a la nueva suscripción.
@@ -82,6 +88,7 @@ link:task-adding-azure-accounts.html#subscribe["Aprenda a asociar una suscripci�
 
 
 
+[[can-i-add-multiple-azure-credentials-each-with-different-marketplace-subscriptions]]
 === ¿Puedo agregar varias credenciales de Azure, cada una con diferentes suscripciones al Marketplace?
 
 Todas las credenciales de Azure que pertenecen a la misma suscripción de Azure se asociarán con la misma suscripción de Azure Marketplace.
@@ -90,12 +97,14 @@ Si tiene varias credenciales de Azure que pertenecen a diferentes suscripciones 
 
 
 
+[[can-i-move-existing-cloud-volumes-ontap-systems-to-a-different-azure-subscription]]
 === ¿Puedo mover sistemas Cloud Volumes ONTAP existentes a una suscripción de Azure diferente?
 
 No, no es posible mover los recursos de Azure asociados con su sistema Cloud Volumes ONTAP a una suscripción de Azure diferente.
 
 
 
+[[how-do-credentials-work-for-marketplace-deployments-and-on-premises-deployments]]
 === ¿Cómo funcionan las credenciales para las implementaciones del mercado y las implementaciones locales?
 
 Las secciones anteriores describen el método de implementación recomendado para el agente de la consola, que es desde la consola.  También puede implementar un agente de consola en Azure desde Azure Marketplace y puede instalar el software del agente de consola en su propio host Linux.

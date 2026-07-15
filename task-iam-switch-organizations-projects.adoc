@@ -21,6 +21,7 @@ TIP: Puedes pertenecer a varias organizaciones si otra organización te invita a
 
 
 
+[[switch-between-organizations]]
 == Cambiar entre organizaciones
 
 Si es miembro de varias organizaciones, puede cambiar entre ellas en cualquier momento.
@@ -39,6 +40,7 @@ La pestaña *Asociación* no se muestra si no tienes ninguna organización asoci
 
 
 
+[[switch-between-projects]]
 == Cambiar entre proyectos
 
 Si su organización incluye varios proyectos y tiene acceso a ellos, puede cambiar entre ellos en cualquier momento.
@@ -56,6 +58,7 @@ image:screenshot-iam-switch-projects-select.png["Una captura de pantalla del men
 
 
 
+[[switch-between-console-agents]]
 == Cambiar entre agentes de la consola
 
 Si tiene varios agentes de consola, puede alternar entre ellos para ver los sistemas que están asociados con un agente específico.
@@ -70,6 +73,7 @@ link:task-iam-associate-agents.html["Asociar agentes con carpetas y proyectos"] 
 
 
 
+[[related-information]]
 == Información relacionada
 
 * link:concept-identity-and-access-management.html["Obtenga información sobre la identidad y el acceso en la NetApp Console"]

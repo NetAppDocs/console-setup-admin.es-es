@@ -29,6 +29,7 @@ Para obtener detalles sobre todos los roles de acceso de NetApp Console, consult
 
 
 
+[[roles-used-for-common-actions]]
 == Roles utilizados para acciones comunes
 
 La siguiente tabla indica las acciones que cada rol de NetApp Backup and Recovery puede realizar para todas las cargas de trabajo.
@@ -291,12 +292,14 @@ No
 |===
 
 
+[[roles-used-for-workload-specific-actions]]
 == Roles utilizados para acciones específicas de la carga de trabajo
 
 La siguiente tabla indica las acciones que cada rol de NetApp Backup and Recovery puede realizar para cargas de trabajo específicas.
 
 
 
+[[kubernetes-workloads]]
 === Cargas de trabajo de Kubernetes
 
 Esta tabla indica las acciones que cada rol de NetApp Backup and Recovery puede realizar para acciones específicas de las cargas de trabajo de Kubernetes.

@@ -18,6 +18,7 @@ Las reglas del firewall de Google Cloud para el agente requieren tanto reglas de
 
 
 
+[[inbound-rules]]
 == Reglas de entrada
 
 [cols="10,10,80"]
@@ -42,12 +43,14 @@ Las reglas del firewall de Google Cloud para el agente requieren tanto reglas de
 |===
 
 
+[[outbound-rules]]
 == Reglas de salida
 
 Las reglas de firewall predefinidas del agente abren todo el tráfico saliente.  Siga las reglas básicas de salida si es aceptable o utilice reglas avanzadas de salida para requisitos más estrictos.
 
 
 
+[[basic-outbound-rules]]
 === Reglas básicas de salida
 
 Las reglas de firewall predefinidas para el agente incluyen las siguientes reglas de salida.
@@ -64,6 +67,7 @@ Las reglas de firewall predefinidas para el agente incluyen las siguientes regla
 |===
 
 
+[[advanced-outbound-rules]]
 === Reglas de salida avanzadas
 
 Si necesita reglas rígidas para el tráfico saliente, puede utilizar la siguiente información para abrir solo aquellos puertos que el agente requiere para la comunicación saliente.

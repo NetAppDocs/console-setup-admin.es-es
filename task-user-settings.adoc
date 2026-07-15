@@ -20,6 +20,7 @@ Dentro de la Consola, cada usuario tiene un perfil que contiene información sob
 
 
 
+[[change-your-display-name]]
 == Cambiar tu nombre para mostrar
 
 Puedes cambiar el nombre para mostrar de tu consola, que te identifica ante otros usuarios. No puedes cambiar tu nombre de usuario ni dirección de correo electrónico.
@@ -32,6 +33,7 @@ Puedes cambiar el nombre para mostrar de tu consola, que te identifica ante otro
 
 
 
+[[elevate-your-role-in-read-only-mode]]
 == Mejora tu rol en modo de solo lectura
 
 En algunos casos, el administrador de su organización puede poner su organización en modo de solo lectura. Si tiene un rol de administrador, debe elevar los permisos para realizar cambios. Esto garantiza que los cambios sean intencionales y autorizados.
@@ -50,6 +52,8 @@ image:screenshot-user-elevated.png["Una captura de pantalla que muestra el contr
 
 
 
+[[configure-multi-factor-authentication]]
+[[task-user-mfa]]
 == Configurar la autenticación multifactor
 
 Configure la autenticación multifactor (MFA) para mejorar la seguridad al requerir un segundo método de verificación.
@@ -78,6 +82,7 @@ Después de configurar MFA, la consola le solicitará que ingrese un código de 
 
 
 
+[[regenerate-your-mfa-recovery-code]]
 == Regenera tu código de recuperación de MFA
 
 Solo puedes usar los códigos de recuperación una vez.  Si usas o pierdes el tuyo, crea uno nuevo.
@@ -91,6 +96,7 @@ Solo puedes usar los códigos de recuperación una vez.  Si usas o pierdes el tu
 
 
 
+[[delete-your-mfa-configuration]]
 == Eliminar su configuración de MFA
 
 
@@ -104,6 +110,8 @@ NOTE: Si no puede acceder a su aplicación de autenticación o código de recupe
 
 
 
+[[contact-your-organization-administrator]]
+[[contact-admin]]
 == Comuníquese con el administrador de su organización
 
 Si necesita comunicarse con el administrador de su organización, puede enviarle un correo electrónico directamente desde la Consola.  El administrador gestiona las cuentas de usuario y los permisos dentro de su organización.
@@ -120,6 +128,7 @@ NOTE: Debe tener una aplicación de correo electrónico predeterminada configura
 
 
 
+[[configure-dark-mode-dark-theme]]
 == Configurar el modo oscuro (tema oscuro)
 
 Puedes configurar la consola para que se muestre en modo oscuro.

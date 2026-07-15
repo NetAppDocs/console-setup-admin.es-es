@@ -42,6 +42,7 @@ La tabla destaca las características de la página Auditoría y del Centro de n
 |===
 
 
+[[audit-user-activity-from-the-audit-page]]
 == Auditar la actividad del usuario desde la página Auditoría
 
 Utilice la página Auditoría para identificar quién realizó una acción o su estado.
@@ -60,6 +61,7 @@ Por ejemplo, puede utilizar el filtro *Servicio* para mostrar acciones relaciona
 
 
 
+[[download-audit-logs-from-the-audit-page]]
 === Descargar registros de auditoría desde la página Auditoría
 
 Puede descargar los registros de auditoría desde la página Auditoría a un archivo CSV.  Esto le permite mantener un registro de las acciones que los usuarios realizan en su organización.  El archivo CSV incluye todas las columnas del archivo CSV descargado, independientemente de los filtros o las columnas mostradas en la página Auditoría.
@@ -70,6 +72,8 @@ Puede descargar los registros de auditoría desde la página Auditoría a un arc
 
 
 
+[[monitor-activities-using-the-notification-center]]
+[[notification-center]]
 == Supervisar actividades mediante el Centro de notificaciones
 
 Las notificaciones rastrean las operaciones de la consola para confirmar el éxito.  Le permiten ver el estado de muchas acciones de la consola que inició durante su sesión de inicio de sesión actual.  No todos los servicios de consola reportan información al Centro de notificaciones.
@@ -80,6 +84,7 @@ También puede configurar la Consola para enviar ciertos tipos de notificaciones
 
 
 
+[[comparing-the-notification-center-with-alerts]]
 === Comparación del Centro de notificaciones con las alertas
 
 El Centro de notificaciones le permite ver el estado de las operaciones que ha iniciado y configurar notificaciones de alerta para ciertos tipos de actividades del sistema.  Mientras tanto, las alertas le permiten ver problemas o riesgos potenciales en su entorno de almacenamiento ONTAP relacionados con la capacidad, la disponibilidad, el rendimiento, la protección y la seguridad.
@@ -88,6 +93,7 @@ https://docs.netapp.com/us-en/console-alerts/index.html["Obtenga más informaci�
 
 
 
+[[notification-types]]
 === Tipos de notificación
 
 La consola clasifica las notificaciones en las siguientes categorías:
@@ -116,6 +122,7 @@ La consola clasifica las notificaciones en las siguientes categorías:
 |===
 
 
+[[filter-notifications]]
 === Filtrar notificaciones
 
 De forma predeterminada, verá todas las notificaciones activas en el Centro de notificaciones.  Puedes filtrar las notificaciones que ves para mostrar solo aquellas que son importantes para ti.  Puede filtrar por “Servicio” y por “Tipo” de notificación.
@@ -126,6 +133,7 @@ Por ejemplo, si desea ver solo notificaciones de "Error" y "Advertencia" para la
 
 
 
+[[dismiss-notifications]]
 === Descartar notificaciones
 
 Puedes eliminar las notificaciones de la página si ya no necesitas verlas.  Puede descartar notificaciones individualmente o todas a la vez.
@@ -136,6 +144,7 @@ Para descartar notificaciones individuales, pase el cursor sobre la notificació
 
 
 
+[[set-email-notification-settings]]
 === Establecer la configuración de notificaciones por correo electrónico
 
 Puede enviar tipos específicos de notificaciones por correo electrónico para estar informado sobre la actividad importante del sistema incluso cuando no haya iniciado sesión. Se pueden enviar correos electrónicos a cualquier usuario que forme parte de su organización o cuenta, o a cualquier otro destinatario que necesite estar al tanto de ciertos tipos de actividad del sistema.
@@ -169,6 +178,7 @@ La página *Destinatarios adicionales* le permite configurar la Consola para not
 
 
 
+[[add-additional-email-recipients]]
 === Agregar destinatarios de correo electrónico adicionales
 
 Los usuarios que aparecen en la página _Usuarios de la organización_ se completan automáticamente a partir de los usuarios de su organización o cuenta.  Puede agregar direcciones de correo electrónico en la página _Destinatarios adicionales_ para otras personas o grupos que no tengan acceso a la Consola, pero que necesiten recibir notificaciones sobre ciertos tipos de alertas y notificaciones.

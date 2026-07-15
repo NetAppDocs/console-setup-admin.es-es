@@ -24,6 +24,7 @@ Administrador de la organización, administrador de la federación, visor de la 
 
 
 
+[[single-sign-on-with-netapp-support-site]]
 == Inicio de sesión único con NetApp Support Site
 
 La federación con el sitio de soporte de NetApp permite a los usuarios iniciar sesión en la consola, Active IQ Digital Advisor y otras aplicaciones asociadas utilizando las mismas credenciales.
@@ -41,6 +42,7 @@ El equipo de soporte de NetApp revisa y procesa su solicitud.
 
 
 
+[[single-sign-on-with-your-identity-provider]]
 == Inicio de sesión único con tu proveedor de identidades
 
 Puede configurar una conexión federada con su proveedor de identidad para habilitar el inicio de sesión único (SSO) para la consola.  El proceso implica configurar su proveedor de identidad para que confíe en NetApp como proveedor de servicios y luego crear la conexión en la consola.
@@ -50,6 +52,7 @@ NOTE: Si anteriormente configuró la federación usando NetApp Cloud Central (un
 
 
 
+[[supported-identity-providers]]
 === Proveedores de identidad compatibles
 
 NetApp admite los siguientes protocolos y proveedores de identidad para la federación:
@@ -66,6 +69,7 @@ NetApp admite los siguientes protocolos y proveedores de identidad para la feder
 
 
 
+[[federation-with-netapp-console-workflow]]
 === Flujo de trabajo de la Federación con la NetApp Console
 
 NetApp solo admite el inicio de sesión único (SSO) iniciado por el proveedor de servicios (SP).  Primero debe configurar el proveedor de identidad para confiar en NetApp como proveedor de servicios.  Luego, puede crear una conexión en la consola que utilice la configuración del proveedor de identidad.

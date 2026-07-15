@@ -28,6 +28,7 @@ NOTE: Despliega un agente de Console en la misma región de Azure que los sistem
 
 
 
+[[step-1-set-up-networking]]
 == Paso 1: Configurar la red
 
 Asegúrate de que la ubicación de red donde planeas instalar el agente de la NetApp Console cumple con los siguientes requisitos. Estos requisitos permiten que el agente de la NetApp Console gestione los recursos en tu nube híbrida.
@@ -145,6 +146,7 @@ Implemente los requisitos de red después de crear el agente de consola.
 
 
 
+[[step-2-review-vm-requirements]]
 == Paso 2: Revisar los requisitos de la máquina virtual
 
 Al crear el agente de consola, elija un tipo de máquina virtual que cumpla con los siguientes requisitos.
@@ -156,6 +158,7 @@ Tamaño de la máquina virtual de Azure:: Un tipo de instancia que cumple con lo
 
 
 
+[[step-3-set-up-permissions]]
 == Paso 3: Configurar permisos
 
 Puede proporcionar permisos de las siguientes maneras:
@@ -364,6 +367,7 @@ image:screenshot_azure_client_secret.gif["Una captura de pantalla del portal de 
 ====
 
 
+[[step-4-create-the-console-agent]]
 == Paso 4: Crear el agente de consola
 
 Inicie el agente de consola directamente desde Azure Marketplace.
@@ -448,6 +452,7 @@ Si tiene Azure Blob Storage en la misma suscripción de Azure donde creó el age
 
 
 
+[[step-5-provide-permissions-to-the-console-agent]]
 == Paso 5: Proporcionar permisos al agente de la consola
 
 Ahora que ha creado el agente de consola, debe proporcionarle los permisos que configuró previamente.  Al proporcionar los permisos, se permite que el agente de la consola administre sus datos y la infraestructura de almacenamiento en Azure.

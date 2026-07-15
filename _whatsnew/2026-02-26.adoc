@@ -4,6 +4,7 @@
 
 
 
+[[private-mode-release-4-4-0]]
 === Lanzamiento de private mode (4.4.0)
 
 Ya está disponible para descargar un nuevo modo privado desde https://mysupport.netapp.com/site/downloads["Sitio de soporte de NetApp"^]

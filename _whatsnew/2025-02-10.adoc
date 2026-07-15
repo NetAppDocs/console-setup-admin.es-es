@@ -4,6 +4,7 @@
 
 
 
+[[connector-3-9-49]]
 === Conector 3.9.49
 
 Esta versión del conector BlueXP incluye pequeñas mejoras de seguridad y correcciones de errores.
@@ -12,6 +13,7 @@ En este momento, la versión 3.9.49 está disponible para el modo estándar y el
 
 
 
+[[bluexp-identity-and-access-management-iam]]
 === Gestión de identidad y acceso (IAM) de BlueXP
 
 * Soporte para asignar múltiples roles a un usuario de BlueXP .
@@ -76,6 +78,7 @@ BlueXP IAM es compatible cuando se utiliza BlueXP en modo estándar y restringid
 
 
 
+[[private-mode-release-3-9-48]]
 === Lanzamiento del modo privado (3.9.48)
 
 Ya está disponible para descargar un nuevo modo privado desde https://mysupport.netapp.com/site/downloads["Sitio de soporte de NetApp"^]

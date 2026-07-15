@@ -22,6 +22,7 @@ Puede ver y administrar recursos desde la página *Recursos* en la Consola.
 
 
 
+[[console-resource-types]]
 == Tipos de recursos de la consola
 
 Puede asociar varios tipos de recursos a proyectos en su organización de NetApp Console :
@@ -40,6 +41,7 @@ Cargas de trabajo de copia de seguridad y recuperación:: Las cargas de trabajo 
 
 
 
+[[view-the-resources-in-your-organization]]
 == Ver los recursos de su organización
 
 Puede ver los recursos descubiertos y no descubiertos asociados con su organización. El sistema encuentra recursos de almacenamiento y los marca como no descubiertos hasta que los agregue a la consola.
@@ -64,6 +66,8 @@ NOTE: La consola excluye los recursos de Amazon FSx for NetApp ONTAP de la pági
 
 
 
+[[associate-a-resource-with-folders-and-projects]]
+[[associate-resource]]
 == Asociar un recurso con carpetas y proyectos
 
 Asocie un recurso a una carpeta o proyecto para que esté disponible para los miembros que tengan permisos para esa carpeta o proyecto.
@@ -90,6 +94,8 @@ link:task-iam-associate-agents.html["Aprenda a asociar un agente de consola con 
 
 
 
+[[view-the-folders-and-projects-associated-with-a-resource]]
+[[view-folders-and-projects]]
 == Ver las carpetas y proyectos asociados a un recurso
 
 Puede ver las carpetas y proyectos asociados con un recurso en particular.
@@ -110,6 +116,8 @@ NOTE: Para ver qué miembros de la organización tienen acceso al recurso,link:t
 
 
 
+[[remove-a-resource-from-a-folder-or-project]]
+[[remove-resource]]
 == Eliminar un recurso de una carpeta o proyecto
 
 Para eliminar un recurso de una carpeta o proyecto, elimine su asociación. Esto evita que los miembros administren el recurso en esa carpeta o proyecto.
@@ -125,6 +133,7 @@ NOTE: Para eliminar un recurso descubierto de toda la organización, vaya a la p
 
 
 
+[[related-information]]
 == Información relacionada
 
 * link:concept-identity-and-access-management.html["Obtenga información sobre la identidad y el acceso en la NetApp Console"]

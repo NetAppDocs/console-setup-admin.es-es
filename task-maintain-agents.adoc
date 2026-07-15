@@ -18,6 +18,7 @@ Cuando instalas manualmente un agente de Console, mantener el sistema operativo 
 
 
 
+[[apply-operating-system-updates-to-the-agent-host]]
 == Aplicar actualizaciones del sistema operativo al host agente
 
 Aplicar parches de seguridad del sistema operativo sin detener los servicios del host del agente.
@@ -41,6 +42,7 @@ sudo apt upgrade
 ----
 
 
+[[vm-or-instance-type]]
 == Tipo de máquina virtual o instancia
 
 Si crea un agente de consola desde la consola, implementará una instancia de VM en su proveedor de nube con una configuración predeterminada.  Después de crear el agente, no cambie a una instancia de VM más pequeña con menos CPU o RAM.
@@ -55,6 +57,8 @@ link:reference-agent-default-config.html["Obtenga información sobre la configur
 
 
 
+[[monitor-the-agent]]
+[[monitor-disk-space]]
 == Monitorear al agente
 
 La consola le notifica cuando la máquina virtual del agente no está en buen estado, incluidos problemas de espacio en disco, RAM y CPU.  Supervise estas notificaciones en el Centro de notificaciones dentro de la Consola o configure notificaciones por correo electrónico.  Los aumentos ocasionales en el espacio en disco, la memoria o el uso de la CPU son normales, pero si sucede con frecuencia, debe tomar medidas para resolverlo.
@@ -81,6 +85,7 @@ link:https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operation
 |===
 
 
+[[stopping-and-starting-the-agent-vm]]
 == Detener e iniciar la máquina virtual del agente
 
 Si es necesario, detenga e inicie la máquina virtual del agente mediante la consola de su proveedor de nube o los procedimientos locales estándar.
@@ -89,6 +94,8 @@ link:concept-agents.html#agents-must-be-operational-at-all-times["Tenga en cuent
 
 
 
+[[connect-to-the-linux-vm]]
+[[connect-linux-host]]
 == Conectarse a la máquina virtual Linux
 
 Si necesita conectarse a la máquina virtual Linux en la que se ejecuta el agente, utilice las opciones de conectividad de su proveedor de nube.

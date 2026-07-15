@@ -18,6 +18,7 @@ Puede utilizar la consola de mantenimiento del agente de consola para validar la
 
 
 
+[[access-the-agent-maintenance-console]]
 == Acceder a la consola de mantenimiento del agente
 
 Puedes acceder a la consola de mantenimiento desde el host del agente de consola. Navega hasta el siguiente directorio:
@@ -28,6 +29,7 @@ Puedes acceder a la consola de mantenimiento desde el host del agente de consola
 ----
 
 
+[[config-checker-validate]]
 == Validación del comprobador de configuración
 
 El `config-checker validate` El comando le permite validar la configuración de un agente de consola.
@@ -36,6 +38,7 @@ link:reference-networking-saas-console.html["Obtenga más información sobre los
 
 
 
+[[parameters]]
 === Parámetros
 
 `--services <comma-separated list of services to validate>`--*REQUERIDO*--
@@ -68,6 +71,7 @@ Especifica la ruta a uno o más archivos de certificado que se utilizarán para 
 
 
 
+[[config-checker-validate-examples]]
 === Ejemplos de validación del verificador de configuración
 
 Los siguientes ejemplos incluyen la validación de la conectividad de red, los puertos necesarios y los requisitos de hardware junto con diferentes combinaciones de uso de un servidor proxy y certificados personalizados.
@@ -89,6 +93,7 @@ Los siguientes ejemplos incluyen la validación de la conectividad de red, los p
 ----
 
 
+[[view-help-for-any-command]]
 === Ver ayuda para cualquier comando
 
 Para ver la ayuda de cualquier comando, agregue `--help` al mando.  Por ejemplo, para ver la ayuda de la `proxy add` Comando, utilice el siguiente comando:

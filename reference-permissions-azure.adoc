@@ -176,12 +176,14 @@ Deberá asegurarse de que el rol esté actualizado a medida que se agreguen nuev
 ----
 
 
+[[how-azure-permissions-are-used]]
 == Cómo se utilizan los permisos de Azure
 
 Las siguientes secciones describen cómo se utilizan los permisos para cada sistema de almacenamiento y servicio de datos de NetApp .  Esta información puede ser útil si sus políticas corporativas establecen que los permisos solo se otorgan cuando es necesario.
 
 
 
+[[azure-netapp-files]]
 === Azure NetApp Files
 
 El agente realiza las siguientes solicitudes de API cuando se usa NetApp Data Classification para escanear datos de Azure NetApp Files :
@@ -195,6 +197,7 @@ El agente realiza las siguientes solicitudes de API cuando se usa NetApp Data Cl
 
 
 
+[[netapp-backup-and-recovery]]
 === NetApp Backup and Recovery
 
 Las siguientes secciones describen cómo se utilizan los permisos para NetApp Backup and Recovery.
@@ -299,6 +302,7 @@ El agente realiza las siguientes solicitudes a la API cuando usted utiliza la fu
 
 
 
+[[netapp-data-classification]]
 === NetApp Data Classification
 
 El agente realiza las siguientes solicitudes de API cuando utiliza la clasificación de datos.
@@ -444,6 +448,7 @@ El agente realiza las siguientes solicitudes de API cuando utiliza la clasificac
 |===
 
 
+[[cloud-volumes-ontap]]
 === Cloud Volumes ONTAP
 
 El agente realiza las siguientes solicitudes de API para implementar y administrar Cloud Volumes ONTAP en Azure.
@@ -766,6 +771,7 @@ El agente realiza las siguientes solicitudes de API para implementar y administr
 |===
 
 
+[[tiering]]
 === Nivelación
 
 El agente realiza las siguientes solicitudes de API cuando configura NetApp Cloud Tiering.
@@ -798,12 +804,14 @@ NetApp recomienda que los clientes trabajen con su representante de NetApp para 
 ====
 
 
+[[change-log]]
 == Registro de cambios
 
 A medida que se agreguen y eliminen permisos, los indicaremos en las secciones siguientes.
 
 
 
+[[11-november-2025]]
 === 11 de noviembre de 2025
 
 Se agregó una política JSON personalizada que refleja la menor cantidad de permisos posibles y el alcance más estrecho posible.
@@ -845,6 +853,7 @@ Los siguientes permisos se han movido a la sección "Permisos adicionales de cop
 
 
 
+[[9-september-2024]]
 === 9 de septiembre de 2024
 
 Los siguientes permisos se eliminaron de la política JSON porque la consola ya no admite el descubrimiento y la administración de clústeres de Kubernetes:
@@ -855,6 +864,7 @@ Los siguientes permisos se eliminaron de la política JSON porque la consola ya 
 
 
 
+[[22-august-2024]]
 === 22 de agosto de 2024
 
 Se agregaron los siguientes permisos a la política JSON porque son necesarios para la compatibilidad de Cloud Volumes ONTAP con conjuntos de escalado de máquinas virtuales:
@@ -866,6 +876,7 @@ Se agregaron los siguientes permisos a la política JSON porque son necesarios p
 
 
 
+[[5-december-2023]]
 === 5 de diciembre de 2023
 
 Los siguientes permisos ya no son necesarios para NetApp Backup and Recovery al realizar copias de seguridad de datos de volumen en Azure Blob Storage:
@@ -881,6 +892,7 @@ Estos permisos son necesarios para otros servicios de almacenamiento de la conso
 
 
 
+[[12-may-2023]]
 === 12 de mayo de 2023
 
 Se agregaron los siguientes permisos a la política JSON porque son necesarios para la administración de Cloud Volumes ONTAP :
@@ -897,6 +909,7 @@ Los siguientes permisos se eliminaron de la política JSON porque ya no son nece
 
 
 
+[[23-march-2023]]
 === 23 de marzo de 2023
 
 El permiso "Microsoft.Storage/storageAccounts/delete" ya no es necesario para la clasificación de datos.
@@ -905,6 +918,7 @@ Este permiso aún es necesario para Cloud Volumes ONTAP.
 
 
 
+[[5-january-2023]]
 === 5 de enero de 2023
 
 Se agregaron los siguientes permisos a la política JSON:

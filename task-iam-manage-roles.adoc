@@ -26,6 +26,7 @@ NOTE: Agregue sus carpetas y proyectos antes de asignar acceso a los usuarios. l
 
 
 
+[[understand-how-access-is-granted-in-netapp-console]]
 == Comprenda cómo se otorga el acceso en la NetApp Console
 
 La NetApp Console utiliza un modelo de control de acceso basado en roles (RBAC) para gestionar los permisos de los usuarios. Puedes asignar roles predefinidos a los miembros de forma individual o a través de grupos federados. Puedes añadir y asignar roles a cuentas de servicio, así como a grupos federados. Cada rol define qué acciones puede realizar un miembro en los recursos asociados.
@@ -39,12 +40,15 @@ Tenga en cuenta lo siguiente sobre cómo conceder acceso en la NetApp Console:
 
 
 
+[[using-role-inheritance]]
+[[role-inheritance]]
 === Uso de la herencia de roles
 
 Cuando se asigna un rol a nivel de organización, carpeta o proyecto en NetApp Console, ese rol es heredado automáticamente por todos los recursos dentro del alcance seleccionado. Por ejemplo, los roles a nivel de carpeta se aplican a todos los proyectos contenidos, mientras que los roles a nivel de proyecto se aplican a todos los recursos dentro de ese proyecto.
 
 
 
+[[view-organization-members]]
 == Ver miembros de la organización
 
 Para comprender qué recursos y permisos están disponibles para un miembro, puede ver los roles asignados al miembro en diferentes niveles de la jerarquía de recursos de su organización.link:task-iam-manage-roles.html["Aprenda a usar roles para controlar el acceso a los recursos de la consola."^]
@@ -60,6 +64,8 @@ La tabla *Miembros* enumera los miembros de su organización.
 
 
 
+[[view-roles-assigned-to-a-member]]
+[[manage-permissions]]
 == Ver las funciones asignadas a un miembro
 
 Puedes verificar qué roles tiene asignados actualmente el miembro.
@@ -72,6 +78,7 @@ Si tiene el rol de _Administrador de carpeta o de proyecto_, la página muestra 
 
 
 
+[[view-members-associated-with-a-folder-or-project]]
 == Ver miembros asociados a una carpeta o proyecto
 
 Puede ver los miembros que tienen acceso a una carpeta o proyecto específico.
@@ -91,6 +98,7 @@ image:screenshot-iam-member-access.png["Una captura de pantalla de la página Ed
 
 
 
+[[assign-or-modify-member-access]]
 == Asignar o modificar el acceso de los miembros
 
 Una vez que un usuario se registra en NetApp Console, puede agregarlo a su organización y asignarle un rol para brindarle acceso a los recursos. link:task-iam-manage-members-permissions.html#add-members["Aprenda cómo agregar miembros a su organización."^]
@@ -99,6 +107,7 @@ Puede ajustar el acceso de un miembro agregando o eliminando roles según sea ne
 
 
 
+[[add-an-access-role-to-a-member]]
 == Agregar un rol de acceso a un miembro
 
 Normalmente, se asigna un rol al agregar un miembro a su organización, pero puede actualizarlo en cualquier momento eliminando o agregando roles.
@@ -130,6 +139,7 @@ Si selecciona la organización o una carpeta, el miembro tendrá permisos sobre 
 
 
 
+[[change-a-members-assigned-role]]
 == Cambiar el rol asignado a un miembro
 
 Cambiar los roles de un miembro para actualizar su acceso.
@@ -153,6 +163,7 @@ NOTE: Los usuarios deben tener al menos un rol asignado.  No se pueden eliminar 
 
 
 
+[[remove-a-member-from-your-organization]]
 == Eliminar un miembro de su organización
 
 Eliminar a un miembro si abandona tu organización.

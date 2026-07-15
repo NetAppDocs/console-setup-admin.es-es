@@ -4,6 +4,7 @@
 
 
 
+[[console-agent-4-1-0]]
 === Agente de consola 4.1.0
 
 Esta versión del agente de consola incluye mejoras de seguridad, correcciones de errores y las siguientes características:
@@ -18,6 +19,7 @@ Al instalar manualmente un agente de consola, el agente ahora admite RHEL 9.6 co
 
 
 
+[[netapp-console-administration]]
 === Administración de la NetApp Console
 
 Esta versión incluye lo siguiente:

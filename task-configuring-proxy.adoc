@@ -24,6 +24,7 @@ Si el agente de la consola no tiene una conexión a Internet saliente, los siste
 
 
 
+[[supported-configurations]]
 == Configuraciones compatibles
 
 * Los servidores proxy transparentes son compatibles con los agentes que prestan servicio a los sistemas Cloud Volumes ONTAP .  Si utiliza servicios de datos de NetApp con Cloud Volumes ONTAP, cree un agente dedicado para Cloud Volumes ONTAP donde pueda usar un servidor proxy transparente.
@@ -37,6 +38,7 @@ IMPORTANT: Una vez que hayas configurado un proxy, no puedes cambiar el tipo de 
 
 
 
+[[enable-an-explicit-proxy-on-a-console-agent]]
 == Habilitar un proxy explícito en un agente de consola
 
 Cuando configura un agente de consola para usar un servidor proxy, ese agente y los sistemas Cloud Volumes ONTAP que administra (incluido cualquier mediador de HA) usan el servidor proxy.
@@ -71,6 +73,8 @@ Por ejemplo: netapp%92proxy
 
 
 
+[[enable-a-transparent-proxy-for-a-console-agent]]
+[[transparent-proxy]]
 == Habilitar un proxy transparente para un agente de consola
 
 Solo Cloud Volumes ONTAP admite el uso de un proxy transparente en el agente de la consola.  Si utiliza servicios de datos de NetApp además de Cloud Volumes ONTAP, debe crear un agente independiente para utilizarlo con los servicios de datos o con Cloud Volumes ONTAP.
@@ -110,6 +114,7 @@ Asegúrese de que el archivo del certificado esté en formato PEM y resida en el
 
 
 
+[[modify-the-transparent-proxy-for-the-console-agent]]
 === Modificar el proxy transparente para el agente de la consola
 
 Puede actualizar el servidor proxy transparente existente de un agente de consola mediante el `proxy update` comando o elimine el servidor proxy transparente mediante el uso del `proxy remove` dominio.  Para obtener más información, revise la documentación delink:reference-agent-maint-console-proxy.html["Consola de mantenimiento del agente"] .
@@ -119,12 +124,14 @@ IMPORTANT: Una vez que hayas configurado un proxy, no puedes cambiar el tipo de 
 
 
 
+[[update-the-console-agent-proxy-if-it-loses-access-to-the-internet]]
 == Actualice el proxy del agente de la consola si pierde el acceso a Internet
 
 Si la configuración del proxy de su red cambia, su agente podría perder el acceso a Internet.  Por ejemplo, si alguien cambia la contraseña del servidor proxy o actualiza el certificado.  En este caso, necesitarás acceder a la interfaz de usuario directamente desde el host del agente de la consola y actualizar la configuración.  Asegúrese de tener acceso a la red del host del agente de la consola y de que pueda iniciar sesión en la consola.
 
 
 
+[[enable-direct-api-traffic]]
 == Habilitar el tráfico directo de API
 
 Si configuraste un agente de la consola para usar un servidor proxy, puedes habilitar el tráfico directo de API en el agente de la consola para enviar llamadas de API directamente a los servicios del proveedor de la nube sin pasar por el proxy. Los agentes que se ejecutan en AWS, Azure o Google Cloud admiten esta opción.

@@ -20,12 +20,14 @@ La NetApp Console crea automáticamente un proyecto para ti cuando creas una nue
 
 
 
+[[using-folders-and-projects-to-organize-resources]]
 == Uso de carpetas y proyectos para organizar recursos
 
 En NetApp Console, una organización contiene carpetas y proyectos que lo ayudan a organizar sus recursos. Las carpetas le ayudan a agrupar proyectos relacionados, y los proyectos le ayudan a administrar los recursos y el acceso de los miembros.
 
 
 
+[[folders]]
 === Carpetas
 
 Las carpetas le ayudan a organizar proyectos relacionados. Puede crear carpetas anidadas para representar diferentes niveles de la estructura de su organización. Por ejemplo, puede crear una carpeta de nivel superior para cada unidad de negocio y luego crear subcarpetas para diferentes equipos dentro de esa unidad de negocio. Luego crea proyectos dentro de carpetas.
@@ -64,6 +66,7 @@ Los miembros que tienen permisos para el proyecto A ahora pueden acceder al recu
 ====
 
 
+[[projects]]
 === Proyectos
 
 Asociar recursos a proyectos para permitir que los miembros puedan administrarlos. Los recursos deben estar asociados a un proyecto para su administración y acceso por parte de los usuarios.
@@ -74,6 +77,7 @@ Los usuarios navegan entre los proyectos asignados en la página *Sistemas* para
 
 
 
+[[add-a-folder-or-project]]
 == Agregar una carpeta o proyecto
 
 Agregue proyectos para administrar recursos y carpetas para agrupar proyectos relacionados. Cuando se crea una nueva organización, la Consola incluye un proyecto.
@@ -107,6 +111,7 @@ link:reference-iam-predefined-roles.html["Obtenga más información sobre los ro
 
 
 
+[[rename-a-folder-or-project]]
 == Cambiar el nombre de una carpeta o proyecto
 
 Cambie el nombre de una carpeta o proyecto según sea necesario. El cambio de nombre no afecta los recursos asociados ni el acceso de los miembros.
@@ -118,6 +123,7 @@ Cambie el nombre de una carpeta o proyecto según sea necesario. El cambio de no
 
 
 
+[[delete-a-folder-or-project]]
 == Eliminar una carpeta o proyecto
 
 Elimina carpetas y proyectos que ya no necesites, por ejemplo, después de una reestructuración del equipo o de la finalización de un proyecto.
@@ -131,6 +137,8 @@ Antes de eliminar una carpeta o un proyecto, asegúrese de que no contenga ning�
 
 
 
+[[view-the-resources-associated-with-a-folder-or-project]]
+[[view-associated-resources-members]]
 == Ver los recursos asociados a una carpeta o proyecto
 
 Ver qué recursos y miembros están asociados con una carpeta o proyecto.
@@ -152,6 +160,8 @@ image:screenshot-iam-allocated-resources.png["Una captura de pantalla de la pág
 
 
 
+[[change-the-resources-associated-with-a-folder-or-project]]
+[[modify-resources]]
 == Cambiar los recursos asociados a una carpeta o proyecto
 
 Puede cambiar los recursos asociados a una carpeta o proyecto a medida que cambian las necesidades de su organización.
@@ -172,6 +182,7 @@ image:screenshot-iam-associate-resources.png["Una captura de pantalla de la pág
 
 
 
+[[view-members-associated-with-a-folder-or-project]]
 == Ver miembros asociados a una carpeta o proyecto
 
 Puede ver los miembros asociados a una carpeta o proyecto desde la página *Organización*.
@@ -190,6 +201,8 @@ image:screenshot-iam-member-access.png["Una captura de pantalla de la página Ed
 
 
 
+[[modify-member-access-to-a-folder-or-project]]
+[[modify-members]]
 == Modificar el acceso de los miembros a una carpeta o proyecto
 
 Modificar el acceso de los miembros para controlar el acceso a los recursos. Recuerde que los roles asignados a nivel de carpeta son heredados por todos los proyectos y carpetas secundarios.
@@ -211,6 +224,7 @@ No puedes cambiar el acceso de los miembros en los niveles inferiores si se here
 
 
 
+[[related-information]]
 == Información relacionada
 
 * link:concept-identity-and-access-management.html["Obtenga información sobre la identidad y el acceso en la NetApp Console"]

@@ -20,6 +20,7 @@ La consola también admite la asociación de una cuenta NSS por cuenta de usuari
 
 
 
+[[overview]]
 == Descripción general
 
 Es necesario asociar las credenciales del sitio de soporte de NetApp con el número de serie de su cuenta de consola específica para habilitar las siguientes tareas:
@@ -39,6 +40,7 @@ Estas credenciales están asociadas con el número de serie de su cuenta de cons
 
 
 
+[[add-an-nss-account]]
 == Agregar una cuenta NSS
 
 Puede agregar y administrar sus cuentas del sitio de soporte de NetApp para usarlas con la consola desde el Panel de soporte dentro de la consola.
@@ -82,6 +84,7 @@ Los usuarios ahora pueden seleccionar la cuenta al crear nuevos sistemas Cloud V
 
 
 
+[[update-nss-credentials]]
 == Actualizar las credenciales de NSS
 
 Por razones de seguridad, debe actualizar sus credenciales NSS cada 90 días.  Se le notificará en el centro de notificaciones de la consola si su credencial NSS ha expirado. link:task-monitor-cm-operations.html#notification-center["Obtenga más información sobre el Centro de notificaciones"^] .
@@ -107,6 +110,8 @@ NetApp utiliza Microsoft Entra ID como proveedor de identidad para servicios de 
 
 
 
+[[attach-a-system-to-a-different-nss-account]]
+[[attach-system-nss-account]]
 == Adjuntar un sistema a una cuenta NSS diferente
 
 Si su organización tiene varias cuentas de sitio de soporte de NetApp , puede cambiar qué cuenta está asociada con un sistema Cloud Volumes ONTAP .
@@ -131,6 +136,7 @@ image:screenshot-nss-change-account.png["Una captura de pantalla que muestra el 
 
 
 
+[[display-the-email-address-for-an-nss-account]]
 == Mostrar la dirección de correo electrónico de una cuenta NSS
 
 Por seguridad, la dirección de correo electrónico asociada a una cuenta NSS no se muestra de forma predeterminada.  Puede ver la dirección de correo electrónico y el nombre de usuario asociado a una cuenta NSS.
@@ -146,6 +152,7 @@ TIP: Cuando accede a la página de administración de NSS, la consola genera un 
 
 
 
+[[remove-an-nss-account]]
 == Eliminar una cuenta NSS
 
 Elimina cualquiera de las cuentas NSS que ya no quieras utilizar con la consola.

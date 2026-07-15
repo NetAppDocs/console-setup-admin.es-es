@@ -22,6 +22,7 @@ La clasificación de datos admite dos funciones:
 
 
 
+[[compliance-admin]]
 == Administrador de cumplimiento
 
 La función Compliance admin solo funciona a nivel de organización para gestionar el acceso a los recursos de NetApp Data Classification. Si un usuario tiene responsabilidades inferiores a las de un Organization admin, debe tener la función Compliance admin para instalar NetApp Data Classification.
@@ -34,12 +35,14 @@ NOTE: La función de Compliance admin se añadió a NetApp Data Classification e
 
 
 
+[[classification-viewer]]
 == Visor de clasificación
 
 El visor de clasificación está diseñado para usuarios que necesitan acceder a los resultados de las exploraciones en NetApp Data Classification, pero no necesitan acceder a los recursos de configuración. Los usuarios con el rol de visor de clasificación pueden ver los resultados de las exploraciones de asignación y completas para evaluar áreas de ahorro de almacenamiento o posibles riesgos de datos. Los usuarios con el rol de visor de clasificación también pueden generar informes para los recursos a los que tienen acceso. Estos usuarios no pueden activar ni desactivar la exploración de volúmenes, buckets o esquemas de bases de datos.
 
 
 
+[[more-information]]
 == Más información
 
 * link:https://docs.netapp.com/us-en/data-services-data-classification/concept-classification.html["Conoce NetApp Data Classification"^]

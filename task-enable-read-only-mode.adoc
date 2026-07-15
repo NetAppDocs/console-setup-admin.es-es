@@ -26,6 +26,7 @@ Superadministrador o administrador de la organización.
 
 
 
+[[enable-read-only-mode-for-your-console-organization]]
 == Habilite el modo de solo lectura para su organización de la consola
 
 Habilite el modo de solo lectura para restringir los cambios en la organización de su consola. Todos los usuarios aún pueden ver los recursos. Los usuarios con roles de administrador no pueden realizar ninguna acción en la consola sin elevar manualmente sus permisos.

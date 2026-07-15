@@ -18,6 +18,7 @@ Agrega y administra credenciales de AWS para que puedas implementar y gestionar 
 
 
 
+[[overview]]
 == Descripción general
 
 Puede agregar credenciales de AWS a un agente de consola existente o directamente a la consola:
@@ -38,6 +39,7 @@ Agregue nuevas credenciales de AWS a la consola para crear y administrar FSx par
 
 
 
+[[how-to-rotate-credentials]]
 == Cómo rotar credenciales
 
 La NetApp Console le permite proporcionar credenciales de AWS de varias maneras: un rol de IAM asociado con la instancia del agente, asumiendo un rol de IAM en una cuenta confiable o proporcionando claves de acceso de AWS. link:concept-accounts-aws.html["Obtenga más información sobre las credenciales y permisos de AWS"] .
@@ -48,6 +50,8 @@ Rote manualmente las claves de acceso de AWS actualizándolas en la consola.
 
 
 
+[[add-additional-credentials-to-a-console-agent]]
+[[add-credentials-agent-aws]]
 == Agregar credenciales adicionales a un agente de consola
 
 Agregue credenciales de AWS adicionales a un agente de consola para que tenga los permisos necesarios para administrar recursos y procesos dentro de su entorno de nube pública.  Puede proporcionar el ARN de una función de IAM en otra cuenta o proporcionar claves de acceso de AWS.
@@ -56,6 +60,7 @@ link:concept-accounts-aws.html["Descubra cómo la NetApp Console utiliza las cre
 
 
 
+[[grant-permissions]]
 === Conceder permisos
 
 Otorgue permisos antes de agregar credenciales de AWS a un agente de consola.  Los permisos permiten que un agente de consola administre recursos y procesos dentro de esa cuenta de AWS.  Puede proporcionar los permisos con el ARN de un rol en una cuenta confiable o claves de AWS.
@@ -118,6 +123,7 @@ https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html["Do
 
 
 
+[[add-the-credentials-to-an-existing-agent]]
 === Agregar las credenciales a un agente existente
 
 Después de proporcionar una cuenta de AWS con los permisos necesarios, puede agregar las credenciales para esa cuenta a un agente existente.  Esto le permite iniciar sistemas Cloud Volumes ONTAP en esa cuenta utilizando el mismo agente.
@@ -148,12 +154,15 @@ image:screenshot_accounts_switch_aws.png["Una captura de pantalla que muestra la
 
 
 
+[[add-credentials-to-the-console-for-creating-a-console-agent]]
+[[add-aws-credentials-agent-creation]]
 == Agregar credenciales a la consola para crear un agente de consola
 
 Agregue credenciales de AWS proporcionando el ARN de una función de IAM que otorga los permisos necesarios para crear un agente de consola.  Puede elegir estas credenciales al crear un nuevo agente.
 
 
 
+[[set-up-the-iam-role]]
 === Configurar la función IAM
 
 Configura una función de IAM que permita que la aplicación de software como servicio (SaaS) NetApp Console asuma la función.
@@ -207,6 +216,7 @@ El rol IAM ahora tiene los permisos necesarios. <<add-the-credentials,Ahora pued
 
 
 
+[[add-the-credentials]]
 === Añade las credenciales
 
 Después de proporcionar al rol IAM los permisos necesarios, agregue el ARN del rol a la consola.
@@ -230,12 +240,15 @@ image:screenshot-settings-icon-organization.png["Una captura de pantalla que mue
 
 
 
+[[add-credentials-to-the-console-for-amazon-fsx-for-ontap]]
 == Agregar credenciales a la consola para Amazon FSx para ONTAP
 
 Para más información, consulta el https://docs.netapp.com/us-en/storage-management-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["Documentación de la consola para Amazon FSx para ONTAP"^]
 
 
 
+[[configure-an-aws-subscription]]
+[[subscribe]]
 == Configurar una suscripción a AWS
 
 Después de agregar sus credenciales de AWS, puede configurar una suscripción a AWS Marketplace con esas credenciales. La suscripción le permite pagar los servicios de datos de NetApp y Cloud Volumes ONTAP a una tarifa por hora (PAYGO) o mediante un contrato anual.
@@ -290,6 +303,7 @@ Para todas las demás organizaciones o cuentas, deberá asociar manualmente la s
 
 
 
+[[associate-an-existing-subscription-with-your-organization]]
 == Asociar una suscripción existente con su organización
 
 Cuando te suscribes desde AWS Marketplace, el último paso del proceso es asociar la suscripción con tu organización. Si no completaste este paso, entonces no puedes usar la suscripción con tu organización.
@@ -368,6 +382,7 @@ image:screenshot-credentials-with-subscription.png["Una captura de pantalla de l
 
 
 
+[[edit-credentials]]
 == Editar credenciales
 
 Edite sus credenciales de AWS cambiando el tipo de cuenta (claves de AWS o asumir rol), editando el nombre o actualizando las credenciales en sí (las claves o el ARN del rol).
@@ -383,6 +398,7 @@ NOTE: No puede editar las credenciales de un perfil de instancia que esté asoci
 
 
 
+[[delete-credentials]]
 == Eliminar credenciales
 
 Si ya no necesita un conjunto de credenciales, puede eliminarlas.  Solo puedes eliminar credenciales que no estén asociadas a un sistema.

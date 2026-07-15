@@ -20,6 +20,7 @@ Si su negocio lo requiere, puede instalar un certificado firmado por una autorid
 
 
 
+[[install-an-https-certificate]]
 == Instalar un certificado HTTPS
 
 Instale un certificado firmado por una CA para obtener acceso seguro a la consola basada en web que se ejecuta en el agente de consola.
@@ -82,6 +83,7 @@ image:screenshot_https_cert.gif["Captura de pantalla: muestra la página de conf
 
 
 
+[[renew-the-console-https-certificate]]
 == Renovar el certificado HTTPS de la consola
 
 Debe renovar el certificado HTTPS del agente antes de que caduque para garantizar un acceso seguro.  Si no renueva el certificado antes de que caduque, aparecerá una advertencia cuando los usuarios accedan a la consola web mediante HTTPS.

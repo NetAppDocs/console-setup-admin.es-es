@@ -18,6 +18,7 @@ Agregue y administre las credenciales de Azure para que la NetApp Console tenga 
 
 
 
+[[overview]]
 == Descripción general
 
 Hay dos formas de agregar suscripciones y credenciales de Azure adicionales en la consola.
@@ -28,6 +29,7 @@ Hay dos formas de agregar suscripciones y credenciales de Azure adicionales en l
 
 
 
+[[associate-additional-azure-subscriptions-with-a-managed-identity]]
 == Asociar suscripciones adicionales de Azure con una identidad administrada
 
 La consola le permite elegir las credenciales de Azure y la suscripción de Azure en la que desea implementar Cloud Volumes ONTAP.  No puede seleccionar una suscripción de Azure diferente para el perfil de identidad administrada a menos que asocie la https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["identidad administrada"^] con esas suscripciones.
@@ -65,6 +67,8 @@ image:screenshot_accounts_switch_azure_subscription.gif["Una captura de pantalla
 
 
 
+[[add-additional-azure-credentials-to-netapp-console]]
+[[add-credentials-azure]]
 == Agregar credenciales de Azure adicionales a la NetApp Console
 
 Cuando se implementa un agente de consola desde la consola, la consola habilita una identidad administrada asignada por el sistema en la máquina virtual que tiene los permisos necesarios.  La consola selecciona estas credenciales de Azure de forma predeterminada cuando crea un nuevo sistema para Cloud Volumes ONTAP.
@@ -76,6 +80,7 @@ Si desea implementar Cloud Volumes ONTAP con credenciales de Azure _diferentes_,
 
 
 
+[[grant-azure-permissions-using-a-service-principal]]
 === Otorgar permisos de Azure mediante una entidad de servicio
 
 La consola necesita permisos para realizar acciones en Azure.  Puede otorgar los permisos necesarios a una cuenta de Azure creando y configurando una entidad de servicio en Microsoft Entra ID y obteniendo las credenciales de Azure que necesita la consola.
@@ -231,6 +236,7 @@ image:screenshot_azure_service_mgmt_apis_add.gif["Una captura de pantalla del po
 
 
 
+[[ids]]
 ==== Obtener el ID de la aplicación y el ID del directorio
 
 Cuando agrega la cuenta de Azure a la consola, debe proporcionar el identificador de la aplicación (cliente) y el identificador del directorio (inquilino) para la aplicación.  La consola utiliza los ID para iniciar sesión mediante programación.
@@ -269,6 +275,7 @@ Su entidad de servicio ya está configurada y debería haber copiado el ID de la
 
 
 
+[[add-the-credentials-to-the-console]]
 === Añade las credenciales a la consola
 
 Después de proporcionar una cuenta de Azure con los permisos necesarios, puede agregar las credenciales para esa cuenta a la consola.  Al completar este paso podrá iniciar Cloud Volumes ONTAP con diferentes credenciales de Azure.
@@ -303,12 +310,15 @@ image:screenshot_accounts_switch_azure.gif["Una captura de pantalla que muestra 
 
 
 
+[[manage-existing-credentials]]
 == Administrar credenciales existentes
 
 Administre las credenciales de Azure que ya agregó a la consola asociando una suscripción de Marketplace, editando las credenciales y eliminándolas.
 
 
 
+[[associate-an-azure-marketplace-subscription-to-credentials]]
+[[subscribe]]
 === Asociar una suscripción de Azure Marketplace a las credenciales
 
 Después de agregar sus credenciales de Azure a la consola, puede asociar una suscripción de Azure Marketplace a esas credenciales.  Puede utilizar la suscripción para crear un sistema Cloud Volumes ONTAP de pago por uso y acceder a los servicios de datos de NetApp .
@@ -358,6 +368,7 @@ Para todas las demás organizaciones o cuentas, deberá asociar manualmente la s
 
 
 
+[[edit-credentials]]
 === Editar credenciales
 
 Edite sus credenciales de Azure en la consola.  Por ejemplo, puede actualizar el secreto del cliente si se creó un nuevo secreto para la aplicación principal del servicio.
@@ -371,6 +382,7 @@ Edite sus credenciales de Azure en la consola.  Por ejemplo, puede actualizar el
 
 
 
+[[delete-credentials]]
 === Eliminar credenciales
 
 Si ya no necesita un conjunto de credenciales, puede eliminarlas.  Solo puedes eliminar credenciales que no estén asociadas a un sistema.

@@ -18,12 +18,14 @@ Obtenga información sobre las configuraciones predeterminadas del agente de con
 
 
 
+[[default-configuration-with-internet-access]]
 == Configuración predeterminada con acceso a Internet
 
 Los siguientes detalles de configuración se aplican si implementó un agente de consola desde la NetApp Console, desde el mercado de su proveedor de nube o si instaló manualmente un agente de consola en un host Linux local que tiene acceso a Internet.
 
 
 
+[[console-agent-vm-details-for-aws]]
 === Detalles de la máquina virtual del agente de consola para AWS
 
 Si implementó un agente de consola desde la consola o desde el mercado del proveedor de la nube, tenga en cuenta lo siguiente:
@@ -40,6 +42,7 @@ El sistema operativo no incluye una GUI.  Debe utilizar una terminal para accede
 
 
 
+[[console-agent-vm-details-for-azure]]
 === Detalles de la máquina virtual del agente de consola para Azure
 
 Si implementó un agente de consola desde la consola o desde el mercado del proveedor de la nube, tenga en cuenta lo siguiente:
@@ -55,6 +58,7 @@ El sistema operativo no incluye una GUI.  Debe utilizar una terminal para accede
 
 
 
+[[console-agent-vm-details-for-google-cloud]]
 === Detalles de la máquina virtual del agente de consola para Google Cloud
 
 Si implementó un agente de consola desde la consola, tenga en cuenta lo siguiente:
@@ -70,6 +74,7 @@ El sistema operativo no incluye una GUI.  Debe utilizar una terminal para accede
 
 
 
+[[installation-folder]]
 === Carpeta de instalación
 
 La carpeta de instalación del agente se encuentra en la siguiente ubicación:
@@ -78,6 +83,7 @@ La carpeta de instalación del agente se encuentra en la siguiente ubicación:
 
 
 
+[[log-files]]
 === Archivos de registro
 
 Los archivos de registro se encuentran en las siguientes carpetas:
@@ -95,6 +101,7 @@ Los registros de esta carpeta proporcionan detalles sobre los servicios en la nu
 
 
 
+[[console-agent-service]]
 === Servicio de agente de consola
 
 * El servicio de agente de consola se denomina `occm`.
@@ -106,6 +113,7 @@ Si el servicio MySQL está caído, entonces el `occm` servicio también lo está
 
 
 
+[[ports]]
 === Puertos
 
 El agente utiliza los siguientes puertos en el host Linux:
@@ -116,6 +124,7 @@ El agente utiliza los siguientes puertos en el host Linux:
 
 
 
+[[default-configuration-without-internet-access]]
 == Configuración predeterminada sin acceso a Internet
 
 La siguiente configuración se aplica si instaló manualmente el agente de consola en un host Linux local que no tiene acceso a Internet. link:task-quick-start-private-mode.html["Obtenga más información sobre esta opción de instalación"] .

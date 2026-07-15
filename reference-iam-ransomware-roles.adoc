@@ -35,6 +35,7 @@ Consulte las siguientes tablas para obtener descripciones detalladas de cada fun
 
 
 
+[[baseline-roles]]
 == Roles de base
 
 La siguiente tabla describe las acciones disponibles para los roles de administrador y espectador de Ransomware Resilience.
@@ -305,6 +306,7 @@ Sí
 |===
 
 
+[[user-behavior-roles]]
 == Roles de comportamiento del usuario
 
 Para configurar los ajustes de comportamiento de usuario sospechoso y responder a las alertas, un usuario debe tener el rol de administrador de comportamiento de usuario de Ransomware Resilience. Para ver únicamente alertas de comportamiento sospechoso del usuario, el usuario debe tener el rol de visualizador de comportamiento del usuario de Ransomware Resilience.

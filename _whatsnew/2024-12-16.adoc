@@ -4,6 +4,7 @@
 
 
 
+[[new-secure-endpoints-to-obtain-connector-images]]
 === Nuevos puntos finales seguros para obtener imágenes del conector
 
 Cuando instala el Conector, o cuando se produce una actualización automática, el Conector se comunica con los repositorios para descargar imágenes para la instalación o actualización.  De forma predeterminada, el conector siempre se ha puesto en contacto con los siguientes puntos finales:

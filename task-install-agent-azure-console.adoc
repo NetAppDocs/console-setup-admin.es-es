@@ -28,6 +28,8 @@ NOTE: Despliega un agente de Console en la misma región de Azure que los sistem
 
 
 
+[[step-1-set-up-networking]]
+[[networking-azure-agent]]
 == Paso 1: Configurar la red
 
 Asegúrese de que la ubicación de red donde planea instalar el agente de consola admita los siguientes requisitos.  Estos requisitos permiten que el agente de la consola administre recursos de nube híbrida.
@@ -153,6 +155,8 @@ Debe implementar este requisito de red después de crear el agente de consola.
 
 
 
+[[step-2-create-a-console-agent-deployment-policy-custom-role]]
+[[agent-custom-role]]
 == Paso 2: Crear una política de implementación del agente de consola (función personalizada)
 
 Debe crear un rol personalizado que tenga permisos para implementar el agente de consola en Azure.
@@ -275,6 +279,7 @@ Ahora tiene un rol personalizado llamado _Azure SetupAsService_.  Puede aplicar 
 
 
 
+[[step-3-set-up-authentication]]
 == Paso 3: Configurar la autenticación
 
 Al crear el agente de la consola desde la consola, debe proporcionar un inicio de sesión que permita que la consola se autentique con Azure e implemente la máquina virtual.  Tienes dos opciones:
@@ -415,6 +420,7 @@ Su entidad de servicio ya está configurada y debería haber copiado el ID de la
 ====
 
 
+[[step-4-create-the-console-agent]]
 == Paso 4: Crear el agente de consola
 
 Cree el agente de consola directamente desde la NetApp Console.

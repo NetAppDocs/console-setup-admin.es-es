@@ -4,6 +4,7 @@
 
 
 
+[[console-agent-4-5-0]]
 === Agente de Console 4.5.0
 
 La versión 4.5.0 es compatible tanto con el modo estándar como con el modo restringido.
@@ -15,6 +16,7 @@ Puedes validar que los puertos necesarios para el agente de la Console están ab
 
 
 
+[[netapp-console-administration]]
 === Administración de la NetApp Console
 
 Puedes asignar funciones Keystone a los usuarios asociados para que esos usuarios puedan gestionar recursos Keystone en una organización asociada. link:https://docs.netapp.com/us-en/console-setup-admin/task-partnerships-assign-users.html["Obtén más información sobre cómo asignar roles de Keystone a usuarios asociados."]

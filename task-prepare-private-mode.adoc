@@ -21,6 +21,7 @@ NOTE: Para usar la NetApp Console en el https://aws.amazon.com/federal/secret-cl
 
 
 
+[[step-1-understand-how-private-mode-works]]
 == Paso 1: entiende cómo funciona el modo privado
 
 En modo privado, instalas un agente de Console ya sea en las instalaciones o en la nube y luego usas NetApp Console para gestionar tus sistemas de almacenamiento (ONTAP en las instalaciones y Cloud Volumes ONTAP). No hay conectividad con los endpoints de la API de NetApp Console ni con la aplicación SaaS de NetApp Console, así que accedes a la Console desde la interfaz local que proporciona el agente de Console.
@@ -29,6 +30,7 @@ link:concept-modes.html["Aprende cómo funciona el modo privado"].
 
 
 
+[[step-2-review-installation-options]]
 == Paso 2: Revisar las opciones de instalación
 
 En modo privado, puedes instalar el agente de la Consola en las instalaciones o en la nube instalando manualmente el agente en tu propio host Linux.
@@ -37,6 +39,7 @@ El lugar donde instalas el agente de la Consola determina qué servicios y funci
 
 
 
+[[step-3-review-host-requirements]]
 == Paso 3: Revisar los requisitos del host
 
 El host debe cumplir requisitos específicos de sistema operativo, RAM, puertos, etc. para ejecutar el agente de la Console.
@@ -134,6 +137,8 @@ El agente de la Consola requiere este espacio en `/var` porque Docker o Podman e
 
 
 
+[[step-4-install-podman-or-docker-engine]]
+[[podman-configuration]]
 == Paso 4: Instalar Podman o Docker Engine
 
 Necesitas preparar el host para el agente de la Console instalando Podman o Docker Engine.
@@ -321,6 +326,7 @@ sudo systemctl enable docker && sudo systemctl start docker
 ====
 
 
+[[step-5-prepare-networking]]
 == Paso 5: preparar la red
 
 Configura la red para que el agente de la NetApp Console gestione los recursos en tu nube pública. Además de tener una red virtual y una subred para el agente de la NetApp Console, asegúrate de que se cumplen los siguientes requisitos.
@@ -426,6 +432,7 @@ Habilitar NTP:: Si tienes pensado usar NetApp Data Classification para analizar 
 
 
 
+[[step-6-prepare-cloud-permissions]]
 == Paso 6: Preparar los permisos de la nube
 
 Si el agente de NetApp Console está instalado en la nube y planeas crear sistemas Cloud Volumes ONTAP, NetApp Console requiere permisos del proveedor de la nube. Necesitas configurar los permisos en tu proveedor de la nube y luego asociar esos permisos con la instancia del agente de Console después de instalarlo.
@@ -732,6 +739,7 @@ https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_
 ====
 
 
+[[step-7-enable-google-cloud-apis]]
 == Paso 7: Habilitar las API de Google Cloud
 
 Necesitas habilitar varias API para implementar Cloud Volumes ONTAP en Google Cloud.

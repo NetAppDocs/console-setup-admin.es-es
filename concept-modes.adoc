@@ -68,6 +68,7 @@ Consulta las siguientes secciones para ver detalles sobre las funciones y servic
 
 
 
+[[netapp-console-in-standard-mode-saas-application]]
 == NetApp Console en modo estándar (aplicación SaaS)
 
 La siguiente imagen muestra un despliegue en modo estándar.
@@ -76,6 +77,7 @@ image:diagram-standard-mode.png["Una imagen conceptual que muestra la internet p
 
 
 
+[[supported-features-and-services-for-netapp-console-in-standard-mode]]
 === Funciones y servicios compatibles para NetApp Console en modo estándar
 
 La siguiente tabla muestra las funciones de gestión del almacenamiento, los servicios de datos y las funciones administrativas disponibles en la aplicación NetApp Console SaaS (modo estándar).
@@ -215,6 +217,7 @@ Gestión de Licenses and subscriptions
 |===
 
 
+[[how-netapp-console-works-in-standard-mode]]
 === Cómo funciona NetApp Console en modo estándar
 
 La consola funciona de la siguiente manera en modo estándar:
@@ -242,6 +245,7 @@ Autenticación:: NetApp Console proporciona autenticación con auth0 o inicios d
 
 
 
+[[how-to-get-started-with-standard-mode]]
 === Cómo empezar a utilizar el modo estándar
 
 Ir a la https://console.netapp.com["NetApp Console"^] y regístrate.
@@ -250,6 +254,7 @@ link:task-quick-start-standard-mode.html["Aprenda cómo comenzar a utilizar el m
 
 
 
+[[netapp-console-in-restricted-mode-installed-in-your-own-public-cloud]]
 == NetApp Console en modo restringido (instalada en tu propia nube pública)
 
 Instalas un agente de la Console en la nube (en una región gubernamental, soberana o comercial), y tiene conectividad de salida limitada a los endpoints de la API de la NetApp Console (alojados en la aplicación SaaS).
@@ -266,6 +271,7 @@ image:diagram-restricted-mode.png["Una imagen conceptual que muestra la Internet
 
 
 
+[[supported-features-and-services-for-netapp-console-in-restricted-mode]]
 === Funciones y servicios compatibles para NetApp Console en modo restringido
 
 La siguiente tabla muestra las funciones de gestión del almacenamiento, los servicios de datos y las funciones administrativas disponibles en NetApp Console cuando lo instalas en modo restringido.
@@ -362,6 +368,7 @@ Para Cloud Volumes ONTAP, BYOL admite tanto las licencias basadas en capacidad c
 |===
 
 
+[[how-netapp-console-works-in-restricted-mode]]
 === Cómo funciona NetApp Console en modo restringido
 
 La consola funciona de la siguiente manera en modo restringido:
@@ -383,6 +390,7 @@ Autenticación:: La autenticación se proporciona a través del servicio en la n
 
 
 
+[[how-to-get-started-with-restricted-mode]]
 === Cómo empezar a utilizar el modo restringido
 
 Necesitas activar el modo restringido cuando crees tu cuenta de NetApp Console. Si no tienes una organización, se te pedirá que crees una y que actives el modo restringido cuando inicies sesión por primera vez en tu agente de Console instalado.
@@ -391,6 +399,8 @@ Ten en cuenta que la configuración del modo restringido se fija después de cre
 
 
 
+[[netapp-console-in-private-mode]]
+[[private-mode]]
 == NetApp Console en modo privado
 
 En modo privado, instalas un agente de Console ya sea en las instalaciones o en la nube y luego usas NetApp Console para gestionar datos en tu cloud híbrida. No hay conectividad con los endpoints de la API de NetApp Console ni con la aplicación SaaS de NetApp Console, así que accedes a la Console desde la interfaz de usuario local que proporciona el agente de Console.
@@ -405,6 +415,7 @@ image:diagram-private-mode-onprem.png["Una imagen conceptual que muestra un cent
 
 
 
+[[supported-features-and-services-for-netapp-console-in-private-mode]]
 === Funciones y servicios compatibles para NetApp Console en modo privado
 
 En la siguiente tabla se enumeran las funciones de gestión del almacenamiento, los servicios de datos y las funciones administrativas disponibles en NetApp Console cuando lo instalas en modo privado. Las funciones difieren cuando instalas NetApp Console en la nube en comparación con tus instalaciones.
@@ -549,6 +560,7 @@ Gestión de Licenses and subscriptions
 |===
 
 
+[[how-netapp-console-works-in-private-mode]]
 === Cómo funciona NetApp Console en modo privado
 
 NetApp Console funciona de la siguiente manera en modo privado:
@@ -563,6 +575,7 @@ Autenticación:: La autenticación se proporciona a través de la gestión local
 
 
 
+[[how-to-get-started-with-private-mode]]
 === Cómo empezar con el modo privado
 
 El modo privado está disponible descargando el instalador "offline" desde el NetApp Support Site.
@@ -574,6 +587,7 @@ NOTE: Si quieres usar la NetApp Console en el https://aws.amazon.com/federal/sec
 
 
 
+[[netapp-console-service-and-feature-comparison]]
 == NetApp Comparación de servicios y funciones de NetApp Console
 
 Esta tabla muestra qué servicios y funciones son compatibles en los modos restringido y privado.

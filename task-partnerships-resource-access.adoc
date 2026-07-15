@@ -23,6 +23,7 @@ Una organización asociada primero debe agregar miembros a la asociación antes 
 
 
 
+[[understand-roles-for-partnership-users]]
 == Comprender los roles de los usuarios asociados
 
 Puede administrar los roles de los miembros de las organizaciones asociadas de la misma manera que lo hace con los suyos propios.  Sin embargo, no todos los roles están disponibles para los usuarios asociados.  En particular, no puede otorgar a los usuarios socios un rol que permita actualizaciones de software.  La actualización del software ONTAP generalmente requiere acceso directo a la red.
@@ -51,6 +52,7 @@ link:reference-iam-predefined-roles.html["Obtenga más información sobre los ro
 
 
 
+[[add-a-role-to-a-partner-user]]
 == Agregar un rol a un usuario socio
 
 Proporciona acceso a los recursos de su organización agregando un rol a un miembro.  Cuando se asigna un rol, se especifica un recurso y un rol.  Puede asignar más de un rol a un usuario.
@@ -82,6 +84,7 @@ Si selecciona la organización o una carpeta, el miembro tendrá permisos sobre 
 
 
 
+[[change-or-remove-a-role-from-a-partner-user]]
 == Cambiar o eliminar un rol de un usuario socio
 
 Puede cambiar o eliminar un rol que haya asignado a un miembro de una organización asociada.

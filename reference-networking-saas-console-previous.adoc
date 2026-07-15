@@ -27,6 +27,8 @@ Debe configurar el acceso a la red para lo siguiente:
 
 
 
+[[update-your-endpoint-list-to-the-revised-list-for-4-0-0-and-higher]]
+[[update-endpoint-list]]
 == Actualice su lista de puntos finales a la lista revisada para 4.0.0 y versiones superiores
 
 A partir de la versión 4.0.0, los agentes de consola requieren menos puntos finales.  Las implementaciones existentes anteriores a la versión 4.0.0 siguen siendo compatibles.  Después de actualizar a 4.0.0 o posterior, puede eliminar los puntos finales antiguos de su lista de permitidos cuando sea conveniente.
@@ -106,6 +108,7 @@ systemctl status netapp-service-manager.service
 
 
 
+[[endpoints-for-netapp-console-and-console-agents-for-3-9-55-and-below]]
 == Puntos finales para la NetApp Console y los agentes de consola para la versión 3.9.55 y anteriores
 
 Estos puntos finales se utilizan para agentes de consola 3.9.55 y anteriores.
@@ -152,6 +155,7 @@ NetApp recomienda permitir los puntos finales de la Opción 1 en su firewall, ya
 |===
 
 
+[[cloud-provider-endpoints-contacted-by-the-console-agent]]
 == Puntos finales del proveedor de la nube contactados por el agente de la consola
 
 Los agentes de consola deben tener acceso a puntos finales adicionales si están implementados en su proveedor de nube.
@@ -167,12 +171,14 @@ Los puntos finales del proveedor de nube son los mismos para todas las versiones
 
 
 
+[[data-services-endpoints-contacted-by-the-console-agent]]
 == Puntos finales de servicios de datos contactados por el agente de la consola
 
 El agente de consola requiere acceso a Internet saliente adicional para admitir algunos servicios de datos de NetApp y Cloud Volumes ONTAP.
 
 
 
+[[endpoints-for-cloud-volumes-ontap]]
 === Puntos finales para Cloud Volumes ONTAP
 
 * link:https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/reference-networking-aws.html#outbound-internet-access-for-cloud-volumes-ontap-nodes["Puntos finales para Cloud Volumes ONTAP en AWS"]

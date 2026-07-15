@@ -18,6 +18,7 @@ Puede asignar el rol de analista de soporte operativo a los usuarios para brinda
 
 
 
+[[operational-support-analyst]]
 == Analista de soporte operativo
 
 [cols="1,2"]

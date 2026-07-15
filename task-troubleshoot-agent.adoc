@@ -20,6 +20,7 @@ Si tiene una cuenta del sitio de soporte de NetApp , también puede ver lalink:h
 
 
 
+[[common-error-messages-and-resolutions]]
 == Mensajes de error comunes y resoluciones
 
 Esta tabla enumera mensajes de error comunes y muestra cómo solucionarlos:
@@ -76,6 +77,8 @@ Este mensaje aparece si el agente no puede acceder a su cuenta de soporte.
 |===
 
 
+[[check-the-console-agent-status]]
+[[check-agent-status]]
 == Comprobar el estado del agente de la consola
 
 Usa uno de los siguientes comandos para verificar tu agente de NetApp Console. Todos los servicios deberían tener el estado _Running_. Si no es así, contacta con el soporte de NetApp.
@@ -109,6 +112,7 @@ podman ps -a
 
 
 
+[[view-the-console-agent-version]]
 == Ver la versión del agente de la consola
 
 Vea la versión del agente de la consola para confirmar la actualización o compartirla con su representante de NetApp .
@@ -122,6 +126,7 @@ La consola muestra la versión en la parte superior de la página.
 
 
 
+[[validate-that-the-console-agent-meets-requirements]]
 == Valida que el agente de la consola cumple los requisitos
 
 Los agentes de Consola requieren acceso a ciertos puntos finales de red, necesitan tener varios puertos abiertos y deben cumplir requisitos de hardware. Puedes validar que tu agente de Consola cumple estos requisitos desde la Consola o usando la consola de mantenimiento del agente.
@@ -146,6 +151,8 @@ La validación puede tardar hasta 15 minutos.  Los resultados se muestran cuando
 
 
 
+[[console-agent-installation-issues]]
+[[troubleshoot-installation]]
 == Problemas de instalación del agente de consola
 
 Si la instalación falla, consulte el informe y los registros para resolver los problemas.
@@ -168,10 +175,13 @@ También puede acceder al informe de validación en formato JSON y a los registr
 ====
 
 
+[[disable-configuration-checks-for-manual-installations]]
+[[disable-config-check]]
 === Deshabilitar las comprobaciones de configuración para instalaciones manuales
 
 
 
+[[disable-configuration-checks-for-manual-installations]]
 === Deshabilitar las comprobaciones de configuración para instalaciones manuales
 
 Puede haber ocasiones en las que necesite deshabilitar las comprobaciones de configuración que verifican la conectividad saliente durante la instalación. Por ejemplo, al instalar manualmente un agente en su entorno de Government Cloud, debe deshabilitar las comprobaciones de configuración o la instalación fallará.
@@ -206,12 +216,14 @@ systemctl restart netapp-service-manager.service
 
 
 
+[[work-with-netapp-support]]
 == Trabaje con el soporte de NetApp
 
 Si no has podido resolver los problemas con tu agente de Console, quizá quieras ponerte en contacto con el soporte de NetApp. El soporte de NetApp puede pedirte el ID del agente de Console o que les envíes los registros del agente de Console si aún no los tienen.
 
 
 
+[[find-the-console-agent-id]]
 === Encuentra el ID del agente de la consola
 
 Para ayudarlo a comenzar, es posible que necesite el ID del sistema de su agente de consola.  La identificación normalmente se utiliza para fines de licencia y resolución de problemas.
@@ -232,6 +244,7 @@ image:screenshot-system-id.png["Una captura de pantalla que muestra el ID del si
 
 
 
+[[download-or-send-an-autosupport-message]]
 === Descargue o envíe un mensaje de AutoSupport
 
 Si tienes problemas, NetApp podría pedirte que envíes un mensaje de AutoSupport al soporte de NetApp para fines de resolución de problemas.
@@ -251,6 +264,7 @@ NOTE: La NetApp Console tarda hasta cinco horas en enviar mensajes de AutoSuppor
 
 
 
+[[fix-download-failures-when-using-a-google-cloud-nat-gateway]]
 == Solucionar errores de descarga al usar una puerta de enlace NAT de Google Cloud
 
 El agente de consola descarga automáticamente actualizaciones de software para Cloud Volumes ONTAP.  Su configuración puede provocar que la descarga falle si utiliza una puerta de enlace NAT de Google Cloud.  Puede corregir este problema limitando la cantidad de partes en que se divide la imagen del software.  Este paso debe completarse utilizando la API.
@@ -276,6 +290,7 @@ https://docs.netapp.com/us-en/console-automation/cm/api_ref_resources.html#occmc
 
 
 
+[[get-help-from-the-netapp-knowledge-base]]
 == Obtenga ayuda de la base de conocimientos de NetApp
 
 https://kb.netapp.com/Special:Search?path=Cloud%2FBlueXP&query=connector&type=wiki["Ver la información de solución de problemas creada por el equipo de soporte de NetApp"] .

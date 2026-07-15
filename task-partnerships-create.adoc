@@ -23,6 +23,7 @@ El rol *Partnership admin* es necesario para crear y gestionar asociaciones. El 
 
 
 
+[[initiate-an-organization-partnership]]
 == Iniciar una asociación organizacional
 
 Puede solicitar una asociación con otra organización si conoce su ID de organización.  La organización receptora aprueba la solicitud antes de que la asociación pueda continuar.
@@ -41,6 +42,7 @@ La solicitud de asociación se envía a la organización asociada para su aproba
 
 
 
+[[approve-an-organization-partnership]]
 == Aprobar una asociación organizacional
 
 Una solicitud de asociación entre una organización y otra debe ser aceptada por la organización receptora antes de que la asociación pueda continuar.  Debe tener el rol de *Administrador de asociaciones* para aprobar y administrar asociaciones.
@@ -66,6 +68,7 @@ La asociación que aprobaste ahora muestra el estado *Established*. Los usuarios
 
 
 
+[[view-partnership-status]]
 == Ver el estado de la asociación
 
 Vea el estado de sus asociaciones.
@@ -82,6 +85,7 @@ Administrador de asociaciones, visor de asociaciones.link:reference-iam-predefin
 
 
 
+[[disable-an-organization-partnership]]
 == Deshabilitar una asociación de organización
 
 Debe ser miembro de la organización iniciadora para deshabilitar una asociación.  Al deshabilitar una asociación, se revoca inmediatamente el acceso a cualquier recurso de su organización que se haya compartido con la organización asociada.

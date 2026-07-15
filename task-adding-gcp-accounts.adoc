@@ -18,6 +18,7 @@ Puedes gestionar las credenciales de Google Cloud que están asociadas con una i
 
 
 
+[[associate-a-marketplace-subscription-with-google-cloud-credentials]]
 == Asocia una suscripción de Marketplace con las credenciales de Google Cloud
 
 Cuando implementas un agente de Console en Google Cloud, Console crea un conjunto predeterminado de credenciales que están asociadas con una instancia de VM del agente de Console. En cualquier momento, puedes cambiar la suscripción de Google Cloud Marketplace que está asociada con estas credenciales. La suscripción te permite crear un sistema Cloud Volumes ONTAP de pago por uso y usar otros servicios de datos.
@@ -88,6 +89,7 @@ image:screenshot_gcp_associate.gif["Una captura de pantalla de la página de asi
 
 
 
+[[troubleshoot-the-marketplace-subscription-process]]
 == Soluciona problemas en el proceso de suscripción de Marketplace
 
 A veces, suscribirse a los servicios de datos de NetApp a través de Google Cloud Marketplace puede volverse fragmentado por permisos incorrectos o por no seguir accidentalmente la redirección a la Consola. Si esto pasa, usa los siguientes pasos para completar el proceso de suscripción.

@@ -18,10 +18,36 @@ Conozca las novedades en las funciones de administración de la NetApp Console :
 
 
 
+[[15-july-2026]]
+== 15 de julio de 2026
+
+
+
+[[console-agent-4-9-0]]
+=== Agente de Console 4.9.0
+
+La versión 4.9.0 es compatible tanto con el modo estándar como con el modo restringido.
+
+Esta versión del agente de la Console incluye mejoras de seguridad y correcciones de errores.
+
+
+
+[[netapp-console-administration]]
+=== Administración de la NetApp Console
+
+.Compatibilidad con el acceso basado en roles para Cloud Volumes ONTAP
+La consola admite el control de acceso basado en roles para Cloud Volumes ONTAP.
+
+link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-cvo-roles.html["Más información sobre el control de acceso basado en roles para Cloud Volumes ONTAP"^].
+
+
+
+[[15-june-2026]]
 == 15 de junio de 2026
 
 
 
+[[private-mode-release-4-7-0]]
 === Lanzamiento de private mode (4.7.0)
 
 Ya está disponible para descargar un nuevo modo privado desde https://mysupport.netapp.com/site/downloads["Sitio de soporte de NetApp"^]
@@ -43,10 +69,12 @@ La versión 4.7.0 incluye actualizaciones de los siguientes componentes y servic
 |===
 
 
+[[8-june-2026]]
 == 8 de junio de 2026
 
 
 
+[[console-agent-4-8-0]]
 === Agente de Console 4.8.0
 
 La versión 4.8.0 es compatible tanto con el modo estándar como con el modo restringido.
@@ -55,16 +83,19 @@ Esta versión del agente de la Console incluye mejoras de seguridad y correccion
 
 
 
+[[netapp-console-administration]]
 === Administración de la NetApp Console
 
 Esta versión incluye mejoras de seguridad y correcciones de errores.
 
 
 
+[[11-may-2026]]
 == 11 de mayo de 2026
 
 
 
+[[console-agent-4-7-0]]
 === Agente de Console 4.7.0
 
 La versión 4.7.0 es compatible tanto con el modo estándar como con el modo restringido.
@@ -73,6 +104,7 @@ Esta versión del agente de la Console incluye mejoras de seguridad y correccion
 
 
 
+[[netapp-console-administration]]
 === Administración de la NetApp Console
 
 Esta versión incluye la siguiente novedad.
@@ -82,10 +114,12 @@ Por defecto, Digital Advisor muestra todas las cuentas de NetApp asociadas con t
 
 
 
+[[13-april-2026]]
 == 13 abril 2026
 
 
 
+[[console-agent-4-6-0]]
 === Agente de Console 4.6.0
 
 La versión 4.6.0 es compatible tanto con el modo estándar como con el modo restringido.
@@ -100,10 +134,12 @@ Si desplegaste un agente de Console en vCenter usando un OVA, ahora puedes actua
 
 
 
+[[10-march-2026]]
 == 10 de marzo de 2026
 
 
 
+[[console-agent-4-5-0]]
 === Agente de Console 4.5.0
 
 La versión 4.5.0 es compatible tanto con el modo estándar como con el modo restringido.
@@ -115,16 +151,19 @@ Puedes validar que los puertos necesarios para el agente de la Console están ab
 
 
 
+[[netapp-console-administration]]
 === Administración de la NetApp Console
 
 Puedes asignar funciones Keystone a los usuarios asociados para que esos usuarios puedan gestionar recursos Keystone en una organización asociada. link:https://docs.netapp.com/us-en/console-setup-admin/task-partnerships-assign-users.html["Obtén más información sobre cómo asignar roles de Keystone a usuarios asociados."]
 
 
 
+[[26-february-2026]]
 == 26 febrero 2026
 
 
 
+[[private-mode-release-4-4-0]]
 === Lanzamiento de private mode (4.4.0)
 
 Ya está disponible para descargar un nuevo modo privado desde https://mysupport.netapp.com/site/downloads["Sitio de soporte de NetApp"^]
@@ -156,10 +195,12 @@ La versión 4.4.0 incluye actualizaciones de los siguientes componentes y servic
 |===
 
 
+[[09-february-2026]]
 == 09 de febrero de 2026
 
 
 
+[[console-agent-4-4-0]]
 === Agente de Console 4.4.0
 
 La versión 4.4.0 es compatible tanto con el modo estándar como con el modo restringido.
@@ -168,6 +209,7 @@ Esta versión del agente de la Console incluye mejoras de seguridad y correccion
 
 
 
+[[netapp-console-administration]]
 === Administración de la NetApp Console
 
 Esta versión incluye lo siguiente:
@@ -179,10 +221,12 @@ link:https://docs.netapp.com/us-en/data-services-backup-recovery/br-rbac-setup.h
 
 
 
+[[13-january-2026]]
 == 13 de enero de 2026
 
 
 
+[[console-agent-4-3-0]]
 === Agente de consola 4.3.0
 
 La versión 4.3.0 admite tanto el modo estándar como el modo restringido.
@@ -196,6 +240,7 @@ link:https://docs.netapp.com/us-en/console-setup-admin/task-troubleshoot-agent.h
 
 
 
+[[netapp-console-administration]]
 === Administración de la NetApp Console
 
 Esta versión incluye lo siguiente:
@@ -217,10 +262,12 @@ link:https://docs.netapp.com/us-en/console-setup-admin/task-user-settings.html["
 
 
 
+[[10-december-2025]]
 == 10 de diciembre de 2025
 
 
 
+[[console-agent-4-2-0]]
 === Agente de consola 4.2.0
 
 La versión 4.2.0 admite tanto el modo estándar como el modo restringido.
@@ -244,6 +291,7 @@ Cuando necesite instalar manualmente un agente, puede acceder al software del ag
 
 
 
+[[netapp-console-administration]]
 === Administración de la NetApp Console
 
 Esta versión incluye lo siguiente:
@@ -262,10 +310,12 @@ Ahora es más fácil ver y administrar información detallada sobre sus sistemas
 
 
 
+[[10-november-2025]]
 == 10 de noviembre de 2025
 
 
 
+[[console-agent-4-1-0]]
 === Agente de consola 4.1.0
 
 Esta versión del agente de consola incluye mejoras de seguridad, correcciones de errores y las siguientes características:
@@ -280,6 +330,7 @@ Al instalar manualmente un agente de consola, el agente ahora admite RHEL 9.6 co
 
 
 
+[[netapp-console-administration]]
 === Administración de la NetApp Console
 
 Esta versión incluye lo siguiente:
@@ -289,16 +340,19 @@ La dirección de correo electrónico que envía notificaciones de NetApp Console
 
 
 
+[[06-october-2025]]
 == 6 de octubre de 2025
 
 
 
+[[bluexp-is-now-netapp-console]]
 == BlueXP ahora es NetApp Console
 
 La NetApp Console, construida sobre la base BlueXP mejorada y reestructurada, proporciona una gestión centralizada del almacenamiento de NetApp y de los NetApp Data Services en entornos locales y en la nube a nivel empresarial, brindando información en tiempo real, flujos de trabajo más rápidos y una administración simplificada que es altamente segura y compatible.
 
 
 
+[[navigation-menus-and-pages]]
 === Menús y páginas de navegación
 
 NetApp movió la mayoría de las opciones del menú al panel de navegación izquierdo y reorganizó los menús para facilitar la navegación en la NetApp Console.
@@ -347,6 +401,7 @@ image:https://docs.netapp.com/us-en/console-setup-admin/media/screenshot-governa
 
 
 
+[[more-intuitive-naming-of-elements-data-services-and-features]]
 === Nomenclatura más intuitiva de elementos, servicios de datos y funciones
 
 NetApp cambió el nombre de varios elementos, servicios de datos y características para aclarar su propósito.  Los cambios clave incluyen:
@@ -401,6 +456,7 @@ Acceda a sus licencias y suscripciones desde el menú *Administración > License
 |===
 
 
+[[console-agents]]
 === Agentes de consola
 
 Acceda y administre sus agentes de consola desde el menú *Administración > Agentes*.  NetApp ha cambiado la forma de seleccionar un agente de consola para la página *Sistemas* (anteriormente Canvas).  NetApp ha reemplazado el nombre del menú Conector por un íconoimage:icon-agent.png["icono de agente"] , lo que le permite seleccionar el agente de consola para el cual desea ver los sistemas.
@@ -411,6 +467,7 @@ También puedes administrar tus agentes desde el menú *Administración > Agente
 
 
 
+[[console-agent-4-0-0]]
 == Agente de consola 4.0.0
 
 Esta versión del agente de consola incluye mejoras de seguridad, correcciones de errores y las siguientes características nuevas.
@@ -419,6 +476,7 @@ La versión 4.0.0 está disponible para el modo estándar y el modo restringido.
 
 
 
+[[consolidation-and-reduction-of-required-network-endpoints]]
 === Consolidación y reducción de los puntos finales de red necesarios
 
 NetApp ha reducido los puntos finales de red necesarios para la consola y los agentes de consola, lo que mejora la seguridad y simplifica la implementación.  Es importante destacar que todas las implementaciones anteriores a la versión 4.0.0 continúan siendo totalmente compatibles.  Si bien los puntos finales anteriores siguen estando disponibles para los agentes existentes, NetApp recomienda encarecidamente actualizar las reglas de firewall para los puntos finales actuales después de confirmar que las actualizaciones de los agentes fueron exitosas.
@@ -429,6 +487,7 @@ NetApp ha reducido los puntos finales de red necesarios para la consola y los ag
 
 
 
+[[support-for-vcenter-deployment-of-console-agents]]
 === Compatibilidad con la implementación de agentes de consola en VCenter
 
 Puede implementar agentes de consola en entornos VMware mediante un archivo OVA.  El archivo OVA incluye una imagen de VM preconfigurada con el software del agente de consola y configuraciones para conectarse a la NetApp Console.  La descarga de un archivo o la implementación de una URL está disponible directamente desde la NetApp Console.link:https://docs.netapp.com/us-en/console-setup-admin/task-install-agent-on-prem-ova.html["Aprenda a implementar un agente de consola en entornos VMware."]
@@ -437,76 +496,89 @@ El agente de consola OVA para VMware ofrece una imagen de VM preconfigurada para
 
 
 
+[[validation-reports-for-failed-agent-deployments]]
 === Informes de validación para implementaciones de agentes fallidas
 
 Al implementar un agente de consola desde la NetApp Console, ahora tiene la opción de validar la configuración del agente.  Si la consola no logra implementar el agente, proporciona un informe descargable para ayudarlo a solucionar el problema.
 
 
 
+[[improved-troubleshooting-for-console-agents]]
 === Solución de problemas mejorada para los agentes de la consola
 
 El agente de consola ha mejorado los mensajes de error que le ayudan a comprender mejor los problemas.link:https://docs.netapp.com/us-en/console-setup-admin/task-troubleshoot-agent.html["Aprenda a solucionar problemas de los agentes de la consola."]
 
 
 
+[[netapp-console]]
 == NetApp Console
 
 La administración de la NetApp Console incluye las siguientes características nuevas:
 
 
 
+[[home-page-dashboard]]
 === Panel de control de la página de inicio
 
 El panel de la página de inicio de la consola de NetApp proporciona visibilidad en tiempo real de la infraestructura de almacenamiento con métricas de estado, capacidad, estado de la licencia y servicios de datos.link:https://docs.netapp.com/us-en/console-setup-admin/task-dashboard.html["Obtenga más información sobre la página de inicio."]
 
 
 
+[[netapp-assistant]]
 === Asistente de NetApp
 
 Los nuevos usuarios con el rol de administrador de la organización pueden usar el asistente de NetApp para configurar la consola, lo que incluye agregar un agente, vincular una cuenta de soporte de NetApp y agregar un sistema de almacenamiento.link:https://docs.netapp.com/us-en/console-setup-admin/task-console-assistant.html["Obtenga más información sobre el asistente de NetApp ."]
 
 
 
+[[service-account-authentication]]
 === Autenticación de cuenta de servicio
 
 La NetApp Console admite la autenticación de cuentas de servicio mediante un ID de cliente generado por el sistema y un secreto o JWT administrados por el cliente, lo que permite a las organizaciones seleccionar el enfoque que mejor se adapte a sus requisitos de seguridad y flujos de trabajo de integración.  La autenticación de cliente JWT de clave privada utiliza criptografía asimétrica, lo que proporciona una seguridad más fuerte que los métodos secretos e identificadores de cliente tradicionales.  La autenticación de cliente JWT de clave privada utiliza criptografía asimétrica, lo que mantiene la clave privada segura en el entorno del cliente, reduce los riesgos de robo de credenciales y mejora la seguridad de su pila de automatización y aplicaciones cliente.link:https://docs.netapp.com/us-en/console-setup-admin/task-iam-manage-members-permissions.html#service-account["Aprenda cómo agregar una cuenta de servicio."]
 
 
 
+[[session-timeouts]]
 === Tiempos de espera de sesión
 
 El sistema cierra la sesión de los usuarios después de 24 horas o cuando cierran su navegador web.
 
 
 
+[[support-for-partnerships-between-organizations]]
 === Apoyo a las alianzas entre organizaciones
 
 Puede crear asociaciones en la NetApp Console que permitan a los socios administrar de forma segura los recursos de NetApp a través de los límites organizacionales, lo que facilita la colaboración y fortalece la seguridad. link:https://docs.netapp.com/us-en/console-setup-admin/task-partnerships-create.html["Aprenda a gestionar las asociaciones"] .
 
 
 
+[[super-admin-and-super-viewer-roles]]
 === Roles de superadministrador y supervisor
 
 Se agregaron los roles de *Superadministrador* y *Supervisor*.  *Superadministrador* otorga acceso de gestión completo a las funciones de la consola, el almacenamiento y los servicios de datos.  *Super visor* proporciona visibilidad de solo lectura para auditores y partes interesadas.  Estos roles son útiles para equipos más pequeños con miembros senior donde el acceso amplio es común.  Para mejorar la seguridad y la auditabilidad, se recomienda a las organizaciones utilizar el acceso de *Superadministrador* con moderación y asignar roles específicos siempre que sea posible.link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso."]
 
 
 
+[[additional-role-for-ransomware-resilience]]
 === Rol adicional para la resiliencia frente al ransomware
 
 Se agregó el rol *Administrador de comportamiento del usuario de Ransomware Resilience* y el rol *Visor de comportamiento del usuario de Ransomware Resilience*.  Estos roles permiten a los usuarios configurar y ver el comportamiento del usuario y los datos analíticos, respectivamente.link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso."]
 
 
 
+[[removed-support-chat]]
 === Se eliminó el chat de soporte
 
 NetApp ha eliminado la función de chat de soporte de la NetApp Console.  Utilice la página *Administración > Soporte* para crear y administrar casos de soporte.
 
 
 
+[[11-august-2025]]
 == 11 de agosto de 2025
 
 
 
+[[connector-3-9-55]]
 === Conector 3.9.55
 
 Esta versión del conector BlueXP incluye mejoras de seguridad y correcciones de errores.
@@ -515,24 +587,28 @@ La versión 3.9.55 está disponible para el modo estándar y el modo restringido
 
 
 
+[[japanese-language-support]]
 === Compatibilidad con el idioma japonés
 
 La interfaz de usuario de BlueXP ahora está disponible en idioma japonés. Si el idioma de su navegador es japonés, BlueXP se muestra en japonés. Para acceder a la documentación en japonés, utilice el menú de idioma en el sitio web de la documentación.
 
 
 
+[[operational-resiliency-feature]]
 === Característica de resiliencia operativa
 
 La función de resiliencia operativa se ha eliminado de BlueXP. Comuníquese con el soporte de NetApp si tiene problemas.
 
 
 
+[[bluexp-identity-and-access-management-iam]]
 === Gestión de identidad y acceso (IAM) de BlueXP
 
 La gestión de identidad y acceso en BlueXP ahora ofrece la siguiente característica.
 
 
 
+[[new-access-role-for-operational-support]]
 === Nuevo rol de acceso para soporte operativo
 
 BlueXP ahora admite un rol de analista de soporte operativo. Esta función otorga a un usuario permisos para supervisar alertas de almacenamiento, ver la línea de tiempo de auditoría de BlueXP e ingresar y rastrear casos de soporte de NetApp .
@@ -541,10 +617,12 @@ link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-r
 
 
 
+[[31-july-2025]]
 == 31 de julio de 2025
 
 
 
+[[private-mode-release-3-9-54]]
 === Lanzamiento del modo privado (3.9.54)
 
 Ya está disponible para descargar un nuevo modo privado desde https://mysupport.netapp.com/site/downloads["Sitio de soporte de NetApp"^]
@@ -573,16 +651,19 @@ Para obtener más detalles sobre el modo privado, incluido cómo actualizarlo, c
 
 
 
+[[21-july-2025]]
 == 21 de julio de 2025
 
 
 
+[[support-for-google-cloud-netapp-volumes]]
 === Compatibilidad con Google Cloud NetApp Volumes
 
 Ahora puedes ver Google Cloud NetApp Volumes en BlueXP.link:https://docs.netapp.com/us-en//bluexp-google-cloud-netapp-volumes/index.html["Obtenga más información sobre Google Cloud NetApp Volumes."]
 
 
 
+[[bluexp-identity-and-access-management-iam]]
 === Gestión de identidad y acceso (IAM) de BlueXP
 
 
@@ -598,10 +679,12 @@ link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-r
 
 
 
+[[14-july-2025]]
 == 14 de julio de 2025
 
 
 
+[[connector-3-9-54]]
 === Conector 3.9.54
 
 Esta versión del conector BlueXP incluye mejoras de seguridad, correcciones de errores y las siguientes características nuevas:
@@ -615,6 +698,7 @@ En este momento, la versión 3.9.54 está disponible para el modo estándar y el
 
 
 
+[[bluexp-identity-and-access-management-iam]]
 === Gestión de identidad y acceso (IAM) de BlueXP
 
 La gestión de identidad y acceso en BlueXP ahora ofrece las siguientes funciones:
@@ -666,10 +750,12 @@ link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-r
 
 
 
+[[09-june-2025]]
 == 9 de junio de 2025
 
 
 
+[[connector-3-9-53]]
 === Conector 3.9.53
 
 Esta versión del conector BlueXP incluye mejoras de seguridad y correcciones de errores.
@@ -678,18 +764,21 @@ La versión 3.9.53 está disponible para el modo estándar y el modo restringido
 
 
 
+[[disk-space-usage-alerts]]
 === Alertas de uso de espacio en disco
 
 El Centro de notificaciones ahora incluye alertas sobre el uso del espacio en disco en el Conector.link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-maintain-connectors.html#monitor-disk-space["Más información."^]
 
 
 
+[[audit-improvements]]
 === Mejoras en la auditoría
 
 La línea de tiempo ahora incluye eventos de inicio y cierre de sesión para los usuarios.  Puede ver cuándo hay actividad de inicio de sesión, lo que puede ayudar con la auditoría y el monitoreo de seguridad.  Los usuarios de API que tienen el rol de administrador de la organización pueden ver la dirección de correo electrónico del usuario que inició sesión al incluir el `includeUserData=true`` parámetro como en el siguiente: `/audit/<account_id>?includeUserData=true` .
 
 
 
+[[keystone-subscription-management-available-in-bluexp]]
 === Gestión de suscripciones de Keystone disponible en BlueXP
 
 Puede administrar su suscripción a NetApp Keystone desde BlueXP.
@@ -698,6 +787,7 @@ link:https://docs.netapp.com/us-en/keystone-staas/index.html["Obtenga informaci�
 
 
 
+[[bluexp-identity-and-access-management-iam]]
 === Gestión de identidad y acceso (IAM) de BlueXP
 
 
@@ -710,16 +800,19 @@ link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-user-settings.html#ta
 
 
 
+[[workloads]]
 === Cargas de trabajo
 
 Ahora puede ver y eliminar las credenciales de Amazon FSx for NetApp ONTAP desde la página Credenciales en BlueXP.
 
 
 
+[[29-may-2025]]
 == 29 de mayo de 2025
 
 
 
+[[private-mode-release-3-9-52]]
 === Lanzamiento del modo privado (3.9.52)
 
 Ya está disponible para descargar un nuevo modo privado desde https://mysupport.netapp.com/site/downloads["Sitio de soporte de NetApp"^]
@@ -748,10 +841,12 @@ Para obtener más detalles sobre el modo privado, incluido cómo actualizarlo, c
 
 
 
+[[12-may-2025]]
 == 12 de mayo de 2025
 
 
 
+[[connector-3-9-52]]
 === Conector 3.9.52
 
 Esta versión del conector BlueXP incluye pequeñas mejoras de seguridad y correcciones de errores, así como algunas actualizaciones adicionales.
@@ -772,12 +867,14 @@ Los nodos de Cloud Volumes ONTAP ya no se apagan cuando el conector no cumple co
 
 
 
+[[keystone-administration-available-in-bluexp]]
 === Administración de Keystone disponible en BlueXP
 
 La versión beta de NetApp Keystone en BlueXP agregó acceso a la administración de Keystone .  Puede acceder a la página de registro para la versión beta de NetApp Keystone desde la barra de navegación izquierda de BlueXP.
 
 
 
+[[bluexp-identity-and-access-management-iam]]
 === Gestión de identidad y acceso (IAM) de BlueXP
 
 
@@ -825,10 +922,12 @@ link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-r
 
 
 
+[[14-april-2025]]
 == 14 de abril de 2025
 
 
 
+[[connector-3-9-51]]
 === Conector 3.9.51
 
 Esta versión del conector BlueXP incluye pequeñas mejoras de seguridad y correcciones de errores.
@@ -843,6 +942,7 @@ Si utiliza copia de seguridad y recuperación o protección contra ransomware, a
 
 
 
+[[bluexp-identity-and-access-management-iam]]
 === Gestión de identidad y acceso (IAM) de BlueXP
 
 * A los usuarios que no sean administradores de organización, carpeta o proyecto se les debe asignar un rol de protección contra ransomware para tener acceso a dicha protección.  Puede asignar a un usuario uno de dos roles: administrador de protección contra ransomware o visor de protección contra ransomware.
@@ -855,10 +955,12 @@ link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-r
 
 
 
+[[28-march-2025]]
 == 28 de marzo de 2025
 
 
 
+[[private-mode-release-3-9-50]]
 === Lanzamiento del modo privado (3.9.50)
 
 Ya está disponible para descargar un nuevo modo privado desde https://mysupport.netapp.com/site/downloads["Sitio de soporte de NetApp"^]
@@ -887,10 +989,12 @@ Para obtener más detalles sobre el modo privado, incluido cómo actualizarlo, c
 
 
 
+[[10-march-2025]]
 == 10 de marzo de 2025
 
 
 
+[[connector-3-9-50]]
 === Conector 3.9.50
 
 Esta versión del conector BlueXP incluye pequeñas mejoras de seguridad y correcciones de errores.
@@ -905,16 +1009,19 @@ En este momento, la versión 3.9.50 está disponible para el modo estándar y el
 
 
 
+[[netapp-keystone-beta-available-in-bluexp]]
 === La versión beta de NetApp Keystone está disponible en BlueXP
 
 NetApp Keystone pronto estará disponible en BlueXP y ahora está en versión beta.  Puede acceder a la página de registro para la versión beta de NetApp Keystone desde la barra de navegación izquierda de BlueXP.
 
 
 
+[[06-march-2025]]
 == 6 de marzo de 2025
 
 
 
+[[connector-3-9-49-update]]
 === Actualización del conector 3.9.49
 
 
@@ -927,10 +1034,12 @@ Esta función está disponible en la versión 3.9.49 y superiores del Conector. 
 
 
 
+[[18-february-2025]]
 == 18 de febrero de 2025
 
 
 
+[[private-mode-release-3-9-48]]
 === Lanzamiento del modo privado (3.9.48)
 
 Ya está disponible para descargar un nuevo modo privado desde https://mysupport.netapp.com/site/downloads["Sitio de soporte de NetApp"^]
@@ -952,10 +1061,12 @@ La versión 3.9.48 incluye actualizaciones para los siguientes componentes y ser
 |===
 
 
+[[10-february-2025]]
 == 10 de febrero de 2025
 
 
 
+[[connector-3-9-49]]
 === Conector 3.9.49
 
 Esta versión del conector BlueXP incluye pequeñas mejoras de seguridad y correcciones de errores.
@@ -964,6 +1075,7 @@ En este momento, la versión 3.9.49 está disponible para el modo estándar y el
 
 
 
+[[bluexp-identity-and-access-management-iam]]
 === Gestión de identidad y acceso (IAM) de BlueXP
 
 * Soporte para asignar múltiples roles a un usuario de BlueXP .
@@ -1028,6 +1140,7 @@ BlueXP IAM es compatible cuando se utiliza BlueXP en modo estándar y restringid
 
 
 
+[[private-mode-release-3-9-48]]
 === Lanzamiento del modo privado (3.9.48)
 
 Ya está disponible para descargar un nuevo modo privado desde https://mysupport.netapp.com/site/downloads["Sitio de soporte de NetApp"^]
@@ -1049,10 +1162,12 @@ La versión 3.9.48 incluye actualizaciones para los siguientes componentes y ser
 |===
 
 
+[[13-january-2025]]
 == 13 de enero de 2025
 
 
 
+[[connector-3-9-48]]
 === Conector 3.9.48
 
 Esta versión del conector BlueXP incluye pequeñas mejoras de seguridad y correcciones de errores.
@@ -1061,6 +1176,7 @@ En este momento, la versión 3.9.48 está disponible para el modo estándar y el
 
 
 
+[[bluexp-identity-and-access-management]]
 === Gestión de identidad y acceso de BlueXP
 
 * La página Recursos ahora muestra recursos no descubiertos.  Los recursos no descubiertos son recursos de almacenamiento que BlueXP conoce pero para los cuales no ha creado entornos de trabajo.  Por ejemplo, los recursos que se muestran en el asesor digital y que aún no tienen entornos de trabajo se muestran en la página Recursos como recursos no descubiertos.
@@ -1069,6 +1185,7 @@ En este momento, la versión 3.9.48 está disponible para el modo estándar y el
 
 
 
+[[create-a-support-case-for-additional-bluexp-services]]
 === Cree un caso de soporte para servicios adicionales de BlueXP
 
 Después de registrar BlueXP para recibir soporte, puede crear un caso de soporte directamente desde la consola web de BlueXP .  Al crear el caso, debe seleccionar el servicio con el que está asociado el problema.
@@ -1083,10 +1200,12 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html["Obtenga má
 
 
 
+[[16-december-2024]]
 == 16 de diciembre de 2024
 
 
 
+[[new-secure-endpoints-to-obtain-connector-images]]
 === Nuevos puntos finales seguros para obtener imágenes del conector
 
 Cuando instala el Conector, o cuando se produce una actualización automática, el Conector se comunica con los repositorios para descargar imágenes para la instalación o actualización.  De forma predeterminada, el conector siempre se ha puesto en contacto con los siguientes puntos finales:
@@ -1124,10 +1243,12 @@ Para ambos escenarios, puede seguir utilizando los puntos finales existentes.
 
 
 
+[[09-december-2024]]
 == 9 de diciembre de 2024
 
 
 
+[[connector-3-9-47]]
 === Conector 3.9.47
 
 Esta versión del conector BlueXP incluye correcciones de errores y un cambio en los puntos finales contactados durante la instalación del conector.
@@ -1141,16 +1262,19 @@ El instalador aún se comunica con https://mysupport.netapp.com.
 
 
 
+[[bluexp-identity-and-access-management]]
 === Gestión de identidad y acceso de BlueXP
 
 La página Conectores enumera únicamente los conectores disponibles actualmente.  Ya no se muestran los conectores que has eliminado.
 
 
 
+[[26-november-2024]]
 == 26 de noviembre de 2024
 
 
 
+[[private-mode-release-3-9-46]]
 === Lanzamiento del modo privado (3.9.46)
 
 Ya está disponible para descargar un nuevo modo privado desde https://mysupport.netapp.com/site/downloads["Sitio de soporte de NetApp"^]
@@ -1187,10 +1311,12 @@ Para obtener más detalles sobre el modo privado, incluido cómo actualizarlo, c
 
 
 
+[[11-november-2024]]
 == 11 de noviembre de 2024
 
 
 
+[[connector-3-9-46]]
 === Conector 3.9.46
 
 Esta versión del conector BlueXP incluye pequeñas mejoras de seguridad y correcciones de errores.
@@ -1199,6 +1325,7 @@ En este momento, la versión 3.9.46 está disponible para el modo estándar y el
 
 
 
+[[id-for-iam-projects]]
 === ID para proyectos IAM
 
 Ahora puede ver el ID de un proyecto desde la gestión de identidad y acceso de BlueXP .  Es posible que necesites usar el ID al realizar una llamada API.
@@ -1207,20 +1334,25 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-rename-organization.ht
 
 
 
+[[10-october-2024]]
 == 10 de octubre de 2024
 
 
 
+[[connector-3-9-45-patch]]
 === Parche del conector 3.9.45
 
 Este parche incluye correcciones de errores.
 
 
 
+[[07-october-2024]]
 == 7 de octubre de 2024
 
 
 
+[[bluexp-identity-and-access-management]]
+[[iam]]
 === Gestión de identidad y acceso de BlueXP
 
 La gestión de identidad y acceso (IAM) de BlueXP es un nuevo modelo de gestión de recursos y acceso que reemplaza y mejora la funcionalidad anterior proporcionada por las cuentas de BlueXP cuando se utiliza BlueXP en modo estándar.
@@ -1274,6 +1406,7 @@ BlueXP IAM es compatible cuando se utiliza BlueXP en modo estándar.  Si utiliza
 
 
 
+[[connector-3-9-45]]
 === Conector 3.9.45
 
 Esta versión incluye soporte ampliado del sistema operativo y corrección de errores.
@@ -1287,6 +1420,7 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.
 
 
 
+[[support-for-selinux-with-rhel-hosts]]
 === Compatibilidad con SELinux con hosts RHEL
 
 BlueXP ahora admite el conector con hosts Red Hat Enterprise Linux que tienen SELinux habilitado en modo de aplicación o modo permisivo.
@@ -1303,10 +1437,12 @@ https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/using_s
 
 
 
+[[30-september-2024]]
 == 30 de septiembre de 2024
 
 
 
+[[private-mode-release-3-9-44]]
 === Lanzamiento del modo privado (3.9.44)
 
 Ya está disponible para descargar una nueva versión del modo privado desde el sitio de soporte de NetApp .
@@ -1358,10 +1494,12 @@ Para obtener más detalles sobre el modo privado, incluido cómo actualizarlo, c
 
 
 
+[[09-september-2024]]
 == 9 de septiembre de 2024
 
 
 
+[[connector-3-9-44]]
 === Conector 3.9.44
 
 Esta versión incluye soporte para Docker Engine 26, una mejora en los certificados SSL y correcciones de errores.
@@ -1386,6 +1524,7 @@ En esta versión, realizamos cambios en el certificado SSL para conectores nuevo
 
 
 
+[[support-for-rhel-9-4]]
 === Compatibilidad con RHEL 9.4
 
 BlueXP ahora admite la instalación del Conector en un host Red Hat Enterprise Linux 9.4 cuando se utiliza BlueXP en modo estándar o modo restringido.
@@ -1402,6 +1541,7 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-s
 
 
 
+[[support-for-podman-4-9-4-with-all-rhel-versions]]
 === Compatibilidad con Podman 4.9.4 con todas las versiones de RHEL
 
 Podman 4.9.4 ahora es compatible con todas las versiones compatibles de Red Hat Enterprise Linux.  Anteriormente, la versión 4.9.4 solo era compatible con RHEL 8.10.
@@ -1414,6 +1554,7 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-s
 
 
 
+[[updated-aws-and-azure-permissions]]
 === Permisos de AWS y Azure actualizados
 
 Hemos actualizado las políticas de AWS y Azure para el Connector para eliminar los permisos que ya no son necesarios. Los permisos estaban relacionados con BlueXP edge caching y con la detección y gestión de clústeres de Kubernetes en Azure y AWS.
@@ -1424,10 +1565,12 @@ Hemos actualizado las políticas de AWS y Azure para el Connector para eliminar 
 
 
 
+[[22-august-2024]]
 == 22 de agosto de 2024
 
 
 
+[[connector-3-9-43-patch]]
 === Parche del conector 3.9.43
 
 Actualizamos el conector para admitir la versión 9.15.1 de Cloud Volumes ONTAP .
@@ -1448,10 +1591,12 @@ Estos permisos son necesarios para que Cloud Volumes ONTAP sea compatible con Vi
 
 
 
+[[8-august-2024]]
 == 8 de agosto de 2024
 
 
 
+[[connector-3-9-43]]
 === Conector 3.9.43
 
 Esta versión incluye pequeñas mejoras y correcciones de errores.
@@ -1460,6 +1605,7 @@ La versión 3.9.43 está disponible para el modo estándar y el modo restringido
 
 
 
+[[updated-cpu-and-ram-requirements]]
 === Requisitos de CPU y RAM actualizados
 
 Para proporcionar una mayor confiabilidad y mejorar el rendimiento de BlueXP y el Conector, ahora necesitamos CPU y RAM adicionales para la máquina virtual del Conector:
@@ -1479,22 +1625,26 @@ Los requisitos actualizados de CPU y RAM se aplican a todos los conectores nuevo
 
 
 
+[[support-for-podman-4-9-4-with-rhel-8-10]]
 === Compatibilidad con Podman 4.9.4 con RHEL 8.10
 
 La versión 4.9.4 de Podman ahora es compatible al instalar el conector en un host Red Hat Enterprise Linux 8.10.
 
 
 
+[[user-validation-for-identity-federation]]
 === Validación de usuarios para la federación de identidades
 
 Si utiliza la federación de identidad con BlueXP, cada usuario que inicie sesión en BlueXP por primera vez deberá completar un formulario rápido para validar su identidad.
 
 
 
+[[31-july-2024]]
 == 31 de julio de 2024
 
 
 
+[[private-mode-release-3-9-42]]
 === Lanzamiento del modo privado (3.9.42)
 
 Ya está disponible para descargar una nueva versión del modo privado desde el sitio de soporte de NetApp .
@@ -1552,10 +1702,12 @@ Para obtener más información sobre lo que se incluye en las versiones de estos
 
 
 
+[[15-july-2024]]
 == 15 de julio de 2024
 
 
 
+[[support-for-rhel-8-10]]
 === Compatibilidad con RHEL 8.10
 
 BlueXP ahora admite la instalación del Conector en un host Red Hat Enterprise Linux 8.10 cuando se utiliza el modo estándar o el modo restringido.
@@ -1566,10 +1718,12 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-s
 
 
 
+[[8-july-2024]]
 == 8 de julio de 2024
 
 
 
+[[connector-3-9-42]]
 === Conector 3.9.42
 
 Esta versión incluye mejoras menores, correcciones de errores y soporte para el Conector en la región AWS Canadá Oeste (Calgary).
@@ -1578,6 +1732,7 @@ La versión 3.9.42 está disponible para el modo estándar y el modo restringido
 
 
 
+[[updated-docker-engine-requirements]]
 === Requisitos actualizados de Docker Engine
 
 Cuando el conector está instalado en un host Ubuntu, la versión mínima compatible de Docker Engine ahora es 23.0.6. Anteriormente era 19.3.1.
@@ -1588,16 +1743,19 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.
 
 
 
+[[email-verification-now-required]]
 === Ahora se requiere verificación de correo electrónico
 
 Los nuevos usuarios que se registren en BlueXP ahora deberán verificar su dirección de correo electrónico antes de poder iniciar sesión.
 
 
 
+[[12-june-2024]]
 == 12 de junio de 2024
 
 
 
+[[connector-3-9-41]]
 === Conector 3.9.41
 
 Esta versión del conector BlueXP incluye pequeñas mejoras de seguridad y correcciones de errores.
@@ -1606,6 +1764,7 @@ La versión 3.9.41 está disponible para el modo estándar y el modo restringido
 
 
 
+[[end-of-support-for-rhel-7-and-centos-7]]
 === Fin del soporte para RHEL 7 y CentOS 7
 
 El 30 de junio de 2024, RHEL 7 alcanzó el final del mantenimiento (EOM), mientras que CentOS 7 alcanzó el final de su vida útil (EOL).  NetApp suspendió el soporte para agentes en estas distribuciones de Linux el 30 de junio de 2024.
@@ -1635,10 +1794,12 @@ Consulte las siguientes páginas para redescubrir sus sistemas después de imple
 
 
 
+[[4-june-2024]]
 == 4 de junio de 2024
 
 
 
+[[private-mode-release-3-9-40]]
 === Lanzamiento del modo privado (3.9.40)
 
 Ya está disponible para descargar una nueva versión del modo privado desde el sitio de soporte de NetApp . Esta versión incluye las siguientes versiones de los servicios BlueXP que son compatibles con el modo privado.

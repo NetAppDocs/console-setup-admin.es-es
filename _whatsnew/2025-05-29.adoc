@@ -4,6 +4,7 @@
 
 
 
+[[private-mode-release-3-9-52]]
 === Lanzamiento del modo privado (3.9.52)
 
 Ya está disponible para descargar un nuevo modo privado desde https://mysupport.netapp.com/site/downloads["Sitio de soporte de NetApp"^]

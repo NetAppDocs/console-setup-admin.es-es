@@ -18,6 +18,7 @@ La gestión de identidades y accesos (IAM) en la NetApp Console proporciona func
 
 
 
+[[platform-roles]]
 == Roles de la plataforma
 
 Los roles de plataforma otorgan permisos de administración de la NetApp Console , incluida la asignación de roles y la gestión de usuarios.  La consola tiene varios roles de plataforma.
@@ -55,6 +56,7 @@ Los roles de plataforma otorgan permisos de administración de la NetApp Console
 |===
 
 
+[[application-roles]]
 == Roles de aplicación
 
 La siguiente es una lista de roles en la categoría de aplicación.  Cada rol otorga permisos específicos dentro de su alcance designado.  Los usuarios que no tengan el rol de plataforma o aplicación requerido no pueden acceder a la aplicación respectiva.
@@ -92,6 +94,7 @@ La siguiente es una lista de roles en la categoría de aplicación.  Cada rol ot
 |===
 
 
+[[data-service-roles]]
 == Roles de servicio de datos
 
 La siguiente es una lista de roles en la categoría de servicio de datos.  Cada rol otorga permisos específicos dentro de su alcance designado.  Los usuarios que no tengan el rol de servicio de datos requerido o un rol de plataforma no podrán acceder al servicio de datos.
@@ -114,6 +117,15 @@ La siguiente es una lista de roles en la categoría de servicio de datos.  Cada 
 
 
 | link:reference-iam-backup-rec-roles.html["Visor de copias de seguridad y recuperación"] | BACKUP_VIEWER | Estándar, Restringido, Privado | Ver información de copia de seguridad y recuperación. 
+
+
+| link:reference-iam-cvo-roles.html["Administrador de Cloud Volumes ONTAP"] | CVO_ADMIN | Estándar, Restringido, Privado | Ofrece acceso completo a todas las operaciones de Cloud Volumes ONTAP. 
+
+
+| link:reference-iam-cvo-roles.html["Operador de Cloud Volumes ONTAP"] | CVO_OPERATOR | Estándar, Restringido, Privado | Permite realizar tareas de gestión diaria, como añadir volúmenes, configurar la replicación y gestionar el almacenamiento. 
+
+
+| link:reference-iam-cvo-roles.html["Visor de Cloud Volumes ONTAP"] | CVO_VIEWER | Estándar, Restringido, Privado | Proporciona acceso de solo lectura a la información de Cloud Volumes ONTAP. Este rol no puede realizar ninguna operación activa. 
 
 
 | link:reference-iam-disaster-rec-roles.html["Administración de recuperación ante desastres"] | ADMINISTRADOR DE RECUPERACIÓN ANTE DESASTRES | Estándar | Realice cualquier acción en el servicio NetApp Disaster Recovery . 
@@ -147,6 +159,7 @@ La siguiente es una lista de roles en la categoría de servicio de datos.  Cada 
 |===
 
 
+[[related-links]]
 == Enlaces relacionados
 
 * link:concept-identity-and-access-management.html["Obtenga más información sobre la gestión de identidad y acceso de la NetApp Console"]

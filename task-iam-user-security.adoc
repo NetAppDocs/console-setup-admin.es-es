@@ -21,6 +21,7 @@ Superadministrador, administrador de la organización o administrador de carpeta
 
 
 
+[[reset-user-passwords-local-users-only]]
 == Restablecer contraseñas de usuario (solo usuarios locales)
 
 Los administradores de la organización no pueden restablecer las contraseñas de los usuarios locales. Sin embargo, pueden indicar a los usuarios que restablezcan sus propias contraseñas.
@@ -32,6 +33,8 @@ NOTE: Esta opción no está disponible para los usuarios de una organización fe
 
 
 
+[[manage-a-users-multi-factor-authentication-mfa]]
+[[manage-mfa]]
 == Administrar la autenticación multifactor (MFA) de un usuario
 
 Si un usuario pierde el acceso a su dispositivo MFA, puede eliminar o deshabilitar su configuración MFA.
@@ -58,6 +61,7 @@ La tabla *Miembros* enumera los miembros de su organización.
 
 
 
+[[recreate-the-credentials-for-a-service-account]]
 == Recrear las credenciales para una cuenta de servicio
 
 Puedes crear nuevas credenciales para una cuenta de servicio si las pierdes o necesitas actualizarlas.

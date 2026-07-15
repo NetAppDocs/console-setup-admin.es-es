@@ -25,6 +25,7 @@ NOTE: Para obtener métricas precisas en la página de inicio se requieren agent
 
 
 
+[[required-netapp-console-roles]]
 == Roles requeridos de la NetApp Console
 
 Cada panel de la página de inicio requiere diferentes roles de usuario:
@@ -59,6 +60,7 @@ image:screenshot-home-metrics.png["Página de inicio de la NetApp Console que mu
 
 
 
+[[enable-metrics-to-appear-on-the-home-page]]
 == Habilitar que las métricas aparezcan en la página de inicio
 
 Podrás ver las métricas en la página de inicio cuando se cumplan las siguientes condiciones:
@@ -77,6 +79,7 @@ Para permitir que las métricas aparezcan en la página de inicio, complete las 
 
 
 
+[[view-the-overall-storage-capacity]]
 == Ver la capacidad de almacenamiento general
 
 El panel Capacidad de almacenamiento proporciona la siguiente información sobre los clústeres de ONTAP y los sistemas Cloud Volumes ONTAP :
@@ -102,6 +105,7 @@ TIP: Si tiene varios proyectos, es posible que vea datos diferentes en el panel 
 
 
 
+[[view-ontap-alerts]]
 == Ver alertas de ONTAP
 
 Vea problemas o riesgos potenciales en sus entornos ONTAP locales de NetApp .  Puedes ver algunas alertas que no son de EMS y algunas alertas de EMS.
@@ -149,6 +153,7 @@ Para obtener una lista de alertas que podría ver, consulte https://docs.netapp.
 
 
 
+[[view-storage-performance-capacity]]
 == Ver la capacidad de rendimiento del almacenamiento
 
 Revise la capacidad de rendimiento de almacenamiento utilizada por clúster o sistema Cloud Volumes ONTAP para determinar cómo la capacidad de rendimiento, la latencia y las IOPS afectan sus cargas de trabajo.  Por ejemplo, es posible que descubra que necesita cambiar las cargas de trabajo para minimizar la latencia y maximizar las IOPS y el rendimiento de sus cargas de trabajo críticas.
@@ -166,6 +171,7 @@ TIP: El almacenamiento en caché optimiza el rendimiento, pero puede provocar qu
 
 
 
+[[view-the-licenses-and-subscriptions-that-you-have]]
 == Ver las licencias y suscripciones que tienes
 
 Revise la siguiente información en el panel Licenses and subscriptions :
@@ -188,6 +194,7 @@ TIP: El almacenamiento en caché optimiza el rendimiento, pero puede provocar qu
 
 
 
+[[view-ransomware-resilience-status]]
 == Ver el estado de resiliencia frente al ransomware
 
 Descubra si las cargas de trabajo están en riesgo de ataques de ransomware o están protegidas con el servicio de datos NetApp Ransomware Resilience .  Puede revisar la cantidad total de datos que están protegidos, ver la cantidad de acciones recomendadas y ver la cantidad de alertas relacionadas con la protección contra ransomware.
@@ -209,6 +216,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransom
 
 
 
+[[view-backup-and-recovery-status]]
 == Ver el estado de la copia de seguridad y recuperación
 
 Revise el estado general de sus copias de seguridad y restauraciones desde NetApp Backup and Recovery.  Puede ver la cantidad de recursos protegidos y no protegidos.  También puede ver el porcentaje de operaciones de copias de seguridad y restauración para la protección de sus cargas de trabajo.  Un porcentaje más alto indica una mejor protección de datos.

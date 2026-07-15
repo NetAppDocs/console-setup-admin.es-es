@@ -21,6 +21,7 @@ Superadministrador, administrador de la organización o administrador de carpeta
 
 
 
+[[understand-how-access-is-granted-in-netapp-console]]
 == Comprenda cómo se otorga el acceso en la NetApp Console
 
 La consola NetApp utiliza el control de acceso basado en roles (RBAC) para gestionar los permisos. Asigna roles a los usuarios de forma individual o a través de grupos federados. Cada rol define las acciones permitidas para recursos específicos.
@@ -35,6 +36,8 @@ Tenga en cuenta lo siguiente sobre cómo conceder acceso en la NetApp Console:
 
 
 
+[[add-members-to-your-organization]]
+[[add-members]]
 == Agregue miembros a su organización
 
 La NetApp Console admite tres tipos de miembros: cuentas de usuario, cuentas de servicio y grupos federados.
@@ -47,6 +50,7 @@ Al agregar un miembro, elija el nivel de recurso (organización, carpeta o proye
 
 
 
+[[add-a-user]]
 === Agregar un usuario
 
 Los usuarios se registran en la NetApp Console, pero un administrador de organización, carpeta o proyecto debe agregarlos a una organización, carpeta o proyecto para que puedan acceder a los recursos.
@@ -86,6 +90,8 @@ La consola envía instrucciones por correo electrónico al usuario.
 
 
 
+[[add-a-service-account]]
+[[service-account]]
 === Agregar una cuenta de servicio
 
 Las cuentas de servicio le permiten automatizar tareas y conectarse de forma segura con las API de la consola. Elija un ID de cliente y un secreto para configuraciones simples, o JWT (JSON Web Token) para una mayor seguridad en entornos automatizados o nativos de la nube. Seleccione el método que cumpla con sus requisitos de seguridad.
@@ -132,6 +138,7 @@ La consola muestra el secreto del cliente solo una vez. Cópielo de forma segura
 
 
 
+[[add-a-federated-group-to-your-organization]]
 == Agregue un grupo federado a su organización
 
 Puede agregar un grupo federado de su proveedor de identidad (IdP) a su organización y asignarle uno o más roles. Los miembros del grupo federado heredan los roles que usted asigna al grupo en la Consola.
@@ -171,6 +178,7 @@ En la lista desplegable solo se muestran los roles admitidos. link:reference-iam
 
 
 
+[[related-information]]
 == Información relacionada
 
 * link:concept-identity-and-access-management.html["Obtenga información sobre la gestión de identidad y acceso en la NetApp Console"]

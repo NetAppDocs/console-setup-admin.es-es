@@ -25,6 +25,8 @@ Al desplegar un agente en Google Cloud, se inicia una instancia de VM que ejecut
 
 
 
+[[step-1-set-up-networking]]
+[[networking-gcp-agent]]
 == Paso 1: Configurar la red
 
 Configure la red para garantizar que el agente de la consola pueda administrar recursos, con conexiones a redes de destino y acceso a Internet saliente.
@@ -135,6 +137,8 @@ Implemente este requisito de red después de crear el agente de consola.
 
 
 
+[[step-2-set-up-permissions-to-create-the-console-agent]]
+[[agent-permissions-google]]
 == Paso 2: Configurar permisos para crear el agente de consola
 
 Antes de poder implementar un agente de consola desde la consola, debe configurar permisos para el usuario de Google Platform que implementa la máquina virtual del agente de consola.
@@ -255,6 +259,8 @@ https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single
 
 
 
+[[step-3-create-a-google-cloud-service-account-to-use-with-the-agent]]
+[[console-permissions-google]]
 == Paso 3: Crea una cuenta de servicio de Google Cloud para usar con el agente
 
 Se requiere una cuenta de servicio de Google Cloud para proporcionar al agente de la consola los permisos que necesita para administrar recursos en Google Cloud.  Cuando cree el agente de consola, deberá asociar esta cuenta de servicio con la máquina virtual del agente de consola.
@@ -314,6 +320,7 @@ Para más detalles, consulte https://cloud.google.com/iam/docs/granting-changing
 
 
 
+[[step-4-set-up-shared-vpc-permissions]]
 == Paso 4: Configurar permisos de VPC compartidos
 
 Si está utilizando una VPC compartida para implementar recursos en un proyecto de servicio, deberá preparar sus permisos.
@@ -366,6 +373,7 @@ Notas:
 ====
 
 
+[[step-5-enable-google-cloud-apis]]
 == Paso 5: Habilitar las API de Google Cloud
 
 Debe habilitar varias API de Google Cloud antes de implementar el agente de consola y Cloud Volumes ONTAP.
@@ -390,6 +398,7 @@ https://cloud.google.com/apis/docs/getting-started#enabling_apis["Documentación
 
 
 
+[[step-6-create-the-console-agent]]
 == Paso 6: Crear el agente de consola
 
 Cree un agente de consola directamente desde la consola.

@@ -18,6 +18,7 @@ Implemente el agente de consola en modo restringido para poder usar la NetApp Co
 
 
 
+[[step-1-install-the-console-agent]]
 == Paso 1: Instalar el agente de la consola
 
 Instale el agente de consola desde el marketplace de su proveedor de nube o manualmente en un host Linux.
@@ -354,6 +355,7 @@ Configurar la NetApp Console.
 ====
 
 
+[[step-2-set-up-netapp-console]]
 == Paso 2: Configurar la NetApp Console
 
 Cuando accede a la consola por primera vez, se le solicita que elija una organización para el agente de la consola y debe habilitar el modo restringido.
@@ -391,6 +393,7 @@ Proporcione a la consola los permisos que configuró previamente.
 
 
 
+[[step-3-provide-permissions-to-the-console-agent]]
 == Paso 3: Proporcionar permisos al agente de la consola
 
 Si instaló el agente de consola desde Azure Marketplace o manualmente, deberá otorgar los permisos que configuró anteriormente.

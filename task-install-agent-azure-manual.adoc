@@ -28,6 +28,7 @@ NOTE: Despliega un agente de Console en la misma región de Azure que los sistem
 
 
 
+[[step-1-review-host-requirements]]
 == Paso 1: Revisar los requisitos del host
 
 El software del agente de consola debe ejecutarse en un host que cumpla con los requisitos específicos del sistema operativo, requisitos de RAM, requisitos de puerto, etc.
@@ -154,6 +155,8 @@ No compatible
 |===
 
 
+[[step-2-install-podman-or-docker-engine]]
+[[podman-configuration]]
 == Paso 2: Instalar Podman o Docker Engine
 
 Dependiendo de su sistema operativo, se requiere Podman o Docker Engine antes de instalar el agente.
@@ -339,6 +342,7 @@ sudo systemctl enable docker && sudo systemctl start docker
 ====
 
 
+[[step-3-set-up-networking]]
 == Paso 3: Configurar la red
 
 Asegúrese de que la ubicación de red donde planea instalar el agente de consola admita los siguientes requisitos.  Cumplir estos requisitos permite que el agente de la consola administre recursos y procesos dentro de su entorno de nube híbrida.
@@ -458,6 +462,7 @@ Habilitar NTP:: Si tienes pensado usar NetApp Data Classification para analizar 
 
 
 
+[[step-4-set-up-console-agent-deployment-permissions]]
 == Paso 4: Configurar los permisos de implementación del agente de consola
 
 Debe proporcionar permisos de Azure al agente de consola mediante una de las siguientes opciones:
@@ -669,6 +674,7 @@ Su entidad de servicio ya está configurada y debería haber copiado el ID de la
 ====
 
 
+[[step-5-install-the-console-agent]]
 == Paso 5: Instalar el agente de consola
 
 Una vez completados los requisitos previos, puede instalar manualmente el software en su propio host Linux.
@@ -835,6 +841,7 @@ Si tiene Azure Blob Storage en la misma suscripción de Azure donde creó el age
 
 
 
+[[step-6-provide-permissions-to-netapp-console]]
 == Paso 6: Proporcionar permisos a la NetApp Console
 
 Ahora que ha instalado el agente de consola, debe proporcionarle los permisos de Azure que configuró anteriormente.  Al proporcionar los permisos, se permite que la consola administre sus datos y la infraestructura de almacenamiento en Azure.

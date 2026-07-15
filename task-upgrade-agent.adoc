@@ -18,6 +18,7 @@ El agente de Consola se actualiza automáticamente cuando tiene conectividad sal
 
 
 
+[[upgrade-the-console-agent]]
 == Actualizar el agente de la consola
 
 El agente de la Consola debe reiniciarse durante el proceso de actualización, por lo que la Consola NetApp no estará disponible durante la actualización.
@@ -48,6 +49,7 @@ Donde <versión> es la versión del agente que descargaste.
 
 
 
+[[upgrade-a-vcenter-deployed-console-agent-using-an-iso]]
 == Actualiza un agente de consola desplegado en vCenter usando una ISO
 
 Si tu agente de Console fue desplegado en vCenter usando un OVA, puedes actualizarlo a una nueva versión montando una ISO en la VM y ejecutando la actualización desde la consola de mantenimiento de la VM.

@@ -18,6 +18,7 @@ Estas preguntas frecuentes responden a preguntas habituales sobre la gestión de
 
 
 
+[[getting-started]]
 == Cómo empezar
 
 .¿Cuáles son los primeros pasos para configurar IAM después de crear una nueva organización NetApp Console?
@@ -31,6 +32,7 @@ Cuando te registras, la consola crea una organización con un administrador de o
 
 
 
+[[resource-hierarchy-organizations-folders-and-projects]]
 == Jerarquía de recursos: organizaciones, carpetas y proyectos
 
 .¿Cuál es la diferencia entre una carpeta y un proyecto en NetApp Console IAM?
@@ -56,6 +58,7 @@ Entre los recursos que pueden asociarse a los proyectos figuran:
 
 
 
+[[roles-and-permissions]]
 == Funciones y permisos
 
 .¿Cuál es la diferencia entre un administrador de organización y un administrador de carpeta o proyecto?
@@ -72,6 +75,7 @@ No. No puedes cambiar el acceso del miembro en un nivel inferior si se heredó d
 
 
 
+[[managing-members-and-access]]
 == Gestión de miembros y acceso
 
 .¿Qué debe suceder antes de que pueda añadir un usuario a mi organización de NetApp Console?
@@ -88,6 +92,7 @@ NetApp recomienda asignar un rol de acceso mínimo, como Organization viewer, a 
 
 
 
+[[console-agents]]
 == Agentes de consola
 
 .¿Qué ocurre con un agente de Console una vez creado, y puede utilizarse en otros proyectos?
@@ -95,6 +100,7 @@ Los agentes de consola están vinculados inicialmente al proyecto en el que se c
 
 
 
+[[related-information]]
 == Información relacionada
 
 * link:concept-identity-and-access-management.html["Obtenga más información sobre la gestión de identidad y acceso de la NetApp Console"]
