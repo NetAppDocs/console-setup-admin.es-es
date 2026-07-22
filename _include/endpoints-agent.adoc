@@ -51,7 +51,7 @@ Los puntos finales enumerados a continuación son todas entradas CNAME.
 
 | https://mysupport.netapp.com | Para obtener información sobre licencias y enviar mensajes de AutoSupport a NetApp Support. | https://signin.b2c.netapp.com | Para actualizar las credenciales del NetApp Support Site (NSS) o para añadir nuevas credenciales NSS a la NetApp Console. | https://support.netapp.com | Para obtener información sobre licencias y enviar mensajes de AutoSupport a NetApp Support, así como para recibir actualizaciones de software para Cloud Volumes ONTAP.
 
-| https://api.bluexp.netapp.com https://netapp-cloud-account.auth0.com https://netapp-cloud-account.us.auth0.com https://console.netapp.com https://components.console.netapp.com https://cdn.auth0.com | Para proporcionar funciones y servicios dentro de la NetApp Console.
+| \https://api.bluexp.netapp.com \https://netapp-cloud-account.auth0.com \https://netapp-cloud-account.us.auth0.com \https://console.netapp.com \https://components.console.bluexp.netapp.com \https://cdn.auth0.com | Para proporcionar funciones y servicios dentro de la NetApp Console.
 
 [cols="2*"]
 |===
@@ -135,7 +135,7 @@ Para obtener licencias y comunicarse con el soporte técnico de NetApp .
 * \ https://netapp-cloud-account.auth0.com
 * \ https://netapp-cloud-account.us.auth0.com
 * \ https://console.netapp.com
-* \https://components.console.netapp.com
+* \https://components.console.bluexp.netapp.com
 * \ https://cdn.auth0.com
 
  a| 

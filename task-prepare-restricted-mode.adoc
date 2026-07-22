@@ -382,7 +382,7 @@ NOTE: Los agentes de consola anteriores a la versión 4.0.0 admiten diferentes e
 | Puntos finales | Objetivo 
 
 
-| \https://api.bluexp.netapp.com \https://netapp-cloud-account.auth0.com \https://netapp-cloud-account.us.auth0.com \https://console.netapp.com \https://components.console.netapp.com \https://cdn.auth0.com | Proporcionar funciones y servicios dentro de la NetApp Console. 
+| \https://api.bluexp.netapp.com \https://netapp-cloud-account.auth0.com \https://netapp-cloud-account.us.auth0.com \https://console.netapp.com \https://components.console.bluexp.netapp.com \https://cdn.auth0.com | Proporcionar funciones y servicios dentro de la NetApp Console. 
 
 
 | \ https://cdn.auth0.com \ https://services.cloud.netapp.com | Su navegador web se conecta a estos puntos finales para la autenticación centralizada de usuarios a través de la NetApp Console. 
@@ -490,7 +490,7 @@ Para obtener información sobre licencias y enviar mensajes de AutoSupport al so
 
 
  a| 
-\https://api.bluexp.netapp.com \https://netapp-cloud-account.auth0.com \https://netapp-cloud-account.us.auth0.com \https://console.netapp.com \https://components.console.netapp.com \https://cdn.auth0.com
+\https://api.bluexp.netapp.com \https://netapp-cloud-account.auth0.com \https://netapp-cloud-account.us.auth0.com \https://console.netapp.com \https://components.console.bluexp.netapp.com \https://cdn.auth0.com
  a| 
 Proporcionar funciones y servicios dentro de la NetApp Console.
 
