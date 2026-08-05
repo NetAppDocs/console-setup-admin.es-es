@@ -124,6 +124,7 @@ Para las regiones estándar, los permisos se distribuyen en dos políticas.  Se 
         "iam:DeleteInstanceProfile",
         "iam:GetRolePolicy",
         "iam:GetRole",
+        "iam:TagRole",
         "sts:DecodeAuthorizationMessage",
         "sts:AssumeRole",
         "s3:GetBucketTagging",
@@ -362,6 +363,7 @@ Para las regiones estándar, los permisos se distribuyen en dos políticas.  Se 
         "iam:CreateRole",
         "iam:DeleteRole",
         "iam:PutRolePolicy",
+        "iam:TagRole",
         "iam:CreateInstanceProfile",
         "iam:DeleteRolePolicy",
         "iam:AddRoleToInstanceProfile",
@@ -558,6 +560,7 @@ Para las regiones estándar, los permisos se distribuyen en dos políticas.  Se 
         "iam:CreateRole",
         "iam:DeleteRole",
         "iam:PutRolePolicy",
+        "iam:TagRole",
         "iam:CreateInstanceProfile",
         "iam:DeleteRolePolicy",
         "iam:AddRoleToInstanceProfile",
@@ -678,6 +681,7 @@ Para las regiones estándar, los permisos se distribuyen en dos políticas.  Se 
         "iam:CreateRole",
         "iam:DeleteRole",
         "iam:PutRolePolicy",
+        "iam:TagRole",
         "iam:CreateInstanceProfile",
         "iam:DeleteRolePolicy",
         "iam:AddRoleToInstanceProfile",
@@ -955,7 +959,7 @@ El agente realiza las siguientes solicitudes de API para implementar y administr
 | Objetivo | Acción | ¿Se utiliza para implementación? | ¿Se utiliza para operaciones diarias? | ¿Se utiliza para eliminar? 
 
 
-.13+| Crear y administrar roles de IAM y perfiles de instancia para instancias de Cloud Volumes ONTAP | iam:ListInstanceProfiles | Sí | Sí | No 
+.14+| Crear y administrar roles de IAM y perfiles de instancia para instancias de Cloud Volumes ONTAP | iam:ListInstanceProfiles | Sí | Sí | No 
 
 
 | soy:CreateRole | Sí | No | No 
@@ -965,6 +969,9 @@ El agente realiza las siguientes solicitudes de API para implementar y administr
 
 
 | soy:PolíticaDeRolDePut | Sí | No | No 
+
+
+| iam:TagRole | Sí | No | No 
 
 
 | iam:CreateInstanceProfile | Sí | No | No 
