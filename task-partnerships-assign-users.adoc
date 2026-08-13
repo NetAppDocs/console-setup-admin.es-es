@@ -4,7 +4,7 @@ permalink: task-partnerships-assign-users.html
 keywords: switch organizations, switch projects, projects, organizations, change, switch, change organizations, change projects, iam, identity and access management, switch connectors 
 summary: Puedes agregar usuarios a una asociación agregándolos a la organización asociada.  Después de agregar usuarios, la organización asociada es responsable de asignarles roles para recursos específicos en su organización. 
 ---
-= Administrar miembros para una organización asociada
+= Gestiona los miembros de la asociación en NetApp Console
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

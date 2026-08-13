@@ -4,7 +4,7 @@ permalink: task-federation-verify-domain.html
 keywords: federation, active directory federation services, adfs, ad fs, single sign-on, microsoft, federate, federated connection, SSO, identity federation, identity management, corporate identity 
 summary: Si quieres federarte con un dominio que es diferente de tu dominio de correo electrónico, primero debes verificar que eres el propietario del dominio. Solo puedes usar dominios verificados para la federación. 
 ---
-= Verifique el dominio de correo electrónico para su conexión federada
+= Verifica tu dominio de correo electrónico para la federación en NetApp Console
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

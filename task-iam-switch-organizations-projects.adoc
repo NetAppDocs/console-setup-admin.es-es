@@ -4,7 +4,7 @@ permalink: task-iam-switch-organizations-projects.html
 keywords: switch organizations, switch projects, projects, organizations, change, switch, change organizations, change projects, iam, identity and access management, switch connectors 
 summary: Es posible que pertenezca a varias organizaciones de consola o tenga permisos para acceder a varios proyectos o agentes dentro de una organización.  Cuando sea necesario, puede cambiar fácilmente entre organizaciones, proyectos y agentes de la consola para acceder a los recursos asociados con esa organización, proyecto o agente. 
 ---
-= Cambiar entre organizaciones, proyectos y agentes de la consola
+= Alterna entre organizaciones, proyectos y agentes de NetApp Console
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

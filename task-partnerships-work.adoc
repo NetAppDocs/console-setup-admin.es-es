@@ -4,7 +4,7 @@ permalink: task-partnerships-work.html
 keywords: partner organizations, create partnership, MSPs, service provider access 
 summary: Una vez que se le haya asignado un rol en una organización asociada, puede cambiar a esa organización y realizar las acciones que tiene permiso para realizar. 
 ---
-= Trabajar en una organización asociada
+= Trabaja en una organización asociada en NetApp Console
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

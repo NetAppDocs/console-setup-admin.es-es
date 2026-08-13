@@ -4,7 +4,7 @@ permalink: concept-overview.html
 keywords: overview, concepts, features, use case, cloud manager, netapp console, how bluexp works, supported cloud providers, cloud providers, hyperscalers, aws, google, how NetApp Console works 
 summary: La NetApp Console te ayuda a gestionar y proteger tus datos en todos tus sistemas cloud y locales. Incluye herramientas para mantener tus datos seguros y funcionando bien. 
 ---
-= NetApp Console para la gestión unificada del almacenamiento
+= Obtenga más información sobre la NetApp Console
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

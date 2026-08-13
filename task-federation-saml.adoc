@@ -4,7 +4,7 @@ permalink: task-federation-saml.html
 keywords: federation, SAML protocol, SAML, federation services,  federate, federated connection, SSO, identity federation, identity management, corporate identity 
 summary: 'Fedérese con su proveedor de IdP SAML 2.0 para habilitar el inicio de sesión único (SSO) para la NetApp Console.  Esto permite a los usuarios iniciar sesión utilizando sus credenciales corporativas.' 
 ---
-= Federarse con un proveedor de identidad SAML
+= Federa NetApp Console con un proveedor de identidad SAML
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

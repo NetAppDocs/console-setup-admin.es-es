@@ -4,7 +4,7 @@ permalink: task-install-agent-google-manual.html
 keywords: install connector, google cloud connector installation, google cloud connector, install connector in google cloud, bluexp, gcloud, manual install, create connector, gcp installation, gcp connector 
 summary: Para instalar manualmente el agente de la consola en su propio host Linux, debe revisar los requisitos del host, configurar su red, preparar los permisos de Google Cloud, habilitar las API de Google Cloud, instalar la consola y luego proporcionar los permisos que preparó. 
 ---
-= Despliega manualmente el agente de la consola en Google Cloud
+= Implementa manualmente el agente de NetApp Console en Google Cloud
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: concept-agent-install-options.html
 keywords: install agent, deployment method, console install, marketplace install, manual install, ova install, vcenter install, installation options, 
 summary: Despliega un agente de la Consola usando la NetApp Console, el marketplace de tu proveedor de nube o instalando manualmente el software en un host Linux. Tu método de despliegue determina cómo mantienes el host del agente y varía según el modo de despliegue de la NetApp Console que estés usando. 
 ---
-= Elige un método de despliegue del agente de la consola
+= Infórmate sobre los métodos de implementación del agente de NetApp Console
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

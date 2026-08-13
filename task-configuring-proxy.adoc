@@ -4,7 +4,7 @@ permalink: task-configuring-proxy.html
 keywords: proxy, proxy server, proxy, internet, HTTP, http, https, bluexp 
 summary: Si sus políticas corporativas requieren que utilice un servidor proxy para todas las comunicaciones a Internet, entonces deberá configurar sus agentes para utilizar ese servidor proxy.  Si no configuró un agente de consola para usar un servidor proxy durante la instalación, puede configurar el agente de consola para usar ese servidor proxy en cualquier momento. 
 ---
-= Configurar un agente de consola para utilizar un servidor proxy
+= Configura un agente de NetApp Console para usar un servidor proxy
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
