@@ -1,0 +1,106 @@
+---
+sidebar: sidebar 
+permalink: task-secure-netapp-console.html 
+keywords: security, hardening, netapp console, console agent, identity and access management, iam, rbac, federation, mfa, read-only mode, ontap system manager 
+summary: Sigue los pasos recomendados para proteger el acceso a NetApp Console, IAM, la federación de identidades, el modo de solo lectura, las cuentas de servicio, los agentes de Console y ONTAP System Manager. 
+---
+= Consola segura de NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Protege las operaciones de almacenamiento al limitar el acceso a NetApp Console, asegurar los agentes de Console y supervisar la actividad para detectar cambios no autorizados o imprevistos.
+
+Sigue estos pasos para configurar una base de referencia de seguridad para tu organización. Sigue el flujo de trabajo de configuración correspondiente a tu modo de implementación antes de aplicar los controles de seguridad que se enumeran a continuación. link:concept-modes.html["Obtenga más información sobre los modos de implementación de la NetApp Console"].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1"] Elige un modo de implementación de NetApp Console y completa la configuración inicial
+[role="quick-margin-para"]
+Crea la organización y designa al primer administrador de la organización. Completa el proceso de configuración que se ajuste a tu implementación.
+
+[role="quick-margin-list"]
+* link:task-quick-start-standard-mode.html["Empieza a usar NetApp Console en modo estándar"]
+* link:task-quick-start-restricted-mode.html["Empieza a utilizar la NetApp Console en modo restringido"]
+* link:task-quick-start-private-mode.html["Empieza a utilizar NetApp Console en modo privado"]
+
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dos"] Permisos del agente de Secure Console, acceso a la red y hosts
+[role="quick-margin-para"]
+Limita los permisos en la nube y el acceso a la red de cada agente de la consola al mínimo necesario. Protege el tráfico de la consola web y mantén el software del agente de la consola.
+
+[role="quick-margin-list"]
+* link:reference-permissions.html["Revisa los permisos del proveedor de servicios en la nube y los requisitos de red"]
+* link:reference-networking-saas-console.html["Revisa los requisitos de acceso a la red"]
+* link:task-installing-https-cert.html["Instalar un certificado firmado por una autoridad de certificación"]
+* link:task-configuring-proxy.html["Configura un servidor proxy"]
+* link:task-upgrade-agent.html["Actualizar el agente de la consola"]
+
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Tres"] Organiza la jerarquía de IAM de NetApp Console
+[role="quick-margin-para"]
+Configura la jerarquía de la organización para que se adapte a la forma de trabajar de tus equipos. Asigna los sistemas de almacenamiento, los servicios de datos y los agentes de Console a los proyectos que los gestionan.
+
+[role="quick-margin-list"]
+* link:task-iam-manage-folders-projects.html["Crea carpetas y proyectos."]
+* link:task-iam-manage-resources.html["Asocia recursos a proyectos."]
+
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Cuatro"] Configura la federación de identidades y los grupos federados de NetApp Console
+[role="quick-margin-para"]
+Conecta NetApp Console a tu proveedor de identidad corporativo (IdP) para que los usuarios inicien sesión con sus credenciales corporativas y tu IdP pueda aplicar sus políticas de autenticación. NetApp Console es compatible con AD FS, Microsoft Entra ID, PingFederate y proveedores de identidad SAML genéricos.
+
+[role="quick-margin-para"]
+Agrega usuarios y grupos federados a la organización de Console y asígnales roles de Console. La federación no sustituye la pertenencia a Console ni las asignaciones de roles. link:task-iam-manage-members-permissions.html#add-members["Aprende a añadir un grupo federado"].
+
+[role="quick-margin-list"]
+* link:task-federation-verify-domain.html["Verificar su dominio"]
+* link:task-federation-adfs.html["Federarse con AD FS"]
+* link:task-federation-entra-id.html["Federarse con Microsoft Entra ID"]
+* link:task-federation-ping.html["Federarse con PingFederate"]
+* link:task-federation-saml.html["Federarse con un proveedor de identidad SAML"]
+
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["Cinco"] Agrega miembros a la consola de NetApp y asígnales roles de mínimo privilegio
+[role="quick-margin-para"]
+Otorga a cada usuario, cuenta de servicio y grupo federado únicamente el acceso necesario para el desempeño de sus funciones. Asigna roles en el ámbito más reducido de la organización, la carpeta o el proyecto que permita realizar el trabajo. Habilita la autenticación multifactor para los usuarios locales.
+
+[role="quick-margin-list"]
+* link:task-iam-manage-members-permissions.html["Agrega miembros a tu organización de la Console"]
+* link:concept-iam-rbac.html["Infórmate sobre el control de acceso basado en roles"]
+* link:reference-iam-predefined-roles.html["Revisa los roles predefinidos"]
+* link:task-iam-user-security.html["Gestionar la seguridad de los miembros"]
+
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["Seis"] Asegura la automatización de NetApp Console con cuentas de servicio
+[role="quick-margin-para"]
+Mantén la automatización separada de las cuentas de usuario. Asigna a cada cuenta de servicio el rol y el ámbito mínimos que necesita. Almacena las credenciales de forma segura y vuelve a crearlas cuando se pierdan o se roten.
+
+link:task-iam-manage-members-permissions.html#service-account["Aprende a añadir una cuenta de servicio"]
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-7.png["Siete"] Activa el modo de solo lectura para una organización de NetApp Console
+[role="quick-margin-para"]
+Exigir a los administradores que amplíen su rol antes de realizar cambios. Este control reduce los cambios no intencionados en los sistemas de almacenamiento y los servicios de datos.
+
+link:task-enable-read-only-mode.html["Aprende a activar el modo de solo lectura"]
+
+
+NOTE: El modo de solo lectura no está disponible cuando NetApp Console está en modo privado.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-8.png["Ocho"] Aplicar los permisos de ONTAP para ONTAP System Manager
+[role="quick-margin-para"]
+Activa la opción *Forzar credenciales* en los agentes activos de la NetApp Console que gestionan sistemas ONTAP de producción. Los usuarios introducen sus credenciales del clúster ONTAP al abrir ONTAP System Manager, y ONTAP aplica sus permisos.
+
+link:task-ontap-access-agent.html["Descubre cómo aplicar los permisos de ONTAP en ONTAP System Manager"]
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-9.png["Nueve"] Revisa la actividad de auditoría y los controles de seguridad de NetApp Console
+[role="quick-margin-para"]
+Establece un proceso de revisión periódica para los miembros, las asignaciones de grupos, los roles, las credenciales, los agentes y las operaciones recientes. Elimina el acceso que ya no sea necesario e investiga cualquier actividad inesperada.
+
+[role="quick-margin-list"]
+* link:task-iam-audit-actions-timeline.html["Aprende a auditar las acciones de la consola"]
+* link:task-monitor-cm-operations.html["Aprende a supervisar las operaciones de la NetApp Console"]
+

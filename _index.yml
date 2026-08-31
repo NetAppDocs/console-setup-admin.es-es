@@ -59,15 +59,14 @@ indexpage:
       url: "/task-maintain-agents.html"
   - title: Seguridad y cumplimiento
     links:
+    - title: Consola segura de NetApp
+      url: task-secure-netapp-console.html
     - title: Fedérese con su proveedor de identidad
       url: "/concept-federation.html"
     - title: Habilitar el modo de solo lectura
       url: task-enable-read-only-mode.html
     - title: Monitorear la actividad de la consola
       url: "/task-monitor-cm-operations.html"
-    - title: Implementar la NetApp Console en modo restringido (implementaciones de
-        nube soberana)
-      url: "/task-quick-start-restricted-mode.html"
     - title: Cumplimiento de SOC-2
       url: https://www.netapp.com/company/trust-center/compliance/soc-2/
   - title: Asociaciones de consolas
