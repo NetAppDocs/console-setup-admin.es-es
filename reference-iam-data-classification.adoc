@@ -12,7 +12,7 @@ summary: NetApp Data Classification admite dos roles para gestionar el acceso de
 
 
 [role="lead"]
-NetApp Data Classification es compatible con la gestión de identidades y accesos para darte la flexibilidad de asignar a los usuarios un rol específico para las tareas que necesitan realizar dentro de tu organización. Cómo asignas los roles depende de tu propia empresa y de las prácticas de gestión del almacenamiento.
+NetApp Data Classification es compatible con los roles de gestión de identidades y accesos (IAM), así puedes adaptar el acceso a las tareas que los usuarios necesitan realizar. Cómo asignes los roles depende de tu propia empresa y de tus prácticas de gestión del almacenamiento.
 
 La clasificación de datos admite dos funciones:
 
@@ -38,7 +38,7 @@ NOTE: La función de Compliance admin se añadió a NetApp Data Classification e
 [[classification-viewer]]
 == Visor de clasificación
 
-El visor de clasificación está diseñado para usuarios que necesitan acceder a los resultados de las exploraciones en NetApp Data Classification, pero no necesitan acceder a los recursos de configuración. Los usuarios con el rol de visor de clasificación pueden ver los resultados de las exploraciones de asignación y completas para evaluar áreas de ahorro de almacenamiento o posibles riesgos de datos. Los usuarios con el rol de visor de clasificación también pueden generar informes para los recursos a los que tienen acceso. Estos usuarios no pueden activar ni desactivar la exploración de volúmenes, buckets o esquemas de bases de datos.
+El visor de clasificación está diseñado para usuarios que necesitan acceder a los resultados de los análisis en NetApp Data Classification, pero que no necesitan acceder a los recursos de configuración. Los usuarios con el rol de visor de clasificación pueden ver los resultados de la asignación y de los análisis completos para evaluar áreas donde se puede ahorrar espacio de almacenamiento o identificar posibles riesgos de datos. Los usuarios con el rol de visor de clasificación también pueden generar informes para los recursos a los que tienen acceso. Estos usuarios no pueden activar ni desactivar el análisis de volúmenes, buckets o esquemas de bases de datos.
 
 
 

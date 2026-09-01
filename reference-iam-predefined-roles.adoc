@@ -140,7 +140,7 @@ La siguiente es una lista de roles en la categoría de servicio de datos.  Cada 
 | link:reference-iam-disaster-rec-roles.html["Visor de recuperación ante desastres"] | DISASTER_RECOVERY_VIEWER | Estándar | Ver sólo información. 
 
 
-| Visor de clasificación | VISOR_CLASIFICACIÓN | Estándar, Restringido, Privado | Permite a los usuarios ver los resultados del escaneo de NetApp Data Classification. Los usuarios con este rol pueden ver información de cumplimiento y generar informes para los recursos a los que tienen permiso de acceso. Estos usuarios no pueden activar ni desactivar la exploración de volúmenes, buckets o esquemas de bases de datos. Data Classification no tiene un rol de administrador. 
+| link:reference-iam-data-classification.html["Visor de clasificación"] | VISOR_CLASIFICACIÓN | Estándar, Restringido, Privado | Permite a los usuarios ver los resultados del escaneo de NetApp Data Classification. Los usuarios con este rol pueden ver información de cumplimiento y generar informes para los recursos a los que tienen permiso de acceso. Estos usuarios no pueden activar ni desactivar la exploración de volúmenes, buckets o esquemas de bases de datos. Data Classification no tiene un rol de administrador. 
 
 
 | link:reference-iam-ransomware-roles.html["Administrador de resiliencia frente al ransomware"] | RANSOMWARE_PROTECTION_ADMIN | Estándar | Administre acciones en las pestañas Proteger, Alertas, Recuperar, Configuración e Informes de NetApp Ransomware Resilience. 
