@@ -100,7 +100,7 @@ NetApp recomienda que los clientes trabajen con su representante de NetApp para 
 | Área de productos | NetApp servicio o función | Agente de consola requerido 
 
 
-.12+| *Gestión de sistemas de almacenamiento* Esta tabla muestra qué sistemas de almacenamiento puedes gestionar desde la NetApp Console. No se enumeran los destinos de backup para NetApp Backup and Recovery. | Alertas | Sí 
+.13+| *Gestión de sistemas de almacenamiento* Esta tabla muestra qué sistemas de almacenamiento puedes gestionar desde la NetApp Console. No se enumeran los destinos de backup para NetApp Backup and Recovery. | Alertas | Sí 
 
 
 | Amazon FSx para ONTAP | Sí, para descubrimiento y gestión. Puedes usar el descubrimiento directo sin un agente de Console, pero necesitas un agente para usar las funciones de gestión. 
@@ -136,10 +136,10 @@ NetApp recomienda que los clientes trabajen con su representante de NetApp para 
 | StorageGRID | Sí 
 
 
-| Cargas de trabajo | No .8+| *Servicios de datos* 
+| Cargas de trabajo | No 
 
 
-| NetApp Backup and Recovery | Sí 
+.8+| *Servicios de datos* | NetApp Backup and Recovery | Sí 
 
 
 | Clasificación de NetApp | Sí 
@@ -160,10 +160,10 @@ NetApp recomienda que los clientes trabajen con su representante de NetApp para 
 | NetApp Cloud Tiering | Sí 
 
 
-| NetApp Volume Caching | Sí .5+| *Características del contrato de soporte de NetApp* 
+| NetApp Volume Caching | Sí 
 
 
-| Asesor digital | Sí 
+.5+| *Características del contrato de soporte de NetApp* | Asesor digital | Sí 
 
 
 | Eficiencia económica | Sí 
@@ -175,10 +175,10 @@ NetApp recomienda que los clientes trabajen con su representante de NetApp para 
 | Actualizaciones de software | No 
 
 
-| Sostenibilidad | Sí .12+| *Funciones administrativas* 
+| Sostenibilidad | Sí 
 
 
-| Auditoría | No 
+.11+| *Funciones administrativas* | Auditoría | No 
 
 
 | Centro de automatización | No 
@@ -318,7 +318,7 @@ NetApp Replication
 | *Características del contrato de soporte de NetApp* | Ninguno | N/A 
 
 
-.12+| *Funciones administrativas* | Auditoría | No 
+.11+| *Funciones administrativas* | Auditoría | No 
 
 
 | Centro de automatización | No 
@@ -674,7 +674,7 @@ Ten en cuenta que algunos servicios pueden ser compatibles con limitaciones. Par
 | Sostenibilidad | No | No 
 
 
-.9+| *Funciones administrativas* | Métricas del panel para servicios de almacenamiento y datos | No | No 
+.11+| *Funciones administrativas* | Métricas del panel para servicios de almacenamiento y datos | No | No 
 
 
 | Gestión de identidad y acceso | Sí | Sí 
@@ -701,5 +701,8 @@ Ten en cuenta que algunos servicios pueden ser compatibles con limitaciones. Par
 | Modo de solo lectura | Sí | No 
 
 
-| Notificaciones | Sí | No | Auditoría 
+| Notificaciones | Sí | No 
+
+
+| Auditoría | Sí | Sí 
 |===
