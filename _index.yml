@@ -60,7 +60,7 @@ indexpage:
   - title: Seguridad y cumplimiento
     links:
     - title: Consola segura de NetApp
-      url: task-secure-netapp-console.html
+      url: "/task-secure-netapp-console.html"
     - title: Fedérese con su proveedor de identidad
       url: "/concept-federation.html"
     - title: Habilitar el modo de solo lectura
