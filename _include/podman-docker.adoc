@@ -161,6 +161,7 @@ podman info | grep networkBackend
 
 
 
+. Si vas a asociar este agente a un sistema Cloud Volumes ONTAP, considera aumentar el número de subprocesos asociados al agente para mejorar el rendimiento. link:https://kb.netapp.com/Cloud/ncds/nds/cvods/cvods_kbs/CVO_going_to_failed_state_frequently_in_NetApp_Console["Infórmate sobre cómo aumentar el límite de subprocesos del contenedor del agente"^].
 
 
 --
