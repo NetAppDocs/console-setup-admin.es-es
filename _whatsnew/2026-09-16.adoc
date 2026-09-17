@@ -1,0 +1,23 @@
+= Agente de Console 4.11.0
+:allow-uri-read: 
+
+
+
+
+[[console-agent-4-11-0]]
+=== Agente de Console 4.11.0
+
+La versión 4.11.0 es compatible tanto con el modo estándar como con el modo restringido.
+
+Esta versión del agente de la Console incluye mejoras de seguridad y correcciones de errores.
+
+
+
+[[netapp-console-administration]]
+=== Administración de la NetApp Console
+
+
+
+==== Flujo simplificado de implementación de agentes para los suscriptores de Cloud Volumes ONTAP en AWS Marketplace
+
+Si eres un nuevo suscriptor de link:https://us-east-1.console.aws.amazon.com/marketplace/search/listing/prodview-yi43o6oz7bf32?sr=0-2&ref_=ucaf&applicationId=AWS-Marketplace-Console["Suscripción independiente a Cloud Volumes ONTAP en AWS Marketplace"], la consola NetApp ahora simplifica la implementación de agentes. Puedes configurar roles, políticas y credenciales de AWS en menos pasos, utilizar valores predeterminados automáticamente en una sola página y completar la configuración más rápidamente.

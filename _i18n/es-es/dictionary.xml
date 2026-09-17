@@ -1602,7 +1602,6 @@
   <block id="be3e2e05d81fbbe5328217c66f55042d" category="cell"><block ref="be3e2e05d81fbbe5328217c66f55042d" category="inline-link-macro-rx"></block></block>
   <block id="da19f72933d8074d76c7f923694c67fd" category="cell">Vea alertas e información sobre comportamiento sospechoso de usuarios en Ransomware Resilience.</block>
   <block id="36910b765d93c29f4611f725c05faabe" category="cell">Administrador de SnapCenter</block>
-  <block id="49016d07ca0d0bf92d598d1c92a187e1" category="cell">Proporciona la capacidad de realizar copias de seguridad de instantáneas de clústeres ONTAP locales mediante NetApp Backup and Recovery para aplicaciones.  Un miembro que tiene este rol puede completar las siguientes acciones: * Completar cualquier acción desde Copia de seguridad y recuperación &gt; Aplicaciones * Administrar todos los sistemas en los proyectos y carpetas para los que tiene permisos * Usar todos los servicios de la NetApp Console SnapCenter no tiene un rol de espectador.</block>
   <block id="f6bd0d7447ff66cc6b859603a88fbde9" category="section-title">Enlaces relacionados</block>
   <block id="05271cfa0bdeea693a59837fb97cbc3b" category="list-text"><block ref="05271cfa0bdeea693a59837fb97cbc3b" category="inline-link-macro-rx"></block></block>
   <block id="d5c64a8daa89e747afab2353c532cfd0" category="inline-link-macro">Comience a utilizar NetApp Console IAM</block>
@@ -6611,4 +6610,22 @@
   <block id="867f6306ad030ade00b2b5d1be06a297" category="paragraph">Tras actualizar un agente de Console a la versión 4.9.0 o posterior, Console asigna automáticamente roles de Cloud Volumes ONTAP a los usuarios existentes en función de sus roles de plataforma. Esta asignación única permite a los usuarios conservar el acceso adecuado a Cloud Volumes ONTAP sin que sea necesario que un administrador asigne cada rol manualmente. A los usuarios se les asignan roles de Cloud Volumes ONTAP automáticamente en función de su rol de plataforma existente. Las asignaciones solo se aplican durante la migración; un rol de plataforma no sustituye a un rol explícito de Cloud Volumes ONTAP en las nuevas asignaciones. Revisa los nuevos roles para confirmar que los usuarios conservan únicamente el acceso que necesitan.</block>
   <block id="acbaf21f08d26739d3a0e3645fd4f7c1" category="inline-link-macro">Infórmate sobre las funciones de Cloud Volumes ONTAP que se asignan automáticamente tras la actualización</block>
   <block id="a7f237db4808db8f7d7e3569c4c90eba" category="list-text">Revisa la función de Cloud Volumes ONTAP asignada a cada usuario y comprueba que esté asignada a nivel de organización, carpeta o proyecto que contenga el sistema. <block ref="943ee494db9e9617f80c85c45c5ec678" category="inline-link-macro-rx"></block>.</block>
+  <block id="b6b21e530c678e5cd4c26f8b75ff76e8" category="doc">Agente de Console 4.11.0</block>
+  <block id="734697dbdbd312c3dd63c9c68317e6e9" category="paragraph">La versión 4.11.0 es compatible tanto con el modo estándar como con el modo restringido.</block>
+  <block id="60fd42d7efe4262e8d79051a1c47bc4f" category="section-title">Flujo simplificado de implementación de agentes para los suscriptores de Cloud Volumes ONTAP en AWS Marketplace</block>
+  <block id="8bc5216f012502c8f371bc0ccb7e4b58" category="inline-link-macro">Suscripción independiente a Cloud Volumes ONTAP en AWS Marketplace</block>
+  <block id="7f5d42097032ab5af27aa2c77a23c33b" category="paragraph">Si eres un nuevo suscriptor de <block ref="f4efe2873d568d07f96208e96f91d863" category="inline-link-macro-rx"></block>, la consola NetApp ahora simplifica la implementación de agentes. Puedes configurar roles, políticas y credenciales de AWS en menos pasos, utilizar valores predeterminados automáticamente en una sola página y completar la configuración más rápidamente.</block>
+  <block id="b889961c81eec2cb76cc8efad7794a80" category="doc">Lanzamiento de private mode (4.10.0)</block>
+  <block id="a22ba5cede201b398675ddfd63c9864d" category="paragraph">La versión 4.10.0 incluye actualizaciones de los siguientes componentes y servicios de NetApp Console.</block>
+  <block id="c1b9fde9363d4906a9e67eb0862e9fc7" category="cell">4.10.0</block>
+  <block id="5ff195749703fc07b830e8ce460f4513" category="cell">Ve al<block ref="9d354d50c04a9174ec71f0d3d8410a23" category="inline-link-rx"></block> y revisa los cambios incluidos para las versiones 4.10.0.</block>
+  <block id="c87dd127a9f46f1b24fd3cf0f74c6588" category="cell">5.6.2 (17 de agosto de 2026)</block>
+  <block id="669d8c7c23d7c1df9de525a93369bb8f" category="cell">1.546.0 (10 de agosto de 2026)</block>
+  <block id="99eb4ee0a56c7fb9d9fef77053e43af4" category="paragraph">Permite realizar copias de seguridad de instantáneas de clústeres ONTAP locales usando NetApp Backup and Recovery para aplicaciones. Un usuario con este rol puede realizar las siguientes acciones:</block>
+  <block id="f44c611b4162cee5fdf2ee447ed48192" category="list-text">Realiza cualquier acción desde Backup and Recovery &gt; Applications</block>
+  <block id="e88871c7007d89688acdcb7ffa4922fe" category="list-text">Gestionar todos los sistemas de los proyectos y carpetas para los que tengan permisos</block>
+  <block id="50683e47eb84069af1a5abcad6f30c6b" category="list-text">Usa todos los servicios de NetApp Console</block>
+  <block id="4d2ba7b1416b46d72e4a391ee901ec54" category="paragraph">SnapCenter no tiene el rol de visor.</block>
+  <block id="1e464951e7ffdbf5ba8f20ee5038f44f" category="section-title">17 de septiembre de 2026</block>
+  <block id="9d26347bf9049c082d482aa87b79d702" category="section-title">16 de septiembre de 2026</block>
 </blocks>

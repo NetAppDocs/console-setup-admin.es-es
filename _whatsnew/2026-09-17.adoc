@@ -1,0 +1,26 @@
+= Lanzamiento de private mode (4.10.0)
+:allow-uri-read: 
+
+
+
+
+[[private-mode-release-4-10-0]]
+=== Lanzamiento de private mode (4.10.0)
+
+Ya está disponible para descargar un nuevo modo privado desde https://mysupport.netapp.com/site/downloads["Sitio de soporte de NetApp"^]
+
+La versión 4.10.0 incluye actualizaciones de los siguientes componentes y servicios de NetApp Console.
+
+[cols="3*"]
+|===
+| Componente o servicio | Versión incluida en este lanzamiento | Cambios desde el lanzamiento anterior del modo privado 
+
+
+| Agente de consola | 4.10.0 | Ve al https://docs.netapp.com/us-en/console-setup-admin/whats-new.html#2026-08-13.html["Novedades en la página de NetApp Console"^] y revisa los cambios incluidos para las versiones 4.10.0. 
+
+
+| NetApp Backup and Recovery | 5.6.2 (17 de agosto de 2026) | Ve a https://docs.netapp.com/us-en/data-services-backup-recovery/whats-new.html["novedades en la página de NetApp Backup and Recovery"^]. 
+
+
+| NetApp Data Classification | 1.546.0 (10 de agosto de 2026) | Ve a https://docs.netapp.com/us-en/data-services-data-classification/whats-new.html["novedades en la página de clasificación de NetApp"^]. 
+|===

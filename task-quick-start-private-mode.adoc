@@ -92,9 +92,6 @@ Clasificación de NetApp
 Gestión de Licenses and subscriptions
 
 * Solo BYOL es compatible con el modo privado.
-+
-Para Cloud Volumes ONTAP BYOL, solo se admite la concesión de licencias basada en nodos. No se admite la concesión de licencias basada en capacidad. Como no hay una conexión a internet saliente disponible, necesitas cargar manualmente tu archivo de licencias de Cloud Volumes ONTAP en la NetApp Console.
-
 
 
 https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/task-manage-node-licenses.html#add-unassigned-licenses["Aprende cómo añadir licencias"^]
