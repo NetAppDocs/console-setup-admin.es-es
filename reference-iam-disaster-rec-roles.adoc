@@ -17,8 +17,8 @@ Puede asignar los siguientes roles a los usuarios para brindarles acceso a NetAp
 La recuperación ante desastres utiliza los siguientes roles:
 
 * *Administrador de recuperación ante desastres*: Realizar cualquier acción.
-* *Administrador de conmutación por error de recuperación ante desastres*: realiza conmutaciones por error y migraciones.
-* *Administrador de aplicaciones de recuperación ante desastres*: crear planes de replicación. Modificar los planes de replicación. Iniciar pruebas de conmutación por error.
+* *Administrador de conmutación por error para la recuperación ante desastres*: Realiza conmutaciones por error y migraciones.
+* *Administrador de aplicaciones de recuperación ante desastres*: crear y modificar planes de replicación; iniciar pruebas de conmutación por error.
 * *Visor de recuperación ante desastres*: Ver solo información.
 
 
@@ -26,21 +26,24 @@ La siguiente tabla indica las acciones que puede realizar cada rol.
 
 [cols="30,20a,20a,20a,20a"]
 |===
-| Característica y acción | Administración de recuperación ante desastres | Administrador de conmutación por error de recuperación ante desastres | Administrador de aplicaciones de recuperación ante desastres | Visor de recuperación ante desastres 
+| Acción | Administración de recuperación ante desastres | Administrador de conmutación por error de recuperación ante desastres | Administrador de aplicaciones de recuperación ante desastres | Visor de recuperación ante desastres 
 
 
-| Ver el panel y todas las pestañas  a| 
+5+| *Activación y descubrimiento* 
+
+
+| Activar licencia  a| 
 Sí
+ a| 
+No
  a| 
 Sí
  a| 
-Sí
- a| 
-Sí
+No
 
 
 
-| Comience una prueba gratuita  a| 
+| Inicia la prueba gratuita  a| 
 Sí
  a| 
 No
@@ -62,6 +65,17 @@ No
 
 
 
+| Ver el panel y todas las pestañas  a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+
+
+
 | Ver información de la licencia  a| 
 Sí
  a| 
@@ -73,18 +87,29 @@ Sí
 
 
 
-| Activar licencia  a| 
+| Ver credenciales  a| 
+Sí
+ a| 
 Sí
  a| 
 No
  a| 
+No
+
+
+
+| Crear, actualizar o eliminar credenciales  a| 
 Sí
+ a| 
+Sí
+ a| 
+No
  a| 
 No
 
 
 
-5+| *En la pestaña Sitios*: 
+5+| *Sitios* 
 
 
 | Ver sitios  a| 
@@ -98,7 +123,7 @@ Sí
 
 
 
-| Agregar, modificar o eliminar sitios  a| 
+| Agregar, modificar o eliminar sitios o clústeres  a| 
 Sí
  a| 
 No
@@ -109,7 +134,18 @@ No
 
 
 
-5+| *En la pestaña Planes de replicación*: 
+| Ver clústeres  a| 
+Sí
+ a| 
+No
+ a| 
+No
+ a| 
+No
+
+
+
+5+| *Planes de replicación* 
 
 
 | Ver planes de replicación  a| 
@@ -211,7 +247,32 @@ No
 
 
 
-5+| *En la pestaña Grupos de recursos*: 
+5+| *Configuración* 
+
+
+| Crear o modificar AppVaults  a| 
+Sí
+ a| 
+Sí
+ a| 
+No
+ a| 
+No
+
+
+
+| Crear o modificar transformaciones de recursos  a| 
+Sí
+ a| 
+Sí
+ a| 
+No
+ a| 
+No
+
+
+
+5+| *Grupos de recursos* 
 
 
 | Ver grupos de recursos  a| 
@@ -236,7 +297,7 @@ No
 
 
 
-5+| *En la pestaña Supervisión de trabajos*: 
+5+| *Seguimiento de trabajos* 
 
 
 | Ver trabajos  a| 
