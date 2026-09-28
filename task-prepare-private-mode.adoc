@@ -65,8 +65,8 @@ El agente de la Consola requiere este espacio en `/var` porque Podman o Docker e
 
 --
 [[podman-versions]]Requisitos del sistema operativo y del contenedor:: El agente de consola es compatible con los siguientes sistemas operativos cuando se utiliza la consola en modo privado.  Se requiere una herramienta de orquestación de contenedores antes de instalar el agente.
-+
---
+
+
 [cols="2a,2a,2a,2a,2a"]
 |===
 | Sistema operativo | Versiones de sistema operativo compatibles | Versiones de agente compatibles | Herramienta de contenedor requerida | SELinux 
@@ -75,13 +75,49 @@ El agente de la Consola requiere este espacio en `/var` porque Podman o Docker e
  a| 
 Red Hat Enterprise Linux
  a| 
+9,6
+
+* Sólo versiones en idioma inglés.
+* El host debe estar registrado en Red Hat Subscription Management.  Si no está registrado, el host no puede acceder a los repositorios para actualizar el software de terceros requerido durante la instalación del agente.
+
+ a| 
+4.10.0 o posterior con la Console en modo privado
+ a| 
+Podman versión 5.4.0 con podman-compose 1.5.0.
+
+<<podman-configuration,Ver los requisitos de configuración de Podman>> .
+ a| 
+Compatible con modo de aplicación o modo permisivo
+
+
+
+ a| 
 9.1 a 9.4
 
+* Sólo versiones en idioma inglés.
+* El host debe estar registrado en Red Hat Subscription Management.  Si no está registrado, el host no puede acceder a los repositorios para actualizar el software de terceros requerido durante la instalación del agente.
+
+ a| 
+4.0.0 o posterior con la consola en modo estándar o modo restringido
+ a| 
+Podman versión 4.9.4 con podman-compose 1.5.0.
+
+<<podman-configuration,Ver los requisitos de configuración de Podman>> .
+ a| 
+Compatible con modo de aplicación o modo permisivo
+
+
+
+ a| 
 8.6 a 8.10
+
+* Sólo versiones en idioma inglés.
+* El host debe estar registrado en Red Hat Subscription Management.  Si no está registrado, el host no puede acceder a los repositorios para actualizar el software de terceros requerido durante la instalación del agente.
+
  a| 
 4.0.0 o posterior con la consola en modo privado
  a| 
-Versión de Podman 4.6.1 o 4.9.4
+Podman versión 4.6.1 o 4.9.4 con podman-compose 1.0.6.
 
 <<podman-configuration,Ver los requisitos de configuración de Podman>> .
  a| 
@@ -107,9 +143,7 @@ Notas:
 
 . El agente de consola es compatible con las versiones en inglés de estos sistemas operativos.
 . Para RHEL, el host debe estar registrado en Red Hat Subscription Management.  Si no está registrado, el host no puede acceder a los repositorios para actualizar el software de terceros requerido durante la instalación del agente.
-
-
---
++
 Hipervisor:: Se requiere un hipervisor alojado o de metal desnudo que esté certificado para ejecutar un sistema operativo compatible.
 UPC:: 8 núcleos u 8 vCPU
 RAM:: 32 GB
@@ -133,6 +167,8 @@ Espacio en disco en /var:: Deben estar disponibles 20 GiB de espacio
 El agente de la Consola requiere este espacio en `/var` porque Docker o Podman están diseñados para crear los contenedores dentro de este directorio. Específicamente, crearán contenedores en el directorio `/var/lib/containers/storage`. Los montajes externos o enlaces simbólicos no funcionan para este espacio.
 
 --
+
+
 
 
 
