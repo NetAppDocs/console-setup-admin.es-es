@@ -28,7 +28,7 @@ Los siguientes detalles de configuración se aplican si implementó un agente de
 [[console-agent-vm-details-for-aws]]
 === Detalles de la máquina virtual del agente de consola para AWS
 
-Si implementó un agente de consola desde la consola o desde el mercado del proveedor de la nube, tenga en cuenta lo siguiente:
+Si desplegaste un agente de Console desde la Console o desde AWS marketplace, ten en cuenta lo siguiente:
 
 * El tipo de instancia EC2 es t3.2xlarge.
 * El sistema operativo de la imagen es Ubuntu 22.04 LTS.
@@ -45,7 +45,7 @@ El sistema operativo no incluye una GUI.  Debe utilizar una terminal para accede
 [[console-agent-vm-details-for-azure]]
 === Detalles de la máquina virtual del agente de consola para Azure
 
-Si implementó un agente de consola desde la consola o desde el mercado del proveedor de la nube, tenga en cuenta lo siguiente:
+Si has desplegado un agente de Console desde Console o desde Azure marketplace, ten en cuenta lo siguiente:
 
 * El tipo de VM es Standard_D8s_v3.
 * El sistema operativo de la imagen es Ubuntu 22.04 LTS.
@@ -61,7 +61,7 @@ El sistema operativo no incluye una GUI.  Debe utilizar una terminal para accede
 [[console-agent-vm-details-for-google-cloud]]
 === Detalles de la máquina virtual del agente de consola para Google Cloud
 
-Si implementó un agente de consola desde la consola, tenga en cuenta lo siguiente:
+Si has implementado un agente de Console desde la propia Console o desde Google Cloud marketplace, ten en cuenta lo siguiente:
 
 * La instancia de VM es n2-standard-8.
 * El sistema operativo de la imagen es Ubuntu 22.04 LTS.

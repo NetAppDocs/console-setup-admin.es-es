@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-maintain-agents.html 
 keywords: agent operating system, agent maintenance, vm maintenance, os updates, operating system updates, stop agent, restart agent, notifications, agent health, agent disk space, agent cpu usage, agent ram usage, agent vm, connector, connector health 
-summary: El mantenimiento del sistema operativo en el host del agente es su responsabilidad.  Por ejemplo, debe aplicar actualizaciones de seguridad al sistema operativo en el host del agente de la consola siguiendo los procedimientos estándar de su empresa para la distribución del sistema operativo. 
+summary: Descubre cómo realizar el mantenimiento de las VM del agente NetApp Console, incluidas las actualizaciones de seguridad del sistema operativo para los agentes instalados manualmente, las recomendaciones sobre el dimensionamiento de CPU y RAM, las notificaciones sobre el estado de los recursos y los procedimientos de inicio y parada de las VM. 
 ---
-= Mantén la VM para un agente de NetApp Console instalado manualmente
+= Mantén las instancias de VM del agente de NetApp Console
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,12 +14,19 @@ summary: El mantenimiento del sistema operativo en el host del agente es su resp
 
 
 [role="lead"]
+Mantén las VM del agente de NetApp Console aplicando actualizaciones de seguridad del sistema operativo a los agentes instalados manualmente, respondiendo a las alertas de CPU, RAM y espacio en disco, y cambiando el tamaño de las VM o deteniéndolas e iniciándolas de nuevo cuando sea necesario.
+
 Cuando instalas manualmente un agente de Console, mantener el sistema operativo en el host del agente es tu responsabilidad (del cliente). Por ejemplo, tú (el cliente) deberías aplicar actualizaciones de seguridad al sistema operativo en el host del agente siguiendo los procedimientos estándar de tu empresa para la distribución del sistema operativo.
 
+Si una VM de agente se queda sin recursos suficientes o presenta problemas de rendimiento, debes tomar las medidas adecuadas para ampliar los recursos de la VM.
 
 
-[[apply-operating-system-updates-to-the-agent-host]]
-== Aplicar actualizaciones del sistema operativo al host agente
+NOTE: Si has instalado el agente en vCenter, usa la herramienta de mantenimiento de Console para cambiar el tamaño de la instancia de VM. link:task-agent-vm-config.html["Aprende a mantener una VM de agente en vCenter"^].
+
+
+
+[[apply-operating-system-updates-to-the-manually-installed-agent-hosts]]
+== Aplica las actualizaciones del sistema operativo a los hosts del agente instalados manualmente
 
 Aplicar parches de seguridad del sistema operativo sin detener los servicios del host del agente.
 
@@ -42,19 +49,33 @@ sudo apt upgrade
 ----
 
 
-[[vm-or-instance-type]]
-== Tipo de máquina virtual o instancia
+[[resizing-the-vm-or-instance-type]]
+== Cambiar el tamaño de la VM o el tipo de instancia
 
 Si crea un agente de consola desde la consola, implementará una instancia de VM en su proveedor de nube con una configuración predeterminada.  Después de crear el agente, no cambie a una instancia de VM más pequeña con menos CPU o RAM.
 
-La siguiente tabla enumera los requisitos de CPU y RAM:
+Si recibes notificaciones indicando que tu máquina virtual (VM) del agente no cuenta con los recursos suficientes, plantéate pasar a una instancia de VM más potente, con más CPU o RAM, para garantizar un rendimiento óptimo.
 
-UPC:: 8 núcleos u 8 vCPU
-RAM:: 32 GB
 
+NOTE: Si instalaste el agente en VCenter, usa la herramienta de mantenimiento de Console para cambiar el tamaño de la instancia de VM. link:task-agent-vm-config.html["Aprende a cambiar el tamaño de la máquina virtual del agente en VCenter"^].
 
 link:reference-agent-default-config.html["Obtenga información sobre la configuración predeterminada del agente"] .
 
+Si necesitas aumentar la CPU o la RAM de tu VM del agente, sigue las instrucciones proporcionadas por tu proveedor de nube o por tu plataforma de virtualización on-premises para cambiar el tamaño de la instancia de VM. NetApp recomienda duplicar la asignación actual de CPU y RAM para garantizar un rendimiento óptimo. La siguiente tabla muestra los niveles de dimensionamiento recomendados, donde cada nivel duplica la CPU y la RAM del nivel anterior.
+
+[cols="1,1,1"]
+|===
+| Nivel | CPU (núcleos o vCPUs) | RAM 
+
+
+| Mínimo | 8 | 32 GB 
+
+
+| Medio | 16 | 64 GB 
+
+
+| Grande | 32 | 128 GB 
+|===
 
 
 [[monitor-the-agent]]
@@ -78,10 +99,30 @@ link:https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operation
 | El espacio en disco es demasiado alto | link:https://kb.netapp.com/Cloud/BlueXP/Cloud_Manager/How_to_resolve_disk_space_issues_on_BlueXP_connector_VM["Revise el artículo de la base de conocimientos de NetApp"^] . 
 
 
-| El uso de la CPU es demasiado alto | Aumente el tamaño de la CPU de la máquina virtual del agente en su proveedor de nube o en sus instalaciones locales, según dónde la haya instalado.  Alternativamente, cree agentes adicionales y distribuya la carga de trabajo entre múltiples agentes.  La utilización de RAM puede variar según su entorno, las cargas de trabajo de ONTAP , la cantidad de sistemas Cloud Volumes ONTAP y los servicios de datos que esté utilizando. 
+ a| 
+El uso de la CPU es demasiado alto
+ a| 
+Aumente el tamaño de la CPU de la máquina virtual del agente en su proveedor de nube o en sus instalaciones locales, según dónde la haya instalado.  Alternativamente, cree agentes adicionales y distribuya la carga de trabajo entre múltiples agentes.  La utilización de RAM puede variar según su entorno, las cargas de trabajo de ONTAP , la cantidad de sistemas Cloud Volumes ONTAP y los servicios de datos que esté utilizando.
+
+* link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/change-instance-type-of-ebs-backed-instance.html["Descubre cómo aumentar el tamaño de la VM del agente en AWS"^].
+* link:https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/resize-vm?tabs=portal["Descubre cómo aumentar el tamaño de la VM del agente en Azure"^].
+* link:https://docs.cloud.google.com/compute/docs/instances/changing-machine-type-of-stopped-instance["Descubre cómo aumentar el tamaño de una VM de agente en Google Cloud"^].
+* link:task-agent-vm-config.html#increase-the-cpu-or-ram-of-the-vm-instance["Descubre cómo aumentar el tamaño de un agente local que se ejecuta en VCenter"].
 
 
-| El uso de RAM es demasiado alto | Aumente la RAM de la máquina virtual del agente en su proveedor de nube o en sus instalaciones locales, según dónde la haya instalado.  Alternativamente, cree agentes adicionales y distribuya la carga de trabajo entre múltiples agentes.  La utilización de RAM puede variar según su entorno, las cargas de trabajo de ONTAP , la cantidad de sistemas Cloud Volumes ONTAP y los servicios de datos que esté utilizando. 
+
+
+ a| 
+El uso de RAM es demasiado alto
+ a| 
+Aumente la RAM de la máquina virtual del agente en su proveedor de nube o en sus instalaciones locales, según dónde la haya instalado.  Alternativamente, cree agentes adicionales y distribuya la carga de trabajo entre múltiples agentes.  La utilización de RAM puede variar según su entorno, las cargas de trabajo de ONTAP , la cantidad de sistemas Cloud Volumes ONTAP y los servicios de datos que esté utilizando.
+
+* link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/change-instance-type-of-ebs-backed-instance.html["Descubre cómo aumentar el tamaño de la VM del agente en AWS"^].
+* link:https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/resize-vm?tabs=portal["Descubre cómo aumentar el tamaño de la VM del agente en Azure"^].
+* link:https://docs.cloud.google.com/compute/docs/instances/changing-machine-type-of-stopped-instance["Descubre cómo aumentar el tamaño de una VM de agente en Google Cloud"^].
+* link:task-agent-vm-config.html#increase-the-cpu-or-ram-of-the-vm-instance["Descubre cómo aumentar el tamaño de un agente local que se ejecuta en VCenter"].
+
+
 |===
 
 

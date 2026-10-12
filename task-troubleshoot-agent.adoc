@@ -179,11 +179,6 @@ También puede acceder al informe de validación en formato JSON y a los registr
 [[disable-config-check]]
 === Deshabilitar las comprobaciones de configuración para instalaciones manuales
 
-
-
-[[disable-configuration-checks-for-manual-installations]]
-=== Deshabilitar las comprobaciones de configuración para instalaciones manuales
-
 Puede haber ocasiones en las que necesite deshabilitar las comprobaciones de configuración que verifican la conectividad saliente durante la instalación. Por ejemplo, al instalar manualmente un agente en su entorno de Government Cloud, debe deshabilitar las comprobaciones de configuración o la instalación fallará.
 
 Puede deshabilitar la verificación de configuración configurando el indicador _skipConfigCheck_ en el archivo _com/opt/application/netapp/service-manager-2/config.json_. De forma predeterminada, esta bandera se establece como falsa y la verificación de configuración verifica el acceso saliente para el agente. Establezca esta bandera como verdadera para deshabilitar la verificación. Familiarícese con la sintaxis JSON antes de completar este paso.
