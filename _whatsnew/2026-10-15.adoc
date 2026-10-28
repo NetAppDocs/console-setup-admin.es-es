@@ -1,0 +1,19 @@
+= Agente de Console 4.12.0
+:allow-uri-read: 
+
+
+
+
+[[console-agent-4-12-0]]
+=== Agente de Console 4.12.0
+
+La versión 4.12.0 es compatible tanto con el modo estándar como con el modo restringido.
+
+Esta versión del agente de la Console incluye mejoras de seguridad y correcciones de errores.
+
+
+
+[[netapp-console-administration]]
+=== Administración de la NetApp Console
+
+Esta versión incluye mejoras de seguridad y correcciones de errores.

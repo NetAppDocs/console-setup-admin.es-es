@@ -54,7 +54,7 @@ La implementación local de la consola es compatible con clústeres ONTAP locale
 
 La implementación local de la consola es la opción más adecuada para organizaciones con grandes entornos ONTAP locales que requieren un aprovisionamiento condicionado por políticas, comprobaciones de cumplimiento automatizadas y soberanía de datos.
 
-link:https://docs.netapp.com/us-en/console-local/concept-netapp-console-local.html["Infórmate sobre la implementación local de NetApp Console^."]
+link:https://docs.netapp.com/us-en/console-local/concept-netapp-console-local.html["Más información sobre la implementación local de NetApp Console."^]
 
 
 
