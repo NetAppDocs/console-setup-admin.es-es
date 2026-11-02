@@ -21,7 +21,21 @@ Conozca las novedades en las funciones de administración de la NetApp Console :
 [[15-october-2026]]
 == 15 de octubre de 2026
 
-Directiva sin resolver en <stdin> - include::_whatsnew/2026-10-13.adoc[]
+
+
+[[console-agent-4-12-0]]
+=== Agente de Console 4.12.0
+
+La versión 4.12.0 es compatible tanto con el modo estándar como con el modo restringido.
+
+Esta versión del agente de la Console incluye mejoras de seguridad y correcciones de errores.
+
+
+
+[[netapp-console-administration]]
+=== Administración de la NetApp Console
+
+Esta versión incluye mejoras de seguridad y correcciones de errores.
 
 
 

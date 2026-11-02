@@ -28,10 +28,20 @@ Los roles de plataforma otorgan permisos de administración de la NetApp Console
 | Rol de la plataforma | Nombre API* *El nombre API es el identificador de rol utilizado en las APIs. Copia el valor exactamente como se muestra (incluyendo mayúsculas y guiones bajos). | Disponibilidad del modo | Responsabilidades 
 
 
-| link:reference-iam-platform-roles.html#organization-admin-roles["Administrador de la organización"] | ORGANIZATION_ADMIN | Estándar, Restringido, Privado | Permite a un usuario acceder sin restricciones a todos los proyectos y carpetas de una organización, añadir miembros a cualquier proyecto o carpeta, así como realizar cualquier tarea y utilizar cualquier servicio de datos que no tenga un rol explícito asociado. Los usuarios con este rol gestionan tu organización creando carpetas y proyectos, asignando roles, añadiendo usuarios y administrando sistemas si tienen las credenciales adecuadas. Este es el único rol de acceso que puede crear agentes de Console. 
+| link:reference-iam-platform-roles.html#organization-admin-roles["Administrador de la organización"] | ORGANIZATION_ADMIN | Estándar, Restringido, Privado  a| 
+Permite a un usuario acceder sin restricciones a todos los proyectos y carpetas de una organización, añadir miembros a cualquier proyecto o carpeta, así como realizar cualquier tarea y utilizar cualquier servicio de datos que no tenga un rol explícito asociado.
+
+Los usuarios con este rol gestionan tu organización creando carpetas y proyectos, asignando roles, añadiendo usuarios y administrando sistemas si tienen las credenciales adecuadas.
+
+Este es el único rol de acceso que puede crear agentes de Console.
 
 
-| link:reference-iam-platform-roles.html#organization-admin-roles["Administrador de carpetas o proyectos"] | ADMINISTRADOR_DE_CARPETAS_O_PROYECTOS | Estándar, Restringido, Privado | Permite a un usuario acceso sin restricciones a los proyectos y carpetas asignados. Pueden agregar miembros a las carpetas o proyectos que administran, así como realizar cualquier tarea y utilizar cualquier servicio de datos o aplicación en los recursos dentro de la carpeta o el proyecto que están asignados. Los administradores de carpetas o proyectos no pueden crear agentes de consola. 
+
+| link:reference-iam-platform-roles.html#organization-admin-roles["Administrador de carpetas o proyectos"] | ADMINISTRADOR_DE_CARPETAS_O_PROYECTOS | Estándar, Restringido, Privado  a| 
+Permite a un usuario acceder sin restricciones a los proyectos y carpetas asignados. Puede añadir miembros a las carpetas o proyectos que gestiona, así como realizar cualquier tarea y utilizar cualquier servicio de datos o aplicación en los recursos de la carpeta o proyecto que tenga asignado.
+
+Los administradores de carpetas o proyectos no pueden crear agentes de NetApp Console.
+
 
 
 | link:reference-iam-platform-roles.html#federation-roles["Administración de la federación"] | FEDERATION_ADMIN | Estándar, Restringido | Permite a un usuario crear y administrar federaciones con la consola, lo que habilita el inicio de sesión único (SSO). 

@@ -4,7 +4,7 @@ permalink: task-prepare-restricted-mode.html
 keywords: restricted mode requirements, requirements, install options, restricted mode networking, dark site, restricted mode permissions, permissions for restricted mode, networking for restricted mode 
 summary: Prepare su entorno antes de implementar NetApp Console en modo restringido.  Debe revisar los requisitos del host, preparar la red, configurar permisos y más. 
 ---
-= Prepárate para la implementación en el modo restringido de NetApp Console
+= Prepárate para implementar NetApp Console en modo restringido
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -31,24 +31,29 @@ link:concept-modes.html["Aprenda cómo funciona el modo restringido"] .
 
 
 
-[[step-2-review-installation-options]]
-== Paso 2: Revisar las opciones de instalación
+[[step-2-choose-a-restricted-mode-installation-method]]
+== Paso 2: elige un método de instalación en modo restringido
 
-En el modo restringido, solo puedes instalar el agente de consola en la nube.  Están disponibles las siguientes opciones de instalación:
+En modo restringido, puedes instalar el agente de NetApp Console en la nube y acceder a la NetApp Console a través del agente instalado localmente. Puedes realizar la instalación a través de un marketplace en la nube (solo AWS o Azure) o manualmente en tu propio host Linux que se ejecute en AWS, Azure o Google Cloud.
 
 * Desde AWS Marketplace
 * Desde Azure Marketplace
 * Instalación manual del agente de consola en su propio host Linux que se ejecuta en AWS, Azure o Google Cloud
++
+
+NOTE: Debes instalar manualmente el agente de NetApp Console en un host Linux dedicado si realizas la implementación en Google Cloud.
 
 
 
 
+
+[[step-3-review-console-agent-host-requirements]]
 [[step-3-review-host-requirements]]
-== Paso 3: Revisar los requisitos del host
-
-Un host debe cumplir requisitos específicos de sistema operativo, RAM y puerto para ejecutar el agente de consola.
+== Paso 3: revisar los requisitos del host del agente de NetApp Console
 
 Cuando implementa el agente de consola desde AWS o Azure Marketplace, la imagen incluye los componentes de software y sistema operativo necesarios.  Simplemente tienes que elegir un tipo de instancia que cumpla con los requisitos de CPU y RAM.
+
+Si vas a instalarlo manualmente en tu propio host de Linux, asegúrate de que cumpla los requisitos de sistema operativo, RAM y puertos.
 
 Host dedicado:: El agente de consola requiere un host dedicado.  Se admite cualquier arquitectura si cumple estos requisitos de tamaño:
 +
@@ -165,203 +170,22 @@ No compatible
 |===
 
 
-[[step-4-install-podman-or-docker-engine]]
+[[step-4-prepare-podman-or-docker-engine-for-manual-installation]]
 [[podman-configuration]]
-== Paso 4: Instalar Podman o Docker Engine
+== Paso 4: preparar Podman o Docker Engine para la instalación manual
 
-Para instalar manualmente el agente de consola, prepare el host instalando Podman o Docker Engine.
-
-Dependiendo de su sistema operativo, se requiere Podman o Docker Engine antes de instalar el agente.
-
-* Podman es necesario para Red Hat Enterprise Linux 8 y 9.
-+
-<<podman-versions,Ver las versiones compatibles de Podman>> .
-
-* Se requiere Docker Engine para Ubuntu.
-+
-<<podman-versions,Ver las versiones compatibles de Docker Engine>> .
+Para las instalaciones manuales, instala y configura Podman o Docker Engine siguiendo las instrucciones de link:task-install-restricted-mode-manual.html#podman-configuration["tema de instalación manual"].
 
 
 
-.Pasos
-[role="tabbed-block"]
-====
-.Podman
---
-Siga estos pasos para instalar y configurar Podman:
-
-* Habilitar e iniciar el servicio podman.socket
-* Instalar Python3
-* Instala el paquete podman-compose (varía según la versión de Red Hat)
-* Agregue podman-compose a la variable de entorno PATH
-* Si usa Red Hat Enterprise Linux, verifique que su versión de Podman esté usando Netavark Aardvark DNS en lugar de CNI
-
-
-
-NOTE: Ajuste el puerto aardvark-dns (predeterminado: 53) después de instalar el agente para evitar conflictos en el puerto DNS.  Siga las instrucciones para configurar el puerto.
-
-.Pasos
-. Elimine el paquete podman-docker si está instalado en el host.
-+
-[source, cli]
-----
-dnf remove podman-docker
-rm /var/run/docker.sock
-----
-. Instalar Podman.
-+
-Puede obtener Podman desde los repositorios oficiales de Red Hat Enterprise Linux.
-
-+
-.. Para Red Hat Enterprise Linux 9,6:
-+
-[source, cli]
-----
-sudo dnf install podman-5:<version>
-----
-+
-Donde <versión> es la versión compatible de Podman que estás instalando. <<podman-versions,Ver las versiones compatibles de Podman>> .
-
-.. Para Red Hat Enterprise Linux 9.1 a 9.4:
-+
-[source, cli]
-----
-sudo dnf install podman-4:<version>
-----
-+
-Donde <versión> es la versión compatible de Podman que estás instalando. <<podman-versions,Ver las versiones compatibles de Podman>> .
-
-.. Para Red Hat Enterprise Linux 8:
-+
-[source, cli]
-----
-sudo dnf install podman-4:<version>
-----
-+
-Donde <versión> es la versión compatible de Podman que estás instalando. <<podman-versions,Ver las versiones compatibles de Podman>> .
-
-
-
-. Habilite e inicie el servicio podman.socket.
-+
-[source, cli]
-----
-sudo systemctl enable --now podman.socket
-----
-. Instalar python3.
-+
-[source, cli]
-----
-sudo dnf install python3
-----
-. Instale el paquete del repositorio EPEL si aún no está disponible en su sistema.
-+
-Este paso es necesario porque podman-compose está disponible en el repositorio de Paquetes adicionales para Enterprise Linux (EPEL).
-
-. Si utiliza Red Hat Enterprise 9:
-+
-.. Instalar el paquete del repositorio EPEL.
-
-
-+
-[source, cli]
-----
-sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
-----
-+
-.. Instalar el paquete podman-compose 1.5.0.
-+
-[source, cli]
-----
-sudo dnf install podman-compose-1.5.0
-----
-
-
-. Si utiliza Red Hat Enterprise Linux 8:
-+
-.. Instalar el paquete del repositorio EPEL.
-+
-[source, cli]
-----
-sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
-----
-.. Instalar el paquete podman-compose 1.0.6.
-+
-[source, cli]
-----
-sudo dnf install podman-compose-1.0.6
-----
-+
-
-NOTE: Usando el `dnf install` El comando cumple con el requisito de agregar podman-compose a la variable de entorno PATH.  El comando de instalación agrega podman-compose a /usr/bin, que ya está incluido en el `secure_path` opción en el host.
-
-.. Si usa Red Hat Enterprise Linux 8, verifique que su versión de Podman esté usando NetAvark con Aardvark DNS en lugar de CNI.
-+
-... Verifique si su networkBackend está configurado en CNI ejecutando el siguiente comando:
-+
-[source, cli]
-----
-podman info | grep networkBackend
-----
-... Si la red Backend está configurada en `CNI` , tendrás que cambiarlo a `netavark` .
-... Instalar `netavark` y `aardvark-dns` utilizando el siguiente comando:
-+
-[source, cli]
-----
-dnf install aardvark-dns netavark
-----
-... Abrir el `/etc/containers/containers.conf` archivo y modificar la opción network_backend para usar "netavark" en lugar de "cni".
-+
-Si `/etc/containers/containers.conf` no existe, realice los cambios de configuración a `/usr/share/containers/containers.conf` .
-
-... Reiniciar podman.
-+
-[source, cli]
-----
-systemctl restart podman
-----
-... Confirme que networkBackend ahora se cambió a "netavark" usando el siguiente comando:
-+
-[source, cli]
-----
-podman info | grep networkBackend
-----
-
-
-
-
-. Si vas a asociar este agente a un sistema Cloud Volumes ONTAP, considera aumentar el número de subprocesos asociados al agente para mejorar el rendimiento. link:https://kb.netapp.com/Cloud/ncds/nds/cvods/cvods_kbs/CVO_going_to_failed_state_frequently_in_NetApp_Console["Infórmate sobre cómo aumentar el límite de subprocesos del contenedor del agente"^].
-
-
---
-.Motor Docker
---
-Siga la documentación de Docker para instalar Docker Engine.
-
-.Pasos
-. https://docs.docker.com/engine/install/["Ver instrucciones de instalación desde Docker"^]
-+
-Siga los pasos para instalar una versión compatible de Docker Engine. No instale la última versión, ya que la consola no es compatible.
-
-. Verifique que Docker esté habilitado y ejecutándose.
-+
-[source, cli]
-----
-sudo systemctl enable docker && sudo systemctl start docker
-----
-
-
---
-====
-
-
+[[step-5-prepare-network-access-for-restricted-mode]]
 [[step-5-prepare-network-access]]
-== Paso 5: Preparar el acceso a la red
+== Paso 5: preparar el acceso a la red para el modo restringido
 
 Configure el acceso a la red para que el agente de la consola pueda administrar recursos en su nube pública.  Además de tener una red virtual y una subred para el agente de consola, debe asegurarse de que se cumplan los siguientes requisitos.
 
 Conexiones a redes de destino:: Asegúrese de que el agente de la consola tenga una conexión de red a las ubicaciones de almacenamiento.  Por ejemplo, la VPC o VNet donde planea implementar Cloud Volumes ONTAP, o el centro de datos donde residen sus clústeres ONTAP locales.
-Preparar la red para el acceso de los usuarios a la NetApp Console:: En el modo restringido, los usuarios acceden a la consola desde la máquina virtual del agente de consola.  El agente de la consola se comunica con algunos puntos finales para completar tareas de administración de datos.  Estos puntos finales se contactan desde la computadora de un usuario cuando se completan acciones específicas desde la Consola.
+Preparar la red para el acceso de los usuarios a la NetApp Console:: En modo restringido, los usuarios acceden a la interfaz local de NetApp Console desde un navegador conectado a la VM del agente de NetApp Console. Cuando los usuarios completan determinadas acciones en NetApp Console, su navegador debe poder llegar a los endpoints que se indican a continuación.
 
 
 
@@ -372,22 +196,41 @@ NOTE: Los agentes de consola anteriores a la versión 4.0.0 admiten diferentes e
 | Puntos finales | Objetivo 
 
 
-| \https://api.bluexp.netapp.com \https://netapp-cloud-account.auth0.com \https://netapp-cloud-account.us.auth0.com \https://console.netapp.com \https://components.console.bluexp.netapp.com \https://cdn.auth0.com | Proporcionar funciones y servicios dentro de la NetApp Console. 
+ a| 
+* \ https://api.bluexp.netapp.com
+* \ https://netapp-cloud-account.auth0.com
+* \ https://netapp-cloud-account.us.auth0.com
+* \ https://console.netapp.com
+* \https://components.console.bluexp.netapp.com
+* \ https://cdn.auth0.com
+
+ a| 
+Proporcionar funciones y servicios dentro de la NetApp Console.
 
 
-| \ https://cdn.auth0.com \ https://services.cloud.netapp.com | Su navegador web se conecta a estos puntos finales para la autenticación centralizada de usuarios a través de la NetApp Console. 
+
+| \https://services.cloud.netapp.com  a| 
+* Su navegador web se conecta a estos puntos finales para la autenticación centralizada de usuarios a través de la NetApp Console.
+
+
 |===
-Acceso a Internet saliente para operaciones diarias:: La ubicación de red del agente de la consola debe tener acceso a Internet saliente.  Debe poder acceder a los servicios SaaS de la NetApp Console , así como a los puntos finales dentro de su respectivo entorno de nube pública.
-+
---
+
+
+[[outbound-internet-access-for-day-to-day-operations]]
+=== Acceso a Internet saliente para operaciones diarias
+
+El agente de NetApp Console necesita acceso saliente a Internet para gestionar los recursos de tu proveedor de nube y usar los servicios de NetApp Console de NetApp. Permite los endpoints de tu entorno y los servicios compartidos de NetApp Console que se indican a continuación.
+
+
+
+[[restricted-mode-aws-endpoints]]
+==== Entornos AWS
+
+Permite que estos puntos de conexión de los servicios de AWS gestionen los recursos de AWS, incluidos FSx for ONTAP.
+
 [cols="2a,1a"]
 |===
 | Puntos finales | Objetivo 
-
-
- a| 
-*Entornos AWS*
-
 
 
  a| 
@@ -413,88 +256,51 @@ Amazon FSx for NetApp ONTAP:
  a| 
 La consola basada en web se comunica con este punto final para interactuar con las API de Workload Factory para administrar y operar cargas de trabajo basadas en FSx para ONTAP.
 
+|===
+
+
+[[restricted-mode-azure-endpoints]]
+==== Entornos de Azure
+
+Permite los endpoints que correspondan a tu región de Azure: pública, Government o China.
+
+[cols="2a,1a"]
+|===
+| Puntos finales | Objetivo 
 
 
  a| 
-*Entornos Azure*
+* \https://management.azure.com
+* \https://login.microsoftonline.com
+* \https://blob.core.windows.net
+* \https://core.windows.net
 
-
-
- a| 
-\ https://management.azure.com \ https://login.microsoftonline.com \ https://blob.core.windows.net \ https://core.windows.net
  a| 
 Para administrar recursos en regiones públicas de Azure.
 
 
 
  a| 
-\ https://management.usgovcloudapi.net \ https://login.microsoftonline.us \ https://blob.core.usgovcloudapi.net \ https://core.usgovcloudapi.net
+* \https://management.usgovcloudapi.net
+* \https://login.microsoftonline.us
+* \https://*.blob.core.usgovcloudapi.net
+* \https://core.usgovcloudapi.net
+
  a| 
 Para administrar recursos en regiones de Azure Government.
 
 
 
  a| 
-\ https://management.chinacloudapi.cn \ https://login.chinacloudapi.cn \ https://blob.core.chinacloudapi.cn \ https://core.chinacloudapi.cn
+* \https://management.chinacloudapi.cn
+* \https://login.chinacloudapi.cn
+* \https://blob.core.chinacloudapi.cn
+* \https://core.chinacloudapi.cn
+
  a| 
 Para administrar recursos en las regiones de Azure China.
 
-
-
- a| 
-*Entornos de Google Cloud*
-
-
-
- a| 
-\ https://www.googleapis.com/compute/v1/ \ https://compute.googleapis.com/compute/v1 \ https://cloudresourcemanager.googleapis.com/v1/projects \ https://www.googleapis.com/compute/beta \ https://storage.googleapis.com/storage/v1 \ https://www.googleapis.com/storage/v1 \ https://iam.googleapis.com/v1 \ https://cloudkms.googleapis.com/v1 \ https://config.googleapis.com/v1/projects
- a| 
-Para administrar recursos en Google Cloud.
-
-
-
- a| 
-*Puntos finales de la NetApp Console *
-
-
-
- a| 
-\ https://mysupport.netapp.com
- a| 
-Para obtener información sobre licencias y enviar mensajes de AutoSupport al soporte de NetApp.
-
-
-
- a| 
-\ https://signin.b2c.netapp.com
- a| 
-Para actualizar las credenciales del sitio de soporte de NetApp (NSS) o para agregar nuevas credenciales de NSS a la NetApp Console.
-
-
-
- a| 
-\ https://support.netapp.com
- a| 
-Para obtener información sobre licencias y enviar mensajes de AutoSupport al soporte de NetApp, así como para recibir actualizaciones de software para Cloud Volumes ONTAP.
-
-
-
- a| 
-\https://api.bluexp.netapp.com \https://netapp-cloud-account.auth0.com \https://netapp-cloud-account.us.auth0.com \https://console.netapp.com \https://components.console.bluexp.netapp.com \https://cdn.auth0.com
- a| 
-Proporcionar funciones y servicios dentro de la NetApp Console.
-
-
-
- a| 
-\ https://occmclientinfragov.azurecr.us
- a| 
-Para obtener imágenes para las actualizaciones del agente de consola.
-
 |===
---
-
-
 Dirección IP pública en Azure:: Si desea utilizar una dirección IP pública con la máquina virtual del agente de consola en Azure, la dirección IP debe usar una SKU básica para garantizar que la consola use esta dirección IP pública.
 +
 --
@@ -507,6 +313,97 @@ https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-ad
 --
 
 
+
+
+[[restricted-mode-google-cloud-endpoints]]
+==== Entornos de Google Cloud
+
+Permite que estos endpoints de API de Google Cloud gestionen recursos en tu proyecto.
+
+[cols="2a,1a"]
+|===
+| Puntos finales | Objetivo 
+
+
+ a| 
+* \https://www.googleapis.com/compute/v1/
+* \https://compute.googleapis.com/compute/v1
+* \https://cloudresourcemanager.googleapis.com/v1/projects
+* \https://www.googleapis.com/compute/beta
+* \https://storage.googleapis.com/storage/v1
+* \https://www.googleapis.com/storage/v1
+* \https://iam.googleapis.com/v1
+* \https://cloudkms.googleapis.com/v1
+* \https://config.googleapis.com/v1/projects
+
+ a| 
+Para administrar recursos en Google Cloud.
+
+|===
+
+
+[[restricted-mode-console-endpoints]]
+==== Endpoints de NetApp Console
+
+Permite los endpoints compartidos para el soporte de NetApp, las funciones de NetApp Console y la implementación y las actualizaciones del agente de NetApp Console.
+
+[cols="2a,1a"]
+|===
+| Puntos finales | Objetivo 
+
+
+ a| 
+* \ https://mysupport.netapp.com
+
+ a| 
+Para obtener información sobre licencias y enviar mensajes de AutoSupport al soporte de NetApp.
+
+
+
+ a| 
+* \ https://signin.b2c.netapp.com
+
+ a| 
+Para actualizar las credenciales del sitio de soporte de NetApp (NSS) o para agregar nuevas credenciales de NSS a la NetApp Console.
+
+
+
+ a| 
+* \ https://support.netapp.com
+
+ a| 
+Para obtener información sobre licencias y enviar mensajes de AutoSupport al soporte de NetApp, así como para recibir actualizaciones de software para Cloud Volumes ONTAP.
+
+
+
+ a| 
+* \ https://api.bluexp.netapp.com
+* \ https://netapp-cloud-account.auth0.com
+* \ https://netapp-cloud-account.us.auth0.com
+* \ https://console.netapp.com
+* \https://components.console.bluexp.netapp.com
+* \ https://cdn.auth0.com
+
+ a| 
+Proporcionar funciones y servicios dentro de la NetApp Console.
+
+
+
+ a| 
+Para las regiones no gubernamentales, utiliza los siguientes endpoints:
+
+* \ https://bluexpinfraprod.eastus2.data.azurecr.io
+* \ https://bluexpinfraprod.azurecr.io
+
+
+Para las regiones gubernamentales, usa el siguiente endpoint en su lugar:
+
+* \ https://occmclientinfragov.azurecr.us
+
+ a| 
+Para obtener imágenes para la implementación y las actualizaciones del agente de NetApp Console.
+
+|===
 Servidor proxy:: NetApp admite configuraciones de proxy explícitas y transparentes.  Si está utilizando un proxy transparente, solo necesita proporcionar el certificado para el servidor proxy.  Si está utilizando un proxy explícito, también necesitará la dirección IP y las credenciales.
 +
 --
@@ -533,17 +430,13 @@ Si los sistemas Cloud Volumes ONTAP no tienen una conexión a Internet saliente 
 
 
 Habilitar NTP:: Si tienes pensado usar NetApp Data Classification para analizar tus fuentes de datos corporativas, deberías habilitar un servicio de Network Time Protocol (NTP) tanto en el agente de la Console como en el sistema NetApp Data Classification para que la hora esté sincronizada entre los sistemas. https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html["Más información sobre NetApp Data Classification"^].
-+
---
-Si planea crear un agente de consola desde el mercado de su proveedor de nube, implemente este requisito de red después de crear el agente de consola.
-
---
 
 
 
 
+[[step-6-prepare-cloud-provider-permissions]]
 [[step-6-prepare-cloud-permissions]]
-== Paso 6: Preparar los permisos de la nube
+== Paso 6: configurar los permisos del proveedor de servicios en la nube
 
 El agente de consola requiere permisos de su proveedor de nube para implementar Cloud Volumes ONTAP en una red virtual y utilizar los servicios de datos de NetApp .  Debe configurar permisos en su proveedor de nube y luego asociar esos permisos con el agente de la consola.
 
@@ -848,25 +741,3 @@ https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_
 
 --
 ====
-
-
-[[step-7-enable-google-cloud-apis]]
-== Paso 7: Habilitar las API de Google Cloud
-
-Se requieren varias API para implementar Cloud Volumes ONTAP en Google Cloud.
-
-.Paso
-. https://cloud.google.com/apis/docs/getting-started#enabling_apis["Habilite las siguientes API de Google Cloud en su proyecto"^]
-+
-** Cloud Build API (necesaria para implementaciones de Cloud Volumes ONTAP en modo privado usando Infrastructure Manager)
-** API de Cloud Deployment Manager V2
-** API de Cloud Infrastructure Manager
-** API de registro en la nube
-** API del administrador de recursos en la nube
-** API de Compute Engine
-** API de gestión de identidad y acceso (IAM)
-** API del servicio de gestión de claves en la nube (KMS) (necesaria solo si planeas usar NetApp Backup and Recovery con claves de cifrado gestionadas por el cliente (CMEK))
-** API de Cloud Quotas (necesaria para implementaciones de Cloud Volumes ONTAP usando Infrastructure Manager)
-
-
-

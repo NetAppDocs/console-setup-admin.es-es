@@ -10,7 +10,7 @@ Estos puntos finales son necesarios para todas las implementaciones del agente d
 
 [cols="2a,1a"]
 |===
-| Puntos finales | Propósito Directiva no resuelta en <stdin> - include::endpoints-agent.adoc[tag=nss-endpoints] Directiva no resuelta en <stdin> - include::endpoints-agent.adoc[tag=saas-endpoints] Directiva no resuelta en <stdin> - include::endpoints-agent.adoc[tag=upgrade-endpoints] 
+| Puntos finales | Objetivo Directiva sin resolver en <stdin> - include::endpoints-agent.adoc[tag=nss-endpoints] Directiva sin resolver en <stdin> - include::endpoints-agent.adoc[tag=saas-endpoints] Directiva sin resolver en <stdin> - include::endpoints-agent.adoc[tag=upgrade-endpoints-saas] 
 |===
 --
 .Puntos de enlace adicionales para los recursos de AWS

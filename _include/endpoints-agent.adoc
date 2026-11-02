@@ -20,38 +20,38 @@ Los puntos finales enumerados a continuación son todas entradas CNAME.
 * Servicio de almacenamiento simple (S3)
 
 
-| Para administrar los recursos de AWS.  El punto final depende de su región de AWS. https://docs.aws.amazon.com/general/latest/gr/rande.html["Consulte la documentación de AWS para obtener más detalles."^]
+a| Para gestionar recursos de AWS. El endpoint depende de tu región de AWS. https://docs.aws.amazon.com/general/latest/gr/rande.html["Consulte la documentación de AWS para obtener más detalles."^]
 
 | Amazon FSx for NetApp ONTAP:
 
 * api.workloads.netapp.com
 
 
-| La consola basada en web se pone en contacto con este endpoint para interactuar con las APIs de Workload Factory para gestionar y operar cargas de trabajo basadas en FSx for ONTAP.
+a| La consola web se conecta a este punto final para interactuar con las API de Workload Factory con el fin de gestionar y operar FSx para cargas de trabajo basadas en ONTAP.
 
-| \ https://management.azure.com \ https://login.microsoftonline.com \ https://blob.core.windows.net \ https://core.windows.net
+a| * \https://management.azure.com * \https://login.microsoftonline.com * \https://blob.core.windows.net * \https://core.windows.net
 
-| Para administrar recursos en regiones públicas de Azure.
+a| Para gestionar recursos en las regiones públicas de Azure.
 
-| \ https://management.azure.microsoft.scloud \ https://login.microsoftonline.microsoft.scloud \ https://blob.core.microsoft.scloud \ https://core.microsoft.scloud
+a| * \https://management.azure.microsoft.scloud * \https://login.microsoftonline.microsoft.scloud * \https://blob.core.microsoft.scloud * \https://core.microsoft.scloud
 
-| Para administrar recursos en la región IL6 de Azure.
+a| Para gestionar recursos en la región IL6 de Azure.
 
-| \ https://management.usgovcloudapi.net \ https://login.microsoftonline.us \ https://blob.core.usgovcloudapi.net \ https://core.usgovcloudapi.net
+a| * \https://management.usgovcloudapi.net * \https://login.microsoftonline.us * \https://*.blob.core.usgovcloudapi.net * \https://core.usgovcloudapi.net
 
-| Para administrar recursos en regiones de Azure Government.
+a| Para gestionar recursos en las regiones de Azure Government.
 
-| \ https://management.chinacloudapi.cn \ https://login.chinacloudapi.cn \ https://blob.core.chinacloudapi.cn \ https://core.chinacloudapi.cn
+a| * \https://management.chinacloudapi.cn * \https://login.chinacloudapi.cn * \https://blob.core.chinacloudapi.cn * \https://core.chinacloudapi.cn
 
-| Para administrar recursos en las regiones de Azure China.
+a| Para gestionar recursos en las regiones de Azure China.
 
-| \ https://www.googleapis.com/compute/v1/ \ https://compute.googleapis.com/compute/v1 \ https://cloudresourcemanager.googleapis.com/v1/projects \ https://www.googleapis.com/compute/beta \ https://storage.googleapis.com/storage/v1 \ https://www.googleapis.com/storage/v1 \ https://iam.googleapis.com/v1 \ https://cloudkms.googleapis.com/v1 \ https://config.googleapis.com/v1/projects
+a| * \https://www.googleapis.com/compute/v1/ * \https://compute.googleapis.com/compute/v1 * \https://cloudresourcemanager.googleapis.com/v1/projects * \https://www.googleapis.com/compute/beta * \https://storage.googleapis.com/storage/v1 * \https://www.googleapis.com/storage/v1 * \https://iam.googleapis.com/v1 * \https://cloudkms.googleapis.com/v1 * \https://config.googleapis.com/v1/projects
 
-| Para administrar recursos en Google Cloud.
+a| Para gestionar recursos en Google Cloud.
 
-| https://mysupport.netapp.com | Para obtener información sobre licencias y enviar mensajes de AutoSupport a NetApp Support. | https://signin.b2c.netapp.com | Para actualizar las credenciales del NetApp Support Site (NSS) o para añadir nuevas credenciales NSS a la NetApp Console. | https://support.netapp.com | Para obtener información sobre licencias y enviar mensajes de AutoSupport a NetApp Support, así como para recibir actualizaciones de software para Cloud Volumes ONTAP.
+a| * \https://mysupport.netapp.com a| Para obtener información sobre licencias y enviar mensajes de AutoSupport a NetApp Support. a| * \https://signin.b2c.netapp.com a| Para actualizar las credenciales de NetApp Support Site (NSS) o añadir nuevas credenciales de NSS a la NetApp Console. a| * \https://support.netapp.com a| Para obtener información sobre licencias y enviar mensajes de AutoSupport a NetApp Support, así como para recibir actualizaciones de software para Cloud Volumes ONTAP.
 
-| \https://api.bluexp.netapp.com \https://netapp-cloud-account.auth0.com \https://netapp-cloud-account.us.auth0.com \https://console.netapp.com \https://components.console.bluexp.netapp.com \https://cdn.auth0.com | Para proporcionar funciones y servicios dentro de la NetApp Console.
+a| * \https://api.bluexp.netapp.com * \https://netapp-cloud-account.auth0.com * \https://netapp-cloud-account.us.auth0.com * \https://console.netapp.com * \https://components.console.bluexp.netapp.com * \https://cdn.auth0.com a| Para ofrecer funciones y servicios dentro de NetApp Console.
 
 [cols="2*"]
 |===
@@ -59,28 +59,38 @@ Los puntos finales enumerados a continuación son todas entradas CNAME.
 
 
  a| 
-\ https://support.netapp.com \ https://mysupport.netapp.com
+* \ https://support.netapp.com
+* \ https://mysupport.netapp.com
+
  a| 
 Para obtener información de licencias y enviar mensajes de AutoSupport al soporte de NetApp .
 
 
 
  a| 
-\https://\*.api.bluexp.netapp.com \ https://api.bluexp.netapp.com \https://*.cloudmanager.cloud.netapp.com \ https://cloudmanager.cloud.netapp.com \ https://netapp-cloud-account.auth0.com \ https://netapp-cloud-account.us.auth0.com
+* \https://*.api.bluexp.netapp.com
+* \ https://api.bluexp.netapp.com
+* \https://*.cloudmanager.cloud.netapp.com
+* \ https://cloudmanager.cloud.netapp.com
+* \ https://netapp-cloud-account.auth0.com
+* \ https://netapp-cloud-account.us.auth0.com
+
 | Proporcionar funciones y servicios dentro de la NetApp Console. 
 
 
  a| 
 Elija entre dos conjuntos de puntos finales:
 
-* Opción 1 (recomendada)
-+
-\ https://bluexpinfraprod.eastus2.data.azurecr.io \ https://bluexpinfraprod.azurecr.io
+Opción 1 (recomendada)
 
-* Opción 2
-+
-\https://*.blob.core.windows.net\ https://cloudmanagerinfraprod.azurecr.io
+* \ https://bluexpinfraprod.eastus2.data.azurecr.io
+* \ https://bluexpinfraprod.azurecr.io
 
+
+Opción 2
+
+* \https://*.blob.core.windows.net
+* \ https://cloudmanagerinfraprod.azurecr.io
 
  a| 
 Para obtener imágenes para las actualizaciones del agente de consola.
@@ -93,9 +103,20 @@ NetApp recomienda permitir los puntos finales de la Opción 1 en su firewall, ya
 
 
 |===
-a| https://bluexpinfraprod.eastus2.data.azurecr.io https://bluexpinfraprod.azurecr.io https://occmclientinfragov.azurecr.us (necesario para despliegues en modo restringido) a| Para obtener imágenes para actualizaciones de agentes de NetApp Console.
+a| * \https://bluexpinfraprod.eastus2.data.azurecr.io * \https://bluexpinfraprod.azurecr.io
 
-a| https://occmclientinfragov.azurecr.us a| Para obtener imágenes para actualizaciones de agentes de NetApp Console.
+a| Obtener imágenes para implementar y actualizar el agente de Console.
+
+a| Para las regiones no gubernamentales, utiliza los siguientes endpoints:
+
+* \ https://bluexpinfraprod.eastus2.data.azurecr.io
+* \ https://bluexpinfraprod.azurecr.io
+
+
+Para las regiones gubernamentales, usa el siguiente endpoint en su lugar:
+
+* \https://occmclientinfragov.azurecr.us a| Para obtener imágenes para la implementación y las actualizaciones del agente de NetApp Console.
+
 
 ^1^ NetApp recomienda permitir los puntos finales de la Opción 1 en su firewall, ya que son más seguros, y no permitir los puntos finales de la Opción 2.  Tenga en cuenta lo siguiente acerca de estos puntos finales:
 
@@ -148,9 +169,17 @@ Para operaciones diarias.
 * \ https://cloudmanagerinfraprod.azurecr.io
 
  a| 
+Para las regiones no gubernamentales en modo estándar y en modo restringido, utiliza los siguientes puntos de conexión:
+
 * \ https://bluexpinfraprod.eastus2.data.azurecr.io
 * \ https://bluexpinfraprod.azurecr.io
-* \https://occmclientinfragov.azurecr.us.io (si estás en un entorno de modo restringido)
 
-| Para obtener imágenes para las actualizaciones del agente de consola. 
+
+Para las regiones gubernamentales en modo restringido, usa este endpoint en su lugar:
+
+* \ https://occmclientinfragov.azurecr.us
+
+ a| 
+Para obtener imágenes para la implementación y las actualizaciones del agente de NetApp Console.
+
 |===

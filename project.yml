@@ -56,7 +56,14 @@ sidebar:
       - title: Prepárese para una implementación restringida de la NetApp Console
         url: "/task-prepare-restricted-mode.html"
       - title: Implementar la NetApp Console en modo restringido
-        url: "/task-install-restricted-mode.html"
+        entries:
+        - title: Implementa el modo restringido de NetApp Console desde AWS marketplace
+          url: "/task-install-restricted-mode-aws.html"
+        - title: Implementa el modo restringido de NetApp Console en Azure marketplace
+          url: "/task-install-restricted-mode-azure.html"
+        - title: Instalar manualmente el modo restringido de NetApp Console (requisito
+            para Google Cloud)
+          url: "/task-install-restricted-mode-manual.html"
       - title: Suscríbase a los NetApp Intelligent Services
         url: "/task-subscribe-restricted-mode.html"
       - title: Qué puedes hacer a continuación
