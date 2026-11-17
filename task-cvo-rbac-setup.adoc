@@ -90,7 +90,7 @@ Tras actualizar un agente de Console a la versión 4.9.0 o posterior, Console as
 
 .Pasos
 . Identifica la organización, la carpeta o el proyecto que contiene cada sistema Cloud Volumes ONTAP.
-. Revisa la función de Cloud Volumes ONTAP asignada a cada usuario y comprueba que esté asignada a nivel de organización, carpeta o proyecto que contenga el sistema. link:reference-iam-cvo-roles.html#seeding-mappings-for-existing-users["Infórmate sobre las funciones de Cloud Volumes ONTAP que se asignan automáticamente tras la actualización"].
+. Revisa la función de Cloud Volumes ONTAP asignada a cada usuario y comprueba que esté asignada a nivel de organización, carpeta o proyecto que contenga el sistema. link:reference-iam-cvo-roles.html["Infórmate sobre las funciones de Cloud Volumes ONTAP que se asignan automáticamente tras la actualización"].
 . Asigna o cambia el rol de Cloud Volumes ONTAP cuando el rol preasignado no coincida con las responsabilidades del usuario. El proceso de asignación inicial asigna el rol de administrador o de visualizador de Cloud Volumes ONTAP según el rol existente del usuario en la plataforma. Si un usuario necesita permisos de nivel operador, asigna explícitamente el rol de operador de Cloud Volumes ONTAP después de la asignación inicial.
 . Espera hasta una hora para que las asignaciones de roles nuevas o actualizadas surtan efecto. Cloud Volumes ONTAP actualiza las asignaciones de roles cada hora.
 . Haz que el usuario acceda al sistema Cloud Volumes ONTAP y confirma que las operaciones disponibles coinciden con el rol asignado.
