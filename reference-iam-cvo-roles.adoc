@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reference-iam-cvo-roles.html 
-keywords: cloud volumes ontap, role-based access control, rbac, viewer, operator, admin, access control, permissions, volumes, aggregates, replication, snapshots, ontap upgrade, IAM roles 
+keywords: cloud volumes ontap, role-based access control, rbac, viewer, operator, contributor, admin, access control, permissions, volumes, aggregates, replication, snapshots, ontap upgrade, IAM roles 
 summary: Puedes asignar los siguientes roles a los usuarios para darles acceso a Cloud Volumes ONTAP dentro de la consola. Los roles de Cloud Volumes ONTAP te dan la flexibilidad de asignar a los usuarios un rol específico para las tareas que necesitan realizar dentro de tu organización. 
 ---
 = Roles de acceso de Cloud Volumes ONTAP en NetApp Console
@@ -20,6 +20,7 @@ Puedes asignar los siguientes roles a los usuarios para proporcionarles acceso a
 NOTE: Los roles de acceso para Cloud Volumes ONTAP están disponibles cuando ejecutas una versión 4.9.0 o posterior de Console agent.
 
 * *Administrador de Cloud Volumes ONTAP*: Ofrece acceso completo a todas las operaciones de Cloud Volumes ONTAP.
+* *Colaborador de Cloud Volumes ONTAP*: ofrece un acceso similar al del rol de administrador de Cloud Volumes ONTAP, salvo en lo que respecta a las operaciones que implican eliminar o suprimir recursos, o encender o apagar sistemas. Los colaboradores pueden realizar operaciones como añadir sistemas, gestionar la replicación y editar la configuración de volúmenes y sistemas, pero no pueden eliminar sistemas, volúmenes, agregados ni relaciones de replicación.
 * *Operador de Cloud Volumes ONTAP*: Realiza operaciones importantes relacionadas con el almacenamiento, como la detección y la gestión de sistemas Cloud Volumes ONTAP, lo que incluye añadir volúmenes, agregados, instantáneas y replicaciones, modificar algunas configuraciones y actualizar las versiones de Cloud Volumes ONTAP.
 * *Visor de Cloud Volumes ONTAP*: Proporciona acceso de solo lectura a la información de Cloud Volumes ONTAP. Este rol no puede realizar ninguna operación activa. Es posible que algunas pestañas y pantallas que contienen información de configuración no estén disponibles para los usuarios con este rol.
 
@@ -40,9 +41,9 @@ Espera hasta una hora para que las asignaciones de roles nuevas o actualizadas s
 
 La siguiente tabla indica las acciones que puede realizar cada rol.
 
-[cols="40a,20a,20a,20a"]
+[cols="28a,18a,18a,18a,18a"]
 |===
-| Característica y acción | Administrador de Cloud Volumes ONTAP | Operador de Cloud Volumes ONTAP | Visor de Cloud Volumes ONTAP 
+| Característica y acción | Administrador de Cloud Volumes ONTAP | Colaborador de Cloud Volumes ONTAP | Operador de Cloud Volumes ONTAP | Visor de Cloud Volumes ONTAP 
 
 
  a| 
@@ -52,6 +53,8 @@ La siguiente tabla indica las acciones que puede realizar cada rol.
 
  a| 
 Ingresa un sistema
+ a| 
+Sí
  a| 
 Sí
  a| 
@@ -69,11 +72,15 @@ Sí
 Sí
  a| 
 Sí
+ a| 
+Sí
 
 
 
  a| 
 Descubre un sistema
+ a| 
+Sí
  a| 
 Sí
  a| 
@@ -90,12 +97,16 @@ Sí
  a| 
 Sí
  a| 
+Sí
+ a| 
 No
 
 
 
  a| 
 Usa *Replicación* (no aplicable a FSx para ONTAP ni a sistemas locales)
+ a| 
+Sí
  a| 
 Sí
  a| 
@@ -112,12 +123,16 @@ Sí
  a| 
 Sí
  a| 
+Sí
+ a| 
 No
 
 
 
  a| 
 Agregar un sistema
+ a| 
+Sí
  a| 
 Sí
  a| 
@@ -129,6 +144,8 @@ No
 
  a| 
 Accede a *coste y rendimiento optimizados*
+ a| 
+Sí
  a| 
 Sí
  a| 
@@ -146,6 +163,8 @@ Sí
 No
  a| 
 No
+ a| 
+No
 
 
 
@@ -157,6 +176,8 @@ Sí
 No
  a| 
 No
+ a| 
+No
 
 
 
@@ -164,6 +185,8 @@ No
 Eliminar un sistema
  a| 
 Sí
+ a| 
+No
  a| 
 No
  a| 
@@ -184,11 +207,15 @@ Sí
 Sí
  a| 
 Sí
+ a| 
+Sí
 
 
 
  a| 
 Editar la configuración de Cloud Volumes ONTAP
+ a| 
+Sí
  a| 
 Sí
  a| 
@@ -210,12 +237,16 @@ Sí
  a| 
 Sí
  a| 
+Sí
+ a| 
 No
 
 
 
  a| 
 Agrega un agregado
+ a| 
+Sí
  a| 
 Sí
  a| 
@@ -232,6 +263,8 @@ Sí
  a| 
 Sí
  a| 
+Sí
+ a| 
 No
 
 
@@ -243,12 +276,16 @@ Sí
  a| 
 Sí
  a| 
+Sí
+ a| 
 No
 
 
 
  a| 
 Edita *CIFS setup* desde el menú del lápiz
+ a| 
+Sí
  a| 
 Sí
  a| 
@@ -266,6 +303,8 @@ Sí
 No
  a| 
 No
+ a| 
+No
 
 
 
@@ -273,6 +312,8 @@ No
 Usa el botón de encendido/apagado
  a| 
 Sí
+ a| 
+No
  a| 
 No
  a| 
@@ -288,6 +329,8 @@ Sí
 No
  a| 
 No
+ a| 
+No
 
 
 
@@ -299,6 +342,8 @@ Sí
 No
  a| 
 No
+ a| 
+No
 
 
 
@@ -306,6 +351,8 @@ No
 Eliminar el sistema
  a| 
 Sí
+ a| 
+No
  a| 
 No
  a| 
@@ -329,6 +376,8 @@ Edita lo siguiente usando el icono del lápiz en el panel derecho:
  a| 
 Sí
  a| 
+Sí
+ a| 
 No
  a| 
 No
@@ -347,12 +396,16 @@ Sí
  a| 
 Sí
  a| 
+Sí
+ a| 
 No
 
 
 
  a| 
 Clonar un volumen
+ a| 
+Sí
  a| 
 Sí
  a| 
@@ -369,12 +422,16 @@ Sí
  a| 
 Sí
  a| 
+Sí
+ a| 
 No
 
 
 
  a| 
 Editar la configuración de volumen
+ a| 
+Sí
  a| 
 Sí
  a| 
@@ -392,11 +449,15 @@ Sí
 No
  a| 
 No
+ a| 
+No
 
 
 
  a| 
 Restaurar desde una copia instantánea
+ a| 
+Sí
  a| 
 Sí
  a| 
@@ -411,6 +472,8 @@ Cambiar el tipo de disco
  a| 
 Sí
  a| 
+Sí
+ a| 
 No
  a| 
 No
@@ -419,6 +482,8 @@ No
 
  a| 
 Cambiar la política de niveles
+ a| 
+Sí
  a| 
 Sí
  a| 
@@ -440,6 +505,8 @@ Sí
  a| 
 Sí
  a| 
+Sí
+ a| 
 No
 
 
@@ -451,12 +518,16 @@ Sí
  a| 
 Sí
  a| 
+Sí
+ a| 
 No
 
 
 
  a| 
 Aumenta la capacidad
+ a| 
+Sí
  a| 
 Sí
  a| 
@@ -474,6 +545,8 @@ Sí
 No
  a| 
 No
+ a| 
+No
 
 
 
@@ -484,6 +557,8 @@ No
 
  a| 
 Interrumpir la replicación
+ a| 
+Sí
  a| 
 Sí
  a| 
@@ -498,6 +573,8 @@ Resincronizar la replicación
  a| 
 Sí
  a| 
+Sí
+ a| 
 No
  a| 
 No
@@ -506,6 +583,8 @@ No
 
  a| 
 Replicación de resincronización inversa
+ a| 
+Sí
  a| 
 Sí
  a| 
@@ -520,6 +599,8 @@ Edita el calendario
  a| 
 Sí
  a| 
+Sí
+ a| 
 No
  a| 
 No
@@ -528,6 +609,8 @@ No
 
  a| 
 Edita la tasa de transferencia máxima
+ a| 
+Sí
  a| 
 Sí
  a| 
@@ -542,6 +625,8 @@ Actualizar replicación
  a| 
 Sí
  a| 
+Sí
+ a| 
 No
  a| 
 No
@@ -552,6 +637,8 @@ No
 Eliminar replicación
  a| 
 Sí
+ a| 
+No
  a| 
 No
  a| 

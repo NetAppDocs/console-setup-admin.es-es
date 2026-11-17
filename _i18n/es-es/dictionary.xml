@@ -5659,8 +5659,6 @@
   <block id="630125b3287d32dddd226602e8dd6803" category="list-text">Inicia sesión en la consola de mantenimiento usando el nombre de usuario<block ref="67f50785d40416a7a7689c5c353f1128" prefix=" " category="inline-code"></block> y la contraseña de mantenimiento que especificaste cuando desplegaste el OVA.</block>
   <block id="cd975b382ffd3de432ce2ffb42508a03" category="list-text">Introduce<block ref="c4ca4238a0b923820dcc509a6f75849b" prefix=" " category="inline-code"></block> para abrir el menú *Configuración del sistema*.</block>
   <block id="ed9d848f40aa067619f57a0c3bdd1aa7" category="list-text">Introduce<block ref="eccbc87e4b5ce2fe28308fd9f2a7baf3" prefix=" " category="inline-code"></block> para seleccionar *Actualizar* y sigue las instrucciones en pantalla.</block>
-  <block id="c017b1c0dccb6954f1ade63dff926a0c" category="paragraph">La actualización instala el sistema operativo actualizado, el runtime de Docker y los servicios del agente de la Console en su lugar. Si se actualiza el kernel, la VM se reinicia automáticamente.</block>
-  <block id="5acb3aced6d8dac916dec3aade57b7e1" category="list-text">Una vez finalizada la actualización, verifica que el agente de la Console se está ejecutando correctamente:</block>
   <block id="969e7ac6672c561c12855b0df5552218" category="list-text">En el cliente vSphere, confirma que la máquina virtual está encendida y que puedes acceder a la consola web.</block>
   <block id="f1dea5408c76a6c79fe56adbe57d4bf3" category="list-text">En la consola NetApp, ve a *Administración &gt; Soporte &gt; Agentes* y confirma que la versión del agente refleja la nueva versión.</block>
   <block id="e169af5277f4f18447755957609654e2" category="list-text">Desmonta la ISO de la máquina virtual:</block>
@@ -6486,7 +6484,6 @@
   <block id="a22ba5cede201b398675ddfd63c9864d" category="paragraph">La versión 4.10.0 incluye actualizaciones de los siguientes componentes y servicios de NetApp Console.</block>
   <block id="c1b9fde9363d4906a9e67eb0862e9fc7" category="cell">4.10.0</block>
   <block id="5ff195749703fc07b830e8ce460f4513" category="cell">Ve al<block ref="9d354d50c04a9174ec71f0d3d8410a23" category="inline-link-rx"></block> y revisa los cambios incluidos para las versiones 4.10.0.</block>
-  <block id="669d8c7c23d7c1df9de525a93369bb8f" category="cell">1.546.0 (10 de agosto de 2026)</block>
   <block id="99eb4ee0a56c7fb9d9fef77053e43af4" category="paragraph">Permite realizar copias de seguridad de instantáneas de clústeres ONTAP locales usando NetApp Backup and Recovery para aplicaciones. Un usuario con este rol puede realizar las siguientes acciones:</block>
   <block id="f44c611b4162cee5fdf2ee447ed48192" category="list-text">Realiza cualquier acción desde Backup and Recovery &gt; Applications</block>
   <block id="e88871c7007d89688acdcb7ffa4922fe" category="list-text">Gestionar todos los sistemas de los proyectos y carpetas para los que tengan permisos</block>
@@ -6789,5 +6786,17 @@
   <block id="2cf7a5d26ce7d4d99d4c91d9a7be62a2" category="section-title">Detén e inicia la VM del agente</block>
   <block id="b4c95a42ca3d365982b8e5cd0c5f9a12" category="paragraph">Reduce al mínimo el tiempo de inactividad al detener y reiniciar la VM del agente, ya que los servicios de gestión y de datos dependen de que el agente permanezca operativo.</block>
   <block id="4a818b70467076c03f2c14237204886a" category="paragraph">Comprueba el estado del agente de NetApp Console desde su VM Linux para asegurarte de que está en funcionamiento.</block>
-  <block id="e370f8f4d5db9e4f93257ac02adddec3" category="section-title">09 noviembre 2026</block>
+  <block id="daa04540ede89ebe21aa75e4bb91c101" category="cell">1.56.0 (10 de agosto de 2026)</block>
+  <block id="d68cd763bb6443bb6e7c8aa2306f8ef4" category="paragraph">Esta versión del agente de NetApp Console incluye mejoras de seguridad y correcciones de errores, así como la siguiente función nueva. Cuando actualices a la versión 4.13.0 un agente de NetApp Console implementado mediante vCenter usando una ISO, asegúrate de que la VM se reinicie cuando termine la actualización. Es posible que la VM se reinicie automáticamente.</block>
+  <block id="fb37b2b6fa74940a30d42aec5c20c8f5" category="paragraph">Esta versión incluye mejoras de seguridad y correcciones de errores así como la siguiente nueva función.</block>
+  <block id="d2033ec1ec99f494b181d63a27d56e2d" category="section-title">Asignar el rol de colaborador de Cloud Volumes ONTAP</block>
+  <block id="cd27e9569393bf08fe35ccdf2583e61b" category="paragraph">Ahora puedes asignar el rol de colaborador de Cloud Volumes ONTAP para dar a los miembros un amplio acceso para gestionar los sistemas de Cloud Volumes ONTAP sin permitirles eliminar sistemas, volúmenes, agregados ni relaciones de replicación. <block ref="8c5db5921f383526df21d84d3b1bfd83" category="inline-link-macro-rx"></block>.</block>
+  <block id="b83ef7028571cfab72ee7ce1a1a682a0" category="list-text">*Colaborador de Cloud Volumes ONTAP*: ofrece un acceso similar al del rol de administrador de Cloud Volumes ONTAP, salvo en lo que respecta a las operaciones que implican eliminar o suprimir recursos, o encender o apagar sistemas. Los colaboradores pueden realizar operaciones como añadir sistemas, gestionar la replicación y editar la configuración de volúmenes y sistemas, pero no pueden eliminar sistemas, volúmenes, agregados ni relaciones de replicación.</block>
+  <block id="649973a0776cc2c800262363cd181d7b" category="cell">Colaborador de Cloud Volumes ONTAP</block>
+  <block id="51633f0b535a3fc11bc6c59b67c5d18b" category="cell"><block ref="51633f0b535a3fc11bc6c59b67c5d18b" category="inline-link-macro-rx"></block></block>
+  <block id="065242fa71340bedcbcdf967d279e80b" category="cell">CVO_CONTRIBUTOR</block>
+  <block id="4e0882ff89f5aa014ab9a6d53ca4f3b1" category="cell">Ofrece un acceso similar al del rol de administrador de Cloud Volumes ONTAP, salvo en lo que respecta a las operaciones que implican eliminar o suprimir recursos, o encender o apagar sistemas.</block>
+  <block id="5d97bc96e49114d0d3e6c6bac921f939" category="paragraph">La actualización instala el sistema operativo actualizado, el entorno de ejecución de Docker y los servicios del agente de NetApp Console. Al actualizar al agente de NetApp Console 4.13.0, asegúrate de que la máquina virtual se reinicie cuando termine la actualización. Es posible que la máquina virtual se reinicie automáticamente. El agente de NetApp Console no estará disponible hasta que termine el reinicio. En otras versiones, la máquina virtual se reinicia automáticamente si se actualiza el kernel.</block>
+  <block id="74aaffed4ac921f25c719cb03ee18ea0" category="list-text">Una vez completada la actualización y finalizados los reinicios, comprueba que el agente de NetApp Console se esté ejecutando correctamente:</block>
+  <block id="3cc38715797be469f39edd81c803bf02" category="section-title">17 noviembre 2026</block>
 </blocks>
