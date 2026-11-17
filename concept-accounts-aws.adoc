@@ -21,7 +21,7 @@ Usted administra las credenciales de AWS y las suscripciones al marketplace dire
 [[initial-aws-credentials]]
 == Credenciales iniciales de AWS
 
-Cuando implementas un agente de Console desde la Console, necesitas proporcionar el ARN de un rol de IAM o las claves de acceso de un usuario de IAM. El método de autenticación debe tener permisos para implementar el agente de Console en AWS. Los permisos necesarios se enumeran en el link:task-install-agent-aws-console.html#aws-permissions-agent["Política de despliegue de agentes para AWS"].
+Cuando implementas un agente de NetApp Console desde NetApp Console, puedes hacer que NetApp Console cree un rol de IAM por ti, o puedes proporcionar el ARN de un rol de IAM o las claves de acceso de un usuario de IAM. El método de autenticación debe tener permisos para implementar el agente de NetApp Console en AWS. Los permisos necesarios se enumeran en link:task-install-agent-aws-console.html#aws-permissions-agent["Permisos de implementación del agente para AWS"].
 
 Cuando la Console lanza el Console agent en AWS, crea un rol IAM y un perfil para el agente. También adjunta una política que proporciona al Console agent permisos para administrar recursos y procesos dentro de esa cuenta de AWS. link:reference-permissions-aws.html["Revisa cómo utiliza el agente los permisos"].
 

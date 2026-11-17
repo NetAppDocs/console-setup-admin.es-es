@@ -1,17 +1,27 @@
-= 
+= Solucionar problemas de una implementación fallida del agente de NetApp Console
 :allow-uri-read: 
 
 
-Si seleccionó la casilla de verificación *Validar configuración del agente* en la página *Revisar*, la Consola verifica la configuración del agente de la Consola después de su creación.  Si la consola no logra implementar el agente, proporciona un informe descargable para ayudarlo a solucionar el problema.
 
 
-NOTE: Si la consola implementa correctamente el agente, no genera un informe y aparece un cuadro de diálogo de confirmación que verifica una implementación exitosa.
+[[troubleshoot-a-failed-console-agent-deployment]]
+[[troubleshoot-agent-deployment]]
+== Solucionar problemas de una implementación fallida del agente de NetApp Console
+
+Utiliza el informe de implementación para averiguar qué impidió la implementación del agente de NetApp Console y, a continuación, vuelve a intentarlo.
+
+NetApp Console solo genera un informe si se ha marcado la casilla de comprobación *Validar la configuración del agente*. Si la implementación se realiza correctamente, no se genera ningún informe.
 
 .Pasos
-. En el cuadro de diálogo *Error en la implementación del agente*, seleccione *Descargar informe* para descargar un archivo PDF que contiene el informe de validación.
-. Alternativamente, puede seleccionar *Comenzar de nuevo* para regresar al asistente de *Implementar agente* e intentarlo nuevamente.
+. En el cuadro de diálogo *Error en la implementación del agente*, selecciona *Descargar informe*.
 +
-Debes comenzar todo el proceso nuevamente si deseas intentar implementar el agente nuevamente.
+NetApp Console descarga un archivo PDF que contiene el informe de validación.
 
-. Acceda al informe y a los registros desde el host del agente de la consola
+. Revisa el informe y soluciona los problemas que enumera.
+. En el cuadro de diálogo, selecciona *Empezar de nuevo* y luego vuelve a completar la implementación.
++
+Tienes que volver a empezar todo el proceso para intentarlo de nuevo.
 
+
+
+link:task-troubleshoot-agent.html#troubleshoot-installation["Aprenda a solucionar problemas de instalación."]

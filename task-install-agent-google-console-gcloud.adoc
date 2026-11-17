@@ -483,7 +483,28 @@ El agente estará listo en aproximadamente 10 minutos; permanezca en la página 
 .Resultado
 Una vez completado el proceso, el agente de consola estará disponible para su uso.
 
-
-NOTE: Si la implementación falla, puedes descargar un informe y registros desde la Consola para ayudarte a solucionar los problemas.link:task-troubleshoot-agent.html#troubleshoot-installation["Aprenda a solucionar problemas de instalación."]
-
 Si tienes buckets de Google Cloud Storage en la misma cuenta de Google Cloud en la que creaste el agente de la Console, aparecerá automáticamente un sistema de Google Cloud Storage en la página *Systems*. https://docs.netapp.com/us-en/storage-management-google-cloud-storage/index.html["Aprenda a administrar Google Cloud Storage desde la consola"^].
+
+
+
+[[troubleshoot-a-failed-console-agent-deployment]]
+[[troubleshoot-agent-deployment]]
+== Solucionar problemas de una implementación fallida del agente de NetApp Console
+
+Utiliza el informe de implementación para averiguar qué impidió la implementación del agente de NetApp Console y, a continuación, vuelve a intentarlo.
+
+NetApp Console solo genera un informe si se ha marcado la casilla de comprobación *Validar la configuración del agente*. Si la implementación se realiza correctamente, no se genera ningún informe.
+
+.Pasos
+. En el cuadro de diálogo *Error en la implementación del agente*, selecciona *Descargar informe*.
++
+NetApp Console descarga un archivo PDF que contiene el informe de validación.
+
+. Revisa el informe y soluciona los problemas que enumera.
+. En el cuadro de diálogo, selecciona *Empezar de nuevo* y luego vuelve a completar la implementación.
++
+Tienes que volver a empezar todo el proceso para intentarlo de nuevo.
+
+
+
+link:task-troubleshoot-agent.html#troubleshoot-installation["Aprenda a solucionar problemas de instalación."]

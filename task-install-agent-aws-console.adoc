@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: task-install-agent-aws-console.html 
-keywords: deploy agent, aws agent deployment, aws agent, deploy agent in aws, bluexp, create agent, NetApp Console 
-summary: Puedes implementar un agente de Console en AWS directamente desde la NetApp Console. Antes de implementar un agente de Console en AWS desde la Console, necesitas configurar tu red y preparar los permisos de AWS. 
+keywords: deploy agent, aws agent deployment, aws agent, deploy agent in aws, bluexp, create agent, NetApp Console, Create role for me, CloudFormation Quick Create, IAM role, IAM policy, Assume role, AWS keys, deployment role, external ID 
+summary: Implementa un agente de NetApp Console en AWS desde la NetApp Console mediante Create role for me, Assume role o claves de AWS. Configura primero las redes y los permisos. 
 ---
 = Implementa un agente de consola en AWS desde NetApp Console
 :hardbreaks:
@@ -14,22 +14,22 @@ summary: Puedes implementar un agente de Console en AWS directamente desde la Ne
 
 
 [role="lead"]
-Puedes implementar un agente de Console en AWS directamente desde la NetApp Console. Antes de implementar un agente de Console en AWS desde la Console, necesitas configurar tu red y preparar los permisos de AWS.
+Implementa un agente de NetApp Console en AWS sin salir de NetApp Console para que puedas empezar a gestionar tus recursos y servicios de datos de AWS.
 
-La implementación de un agente en AWS lanza una instancia EC2 que ejecuta Linux y el software del agente de la consola en una VPC de tu elección.
+Al implementar un agente de NetApp Console en AWS, se inicia una instancia de EC2 que ejecuta Linux y el software del agente de NetApp Console en una VPC de tu elección.
 
 .Antes de empezar
 * link:concept-agent-install-options.html#agent-console-deploy["Aprende cuándo desplegar desde la consola"].
-* Deberías revisarlolink:reference-limitations.html["Limitaciones del agente de consola"] .
+* Revisarlink:reference-limitations.html["Limitaciones del agente de consola"] .
 
 
 
 
-[[step-1-set-up-networking-for-deploying-a-console-agent-in-aws]]
+[[step-1-set-up-networking-to-deploy-a-console-agent-in-aws]]
 [[networking-aws-agent]]
-== Paso 1: Configurar la red para implementar un agente de consola en AWS
+== Paso 1: configurar la red para implementar un agente de NetApp Console en AWS
 
-Asegúrese de que la ubicación de red donde planea instalar el agente de consola admita los siguientes requisitos.  Estos requisitos permiten que el agente de la consola administre recursos y procesos en su nube híbrida.
+Asegúrate de que la ubicación de red en la que planeas implementar el agente de NetApp Console cumpla los siguientes requisitos. Estos requisitos permiten que el agente de NetApp Console gestione los recursos y procesos de tu nube híbrida.
 
 VPC y subred:: Cuando crea el agente de consola, debe especificar la VPC y la subred donde debe residir.
 
@@ -166,17 +166,95 @@ Necesitará implementar este requisito de red después de crear el agente de con
 
 
 
-[[step-2-set-up-aws-permissions-for-the-console-agent]]
+[[step-2-set-up-aws-permissions-to-deploy-the-console-agent]]
 [[aws-permissions-agent]]
-== Paso 2: Configurar los permisos de AWS para el agente de la consola
+== Paso 2: configurar los permisos de AWS para implementar el agente de NetApp Console
 
-La consola debe autenticarse con AWS antes de poder implementar el agente de la consola en su VPC. Puede elegir uno de estos métodos de autenticación:
+Otorga a NetApp Console únicamente los permisos de AWS que necesita para implementar el agente de NetApp Console en tu VPC, en función del método de autenticación que elijas.
 
-* Deje que la consola asuma un rol de IAM que tenga los permisos necesarios
-* Proporcionar una clave de acceso de AWS y una clave secreta para un usuario de IAM que tenga los permisos necesarios
+Elige uno de estos métodos de autenticación y configura únicamente lo que requiere:
+
+[cols="1a,2a,2a"]
+|===
+| Método | Para qué sirve | Lo que has configurado 
 
 
-Con cualquiera de las opciones, el primer paso es crear una política de IAM. Esta política contiene solo los permisos necesarios para iniciar el agente de la consola en AWS desde la consola.
+ a| 
+*Crear un rol para mí*
+ a| 
+NetApp Console abre Quick Create de AWS CloudFormation, que crea el rol de implementación que asume NetApp Console.
+ a| 
+Permisos para la identidad de AWS que envía la pila.
+
+
+
+ a| 
+*Asume el rol*
+ a| 
+NetApp Console da por hecho que ya existe un rol de IAM en tu cuenta.
+ a| 
+Una política y un rol de IAM.
+
+
+
+ a| 
+*Claves de AWS*
+ a| 
+NetApp Console utiliza una clave de acceso y una clave secreta de AWS.
+ a| 
+Una política y un usuario de IAM.
+
+|===
+Con las opciones *Crear rol para mí* y *Asumir rol*, NetApp Console asume un rol de IAM, llamado *rol de implementación*, para implementar el agente de NetApp Console. Después de la implementación, el agente de NetApp Console usa un rol de IAM independiente asociado a su instancia de EC2, llamado *rol de agente*. De forma predeterminada, NetApp Console crea el rol de agente por ti. link:#aws-agent-role["Aprende a utilizar tu propio rol de agente"].
+
+
+
+[[set-up-permissions-for-create-role-for-me-cloudformation-quick-create]]
+[[aws-permissions-quick-create]]
+=== Configura los permisos para Crear un rol para mí (CloudFormation Quick Create)
+
+Utiliza una identidad de AWS que pueda crear la pila CloudFormation y el rol de implementación, para que la pila se complete sin errores de permisos.
+
+La identidad que envía la stack de Quick Create de CloudFormation necesita permisos de administrador o los siguientes permisos mínimos. Estos permisos permiten que CloudFormation cree el rol de implementación. No son los permisos del rol de agente.
+
+[source, json]
+----
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "CloudFormationStack",
+      "Effect": "Allow",
+      "Action": [
+        "cloudformation:CreateStack",
+        "cloudformation:DeleteStack",
+        "cloudformation:DescribeStacks",
+        "cloudformation:DescribeStackEvents",
+        "cloudformation:GetTemplateSummary",
+        "iam:CreateRole",
+        "iam:DeleteRole",
+        "iam:GetRole",
+        "iam:PutRolePolicy",
+        "iam:DeleteRolePolicy",
+        "iam:GetRolePolicy",
+        "iam:PassRole",
+        "lambda:CreateFunction",
+        "lambda:DeleteFunction",
+        "lambda:GetFunction",
+        "lambda:InvokeFunction"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
+----
+
+
+[[set-up-permissions-for-assume-role-or-aws-keys]]
+[[aws-permissions-assume-role-keys]]
+=== Configura los permisos para Assume role o las claves de AWS
+
+Si eliges *Assume role* o *AWS keys*, crea una política que incluya solo los permisos necesarios para implementar el agente de NetApp Console y asígnala al rol o al usuario que usa NetApp Console.
 
 Si es necesario, puede restringir la política de IAM mediante el IAM `Condition` elemento. https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html["Documentación de AWS: Elemento de condición"^]
 
@@ -186,7 +264,7 @@ Si es necesario, puede restringir la política de IAM mediante el IAM `Condition
 . Seleccione *JSON*.
 . Copie y pegue la siguiente política:
 +
-Esta política contiene solo los permisos necesarios para iniciar el agente de la consola en AWS desde la consola.  Cuando la consola crea el agente de consola, aplica un nuevo conjunto de permisos al agente de consola que le permite administrar los recursos de AWS. link:reference-permissions-aws.html["Ver los permisos necesarios para el propio agente de la consola"].
+Esta política solo incluye los permisos necesarios para iniciar el agente de NetApp Console en AWS desde NetApp Console. link:reference-permissions-aws.html["Ver los permisos del rol de agente"].
 
 +
 [source, json]
@@ -269,7 +347,7 @@ Esta política contiene solo los permisos necesarios para iniciar el agente de l
 . Seleccione *Crear política*.
 . Adjunte la política a un rol de IAM que la consola pueda asumir o a un usuario de IAM para poder proporcionar a la consola claves de acceso:
 +
-** (Opción 1) Configure un rol de IAM que la consola pueda asumir:
+** *Asumir rol*: configura un rol de IAM que NetApp Console pueda asumir:
 +
 ... Vaya a la consola de AWS IAM en la cuenta de destino.
 ... En Administración de acceso, seleccione *Roles > Crear rol* y siga los pasos para crear el rol.
@@ -279,7 +357,7 @@ Esta política contiene solo los permisos necesarios para iniciar el agente de l
 ... Después de crear el rol, copie el ARN del rol para poder pegarlo en la consola cuando cree el agente de la consola.
 
 
-** (Opción 2) Configure permisos para un usuario de IAM para que pueda proporcionar a la consola claves de acceso:
+** *Claves de AWS*: configura los permisos de un usuario de IAM para poder proporcionar a NetApp Console las claves de acceso:
 +
 ... Desde la consola de AWS IAM, seleccione *Usuarios* y luego seleccione el nombre de usuario.
 ... Seleccione *Agregar permisos > Adjuntar políticas existentes directamente*.
@@ -293,56 +371,98 @@ Esta política contiene solo los permisos necesarios para iniciar el agente de l
 
 
 .Resultado
-Ahora debería tener un rol de IAM que tenga los permisos necesarios o un usuario de IAM que tenga los permisos necesarios.  Al crear el agente de la consola desde la consola, puede proporcionar información sobre el rol o las claves de acceso.
+Ahora dispones de un rol de implementación o de un usuario de IAM que cuenta con los permisos necesarios. Al implementar el agente de NetApp Console, debes proporcionar el ARN del rol o las claves de acceso.
 
 
 
-[[step-3-create-the-console-agent]]
-== Paso 3: Crear el agente de consola
+[[step-3-set-up-your-own-iam-role-for-the-console-agent-optional]]
+[[aws-agent-role]]
+== Paso 3: configura tu propio rol de IAM para el agente de NetApp Console (opcional)
 
-Crea el agente de Console directamente desde la consola web de Console.
+Crea tu propio rol de agente si quieres seleccionarlo en lugar del rol que NetApp Console crea de forma predeterminada. Crea el rol antes de desplegar el agente de NetApp Console.
+
+.Pasos
+. Inicie sesión en la consola de AWS y navegue hasta el servicio IAM.
+. Crear una política:
++
+.. Seleccione *Políticas > Crear política*.
+.. Seleccione *JSON* y copie y pegue el contenido dellink:reference-permissions-aws.html["Política de IAM para el agente de consola"] .
+.. Complete los pasos restantes para crear la política.
++
+Para las regiones estándar, los permisos se distribuyen en dos políticas.  Se requieren dos políticas debido a un límite máximo de tamaño de caracteres para las políticas administradas en AWS. link:reference-permissions-aws.html["Obtenga más información sobre las políticas de IAM para el agente de consola"] .
+
+
+
+. Crear un rol de IAM:
++
+.. Seleccione *Roles > Crear rol*.
+.. Seleccione *Servicio AWS > EC2*.
+.. Agregue permisos adjuntando la política que acaba de crear.
+.. Complete los pasos restantes para crear el rol.
+
+
+
+
+.Resultado
+Ahora tienes un rol de agente que puedes seleccionar en *Detalles de implementación del agente* al implementar el agente de NetApp Console.
+
+
+
+[[step-4-deploy-the-console-agent]]
+== Paso 4: implementar el agente de NetApp Console
+
+Introduce tus datos de autenticación, implementación, red y grupo de seguridad para que NetApp Console inicie el agente de NetApp Console en tu VPC.
 
 .Acerca de esta tarea
 * Al crear el agente de la consola desde la consola, se implementa una instancia EC2 en AWS utilizando una configuración predeterminada.  No cambie a una instancia EC2 más pequeña con menos CPU o menos RAM después de crear el agente de consola. link:reference-agent-default-config.html["Obtenga información sobre la configuración predeterminada para el agente de la consola"] .
-* Cuando la consola crea el agente de consola, crea un rol de IAM y un perfil para el agente. Esta función incluye permisos que permiten al agente de la consola administrar los recursos de AWS. Asegúrese de que la función se actualice a medida que se agreguen nuevos permisos en futuras versiones. link:reference-permissions-aws.html["Obtenga más información sobre la política de IAM para el agente de consola"].
+* De forma predeterminada, NetApp Console crea el rol de agente y su perfil. Si utilizas tu propio rol de agente, asegúrate de actualizarlo a medida que se añadan nuevos permisos en futuras versiones. link:reference-permissions-aws.html["Obtenga más información sobre la política de IAM para el agente de consola"].
 
 
 .Antes de empezar
 Debes tener lo siguiente:
 
-* Un método de autenticación de AWS: un rol de IAM o claves de acceso para un usuario de IAM con los permisos requeridos.
+* Un método de autenticación de AWS: *crear un rol para mí*, *asumir un rol* o *claves de AWS*.
 * Una VPC y una subred que cumple con los requisitos de red.
 * Un par de claves para la instancia EC2.
 * Detalles sobre un servidor proxy, si se requiere un proxy para el acceso a Internet desde el agente de la consola.
-* Configuraciónlink:#networking-aws-agent["requisitos de red"] .
-* Configuraciónlink:#aws-permissions-agent["Permisos de AWS"] .
+* Completado link:#networking-aws-agent["Paso 1"].
+* Completado link:#aws-permissions-agent["Paso 2"].
 
 
 .Pasos
 . Seleccione *Administración > Agentes*.
 . En la página *Overview*, selecciona *Deploy agent > AWS*.
-. Siga los pasos del asistente para crear el agente de consola:
-. En la página *Introducción*, revisa la descripción general del proceso.
-. En la página *Credenciales de AWS*, especifica tu región de AWS y luego elige un método de autenticación, que puede ser un rol de IAM que NetApp Console pueda asumir o una clave de acceso y una clave secreta de AWS.
+. En la sección *Credenciales de AWS para la implementación del agente*, elige uno de los siguientes métodos de autenticación:
 +
+** *Crear un rol para mí*:
++
+... Selecciona tu región de AWS e introduce el ID de tu cuenta de AWS. Si lo deseas, introduce un ID externo.
+... Selecciona *Abrir CloudFormation Quick Create*.
+... En AWS, acepta los términos y selecciona *Crear pila*.
+... Cuando AWS haya terminado de crear el rol, vuelve a la NetApp Console y confirma el rol.
 
-TIP: Si elige *Asumir rol*, puede crear el primer conjunto de credenciales desde el asistente de implementación del agente de la consola.  Cualquier conjunto adicional de credenciales debe crearse desde la página Credenciales.  Luego estarán disponibles en una lista desplegable del asistente. link:task-adding-aws-accounts.html["Aprenda cómo agregar credenciales adicionales"] .
 
-. En la página *Detalles*, proporcione detalles sobre el agente de consola.
+** *Asumir rol*: introduce el ARN del rol de IAM y selecciona *Validar credenciales*.
+** *Claves de AWS*: introduce la clave de acceso y la clave secreta, y selecciona *Validar credenciales*.
+
+
+. En la sección *Detalles de la implementación del agente*, introduce los datos sobre el agente de NetApp Console.
 +
 ** Introduzca un nombre.
 ** Añadir etiquetas personalizadas (metadatos).
-** Elija si desea que la Consola cree un nuevo rol que tenga los permisos necesarios o si desea seleccionar un rol existente que haya configurado conlink:reference-permissions-aws.html["los permisos requeridos"] .
+** Elige si quieres que NetApp Console cree el rol de agente o selecciona un rol de agente que ya tienes link:#aws-agent-role["configúralo tú mismo"].
 ** Elija si desea cifrar los discos EBS del agente de consola.  Tiene la opción de utilizar la clave de cifrado predeterminada o utilizar una clave personalizada.
 
 
-. En la página *Red*, especifica una VPC, una subred y un par de claves para el agente, elige si quieres habilitar una dirección IP pública y, opcionalmente, especifica una configuración de proxy.
+. En la sección *Configuración de red*, especifica una VPC, una subred y un par de claves para el agente de NetApp Console, elige si quieres habilitar una dirección IP pública y, de forma opcional, especifica una configuración de proxy.
 +
 Asegúrese de tener el par de claves correcto para acceder a la máquina virtual del agente de consola.  Sin un par de claves, no puedes acceder a él.
 
-. En la página *Grupo de seguridad*, elija si desea crear un nuevo grupo de seguridad o si desea seleccionar un grupo de seguridad existente que permita las reglas de entrada y salida requeridas.
+. En la sección *Security group*, elige si quieres crear un nuevo grupo de seguridad o seleccionar uno existente que permita las reglas de tráfico entrante y saliente necesarias.
 +
 link:reference-ports-aws.html["Ver las reglas del grupo de seguridad para AWS"] .
+
+
 
 . Revisa tus selecciones para verificar que tu configuración es correcta.
 +
@@ -359,14 +479,35 @@ link:reference-ports-aws.html["Ver las reglas del grupo de seguridad para AWS"] 
 ====
 . Seleccione *Agregar*.
 +
-La consola implementa el agente en aproximadamente 10 minutos. Permanezca en la página hasta que se complete el proceso.
+NetApp Console instala el agente de NetApp Console en unos 10 minutos. No salgas de la página hasta que finalice el proceso.
 
 
 
 .Resultado
 Una vez completado el proceso, el agente de la consola estará disponible para su uso desde la consola.
 
-
-NOTE: Si la implementación falla, puedes descargar un informe y registros desde la Consola para ayudarte a solucionar los problemas.link:task-troubleshoot-agent.html#troubleshoot-installation["Aprenda a solucionar problemas de instalación."]
-
 Si tiene depósitos de Amazon S3 en la misma cuenta de AWS donde creó el agente de consola, verá aparecer automáticamente un entorno de trabajo de Amazon S3 en la página *Sistemas*. https://docs.netapp.com/us-en/storage-management-s3-storage/index.html["Aprenda a administrar los buckets S3 desde la NetApp Console"^]
+
+
+
+[[troubleshoot-a-failed-console-agent-deployment]]
+[[troubleshoot-agent-deployment]]
+== Solucionar problemas de una implementación fallida del agente de NetApp Console
+
+Utiliza el informe de implementación para averiguar qué impidió la implementación del agente de NetApp Console y, a continuación, vuelve a intentarlo.
+
+NetApp Console solo genera un informe si se ha marcado la casilla de comprobación *Validar la configuración del agente*. Si la implementación se realiza correctamente, no se genera ningún informe.
+
+.Pasos
+. En el cuadro de diálogo *Error en la implementación del agente*, selecciona *Descargar informe*.
++
+NetApp Console descarga un archivo PDF que contiene el informe de validación.
+
+. Revisa el informe y soluciona los problemas que enumera.
+. En el cuadro de diálogo, selecciona *Empezar de nuevo* y luego vuelve a completar la implementación.
++
+Tienes que volver a empezar todo el proceso para intentarlo de nuevo.
+
+
+
+link:task-troubleshoot-agent.html#troubleshoot-installation["Aprenda a solucionar problemas de instalación."]

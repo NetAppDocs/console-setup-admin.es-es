@@ -18,6 +18,30 @@ Conozca las novedades en las funciones de administración de la NetApp Console :
 
 
 
+[[09-november-2026]]
+== 09 noviembre 2026
+
+
+
+[[console-agent-4-13-0]]
+=== Agente de Console 4.13.0
+
+La versión 4.13.0 es compatible tanto con el modo estándar como con el modo restringido.
+
+Esta versión del agente de la Console incluye mejoras de seguridad y correcciones de errores, así como la siguiente nueva función.
+
+.Crea automáticamente el rol de implementación de AWS al implementar un agente de NetApp Console
+Ya no necesitas crear el rol de IAM para implementar un agente de NetApp Console en AWS antes de empezar. La NetApp Console puede crear el rol por ti. link:https://docs.netapp.com/us-en/console-setup-admin/task-install-agent-aws-console.html["Descubre cómo implementar un agente de NetApp Console en AWS desde NetApp Console"^]
+
+
+
+[[netapp-console-administration]]
+=== Administración de la NetApp Console
+
+Esta versión incluye mejoras de seguridad y correcciones de errores.
+
+
+
 [[15-october-2026]]
 == 15 de octubre de 2026
 

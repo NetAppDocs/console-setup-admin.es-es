@@ -535,7 +535,28 @@ La consola prepara al agente en aproximadamente 10 minutos. Permanezca en la pá
 .Resultado
 Una vez completado el proceso, el agente de la consola estará disponible para su uso desde la consola.
 
-
-NOTE: Si la implementación falla, puedes descargar un informe y registros desde la Consola para ayudarte a solucionar los problemas.link:task-troubleshoot-agent.html#troubleshoot-installation["Aprenda a solucionar problemas de instalación."]
-
 Si tiene Azure Blob Storage en la misma cuenta de Azure donde creó el agente de consola, verá que Azure Blob Storage aparece automáticamente en la página *Sistemas*. https://docs.netapp.com/us-en/bluexp-blob-storage/index.html["Aprenda a administrar Azure Blob Storage desde la NetApp Console"^]
+
+
+
+[[troubleshoot-a-failed-console-agent-deployment]]
+[[troubleshoot-agent-deployment]]
+== Solucionar problemas de una implementación fallida del agente de NetApp Console
+
+Utiliza el informe de implementación para averiguar qué impidió la implementación del agente de NetApp Console y, a continuación, vuelve a intentarlo.
+
+NetApp Console solo genera un informe si se ha marcado la casilla de comprobación *Validar la configuración del agente*. Si la implementación se realiza correctamente, no se genera ningún informe.
+
+.Pasos
+. En el cuadro de diálogo *Error en la implementación del agente*, selecciona *Descargar informe*.
++
+NetApp Console descarga un archivo PDF que contiene el informe de validación.
+
+. Revisa el informe y soluciona los problemas que enumera.
+. En el cuadro de diálogo, selecciona *Empezar de nuevo* y luego vuelve a completar la implementación.
++
+Tienes que volver a empezar todo el proceso para intentarlo de nuevo.
+
+
+
+link:task-troubleshoot-agent.html#troubleshoot-installation["Aprenda a solucionar problemas de instalación."]
